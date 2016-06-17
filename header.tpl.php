@@ -112,14 +112,20 @@
 			        <li><a href="#servicios">Servicios</a></li>
 			        <li class="divider"></li>
 			        <li><a href="#participacion">Participación</a></li>
-					<div id="redes_sociales">
-						<span>
-							<a href="https://www.facebook.com/laopinioncucuta/" target="_blank"></a>
+					<ul id="redes_sociales">
+						<li class="facebook">
+							<a href="https://www.facebook.com/laopinioncucuta/" target="_blank"></a>							
+						</li>
+						<li class="twitter">
 							<a href="https://www.twitter.com/laopinioncucuta/" target="_blank"></a>
+						</li>
+						<li class="instagram">
 							<a href="https://www.instagram.com/laopinioncucuta/" target="_blank"></a>
-							<a href="https://www.youtube.com/laopinioncucuta/" target="_blank"></a>
-						</span>
-					</div> 
+						</li>
+						<li class="youtube">
+							<a href="https://www.youtube.com/user/WEBLAOPINION" target="_blank"></a>
+						</li>
+					</ul> 
 			    </ul> 
 			</div>
 		</nav>
