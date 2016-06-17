@@ -1,0 +1,142 @@
+.bottom{background:#E6E6E6; height:320px; width:100%; padding: 10px 0px;float:left; position: relative;
+  .center{background:#BB1D1E;width:100%; position: relative; margin:0 auto;height:45px;
+    .barra{width:1004px; margin:0 auto; position: relative;
+      .menuf{width:100%; height:50px; position: relative; float:left; top:0px; margin:0px;z-index:1;
+        #logo{padding:0px; position: relative; width: 190px; height:40px; float: left; top: 5px; opacity: 1;background:#BA2025; transition: all 0.5s ease-in-out;
+          h1 {background:url(../images/logo.svg) 0px -5px/190px auto no-repeat; height:40px; width:auto; display:block; text-indent:-9999px; margin: 0 auto;
+            a {display:block; height:40px; text-indent:-9999px;}
+          }
+        }
+      }  
+    }
+    #menu_f{ position: relative;
+        #footer{height: 35px; position: relative; padding: 5px 0px; width: 760px; float: left;
+          ul{width: 100%; height: 35px; margin: 0 auto; padding: 0px; 
+            li{list-style: none; float: left; padding: 6px 0; margin: 0; position: relative;}
+            a{color: #fff; font-size: 12px; text-decoration: none; text-transform: uppercase; padding: 8px 8px;}
+            .divider{border-right: 1px solid #fff; height: 8px; margin-top: 8px;}
+          }
+        }
+    }  
+  }
+  .copy{width:100%; position: relative; margin:0 auto;height:50px;
+    .copy_content{width:1004px; margin:0 auto; position: relative; padding:10px 10px;
+      .bloque1{width:15.5%;} 
+      .bloque2{width:15.5%;}
+      .bloque3{width:15.5%;}
+      .bloque4{width:15.5%;}
+      .bloque5{width:15%; border-right:none !important;
+        .titulo{width:100% !important;}
+        .item{width:90% !important; height:30px !important;line-height:14px;line-height:14px; }
+      }
+      .bloque{height:100px; list-style: none; position: relative; float:left; border-right:1px solid #333;margin: 10px 20px;padding: 7px 0px;
+        .titulo{text-transform:uppercase; color:#333;font-weight: 600;
+          a{color:#333; text-decoration:none; font-size:16px;font-weight: 600;}
+        }
+      }  
+      .item{float:left; width:100%; height:19px; margin-left: 0px; padding:0px;
+        a{color:#333; text-decoration:none; font-size:12px;}
+      }
+
+
+      .info_{border:1px solid #333333; padding:0px 10px; position: relative; float:left; height: 100px; width:1004px; margin:10px 0px;
+        .logo_icon{padding:0px; position: relative; width: 180px; height:60px; float: left; top: 30px; opacity: 1; border-right:1px solid #333; transition: all 0.5s ease-in-out;
+          h1 {background:url(../images/iconos/logo_footer.svg) -10px 0px/190px auto no-repeat; height:70px; width:auto; display:block; text-indent:-9999px; margin: 0 auto;
+            a {display:block; height:50px; text-indent:-9999px;}
+          }
+        }
+        .txt{color:#333; font-size:10px; float:left; position: relative; width:680px; height:70px;top:20px;border-right:1px solid #333; 
+          p{line-height:12px; float:left; position: relative; margin:0px 20px;
+            span{text-transform:uppercase;font-weight:600;}
+          }
+        }
+        .redes_footer{width: 100px; height: 75px; position: relative; list-style: none; margin:0px; top:15px; left:0px; padding:0px; float:left; margin-left:20px;
+          h2{font-size:14px; color:#333; text-transform:uppercase; width:100%; padding:0px 0px 0px 5px;}
+          a{margin: 0px;}
+          a:hover{opacity: 0.7;}
+          li.leaf{list-style: none; margin: 0px; padding: 0px;}
+          .facebook{ 
+            a{background: url(../images/iconos/redes_footer.svg) no-repeat -19px -11px/138px auto transparent;position: relative; width: 25px; height: 25px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+          }
+          .twitter{ 
+            a{background: url(../images/iconos/redes_footer.svg) no-repeat -44px -11px/138px auto transparent;position: relative; width: 25px; height: 25px; float: left; text-indent: -9999px; transition:all 0.2s ease;}
+          }
+          .instagram{ 
+            a{background: url(../images/iconos/redes_footer.svg) no-repeat -69px -11px/138px auto transparent;position: relative; width: 25px; height: 25px; float: left; text-indent: -9999px; transition:all 0.2s ease;}
+          }
+          .youtube{ 
+            a{background: url(../images/iconos/redes_footer.svg) no-repeat -94px -11px/138px auto transparent;position: relative; width: 25px; height: 25px; float: left; text-indent: -9999px; transition:all 0.2s ease;}
+            }
+          }
+        }
+      }  
+  }
+
+}  
+
+/*
+
+#footer{width: 100%;height: auto;position: relative;float: left;
+  .logo_content{background:#BA2025;width:100%;padding:10px 0px;height:25px;position: relative;float: left;margin:5px 0px;
+      .in{width:960px;padding:0px 20px;margin:0 auto; background:#BA2025;
+        #logo{padding:0px; position: relative; width: 190px; height:40px; float: left; top: -7px; opacity: 1;background:#BA2025; transition: all 0.5s ease-in-out;
+                      h1 {background:url(../images/logo.svg) 0px -5px/190px auto no-repeat; height:40px; width:auto; display:block; text-indent:-9999px; margin: 0 auto;
+                          a {display:block; height:40px; text-indent:-9999px;}
+                          }
+                        }
+              }
+        }
+#footer_content{background:#333;width:100%;padding:20px 0px;height:460px;position: relative;float: left;margin-bottom:3px;
+            .in{width:960px;padding:20px;margin:0 auto; background:#333;
+            .info_content{border: 1px solid #fff; padding:0px 0px 10px 0px; position: relative; float:left; height: 100px; width:960px;background:#333333;
+              .logo_icon{padding:0px; position: relative; width: 180px; height:60px; float: left; top: 30px; opacity: 1; border-right:1px solid #fff; transition: all 0.5s ease-in-out;
+                      h1 {background:url(../images/iconos/icon_o.svg) -10px 0px/190px auto no-repeat; height:70px; width:auto; display:block; text-indent:-9999px; margin: 0 auto;
+                          a {display:block; height:50px; text-indent:-9999px;}
+                          }
+                        }
+              .txt{color:#fff; font-size:10px; float:left; position: relative; width:640px; height:70px;top:20px;border-right:1px solid #fff; 
+                p{line-height:12px; float:left; position: relative; margin:0px 20px;
+                span{text-transform:uppercase;font-weight:600;}
+                }
+              }
+              .redes_footer{width: 100px; height: 75px; position: relative; list-style: none; margin:0px; top:15px; left:0px; padding:0px; float:left; margin-left:20px;
+                h2{font-size:14px; color:#fff; text-transform:uppercase; width:100%;}
+                a{margin: 0px;}
+                a:hover{opacity: 0.7;}
+                li.leaf{list-style: none; margin: 0px; padding: 0px;}
+                .facebook{ 
+                  a{background: url(../images/iconos/redes_sociales_footer.svg) no-repeat -6px -3px/120px auto transparent;position: relative; width: 25px; height: 25px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                  a:hover{background: url(../images/iconos/redes_sociales_footer.svg) no-repeat -6px -6px/120px auto transparent;}
+                }
+                .twitter{ 
+                  a{background: url(../images/iconos/redes_sociales_footer.svg) no-repeat -33px -3px/120px auto transparent;position: relative; width: 25px; height: 25px; float: left; text-indent: -9999px; transition:all 0.2s ease;}
+                  a:hover{background: url(../images/iconos/redes_sociales_footer.svg) no-repeat -33px -6px/120px auto transparent;}
+                }
+                .instagram{ 
+                  a{background: url(../images/iconos/redes_sociales_footer.svg) no-repeat -62px -3px/120px auto transparent;position: relative; width: 25px; height: 25px; float: left; text-indent: -9999px; transition:all 0.2s ease;}
+                  a:hover{background: url(../images/iconos/redes_sociales_footer.svg) no-repeat -62px -6px/120px auto transparent;}
+                }
+                .youtube{ 
+                  a{background: url(../images/iconos/redes_sociales_footer.svg) no-repeat -90px -3px/120px auto transparent;position: relative; width: 25px; height: 25px; float: left; text-indent: -9999px; transition:all 0.2s ease;}
+                  a:hover{background: url(../images/iconos/redes_sociales_footer.svg) no-repeat -90px -6px/120px auto transparent;}
+                }
+              }
+              .productos{width: 960px;height: 130px;position: relative;list-style: none;margin: 0px;top: 20px;left: 0px;float: left; margin-top:30px;background:#333333;
+                h2{font-size:12px; color:#fff; text-transform:uppercase; width:100%;border-bottom:1px solid #fff;}
+                a{margin: 0px;}
+                a:hover{opacity: 0.7;}
+                li.leaf{list-style: none; margin: 0px; padding: 0px;}
+                .uno{background: url(../images/iconos/productos.svg) no-repeat 0px -10px/900px auto transparent;position: relative;width: 130px;height: 55px;float: left; text-indent: -9999px; transition:all 0.2s ease;}
+                .dos{background: url(../images/iconos/productos.svg) no-repeat -170px -10px/900px auto transparent;position: relative;width: 150px;height: 55px;float: left; margin-left:52px; text-indent: -9999px; transition:all 0.2s ease;}
+                .tres{background: url(../images/iconos/productos.svg) no-repeat -370px -10px/900px auto transparent;position: relative;width: 50px;height: 55px;float: left; margin-left:52px; text-indent: -9999px; transition:all 0.2s ease;}
+                .cuatro{background: url(../images/iconos/productos.svg) no-repeat -460px -10px/900px auto transparent;position: relative;width: 140px;height: 55px;float: left; margin-left:52px; text-indent: -9999px; transition:all 0.2s ease;}
+                .cinco{background: url(../images/iconos/productos.svg) no-repeat -640px -10px/900px auto transparent;position: relative;width: 140px;height: 55px;float: left; margin-left:52px; text-indent: -9999px; transition:all 0.2s ease;}
+                .seis{background: url(../images/iconos/productos.svg) no-repeat -830px -10px/900px auto transparent;position: relative;width: 65px;height: 55px;float: left; margin-left:52px; text-indent: -9999px; transition:all 0.2s ease;}
+              }
+
+             }
+             }
+             }
+             }
+
+             */

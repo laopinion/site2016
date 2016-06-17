@@ -1,0 +1,48 @@
+// HOME -----------------------------------------------------------------
+#seccion{width: 100%;position: relative;border-top:2px solid #BA2025; height:auto; float:left;
+#seccion_content{width:960px;padding:20px;margin:0 auto; position: relative;
+        .view-id-consulta{background:#fff; width: 960px; padding: 20px; border:1px solid #E8E7E8;
+            //Filtros
+            .view-filters{
+                label{font-weight:600; color:#969696;font-size:15px;}
+                input{background:#F5F5F5;border:1px solid #DFDFDF; border-radius:5px; color:#969696; width:10px; height:auto; text-align:center;margin:3px 0px;font-size:14px;}
+                #edit-title{width:100px;}
+                #edit-field-seccion-tid{width:100px;}
+                #edit-submit-consulta{background:#BA2025; color:#fff; border-radius:5px; border:1px solid #fff;font-size:15px;width: 60px;top: 17px;position: relative;}
+                }
+            }//FIN filtros
+            //Tabla
+            .views-table{
+                tr.odd{background:#fff;border-bottom: 1px solid #DFDFDF;padding: 3px 3px;}
+                tr.even{background:#DFDFDF;padding: 3px 3px;}
+                th.views-field{font-weight:600; color:#969696;font-size:15px;
+                    a{color:#969696;text-decoration:none;}
+                    }
+                td.active{background:#fff;}
+                .views-field-title{font-size:16px;width: 410px;padding: 3px 10px;
+                    a{color:#646464; text-decoration:none; font-weight: 300;  text-transform:none;float:left;}
+                    a:hover{ text-decoration:underline;}
+                }
+                td.views-field-field-seccion{font-size:12px; width:70px;padding: 3px 10px; 
+                    a{color:#BA2025; text-decoration:none; font-weight: 300;  text-transform:uppercase;float:left;margin: 1px 0px;}
+                    a:hover{ text-decoration:underline;}
+                }
+                td.views-field-type{font-size:14px; width:70px;padding: 3px 10px; color:#646464;}
+                td.views-field-field-fecha-de-publicacion{font-size:14px; width:70px;padding: 3px 10px; color:#BA2025;width:100px;}
+                td.views-field-created{font-size:14px; width:70px;padding: 3px 10px; color:#646464;width:100px;}
+                .views-field-edit-node{font-size:12px; width:70px;padding: 3px 10px; 
+                    a{color:#BA2025; text-decoration:none; font-weight: 300;  text-transform:uppercase;float:left;margin: 1px 0px;}
+                    a:hover{ text-decoration:underline;}
+                }
+
+            }//FIN tabla
+            //PAGINADOR
+            .pager{text-transform: uppercase;margin-top:30px;
+                a{color: #6E6E6E;top: 5px; position: relative;padding:0px 5px;}
+                .pager-current {background: #BC2125; color: #fff;}
+                .pager-item a{color: #6E6E6E; text-decoration: underline;}
+            }
+
+}/*FIN Seccion content*/
+}/*FIN Seccion*/
+

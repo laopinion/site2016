@@ -1,0 +1,247 @@
+.top{background:#BB1D1E; height:155px; width:100%; padding: 0px; position: relative; top:0px; float:left; 
+  .msup{background:#AA151C; width:100%; height:30px; position: relative; float:left; top:0px; margin:0px;z-index:1;
+    .links{width:1004px; height:30px; position: relative; margin:0 auto;padding:0px 20px; 
+      .mizq{width:50%; position: relative; float:left; margin:0px; padding: 0px; list-style:none;
+        .first{border-right:1px solid #fff; }
+        .second{border-right:1px solid #fff; padding:5px 10px 0px 10px; }
+        li{width: auto; float:left; margin: 5px 10px 0px 0px;height: 20px;border-right: 1px solid #fff;padding-right: 10px;}
+        li.border{border:none;}
+      }
+      .mder{width:42.8%; position: relative; float:right; margin:0px; padding: 0px; list-style:none;
+        .first{border-right:1px solid #fff;}
+        .second{border-right:1px solid #fff; padding:5px 10px 0px 10px;}
+        .registro{margin-right:0px;}
+        .clasificados_icon{background:url(../images/iconos/clasificados.svg) 5px -7px/40px auto no-repeat;height: auto;width: 120px; float:left; position:relative;
+          a{padding-left: 40px; float:left;}
+        }
+        .picoyplaca{background:url(../images/iconos/picoyplaca.svg) -5px -7px/40px auto no-repeat;height: auto;width: 80px;padding-left: 40px; float:left; position:relative;height:20px;}
+        li{width:auto; float:left; margin: 5px 10px 0px 0px;height: 20px;border-right: 1px solid #fff;padding-right: 10px; font-size:14px; font-weight:100px; color:#fff;}
+        li.border{border:none;} 
+          .detalles-pico-placa{display:none;cursor:default;left: -150px;margin-top: 15px;position: absolute;top: 10px;width: 380px;z-index: 101;
+             .flecha{background: url(../images/iconos/flecha_pico.svg) no-repeat 0px 0px/23px auto transparent;width: 23px;height: 12px;position: relative;float: left;top: -9px;left:190px;}
+             .info{background: none repeat scroll 0 0 #fff;border: 1px solid #E3E3E3;padding: 10px 10px 1px 10px;height:180px;
+                .linea{width: 240px;height: 0px;border-right: 10px solid transparent;border-left: 0px solid transparent; border-top: 10px solid #8E9094;left:-10px;margin:0px;float: left;position: relative;top: 10px;}
+                .icon_mapa{background:url(../images/iconos/icon_mapa.svg) 0px -1px/35px auto no-repeat; width:35px;height: 30px;float: left;;position: relative;left:-5px;}
+                .mapa{position:relative; float:left;
+                  a{color:#000;@include background(url("../images/img-mapa-pico-placa.jpg"), 0 0, transparent, no-repeat);cursor:pointer;display:block;@include fonts($ptSans, 13px, normal);padding: 6px 3px;}
+                a:hover{text-decoration:underline;}
+                }
+                .columns{clear:both;overflow:hidden;font-size:14px;margin-bottom:10px;
+                  p{margin:0;}
+                  .column-1, .column-2{float: left; position: relative; float:left;
+                    p{color:#000;text-align:center;font-weight:bold;}
+                    .placa{background:#8E9094;color:#fff;margin: 0 auto;padding: 2px;text-align: center;width: 70px; border-radius:3px;}
+                    .hora{font-size: 12px;text-align: center;width: 100px;margin: 0 auto;position: relative;height: 13px;}
+                  }
+                  .column-1{border-right: 1px solid #E3E3E3;margin-right: 7px;padding-right: 7px; width:250px; height:58px;
+                    .caja-1, .caja-2, .caja-3{float:left;margin-right:5px;}
+                  }
+                  .column-2{border-top-color: #585858;width:80px;
+                    p{color:#585858;}
+                    .placa{width: 85px !important;}
+                  }
+                }
+              .linea2{width: 110px;height: 0px;border-right: 10px solid transparent;border-left: 0px solid transparent; border-top: 10px solid #8E9094;left:-10px;margin:0px 0px 10px 10px;float: left;position: relative;top: 10px;}
+              .icon_gas{background:url(../images/iconos/icon_gas.svg) 1px 0px/29px auto no-repeat; width:35px;height: 30px;float: left;;position: relative;left:-5px;top:-7px;}  
+              .gas_txt{left:0px; float:left; position:relative; top:6px;}
+              .columna{clear:both;overflow:hidden;font-size:14px;margin-top:7px;
+                  p{margin:0;}
+                    .dia{width:11%;position: relative; float:left; margin-right:4px;font-size:12px;
+                      p{text-align:center;}
+                      .placa{background:#8E9094;color:#fff;margin: 0 auto;padding: 2px;text-align: center;width:35px; border-radius:3px;margin:0 auto;font-size:14px;}
+                    }
+                    .dia-3{width:14%;}
+                    .dia-6{width:63px;
+                      .placa{width:60px;}
+                  }
+                  .dia-7{width:63px;margin-right:0px;
+                      .placa{width:60px;}
+                  }
+                } 
+            }
+          }
+      }
+      a{color:#fff; text-decoration:none; font-weight:100; float:left; position: relative; font-size:14px;}
+      a:hover{text-decoration:underline;}
+    }
+  }
+  .center{width:1004px; position: relative; margin:0 auto;padding:0px 20px; height:120px;
+    .fecha{float:left; position:relative; color:#fff; width:160px; height:55px;top:20px;margin-right:200px;
+      .dia{width:100%;float:left; position: relative; font-size:20px; font-weight:600;letter-spacing:1px; height:22px;}
+      .mes{float:left; position: relative;font-size:12px; font-weight:100; height:14px;}
+      .ciudad{float:left; position: relative;font-size:12px; font-weight:100; height:16px;}
+    }
+    #logo{padding: 0px;position: relative;float:left;width: 235px;height: 60px;top: 20px;opacity: 1;transition: all 0.5s ease-in-out;
+      h1 {background: url(../images/logo.svg) 5px -5px/230px auto no-repeat;height: 50px;width: auto;display: block;text-indent: -9999px;margin: 0 auto;}
+      a {display:block; height:50px; text-indent:-9999px;}
+      }
+    }
+    .search{display:none;}
+  }
+  #menup{background:#E1E1E1; width:100%; float:left; position: relative; height:35px;z-index:10;
+    .menu_p{width:1004px; position: relative; margin:0 auto;padding:0px 20px; height:35px;
+      li{float:left;position:relative;padding: 6px 0;margin: 0;list-style: none;
+        a{color:#424242;font-size:12px;padding: 10px 10px;text-decoration: none;text-transform: uppercase;}
+      }
+      li > ul{display:none;position:absolute;background: #424242;padding: 0;z-index: 2;}
+      li > ul li{border-bottom: 1px solid rgba(189, 189, 189, 0.6);width: 90%;margin: 1px 0 0 5px;padding:0;list-style: none;}
+      li > ul li:first-child{padding:0;}
+      li:hover > ul li:last-child{padding:0; border-bottom: none;}
+      li:hover > a{color:#fff;background-color: #424242;width: 120px; } 
+      li > ul li a{width: 150px;margin: 0 0 0 5px;display:block;color: #fff;} 
+      li:hover > ul{display:block;width: 150px;top: 35px;}
+      li:hover:after{border-color: #fff transparent transparent transparent;}
+      .divider{border-right: 1px solid #BCBCBC;height: 23px;}
+      .flecha:after{content:"";position: absolute;top: 15px;left: 120px;width:0px;height:0px;border-style: solid;border-width: 5px;border-bottom-width: 5px;border-color: transparent transparent transparent #BCBCBC;}
+      .dropdown:after{content:"";position: absolute;top: 15px;width:0px;height:0px;border-style: solid;border-width: 4.3px;border-bottom-width:0px;border-color: #BCBCBC transparent transparent transparent;}
+      hr{display:none;}
+      .region:after{left: 51px;}
+      .actualidad:after{left: 78px;}
+      .opinion:after{left: 57px;}
+      .deportes:after{left: 66px;} 
+      .entretenimiento:after{left: 112px;} 
+
+      .dropdown{
+        span{height: 15px;width: 3px;position: absolute;top: 10px;left: 5px; }
+      }
+      
+      .region{ 
+        span{background-color: $region;}
+        ul li:hover > a{color: $region;} 
+      }
+      .actualidad {
+        span{background-color: $actualidad;}
+        ul li:hover > a{color: $actualidad;} 
+      }
+      .opinion {
+        span{background-color: $opinion;}
+        ul li:hover > a{color: $opinion;} 
+      }
+      .deportes {
+        span{background-color: $deportes;}
+        ul li:hover > a{color: $deportes;} 
+      }
+      .entretenimiento {
+        span{background-color: $entretenimiento;}
+        ul li:hover > a{color: $entretenimiento;} 
+      }
+
+      #redes_sociales{padding: 0;left: 110px;margin: 5px 0px;position: relative; width: 107px; float: left;
+        li{padding:0;width: 24px;height: 24px;margin: 0;list-style: none; float:left;position:relative;}
+        a{margin: 0; padding: 0px;}
+        a:hover{opacity: 0.7}
+        .facebook{
+          a{background: url("../images/iconos/redes_rojo.svg") -16px -9px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
+        }
+        .twitter{
+          a{background: url("../images/iconos/redes_rojo.svg") -43px -9px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
+        }
+        .instagram{
+          a{background: url("../images/iconos/redes_rojo.svg") -70px -9px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
+        }
+        .youtube{
+          a{background: url("../images/iconos/redes_rojo.svg") -96px -9px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
+        }
+      }
+ 
+/*
+      .home{display:none;}
+      .cucuta{width:60px;;}
+      .region{width:60px;;}
+      .judicial{width:65px;}
+      .frontera{width:70px;}
+      .actualidad{width:85px;}
+      .opinion{width:65px;}
+      .deportes{width:70px;}
+      .entretenimiento{width:120px;}
+      .servicios{width:70px;}
+      .participacion{width:95px;}
+      
+      .redes-sociales{width: 100px; height: 30px; position: relative; list-style: none; margin:0px; top:7px; left:0px; padding:0px; float:left;background:none;
+        a{margin: 0px;}
+        a:hover{opacity: 0.9;}
+        li.leaf{list-style: none; margin: 0px; padding: 0px;}
+        li:hover{background:none;}
+        .facebook{ 
+          a{background: url(../images/iconos/redes_rojo.svg) no-repeat -6px -32px/120px auto transparent;position: relative; width: 25px; height: 25px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+          a:hover{background: url(../images/iconos/redes_rojo.svg) no-repeat -6px -6px/120px auto transparent;}
+        }
+        .twitter{ 
+          a{background: url(../images/iconos/redes_rojo.svg) no-repeat -33px -32px/120px auto transparent;position: relative; width: 25px; height: 25px; float: left; text-indent: -9999px; transition:all 0.2s ease;}
+          a:hover{background: url(../images/iconos/redes_rojo.svg) no-repeat -33px -6px/120px auto transparent;}
+        }
+        .instagram{ 
+          a{background: url(../images/iconos/redes_rojo.svg) no-repeat -62px -32px/120px auto transparent;position: relative; width: 25px; height: 25px; float: left; text-indent: -9999px; transition:all 0.2s ease;}
+          a:hover{background: url(../images/iconos/redes_rojo.svg) no-repeat -62px -6px/120px auto transparent;}
+        }
+        .youtube{ 
+          a{background: url(../images/iconos/redes_rojo.svg) no-repeat -90px -32px/120px auto transparent;position: relative; width: 25px; height: 25px; float: left; text-indent: -9999px; transition:all 0.2s ease;}
+          a:hover{background: url(../images/iconos/redes_rojo.svg) no-repeat -90px -6px/120px auto transparent;}
+        }
+      }
+*/
+      //
+    }
+  }
+// SITE HEADER -----------------------------------------------------------------
+.dev{background:#000; width:100%; height:30px; color:#fff; float:left; position: fixed; top:100px; z-index:3;}
+.botonup {background:url(../images/iconos/botonup.svg) -1px 2px/53px auto no-repeat; width:50px; height:50px; display:none;cursor:pointer;position: fixed;bottom: 100px;right: 70px;z-index: 5;transition: all 0.5s ease-in-out;}
+#header{width:100%;
+        }
+#header_content{background:#BA2025;width:100%;padding:20px 0px;height:60px;position: relative;float: left;margin-bottom:3px;
+            .in{width:960px;padding:20px;margin:0 auto; background:#BA2025;padding:20px 0px;height:37px;position: relative;margin-bottom:3px;
+                  #block-block-1{margin-right:465px;float:left;}
+                  #block-block-1--2{margin-right:465px;float:left;}
+                  #logo{padding:0px; position: relative; width: 330px; height:80px; float:left; top: -20px; opacity: 1; transition: all 0.5s ease-in-out;
+                      h1 {background:url(../images/logo.svg) 0px -10px/330px auto no-repeat; height:70px; width:auto; display:block; text-indent:-9999px; margin: 0 auto;
+                          a {display:block; height:50px; text-indent:-9999px;}
+                          }
+                        }
+                  /*LOGIN BLOCK*/
+                  .login_block{display:none; opacity:0; background:#fff; width:200px; height:270px; position: absolute; z-index:2; border: 1px solid #E3E3E3;padding: 10px;z-index: 110;left: 630px; top:-20px;
+                  .flecha{background: url(../images/iconos/flecha_pico.svg) no-repeat 0px 0px/23px auto transparent;width: 23px;height: 12px;position: absolute;float: left;top: -10px;left:85px;}
+                  .titulo{background:#BA2025; padding:3px 5px; float:left; position: relative; text-align:left;color:#fff;font-size:14px; width:140px;  height: 20px;}
+                  .logoicon{width:40px;float:left; position: relative; height:40px;top:-8px;}
+                  #user-login-form{position: relative; float:left;
+                    .form-item-name{
+                    label{width:100%; height:20px; margin-bottom:3px; color:$estandar;font-size:14px; font-weight:300; text-align:center; }
+                    input{background:#F5F5F5; width:95%; height:20px;margin-bottom:3px; color:#BA2025;font-size:14px;margin:0 auto; border-radius:5px; box-shadow:none; border:1px solid $estandar;}
+                    }
+                  .form-item-pass{
+                    label{width:100%; height:20px; margin-bottom:3px; color:$estandar;font-size:14px; font-weight:300; text-align:center; }
+                    input{background:#F5F5F5; width:95%; height:20px;margin-bottom:3px; color:#BA2025;font-size:14px;margin:0 auto; border-radius:5px; box-shadow:none; border:1px solid $estandar;}
+                    }
+                  .item-list{font-size:14px; line-height:16px;
+                    li{list-style: none;margin:0px; padding:3px 0px; text-align:center;}
+                    .first a{color:#BA2025; text-decoration:none;}
+                    .last a{color:$estandar; text-decoration:none;}
+                    a:hover{text-decoration:underline;color:#BA2025;}
+                  }  
+                  #edit-actions{
+                    .form-submit{position: relative;border:1px solid $estandar;border-radius:3px;padding: 2px 5px;font-size: 12px;cursor: pointer;background:#BA2025;color: #fff;margin:0px 50px;}
+                  }    
+                  }
+                  #edit-submit-google{display:none;}
+                  }
+                  /*FIN LOGIN BLOCK*/
+
+                  
+                  #search-block-form--2{float:left; position: relative; width:150px;color:rbga(255,255,255,0.4);top:-20px; 
+                    input{color:rbga(255,255,255,0.4);}
+                    .form-text{background:rgba(255,255,255,0.7); color:#BF1D1E; border: 1px solid #ccc;font-size: 14px;border-radius: 8px;position: relative; float: left;padding:2px 10px;}
+                    .form-submit{background:url(../images/iconos/buscar.svg) 0px 6px/20px auto no-repeat;  width: 30px;height: 30px;float: left;position: absolute;left: 120px;text-indent: -9999px;top: -3px;border: none;}
+                                    }
+                  #search-block-form{float:left; position: relative; width:160px;color:rbga(255,255,255,0.4);top:-20px; 
+                    input{color:rbga(255,255,255,0.4);}
+                    .form-text{background:rgba(255,255,255,0.7); color:#BF1D1E; border: 1px solid #ccc;font-size: 14px;border-radius: 8px;position: relative; float: left;padding:2px 10px;}
+                    .form-submit{background:url(../images/iconos/buscar.svg) 0px 6px/20px auto no-repeat;  width: 30px;height: 30px;float: left;position: absolute;left: 120px;text-indent: -9999px;top: -3px;border: none;}
+                                    }
+                  .fecha{color:#fff; font-size:12px; float:right; position: relative;width:145px;height:30px;right:20px;top:-10px;
+                    .ciudad{text-align:right;float:right;position:relative;}
+                    .dia{float:right; position: relative;text-align:right;}
+                        }
+
+                }
+              }
+
+

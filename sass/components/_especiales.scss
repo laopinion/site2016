@@ -1,0 +1,657 @@
+// COPA AMERICA -----------------------------------------------------------------
+//HOME 
+#copa_america_home{width:960px;margin: 0px;float: left; position: relative; 
+    .header{
+        .left {background:url(../images/especiales/copa_america/left-right.svg) -537px 0px/610px auto no-repeat; height:55px; width:60px; display:block; text-indent:-9999px; float:left;text-indent:-9999px;}
+        .right {background:url(../images/especiales/copa_america/left-right.svg) -5px 0px/610px auto no-repeat; height:55px; width:60px; display:block; text-indent:-9999px; float:left;text-indent:-9999px;}
+        .logocopa{padding:0px; position: relative; width: 145px; height:50px; float: left; top: 0px; opacity: 1; transition: all 0.5s ease-in-out;
+            a {background:url(../images/especiales/copa_america/logocopaamerica.svg) -5px 0px/149px auto no-repeat; height:55px; width:auto; display:block; text-indent:-9999px; margin: 0 auto;}
+        }
+    }   .paises{width:672px; height:40px; position: relative; float:left; padding:7px 10px;
+            .pais{margin:0px 8px;
+                a{text-indent:-9999px; margin:0px; padding:0px;border:0px;height:40px; width:40px;float:left; position: relative; transition: all 0.2s ease-in-out;}
+                }
+            .chile{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                a{background:url(../images/especiales/copa_america/banderas2.svg) -10px -5px/610px auto no-repeat;}
+                a:hover{background-position: -10px -50px;}
+                }
+            .mexico{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                a{background:url(../images/especiales/copa_america/banderas2.svg) -60px -5px/610px auto no-repeat; }
+                a:hover{background-position: -60px -50px;}
+                }
+            .ecuador{ height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                a{background:url(../images/especiales/copa_america/banderas2.svg) -112px -5px/610px auto no-repeat;}
+                a:hover{background-position: -112px -50px;}
+                }
+            .bolivia{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                a{background:url(../images/especiales/copa_america/banderas2.svg) -162px -5px/610px auto no-repeat; }
+                a:hover{background-position: -162px -50px;}
+                }
+            .argentina{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                a{background:url(../images/especiales/copa_america/banderas2.svg) -212px -5px/610px auto no-repeat; }
+                a:hover{background-position: -212px -50px;}
+                }
+            .uruguay{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                a{background:url(../images/especiales/copa_america/banderas2.svg) -262px -5px/610px auto no-repeat; }
+                a:hover{background-position: -262px -50px;}
+                }
+            .paraguay{ height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                a{background:url(../images/especiales/copa_america/banderas2.svg) -313px -5px/610px auto no-repeat;}
+                a:hover{background-position: -313px -50px;}
+                }
+            .jamaica{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                a{background:url(../images/especiales/copa_america/banderas2.svg) -363px -5px/610px auto no-repeat; }
+                a:hover{background-position: -363px -50px;}
+                }
+            .brasil{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                a{background:url(../images/especiales/copa_america/banderas2.svg) -413px -5px/610px auto no-repeat; }
+                a:hover{background-position: -413px -50px;}
+                }
+            .colombia{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                a{background:url(../images/especiales/copa_america/banderas2.svg) -463px -5px/610px auto no-repeat; }
+                a:hover{background-position: -463px -50px;}
+                }
+            .peru{ height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                a{background:url(../images/especiales/copa_america/banderas2.svg) -513px -5px/610px auto no-repeat;}
+                a:hover{background-position: -513px -50px;}
+                }
+            .venezuela{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                a{background:url(../images/especiales/copa_america/banderas2.svg) -564px -5px/610px auto no-repeat; }
+                a:hover{background-position: -564px -50px;}
+                }
+        }
+    .contenido{border:1px solid $copaamerica;width:960px;margin: 0px;float: left; position: relative;margin:10px 0px 20px 0px;background:#fff;
+        //NOTA DESTACADA
+        .view-id-copa_america.view-display-id-block_4 {display: block;float:left; position: relative; width:640px;border-right:1px solid $copaamerica;
+            .views-row{display:inline-block; float:left;position: relative;}
+            .nota{width:640px; height:auto;float:left; position: relative;background:#fff; padding:0px;
+                .tipo{display:none;}
+                .icon_video{display:none;background: url(../images/iconos/icon_video.svg) 0px 0px/110px auto no-repeat;height: 70px;width: 110px;display: block;text-indent: -9999px;float: left;position: absolute;left: 270px;top: 85px;opacity:0.7; z-index: 1;}
+                .video{display:none; float:left; position: relative; overflow:hidden; width:640px; height:230px;
+                    img{width:640px; height:230px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .icon_galeria{display:none;background: url(../images/iconos/icon_galeria.svg) 0px 0px/110px auto no-repeat;height: 70px;width: 110px;display: block;text-indent: -9999px;float: left;position: absolute;left: 270px;top: 85px;opacity:0.7; z-index: 1;}    
+                .galeria{display:none; float:left; position: relative; overflow:hidden; width:640px; height:230px;
+                    img{width:640px; height:230px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .foto{display:block; float:left; position: relative; overflow:hidden; width:640px; height:230px;
+                    img{width:640px; height:230px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .info{width:620px; padding:10px; float:left; position: relative;background:#fff; height:auto;
+                    .titulo{float:left; position: relative; width:620px; height:auto; float:left; line-height:22px;margin:5px 0px 0px 0px; padding:5px 0px 10px 0px; border-bottom:1px solid $estandar;
+                        a{font-size: 24px; font-weight:600; text-decoration:none; color:$copaamerica;}
+                    }
+                    .resumen{font-size:15px;position:relative; float:left; color:#646464;  font-weight:300;}
+                }
+            }
+        }//FIN NOTA DESTACADA
+        .dos{background:#fff; width:319px; height:auto;position: relative; float:left;}
+        //NOTAS DERECHA
+        .view-id-copa_america.view-display-id-block_5 {display: block;float:left; position: relative; width:319px;
+            .views-row{display:inline-block; float:left;position: relative;padding: 10px 9px; width:140px;}
+            .views-row-last{margin-right:0px;}
+            .nota{width:140px; height:auto;float:left; position: relative;background:#fff; padding:0px;
+                .tipo{display:none;}
+                .icon_video{display:none; background: url(../images/iconos/icon_video.svg) 0px 0px/40px auto no-repeat;height: 30px;width: 40px;display: block;text-indent: -9999px;float: left;position: absolute;left: 90px;top: 45px;opacity: 0.7;z-index: 1;}    
+                .video{display:none; float:left; position: relative; overflow:hidden; width:140px; height:80px;
+                    img{width:140px; height:80px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .icon_galeria{display:none;background: url(../images/iconos/icon_galeria.svg) 0px 0px/40px auto no-repeat;height: 30px;width: 40px;display: block;text-indent: -9999px;float: left;position: absolute;left: 90px;top: 45px;opacity: 0.7;z-index: 1;}    
+                .galeria{display:none; float:left; position: relative; overflow:hidden; width:140px; height:80px;
+                    img{width:140px; height:80px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .foto{display:block; float:left; position: relative; overflow:hidden; width:140px; height:80px;
+                    img{width:140px; height:80px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .info{width:140px; padding:5px 0px 0px 0px; float:left; position: relative;background:#fff; height:auto;
+                    .titulo{float:left; position: relative; width:140px; height:auto; float:left; line-height:16px;margin:5px 0px 0px 0px; padding:5px 0px 0px 0px;
+                        a{font-size: 15px; font-weight:600; text-decoration:none; color:$copaamerica;}
+                    }
+                }
+            }
+        .mas{background:$copaamerica;width:299px; padding:0px 10px;float:left; position: relative;
+            a{text-decoration:none; border:none; color:#fff; text-transform:uppercase;font-size:12px; text-align:center;}
+            }
+        }//FIN NOTAS DERECHA
+    //PARTIDOS HOME
+    #block-block-72{width:319px;position: relative; height:150px; float: left;}
+    #block-block-73{width:319px;position: relative; height:150px; float: left;}
+    #partidos{width:319px;position: relative; height:150px; float: left;background: url(../images/especiales/copa_america/munecos.svg) 0px 25px/320px auto no-repeat #E10627;
+        h2{background:$copaamerica; width:280px; position: relative; margin:10px 20px 0px 20px; font-size:18px; text-transform:uppercase;float:left;
+            span{background:#fff; padding:1px 5px; color:$copaamerica;float:left;}
+            .triangulo{width: 0;height: 0;border-top: 25px solid #fff; border-right: 15px solid transparent;float:left;}
+        }
+        .partido{width:130px;float:left; position: relative; margin-left:20px;
+            .fecha{width:100%;position: relative; margin:0 auto; margin-top:10px;
+                .dia{background:#fff; color:#646464; font-size:10px; text-transform:uppercase;width:56px;float:left;padding:2px 0px 2px 5px;position: relative;}
+                .triangulo{width: 0;height: 0;border-top: 17px solid #fff; border-right: 8px solid transparent;float:left;  position: absolute;top: 0px;left: 61px;z-index: 1;}
+                .estadio{background:$copaamerica; color:#fff; font-size:10px; text-transform:uppercase;width:55px;float:left;padding:2px 4px 2px 10px;position: relative;}
+                }
+            .equipos{width:100%;position: relative; margin-top:10px; float:left;
+                .pais{
+                    a{text-indent:-9999px; margin:0px; padding:0px;border:0px;height:40px; width:40px;float:left; position: relative; transition: all 0.2s ease-in-out;}
+                    }
+                .chile{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -10px -5px/610px auto no-repeat;}
+                    a:hover{background-position: -10px -50px;}
+                }
+                .mexico{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -60px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -60px -50px;}
+                    }
+                .ecuador{ height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -112px -5px/610px auto no-repeat;}
+                    a:hover{background-position: -112px -50px;}
+                    }
+                .bolivia{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -162px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -162px -50px;}
+                    }
+                .argentina{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -212px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -212px -50px;}
+                    }
+                .uruguay{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -262px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -262px -50px;}
+                    }
+                .paraguay{ height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -313px -5px/610px auto no-repeat;}
+                    a:hover{background-position: -313px -50px;}
+                    }
+                .jamaica{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -363px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -363px -50px;}
+                    }
+                .brasil{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -413px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -413px -50px;}
+                    }
+                .colombia{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -463px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -463px -50px;}
+                    }
+                .peru{ height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -513px -5px/610px auto no-repeat;}
+                    a:hover{background-position: -513px -50px;}
+                    }
+                .venezuela{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -564px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -564px -50px;}
+                    }
+                .separador{width:50px; height:40px; position: relative;float:left;}
+                .versus{color:#fff;text-transform:uppercase; font-size:15px; position: absolute; float:left; width:40px; text-align:center;top:5px; left:45px;}
+                .hora{color:#fff; font-size:10px;position: absolute;float:left; width:40px; text-align:center; top:28px; left:45px;}
+                }
+            .marcador{width:120px; height:20px; float:left; position: relative;margin-left:10px;
+                .marcador_uno{color:#fff; width:40px; margin-right:10px; float:left;text-align:center;}
+                .marcador_dos{color:#fff; width:40px; margin-right:0px; float:left;text-align:center;}
+                .sep{color:#fff; width:10px; margin-right:10px; float:left;}
+            }
+
+            }    
+        }//FIN PARTIDOS HOME
+
+    }    
+}//FIN COPA AMERICA
+//FIN HOME 
+
+//BLOQUE HOME SIDEBAR
+#home{
+    .copa_america_detalle{
+        .view-id-copa_america.view-display-id-block_6{
+            .resumen{border-bottom:none;}
+        }
+        .view-id-copa_america.view-display-id-block_7{
+            .views-row{display:none;}
+        }
+    }
+}
+//FIN BLOQUE HOME SIDEBAR
+
+//DETALLE NOTAS
+.copa_america_detalle{border:1px solid $copaamerica; background:#fff; width:298px; height:auto; float:left; position: relative;
+    //NOTA GRANDE
+    .view-id-copa_america.view-display-id-block_6{width:300px;float:left; position: relative;height:auto; margin-bottom:0px;
+        .headercopa{height:70px; width:300px; display:block; text-indent:-9999px; float:left;
+                    a{background: url(../images/especiales/copa_america/header_notas.svg) -22px -11px/350px auto no-repeat;width: 300px;height: 70px;float:left;}
+                }
+            .nota{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+                    .tipo{display:none;}
+                    .icon_video{display:none;background: url(../images/iconos/icon_video.svg) 0px 0px/60px auto no-repeat;height: 40px;width: 60px;display: block;text-indent: -9999px;float: left;position: absolute;left: 220px;top: 125px; opacity:0.7; z-index: 1;}
+                    .video{display:none; float:left; position: relative; overflow:hidden; width:300px; height:190px;left:-10px;
+                        img{width:300px; height:190px;transition:all 0.2s ease;}
+                        img:hover{opacity:0.9; transition:all 0.2s ease;}
+                        a{border:none;}
+                    }
+                    .icon_galeria{display:none;background: url(../images/iconos/icon_galeria.svg) 0px 0px/60px auto no-repeat;height: 40px;width: 60px;display: block;text-indent: -9999px;float: left;position: absolute;left: 220px;top: 125px; opacity:0.7; z-index: 1;}    
+                    .galeria{display:none; float:left; position: relative; overflow:hidden; width:300px; height:190px;left:-10px;
+                        img{width:300px; height:190px;transition:all 0.2s ease;}
+                        img:hover{opacity:0.9; transition:all 0.2s ease;}
+                        a{border:none;}
+                    }
+                    .foto{display:block; float:left; position: relative; overflow:hidden; width:300px; height:190px;left:-10px;
+                        img{width:300px; height:190px;transition:all 0.2s ease;}
+                        img:hover{opacity:0.9; transition:all 0.2s ease;}
+                        a{border:none;}
+                    }
+                    .info{width:280px; padding:10px 0px; float:left; position: relative;background:#fff; height:auto;
+                        .titulo{float:left; position: relative; width:280px; height:auto; float:left; line-height:22px;padding:10px 0px 0px 0px; margin-bottom:0px;
+                            a{font-size: 20px; font-weight:600; text-decoration:none; color:$copaamerica;}
+                        }
+                        .seccion{font-size:15px;position:relative; float:left; 
+                            a{color:#646464; text-decoration:none;font-weight:600;}
+                            a:hover{text-decoration:underline;}
+                        }
+                        .sep{margin:0px 3px;color:#646464;position:relative; float:left;font-size:13px;}
+                        .fecha{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;margin-right:5px;}
+                        .hora{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;}
+                        .resumen{font-size:15px;position:relative; float:left; color:$copaamerica; font-weight:300;border-bottom:1px solid $copaamerica;padding-bottom:20px;}
+                    }
+                }
+        }//FIN NOTA GRANDE
+            //NOTAS PEQUEÑAS
+            .view-id-copa_america.view-display-id-block_7 {display: block;float:left; position: relative; width:300px;
+                .views-row{display:inline-block; float:left;position: relative;padding: 10px 9px; width:130px;}
+                .views-row-last{margin-right:0px;}
+                .nota{width:140px; height:auto;float:left; position: relative;background:#fff; padding:0px;
+                    .tipo{display:none;}
+                    .icon_video{display:none; background: url(../images/iconos/icon_video.svg) 0px 0px/40px auto no-repeat;height: 30px;width: 40px;display: block;text-indent: -9999px;float: left;position: absolute;left: 90px;top: 45px;opacity: 0.7;z-index: 1;}    
+                    .video{display:none; float:left; position: relative; overflow:hidden; width:130px; height:75px;
+                        img{width:130px; height:75px;transition:all 0.2s ease;}
+                        img:hover{opacity:0.9; transition:all 0.2s ease;}
+                        a{border:none;}
+                    }
+                    .icon_galeria{display:none;background: url(../images/iconos/icon_galeria.svg) 0px 0px/40px auto no-repeat;height: 30px;width: 40px;display: block;text-indent: -9999px;float: left;position: absolute;left: 90px;top: 45px;opacity: 0.7;z-index: 1;}    
+                    .galeria{display:none; float:left; position: relative; overflow:hidden; width:130px; height:75px;
+                        img{width:130px; height:75px;transition:all 0.2s ease;}
+                        img:hover{opacity:0.9; transition:all 0.2s ease;}
+                        a{border:none;}
+                    }
+                    .foto{display:block; float:left; position: relative; overflow:hidden; width:130px; height:75px;
+                        img{width:130px; height:75px;transition:all 0.2s ease;}
+                        img:hover{opacity:0.9; transition:all 0.2s ease;}
+                        a{border:none;}
+                    }
+                    .info{width:130px; padding:5px 0px 0px 0px; float:left; position: relative;background:#fff; height:auto;
+                        .titulo{float:left; position: relative; width:140px; height:auto; float:left; line-height:16px;margin:5px 0px 0px 0px; padding:5px 0px 0px 0px;
+                            a{font-size: 15px; font-weight:600; text-decoration:none; color:$copaamerica;}
+                        }
+                    }
+                }
+                .footercopa{ height:60px; width:300px; display:block; text-indent:-9999px; float:left;background:url(../images/especiales/copa_america/balon.svg) -10px -20px/320px auto no-repeat;}        
+            }//FIN NOTAS PEQUEÑAS
+}
+//FIN DETALLE NOTAS
+
+//SECCION COPA AMERICA
+#seccion{width: 100%;position: relative;height:auto; float:left;
+#seccion_content{width:960px;padding:20px;margin:0 auto; position: relative;
+    //Menu sección
+    /*
+    .menu_seccion{position: relative; float:left; width:100%;height:auto; margin-bottom:20px;
+        h1{font-size: 24px;color: #fff;text-transform: uppercase;height: auto;padding: 2px 0px 2px 20px;float: left;position: relative;font-weight: 300;margin: 0px;}
+        .cucuta{background:$cucuta;width:100%; height:auto; position: relative; float:left;
+            .submenu{display:none;}
+        }
+        .cúcuta{background:$cucuta;width:100%; height:auto; position: relative; float:left;
+            .submenu{display:none;}
+        }
+        .region{background:$region;width:100%; height:auto; position: relative; float:left;}
+        .región{background:$region;width:100%; height:auto; position: relative; float:left;}
+        .judicial{background:$judicial;width:100%; height:auto; position: relative; float:left;
+            .submenu{display:none;}
+        }
+        .frontera{background:$frontera;width:100%; height:auto; position: relative; float:left;
+            .submenu{display:none;}
+        }
+        .actualidad{background:$actualidad;width:100%; height:auto; position: relative; float:left;}
+        .opinion{background:$opinion;width:100%; height:auto; position: relative; float:left;}
+        .opinión{background:$opinion;width:100%; height:auto; position: relative; float:left;}
+        .deportes{background:$deportes;width:100%; height:auto; position: relative; float:left;}
+        .entretenimiento{background:$entretenimiento;width:100%; height:auto; position: relative; float:left;}
+        .servicios{background:$servicios;width:100%; height:auto; position: relative; float:left;
+            .submenu{display:none;}
+        }
+        .participacion{background:$participacion;width:100%; height:auto; position: relative; float:left;}
+        .participación{background:$participacion;width:100%; height:auto; position: relative; float:left;}
+        .multimedia{background:$multimedia;width:100%; height:auto; position: relative; float:left;}
+        .submenu{background:#D3D3D3; position: relative; float:left; width:100%;height:26px;
+            ul{display:inline-block;list-style:none;margin: 1px 0px;padding: 0px 15px;
+                li{width:auto; padding:0px 7px; border-right: 1px solid #646464; margin: 4px 0px; float:left; position: relative;
+                    a{color:#646464; text-decoration:none; font-weight: 300; font-size:12px; text-transform:uppercase;float:left;margin: 1px 0px;}
+                    a:hover{ text-decoration:underline;}
+                }//li
+                .first{border-left: none !important;}
+                .last{border-right: none !important;}
+            .active{
+                a{font-weight:600;}
+            }//active
+            }//ul
+        }//submenu
+    }//menu
+    */
+    #tabs{background-color: #FFF;border: 1px solid #DDD;padding: 10px;position: absolute;right: 10px;top: 43px;z-index: 3;
+        ul{border-bottom: none !important; padding: 10px !important; }
+        .primary li a{border-color: #bbb;border-style: solid solid none solid;border-width: 1px;height: auto;margin-right: 0.5em;padding: 0 1em;text-decoration: none;}
+        li a{background: none repeat scroll 0 0 #F8F8F8 !important;border: 1px solid #DDD !important;color: #666;display: inline-block;font: 10px/10px Arial;padding: 5px !important;text-align: center;text-transform: uppercase;}
+    }
+    .izquierda{width:640px; height:auto; margin-right:20px; float:left; position: relative;
+        /*linea*/
+        .linea{border-bottom: 1px solid $estandar; width:640px; float:left; position: relative;height:15px; margin-bottom: 20px;}
+        //Destacada
+        .view-id-copa_america.view-display-id-block {display: block;float:left; position: relative; margin:10px 0px;
+            .nota{border:1px solid #E8E7E8;width:640px; height:300px;float:left; position: relative;background:#fff; 
+                .tipo{display:none;}
+                .icon_video{display:none;background: url(../images/iconos/icon_video.svg) 0px 0px/110px auto no-repeat;height: 70px;width: 110px;display: block;text-indent: -9999px;float: left;position: absolute;left: 170px;top: 105px;opacity:0.7; z-index: 1;}
+                .video{display:none; float:left; position: relative; overflow:hidden; width:425px; height:300px;
+                    img{width:425px; height:300px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .icon_galeria{display:none;background: url(../images/iconos/icon_galeria.svg) 0px 0px/110px auto no-repeat;height: 70px;width: 110px;display: block;text-indent: -9999px;float: left;position: absolute;left: 170px;top: 105px;opacity:0.7; z-index: 1;}    
+                .galeria{display:none; float:left; position: relative; overflow:hidden; width:425px; height:300px;
+                    img{width:425px; height:300px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .foto{display:block; float:left; position: relative; overflow:hidden; width:425px; height:300px;
+                    img{width:425px; height:300px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .info{width:195px; padding:10px; float:left; position: relative;height:280px;
+                    .titulo{float:left; position: relative; width:195px; height:auto; float:left; line-height:22px;padding:10px 0px; border-bottom:1px solid #E8E7E8; margin-bottom:0px;
+                        a{font-size: 24px; font-weight:600; text-decoration:none; color:#101314;}
+                    }
+                    .seccion{font-size:15px;position:relative; float:left; 
+                        a{color:#646464; text-decoration:none;font-weight:600;}
+                        a:hover{text-decoration:underline;}
+                    }
+                    .sep{margin:0px 3px;color:#646464;position:relative; float:left;font-size:13px;}
+                    .fecha{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;margin-right:5px;}
+                    .hora{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;}
+                    .resumen{font-size:15px;position:relative; float:left; color:#646464;  font-weight:300;}
+                }
+            }
+
+        }//FIN destacada
+
+        //Lista
+        .view-id-copa_america.view-display-id-block_1 {display: block;float:left; position: relative; width:640px;
+            .views-row{display:inline-block;}
+            .views-row-odd{margin:0px 20px 20px 0px; float:left; position: relative;}
+            .views-row-even{margin:0px 0px 20px 0px; float:left; position: relative;}
+            .notaL{border:1px solid #E8E7E8;width:308px; height:auto;float:left; position: relative;background:#fff; padding:0px;
+                .tipo{display:none;}
+                .icon_video{display:none;background: url(../images/iconos/icon_video.svg) 0px 0px/60px auto no-repeat;height: 40px;width: 60px;display: block;text-indent: -9999px;float: left;position: absolute;left: 230px;top: 135px; opacity:0.7; z-index: 1;}
+                .video{display:none; float:left; position: relative; overflow:hidden; width:308px; height:190px;
+                    img{width:308px; height:190px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .icon_galeria{display:none;background: url(../images/iconos/icon_galeria.svg) 0px 0px/60px auto no-repeat;height: 40px;width: 60px;display: block;text-indent: -9999px;float: left;position: absolute;left: 230px;top: 135px; opacity:0.7; z-index: 1;}    
+                .galeria{display:none; float:left; position: relative; overflow:hidden; width:308px; height:190px;
+                    img{width:308px; height:190px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .foto{display:block; float:left; position: relative; overflow:hidden; width:308px; height:190px;
+                    img{width:308px; height:190px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .info{width:288px; padding:10px; float:left; position: relative;background:#fff; height:auto;
+                    .titulo{float:left; position: relative; width:288px; height:auto; float:left; line-height:22px;margin:5px 0px 0px 0px; padding:5px 0px 10px 0px; border-bottom:1px solid $estandar;
+                        a{font-size: 20px; font-weight:600; text-decoration:none; color:$copaamerica;}
+                    }
+                    .seccion{font-size:15px;position:relative; float:left; width:288px; margin:0px;
+                        a{color:$copaamerica; text-decoration:none;font-weight:600;}
+                        a:hover{text-decoration:underline;}
+                    }
+                    .sep{margin:0px 3px;color:#646464;position:relative; float:left;font-size:13px;}
+                    .fecha{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;margin-right:5px;}
+                    .hora{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;}
+                    .resumen{font-size:15px;position:relative; float:left; color:$copaamerica; font-weight:300;}
+                }
+            }
+
+        }//FIN lista 
+
+        //Otras 
+        .view-id-copa_america.view-display-id-block_2 {display: block;float:left; position: relative; width:640px;
+            .views-row{display:inline-block;}
+            .views-row-odd{margin:0px 20px 20px 0px; float:left; position: relative;}
+            .views-row-even{margin:0px 0px 20px 0px; float:left; position: relative;}
+            .nota{border:1px solid #E8E7E8;width:308px; height:100px;float:left; position: relative;
+                .tipo{display:none;}
+                .icon_video{display:none; background: url(../images/iconos/icon_video.svg) 0px 0px/40px auto no-repeat;height: 30px;width: 40px;display: block;text-indent: -9999px;float: left;position: absolute;left: 60px;top: 65px;opacity: 0.7;z-index: 1;}    
+                .video{display:none; float:left; position: relative; overflow:hidden; width:108px; height:100px;
+                    img{width:108px; height:100px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .icon_galeria{display:none; background: url(../images/iconos/icon_galeria.svg) 0px 0px/40px auto no-repeat;height: 30px;width: 40px;display: block;text-indent: -9999px;float: left;position: absolute;left: 60px;top: 65px;opacity: 0.7;z-index: 1;}    
+                .galeria{display:none; float:left; position: relative; overflow:hidden; width:108px; height:100px;
+                    img{width:108px; height:100px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .foto{display:block; float:left; position: relative; overflow:hidden; width:108px; height:100px;
+                    img{width:108px; height:100px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .info{width:180px; padding:10px; float:left; position: relative;background:#fff; height:80px;
+                    .titulo{float:left; position: relative; width:180px; height:auto; float:left; line-height:15px;padding:10px 0px 0px 0px; margin-bottom:0px;
+                        a{font-size: 17px; font-weight:600; text-decoration:none; color:$copaamerica;}
+                    }
+                    .seccion{font-size:15px;position:relative; float:left; 
+                        a{color:$copaamerica; text-decoration:none;font-weight:600;}
+                        a:hover{text-decoration:underline;}
+                    }
+                    .sep{margin:0px 3px;color:#646464;position:relative; float:left;font-size:13px;}
+                    .fecha{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;margin-right:5px;}
+                    .hora{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;}
+                    .resumen{font-size:15px;position:relative; float:left; color:$copaamerica;  font-weight:300;}
+                }
+            }
+        }//FIN Otras         
+//FIN SECCION COPA AMERICA
+}
+}
+}
+.derecha{
+    //PARTIDOS 
+    #block-block-72{width:300px;position: relative; height:150px; float: left; margin-top:10px;}
+    #block-block-73{width:300px;position: relative; height:150px; float: left; margin-top:10px;}
+    #partidos{width:300px;position: relative; height:150px; float: left;background: url(../images/especiales/copa_america/munecos.svg) 0px 25px/320px auto no-repeat #E10627;
+        h2{background:$copaamerica; width:260px; position: relative; margin:10px 20px 0px 20px; font-size:18px; text-transform:uppercase;float:left;
+            span{background:#fff; padding:1px 5px; color:$copaamerica;float:left;}
+            .triangulo{width: 0;height: 0;border-top: 25px solid #fff; border-right: 15px solid transparent;float:left;}
+        }
+        .partido{width:120px;float:left; position: relative; margin-left:20px;
+            .fecha{width:100%;position: relative; margin:0 auto; margin-top:10px;
+                .dia{background:#fff; color:#646464; font-size:9px; text-transform:uppercase;width:52px;float:left;padding:2px 0px 2px 3px;position: relative;}
+                .triangulo{width: 0;height: 0;border-top: 17px solid #fff; border-right: 8px solid transparent;float:left;  position: absolute;top: 0px;left: 55px;z-index: 1;}
+                .estadio{background:$copaamerica; color:#fff; font-size:9px; text-transform:uppercase;width:55px;float:left;padding:2px 4px 2px 6px;position: relative;}
+                }
+            .equipos{width:100%;position: relative; margin-top:10px; float:left;
+                .pais{
+                    a{text-indent:-9999px; margin:0px; padding:0px;border:0px;height:40px; width:40px;float:left; position: relative; transition: all 0.2s ease-in-out;}
+                    }
+                .chile{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -10px -5px/610px auto no-repeat;}
+                    a:hover{background-position: -10px -50px;}
+                }
+                .mexico{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -60px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -60px -50px;}
+                    }
+                .ecuador{ height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -112px -5px/610px auto no-repeat;}
+                    a:hover{background-position: -112px -50px;}
+                    }
+                .bolivia{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -162px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -162px -50px;}
+                    }
+                .argentina{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -212px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -212px -50px;}
+                    }
+                .uruguay{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -262px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -262px -50px;}
+                    }
+                .paraguay{ height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -313px -5px/610px auto no-repeat;}
+                    a:hover{background-position: -313px -50px;}
+                    }
+                .jamaica{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -363px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -363px -50px;}
+                    }
+                .brasil{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -413px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -413px -50px;}
+                    }
+                .colombia{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -463px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -463px -50px;}
+                    }
+                .peru{ height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -513px -5px/610px auto no-repeat;}
+                    a:hover{background-position: -513px -50px;}
+                    }
+                .venezuela{height:40px; width:40px; display:block; text-indent:-9999px; float:left;
+                    a{background:url(../images/especiales/copa_america/banderas.svg) -564px -5px/610px auto no-repeat; }
+                    a:hover{background-position: -564px -50px;}
+                    }
+                .separador{width:40px; height:40px; position: relative;float:left;}
+                .versus{color:#fff;text-transform:uppercase; font-size:15px; position: absolute; float:left; width:30px; text-align:center;top:5px; left:45px;}
+                .hora{color:#fff; font-size:10px;position: absolute;float:left; width:40px; text-align:center; top:28px; left:45px;}
+                }
+            .marcador{width:100px; height:20px; float:left; position: relative;margin-left:10px;
+                .marcador_uno{color:#fff; width:40px; margin-right:10px; float:left;text-align:center;}
+                .marcador_dos{color:#fff; width:30px; margin-right:0px; float:left;text-align:center;}
+                .sep{color:#fff; width:10px; margin-right:10px; float:left;}
+            }
+
+            }    
+        }//FIN PARTIDOS
+}
+
+
+
+//ELECCIONES 2015
+#seccion{
+#seccion_content{
+        /*ESPECIAL ELECCIONES*/
+        /*notas*/
+        .view-id-secciones_especiales.view-display-id-block_11 {display: block;float:left; position: relative; width:640px;overflow:hidden;
+            .views-row{margin:0px 20px 20px 0px; float:left; position: relative; display:inline-block;}
+            .views-row-3, .views-row-6, .views-row-9, .views-row-12, .views-row-15, .views-row-18, .views-row-21, .views-row-24, .views-row-27, .views-row-30{margin:0px 0px 20px 0px; float:left; position: relative;}
+            .nota{border:1px solid #E8E7E8;width:198px; height:auto;float:left; position: relative;
+                .tipo{display:none;}
+                .icon_video{display:none;background: url(../images/iconos/icon_video.svg) 0px 0px/50px auto no-repeat;height: 35px;width: 50px;display: block;text-indent: -9999px;float: left;position: absolute;left: 140px;top: 65px; opacity:0.7; z-index: 1;}
+                .video{display:none; float:left; position: relative; overflow:hidden;width:198px; height:110px;
+                    img{width:198px; height:110px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .icon_galeria{display:none;background: url(../images/iconos/icon_galeria.svg) 0px 0px/50px auto no-repeat;height: 35px;width: 50px;display: block;text-indent: -9999px;float: left;position: absolute;left: 140px;top: 65px; opacity:0.7; z-index: 1;}    
+                .galeria{display:none; float:left; position: relative; overflow:hidden; width:198px; height:110px;
+                    img{width:198px; height:110px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .foto{display:block; float:left; position: relative; overflow:hidden;width:198px; height:110px;
+                    img{width:198px; height:110px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .info{width:178px; padding:10px; float:left; position: relative;background:#fff; height:110px;
+                    .titulo{float:left; position: relative; width:180px; height:auto; float:left; line-height:15px;padding:10px 0px 0px 0px; margin-bottom:0px;
+                        a{font-size: 20px; font-weight:600; text-decoration:none; color:#101314;}
+                    }
+                    .seccion{font-size:14px;position:relative; float:left; 
+                        a{color:#646464; text-decoration:none;font-weight:600;}
+                        a:hover{text-decoration:underline;}
+                    }
+                    .sep{margin:0px 3px;color:#646464;position:relative; float:left;font-size:13px;}
+                    .fecha{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;margin-right:5px;}
+                    .hora{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;}
+                    .resumen{font-size:15px;position:relative; float:left; color:#646464;  font-weight:300;}
+                }
+            }
+        }/*FIN notas*/
+        //Candidatos ALCALDIA
+        .view-id-secciones_especiales.view-display-id-block_12{width:300px;float:left; position: relative;height:auto; border:1px solid #E8E7E8; background:#fff;margin-bottom:20px;
+            h2{font-size:15px; color:#fff; text-transform:uppercase; width:280px; border-bottom:2px solid $actualidad;  padding: 5px 10px 0px 10px;margin: 0px 0px 10px 0px; background:$actualidad; font-weight:600;}
+            .linea{}
+            .candidato{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+                .info{border-bottom:1px solid #E8E7E8; width:260px; padding:10px; float:left; position: relative;background:#fff; height:auto;
+                    .titulo{float:left; position: relative; width:155px; height:auto; float:left; line-height:15px;padding:15px 0px 0px 0px; margin-bottom:0px;
+                        a{font-size: 18px; font-weight:600; text-decoration:none; color:#101314;}
+                    }
+                    .autor{background:$actualidad; float:left; position: relative; width:auto; height:20px; float:left; line-height:15px;top:7px;
+                        a{font-size: 13px; font-weight:300; text-decoration:none; color:#333; padding:3px 7px; text-align:center; float:left;}
+                    }
+                    .foto{display: block;float: left;position: relative;overflow: hidden;width: 85px;height: 85px;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;border-color: $actualidad;background: #fff;border: 3px solid $actualidad;margin-right: 5px;
+                        img{width:82px; height:79px; top:10px; position:relative; transition:all 0.2s ease;}
+                        a{border:none;}
+                     }
+                    .resumen{line-height: 16px;font-size: 14px;} 
+                }//Fin info
+            }//Fin candidato
+        }//FIN candidatos ALCALDIA
+        //Candidatos GOBERNACION
+        .view-id-secciones_especiales.view-display-id-block_13{width:300px;float:left; position: relative;height:auto; border:1px solid #E8E7E8; background:#fff;margin-bottom:20px;
+            h2{font-size:15px; color:#fff; text-transform:uppercase; width:280px; border-bottom:2px solid $actualidad;  padding: 5px 10px 0px 10px;margin: 0px 0px 10px 0px; background:$actualidad; font-weight:600;}
+            .linea{}
+            .candidato{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+                .info{border-bottom:1px solid #E8E7E8; width:260px; padding:10px; float:left; position: relative;background:#fff; height:auto;
+                    .titulo{float:left; position: relative; width:155px; height:auto; float:left; line-height:15px;padding:15px 0px 0px 0px; margin-bottom:0px;
+                        a{font-size: 18px; font-weight:600; text-decoration:none; color:#101314;}
+                    }
+                    .autor{background:$actualidad; float:left; position: relative; width:auto; height:20px; float:left; line-height:15px;top:7px;
+                        a{font-size: 13px; font-weight:300; text-decoration:none; color:#333; padding:3px 7px; text-align:center; float:left;}
+                    }
+                    .foto{display: block;float: left;position: relative;overflow: hidden;width: 85px;height: 85px;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;border-color: $actualidad;background: #fff;border: 3px solid $actualidad;margin-right: 5px;
+                        img{width:82px; height:79px; top:10px; position:relative; transition:all 0.2s ease;}
+                        a{border:none;}
+                     }
+                }//Fin info
+            }//Fin candidato
+        }//FIN candidatos GOBERNACION
+
+}/*FIN Seccion content*/
+}/*FIN Seccion*/
+.header_elecciones{width:100%; height:110px; position: relative; float:left;margin:0px; padding:0px;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2dcdc+0,ffffff+40,ffffff+61,e2dcdc+100 */
+            background: rgb(226,220,220); /* Old browsers */
+            background: -moz-linear-gradient(left,  rgba(226,220,220,1) 0%, rgba(255,255,255,1) 40%, rgba(255,255,255,1) 61%, rgba(226,220,220,1) 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(226,220,220,1)), color-stop(40%,rgba(255,255,255,1)), color-stop(61%,rgba(255,255,255,1)), color-stop(100%,rgba(226,220,220,1))); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(left,  rgba(226,220,220,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 61%,rgba(226,220,220,1) 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(left,  rgba(226,220,220,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 61%,rgba(226,220,220,1) 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(left,  rgba(226,220,220,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 61%,rgba(226,220,220,1) 100%); /* IE10+ */
+            background: linear-gradient(to right,  rgba(226,220,220,1) 0%,rgba(255,255,255,1) 40%,rgba(255,255,255,1) 61%,rgba(226,220,220,1) 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2dcdc', endColorstr='#e2dcdc',GradientType=1 ); /* IE6-9 */
+            .logo_elecciones{background: url(../images/especiales/elecciones2015/E1.png) 0px 0px/960px auto no-repeat;height: 90px;width: 960px;display: block;margin:0 auto;margin-top:13px;}
+}
+
+
+//FIN ELECCIONES 2015

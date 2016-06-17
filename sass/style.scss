@@ -1,0 +1,50 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+@import "base/base";
+
+// BASE STYLES -----------------------------------------------------------------
+@import "base/fonts";
+@import "base/general";
+// LAYOUT ----------------------------------------------------------------------
+
+
+
+// COMPONENT STYLES ------------------------------------------------------------
+@import "components/header";
+@import "components/footer";
+@import "components/pautas";
+//@import "components/menus";
+@import "components/home";
+//@import "components/sidebar";
+@import "components/secciones";
+@import "components/notas";
+@import "components/generales";
+//@import "components/galeria";
+//@import "components/caricatura";
+//@import "components/columna";
+//@import "components/columnista";
+//@import "components/candidato";
+//@import "components/autor";
+//@import "components/formularios";
+//@import "components/especiales";
+//@import "components/aperturas";
+//@import "components/consulta";
+//@import "components/buscador";
+@import "components/media";
+//@import "components/elecciones";
+
+/*
+@import "components/home";
+@import "components/secciones";
+@import "components/secciones_especiales";
+@import "components/notas";
+@import "components/galerias";
+@import "components/videos";
+@import "components/audios";
+@import "components/buscador";
+@import "components/popuploginRegister";
+*/
+// COMPATIBILIDAD CON IE 
+@import "compatibility/global-ie8"; 
+@import "http://static.laopinion.com.co/modules/contextual/contextual.css";
+

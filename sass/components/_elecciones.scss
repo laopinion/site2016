@@ -1,0 +1,481 @@
+// ELECCIONES REGIONALES -----------------------------------------------------------------
+//HOME 
+#elecciones{width:960px;margin: 0px;float: left; position: relative; background:#fff; border:1px solid #E8E7E8;margin-bottom:20px;
+    .head_elecciones{background: url(../images/especiales/elecciones2015/E1.png) 0px 0px/960px auto no-repeat;height: 90px;width: 960px;display: block;margin: 0 auto;margin-top: 13px;}
+    .info{padding:20px; width:920px;position: relative; float:left;
+        .top{width:920px; float:left; height:30px; position: relative;
+            .boletin{background:#656565; width:108px; position: relative; float:left;padding:3px 5px;color:#fff;}
+            .hora{background:#E0222A; width:106px; position: relative; float:left;padding:3px 5px;color:#fff;left:-23px;}
+            .triangulo_r{width: 0;height: 0;border-bottom: 26px solid #656565; border-right: 25px solid transparent;float:left; margin-right:2px;}
+            .triangulo_l {width: 0;height: 0;border-top: 26px solid #E0222A; border-left: 25px solid transparent;float:left; position:relative; left:-23px;}
+        }
+        .patios, .chinacota, .zulia, .ocana, .pamplona, .santander, .tibu, .villa{
+            h2{font-size:20px !important;line-height:22px !important;
+                span{font-size:26px !important; }
+            }
+        }
+        .alcaldia{width:920px; margin:10px 0px; position: relative;float:left;
+            h2{font-size:34px;line-height:36px;  color:#656565; font-weight:400; position: relative; width:920px;height:40px; text-align:left; margin:0px 0px 10px 0px;
+                span{color:#E0222A; font-weight:600; float:left;margin-right:10px;font-size:34px; }
+            }
+            .candidatos{position: relative;float:left;
+                .candidato{width:215px;height:90px; position: relative;float:left;margin:0px 20px 20px 0px;
+                    .foto{display: block;float:left;position: relative;overflow: hidden;width: 85px;height: 85px;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;border-color: #DDD;background: #fff;border: 3px solid #DDD;margin-right: 5px;}
+                    .info{width:119px;float:left; position: relative; height:auto;padding:15px 0px;
+                        .nombre{float:left; width:120px; position: relative; height:20px; font-weight:600; font-size:13px;color: #656565;}
+                        .color{float:left;background:#9A9A9A; height:15px;z-index: 1;position: relative;}
+                        .num{float:left; position: relative; width:115px;
+                            .votos{float:left; width:auto; position: relative; height:20px; font-weight:600; font-size:16px;color: #656565;}
+                            .sep{color:#E0222A; position: relative; float:left; margin:0px 5px;}
+                            .porcentaje{float:left; width:auto; position: relative; height:20px; font-weight:600; font-size:16px;color: #656565;}
+                        }
+                        .barra{float:left; position: absolute; top:35px; left:0px;background:#F2F2F2; height:15px; display:block; width:100%;animation: 2s gris ease;-moz-animation: 2s gris ease;-webkit-animation: 2s gris ease;
+                        }
+                        @keyframes gris {from { width: 0%; } to { width: 100%; }}
+                        @-moz-keyframes gris {from { width: 0%; }to { width: 100%; }}
+                        @-webkit-keyframes gris {from { width: 0%; }to { width: 100%; }}
+                        .barra_0{width:0%; margin-right:10px;animation: 3s porcentaje5 ease;-moz-animation: 4s porcentaje5 ease;-webkit-animation: 4s porcentaje5 ease; transition:all 4s ease;}
+                        .barra_1{width:1%;margin-right:10px;animation: 4s porcentaje5 ease;-moz-animation: 4s porcentaje5 ease;-webkit-animation: 4s porcentaje5 ease; transition:all 4s ease;}
+                        .barra_2, .barra_3, .barra_4, .barra_5{width:5%;animation: 4s porcentaje5 ease;-moz-animation: 4s porcentaje5 ease;-webkit-animation: 4s porcentaje5 ease; transition:all 4s ease;}
+                        .barra_6, .barra_7, .barra_8, .barra_9, .barra_10{width:10%;animation: 4s porcentaje10 ease;-moz-animation: 4s porcentaje10 ease;-webkit-animation: 4s porcentaje10 ease; transition:all 4s ease;}
+                        .barra_11, .barra_12, .barra_13, .barra_14, .barra_15{width:15%;animation: 4s porcentaje15 ease;-moz-animation: 4s porcentaje15 ease;-webkit-animation: 4s porcentaje15 ease; transition:all 4s ease;}
+                        .barra_16, .barra_17, .barra_18, .barra_19, .barra_20{width:20%;animation: 4s porcentaje20 ease;-moz-animation: 4s porcentaje20 ease;-webkit-animation: 4s porcentaje20 ease; transition:all 4s ease;}
+                        .barra_21, .barra_22, .barra_23, .barra_24, .barra_25{width:25%;animation: 4s porcentaje25 ease;-moz-animation: 4s porcentaje25 ease;-webkit-animation: 4s porcentaje25 ease; transition:all 4s ease;}
+                        .barra_26, .barra_27, .barra_28, .barra_29, .barra_30{width:30%;animation: 4s porcentaje30 ease;-moz-animation: 4s porcentaje30 ease;-webkit-animation: 4s porcentaje30 ease; transition:all 4s ease;}
+                        .barra_31, .barra_32, .barra_33, .barra_34, .barra_35{width:35%;animation: 4s porcentaje35 ease;-moz-animation: 4s porcentaje35 ease;-webkit-animation: 4s porcentaje35 ease; transition:all 4s ease;}
+                        .barra_36, .barra_37, .barra_38, .barra_39, .barra_40{width:40%;animation: 4s porcentaje40 ease;-moz-animation: 4s porcentaje40 ease;-webkit-animation: 4s porcentaje40 ease; transition:all 4s ease;}
+                        .barra_41, .barra_42, .barra_43, .barra_44, .barra_45{width:45%;animation: 4s porcentaje45 ease;-moz-animation: 4s porcentaje45 ease;-webkit-animation: 4s porcentaje45 ease; transition:all 4s ease;}
+                        .barra_46, .barra_47, .barra_48, .barra_49, .barra_50{width:50%;animation: 4s porcentaje50 ease;-moz-animation: 4s porcentaje50 ease;-webkit-animation: 4s porcentaje50 ease; transition:all 4s ease;}
+                        .barra_51, .barra_52, .barra_53, .barra_54, .barra_55{width:55%;animation: 4s porcentaje55 ease;-moz-animation: 4s porcentaje55 ease;-webkit-animation: 4s porcentaje55 ease; transition:all 4s ease;}
+                        .barra_56, .barra_57, .barra_58, .barra_59, .barra_60{width:60%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_61, .barra_62, .barra_63, .barra_64, .barra_65{width:65%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_66, .barra_67, .barra_68, .barra_69, .barra_70{width:70%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_71, .barra_72, .barra_73, .barra_74, .barra_75{width:75%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_76, .barra_77, .barra_78, .barra_79, .barra_80{width:80%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_81, .barra_82, .barra_83, .barra_84, .barra_85{width:85%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_86, .barra_87, .barra_88, .barra_89, .barra_90{width:90%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_91, .barra_92, .barra_93, .barra_94, .barra_95{width:95%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_96, .barra_97, .barra_98, .barra_99, .barra_100{width:100%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        //5%
+                        @keyframes porcentaje5 {from { width: 0%; }to { width: 5%; }}
+                        @-moz-keyframes porcentaje5 {from { width: 0%; }to { width: 5%; }}
+                        @-webkit-keyframes porcentaje5 {from { width: 0%; }to { width: 5%; }}
+                        //10%
+                        @keyframes porcentaje10 {from { width: 0%; }to { width: 10%; }}
+                        @-moz-keyframes porcentaje10 {from { width: 0%; }to { width: 10%; }}
+                        @-webkit-keyframes porcentaje10 {from { width: 0%; }to { width: 10%; }}
+                        //15%
+                        @keyframes porcentaje15 {from { width: 0%; }to { width: 15%; }}
+                        @-moz-keyframes porcentaje15 {from { width: 0%; }to { width: 15%; }}
+                        @-webkit-keyframes porcentaje15 {from { width: 0%; }to { width: 15%; }}
+                        //20%
+                        @keyframes porcentaje20 {from { width: 0%; }to { width: 20%; }}
+                        @-moz-keyframes porcentaje20 {from { width: 0%; }to { width: 20% }}
+                        @-webkit-keyframes porcentaje20 {from { width: 0%; }to { width: 20% }}
+                        //25%
+                        @keyframes porcentaje25 {from { width: 0%; }to { width: 25%; }}
+                        @-moz-keyframes porcentaje25 {from { width: 0%; }to { width: 25% }}
+                        @-webkit-keyframes porcentaje25 {from { width: 0%; }to { width: 25% }}
+                        //30%
+                        @keyframes porcentaje30 {from { width: 0%; }to { width: 30%; }}
+                        @-moz-keyframes porcentaje30 {from { width: 0%; }to { width: 30% }}
+                        @-webkit-keyframes porcentaje30 {from { width: 0%; }to { width: 30% }}
+                        //35%
+                        @keyframes porcentaje35 {from { width: 0%; }to { width: 35%; }}
+                        @-moz-keyframes porcentaje35 {from { width: 0%; }to { width: 35% }}
+                        @-webkit-keyframes porcentaje35 {from { width: 0%; }to { width: 35% }}
+                        //40%
+                        @keyframes porcentaje40 {from { width: 0%; }to { width: 40%; }}
+                        @-moz-keyframes porcentaje40 {from { width: 0%; }to { width: 40% }}
+                        @-webkit-keyframes porcentaje40 {from { width: 0%; }to { width: 40% }}
+                        //45%
+                        @keyframes porcentaje45 {from { width: 0%; }to { width: 45%; }}
+                        @-moz-keyframes porcentaje45 {from { width: 0%; }to { width: 45% }}
+                        @-webkit-keyframes porcentaje45 {from { width: 0%; }to { width: 45% }}
+                        //50%
+                        @keyframes porcentaje50 {from { width: 0%; }to { width: 50%; }}
+                        @-moz-keyframes porcentaje50 {from { width: 0%; }to { width:50% }}
+                        @-webkit-keyframes porcentaje50 {from { width: 0%; }to { width:50% }}
+                        //55%
+                        @keyframes porcentaje55 {from { width: 0%; }to { width: 55%; }}
+                        @-moz-keyframes porcentaje55 {from { width: 0%; }to { width:55% }}
+                        @-webkit-keyframes porcentaje55 {from { width: 0%; }to { width:55% }}
+                    }
+                }
+                #cesar{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/styles/100x73/public/2015/10/07/candidato/cesar_rojas_-_cucuta.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #rafaelr{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/styles/100x73/public/2015/10/07/candidato/rafael_humberto_romero_-_cucuta.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #wilfredog{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/styles/100x73/public/2015/10/07/candidato/grajales-_cucuta.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #charlest{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/styles/100x73/public/2015/10/07/candidato/charles_torres_-_cucuta.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #jorgea{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/styles/100x73/public/2015/10/07/candidato/jorge_acevedo_-_cucuta.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #carlosl{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/styles/100x73/public/2015/10/07/candidato/carlos_luna_-_cucuta.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #jairoc{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/styles/100x73/public/2015/10/07/candidato/jairo_cristo_-_cucuta.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #blancoc{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/22/candidato/voto-en-blanco.png) no-repeat 0px 10px/85px auto #E7E7E7;}
+                }                
+                #jairoc{margin:0px 0px 20px 0px;}
+                #blancoc{margin:0px 0px 20px 0px;}
+            }
+        }
+
+        .gobernacion{width:920px; margin:10px 0px; position: relative;float:left;
+            h2{font-size:34px; color:#656565; font-weight:400; position: relative; width:920px;height:40px; text-align:left; margin:0px 0px 10px 0px;
+                span{color:#E0222A; font-weight:600; float:left;margin-right:10px;}
+            }
+            .candidatos{position: relative;float:left;
+                .candidato{width:215px;height:90px; position: relative;float:left;margin:0px 20px 20px 0px;
+                    .foto{display: block;float:left;position: relative;overflow: hidden;width: 85px;height: 85px;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;border-color: #DDD;background: #fff;border: 3px solid #DDD;margin-right: 5px;}
+                    .info{width:119px;float:left; position: relative; height:auto;padding:15px 0px;
+                        .nombre{float:left; width:120px; position: relative; height:20px; font-weight:600; font-size:13px;color: #656565;}
+                        .color{float:left;background:#9A9A9A; height:15px;z-index: 1;position: relative;}
+                        .num{float:left; position: relative; width:115px;
+                            .votos{float:left; width:auto; position: relative; height:20px; font-weight:600; font-size:16px;color: #656565;}
+                            .sep{color:#E0222A; position: relative; float:left; margin:0px 5px;}
+                            .porcentaje{float:left; width:auto; position: relative; height:20px; font-weight:600; font-size:16px;color: #656565;}
+                        }
+                        .barra{float:left; position: absolute; top:35px; left:0px;background:#F2F2F2; height:15px; display:block; width:100%;animation: 2s gris ease;-moz-animation: 2s gris ease;-webkit-animation: 2s gris ease;
+                        }
+                        @keyframes gris {from { width: 0%; } to { width: 100%; }}
+                        @-moz-keyframes gris {from { width: 0%; }to { width: 100%; }}
+                        @-webkit-keyframes gris {from { width: 0%; }to { width: 100%; }}
+                        .barra_0{width:0%; margin-right:10px;animation: 4s porcentaje5 ease;-moz-animation: 4s porcentaje5 ease;-webkit-animation: 4s porcentaje5 ease; transition:all 4s ease;}
+                        .barra_1{width:1%;margin-right:10px;animation: 4s porcentaje5 ease;-moz-animation: 4s porcentaje5 ease;-webkit-animation: 4s porcentaje5 ease; transition:all 4s ease;}
+                        .barra_2, .barra_3, .barra_4, .barra_5{width:5%;animation: 4s porcentaje5 ease;-moz-animation: 4s porcentaje5 ease;-webkit-animation: 4s porcentaje5 ease; transition:all 4s ease;}
+                        .barra_6, .barra_7, .barra_8, .barra_9, .barra_10{width:10%;animation: 4s porcentaje10 ease;-moz-animation: 4s porcentaje10 ease;-webkit-animation: 4s porcentaje10 ease; transition:all 4s ease;}
+                        .barra_11, .barra_12, .barra_13, .barra_14, .barra_15{width:15%;animation: 4s porcentaje15 ease;-moz-animation: 4s porcentaje15 ease;-webkit-animation: 4s porcentaje15 ease; transition:all 4s ease;}
+                        .barra_16, .barra_17, .barra_18, .barra_19, .barra_20{width:20%;animation: 4s porcentaje20 ease;-moz-animation: 4s porcentaje20 ease;-webkit-animation: 4s porcentaje20 ease; transition:all 4s ease;}
+                        .barra_21, .barra_22, .barra_23, .barra_24, .barra_25{width:25%;animation: 4s porcentaje25 ease;-moz-animation: 4s porcentaje25 ease;-webkit-animation: 4s porcentaje25 ease; transition:all 4s ease;}
+                        .barra_26, .barra_27, .barra_28, .barra_29, .barra_30{width:30%;animation: 4s porcentaje30 ease;-moz-animation: 4s porcentaje30 ease;-webkit-animation: 4s porcentaje30 ease; transition:all 4s ease;}
+                        .barra_31, .barra_32, .barra_33, .barra_34, .barra_35{width:35%;animation: 4s porcentaje35 ease;-moz-animation: 4s porcentaje35 ease;-webkit-animation: 4s porcentaje35 ease; transition:all 4s ease;}
+                        .barra_36, .barra_37, .barra_38, .barra_39, .barra_40{width:40%;animation: 4s porcentaje40 ease;-moz-animation: 4s porcentaje40 ease;-webkit-animation: 4s porcentaje40 ease; transition:all 4s ease;}
+                        .barra_41, .barra_42, .barra_43, .barra_44, .barra_45{width:45%;animation: 4s porcentaje45 ease;-moz-animation: 4s porcentaje45 ease;-webkit-animation: 4s porcentaje45 ease; transition:all 4s ease;}
+                        .barra_46, .barra_47, .barra_48, .barra_49, .barra_50{width:50%;animation: 4s porcentaje50 ease;-moz-animation: 4s porcentaje50 ease;-webkit-animation: 4s porcentaje50 ease; transition:all 4s ease;}
+                        .barra_51, .barra_52, .barra_53, .barra_54, .barra_55{width:55%;animation: 4s porcentaje55 ease;-moz-animation: 4s porcentaje55 ease;-webkit-animation: 4s porcentaje55 ease; transition:all 4s ease;}
+                        .barra_56, .barra_57, .barra_58, .barra_59, .barra_60{width:60%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_61, .barra_62, .barra_63, .barra_64, .barra_65{width:65%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_66, .barra_67, .barra_68, .barra_69, .barra_70{width:70%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_71, .barra_72, .barra_73, .barra_74, .barra_75{width:75%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_76, .barra_77, .barra_78, .barra_79, .barra_80{width:80%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_81, .barra_82, .barra_83, .barra_84, .barra_85{width:85%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_86, .barra_87, .barra_88, .barra_89, .barra_90{width:90%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_91, .barra_92, .barra_93, .barra_94, .barra_95{width:95%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        .barra_96, .barra_97, .barra_98, .barra_99, .barra_100{width:100%;animation: 4s porcentaje ease;-moz-animation: 4s porcentaje ease;-webkit-animation: 4s porcentaje ease; transition:all 4s ease;}
+                        //5%
+                        @keyframes porcentaje5 {from { width: 0%; }to { width: 5%; }}
+                        @-moz-keyframes porcentaje5 {from { width: 0%; }to { width: 5%; }}
+                        @-webkit-keyframes porcentaje5 {from { width: 0%; }to { width: 5%; }}
+                        //10%
+                        @keyframes porcentaje10 {from { width: 0%; }to { width: 10%; }}
+                        @-moz-keyframes porcentaje10 {from { width: 0%; }to { width: 10%; }}
+                        @-webkit-keyframes porcentaje10 {from { width: 0%; }to { width: 10%; }}
+                        //15%
+                        @keyframes porcentaje15 {from { width: 0%; }to { width: 15%; }}
+                        @-moz-keyframes porcentaje15 {from { width: 0%; }to { width: 15%; }}
+                        @-webkit-keyframes porcentaje15 {from { width: 0%; }to { width: 15%; }}
+                        //20%
+                        @keyframes porcentaje20 {from { width: 0%; }to { width: 20%; }}
+                        @-moz-keyframes porcentaje20 {from { width: 0%; }to { width: 20% }}
+                        @-webkit-keyframes porcentaje20 {from { width: 0%; }to { width: 20% }}
+                        //25%
+                        @keyframes porcentaje25 {from { width: 0%; }to { width: 25%; }}
+                        @-moz-keyframes porcentaje25 {from { width: 0%; }to { width: 25% }}
+                        @-webkit-keyframes porcentaje25 {from { width: 0%; }to { width: 25% }}
+                        //30%
+                        @keyframes porcentaje30 {from { width: 0%; }to { width: 30%; }}
+                        @-moz-keyframes porcentaje30 {from { width: 0%; }to { width: 30% }}
+                        @-webkit-keyframes porcentaje30 {from { width: 0%; }to { width: 30% }}
+                        //35%
+                        @keyframes porcentaje35 {from { width: 0%; }to { width: 35%; }}
+                        @-moz-keyframes porcentaje35 {from { width: 0%; }to { width: 35% }}
+                        @-webkit-keyframes porcentaje35 {from { width: 0%; }to { width: 35% }}
+                        //40%
+                        @keyframes porcentaje40 {from { width: 0%; }to { width: 40%; }}
+                        @-moz-keyframes porcentaje40 {from { width: 0%; }to { width: 40% }}
+                        @-webkit-keyframes porcentaje40 {from { width: 0%; }to { width: 40% }}
+                        //45%
+                        @keyframes porcentaje45 {from { width: 0%; }to { width: 45%; }}
+                        @-moz-keyframes porcentaje45 {from { width: 0%; }to { width: 45% }}
+                        @-webkit-keyframes porcentaje45 {from { width: 0%; }to { width: 45% }}
+                        //50%
+                        @keyframes porcentaje50 {from { width: 0%; }to { width: 50%; }}
+                        @-moz-keyframes porcentaje50 {from { width: 0%; }to { width:50% }}
+                        @-webkit-keyframes porcentaje50 {from { width: 0%; }to { width:50% }}
+                        //55%
+                        @keyframes porcentaje55 {from { width: 0%; }to { width: 55%; }}
+                        @-moz-keyframes porcentaje55 {from { width: 0%; }to { width:55% }}
+                        @-webkit-keyframes porcentaje55 {from { width: 0%; }to { width:55% }}
+                    }
+                }
+                #juang{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/styles/100x73/public/2015/10/09/candidato/garcia-herreros.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #giovanniv{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/styles/100x73/public/2015/10/23/candidato/giovanni_villamizar_laguado.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #millar{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/styles/100x73/public/2015/10/09/candidato/mila.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #judithm{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/styles/100x73/public/2015/10/09/candidato/judith-maldonado.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #williamv{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/styles/100x73/public/2015/10/09/candidato/william-villamizar.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #blancog{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/22/candidato/voto-en-blanco.png) no-repeat 0px 10px/85px auto #E7E7E7;}
+                }                
+                #judithm{margin:0px 0px 20px 0px;}
+                #blancog{margin:0px 0px 20px 0px;}
+            }
+        }
+
+        .alcaldia{
+                #diegog_lospatios{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/09/28/candidato/diego_gonzalez.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #juilog_lospatios{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/09/28/candidato/julio_cesar_galvis.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #hernandoc_lospatios{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/09/28/candidato/hernando_celis.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #oscard_chinacota{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/oscar.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #jhonp_chinacota{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/alezander.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #sadyb_chinacota{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/berbesi.png) no-repeat 0px 7px/85px auto transparent;}
+                }
+                #josefa_chinacota{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/josefa.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #cristianr_chinacota{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/mauricio.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #nubiar_chinacota{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/nubia.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #adolfol_chinacota{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/adolfo.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #fabiof_zulia{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/19/candidato/fabio_florez.png) no-repeat 0px 10px/85px auto transparent;}
+                } 
+                #elkin_zulia{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/19/candidato/elkin_caballero_ramirez.png) no-repeat 0px 10px/85px auto transparent;}
+                } 
+                #germano_zulia{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/19/candidato/german_ortega.png) no-repeat 0px 10px/85px auto transparent;}
+                } 
+                #leonarda_zulia{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/19/candidato/leonarda_orellanos.png) no-repeat 0px 10px/85px auto transparent;}
+                } 
+                #miriamp_ocana{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/09/29/candidato/miriam_prado.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #albeiros_ocana{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/albeiro.jpg) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #yuric_ocana{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/yury.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #juanr_ocana{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/juanmanuel.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #rafaels_ocana{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/09/29/candidato/rafael_garcia_rondon.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #emilios_ocana{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/09/29/candidato/emilio_sanchez.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #jesusg_ocana{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/jesus1.jpg) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #samirc_ocana{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/samir.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #marcose_pamplona{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/09/29/candidato/marcos_enciso.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #humbertop_pamplona{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/09/29/candidato/humberto_pisciotti.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #juanc_pamplona{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/09/29/candidato/juan_carlos_camargo.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #ronaldc_pamplona{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/09/29/candidato/ronald_contreras.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #javierc_pamplona{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/09/29/candidato/alejandro_cardenas.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #jairol_pamplona{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/09/28/candidato/jairo_lizcano.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #rubenc_pamplona{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/09/29/candidato/ruben_caicedo.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #neils_santander{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/19/candidato/neils_becerra_arias.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #henryv_santander{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/19/candidato/henry_valero.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #yeand_santander{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/19/candidato/yean_carlos_duarte_moreno.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #guillermol_tibu{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/guillermo_0.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #manuelj_tibu{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/manuel.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #jesuse_tibu{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/26/candidato/jose.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #bernardob_tibu{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/bernardo.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #manuelj_tibu{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/manuel.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #josep_tibu{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/joseeduardo.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #pedrot_tibu{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/pedro.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #mauriciof_villa{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/franco.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #peper_villa{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/pepe.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #carlosh_villa{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/hernandez.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+                #pmarino_villa{
+                    .foto{background: url(http://static.laopinion.com.co/sites/default/files/2015/10/25/candidato/pablo_0.png) no-repeat 0px 10px/85px auto transparent;}
+                }
+
+                #josefa_chinacota{margin:0px 0px 20px 0px;}
+                #leonardo_zulia{margin:0px 0px 20px 0px;}
+                #samirc_ocana{margin:0px 0px 20px 0px;}
+                #pmarino_villa{margin:0px 0px 20px 0px;}
+                #javierc_pamplona{margin:0px 0px 20px 0px;}
+                #guillermol_tibu{margin:0px 0px 20px 0px;}
+                #yuric_ocana{margin:0px 0px 20px 0px;}
+                #adolfol_chinacota{margin:0px 0px 20px 0px;}
+                #leonarda_zulia{margin:0px 0px 20px 0px;}
+                #emilios_ocana{margin:0px 0px 20px 0px;}
+
+        }
+
+
+        .bottom{width:920px; position: relative; float:left; 
+            .item{background:#F2F2F2;padding:5px 0px;float:left;width:190px;margin-right:0px;height:40px;font-weight:600; font-size:13px;color: #656565; text-align:center; left:-20px; position: relative;
+                h2{text-align:center;float:left; width:190px; position: relative; height:20px; font-weight:300; font-size:13px;color: #656565;margin:2px 0px;}
+            }
+            .item_last{margin-right:0px;}
+            .potencial{left:0px;}
+            .total{left:-10px;background: url(../images/especiales/elecciones2015/icono_personas.svg) 35px 20px/30px auto no-repeat #F2F2F2;}
+            .participacion{left:-20px}
+            .mesas{left:-30px;width:194px;background: url(../images/especiales/elecciones2015/icono_mesa.svg) 35px 20px/30px auto no-repeat #F2F2F2;}
+            .triangulo_r{width: 0;height: 0;border-bottom: 50px solid #F2F2F2; border-right: 25px solid transparent;float:left; position: relative; margin-right:2px; left:-20px;}
+            .triangulo_l {width: 0;height: 0;border-top: 50px solid #F2F2F2; border-left: 25px solid transparent;float:left; position:relative; left:-20px;}
+            .triangulo_r1{width: 0;height: 0;border-bottom: 50px solid #F2F2F2; border-right: 25px solid transparent;float:left; position: relative; margin-right:2px; left:0px;}
+            .triangulo_r2{width: 0;height: 0;border-bottom: 50px solid #F2F2F2; border-right: 25px solid transparent;float:left; position: relative; margin-right:2px; left:-10px;}
+            .triangulo_r3{width: 0;height: 0;border-bottom: 50px solid #F2F2F2; border-right: 25px solid transparent;float:left; position: relative; margin-right:2px; left:-20px;}
+            .triangulo_l2 {width: 0;height: 0;border-top: 50px solid #F2F2F2; border-left: 25px solid transparent;float:left; position:relative; left:-10px;}
+            .triangulo_l3 {width: 0;height: 0;border-top: 50px solid #F2F2F2; border-left: 25px solid transparent;float:left; position:relative; left:-20px;}
+            .triangulo_l4 {width: 0;height: 0;border-top: 50px solid #F2F2F2; border-left: 25px solid transparent;float:left; position:relative; left:-30px;}
+        }
+        .ir{width:920px; float:left; position: relative;height:auto;margin-top:10px;
+            a{background: #E0222A;width: 260px;padding: 2px 5px;font-weight: 400;float: right;color: #fff;text-align: center; text-transform:uppercase; text-decoration:none;}
+        }
+    }
+}
+//FIN ELECCIONES REGIONALES
+
+
+@media screen and (max-width: 990px){
+    #elecciones{width:640px;
+        .head_elecciones {width:620px; background: url(../images/especiales/elecciones2015/E2.png) 0px 0px/620px auto no-repeat;}
+        .info{width:600px;
+            .top{width:600px;}
+            .alcaldia, .gobernacion{width:600px;
+                h2{width:600px;}
+                .candidatos{width:600px;
+                    .candidato{margin:0px 80px 20px 0px;}
+                }
+            }
+
+            .bottom{width:470px;
+                /*
+                .triangulo_l2{left:40px;}
+                .triangulo_r2{left:40px;}
+                .triangulo_l3{top:10px;left:0px;}
+                .triangulo_r3{top:10px;left:0px;}
+                .triangulo_l4{top:10px;left:20px;}
+                */
+                .triangulo_l1, .triangulo_l2, .triangulo_l3, .triangulo_l4{display:none;}
+                .triangulo_r1, .triangulo_r2, .triangulo_r3, .triangulo_r4{display:none;}
+
+                .participacion{left:0px; top:10px;}
+                .total{left:120px;}
+                .mesas{top:10px; left:120px;}
+            }
+            .ir{width:600px;margin-top:30px;}
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px){
+    #elecciones{width:300px;
+        .head_elecciones {width:280px; background: url(../images/especiales/elecciones2015/E3.png) 0px 0px/280px auto no-repeat;}
+        .info{width:260px;
+            .top{width:260px;
+                .hora{padding: 5px 5px;left: -23px;font-size: 12px; width:80px;}
+            }
+            .alcaldia, .gobernacion{width:260px;
+                h2{width:260px;}
+                .candidatos{width:260px;
+                    .candidato{margin:0px 0px 20px 0px;}
+                }
+            }
+
+            .bottom{width:240px; height:310px;
+                /*
+                .triangulo_l2{display:none;}
+                .triangulo_r2{left:0px;top:10px;}
+                .triangulo_l3{display:none;}
+                .triangulo_r3{left:0px;top:10px;}
+                .triangulo_l4{display:none;}
+                */
+                .potencial{left:30px; }
+                .participacion{left:30px; top:40px;}
+                .total{left:30px; top:20px;}
+                .mesas{left:30px; top:60px;}
+
+            }
+            .ir{width:260px;margin-top:30px;}
+        }
+    }
+
+}
