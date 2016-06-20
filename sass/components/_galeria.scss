@@ -24,51 +24,6 @@
         }
     }//Fin contenido
 
-    .center{width:690px; position:relative; float: left;
-        //ETIQUETAS Y COMPARTIR
-        .barra{background-color: #f1f1f1; position:relative; float:left; width:100%;padding: 5px 0px;
-            .etiquetas{font-weight:600; margin-bottom:0px; margin-left: 17px; 
-                span{line-height:2;float:left; position: relative; width:60px;}
-                a{line-height:2;font-size:13px; color:$gris; text-decoration:none;font-weight:300;font-size:14px; float:left; margin-right:10px; position: relative;padding:3px 0px;}
-                a:hover{text-decoration:underline;}
-            }//FIN ETIQUETAS
-            .compartirbarra{float:right;right: 0px;position:relative; display:inline-block; vertical-align:middle;transition:all 0.5s ease; 
-                .redes_sociales{margin:0px;position: relative;float:left;width:auto;padding:0px;right:10px;
-                    li{list-style:none; float:left; width: 30px;padding: 0px;display: inline-block;vertical-align: middle;height:30px; cursor:pointer;margin:0px;}
-                    .fb{ 
-                        .st_facebook_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -34px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
-                    }
-                    .tw{ 
-                        .st_twitter_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -60px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
-                    }
-                    .go{ 
-                        .st_googleplus_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -86px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
-                    }
-                    .pin{ 
-                        .st_pinterest_large{background: url(../images/iconos/redes_nota.svg) no-repeat -12px -113px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
-                    }
-                    .wp{
-                        .st_whatsapp_large{background: url(../images/movil/whatsapp.svg) no-repeat -6px 0px/41px auto transparent;position: relative; width: 40px; height: 40px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
-                    }
-                }
-            }//FIN COMPARTIR
-        }//FIN ETIQUETAS Y COMPARTIR
-        
-        .texto{margin-top:0px; font-size:16px;position:relative; float:left; color:#646464;font-weight:300;width:690px;
-            h3{font-size:18px;color:#646464;font-weight:600;}
-            p{margin-bottom:15px; max-width:690px;
-                img{max-width: 690px; height:auto; float:left;margin:10px 10px; position: relative;left:-10px;}
-                }
-            strong{font-weight:600;}
-            a{color:#DB0E24;text-decoration:none;}
-            a:hover{text-decoration:underline;}
-            .twitter-tweet{max-width:690px;}
-            img{max-width:690px;}
-            iframe{max-width:680px;}
-            .instagram-media{max-width:690px;}
-        }//Fin texto
-    }
-
         /* .recomendada{display:none; position:fixed; bottom: 250px;right: 0px;z-index: 5;transition: all 0.5s ease-in-out;
             .flecha{background: url(../images/iconos/flecha_recomendada.svg) no-repeat -2px 0px/57px auto transparent;width: 40px;height: 50px;position: absolute;float:left;top: 30px;right:10px;z-index:2;}
             .view-id-detalles.view-display-id-block_4 {display: block;float:left; position: relative; width:340px;
@@ -108,7 +63,34 @@
         } *///FIN Recomendada
 
     .izq{width: 690px;margin-right: 15px;float: left;position: relative;height: auto;
-
+         //ETIQUETAS Y COMPARTIR
+        .barra{background-color: #f1f1f1; position:relative; float:left; width:100%;padding: 5px 0px;
+            .etiquetas{font-weight:600; margin-bottom:0px; margin-left: 17px; 
+                span{line-height:2;float:left; position: relative; width:60px;}
+                a{line-height:2;font-size:13px; color:$gris; text-decoration:none;font-weight:300;font-size:14px; float:left; margin-right:10px; position: relative;padding:3px 0px;}
+                a:hover{text-decoration:underline;}
+            }//FIN ETIQUETAS
+            .compartirbarra{float:right;right: 0px;position:relative; display:inline-block; vertical-align:middle;transition:all 0.5s ease; 
+                .redes_sociales{margin:0px;position: relative;float:left;width:auto;padding:0px;right:10px;
+                    li{list-style:none; float:left; width: 30px;padding: 0px;display: inline-block;vertical-align: middle;height:30px; cursor:pointer;margin:0px;}
+                    .fb{ 
+                        .st_facebook_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -34px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                    }
+                    .tw{ 
+                        .st_twitter_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -60px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                    }
+                    .go{ 
+                        .st_googleplus_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -86px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                    }
+                    .pin{ 
+                        .st_pinterest_large{background: url(../images/iconos/redes_nota.svg) no-repeat -12px -113px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                    }
+                    .wp{
+                        .st_whatsapp_large{background: url(../images/movil/whatsapp.svg) no-repeat -6px 0px/41px auto transparent;position: relative; width: 40px; height: 40px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                    }
+                }
+            }//FIN COMPARTIR
+        }//FIN ETIQUETAS Y COMPARTIR
         /*COMENTARIOS*/
         .comentarios{width: 95%; height:auto; margin-right:20px; float:left; position: relative;margin-bottom:20px;
             .color{height: 10px; width: 25px;float: left;position: relative;text-indent: -9999px;background-color: $comentarios;margin-top: 6px;margin-right: 5px;}
@@ -133,7 +115,7 @@
         }
         //FIN TABOOLA
         /*MAS GALERIAS*/
-        .mas_galerias{
+        /* .mas_galerias{
              h2{font-size:21px; color:$estandar; text-transform:uppercase; width:145px; padding:0px 0px;margin:0px 0px 10px 0px; float:left;}
             .linea{border-bottom: 2px solid $estandar; width:495px; float:left; position: relative;height:15px; margin-bottom: 20px;}
             .paginador {position: relative;float: left;display: inline-block;width: 70px;transition: all 0.7s ease-in-out;
@@ -164,7 +146,25 @@
                         .resumen{font-size:15px;position:relative; float:left; color:#fff; font-weight:300;}
                     }
                 }
-        }/*FIN MAS GALERIAS*/
+        } *//*FIN MAS GALERIAS*/
+        .view-id-detalle{width: 690px;height: auto;float: left;position: relative;margin-bottom: 10px;padding: 10px 0px;overflow: hidden;left: 0px;
+            .views-row{margin-bottom: 20px;float: left;width: 207px;height: 150px;margin-right: 20px;
+                .field-content{height: auto;float: left;position: relative;width: 200px;
+                    .info_galeria{top: 60px;position: absolute;float: left;bottom: 5px;left: 0px;height: auto;width: 200px;padding: 5px;z-index: 1;
+                        .seccion{width: 220px;padding: 0px;height: 11px;margin: 0px;float: left;
+                            .color{width: 25px; height: 10px; background-color: transparent; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
+                            a{color: #fff;text-shadow: 1px 1px #000;text-decoration: none;text-transform: uppercase;font-size: 13px;float: left;padding: 0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;width: 180px
+                            }
+                        }
+                        .titulo{float: left;position: relative;width: 200px;height: auto;line-height: 20px;padding: 10px 0px 0px 0px;
+                                //float: left;position: relative;top: 139px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;width: 200px;padding: 0 2px;color:#fff; z-index:1;
+                            a{text-decoration:none; font-size:18px; color:#fff; font-weight:500;text-shadow: 1px 1px #000;}
+                        }
+                        .imagen{width: 245px;height: auto;float: left;position: relative;cursor: pointer;}
+                    }
+                }
+            }
+        }
     }/*FIN izq*/
-    .der{top: -252px;width: 300px;float: left;position: relative;height: auto;background-color: #f1f1f1;}
+    .der{width: 300px;float: left;position: relative;height: auto;background-color: #f1f1f1;}
 }/*FIN Galeria*/
