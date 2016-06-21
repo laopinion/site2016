@@ -1035,8 +1035,38 @@ $(document).ready(function(){
 
 //FIN SIDEBAR
 
-
-
+//COLOR MAS GALERIAS
+  $(".view-id-detalle .views-row").each(function(){
+    var seccionL = $(this).find(".field-content .seccion a").html();
+    if(seccionL == "Cúcuta" || seccionL == "Memorias" || seccionL == "Por los barrios"){
+      $(this).find(".field-content .seccion .color").css({background:"#BA2025"}); 
+    }else
+    if(seccionL == "Región" || seccionL == "Pamplona" || seccionL == "Ocaña"){
+      $(this).find(".field-content .seccion .color").css({background:"#F9D821"}); 
+    }else
+    if(seccionL == "Judicial"){
+      $(this).find(".field-content .seccion .color").css({background:"#F87917"}); 
+    }else
+    if(seccionL == "Frontera"){
+      $(this).find(".field-content .seccion .color").css({background:"#89C33F"}); 
+    }else
+    if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+      $(this).find(".field-content .seccion .color").css({background:"#3D9E04"}); 
+    }else
+    if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
+      $(this).find(".field-content .seccion .color").css({background:"#BFD63E"}); 
+    }else
+    if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+      $(this).find(".field-content .seccion .color").css({background:"#3FA6F2"}); 
+    }else
+    if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+      $(this).find(".field-content .seccion .color").css({background:"#8B7AB5"}); 
+    }else
+    if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
+      $(this).find(".field-content .seccion .color").css({background:"#C60B77"}); 
+    }
+  });
+  //FIN COLOR MAS GALERIAS
 
 
 

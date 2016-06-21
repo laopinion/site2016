@@ -26,7 +26,7 @@
       
       ?>  
   <!-- INICIO SLIDER -->
-      <div id="slider" style="position: relative; top: 0px; left: -20px; width:1006px;height: 660px; background: #333; overflow: hidden;">
+      <div id="slider" style="">
 
             <!-- Loading Screen -->
             <div u="loading" style="position: absolute; top: 0px; left: 0px;">
@@ -41,8 +41,7 @@
                 </div>
             </div>
 
-
-            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1006px; height: 540px; overflow: hidden;">
+            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1063px; height: 540px; overflow: hidden;">
                   <?php 
                     if (!empty($node->field_imagenes)) {   
                       $i=0;
@@ -55,8 +54,8 @@
                         print "<div class=credito><span>  /  Foto:   </span>".render($content['field_imagenes'][$i]['#item']['alt'])."</div>";
                         print "</div>";
                         print "
-                            <img u=image src='".base_path()."sites/default/files".$foto."' alt='".render($content['field_imagenes'][$i]['#item']['alt'])."' width='1006px' height='540'/>
-                            <img u=image src='".base_path()."sites/default/files".$foto."' alt='".render($content['field_imagenes'][$i]['#item']['alt'])."' width='1006px' height='540'/>
+                            <img u=image src='".base_path()."sites/default/files".$foto."' alt='".render($content['field_imagenes'][$i]['#item']['alt'])."' width='1063; height='540'/>
+                            <img u=image src='".base_path()."sites/default/files".$foto."' alt='".render($content['field_imagenes'][$i]['#item']['alt'])."' width='1063; height='540'/>
                             <img u=thumb src='".base_path()."sites/default/files/styles/thumbnail/public".$foto."' alt='".render($content['field_imagenes'][$i]['#item']['alt'])."' width='120' height='80' />
                             </div>";
                           $i++;
@@ -242,15 +241,15 @@
         ?>
         <?php print "<div class=texto>".render($content['body'])."</div>"; ?>
        <div class="comentarios">
-          <h2>Comentarios</h2>
           <div class="linea"></div>
+          <div class="color"></div><h2>Comentarios</h2>
           <div class="bloque">
             <?php include("disqus.php"); ?>
           </div>
         </div>
 
         <div class="mas_galerias">
-        <!--Más galerias--><div class="mas_galerias"><h2>Más galerias</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block'); ?><!--FIN Más galerias-->
+        <!--Más galerias--><div class="mas_galerias"><h2><div class="color"></div>+ GALERIAS</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block'); ?><!--FIN Más galerias-->
         </div>    
     </div> <!--Fin izquierdo-->
 
