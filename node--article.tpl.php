@@ -1,14 +1,13 @@
 <!--Contenido-->
 <div id="nota">
   <!--ANUNCIO 1000x30--><div class="pauta p1000x30"><?php $block =block_load('block',71); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div><!--FIN ANUNCIO 1000x30-->
-  <div class="especial_movil"><?php include("especiales/300.html"); ?></div>
   <div class="izq">
     <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); print drupal_render(_block_get_renderable_array(_block_render_blocks(array($taxonomy_menu_block))));?><!--FIN seccion-->
        <?php include("compartir.tpl.php"); ?>
        <?php include("recomendada.tpl.php"); ?>
        <?php include("recomendada_movil.tpl.php"); ?>
     <div class="contenido">
-    <div class="color"></div>
+      <div class="color"></div>
       <?php 
       print "<div class=seccion>".render($content['field_seccion'])."</div>";
       print "<div class=sep> - </div>";
@@ -58,13 +57,7 @@
     <div class="comentarios">
       <div class="linea"></div>
       <div class="color"></div><h2>Comentarios</h2>
-      <div class="bloque">
-            <?php include("disqus.php"); ?>
-    <!--
-        <?php // $DisqusBlock = block_load('disqus', 'disqus_comments');     
-       // $DisqusBlockOutput = drupal_render(_block_get_renderable_array(_block_render_blocks(array($DisqusBlock))));       
-      //  print $DisqusBlockOutput; ?>  -->
-      </div>
+      <div class="bloque"><?php include("disqus.php"); ?></div>
     </div>
     <!--TABOOLA-->
     <div id="taboola-below-article-thumbnails"></div>
