@@ -788,33 +788,33 @@ $(document).ready(function(){
 //NOTAS
   
   //COLOR SECCION
-  var seccion = $("#nota .contenido .seccion .field .field-items a").html();
+  var seccion = $(".contenido .seccion a").html();
   if(seccion == "Cúcuta" || seccion == "Memorias" || seccion == "Por los barrios"){
-    $("#nota .contenido .color").css({background:"#BA2025"}); 
+    $(".contenido .color").css({background:"#BA2025"}); 
   }else
   if(seccion == "Región" || seccion == "Pamplona" || seccion == "Ocaña"){
-    $("#nota .contenido .color").css({background:"#F9D821"}); 
+    $(".contenido .color").css({background:"#F9D821"}); 
   }else
   if(seccion == "Judicial"){
-    $("#nota .contenido .color").css({background:"#F87917"}); 
+    $(".contenido .color").css({background:"#F87917"}); 
   }else
   if(seccion == "Frontera"){
-    $("#nota .contenido .color").css({background:"#89C33F"}); 
+    $(".contenido .color").css({background:"#89C33F"}); 
   }else
   if(seccion == "Actualidad" || seccion == "Economía" || seccion == "Política" || seccion == "Colombia" || seccion == "Venezuela" || seccion == "Mundo"){
-    $("#nota .contenido .color").css({background:"#3D9E04"}); 
+    $(".contenido .color").css({background:"#3D9E04"}); 
   }else
   if(seccion == "Opinión" || seccion == "Editorial" || seccion == "Columnistas" || seccion == "Caricatura"){
-    $("#nota .contenido .color").css({background:"#BFD63E"}); 
+    $(".contenido .color").css({background:"#BFD63E"}); 
   }else
   if(seccion == "Deportes" || seccion == "Cúcuta deportivo" || seccion == "Fútbol" || seccion == "+ deportes" || seccion == "Copa américa 2016" || seccion == "Copa américa 2016"){
-    $("#nota .contenido .color").css({background:"#3FA6F2"}); 
+    $(".contenido .color").css({background:"#3FA6F2"}); 
   }else
   if(seccion == "Entretenimiento" || seccion == "Actividad Social" || seccion == "Tecnología" || seccion == "Cultura" || seccion == "Tendencias" || seccion == "Viral" || seccion == "Vida y salud"){
-    $("#nota .contenido .color").css({background:"#8B7AB5"}); 
+    $(".contenido .color").css({background:"#8B7AB5"}); 
   }else
   if(seccion == "Participación" || seccion == "Así opinan" || seccion == "Reportero ciudadano"){
-    $("#nota .contenido .color").css({background:"#C60B77"}); 
+    $(".contenido .color").css({background:"#C60B77"}); 
   }
   //FIN COLOR SECCION
 
@@ -1034,14 +1034,6 @@ $(document).ready(function(){
   //FIN COLOR
 
 //FIN SIDEBAR
-
-
-
-
-
-
-
-
 
 
 
