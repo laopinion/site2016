@@ -21,7 +21,7 @@
       print "<div class=fecha>".render($content['field_fecha_de_publicacion'])."</div>";
       print "<h2 class=titulo>".$title."</h2>";
       ?>
-       <!--Resumen--><?php $view = views_get_view('detalles'); print $view->preview('block_1'); ?><!--FIN Resumen-->
+       <!--Resumen--><?php $view = views_get_view('detalle'); print $view->preview('block_2'); ?><!--FIN Resumen-->
       <?php        
       
       ?>  
@@ -238,8 +238,10 @@
               }
               include("compartirbarra.php");
             print "</div>";
+            print "<div class=texto>".render($content['body'])."</div>";
+            print "<div class=autor>".render($content['field_autor'])."</div>"; 
         ?>
-        <?php print "<div class=texto>".render($content['body'])."</div>"; ?>
+
        <div class="comentarios">
           <div class="linea"></div>
           <div class="color"></div><h2>Comentarios</h2>
@@ -247,10 +249,9 @@
             <?php include("disqus.php"); ?>
           </div>
         </div>
-
         <div class="mas_galerias">
-        <!--Más galerias--><div class="mas_galerias"><h2><div class="color"></div>+ GALERIAS</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block'); ?><!--FIN Más galerias-->
-        </div>    
+        <!--Más galerias--><div class="mas_galerias"><h2><div class="color"></div>+ GALERIAS</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block'); ?>
+        </div><!--FIN Más galerias-->
     </div> <!--Fin izquierdo-->
 
     <div class="der">
@@ -283,7 +284,6 @@
       <hr>
       <div class="center">
         <div class="productos"><div class="color"></div><a href="<?php print base_path(); ?>productos">Productos La Opinión</a></div><?php include_once("productos.php") ?>
-      </div>
-  </div>  
-</div>
+      </div><!--Fin Productos la opinion-->
+</div> 
 <!--Fin Contenido-->
