@@ -1,20 +1,3 @@
-<!-- Script FACEBOOK player -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<!-- FIN Script FACEBOOK player -->
-<!-- Script INSTAGRAM player -->
-<script async defer src=//platform.instagram.com/en_US/embeds.js></script>
-<!-- FIN Script INSTAGRAM player -->
-<!-- Script VINE player -->
-<script src=https://platform.vine.co/static/scripts/embed.js></script>
-<!-- FIN Script VINE player -->
-
 <!--Contenido-->
 <div id="video">
     <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); print drupal_render(_block_get_renderable_array(_block_render_blocks(array($taxonomy_menu_block))));?><!--FIN seccion-->
@@ -108,6 +91,23 @@
         <div class="productos"><div class="color"></div><a href="<?php print base_path(); ?>productos">Productos La Opinión</a></div><?php include_once("productos.php") ?>
       </div><!--Fin Productos la opinion-->
 </div><!--Fin Video-->
+<!-- Script FACEBOOK player -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- FIN Script FACEBOOK player -->
+<!-- Script INSTAGRAM player -->
+<script async defer src=//platform.instagram.com/en_US/embeds.js></script>
+<!-- FIN Script INSTAGRAM player -->
+<!-- Script VINE player -->
+<script src=https://platform.vine.co/static/scripts/embed.js></script>
+<!-- FIN Script VINE player -->
+
 <!-- Script player -->
 <script>
 jQuery (function($){
