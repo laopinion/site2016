@@ -1,4 +1,9 @@
 //NOTAS
+#tabs{background-color: #FFF;border: 1px solid #DDD;padding: 10px;position: fixed;right: 0px;top: 250px;z-index: 3;
+    ul{border-bottom: none !important; padding: 10px !important; }
+    .primary li a{border-color: #bbb;border-style: solid solid none solid;border-width: 1px;height: auto;margin-right: 0.5em;padding: 0 1em;text-decoration: none;}
+    li a{background: none repeat scroll 0 0 #F8F8F8 !important;border: 1px solid #DDD !important;color: #666;display: inline-block;font: 10px/10px Arial;padding: 5px !important;text-align: center;text-transform: uppercase;}
+}
 //COMPARTIR EMERGENTE
 .compartir{z-index:20; display:none;left:20px; position: fixed; top:500px;margin:-50px;transition:all 0.5s ease; 
     .redes_sociales{position: relative;float:left;width:40px;padding:0px;
