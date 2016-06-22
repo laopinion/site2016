@@ -14,7 +14,7 @@
       print "<div class=fecha>".render($content['field_fecha_de_publicacion'])."</div>";
       print "<h2 class=titulo>".$title."</h2>";
       ?>
-      <!--Resumen--><?php $view = views_get_view('detalles'); print $view->preview('block_1'); ?><!--FIN Resumen-->
+      <!--Resumen--><?php $view = views_get_view('detalle'); print $view->preview('block_2'); ?><!--FIN Resumen-->
       <?php
      
       print "<div class=foto>";

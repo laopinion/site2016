@@ -11,7 +11,6 @@
       print "<div class=sep> - </div>";
       print "<div class=fecha>".render($content['field_fecha_de_publicacion'])."</div>";
       print "<h2 class=titulo>".$title."</h2>";
-      print "<div class=resumen>".render($content['body-summary'])."</div>";
       ?>
        <!--Resumen--><?php $view = views_get_view('detalle'); print $view->preview('block_2'); ?><!--FIN Resumen-->
       <?php
