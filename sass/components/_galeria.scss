@@ -1,4 +1,4 @@
-// HOME -----------------------------------------------------------------
+//Nota Galeria
 #galeria{width:100%;height:auto; float:left; position: relative;
     .contenido{width:100%; height:auto; float:left; position: relative; background:#fff; margin-bottom:20px;
         .color{width: 25px; height: 10px; background-color: transparent; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
@@ -53,6 +53,19 @@
                 }
             }//FIN COMPARTIR
         }//FIN ETIQUETAS Y COMPARTIR
+        .texto{margin-top:20px; font-size:16px;position:relative; float:left; color:#646464;font-weight:300;width:100%;
+            h3{font-size:18px;color:#646464;font-weight:600;}
+            p{margin-bottom:15px; max-width:690px;
+                img{max-width: 690px; height:auto; float:left;margin:10px 10px; position: relative;left:-10px;}
+                }
+            strong{font-weight:600;}
+            a{color:#DB0E24;text-decoration:none;}
+            a:hover{text-decoration:underline;}
+            .twitter-tweet{max-width:690px;}
+            img{max-width:690px;}
+            iframe{max-width:680px;}
+            .instagram-media{max-width:690px;}
+        }
         /*COMENTARIOS*/
         .comentarios{width: 95%; height:auto; margin-right:20px; float:left; position: relative;margin-bottom:20px;
             .color{height: 10px; width: 25px;float: left;position: relative;text-indent: -9999px;background-color: $comentarios;margin-top: 6px;margin-right: 5px;}
@@ -76,6 +89,24 @@
             } 
         }
         //FIN TABOOLA
+        .autor{font-size:15px;position:relative; float:left; font-weight:300; width: 95%;color:#646464;overflow:hidden;
+            h2{font-size:14px;background:#DB0E24; padding:0px 5px; font-weight:600; width:auto; float:right; right:90px; top:20px;margin-left:300px;
+                a{color:#fff; text-decoration:none;}
+               }
+            .field-name-field-perfil{float:right; position: relative; width: 500px;text-align:right;right: 90px;top:15px;
+                a{color:#646464; text-decoration:none;}
+                }
+            .field-name-field-descripcion{float:right; position: relative; width: auto;text-align:right;right: 80px; padding:0px 10px 5px 0px; border-bottom:1px solid #E8E7E8;height:30px;
+                a{color:#646464; text-decoration:none;}
+                }
+            .field-name-field-imagen{float:right; position:absolute; width: 80px;margin-left: 10px;top: 20px;right: 0px;
+                img{width:80px; height:77px;}
+            }
+            .links{display:none;}
+        }
+        .adm-intext{display:none;
+            .video-js, .vjs_video_6048-dimensions, .vjs_video_3-dimensions, .vjs-default-skin{display:block;}
+        }//Fin autor
        //Inicio mas galerias
        .mas_galerias{width: 100%;height: auto;position: relative;float: left;
             .color{
@@ -86,7 +117,7 @@
         .view-id-detalle{width: 690px;height: auto;float: left;position: relative;margin-bottom: 10px;padding: 10px 0px;overflow: hidden;left: 0px;
             .views-row{margin-bottom: 20px;float: left;width: 207px;height: 150px;margin-right: 20px;
                 .field-content{height: auto;float: left;position: relative;width: 200px;
-                    .info_galeria{top: 65px;position: absolute;float: left;bottom: 5px;left: 0px;height: auto;width: 200px;padding: 5px;z-index: 1;
+                    .info_galeria{overflow:hidden;top: 90px;position: absolute;float: left;bottom: 5px;left: 0px;height: auto;width: 200px;padding: 5px;z-index: 1;
                         .seccion{padding-bottom: 5px!important;width: 220px;padding: 0px;height: 11px;margin: 0px;float: left;
                             .color{width: 25px; height: 10px; background-color: transparent; float:left; position: relative; margin-top: 0px;margin-right: 5px;}
                             a{color: #fff;text-shadow: 1px 1px #000;text-decoration: none;text-transform: uppercase;font-size: 13px;float: left;padding: 0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;width: 180px
