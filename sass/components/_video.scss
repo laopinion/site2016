@@ -5,10 +5,10 @@
 }
 //NOTA
 #video{width: 100%;height: auto;float: left;position: relative;
-    .color{width: 25px; height: 10px; background-color: gray; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
+    //.color_video{width: 25px; height: 10px; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
     .contenido{width:1006px; height:auto; float:left; position: relative; background:#fff; margin-bottom:0px;
+        .color{width: 25px; height: 10px; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
         .seccion{font-size:15px;position:relative; float:left; margin-bottom:0px;
-        .color{height: 10px; width: 25px;float: left;position: relative;text-indent: -9999px;background-color: $gris;margin-top: 5px;margin-right: 5px;}
         a{color:$gris; text-decoration:none;font-weight:600;}
         a:hover{text-decoration:underline;}
         }

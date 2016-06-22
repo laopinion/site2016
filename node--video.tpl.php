@@ -135,20 +135,6 @@ jQuery (function($){
     }else
     if(plataforma == "Instagram"){
       $('.video-player').append(instagramplayer);
-    //var instagramplayer = "<blockquote class=instagram-media data-instgrm-captioned data-instgrm-version=7 <div style=width:100%;> </div> <p<a href=https://www.instagram.com/p/" + id + "/ </p></blockquote>";
-
-
-    if(plataforma == "YouTube"){
-      $('#video .contenido .video-player').append(youtubeplayer);
-    }else
-    if(plataforma == "Facebook"){
-      $('#video .video-player').append(facebookplayer);
-    }else
-    if(plataforma == "Vine"){
-      $('#video .contenido .video-player').append(vineplayer);
-    }else
-    if(plataforma == "Instagram"){
-      $('#video .contenido .video-player').append(instagramplayer);
     }
   });
 });

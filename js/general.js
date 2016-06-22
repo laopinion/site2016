@@ -778,13 +778,6 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
-
 //NOTAS
   
   //COLOR SECCION
