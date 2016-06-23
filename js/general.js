@@ -1061,8 +1061,33 @@ $(document).ready(function(){
   });
   //FIN COLOR MAS GALERIAS
 
+//Script player podcast
+ var id = $(".contenido .audio_id .field-name-field-podcast-id .field-item").html();
+ var audioplayer = "<iframe width=720px height=250 scrolling=no frameborder=no src=https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + id + "&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true></iframe>";
+ $('#podcast .audio-player').append(audioplayer);
+//Fin script player podcast
 
+//Script player videos-->
+  var id = $(".contenido .video_id .field-name-field-video-id .field-item").html();
+  var plataforma = $(".contenido .plataforma .field-name-field-plataforma .field-item").html();
+  var youtubeplayer = "<iframe id=frame-video width=1006 height500 src=http://www.youtube.com/embed/" + id + "?hl=es&fs=1&rel=0&showinfo=0 frameborder=0 allowfullscreen></iframe>";
+  var facebookplayer = "<div class=fb-video data-href=https://www.facebook.com/" + id + "/ data-width=1006 data-show-text=false><blockquote cite=https://www.facebook.com/" + id + "/ class=fb-xfbml-parse-ignore><a href=https://www.facebook.com/" + id + "/></a></blockquote></div>";
+  var vineplayer = "<iframe src=https://vine.co/v/" + id + "/embed/simple width=1006 height=500 frameborder=0></iframe>";
+  var instagramplayer = "<blockquote class=instagram-media data-instgrm-captioned data-instgrm-version=7 style= background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);><div style=padding:8px;> <div style= background:#F8F8F8; line-height:0; margin-top:40px; padding:28.125% 0; text-align:center; width:100%;> <div style= background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;></div></div> <p style= margin:8px 0 0 0; padding:0 4px;> <a href=https://www.instagram.com/p/" + id + "/ style= color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word; target=_blank>Te enseñamos a preparar las tajadas de maduro de otra manera. Mira la receta completa en nuestro portal.</a></p> <p style= color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;>Un vídeo publicado por Deléitese Gastronomia (@deleitese_co) el <time style= font-family:Arial,sans-serif; font-size:14px; line-height:17px; datetime=2016-06-19T20:43:02+00:00>19 de Jun de 2016 a la(s) 1:43 PDT</time></p></div></blockquote>";
 
+  if(plataforma == "YouTube"){
+    $('.video-player').append(youtubeplayer);
+  }else
+  if(plataforma == "Facebook"){
+    $('.video-player').append(facebookplayer);
+  }else
+  if(plataforma == "Vine"){
+    $('.video-player').append(vineplayer);
+  }else
+  if(plataforma == "Instagram"){
+    $('.video-player').append(instagramplayer);
+  }
+//Fin script video
 
 
 

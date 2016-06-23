@@ -1,14 +1,3 @@
-<!-- Script player -->
-<script>
-jQuery (function($){
-  $(document).ready(function(){
-    var id = $(".contenido .audio_id .field-name-field-podcast-id .field-item").html();
-    var audioplayer = "<iframe width=720px height=250 scrolling=no frameborder=no src=https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/" + id + "&amp;auto_play=false&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true></iframe>";
-    $('#podcast .audio-player').append(audioplayer);
-  });
-});
-</script>
-<!-- FIN Script player -->
 <!--Contenido-->
 <div id="podcast">
   <!--ANUNCIO 1000x30--><div class="pauta p1000x30"><?php $block =block_load('block',71); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div><!--FIN ANUNCIO 1000x30-->
