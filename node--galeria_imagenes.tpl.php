@@ -252,6 +252,19 @@
         <div class="mas_galerias">
         <!--Más galerias--><div class="mas_galerias"><h2><div class="color"></div>+ GALERIAS</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block'); ?>
         </div><!--FIN Más galerias-->
+        <hr class="divisor_taboola">
+        <!--TABOOLA-->
+        <div id="taboola-below-article-thumbnails"></div>
+          <script type="text/javascript">
+            window._taboola = window._taboola || [];
+            _taboola.push({
+              mode: 'thumbnails-a',
+              container: 'taboola-below-article-thumbnails',
+              placement: 'Below Article Thumbnails',
+              target_type: 'mix'
+            });
+          </script>
+        <!--FIN TABOOLA-->
     </div> <!--Fin izquierdo-->
 
     <div class="der">

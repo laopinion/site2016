@@ -59,6 +59,7 @@
       <div class="color"></div><h2>Comentarios</h2>
       <div class="bloque"><?php include("disqus.php"); ?></div>
     </div>
+    <hr class="divisor_taboola">
     <!--TABOOLA-->
     <div id="taboola-below-article-thumbnails"></div>
       <script type="text/javascript">
