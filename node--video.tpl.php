@@ -46,6 +46,7 @@
         <div class="mas_galerias"><!--Más galerias-->
           <div class="mas_galerias"><h2><div class="color"></div>+ GALERIAS</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block_1'); ?>
         </div><!--FIN Más galerias-->
+        <hr class="divisor_taboola">
         <!--TABOOLA-->
         <div id="taboola-below-article-thumbnails"></div>
           <script type="text/javascript">
