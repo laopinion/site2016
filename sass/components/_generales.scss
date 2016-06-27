@@ -1,3 +1,4 @@
+@charset "utf-8";
 //NOTAS
 #tabs{background-color: #FFF;border: 1px solid #DDD;padding: 10px;position: fixed;right: 0px;top: 250px;z-index: 3;
     ul{border-bottom: none !important; padding: 10px !important; }
@@ -115,7 +116,7 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
 
 //SIDEBAR Notas recientes lado derecho
 .vista-recientes{width: 300px;height: auto;padding: 0px;position: relative;display: block;top: 0px;overflow: hidden;
-    .seccion{margin-left:6px; background-color: #f1f1f1; 
+    .seccion{margin-left:6px; //background-color: #f1f1f1; 
         .color{width: 25px; height: 10px; background-color: gray; float:left; position: relative; margin-top: 6px;margin-right: 5px;}
         a{font-size: 13px;font-weight: 700;text-decoration:none; color:$gris; text-transform: uppercase}
         .tipo{display:none;}

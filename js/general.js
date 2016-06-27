@@ -1090,6 +1090,15 @@ $(document).ready(function(){
 //Fin script video
 
 
+$("#seccion .izq .contenido .caricaturas .paginador .item1").click(function(argument) {
+  $("#seccion .izq .contenido .caricaturas .otras").css({top:"0px"})
+  $("#seccion .izq .contenido .caricaturas .otras .view-opinion").css({height:"350px"})
+});
+
+$("#seccion .izq .contenido .caricaturas .paginador .item2").click(function(argument) {
+  $("#seccion .izq .contenido .caricaturas .otras").css({top:"-190px"})
+  $("#seccion .izq .contenido .caricaturas .otras .view-opinion").css({height:"550px"})
+});
 
 
 
