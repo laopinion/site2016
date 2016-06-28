@@ -1,0 +1,48 @@
+#caricaturas{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;
+	.izq{margin-top: 40px;width: 690px;margin-right: 15px;float: left;position: relative;height: auto;
+		.contenido{width:690px; height:auto; float:left; position: relative; background:#fff; margin-bottom:20px;
+            .color{width: 25px; height: 10px; background-color: transparent; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
+            .seccion{font-size:15px;position:relative; float:left; margin-bottom:0px;color: #A4A4A4;text-decoration: none;font-weight: 600;
+                .color{height: 10px; width: 25px;float: left;position: relative;text-indent: -9999px;background-color: $opinion;margin-top: 5px;margin-right: 5px;}   
+            }
+            .sep{width:10px; float:left; position:relative;margin:0px 5px;}
+            .fecha{padding: 2px 0;font-size:13px;position:relative; float:left; color:$gris; font-weight:300;margin-right:5px; margin-bottom:0px;}
+            .resumen{position:relative; float:left; font-weight:300;margin-bottom:0px;width:100%; margin-bottom:20px;
+                p{color:$grisOscuro;}
+            } 
+        }//Fin contenido
+        /* Inicio caricaturas */
+        .view-id-opinion.view-display-id-block_7{background-color: #8E9398; height: auto;margin-top: 40px;position: relative; width:690px; float: left;
+            .views-row{position: relative;float: left; width: 300px;height: auto;margin: 0px 0px 10px 30px;vertical-align: top;
+                .caricatura{float: left;position: relative;overflow: hidden;}
+            }
+           /*  .views-row-odd{margin-top: -30px;}
+            .views-row-last{top: -30px;}  */
+            .views-row-1,.views-row-2{margin-top: 20px!important;}
+        }//fin caricaturas        
+	}//fin izq
+	.der{margin-top: 40px;width:300px; height:auto; float:left; position: relative;background-color: #f1f1f1;
+		 //COLUMNISTAS DESTACADOS
+        .view-id-opinion.view-display-id-block_4{width: 300px;float: left;position: relative;height: auto;margin-bottom: 20px;
+            h2{font-size:18px; color:$opinion; text-transform:uppercase; width:280px;padding: 5px 10px 0px 10px;margin: 0px 0px 10px 0px; font-weight:600; text-align: center;}
+            .destacados{margin-bottom: 8px;width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+                .info{border-bottom:2px solid $opinion; width:280px; padding:0px; float:left; position: relative;height:auto;
+                    .titulo{float:left; position: relative; width:190px; height:auto; float:left; padding:6px 0px 0px 0px; margin-bottom:0px;
+                        a{font-size: 16px; line-height: 18px;font-weight:600; text-decoration:none; color:#101314;}
+                    }
+                    .autor{left: -7px;float:left; position: relative; width:auto; height:20px; float:left; line-height:15px;top: 5px;
+                        a{font-size: 16px; font-weight:600; text-decoration:none;color: $opinion;padding:3px 7px; text-align:center; float:left;}
+                    }
+                    .resumen{font-size: 14px;line-height: 16px;width:190px; display: inline-block;position: relative;top: -15px;}
+                    .foto{margin-right: 3px;border: 1px solid $opinion;border-radius: 50%;top: 10px;display: block;float: left;position: relative;overflow: hidden;width: 85px;height: 85px;background: #fff;
+                        img{width:82px; height:79px; top:10px; position:relative; transition:all 0.2s ease;}
+                        a{border:none;}
+                     }
+                }//Fin info
+            }//Fin Destacados
+            .views-row-last{
+                .info{border: none;}
+            }
+        }//FIN OLUMNISTAS DESTACADOS
+	}//Fin der
+}//Fin caricaturas
