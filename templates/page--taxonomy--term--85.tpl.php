@@ -46,4 +46,4 @@
           <?php //include("footer.tpl.php"); ?>
           <?php // print render($page['footer']) ?>
       </footer> <!-- /#footer -->
-</div><!--Fin seccion-->
+</div><!--Fin opinion-->
