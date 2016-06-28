@@ -1090,14 +1090,14 @@ $(document).ready(function(){
 //Fin script video
 
 /*Botones de caricaturas*/
-$("#seccion .izq .contenido .caricaturas .paginador .item1").click(function(argument) {
-  $("#seccion .izq .contenido .caricaturas .otras").css({top:"0px"})
-  $("#seccion .izq .contenido .caricaturas .otras .view-opinion").css({height:"350px"})
+$("#opinion .izq .contenido .caricaturas .paginador .item1").click(function(argument) {
+  $("#opinion .izq .contenido .caricaturas .otras").css({top:"0px"})
+  $("#opinion .izq .contenido .caricaturas .otras .view-opinion").css({height:"350px"})
 });
 
-$("#seccion .izq .contenido .caricaturas .paginador .item2").click(function(argument) {
-  $("#seccion .izq .contenido .caricaturas .otras").css({top:"-190px"})
-  $("#seccion .izq .contenido .caricaturas .otras .view-opinion").css({height:"550px"})
+$("#opinion .izq .contenido .caricaturas .paginador .item2").click(function(argument) {
+  $("#opinion .izq .contenido .caricaturas .otras").css({top:"-190px"})
+  $("#opinion .izq .contenido .caricaturas .otras .view-opinion").css({height:"550px"})
 });
 /*Fin boton de caricaturas*/
 

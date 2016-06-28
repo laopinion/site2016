@@ -31,7 +31,7 @@
         }/*FIN Indicadores*/
 
     .izq{margin-top: 40px;width: 690px;margin-right: 15px;float: left;position: relative;height: auto;
-        .contenido{width:690px; height:auto; float:left; position: relative; background:#fff; margin-bottom:20px;
+        /* .contenido{width:690px; height:auto; float:left; position: relative; background:#fff; margin-bottom:20px;
             .color{width: 25px; height: 10px; background-color: transparent; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
             .seccion{font-size:15px;position:relative; float:left; margin-bottom:0px;
                 .color{height: 10px; width: 25px;float: left;position: relative;text-indent: -9999px;background-color: $gris;margin-top: 5px;margin-right: 5px;}
@@ -43,7 +43,7 @@
             .resumen{position:relative; float:left; font-weight:300;margin-bottom:0px;width:100%; margin-bottom:20px;
                 p{color:$grisOscuro;}
                 } 
-        }//Fin contenido
+        }//Fin contenido */
         /*linea*/
         .linea{border-bottom: 1px solid $estandar; width:640px; float:left; position: relative;height:15px; margin-bottom: 20px;}
         /*destacada estandar*/
@@ -628,89 +628,7 @@
 
 
 
-        //OPINION
-        /*Editorial*/
-        .view-id-opinion.view-display-id-block {display: block;float:left; position: relative; width:690px;overflow:hidden; margin-bottom:0px; margin-right:0px;
-            h2{font-size:21px; color:$opinion; text-transform:uppercase; width:110px; padding:0px 0px;margin:0px 0px 10px 0px;margin:0px 0px 10px 0px; float:left;
-                a{color:$opinion;text-decoration:none;} 
-            }
-            .linea{border-bottom: 2px solid $opinion; width:530px; float:left; position: relative;height:15px; margin-bottom: 20px;}
-            .views-row{margin:0px 20px 20px 0px; float:left; position: relative; display:inline-block;}
-            .views-row-last{margin:0px 0px 20px 0px; float:left; position: relative;}
-                .info{border-bottom: 2px solid #cccccc;width:100%; padding:0px; float:left; position: relative;background:#fff; height:auto;
-                    .titulo{float:left; position: relative; width:620px; height:auto; float:left; line-height:15px;padding:10px 0px 0px 0px; margin-bottom:0px;
-                        a{font-size: 36px; line-height: 38px; font-weight:600; text-decoration:none; color:#101314;}
-                    }
-                    .resumen{font-size:15px;position:relative; float:left; color:#646464;font-weight:300;}
-                }
-        }/*FIN Editorial*/
         
-        .caricaturas{margin-bottom: 20px;width:690px; height:auto; position: relative;float:left;
-            h2{font-size:17px; color:$estandar; text-transform:uppercase; width:620px; padding: 0px 10px 15px 10px;margin: 0px 0px 0px 0px; background:transparent; font-weight:600;
-                a{color:$opinion;text-decoration:none;} 
-            }
-            .cari{overflow: hidden;background-color: #8E9398;width: 100%;height: auto;position: relative;float: left;padding-top: 10px;left: -20px;padding-left: 20px;}
-            /*Ultima*/
-            .view-id-opinion.view-display-id-block_1 {margin-right: -10px;display: block;float:left; position: relative; width:348px;overflow:hidden; margin-bottom:0px;height: 392px;
-            .views-row{margin:0px 20px 20px 0px; float:left; position: relative; display:inline-block;}
-            .views-row-last{margin:0px 0px 20px 0px; float:left; position: relative;}
-                .ultima{border:1px solid #E8E7E8; width:310px; padding:10px; float:left; position: relative;background:#fff; height:auto;
-                    .caricatura{display:block; float:left; position: relative; overflow:hidden;width:310px; height:360px;
-                        img{width:310px; height:360px;transition:all 0.2s ease;}
-                        img:hover{opacity:0.9; transition:all 0.2s ease;}
-                        a{border:none;}
-                    }
-                }
-            }/*FIN Ultima*/
-            .paginador {right: 0px;z-index: 10;position: relative;float: left;display: block;width: 35px; margin:5px 0px 1px 5px;transition: all 0.7s ease-in-out; 
-                .item{cursor: pointer;}
-                .item1{background: url(../images/iconos/flechas_caricaturas.svg) 0px 0px/25px auto no-repeat;margin:0px 5px; cursor:pointer; width: 25px;height: 28px;float: left;position: relative;text-indent:-9999px;}
-                .item2{background: url(../images/iconos/flechas_caricaturas.svg) 0px -33px/25px auto no-repeat;margin:0px 5px; cursor:pointer; width: 25px;height: 28px;float: left;position: relative;text-indent:-9999px;bottom: -315px;}
-                }
-            /*Otras*/
-            .otras{transition: all 0.7s ease-in-out;width:300px;float:left; height:382px;position: relative;top: 0;
-                h2{font-size:16px; color:#fff; text-transform:uppercase; width:155px; padding:5px 0px 5px 10px;margin:0px 0px 0px 0px; float:left; border:none; background:#333;}
-                .linea{border-bottom: 2px solid #fff; width:70px; float:left; position: relative;height:15px; margin-bottom: 10px;}
-                
-                .view-id-opinion.view-display-id-block_2{transition: all 0.7s ease-in-out;top: 15px;display: block;float:left; position: relative; width:285px;height:350px; overflow:hidden; margin-bottom:20px;margin:0px 13px;
-                    .view-content{width: 285px; position: relative; left: 0px;top:0px; transition: all 0.7s ease-in-out;}
-                    .views-row{margin:0px 10px 10px 0px; float:left; position: relative; display:inline-block;}
-                    .views-row-2, .views-row-4, .views-row-6, .views-row-8{margin:0px 0px 0px 0px; float:left; position: relative; display:inline-block;}
-                        .ultima{border:1px solid #E8E7E8; width:310px; padding:10px; float:left; position: relative;background:#fff; height:auto;
-                            .caricatura{display:block; float:left; position: relative; overflow:hidden;width:310px; height:360px;
-                                img{width:310px; height:360px;transition:all 0.2s ease;}
-                                img:hover{opacity:0.7; transition:all 0.2s ease;}
-                                a{border:none;}
-                            }
-                        }
-                }
-            }/*FIN Otras*/
-        }//Fin CARICATURAS
-
-        /*Columnistas*/
-        .view-id-opinion.view-display-id-block_3{display: block;float: left;position: relative;width: 690px;overflow: hidden;margin-bottom: 20px;margin-right: 0px;
-            h2{font-size:17px; color:$estandar; text-transform:uppercase; width:620px; padding: 0px 10px 15px 10px;margin: 0px 0px 0px 0px; background:transparent; font-weight:600;
-                a{color:$opinion;text-decoration:none;} 
-            }
-            .linea{border-bottom: 2px solid $opinion; width:500px; float:left; position: relative;height:15px; margin-bottom: 20px;}
-            .views-row{margin: 0;float: left;position: relative;width: 50%;height: auto;margin-bottom: 20px;}
-            .views-row-last{margin:0px 0px 20px 0px; float:left; position: relative;}
-                .info{width:100%; padding:0px; float:left; position: relative;background:#fff; height:auto;
-                    .titulo{float:left; position: relative; width:255px; height:auto; float:left; line-height:15px;padding:8px 0px 0px 0px; margin-bottom:0px;
-                        a{font-size: 16px;line-height:18px; font-weight:600; text-decoration:none; color:#101314;}
-                    }
-                    .resumen{margin:0;width:255px;font-size:14px;position:relative; float:left; color:#646464;font-weight:300; position: relative; top:-10px;}
-                    .autor{float:left; position: relative; width:auto; height:20px; float:left; line-height:15px;top:7px;left:-6px;
-                        a{font-size: 16px; font-weight:600; text-decoration:none; color:$opinion; padding:3px 7px; text-align:center; float:left;}
-                    }
-                    .foto{top: 20px;background-color:$opinion; border-radius: 50%;display:block; float:left; position: relative; overflow:hidden;margin-right:8px;
-                        img{width:82px; height:79px;top:10px;position: relative;}
-                        img:hover{opacity:0.9;}
-                        a{border:none;}
-                     }
-                }
-        }/*FIN Columnistas*/
-        //FIN OPINION
         
         //COLUMNISTAS (SECCION)
         .view-id-opinion.view-display-id-block_5 {display: block;float:left; position: relative; width:640px;overflow:hidden; margin-bottom:20px; margin-right:20px;
@@ -1366,28 +1284,7 @@
     }/*FIN Izquierda*/
     /*Derecha*/
     .der{margin-top: 40px;width:300px; height:auto; float:left; position: relative;background-color: #f1f1f1;
-        //COLUMNISTAS DESTACADOS
-        .view-id-opinion.view-display-id-block_4{width: 300px;float: left;position: relative;height: auto;background: rgba(191,214,62, 0.4);margin-bottom: 20px;
-            h2{font-size:18px; color:$opinion; text-transform:uppercase; width:280px;padding: 5px 10px 0px 10px;margin: 0px 0px 10px 0px; font-weight:600; text-align: center;}
-            .destacados{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
-                .info{border-bottom:2px solid $opinion; width:280px; padding:0px; float:left; position: relative;height:auto;
-                    .titulo{float:left; position: relative; width:190px; height:auto; float:left; padding:6px 0px 0px 0px; margin-bottom:0px;
-                        a{font-size: 16px; line-height: 18px;font-weight:600; text-decoration:none; color:#101314;}
-                    }
-                    .autor{left: -7px;float:left; position: relative; width:auto; height:20px; float:left; line-height:15px;top: 5px;
-                        a{font-size: 16px; font-weight:600; text-decoration:none;color: $opinion;padding:3px 7px; text-align:center; float:left;}
-                    }
-                    .resumen{font-size: 14px;line-height: 16px;width:190px; display: inline-block;position: relative;top: -15px;}
-                    .foto{top: 10px;display: block;float: left;position: relative;overflow: hidden;width: 85px;height: 85px;background: #fff;margin-right: 5px;
-                        img{width:82px; height:79px; top:10px; position:relative; transition:all 0.2s ease;}
-                        a{border:none;}
-                     }
-                }//Fin info
-            }//Fin Destacados
-            .views-row-last{
-                .info{border: none;}
-            }
-        }//FIN OLUMNISTAS DESTACADOS
+       
 
         //EDITOR
         #block-block-5{width:300px;float:left; position: relative; height:180px;-moz-height:190px;margin:0px 0px 20px 0px;}

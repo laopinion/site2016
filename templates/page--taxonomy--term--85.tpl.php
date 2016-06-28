@@ -3,8 +3,7 @@
 <link href="<?php print base_path(); ?>sites/default/themes/op/css/style.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/op/js/general.js"></script>
 
-<div id="seccion">
-  <div id="seccion_content">
+<div id="opinion">
     <div class="izq">
         <?php if (!empty($tabs['#primary'])): ?><div id="tabs"><?php print render($tabs); ?></div><?php endif; ?>
         <!--ANUNCIO 1000x30--><div class="p1000x30"><?php  $block =block_load('block',39); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div><!--FIN 1.ANUNCIO 1000x30-->
@@ -47,5 +46,4 @@
           <?php //include("footer.tpl.php"); ?>
           <?php // print render($page['footer']) ?>
       </footer> <!-- /#footer -->
-    </div><!--Fin container seccion-->
 </div><!--Fin seccion-->
