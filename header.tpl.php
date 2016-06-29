@@ -75,11 +75,11 @@
 			            </ul> 
 			        </li>
 			        <li class="divider"></li>
-			        <li class="dropdown opinion"><a href="">Opinión</a> 
+			        <li class="dropdown opinion"><a href="<?php print base_path(); ?>opinion">Opinión</a> 
 			            <ul> 
-			                <li><span></span><a href="#opcion1">Editorial</a></li><hr> 
-			                <li><span></span><a href="#opcion2">Columnista</a></li><hr>
-			                <li><span></span><a href="#opcion3">Caricaturas</a></li>
+			                <li><span></span><a href="<?php print base_path(); ?>editorial">Editorial</a></li><hr> 
+			                <li><span></span><a href="<?php print base_path(); ?>columnistas">Columnistas</a></li><hr>
+			                <li><span></span><a href="<?php print base_path(); ?>caricaturas">Caricaturas</a></li>
 			            </ul> 
 			        </li>
 			        <li class="divider"></li>
