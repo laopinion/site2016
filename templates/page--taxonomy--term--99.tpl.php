@@ -19,4 +19,11 @@
       <!--Noticias Recientes--><?php $view = views_get_view('recientes'); print $view->preview('block_1'); ?><!--FIN Noticias Recientes-->   
       <!--Juegos--><div class="juegos"><a href="http://juegos.laopinion.com.co/"><img src="<?php print base_path(); ?>sites/default/themes/op/images/juegos.jpg"></a></div><!--FIN Juegos-->
     </div> <!--Fin derecha-->
+    <div id="footer_movil">
+        <?php include("footer_movil.tpl.php"); ?>
+      </div> <!-- /#footer -->  
+      <footer id="footer">
+          <?php //include("footer.tpl.php"); ?>
+          <?php // print render($page['footer']) ?>
+      </footer> <!-- /#footer -->
 </section><!--Fin caricaturas-->
