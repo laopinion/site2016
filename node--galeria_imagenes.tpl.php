@@ -74,23 +74,22 @@
                 .jssora05r.jssora05rdn      (mousedown)
                 */
                 .jssora05l, .jssora05r {
-                    transition:all 0.2s ease;
                     display: block;
                     position: absolute;
                     /* size of arrow element */
                     width: 40px;
                     height: 40px;
                     cursor: pointer;
-                    background: url(../sites/default/themes/op/images/iconos/controles_galeria.svg) -9px -6px/95px auto no-repeat;
+                    background: url(../sites/default/themes/op/images/iconos/controles_galeria.svg) -9px -6px/138px auto no-repeat;
                     overflow: hidden;
                 }
                 /**/
-                .jssora05l {background-position: -8px -5px }
-                .jssora05r { background-position: -48px -6px; }
-                .jssora05l:hover { opacity: 0.8;}
-                .jssora05r:hover { opacity: 0.8;}
-                .jssora05l.jssora05ldn { background-position: -8px -5px; transition:all 0.2s ease;}
-                .jssora05r.jssora05rdn { background-position: -48px -6px; transition:all 0.2s ease;}
+                .jssora05l {background-position: -20px -18px; opacity: 0.7;     transform: translateX(-48px); transition: .3s;}
+                .jssora05r { background-position: -80px -18px; opacity: 0.7;    transform: translateX(48px); transition: .3s;}
+                .jssora05l:hover { opacity: 1;}
+                .jssora05r:hover { opacity: 1;}
+                #slider:hover .jssora05l{transform: translateX(0);}
+                #slider:hover .jssora05r{transform: translateX(0);}
             </style>
             <!-- Arrow Left -->
             <span u="arrowleft" class="jssora05l" style="top: 230px; left: 8px;">
