@@ -5,8 +5,6 @@
     .primary li a{border-color: #bbb;border-style: solid solid none solid;border-width: 1px;height: auto;margin-right: 0.5em;padding: 0 1em;text-decoration: none;}
     li a{background: none repeat scroll 0 0 #F8F8F8 !important;border: 1px solid #DDD !important;color: #666;display: inline-block;font: 10px/10px Arial;padding: 5px !important;text-align: center;text-transform: uppercase;}
 }
-//id para todos los tpl
-#seccion{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;}
 //COMPARTIR EMERGENTE
 .compartir{z-index:20; display:none;left:20px; position: fixed; top:500px;margin:-50px;transition:all 0.5s ease; 
     .redes_sociales{position: relative;float:left;width:40px;padding:0px;
@@ -204,6 +202,7 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
                         .seccion{width:220px; padding:0px;height: 11px;margin: 0px;float:left;
                             .color{background:$seccion; height:10px; width:25px; float:left;position: relative;text-indent:-9999px;}
                                 a{color: #fff;text-shadow:1px 1px #000; text-decoration:none; text-transform:uppercase;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px; width:180px;}
+                            .tipo{text-indent: -9999px;}
                         }
                         .titulo{float:left; position: relative;width: 220px;height: auto;line-height: 20px;padding: 10px 0px 0px 0px;
                             a{font-size: 18px;font-weight: 500;text-decoration: none;color: #fff;text-shadow:1px 1px #000;}
@@ -212,7 +211,7 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
                     .miniatura{width:245px; height:auto; float:left; position: relative;cursor:pointer;
                         img{opacity:1;}
                     }
-                }
+                }//Fin galeria
         .control{z-index:3;cursor: pointer;margin:0px; cursor:pointer; width: 20px;height: 245px;float: left;position: absolute;text-indent:-9999px;}
         .control_left{left: 0px;top: 10px;background: url(../images/iconos/flechas.svg) -8px 80px/55px auto no-repeat #fff;}
         .control_right{right: 0px;top: 10px;background: url(../images/iconos/flechas.svg) -25px 80px/55px auto no-repeat #fff;}
@@ -336,7 +335,7 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
 .divisor_taboola{left: -15px;position: relative;margin-bottom: 30px;margin-top: 0px;}
 #taboola-below-article-thumbnails{left: -15px;position: relative; background-color:#f1f1f1;
     .trc_rbox_header_span{font-size: 16px !important;color: #000 !important;text-transform: uppercase !important;width: 200px !important;padding: 0px 0px !important;margin: 10px 0px 0px 20px;float:left!important ;}
-    .trc_spotlight_item {border:1px solid #E8E7E8;width:205px; height:auto;float:left; position: relative; background:#fff;margin-left:19px;
+    .trc_spotlight_item {border:1px solid #E8E7E8;width:205px; height:240px;float:left; position: relative; background:#fff;margin-left:19px;
         .thumbBlock_holder{display:block; float:left; position: relative; overflow:hidden;width:198px; height:110px;
                 .thumbBlock{width:198px; height:110px;transition:all 0.2s ease;}
                 .thumbBlock:hover{opacity:0.9; transition:all 0.2s ease;}

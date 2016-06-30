@@ -1,5 +1,5 @@
 //Nota Galeria
-#galeria{width:100%;height:auto; float:left; position: relative;
+#galeria{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;
     .contenido{width:100%; height:auto; float:left; position: relative; background:#fff; margin-bottom:20px;
         .color{width: 25px; height: 10px; background-color: transparent; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
         .seccion{font-size:15px;position:relative; float:left; margin-bottom:0px;
@@ -14,8 +14,8 @@
         }
         .resumen{line-height:18px;font-size:16px;position:relative; float:left; color:$gris;  font-weight:300;}
         h2{font-size:36px; font-weight:600; line-height:38px; float:left; position: relative; margin:10px 0px; width:100%;}
-        #slider{position: relative; top: 0px; left: -20px; width:1024px!important; height: 660px; background: #333; overflow: hidden;
-            .pie{width:1024px; height:auto; color:#fff; position: absolute; bottom:0; font-size:12px; background:rgba(0,0,0,0.5); padding:5px 10px;font-size:12px;z-index:1; 
+        #slider{
+            .pie{width:1006px; height:auto; color:#fff; position: absolute; bottom:0; font-size:12px; background:rgba(0,0,0,0.5); padding:5px 10px;font-size:12px;z-index:1; 
             .descripcion{float:left; width:auto;position: relative;}
             .credito{float:left; position: relative; width:200px; text-align:left; margin-left:5px;
                 span{float:left; position: relative;width:35px;}
