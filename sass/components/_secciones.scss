@@ -30,7 +30,7 @@
             }        
         }/*FIN Indicadores*/
 
-    .izq{margin-top: 40px;width: 690px;margin-right: 15px;float: left;position: relative;height: auto;
+    .izq{//margin-top: 40px;width: 690px;margin-right: 15px;float: left;position: relative;height: auto;
         /* .contenido{width:690px; height:auto; float:left; position: relative; background:#fff; margin-bottom:20px;
             .color{width: 25px; height: 10px; background-color: transparent; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
             .seccion{font-size:15px;position:relative; float:left; margin-bottom:0px;
@@ -653,7 +653,7 @@
         }//FIN COLUMNISTAS
         //CARICATURAS (SECCION)
         //ULTIMAS CARICATURAS
-        .view-id-opinion.view-display-id-block_6 {display: block;float:left; position: relative; width:640px;overflow:hidden; margin-bottom:20px;
+        /* .view-id-opinion.view-display-id-block_6 {display: block;float:left; position: relative; width:640px;overflow:hidden; margin-bottom:20px;
             h2{font-size:21px; color:$opinion; text-transform:uppercase; width:135px; padding:0px 0px;margin:0px 0px 10px 0px;margin:0px 0px 10px 0px; float:left;}
             .linea{border-bottom: 2px solid $opinion; width:505px; float:left; position: relative;height:15px; margin-bottom: 20px;}
             .views-row{margin:0px 16px 20px 0px; float:left; position: relative; display:inline-block;}
@@ -665,9 +665,9 @@
                         a{border:none;}
                     }
                 }
-        }//FIN ULTIMAS CARICATURAS
+        } *///FIN ULTIMAS CARICATURAS
         //MAS CARICATURAS
-        .view-id-opinion.view-display-id-block_7 {display: block;float:left; position: relative; width:640px;height:auto; overflow:hidden; margin-bottom:20px;margin:0px 13px;
+        /* .view-id-opinion.view-display-id-block_7 {display: block;float:left; position: relative; width:640px;height:auto; overflow:hidden; margin-bottom:20px;margin:0px 13px;
                 .view-content{width: 640px; position: relative; left: 0px;top:0px; transition: all 0.7s ease-in-out;}
                 .views-row{margin:0px 10px 20px 0px; float:left; position: relative; display:inline-block;}
                 .views-row-3, .views-row-6, .views-row-9, .views-row-12{margin:0px 0px 20px 0px; float:left; position: relative; display:inline-block;}
@@ -679,7 +679,7 @@
                         }
                     .fecha{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;margin-right:5px;}    
                     }
-        }//FIN MAS CARICATURAS
+        } *///FIN MAS CARICATURAS
         //FIN CARICATURAS
 
         //EDITORIAL (SECCION)

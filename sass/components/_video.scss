@@ -1,10 +1,5 @@
-#tabs{background-color: #FFF;border: 1px solid #DDD;padding: 10px;position: fixed;right: 0px;top: 200px;z-index: 3;
-    ul{border-bottom: none !important; padding: 10px !important; }
-    .primary li a{border-color: #bbb;border-style: solid solid none solid;border-width: 1px;height: auto;margin-right: 0.5em;padding: 0 1em;text-decoration: none;}
-    li a{background: none repeat scroll 0 0 #F8F8F8 !important;border: 1px solid #DDD !important;color: #666;display: inline-block;font: 10px/10px Arial;padding: 5px !important;text-align: center;text-transform: uppercase;}
-}
 //NOTA
-#video{width: 100%;height: auto;float: left;position: relative;
+#video{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;
     //.color_video{width: 25px; height: 10px; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
     .contenido{width:1006px; height:auto; float:left; position: relative; background:#fff; margin-bottom:0px;
         .color{width: 25px; height: 10px; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
@@ -22,8 +17,10 @@
         h2{font-size:36px; font-weight:600; line-height:38px; float:left; position: relative; margin:10px 0px; width:100%;}
         .video_id{display:none;}
         .plataforma{display:none;}
-        .video-player{position: relative; float:left; left:-20px; border: none;margin-bottom:20px;
-            iframe{width: 1024px;height: 500px;}
+        .video-player{position: relative; float:left; left:0px; border: none;margin-bottom:20px;
+            iframe{width: 1006px;height: 500px;}
+            .fb-video{width: 1006px;height: 500px;}
+            .instagram-media{width: 1006px; height: 500px;}
         }
     }//Fin contenido            
     .izq{width: 690px;margin-right: 15px;float: left;position: relative;height: auto;
@@ -104,7 +101,7 @@
         .view-id-detalle{width: 690px;height: auto;float: left;position: relative;margin-bottom: 10px;padding: 10px 0px;overflow: hidden;left: 0px;
             .views-row{margin-bottom: 20px;float: left;width: 207px;height: 150px;margin-right: 20px;
                 .field-content{height: auto;float: left;position: relative;width: 200px;
-                    .info_galeria{overflow:hidden;top: 90px;position: absolute;float: left;bottom: 5px;left: 0px;height: auto;width: 200px;padding: 5px;z-index: 1;
+                    .info_galeria{overflow:hidden;top: 90px;position: absolute;float: left;bottom: 3px;left: 0px;height: auto;width: 190px;padding: 5px;z-index: 1;background: rgba(0,0,0,0);background: -moz-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(187,29,30,0) 0%, rgba(0,0,0,0.63) 100%);background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0,0,0,0)), color-stop(0%, rgba(187,29,30,0)), color-stop(100%, rgba(0,0,0,0.63)));background: -webkit-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(187,29,30,0) 0%, rgba(0,0,0,0.63) 100%);background: -o-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(187,29,30,0) 0%, rgba(0,0,0,0.63) 100%);background: -ms-linear-gradient(top, rgba(0,0,0,0) 0%, rgba(187,29,30,0) 0%, rgba(0,0,0,0.63) 100%);background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(187,29,30,0) 0%, rgba(0,0,0,0.63) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#000000', GradientType=0 );
                         .seccion{padding-bottom: 5px!important;width: 220px;padding: 0px;height: 11px;margin: 0px;float: left;
                             .color{width: 25px; height: 10px; background-color: transparent; float:left; position: relative; margin-top: 0px;margin-right: 5px;}
                             a{color: #fff;text-shadow: 1px 1px #000;text-decoration: none;text-transform: uppercase;font-size: 13px;float: left;padding: 0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;width: 180px

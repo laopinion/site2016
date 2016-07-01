@@ -1092,12 +1092,19 @@ $(document).ready(function(){
 /*Botones de caricaturas*/
 $("#opinion .izq .contenido .caricaturas .paginador .item1").click(function(argument) {
   $("#opinion .izq .contenido .caricaturas .otras").css({top:"0px"})
-  $("#opinion .izq .contenido .caricaturas .otras .view-opinion").css({height:"350px"})
 });
 
 $("#opinion .izq .contenido .caricaturas .paginador .item2").click(function(argument) {
   $("#opinion .izq .contenido .caricaturas .otras").css({top:"-190px"})
-  $("#opinion .izq .contenido .caricaturas .otras .view-opinion").css({height:"550px"})
+});
+//----------------------------------------------------------------
+$("#caricatura .izq .contenido .mas_caricaturas .paginador .item1").click(function(argument) {
+  $("#caricatura .izq .contenido .mas_caricaturas .view-opinion").css({top:"0px"})
+});
+
+$("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(function(argument) {
+  $("#caricatura .izq .contenido .mas_caricaturas .view-opinion").css({top:"-778px"})
+  
 });
 /*Fin boton de caricaturas*/
 

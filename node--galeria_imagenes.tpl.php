@@ -1,4 +1,4 @@
-<?php include("yuhuads.php"); ?>
+<?php //include("yuhuads.php"); ?>
 <script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/op/js/jquery-1.8.2.min.js"></script>
 <script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/op/js/jssor.js"></script>
 <script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/op/js/jssor.slider.js"></script>
@@ -14,22 +14,21 @@
        <?php include("recomendada_movil.tpl.php"); ?>
 
     <div class="contenido">
-    <div class="color"></div>
-      <?php 
-      print "<div class=seccion>".render($content['field_seccion'])."</div>";
-      print "<div class=sep> - </div>";
-      print "<div class=fecha>".render($content['field_fecha_de_publicacion'])."</div>";
-      print "<h2 class=titulo>".$title."</h2>";
-      ?>
-       <!--Resumen--><?php $view = views_get_view('detalle'); print $view->preview('block_2'); ?><!--FIN Resumen-->
-      <?php        
-      
-      ?>  
-  <!-- INICIO SLIDER -->
-      <div id="slider" style="">
-
+        <div class="color"></div>
+          <?php 
+          print "<div class=seccion>".render($content['field_seccion'])."</div>";
+          print "<div class=sep> - </div>";
+          print "<div class=fecha>".render($content['field_fecha_de_publicacion'])."</div>";
+          print "<h2 class=titulo>".$title."</h2>";
+          ?>
+           <!--Resumen--><?php $view = views_get_view('detalle'); print $view->preview('block_2'); ?><!--FIN Resumen-->
+          <?php        
+          
+          ?>  
+      <!-- INICIO SLIDER -->
+      <div id="slider" style="position: relative; top: 0px; left: 0px;width:1006px; height: 660px; background: #333; overflow: hidden;">
             <!-- Loading Screen -->
-            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div u="loading" style="width: 1006px;position: absolute; top: 0px; left: 0px;">
                 <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
                     background-color: #333; top: 0px; left: 0px;width: 100%;height:100%;">
                 </div>
@@ -41,7 +40,7 @@
                 </div>
             </div>
 
-            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1063px; height: 540px; overflow: hidden;">
+            <div u="slides" style="cursor: move; position: absolute; left: 0; top: 0; width: 1006px; height: 540px; overflow: hidden;">
                   <?php 
                     if (!empty($node->field_imagenes)) {   
                       $i=0;
@@ -54,8 +53,8 @@
                         print "<div class=credito><span>  /  Foto:   </span>".render($content['field_imagenes'][$i]['#item']['alt'])."</div>";
                         print "</div>";
                         print "
-                            <img u=image src='".base_path()."sites/default/files".$foto."' alt='".render($content['field_imagenes'][$i]['#item']['alt'])."' width='1063; height='540'/>
-                            <img u=image src='".base_path()."sites/default/files".$foto."' alt='".render($content['field_imagenes'][$i]['#item']['alt'])."' width='1063; height='540'/>
+                            <img u=image src='".base_path()."sites/default/files".$foto."' alt='".render($content['field_imagenes'][$i]['#item']['alt'])."' width='1006; height='540'/>
+                            <img u=image src='".base_path()."sites/default/files".$foto."' alt='".render($content['field_imagenes'][$i]['#item']['alt'])."' width='1006; height='540'/>
                             <img u=thumb src='".base_path()."sites/default/files/styles/thumbnail/public".$foto."' alt='".render($content['field_imagenes'][$i]['#item']['alt'])."' width='120' height='80' />
                             </div>";
                           $i++;
@@ -74,31 +73,23 @@
                 .jssora05l.jssora05ldn      (mousedown)
                 .jssora05r.jssora05rdn      (mousedown)
                 */
-
-                .pie{width:620px; height:auto; color:#fff; position: absolute; bottom:0; font-size:12px; background:rgba(0,0,0,0.5); padding:5px 10px;
-                    .descripcion{float:left; width:540px;position: relative}
-                    .credito{float:left; position: relative; width:140px; text-align:left; margin-left:5px;
-                        span{float:left; position: relative;width:35px;}
-                        }
-                    }
                 .jssora05l, .jssora05r {
-                    transition:all 0.2s ease;
                     display: block;
                     position: absolute;
                     /* size of arrow element */
                     width: 40px;
                     height: 40px;
                     cursor: pointer;
-                    background: url(../sites/default/themes/op/images/iconos/controles_galeria.svg) -9px -6px/95px auto no-repeat;
+                    background: url(../sites/default/themes/op/images/iconos/controles_galeria.svg) -9px -6px/138px auto no-repeat;
                     overflow: hidden;
                 }
                 /**/
-                .jssora05l {background-position: -8px -5px }
-                .jssora05r { background-position: -48px -6px; }
-                .jssora05l:hover { background-position: -8px -50px; }
-                .jssora05r:hover { background-position: -48px -50px; }
-                .jssora05l.jssora05ldn { background-position: -8px -5px; transition:all 0.2s ease;}
-                .jssora05r.jssora05rdn { background-position: -48px -6px; transition:all 0.2s ease;}
+                .jssora05l {background-position: -20px -18px; opacity: 0.7;     transform: translateX(-48px); transition: .3s;}
+                .jssora05r { background-position: -80px -18px; opacity: 0.7;    transform: translateX(48px); transition: .3s;}
+                .jssora05l:hover { opacity: 1;}
+                .jssora05r:hover { opacity: 1;}
+                #slider:hover .jssora05l{transform: translateX(0);}
+                #slider:hover .jssora05r{transform: translateX(0);}
             </style>
             <!-- Arrow Left -->
             <span u="arrowleft" class="jssora05l" style="top: 230px; left: 8px;">
@@ -121,7 +112,7 @@
                 .jssort01 {
                     position: absolute;
                     /* size of thumbnail navigator container */
-                    width: 960px;
+                    width: 1006px;
                     height: 100px;
                     top:550px;
                 }
@@ -219,7 +210,7 @@
                 <!-- Thumbnail Item Skin End -->
             </div>
             <!--#endregion Thumbnail Navigator Skin End -->
-        </div>
+      </div>
         <!-- Jssor Slider End -->
         <!-- FIN SLIDER -->
     </div><!-- FIN Contenido -->    

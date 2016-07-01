@@ -86,7 +86,6 @@
   <?php print $page_bottom; ?>
   <?php include_once("dataexpandtracking.php") ?>
   <?php include_once("hotwordstracking.php") ?>
-  <?php // include_once("pianotracking.php") ?>
     <div class="footer_desktop"><?php include("footer.tpl.php"); ?></div>
     <div class="footer_movil"><?php include("footer_movil.tpl.php"); ?></div>
   </div>

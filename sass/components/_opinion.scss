@@ -27,8 +27,7 @@
                     }
                     .resumen{font-size:15px;position:relative; float:left; color:#646464;font-weight:300;}
                 }
-        }/*FIN Editorial*/
-        
+        }/*FIN Editorial*/        
         .caricaturas{margin-bottom: 20px;width:690px; height:auto; position: relative;float:left;
             h2{font-size:17px; color:$estandar; text-transform:uppercase; width:620px; padding: 0px 10px 15px 10px;margin: 0px 0px 0px 0px; background:transparent; font-weight:600;
                 a{color:$opinion;text-decoration:none;} 
@@ -56,7 +55,7 @@
                 h2{font-size:16px; color:#fff; text-transform:uppercase; width:155px; padding:5px 0px 5px 10px;margin:0px 0px 0px 0px; float:left; border:none; background:#333;}
                 .linea{border-bottom: 2px solid #fff; width:70px; float:left; position: relative;height:15px; margin-bottom: 10px;}
                 
-                .view-id-opinion.view-display-id-block_2{transition: all 0.7s ease-in-out;top: 15px;display: block;float:left; position: relative; width:285px;height:350px; overflow:hidden; margin-bottom:20px;margin:0px 13px;
+                .view-id-opinion.view-display-id-block_2{transition: all 0.7s ease-in-out;top: 15px;display: block;float:left; position: relative; width:285px;height:auto; overflow:hidden; margin-bottom:20px;margin:0px 13px;
                     .view-content{width: 285px; position: relative; left: 0px;top:0px; transition: all 0.7s ease-in-out;}
                     .views-row{margin:0px 10px 10px 0px; float:left; position: relative; display:inline-block;}
                     .views-row-2, .views-row-4, .views-row-6, .views-row-8{margin:0px 0px 0px 0px; float:left; position: relative; display:inline-block;}
@@ -70,7 +69,6 @@
                 }
             }/*FIN Otras*/
         }//Fin CARICATURAS
-
         /*Columnistas*/
         .view-id-opinion.view-display-id-block_3{display: block;float: left;position: relative;width: 690px;overflow: hidden;margin-bottom: 20px;margin-right: 0px;
             h2{font-size:17px; color:$estandar; text-transform:uppercase; width:620px; padding: 0px 10px 15px 10px;margin: 0px 0px 0px 0px; background:transparent; font-weight:600;
@@ -87,7 +85,7 @@
                     .autor{float:left; position: relative; width:auto; height:20px; float:left; line-height:15px;top:7px;left:-6px;
                         a{font-size: 16px; font-weight:600; text-decoration:none; color:$opinion; padding:3px 7px; text-align:center; float:left;}
                     }
-                    .foto{top: 20px;background-color:$opinion; border-radius: 50%;display:block; float:left; position: relative; overflow:hidden;margin-right:8px;
+                    .foto{margin-right: 6px;border: 1px solid $opinion;top: 20px;border-radius: 50%;display:block; float:left; position: relative; overflow:hidden;
                         img{width:82px; height:79px;top:10px;position: relative;}
                         img:hover{opacity:0.9;}
                         a{border:none;}
@@ -97,9 +95,9 @@
     }//Fin izq
     .der{margin-top: 40px;width:300px; height:auto; float:left; position: relative;background-color: #f1f1f1;
 		 //COLUMNISTAS DESTACADOS
-        .view-id-opinion.view-display-id-block_4{width: 300px;float: left;position: relative;height: auto;background: rgba(191,214,62, 0.4);margin-bottom: 20px;
+        .view-id-opinion.view-display-id-block_4{width: 300px;float: left;position: relative;height: auto;margin-bottom: 20px;
             h2{font-size:18px; color:$opinion; text-transform:uppercase; width:280px;padding: 5px 10px 0px 10px;margin: 0px 0px 10px 0px; font-weight:600; text-align: center;}
-            .destacados{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+            .destacados{margin-bottom: 8px;width:280px; height:auto;float:left; position: relative; padding:0px 10px;
                 .info{border-bottom:2px solid $opinion; width:280px; padding:0px; float:left; position: relative;height:auto;
                     .titulo{float:left; position: relative; width:190px; height:auto; float:left; padding:6px 0px 0px 0px; margin-bottom:0px;
                         a{font-size: 16px; line-height: 18px;font-weight:600; text-decoration:none; color:#101314;}
@@ -108,7 +106,7 @@
                         a{font-size: 16px; font-weight:600; text-decoration:none;color: $opinion;padding:3px 7px; text-align:center; float:left;}
                     }
                     .resumen{font-size: 14px;line-height: 16px;width:190px; display: inline-block;position: relative;top: -15px;}
-                    .foto{top: 10px;display: block;float: left;position: relative;overflow: hidden;width: 85px;height: 85px;background: #fff;margin-right: 5px;
+                    .foto{margin-right: 3px;border: 1px solid $opinion;border-radius: 50%;top: 10px;display: block;float: left;position: relative;overflow: hidden;width: 85px;height: 85px;background: #fff;
                         img{width:82px; height:79px; top:10px; position:relative; transition:all 0.2s ease;}
                         a{border:none;}
                      }
