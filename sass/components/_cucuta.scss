@@ -106,13 +106,32 @@
                         p{margin-bottom: 0px;margin-top: 0px}
                     }
                 }
-            } 
-            //MÁS
+            }
+            //SEGUIR LEYENDO
+            .view-id-s_general.view-display-id-block_5{width: 65%;margin-right: 50px;float: left;margin-top: 20px;
+                .view-content{float: left;background-color: #f1f1f1;padding: 15px; width: auto;height: 225px;margin-bottom: 40px;
+                    .views-row{float: left; width: 300px;margin: 0 0px 10px 23px;
+                        .seguir_leyendo{float: left;width: 300px;
+                            .seccion{float: left; width: 100%;position: relative;left: -5px;
+                                a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
+                            }
+                            .titulo{float: left; width: 100%;
+                                a{font-size: 18px;font-weight: 600;text-decoration:none; color:$seccion;}
+                                a:hover{text-decoration: underline;}
+                            }
+                        }
+                    }
+                    .views-row-1, .views-row-3, .views-row-5{margin-left: 0;}
+                }
+            }//Fin seguir leyendo
+            .divisor{float: left;border-right: 2px solid $estandar;height: 237px;position: absolute;left: 320px;top: 52px;}
+            .pauta_lateral{margin-top: 35px;}
+             //MÁS
             .view-id-s_general.view-display-id-block_4{width:1006px;height:auto; float:left;position: relative;margin-bottom:10px;
-                .views-row{margin-bottom:15px;width:240px; height:245px; float:left;overflow:hidden;margin-right:15px;}
-                .views-row-4, .views-row-8, .views-row-12, .views-row-16, .views-row-20, .views-row-24, .views-row-28 {margin-right:0px;}
+                .views-row{margin-bottom:15px;width:325px; height:300px; float:left;overflow:hidden;margin-right:15px;}
+                .views-row-3, .views-row-6, .views-row-9, .views-row-12, .views-row-15, .views-row-18, .views-row-21 {margin-right:0px;}
                 .views-row-last{margin-right:0px;}
-                .nota{height:auto; float:left; position: relative;
+                .nota{width: 100%;height:auto; float:left; position: relative;
                     .tipo{display:none;}
                     .icon_video{display:none;background:url(../images/iconos/video.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 220px;opacity:0.7; z-index: 1;}
                     .icon_galeria{display:none;background:url(../images/iconos/galeria.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 220px;opacity:0.7; z-index: 1;}
@@ -131,7 +150,7 @@
                         p{margin-bottom: 0px;margin-top: 0px}
                     }
                 }
-            }   
+            }//fin mas    
         }
     }
 }//FIN CUCUTA

@@ -47,11 +47,11 @@
 			    <ul class="menu_p"> 
 			        <li><a href="<?php print base_path(); ?>cucuta">Cúcuta</a></li>
 			        <li class="divider"></li> 
-			        <li class="dropdown region"><a href="">Región</a> 
+			        <li class="dropdown region"><a href="<?php print base_path(); ?>region">Región</a> 
 			            <ul> 
-			                <li><span></span><a href="#opcion1">ocaña</a></li>
+			                <li><span></span><a href="<?php print base_path(); ?>ocana">ocaña</a></li>
 			                <hr> 
-			                <li><span></span><a href="#opcion2">pamplona</a></li> 
+			                <li><span></span><a href="<?php print base_path(); ?>pamplona">pamplona</a></li> 
 			            </ul> 
 			        </li>
 			        <li class="divider"></li>  
