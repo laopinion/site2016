@@ -84,7 +84,7 @@
                 a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
             }
             //OTROS
-            .view-s-general-sub.view-display-id-block_3{width:1006px;height:auto; float:left;position: relative;margin-bottom:10px; padding-top:15px; border-top: 2px solid #B4B7BB;
+            .view-s-general-sub.view-display-id-block_3{margin-top: 20px;width:1006px;height:auto; float:left;position: relative;margin-bottom:10px; padding-top:15px; border-top: 2px solid #B4B7BB;
                 .views-row{margin-bottom:15px;width:325px; height:170px; float:left;overflow:hidden;margin-right:15px;}
                 .views-row-last{margin-right:0px;}
                 .nota{height:auto; float:left; position: relative;
@@ -106,7 +106,7 @@
                         p{margin-bottom: 0px;margin-top: 0px}
                     }
                 }
-            }
+            }//Fin View-block_3
             .view-s-general-sub.view-display-id-block_1{width:1006px;height:auto; float:left;position: relative;margin-bottom:10px; padding-top:15px; border-top: 2px solid #B4B7BB;
                 .views-row{margin-bottom:15px;width:325px; height:170px; float:left;overflow:hidden;margin-right:15px;}
                 .views-row-last{margin-right:0px;}
@@ -148,7 +148,6 @@
                 }
             }//Fin seguir leyendo
             .divisor{float: left;border-right: 2px solid $estandar;height: 237px;position: absolute;left: 320px;top: 52px;}
-            .pauta_lateral{margin-top: 35px;}
             //MÁS
             .view-id-s_general.view-display-id-block_4{width:1006px;height:auto; float:left;position: relative;margin-bottom:10px;
                 .views-row{margin-bottom:15px;width:325px; height:300px; float:left;overflow:hidden;margin-right:15px;}
@@ -175,5 +174,8 @@
                 }
             }//fin mas    
         }
+    }
+    .content img:hover {
+        opacity: .9;
     }
 }//FIN Region
