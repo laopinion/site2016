@@ -55,9 +55,9 @@
 			            </ul> 
 			        </li>
 			        <li class="divider"></li>  
-			        <li><a href="">Judicial</a></li>
+			        <li><a href="<?php print base_path(); ?>judicial">Judicial</a></li>
 			        <li class="divider"></li>  
-			        <li><a href="">Frontera</a></li> 
+			        <li><a href="<?php print base_path(); ?>frontera">Frontera</a></li> 
 			        <li class="divider"></li>
 			        <li class="dropdown actualidad"><a href="">Actualidad</a> 
 			            <ul> 

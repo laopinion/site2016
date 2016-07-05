@@ -1173,6 +1173,245 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
     });
 //FIN COLOR SECCIONES
 
+/*ICONOS DE LAS SECCIONES*/
+//nota principal
+var tipo = $(".view-id-s_general.view-display-id-block .views-row .nota .tipo").html();
+  if(tipo == "Galería de imagenes"){
+      $(this).find(".nota .icon_galeria").css("display","block");
+      $(this).find(".nota .galeria").css("display","block");
+      $(this).find(".nota .icon_video").css("display","none");
+      $(this).find(".nota .video").css("display","none");
+      $(this).find(".nota .icon_podcast").css("display","none");
+      $(this).find(".nota .podcast").css("display","none");
+      $(this).find(".nota .foto").css("display","none");
+  }else if(tipo == "Video"){
+    $(this).find(".nota .icon_video").css("display","block");
+    $(this).find(".nota .video").css("display","block");
+    $(this).find(".nota .icon_galeria").css("display","none");
+    $(this).find(".nota .galeria").css("display","none");
+    $(this).find(".nota .icon_podcast").css("display","none");
+    $(this).find(".nota .podcast").css("display","none");
+    $(this).find(".nota .foto").css("display","none");
+  }else if(tipo == "Podcast"){
+    $(this).find(".nota .icon_podcast").css("display","block");
+    $(this).find(".nota .podcast").css("display","block");
+    $(this).find(".nota .icon_video").css("display","none");
+    $(this).find(".nota .video").css("display","none");
+    $(this).find(".nota .icon_galeria").css("display","none");
+    $(this).find(".nota .galeria").css("display","none");
+    $(this).find(".nota .foto").css("display","none");
+  }
+//Notas lado derecho secciones 
+$(".view-id-s_general.view-display-id-block_1 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+  });
+//Fin notas lado derecho secciones
+//2 notas horizontales despues de la destacada
+$(".view-id-s_general.view-display-id-block_2 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+  });
+//Fin 2 notas horizontales despues de la destacada
+//Mas noticias
+$(".view-id-s_general.view-display-id-block_4 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+  });
+//Fin noticias
+//notas horizontales por los barrios
+$(".view-id-s_general_sub.view-display-id-block_2 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+});
+//Fin notas horizontales por los barrios
+//notas horizontales ocaña
+$(".view-id-s_general_sub.view-display-id-block_1 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+});
+//Fin notas horizontales ocaña
+//notas horizontales pamplona
+$(".view-id-s_general_sub.view-display-id-block_3 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+});
+//Fin notas horizontales pamplona
+//notas horizontales region
+$(".view-id-s_general_sub.view-display-id-block_4 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+});
+//Fin notas horizontales region
+/*FIN ICONOS DE LAS SECCIONES*/
 
 
     //MENU MOVIL
