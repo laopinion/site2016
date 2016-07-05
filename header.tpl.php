@@ -59,17 +59,17 @@
 			        <li class="divider"></li>  
 			        <li><a href="<?php print base_path(); ?>frontera">Frontera</a></li> 
 			        <li class="divider"></li>
-			        <li class="dropdown actualidad"><a href="">Actualidad</a> 
+			        <li class="dropdown actualidad"><a href="<?php print base_path(); ?>actualidad">Actualidad</a> 
 			            <ul> 
-			                <li><span></span><a href="#opcion1">Economía</a></li>
+			                <li><span></span><a href="<?php print base_path(); ?>economia">Economía</a></li>
 			                <hr> 
-			                <li><span></span><a href="#opcion2">Política</a></li> 
+			                <li><span></span><a href="<?php print base_path(); ?>politica">Política</a></li> 
 			                <hr>
-			                <li><span></span><a href="#opcion3">Colombia</a></li>
+			                <li><span></span><a href="<?php print base_path(); ?>colombia">Colombia</a></li>
 			                <hr> 
-			                <li><span></span><a href="#opcion4">Venezuela</a></li>
+			                <li><span></span><a href="<?php print base_path(); ?>venezuela">Venezuela</a></li>
 			                <hr> 
-			                <li class="dropdown_2"><span></span><a href="#opcion5">Mundo</a>
+			                <li class="dropdown_2"><span></span><a href="<?php print base_path(); ?>mundo">Mundo</a>
 			                	
 			                </li> 
 			            </ul> 

@@ -1,5 +1,6 @@
 #cucuta{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;
     .content{width: 100%; float:left; margin-top: 40px; position: relative;
+        .menu_seccion{.submenu{height: 0;}}
         .izq{width: 640px;margin-right: 15px;float: left;position: relative;height: auto;
             //DESTACADA
             .view-id-s_general.view-display-id-block{width:640px;height:540px; float:left;position: relative;margin-bottom:15px; margin-right:15px;
@@ -129,7 +130,7 @@
                             }
                         }
                     }
-                    .views-row-1, .views-row-3, .views-row-5{margin-left: 0;}
+                    .views-row-1, .views-row-3, .views-row-6{margin-left: 0;}
                 }
             }//Fin seguir leyendo
             .divisor{float: left;border-right: 2px solid $estandar;height: 237px;position: absolute;left: 320px;top: 52px;}
@@ -149,6 +150,7 @@
                         .sep{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 10px;top: -2px;position: relative;margin: 0px;}
                         .fecha{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
                     }
+                    .podcast{width:240px; height:auto; float:left; position: relative; margin-right:10px;}
                     .video{width:240px; height:auto; float:left; position: relative; margin-right:10px;}
                     .galeria{width:240px; height:auto; float:left; position: relative; margin-right:10px;}
                     .foto{width:240px; height:auto; float:left; position: relative; margin-right:10px;}

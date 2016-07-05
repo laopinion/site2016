@@ -47,7 +47,7 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
     .region{background:transparent; color:$region; width:100%; height:auto; position: relative; float:left;}
     .región{background:transparent; color:$region; width:100%; height:auto; position: relative; float:left;
         .active{
-            a{font-weight:600;text-shadow: 1px 1px #333; color:$region;}
+            a{font-weight:600;text-shadow: 0.3px 0px #333; color:$region;}
         }//active
     }
     .judicial{background:transparent; color:$judicial; width:100%; height:auto; position: relative; float:left;
