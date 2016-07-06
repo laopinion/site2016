@@ -15,6 +15,7 @@
                         .sep{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 10px;top: -2px;position: relative;margin: 0px;}
                         .fecha{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
                     }
+                    .podcast{width:640px; height:auto; float:left; position: relative;}
                     .video{width:640px; height:auto; float:left; position: relative;}
                     .galeria{width:640px; height:auto; float:left; position: relative;}
                     .foto{width:640px; height:auto; float:left; position: relative;}
@@ -41,6 +42,7 @@
                         .sep{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 10px;top: -2px;position: relative;margin: 0px;}
                         .fecha{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
                     }
+                    .podcast{width:310px; height:auto; float:left; position: relative;}
                     .video{width:310px; height:auto; float:left; position: relative;}
                     .galeria{width:310px; height:auto; float:left; position: relative;}
                     .foto{width:310px; height:auto; float:left; position: relative;}
@@ -68,6 +70,7 @@
                         .sep{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 10px;top: -2px;position: relative;margin: 0px;}
                         .fecha{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
                     }
+                    .podcast{width:185px; height:auto; float:left; position: relative; margin-right:10px;}
                     .video{width:185px; height:auto; float:left; position: relative; margin-right:10px;}
                     .galeria{width:185px; height:auto; float:left; position: relative; margin-right:10px;}
                     .foto{width:185px; height:auto; float:left; position: relative; margin-right:10px;}
@@ -87,7 +90,7 @@
             }
             //SEGUIR LEYENDO
             .view-id-s_general.view-display-id-block_5{width: 65%;margin-right: 50px;float: left;margin-top: 20px;
-                .view-content{float: left;background-color: #f1f1f1;padding: 15px; width: auto;height: 225px;margin-bottom: 40px;
+                .view-content{display: flex;align-items: center;flex-wrap: wrap;float: left;background-color: #f1f1f1;padding: 15px; width: auto;height: 225px;margin-bottom: 40px;
                     .views-row{float: left; width: 300px;margin: 0 0px 10px 23px;
                         .seguir_leyendo{float: left;width: 300px;
                             .seccion{float: left; width: 100%;position: relative;left: -5px;
@@ -99,7 +102,7 @@
                             }
                         }
                     }
-                    .views-row-1, .views-row-3, .views-row-6{margin-left: 0;}
+                    .views-row-1, .views-row-3, .views-row-5{margin-left: 0;}
                 }
             }//Fin seguir leyendo
             .divisor{float: left;border-right: 2px solid $estandar;height: 237px;position: absolute;left: 320px;top: 52px;}
@@ -119,10 +122,10 @@
                         .sep{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 10px;top: -2px;position: relative;margin: 0px;}
                         .fecha{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
                     }
-                    .podcast{width:240px; height:auto; float:left; position: relative; margin-right:10px;}
-                    .video{width:240px; height:auto; float:left; position: relative; margin-right:10px;}
-                    .galeria{width:240px; height:auto; float:left; position: relative; margin-right:10px;}
-                    .foto{width:240px; height:auto; float:left; position: relative; margin-right:10px;}
+                    .podcast{width:100%; height:auto; float:left; position: relative; margin-right:10px;}
+                    .video{width:100%; height:auto; float:left; position: relative; margin-right:10px;}
+                    .galeria{width:100%; height:auto; float:left; position: relative; margin-right:10px;}
+                    .foto{width:100%; height:auto; float:left; position: relative; margin-right:10px;}
                     .titulo{float:left; position: relative; width:100%; height:auto;line-height:20px;padding:5px 0px; margin-bottom:0px;
                         a{font-size: 18px; font-weight:600; text-decoration:none; color:#101314;}
                     }

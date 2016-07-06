@@ -14,6 +14,7 @@
                         .sep{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 10px;top: -2px;position: relative;margin: 0px;}
                         .fecha{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
                     }
+                    .podcast{width:640px; height:auto; float:left; position: relative;}
                     .video{width:640px; height:auto; float:left; position: relative;}
                     .galeria{width:640px; height:auto; float:left; position: relative;}
                     .foto{width:640px; height:auto; float:left; position: relative;}
@@ -40,6 +41,7 @@
                         .sep{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 10px;top: -2px;position: relative;margin: 0px;}
                         .fecha{color:$seccion; text-decoration:none; text-transform:normal;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
                     }
+                    .podcast{width:310px; height:auto; float:left; position: relative;}
                     .video{width:310px; height:auto; float:left; position: relative;}
                     .galeria{width:310px; height:auto; float:left; position: relative;}
                     .foto{width:310px; height:auto; float:left; position: relative;}
@@ -82,12 +84,12 @@
         }
         .mid{width: 100%;margin-right: 0px;margin-bottom:15px; float: left;position: relative;height: auto;border-bottom: 2px solid #B4B7BB;
             .subseccion{width:100%;padding: 0px 0px 15px 0px;height: 11px;float:left;color:$region; text-transform:uppercase;font-size:13px;
-                .color{background:$judicial; height:10px; width:25px; float:left;position: relative;text-indent:-9999px;}
+                .color{background:$actualidad; height:10px; width:25px; float:left;position: relative;text-indent:-9999px;}
                 span{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
             }
             //SEGUIR LEYENDO
             .view-id-s_general.view-display-id-block_5{width: 65%;margin-right: 50px;float: left;margin-top: 20px;
-                .view-content{float: left;background-color: #f1f1f1;padding: 15px; width: auto;height: 225px;margin-bottom: 40px;
+                .view-content{display: flex;align-items: center;flex-wrap: wrap;float: left;background-color: #f1f1f1;padding: 15px; width: auto;height: 225px;margin-bottom: 40px;
                     .views-row{float: left; width: 300px;margin: 0 0px 10px 23px;
                         .seguir_leyendo{float: left;width: 300px;
                             .seccion{float: left; width: 100%;position: relative;left: -5px;
@@ -99,7 +101,7 @@
                             }
                         }
                     }
-                    .views-row-1, .views-row-3, .views-row-6{margin-left: 0;}
+                    .views-row-1, .views-row-3, .views-row-5{margin-left: 0;}
                 }
             }//Fin seguir leyendo
             .divisor{float: left;border-right: 2px solid $estandar;height: 237px;position: absolute;left: 320px;top: 52px;}
