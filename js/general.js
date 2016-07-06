@@ -1124,7 +1124,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionL == "Frontera"){
         $(this).find(".nota .seccion .color").css({background:"#89C33F"}); 
       }else
-      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
         $(this).find(".nota .seccion .color").css({background:"#3D9E04"}); 
       }else
       if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
@@ -1171,11 +1171,47 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
         $(this).find(".nota .seccion a").css({color:"#C60B77"}); 
       }
     });
+
+    var nomSeccion = $("#secciones .izq .view-display-id-block .nota .seccion .color").text();
+    if(nomSeccion == "Cúcuta" || nomSeccion == "Memorias" || nomSeccion == "Por los barrios"){
+        $(".mid .view-header .subseccion .color").css({background:"#BA2025"}); 
+    }else
+    if(nomSeccion == "Región" || nomSeccion == "Pamplona" || nomSeccion == "Ocaña"){
+      $(".mid .view-header .subseccion .color").css({background:"#F9D821"}); 
+    }else
+    if(nomSeccion == "Judicial"){
+      $(".mid .view-header .subseccion .color").css({background:"#F87917"}); 
+    }else
+    if(nomSeccion == "Frontera"){
+      $(".mid .view-header .subseccion .color").css({background:"#89C33F"}); 
+    }else
+    if(nomSeccion == "Actualidad" || nomSeccion == "Economía" || nomSeccion == "Poítica" || nomSeccion == "Colombia" || nomSeccion == "Venezuela" || nomSeccion == "Mundo"){
+      $(".mid .view-header .subseccion .color").css({background:"#3D9E04"}); 
+    }else
+    if(nomSeccion == "Opinión" || nomSeccion == "Editorial" || nomSeccion == "Columnistas" || nomSeccion == "Caricaturas"){
+      $(".mid .view-header .subseccion .color").css({background:"#BFD63E"}); 
+    }else
+    if(nomSeccion == "Deportes" || nomSeccion == "Cúcuta Deportivo" || nomSeccion == "Fútbol" || nomSeccion == "+ deportes" || nomSeccion == "Copa América 2015" || nomSeccion == "Copa América 2016"){
+      $(".mid .view-header .subseccion .color").css({background:"#3FA6F2"}); 
+    }else
+    if(nomSeccion == "Entretenimiento" || nomSeccion == "Actividad social" || nomSeccion == "Tecnología" || nomSeccion == "Cultura" || nomSeccion == "Cultura" || nomSeccion == "Tendencias" || nomSeccion == "Viral" || nomSeccion == "Vida y salud"){
+      $(".mid .view-header .subseccion .color").css({background:"#8B7AB5"}); 
+    }else
+    if(nomSeccion == "Participación" || nomSeccion == "Reportero ciudadano" || nomSeccion == "Así opinan"){
+      $(".mid .view-header .subseccion .color").css({background:"#C60B77"}); 
+    }
 //FIN COLOR SECCIONES
+
+/*Validacion si existe submenu*/
+if($("#secciones .menu_seccion .submenu ul li").length == 0 ){
+  $("#secciones .menu_seccion .submenu").css("height","0");
+}
+/*Fin validacion*/
 
 /*ICONOS DE LAS SECCIONES*/
 //nota principal
-var tipo = $(".view-id-s_general.view-display-id-block .views-row .nota .tipo").html();
+$(".view-id-s_general.view-display-id-block .views-row").each(function(){
+  var tipo = $(this).find(".tipo").html();
   if(tipo == "Galería de imagenes"){
       $(this).find(".nota .icon_galeria").css("display","block");
       $(this).find(".nota .galeria").css("display","block");
@@ -1201,6 +1237,7 @@ var tipo = $(".view-id-s_general.view-display-id-block .views-row .nota .tipo").
     $(this).find(".nota .galeria").css("display","none");
     $(this).find(".nota .foto").css("display","none");
   }
+});
 //Notas lado derecho secciones 
 $(".view-id-s_general.view-display-id-block_1 .views-row").each(function(){
       var ContentTypeL = $(this).find(".tipo").html();
