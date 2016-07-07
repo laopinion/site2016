@@ -1155,7 +1155,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionL == "Frontera"){
         $(this).find(".nota .seccion a").css({color:"#89C33F"}); 
       }else
-      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
         $(this).find(".nota .seccion a").css({color:"#3D9E04"}); 
       }else
       if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
@@ -1185,7 +1185,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
     if(nomSeccion == "Frontera"){
       $(".mid .view-header .subseccion .color").css({background:"#89C33F"}); 
     }else
-    if(nomSeccion == "Actualidad" || nomSeccion == "Economía" || nomSeccion == "Poítica" || nomSeccion == "Colombia" || nomSeccion == "Venezuela" || nomSeccion == "Mundo"){
+    if(nomSeccion == "Actualidad" || nomSeccion == "Economía" || nomSeccion == "Política" || nomSeccion == "Colombia" || nomSeccion == "Venezuela" || nomSeccion == "Mundo"){
       $(".mid .view-header .subseccion .color").css({background:"#3D9E04"}); 
     }else
     if(nomSeccion == "Opinión" || nomSeccion == "Editorial" || nomSeccion == "Columnistas" || nomSeccion == "Caricaturas"){
@@ -1448,6 +1448,156 @@ $(".view-id-s_general_sub.view-display-id-block_4 .views-row").each(function(){
       }
 });
 //Fin notas horizontales region
+//notas horizontales Economia
+$(".view-id-s_general_sub.view-display-id-block_7 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+});
+//Fin notas horizontales Economia
+//notas horizontales Politíca
+$(".view-id-s_general_sub.view-display-id-block_8 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+});
+//Fin notas horizontales Politíca
+//notas horizontales Colombia
+$(".view-id-s_general_sub.view-display-id-block_9 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+});
+//Fin notas horizontales Colombia
+//notas horizontales Venezuela
+$(".view-id-s_general_sub.view-display-id-block_10 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+});
+//Fin notas horizontales Venezuela
+//notas horizontales Mundo
+$(".view-id-s_general_sub.view-display-id-block_11 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+});
+//Fin notas horizontales Mundo
 /*FIN ICONOS DE LAS SECCIONES*/
 
 
