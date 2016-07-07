@@ -1,4 +1,4 @@
-<section id="actualidad">
+<section id="deportes">
       <div class="content">
         <?php if (!empty($tabs['#primary'])): ?><div id="tabs"><?php print render($tabs); ?></div><?php endif; ?>
         <!--ANUNCIO 1000x30--><div class="p1000x30"><?php // $block =block_load('block',39); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div><!--FIN 1.ANUNCIO 1000x30-->
@@ -12,7 +12,7 @@
           <!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php $block =block_load('block',49); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div></div><!--FIN ANUNCIO 300x250-->
         </div> <!--Fin der-->
         <div class="mid">           
-          <!--Economia--><?php $view = views_get_view('s_general_sub'); print $view->preview('block_7'); ?><!--FIN Economia-->
+          <!--Cúcuta deportivo--><?php $view = views_get_view('s_general_sub'); print $view->preview('block_12'); ?><!--FIN Cúcuta deportivo-->
         </div>
         <!--ANUNCIO 728x90--><div class="pauta p728x90" style="margin: 0 135px 15px 135px;"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php $block =block_load('block',49); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div></div><!--FIN ANUNCIO 728x90-->
          <div class="mid" style="border-bottom: none;">           
