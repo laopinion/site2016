@@ -1598,6 +1598,96 @@ $(".view-id-s_general_sub.view-display-id-block_11 .views-row").each(function(){
       }
 });
 //Fin notas horizontales Mundo
+//notas horizontales Cúcuta deportivo
+$(".view-id-s_general_sub.view-display-id-block_12 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+});
+//Fin notas horizontales Cúcuta deportivo
+//notas horizontales Futbol
+$(".view-id-s_general_sub.view-display-id-block_13 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+});
+//Fin notas horizontales Futbol
+//notas horizontales Mas deportes
+$(".view-id-s_general_sub.view-display-id-block_13 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
+      }
+});
+//Fin notas horizontales Mas deportes
 /*FIN ICONOS DE LAS SECCIONES*/
 
 

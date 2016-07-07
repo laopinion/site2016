@@ -95,23 +95,23 @@
 			        <li class="divider"></li>
 			        <li class="dropdown entretenimiento"><a href="<?php print base_path(); ?>entretenimiento">Entretenimiento</a> 
 			            <ul> 
-			                <li><span></span><a href="#opcion1">Actividad social</a></li>
+			                <li><span></span><a href="<?php print base_path(); ?>actividad-social">Actividad social</a></li>
 			                <hr> 
-			                <li><span></span><a href="#opcion2">Tecnología</a></li> 
+			                <li><span></span><a href="<?php print base_path(); ?>tecnologia">Tecnología</a></li> 
 			                <hr>
-			                <li><span></span><a href="#opcion3">Cultura</a></li>
+			                <li><span></span><a href="<?php print base_path(); ?>cultura">Cultura</a></li>
 			                <hr> 
-			                <li><span></span><a href="#opcion4">Tendencias</a></li>
+			                <li><span></span><a href="<?php print base_path(); ?>tendencias">Tendencias</a></li>
 			                <hr> 
-			                <li><span></span><a href="#opcion5">Viral</a></li> 
+			                <li><span></span><a href="<?php print base_path(); ?>viral">Viral</a></li> 
 			                <hr> 
-			                <li><span></span><a href="#opcion6">Vida y salud</a></li> 
+			                <li><span></span><a href="<?php print base_path(); ?>vida-y-salud">Vida y salud</a></li> 
 			            </ul> 
 			        </li>
 			        <li class="divider"></li>
-			        <li><a href="#servicios">Servicios</a></li>
+			        <li><a href="<?php print base_path(); ?>servicios">Servicios</a></li>
 			        <li class="divider"></li>
-			        <li><a href="#participacion">Participación</a></li>
+			        <li><a href="<?php print base_path(); ?>participacion">Participación</a></li>
 					<ul id="redes_sociales">
 						<li class="facebook">
 							<a href="https://www.facebook.com/laopinioncucuta/" target="_blank"></a>							
