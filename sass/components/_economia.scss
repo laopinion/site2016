@@ -3,13 +3,13 @@
         //Indicadores Economicos
         .content{margin: 0;}
         .portada{display:none;}
-        .seccion_economia{width:100%;float:left; position: relative;height:auto; border:1px solid #E8E7E8; background:#333;  
+        .seccion_economia{padding: 10px;width:98.2%;float:left; position: relative;height:auto; border:1px solid #E8E7E8; background:#333;  
             .item{width:102px; float:left; position: relative; height: 40px; color:#fff;
-                    .indicador_BAJO{background: url(../images/iconos/flecharoja-economia.svg) 0px 1px/20px auto no-repeat;top: 0px;width:30px; height:40px; position:relative; float:left; color:#DF0928; font-weight:300;}
-                    .indicador_BAJÓ{background: url(../images/iconos/flecharoja-economia.svg) 0px 1px/20px auto no-repeat;top: 0px;width:30px; height:40px; position:relative; float:left; color:#DF0928; font-weight:300;}
-                    .indicador_IGUAL{background: url(../images/iconos/flechaigual-economia.svg) 0px 1px/20px auto no-repeat;top: 0px;width:30px; height:40px; position:relative; float:left; color:#DF0928; font-weight:300;}
-                    .indicador_SUBIO{background: url(../images/iconos/flechaverde-economia.svg) 0px 1px/20px auto no-repeat;top: 0px;width:30px; height:40px; position:relative; float:left; color:#DF0928; font-weight:300;}
-                    .indicador_SUBIÓ{background: url(../images/iconos/flechaverde-economia.svg) 0px 1px/20px auto no-repeat;top: 0px;width:30px; height:40px; position:relative; float:left; color:#DF0928; font-weight:300;}
+                    .indicador_BAJO{background: url(../images/iconos/flecharoja-economia.svg) 0px 1px/25px auto no-repeat;top: 0px;width:30px; height:40px; position:relative; float:left; color:#DF0928; font-weight:300;}
+                    .indicador_BAJÓ{background: url(../images/iconos/flecharoja-economia.svg) 0px 1px/25px auto no-repeat;top: 0px;width:30px; height:40px; position:relative; float:left; color:#DF0928; font-weight:300;}
+                    .indicador_IGUAL{background: url(../images/iconos/flechaigual-economia.svg) 0px 12px/25px auto no-repeat;top: 0px;width:30px; height:40px; position:relative; float:left; color:#DF0928; font-weight:300;}
+                    .indicador_SUBIO{background: url(../images/iconos/flechaverde-economia.svg) 0px 1px/25px auto no-repeat;top: 0px;width:30px; height:40px; position:relative; float:left; color:#DF0928; font-weight:300;}
+                    .indicador_SUBIÓ{background: url(../images/iconos/flechaverde-economia.svg) 0px 1px/25px auto no-repeat;top: 0px;width:30px; height:40px; position:relative; float:left; color:#DF0928; font-weight:300;}
                     .nombre{color:#E0DEDD; font-weight:300; font-size:12px; position: relative; float:left;width:70px; height:20px;}
                     .nombre_petroleo{color:#E0DEDD; font-weight:300; font-size:11px; position: relative; float:left;width:72px; height:20px;text-transform:capitalize;
                         span{font-size:9px; text-transform:uppercase;}
@@ -17,13 +17,12 @@
                     .valor{color:#fff; font-weight:600; font-size:12px; position: relative; float:left;width:70px;height:20px;}
             }
         }
-        .seccion_economia_otros{padding:10px; float: left; width: 98.2%; background: #f1f1f1;
-            h2{display: none;} 
-
+        .seccion_economia_otros{height: 210px;margin-bottom: 20px;padding:10px; float: left; width: 98.2%; background: #E0E0E0;
+            h2{font-weight: 400;background-color: #333;width: 120px;padding: 5px;color: white;position: relative;left: 0;right: 0;top: -20px;margin: 0 auto;font-size: 14px;text-align: center;text-transform: uppercase;} 
             .item_empleo {width:515px; position: relative; float:left;
-                .empleo_1{float: left;width: 240px;margin: 0px;text-align: center;z-index: 2;}
+                .empleo_1{float: left;width: 240px;margin: 0px;}
                 .empleo_2{float: left;width: 240px;margin: 0px;margin-top: 34px;}
-                .titulo{font-size:18px; color:#333; text-transform:capitalize; width:465px;border-bottom:1px solid #E8E7E8;font-weight:600;margin-bottom:10px;position: relative; float:left;}
+                .titulo{text-align: center;z-index: 2;font-size:18px; color:#333; text-transform:capitalize; width:465px;border-bottom:2px solid #333;font-weight:600;margin-bottom:10px;position: relative; float:left;}
                 span{font-size:16px; color:#333;  width:200px;float:left;text-align: left;
                     .circulo{background:$actualidad;border-radius:7px; width:7px; height:7px; float:left; margin-right:5px;position: relative;top:7px;}
                 }
@@ -33,86 +32,86 @@
                     .indicador_IGUAL{background: url(../images/iconos/flechaigual-economia.svg) 0px 0px/25px auto no-repeat;top: 0px;width:30px; height:45px; position:relative; float:left; color:#DF0928; font-weight:300;}
                     .indicador_SUBIO{background: url(../images/iconos/flechaverde-economia.svg) 0px 0px/25px auto no-repeat;top: 0px;width:30px; height:45px; position:relative; float:left; color:#DF0928; font-weight:300;}
                     .indicador_SUBIÓ{background: url(../images/iconos/flechaverde-economia.svg) 0px 0px/25px auto no-repeat;top: 0px;width:30px; height:45px; position:relative; float:left; color:#DF0928; font-weight:300;}
-                    .nombre{color:#666; font-weight:300; font-size:14px; position: relative; float:left;width:90px; height:20px;}
-                    .valor{color:#666; font-weight:600; font-size:20px; position: relative; float:left;width:90px;height:20px;margin:0px 0px 3px 0px;}
+                    .nombre{color:#666; font-weight:300; font-size:14px; text-align: left; position: relative; float:left;width:60px; height:20px;}
+                    .valor{color:#666; font-weight:600; font-size:20px; text-align: left; position: relative; float:left;width:60px;height:20px;margin:0px 0px 3px 0px;}
                 }
                 .item_puesto{width:200px; position: relative; float:left;
                     .indicador{background: url(../images/iconos/indicador_puesto.svg) -2px 0px/35px auto no-repeat;top: 0px;width:30px; height:40px; float:left; position:absolute;top: 18px; z-index:1;
                         span{color: #fff;font-weight: 600;font-size: 12px;z-index: 2;left: 6px;float: left;position: relative;top: 6px;text-align: center;width: 20px;}
                     }
-                    .indicador_1{left: -2px;}
-                    .indicador_2{left: 8px;}
-                    .indicador_3{left: 20px;}
-                    .indicador_4{left: 32px;}
-                    .indicador_5{left: 42px;}
-                    .indicador_6{left: 53px;}
-                    .indicador_7{left: 64px;}
-                    .indicador_8{left: 75px;}
-                    .indicador_9{left: 87px;}
-                    .indicador_10{left: 98px;}
-                    .indicador_11{left: 109px;}
-                    .indicador_12{left: 120px;}
-                    .indicador_13{left: 131px;}
-                    .indicador_14{left: 143px;}
-                    .indicador_15{left: 153px;}
-                    .indicador_16{left: 164px;}
-                    .indicador_17{left: 176px;}
-                    .indicador_18{left: 187px;}
-                    .indicador_19{left: 198px;}
-                    .indicador_20{left: 210px;}
-                    .indicador_21{left: 219px;}
-                    .indicador_22{left: 231px;}
-                    .indicador_23{left: 242px;}
-                    .barra{background: url(../images/iconos/indicador_barra.svg) 0px 0px/270px auto no-repeat;top: 0px;width:270px; height:70px; position:relative; float:left; color:#DF0928; font-weight:300;margin-top:15px;}
+                    .indicador_1{left: -12px;}
+                    .indicador_2{left: -2px;}
+                    .indicador_3{left: 8px;}
+                    .indicador_4{left: 18px;}
+                    .indicador_5{left: 28px;}
+                    .indicador_6{left: 38px;}
+                    .indicador_7{left: 48px;}
+                    .indicador_8{left: 58px;}
+                    .indicador_9{left: 68px;}
+                    .indicador_10{left: 78px;}
+                    .indicador_11{left: 88px;}
+                    .indicador_12{left: 98px;}
+                    .indicador_13{left: 108px;}
+                    .indicador_14{left: 118px;}
+                    .indicador_15{left: 128px;}
+                    .indicador_16{left: 138px;}
+                    .indicador_17{left: 148px;}
+                    .indicador_18{left: 158px;}
+                    .indicador_19{left: 168px;}
+                    .indicador_20{left: 178px;}
+                    .indicador_21{left: 198px;}
+                    .indicador_22{left: 208px;}
+                    .indicador_23{left: 218px;}
+                    .barra{background: url(../images/iconos/indicador_barra.svg) 0px 0px/240px auto no-repeat;top: 0px;width:240px; height:70px; position:relative; float:left; color:#DF0928; font-weight:300;margin-top:15px;left: -7px;}
                 }
             }//FIN ITEM EMPLEO
             .item_comercio{width:470px; position: relative; float:left;
-                .comercio_exterior{float: left;width: 260px;margin: 0px;}
+                .comercio_exterior{float: left;width: 230px;margin: 0px;}
                 .costo_de_vida{float: left;width: 200px;margin: 0px;}
-                .titulo{text-align: center;font-size:18px; color:#333; text-transform:capitalize; width:200px;border-bottom:1px solid #E8E7E8;font-weight:600;margin-bottom:10px;position: relative; float:left;}
-                span{font-size:16px; color:#333;  width:130px;float:left;
+                .titulo{text-align: center;font-size:18px; color:#333; text-transform:capitalize; width:210px;border-bottom:2px solid #333;font-weight:600;margin-bottom:10px;position: relative; float:left;}
+                span{font-size:16px; color:#333;  width:110px;float:left;
                     .circulo{background:$actualidad;border-radius:7px; width:7px; height:7px; float:left; margin-right:5px;position: relative;top:7px;}
                 }
-                .costo{font-size:16px; color:#333;  width:270px;float:left;
+                .costo{font-size:16px; color:#333;  width:200px;float:left;
                     .circulo{background:$actualidad;border-radius:7px; width:7px; height:7px; float:left; margin-right:5px;position: relative;top:7px;}
                 }
-                .item{width:130px; float:left; position: relative; height: 45px; color:#666;
+                .item{width:100px; float:left; position: relative; height: 45px; color:#666;
                     .indicador_BAJO{background: url(../images/iconos/flecharoja-economia.svg) 0px 0px/25px auto no-repeat;top: 0px;width:30px; height:45px; position:relative; float:left; color:#DF0928; font-weight:300;}
                     .indicador_BAJÓ{background: url(../images/iconos/flecharoja-economia.svg) 0px 0px/25px auto no-repeat;top: 0px;width:30px; height:45px; position:relative; float:left; color:#DF0928; font-weight:300;}
                     .indicador_IGUAL{background: url(../images/iconos/flechaigual-economia.svg) 0px 0px/25px auto no-repeat;top: 0px;width:30px; height:45px; position:relative; float:left; color:#DF0928; font-weight:300;}
                     .indicador_SUBIO{background: url(../images/iconos/flechaverde-economia.svg) 0px 0px/25px auto no-repeat;top: 0px;width:30px; height:45px; position:relative; float:left; color:#DF0928; font-weight:300;}
                     .indicador_SUBIÓ{background: url(../images/iconos/flechaverde-economia.svg) 0px 0px/25px auto no-repeat;top: 0px;width:30px; height:45px; position:relative; float:left; color:#DF0928; font-weight:300;}
-                    .nombre{color:#666; font-weight:300; font-size:14px; position: relative; float:left;width:90px; height:20px;}
-                    .valor{color:#666; font-weight:600; font-size:20px; position: relative; float:left;width:90px;height:20px;margin:0px 0px 3px 0px;}
+                    .nombre{color:#666; font-weight:300; font-size:14px; position: relative; float:left;width:60px; height:20px;}
+                    .valor{color:#666; font-weight:600; font-size:20px; position: relative; float:left;width:60px;height:20px;margin:0px 0px 3px 0px;}
                 }
-                .item_puesto{width:270px; position: relative; float:left;
+                .item_puesto{width:200px; position: relative; float:left;
                     .indicador{background: url(../images/iconos/indicador_puesto.svg) -2px 0px/35px auto no-repeat;top: 0px;width:30px; height:40px; float:left; position:absolute;top: 18px; z-index:1;
                         span{color: #fff;font-weight: 600;font-size: 12px;z-index: 2;left: 6px;float: left;position: relative;top: 6px;text-align: center;width: 20px;}
                     }
-                    .indicador_1{left: -2px;}
-                    .indicador_2{left: 8px;}
-                    .indicador_3{left: 20px;}
-                    .indicador_4{left: 32px;}
-                    .indicador_5{left: 42px;}
-                    .indicador_6{left: 53px;}
-                    .indicador_7{left: 64px;}
-                    .indicador_8{left: 75px;}
-                    .indicador_9{left: 87px;}
-                    .indicador_10{left: 98px;}
-                    .indicador_11{left: 109px;}
-                    .indicador_12{left: 120px;}
-                    .indicador_13{left: 131px;}
-                    .indicador_14{left: 143px;}
-                    .indicador_15{left: 153px;}
-                    .indicador_16{left: 164px;}
-                    .indicador_17{left: 176px;}
-                    .indicador_18{left: 187px;}
-                    .indicador_19{left: 198px;}
-                    .indicador_20{left: 210px;}
-                    .indicador_21{left: 219px;}
-                    .indicador_22{left: 231px;}
-                    .indicador_23{left: 242px;}
-                    .barra{background: url(../images/iconos/indicador_barra.svg) 0px 0px/270px auto no-repeat;top: 0px;width:270px; height:70px; position:relative; float:left; color:#DF0928; font-weight:300;margin-top:15px;}
+                    .indicador_1{left: -12px;}
+                    .indicador_2{left: -2px;}
+                    .indicador_3{left: 8px;}
+                    .indicador_4{left: 18px;}
+                    .indicador_5{left: 28px;}
+                    .indicador_6{left: 38px;}
+                    .indicador_7{left: 48px;}
+                    .indicador_8{left: 58px;}
+                    .indicador_9{left: 68px;}
+                    .indicador_10{left: 78px;}
+                    .indicador_11{left: 88px;}
+                    .indicador_12{left: 98px;}
+                    .indicador_13{left: 108px;}
+                    .indicador_14{left: 118px;}
+                    .indicador_15{left: 128px;}
+                    .indicador_16{left: 138px;}
+                    .indicador_17{left: 148px;}
+                    .indicador_18{left: 158px;}
+                    .indicador_19{left: 168px;}
+                    .indicador_20{left: 178px;}
+                    .indicador_21{left: 198px;}
+                    .indicador_22{left: 208px;}
+                    .indicador_23{left: 218px;}
+                    .barra{background: url(../images/iconos/indicador_barra.svg) 0px 0px/240px auto no-repeat;top: 0px;width:240px; height:70px; position:relative; float:left; color:#DF0928; font-weight:300;margin-top:15px;left: -7px;}
                 }
             }//FIN ITEM COMERCIO
         }//FIN OTROS INDICADORES 
