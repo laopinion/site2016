@@ -4,7 +4,7 @@
         .content{margin: 0;}
         .portada{display:none;}
         .seccion_economia{padding: 10px;width:98.2%;float:left; position: relative;height:auto; border:1px solid #E8E7E8; background:#333;  
-            .item{width:102px; float:left; position: relative; height: 40px; color:#fff;
+            .item{width:109px; float:left; position: relative; height: 40px; color:#fff;
                     .indicador_BAJO{background: url(../images/iconos/flecharoja-economia.svg) 0px 1px/25px auto no-repeat;top: 0px;width:30px; height:40px; position:relative; float:left; color:#DF0928; font-weight:300;}
                     .indicador_BAJÓ{background: url(../images/iconos/flecharoja-economia.svg) 0px 1px/25px auto no-repeat;top: 0px;width:30px; height:40px; position:relative; float:left; color:#DF0928; font-weight:300;}
                     .indicador_IGUAL{background: url(../images/iconos/flechaigual-economia.svg) 0px 12px/25px auto no-repeat;top: 0px;width:30px; height:40px; position:relative; float:left; color:#DF0928; font-weight:300;}
@@ -36,9 +36,9 @@
                     .valor{color:#666; font-weight:600; font-size:20px; text-align: left; position: relative; float:left;width:60px;height:20px;margin:0px 0px 3px 0px;}
                 }
                 .item_puesto{width:200px; position: relative; float:left;
-                    .indicador{background: url(../images/iconos/indicador_puesto.svg) -2px 0px/35px auto no-repeat;top: 0px;width:30px; height:40px; float:left; position:absolute;top: 18px; z-index:1;
-                        span{color: #fff;font-weight: 600;font-size: 12px;z-index: 2;left: 6px;float: left;position: relative;top: 6px;text-align: center;width: 20px;}
-                    }
+                    .indicador{transition: .8s;background: url(../images/iconos/indicador_puesto.svg) -2px 0px/35px auto no-repeat;top: 0px;width:30px; height:40px; float:left; position:absolute;top: 18px; z-index:1; left: -12px;
+                        span{transition: .8s;color: #fff;font-weight: 600;font-size: 12px;z-index: 2;left: 6px;float: left;position: relative;top: 6px;text-align: center;width: 20px;}
+                    }/* 
                     .indicador_1{left: -12px;}
                     .indicador_2{left: -2px;}
                     .indicador_3{left: 8px;}
@@ -61,7 +61,7 @@
                     .indicador_20{left: 178px;}
                     .indicador_21{left: 198px;}
                     .indicador_22{left: 208px;}
-                    .indicador_23{left: 218px;}
+                    .indicador_23{left: 218px;} */
                     .barra{background: url(../images/iconos/indicador_barra.svg) 0px 0px/240px auto no-repeat;top: 0px;width:240px; height:70px; position:relative; float:left; color:#DF0928; font-weight:300;margin-top:15px;left: -7px;}
                 }
             }//FIN ITEM EMPLEO
@@ -84,11 +84,11 @@
                     .nombre{color:#666; font-weight:300; font-size:14px; position: relative; float:left;width:60px; height:20px;}
                     .valor{color:#666; font-weight:600; font-size:20px; position: relative; float:left;width:60px;height:20px;margin:0px 0px 3px 0px;}
                 }
-                .item_puesto{width:200px; position: relative; float:left;
-                    .indicador{background: url(../images/iconos/indicador_puesto.svg) -2px 0px/35px auto no-repeat;top: 0px;width:30px; height:40px; float:left; position:absolute;top: 18px; z-index:1;
-                        span{color: #fff;font-weight: 600;font-size: 12px;z-index: 2;left: 6px;float: left;position: relative;top: 6px;text-align: center;width: 20px;}
+                .item_puesto{width:200px; position: relative; float:left; 
+                    .indicador{transition: .8s; background: url(../images/iconos/indicador_puesto.svg) -2px 0px/35px auto no-repeat;top: 0px;width:30px; height:40px; float:left; position:absolute;top: 18px; z-index:1; left: -12px;
+                        span{transition: .8s;color: #fff;font-weight: 600;font-size: 12px;z-index: 2;left: 6px;float: left;position: relative;top: 6px;text-align: center;width: 20px;}
                     }
-                    .indicador_1{left: -12px;}
+                    /* .indicador_1{left: -12px;}
                     .indicador_2{left: -2px;}
                     .indicador_3{left: 8px;}
                     .indicador_4{left: 18px;}
@@ -110,7 +110,7 @@
                     .indicador_20{left: 178px;}
                     .indicador_21{left: 198px;}
                     .indicador_22{left: 208px;}
-                    .indicador_23{left: 218px;}
+                    .indicador_23{left: 218px;} */
                     .barra{background: url(../images/iconos/indicador_barra.svg) 0px 0px/240px auto no-repeat;top: 0px;width:240px; height:70px; position:relative; float:left; color:#DF0928; font-weight:300;margin-top:15px;left: -7px;}
                 }
             }//FIN ITEM COMERCIO
