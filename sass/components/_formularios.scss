@@ -68,50 +68,6 @@
             }
     }//FIN FORM
 
-    //SUSCRIPCIONES
-    #suscripciones{float:left; position: relative;
-        h2{font-size:18px; color:#fff; text-transform:uppercase; width:960px; margin:20px 0px; padding: 5px 0px 0px 10px; background:#BA2025; font-weight:500;}
-        .info{border:2px solid #E8E7E8;width:960px; height:auto;float:left; position: relative;background:#fff; margin-bottom:20px; padding:0px;
-            .logo_o{background: url(../images/iconos/icon_lao.svg) 5px -5px/90px auto no-repeat;height: 100px;width:100px;display: block;text-indent: -9999px;margin: 0 auto;}
-            .izquierda{width:544px; height:647px;position: relative; float:left; background: url(../images/suscripciones.jpg) 0px 0px/544px auto no-repeat;margin-right:0px;}
-            .derecha{width:416px; height:647px;position: relative; float:left; 
-                h3{font-size:18px; color:#fff; text-transform:uppercase; width:196px; margin:20px 0px; padding:10px 110px; background:#BA2025; font-weight:500; text-align:center;}
-                .leyenda{font-size:15px;position:relative; float:left; color:#101314; font-weight:300; width:260px; padding:5px 80px; float:left; position: relative; height:auto; text-align:center; margin:0px;
-                    span{font-weight:600; text-transform:uppercase;}
-                }
-                .rollo{display: block;float: left;position: relative;overflow: hidden;width: 150px;height: 85px;padding:0px 133px; background: url(../images/rollo_periodico.png) 130px 15px/160px auto no-repeat;}
-                .formulario{width:300px; float:left; position: relative;margin-bottom:20px; padding:0px 58px;color:#969696; font-size:16px; ; 
-                    .form-item{text-align:center;
-                        label{font-weight:600; color:#969696;}
-                        input{background:#F5F5F5;border:1px solid #DFDFDF; border-radius:5px; color:#969696; width:250px; text-align:center;margin:5px 0px;font-size:14px;}
-                        .description{color:#b1b1b1; font-size:15px; line-height:16px;margin:5px 0px 20px 0px; font-weight:300;}
-                    }
-                    .form-actions{width:100px; margin:0 auto; position: relative;
-                        .webform-submit{width:100px; background:#BA2025; color:#fff; border-radius:5px; border:1px solid #fff;font-size:15px;}
-                    }
-                }//FIN FORM
-            }
-            .bottom{width:960px; height:240px;position: relative; float:left; 
-                h4{font-size:36px; color:#BA2025; text-transform:uppercase; width:430px; margin:20px 0px; padding:10px 264px; font-weight:600; text-align:center;}
-                .items{width:960px; position: relative;margin:0 auto; height:100px;
-                    .item{width:150px; float:left; text-align:center; border-right:1px solid #BA2025; height:30px; padding:10px 30px; font-size:18px;}
-                    .item1{}
-                    .item2{
-                         span{top:-4px;position: relative;}
-                    }
-                    .item3{
-                           span{top:-4px;position: relative;}
-                    }
-                    .item4{border-right:none;
-                           span{top:-4px;position: relative;}
-                    }
-                }
-                .final{width:770px; font-size:14px;font-weight:300;position: relative;margin:0 auto;}
-            } 
-
-        }//FIN INFO
-    }//FIN SUSCRIPCIONES
-
     //OPTATIVOS
     #optativos{float:left; position: relative;
         h2{font-size:18px; color:#fff; text-transform:uppercase; width:960px; margin:20px 0px; padding: 5px 0px 0px 10px; background:#BA2025; font-weight:500;}
