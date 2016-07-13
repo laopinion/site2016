@@ -14,7 +14,7 @@
 	    		}
 	    	}
     	}//Fin logos
-    	.meses{-moz-box-shadow: -2px 7px 18px #c1c1c1;-webkit-box-shadow: -2px 7px 18px #c1c1c1;box-shadow: 0px 7px 18px #c1c1c1;float: left;width: 90%;margin: 0 50px 50px 50px;height: 140px;padding: 20px 10px;
+    	.meses{background: url(../images/iconos/suscripciones_capa.svg) -13px 0px/940px auto no-repeat;float: left;width: 915px;margin: 10px 45px 0px 45px;height: 222px;
 			.tiempo{float: left;height: 87px;background: rgba(255,255,255,0.98);background: -moz-linear-gradient(left, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.98) 14%, rgba(235,235,235,0.99) 60%, rgba(235,235,235,1) 100%);background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0.98)), color-stop(14%, rgba(255,255,255,0.98)), color-stop(60%, rgba(235,235,235,0.99)), color-stop(100%, rgba(235,235,235,1)));background: -webkit-linear-gradient(left, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.98) 14%, rgba(235,235,235,0.99) 60%, rgba(235,235,235,1) 100%);background: -o-linear-gradient(left, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.98) 14%, rgba(235,235,235,0.99) 60%, rgba(235,235,235,1) 100%);background: -ms-linear-gradient(left, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.98) 14%, rgba(235,235,235,0.99) 60%, rgba(235,235,235,1) 100%);background: linear-gradient(to right, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.98) 14%, rgba(235,235,235,0.99) 60%, rgba(235,235,235,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb', GradientType=1 );
 				h2{font-size: 120px; color: #BB2026;margin: 0;float: left;position: relative;    top: -36px;}
 				.descripcion{color: #666666;float: left;position: relative;top: 9px;width: 110px; height: 85px;
@@ -23,11 +23,46 @@
 					p{margin: 0;font-size: 12px;line-height: 14px;}
 				}
 			}
-			.info{float: left;margin: 0 23px;}
-			.info_ps{padding-bottom: 20px;position: relative;width: 60%;float: left;height: 25px;top: 13px;background-color: white;text-align: center;left: 0;right: 0;margin: 0 20%;
-				p{margin: 0;color: #666666; font-size: 14px;}
+			.info{float: left;margin-left: 38px;margin-top: 30px; cursor: pointer;}
+			.info_ps{position: relative;width: 60%;float: left;height: 25px;top: 10px;text-align: center;left: 0;right: 0;margin: 0 20%;
+				p{margin: 0;color: #999999; font-size: 14px;}
 			}
-			.diario{color: #666666;display: block;width: 180px;font-size: 12px;text-align: center;}
+			.diario{color: #999999;display: block;width: 180px;font-size: 12px;text-align: center;}
     	}//Fin meses
+    	#formulario{float: left;width: 90%;margin: 0 50px;
+    		h2{text-align: center; color: #BB2026;}
+    		.formulario{
+    			.form-item{display: inline-block;width: 250px;text-align: center;color: #BB2026;margin: 15px 22px;
+					input{width: 250px;border: none; background-color: #E8E8E8; height: 20px;font-size: 14px;font-weight: 600;}
+    				input:focus{outline: none;}
+    				#opciones_suscripcion{padding-left: 40%;width: 250px;border: none; background-color: #E8E8E8; height: 20px;font-size: 14px;font-weight: 600;}
+    				#opciones_suscripcion:focus{outline: none;border: 1px dashed #BB2026;}
+    			}
+    			.form-actions{display: inline-block;
+					input{width: 250px;margin-left: 23px;height: 40px;background-color: #BB2026;border: none;position: relative;top: -9px;color: white;font-size: 16px;font-weight: 600;cursor: pointer;}
+    			}
+    			.texto{
+    				display: inline-block; width: 250px; color: #999999; font-size: 11px;vertical-align: middle;margin-left: 44px;text-align: justify;line-height: 12px;
+    				.logo_tel{
+    					    background: url(../images/iconos/logo_tel.svg) -24px 0px/340px auto no-repeat;height: 65px;width: 100px; display: inline-block;position: relative;top: -10px;
+    				}
+    				.logo_wp{
+    					    background: url(../images/iconos/logo_tel.svg) -180px 0px/340px auto no-repeat;height: 65px;width: 128px; display: inline-block;position: relative;top: -10px;
+    				}
+    			}
+    		}
+    	}//Fin formulario
+    	#mas_info{float: left;width: 90%;margin: 50px;    margin-bottom: 100px;
+    		h2{color: #BB2026;margin: 0;text-align: center;z-index: 1;position: relative;top: 7px;font-size: 18px;}
+    		.info{height: 70px;position: relative;background-color: #E8E8E8;display: flex;display: -moz-flex;display: -webkit-flex;justify-content: space-between;-webkit-justify-content: space-between;-moz-justify-content: space-between;align-items: center;-webkit-align-items: center;-moz-align-items: center;
+				.texto{width: 150px;text-align: center;margin: 0 30px;font-size: 16px; color: #999999;width: 150px;text-align: center;}
+    		}
+    		.circulo{position: absolute; background-color:#BB2026; border-radius: 50%;width: 10px;height: 10px;z-index: 1;left: 208px;top: 26px;}
+    		.circulo_2{position: absolute; background-color:#BB2026; border-radius: 50%;width: 10px;height: 10px;z-index: 1;left: 0;right: 0;top: 54px;margin: 0 auto;}
+			.circulo_3{position: absolute; background-color:#BB2026; border-radius: 50%;width: 10px;height: 10px;z-index: 1;left: 687px;top: 26px;}
+			.centro{width: 480px;display: flex;display: -moz-flex;display: -webkit-flex;justify-content: space-between;-moz-justify-content: space-between;align-items: flex-end;-moz-align-items: flex-end;background-color: #D8D8D8;height: 98px;position: absolute;top: -28px;left: 0;right: 0;margin: 0 auto;
+				.texto{font-weight: 600;width: 150px;margin: 0 30px;font-size: 16px; color: #999999;text-align: center;margin-bottom: 10px;}
+			}
+    	}
     }//Fin content
 }//FIN SUSCRIPCIONES
