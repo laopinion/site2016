@@ -8,20 +8,72 @@
                     .titulos{display: flex;display: -moz-flex;display: -webkit-flex;justify-content: flex-end;-webkit-justify-content: flex-end;-moz-justify-content: flex-end;text-transform: uppercase;color: $servicios;font-size: 12px;
                         span{margin: 0 10px;}
                     }
-                    .drogueria{display: flex;justify-content: space-between;align-items: center;margin: 20px 0;
-                        .columna1{margin: 20px; font-size: 13px;
+                    .drogueria{height: 92px;display: flex;display: -webkit-flex;display: -moz-flex;justify-content: space-between;-webkit-justify-content: space-between;-moz-justify-content: space-between;align-items: center;-webkit-align-items: center;margin: 20px 0;
+                        .columna1{margin: 20px; font-size: 13px;width: 195px;
                             .nombre{font-size: 14px; font-weight: 600;}
                         }
                         .columna2{font-size: 12px; text-transform: uppercase;position: relative;left: 30px;}
                         .columna3{margin-right: 20px;font-size: 12px; text-transform: uppercase;}
                         .columna4{position: relative;left: -50px;font-size: 12px; text-transform: uppercase;}
                     }
+                    .drogueria:nth-child(2n+1){background-color: rgba(153, 204, 255, 0.2);}
                 }
-                .drogueria:nth-child(2n+1){background-color: #99CCFF; opacity: 0.7;}
+
+                #notarias{
+                    h2{font-size: 18px; text-align: center; color: $servicios;text-transform: uppercase;}
+                    .titulos{display: flex;display: -moz-flex;display: -webkit-flex;justify-content: flex-end;-webkit-justify-content: flex-end;-moz-justify-content: flex-end;text-transform: uppercase;color: $servicios;font-size: 12px;
+                        span{margin: 0 10px;}
+                        .uno{margin-right: 40px;}
+                    }
+                    .titulos_turnos{display: flex;display: -moz-flex;display: -webkit-flex;justify-content: flex-end;-webkit-justify-content: flex-end;-moz-justify-content: flex-end;text-transform: uppercase;color: $servicios;font-size: 12px;
+                        .dos{margin-right: 50px;}
+                    }
+                    h3{font-size: 18px; text-align: center; color: $servicios;text-transform: uppercase;}
+                    .notaria{height: auto;display: flex;display: -webkit-flex;display: -moz-flex;justify-content: space-between;-webkit-justify-content: space-between;-moz-justify-content: space-between;align-items: center;-webkit-align-items: center;margin: 20px 0;
+                        .columna1{margin: 20px; font-size: 13px;width: 205px;
+                            .nombre{font-size: 14px; font-weight: 600;}
+                        }
+                        .columna2{font-size: 12px; text-transform: uppercase;position: relative;left: 30px;}
+                        .columna3{margin-right: 15px;font-size: 12px; text-transform: uppercase;}
+                        .columna4{position: relative;left: -50px;font-size: 12px; text-transform: uppercase;}
+                    }
+                    .turnos{height: auto;display: flex;display: -webkit-flex;display: -moz-flex;justify-content: space-between;-webkit-justify-content: space-between;-moz-justify-content: space-between;align-items: center;-webkit-align-items: center;margin: 20px 0;
+                        .columna1{margin: 20px; font-size: 14px;width: 195px;font-weight: 600;
+                            .nombre{font-size: 14px; font-weight: 600;}
+                        }
+                        .columna2{font-size: 12px; text-transform: uppercase;margin-right: 90px;}
+                    }
+                    .notaria:nth-child(2n+1){background-color: rgba(153, 204, 255, 0.2);}
+                    .turnos:nth-child(2n){background-color: rgba(153, 204, 255, 0.2);}
+                }
             }
         }//FIN IZQ
         .der{width: 350px;margin-right: 0px;float: left;position: relative;height: auto;
-           
+           .view-id-sidebar.view-display-id-block_6{float: left;width: 300px;height: 180px;margin-top: 30px;margin-bottom: 50px;
+                .view-header{text-align: center;background-color: #31479A;color: white;font-size: 14px;text-transform: capitalize;}
+                .view-content{position: relative;top: -17px;
+                    .calendario{
+                        .imagen{display: inline-block;}
+                        .descripcion{display: inline-block;width: 150px;vertical-align: top;text-align: center;position: relative;top: 35px;font-size: 16px;}
+                        .boton{background: #BB2026;text-align: center;padding: 8px 0;height: 23px;display: inline-block;width: 300px;
+                            a{text-decoration: none;color: white;font-size: 18px;text-transform: uppercase;font-weight: 600;padding: 8px 103px;margin: 4px 0;}
+                        }
+                    }
+                }
+           }
+           .view-id-sidebar.view-display-id-block_4{float: left;width: 300px;margin: 10px 0; height: 180px;
+                .view-header{text-align: center;background-color: #BB2026;color: white;font-size: 14px;text-transform: capitalize;}
+                .view-content{position: relative;top: -17px;
+                    .pdf{
+                        .imagen{display: inline-block;}
+                        .descripcion{display: inline-block;width: 150px;vertical-align: top;text-align: center;position: relative;top: 35px;font-size: 16px;}
+                        .boton{background: #BB2026;text-align: center;padding: 8px 0;height: 23px;display: inline-block;width: 300px;
+                            a{text-decoration: none;color: white;font-size: 18px;text-transform: uppercase;font-weight: 600;padding: 8px 103px;margin: 4px 0;}
+                        }
+                    }
+                }
+           }
+           .suscripcion, .juegos, .clasificados{float: left;width: 300px; margin: 10px 0;}
         }
     }
 }//FIN Region
