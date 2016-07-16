@@ -1,0 +1,33 @@
+#login{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;
+    .content{width: 100%; float:left; margin-top: 40px; position: relative;
+        h2{font-size: 18px;text-transform: uppercase;border-bottom: 1px solid $estandar;padding-bottom: 5px;color: $estandar;font-weight: 400;}      
+        .login{    background: url(../images/login.jpg) -3px -3px/293px auto no-repeat;height: 214px;width: 293px;margin: 0 auto;}
+        #inicio_sesion{width: 600px;margin: 0 auto; text-align: center;margin-top: 50px; color: #CC3333;
+            .form-item{width: 250px; display: inline-block;margin: 0 23px;
+                input{width: 250px;height: 20px;border: none;background-color: #E8E8E8;}
+                input:focus{outline: none;}
+            }
+            .item-list{display: none;}
+            .form-actions{width: 250px; margin: 50px auto;
+                input{width: 250px;height: 40px;border: none;color: white;background-color: #CC3333;font-size: 18px;cursor: pointer;}
+            }
+        }
+    }
+}//FIN Login
+
+#registrar{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;
+    .content{width: 100%; float:left; margin-top: 40px; position: relative;
+        h2{font-size: 18px;text-transform: uppercase;border-bottom: 1px solid $estandar;padding-bottom: 5px;color: $estandar;font-weight: 400;}      
+        .registrar{    background: url(../images/registre.jpg) -3px -3px/293px auto no-repeat;height: 214px;width: 293px;margin: 0 auto;}
+        #registrar_user{width: 600px;margin: 0 auto; text-align: center;margin-top: 50px; color: #CC3333;
+            .form-item{width: 250px; display: inline-block;margin: 0 23px;
+                input{width: 250px;height: 20px;border: none;background-color: #E8E8E8;}
+                input:focus{outline: none;}
+            }
+            .item-list{display: none;}
+            .form-actions{width: 250px; margin: 50px auto;
+                input{width: 250px;height: 40px;border: none;color: white;background-color: #CC3333;font-size: 18px;cursor: pointer;}
+            }
+        }
+    }
+}//FIN Region

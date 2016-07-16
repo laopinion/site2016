@@ -68,9 +68,45 @@
             }
         }
         .izq{width: 640px;margin-right: 15px;float: left;position: relative;height: auto;
-        
+            #node-134{ margin-top: 24px;margin-bottom: 25px;
+                header{
+                    h2{background: #CC3333;height: 30px;line-height: 26px;
+                        a{color: white;text-decoration: none;font-size: 14px;margin-left: 15px;}
+                    }
+                }
+                .content{margin: 0 auto;width: 600px;float: none;
+                    .field-name-body{font-size: 17px;line-height: 19px;color: #999999;}
+                    form{
+                        .form-item{display: inline-block;width: 260px;text-align: center;color: #CC3333;margin-top: 15px; margin-left: 0;
+                            input{width: 260px;border: none;background: #E8E8E8; height: 20px;}
+                            input:focus{outline: none;}
+                        }
+                        .webform-component-select{width: 599px;margin-right: 0!important;
+                            select{border: none;background-color: #E8E8E8;height: 20px;}
+                            select:focus{outline: none;}
+                        }
+                        .webform-component-textarea{width: 599px;margin: 15px 0px;
+                            textarea{border: none; background-color: #E8E8E8; height: 90px;}
+                            textarea:focus{outline: none;}
+                        }
+                        #edit-submitted-archivo-ajax-wrapper{width: 599px;margin: 15px 0px;
+                            .form-item{width: 590px; margin: 0;
+                                input{margin: 0 5px; background-color: #CCCCCC;height: 20px;}
+                            }
+                        }
+                        .webform-component-checkboxes{margin: 0 auto;width: 300px;display: block;
+                            input{width: 50px;}
+                        }
+                        .form-actions{width: 262px;margin: 10px auto;
+                            input{cursor: pointer;width: 262px;color: white;border: none;background: #CC3333;height: 40px;font-size: 17px;}
+                        }
+                        .form-item:nth-child(2n+1){margin-right: 74px;}
+                    }
+                }
+                footer{display: none;}
+            }
         }//FIN IZQ
-        .der{width: 350px;margin-right: 0px;float: left;position: relative;height: auto;
+        .der{width: 300px;margin-right: 0px;float: left;position: relative;height: auto;
            .view-id-sidebar.view-display-id-block_6{float: left;width: 300px;height: 180px;margin-top: 30px;margin-bottom: 50px;
                 .view-header{text-align: center;background-color: #31479A;color: white;font-size: 14px;text-transform: capitalize;}
                 .view-content{position: relative;top: -17px;
@@ -83,7 +119,7 @@
                     }
                 }
            }
-           .view-id-sidebar.view-display-id-block_4{float: left;width: 300px;margin: 10px 0; height: 180px;
+           .view-id-sidebar.view-display-id-block_4{float: left;width: 300px;margin: 10px 0; height: 223px;
                 .view-header{text-align: center;background-color: #BB2026;color: white;font-size: 14px;text-transform: capitalize;}
                 .view-content{position: relative;top: -17px;
                     .pdf{
