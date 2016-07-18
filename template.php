@@ -184,34 +184,36 @@ function op_preprocess_search_result(&$variables) {
   $n && ($variables['node'] = $n);
 }
 
-function op_theme() {
-  $items = array();  
-  $items['user_login'] = array(
-    'render element' => 'form',
-    'path' => drupal_get_path('theme', 'op') . '',
-    'template' => 'page--user--login',
-    'preprocess functions' => array(
-       'op_preprocess_user_login'
-    ),
-  );
+// function op_theme() {
+//   $items = array();  
+//   $items['user_login'] = array(
+//     'render element' => 'form',
+//     'path' => drupal_get_path('theme', 'op') . '',
+//     'template' => 'page--user--login',
+//     'preprocess functions' => array(
+//        'op_preprocess_user_login'
+//     ),
+//   );
 
-  $items['user_pass'] = array(
-    'render element' => 'form',
-    'path' => drupal_get_path('theme', 'op') . '',
-    'template' => 'page--user--password',
-    'preprocess functions' => array(
-       'op_preprocess_user_pass'
-    ),
-  );
+//   $items['user_pass'] = array(
+//     'render element' => 'form',
+//     'path' => drupal_get_path('theme', 'op') . '',
+//     'template' => 'page--user--password',
+//     'preprocess functions' => array(
+//        'op_preprocess_user_pass'
+//     ),
+//   );
 
-  $items['user_register_form'] = array(
-    'render element' => 'form',
-    'path' => drupal_get_path('theme', 'op') . '',
-    'template' => 'page--user--register',
-    'preprocess functions' => array(
-      'op_preprocess_user_register_form'
-    ),
-  );
+//   $items['user_register_form'] = array(
+//     'render element' => 'form',
+//     'path' => drupal_get_path('theme', 'op'),
+//     'template' => 'page--user--register',
+//     'preprocess functions' => array(
+//       'op_preprocess_user_register_form'
+//     ),
+//   );
 
-  return $items;
-}
+//   return $items;
+// }
+
+
