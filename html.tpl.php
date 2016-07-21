@@ -78,16 +78,16 @@
 
   <?php print $page_top; ?>
   <div class="centerContent borderContent">
-    <div class="head_desktop"><?php include("header.tpl.php"); ?></div>
-    <div class="head_movil"><?php include("header_movil.tpl.php"); ?></div>
+    <div id="head_desktop"><?php include("header.tpl.php"); ?></div>
+    <div id="head_movil"><?php include("header_movil.tpl.php"); ?></div>
 
 
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <?php include_once("dataexpandtracking.php") ?>
   <?php include_once("hotwordstracking.php") ?>
-    <div class="footer_desktop"><?php include("footer.tpl.php"); ?></div>
-    <div class="footer_movil"><?php include("footer_movil.tpl.php"); ?></div>
+    <div id="footer_desktop"><?php include("footer.tpl.php"); ?></div>
+    <div id="footer_movil"><?php include("footer_movil.tpl.php"); ?></div>
   </div>
 </body>
 
