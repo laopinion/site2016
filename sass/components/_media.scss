@@ -2,7 +2,8 @@
 	#head_desktop{
 		display: none;
 	}
-	#head_movil{display: flex;display: -webkit-flex;display: -moz-flex;align-items: center;-webkit-align-items: center;-moz-align-items: center;background-color: #BB1D1E;height: 90px;width: 100%;
+	//Icon menu normal
+	#head_movil{position: fixed;z-index: 50;display: flex;display: -webkit-flex;display: -moz-flex;align-items: center;-webkit-align-items: center;-moz-align-items: center;background-color: #BB1D1E;height: 90px;width: 100%;
 		#hamburger{width: 50px;height: 30px;position: relative;top: -9px; left: 5%;transition: .5s ease-in-out;cursor: pointer;
 			span{display: block;position: absolute;height: 7px;width: 50%;background: transparent;opacity: 1;-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .25s ease-in-out;-moz-transition: .25s ease-in-out;-o-transition: .25s ease-in-out;transition: .25s ease-in-out;}
 			span:nth-child(even){left: 50%;border-radius: 0;}
@@ -28,9 +29,92 @@
 		#logo{padding: 0px;position: relative;float:left;width: 235px;top: 0;opacity: 1;transition: all 0.5s ease-in-out; margin: 0 auto;
 	      h1 {background: url(../images/logo.svg) 5px -5px/230px auto no-repeat;height: 50px;width: auto;display: block;text-indent: -9999px;margin: 0 auto;}
 	      a {display:block;text-indent:-9999px;}
-	    }    
+	    }
+
+		/*Menu table*/
+		#menu_movil.desplegar{left: 0;}
+		#menu_movil{position: fixed;top: 90px;right: 0;bottom: 0;left: -100%;background-color: #333333;z-index: 50; width: 100%;transition: .5s;
+			.movil{display: none;}
+			.seccion{width: 96%;margin: 0 2%;border-bottom: 2px solid #666666;padding-bottom: 10px;
+				form{width: 100%;height: 30px;margin: 15px auto;
+					input{font-size: 18px;color: #fff;background: url(../images/iconos/lupa_menu.svg) no-repeat 1px 0px/40px auto transparent;width: 100%;height: 30px;border: none;background-color: #666666;}
+					input:focus{outline: none; background-image:none;}
+				}
+				.iconos{padding: 0;width: 60%;margin: 0; display: inline-block; vertical-align: middle;
+					li{list-style: none;display: inline-block;vertical-align: top;text-align: center;margin: 0 6px;
+						#clasif{background: url(../images/iconos/iconos_menu.svg) no-repeat -15px -5px/400px auto transparent;width: 60px;height: 50px;display: block;margin: 0 auto;}
+						#ingreso{background: url(../images/iconos/iconos_menu.svg) no-repeat -117px -5px/400px auto transparent;width: 60px;height: 50px;display: block;margin: 0 auto;}
+						#contac{background: url(../images/iconos/iconos_menu.svg) no-repeat -230px -5px/400px auto transparent;width: 60px;height: 50px;display: block;margin: 0 auto;}
+						#suscrip{background: url(../images/iconos/iconos_menu.svg) no-repeat -333px -5px/400px auto transparent;width: 60px;height: 50px;display: block;margin: 0 auto;}
+						a{color: #fff;text-decoration: none;text-transform: uppercase;font-size: 10px;}
+						a,span:hover{opacity: .7;}
+					}
+				}
+				.table{display: block;}
+				.bloque{padding: 0;width: 135px;display: inline-block;vertical-align: top;position: relative;margin-top: 15px;margin-bottom: 0;
+					li{list-style: none;margin-bottom: 5px;
+						a{text-decoration: none; color: #CCCCCC; font-size: 14px; text-transform: uppercase;}
+					}
+				}
+				.cucuta{padding-left: 5px;margin-left: 28px;width: 112px;
+					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $cucuta;}
+					.linea{border-left: 2px solid $cucuta;height: 62px;position: absolute;top: 5px;left: -1px;}
+				}
+				.region{padding-left: 5px;margin-left: 30px;width: 90px;
+					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $region;}
+					.linea{border-left: 2px solid $region;height: 62px;position: absolute;top: 5px;left: -1px;}
+				}
+				.judicial{padding-left: 5px;margin-left: 28px;width: 112px;
+					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $judicial;}
+				}
+				.frontera{padding-left: 5px;margin-left: 28px;width: 90px;
+					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $frontera;}
+				}
+				.actualidad{padding-left: 5px;margin-left: 28px;width: 85px;
+					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $actualidad;}
+					.linea{border-left: 2px solid $actualidad;height: 136px;position: absolute;top: 5px;left: -1px;}
+				}
+				.opinion{padding-left: 5px;margin-left: 30px;width: 90px;
+					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $opinion;}
+					.linea{border-left: 2px solid $opinion;height: 86px;position: absolute;top: 5px;left: -1px;}
+				}
+				.deportes{padding-left: 5px;margin-left: 28px;width: 124px;
+					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $deportes;}
+					.linea{border-left: 2px solid $deportes;height: 114px;position: absolute;top: 5px;left: -1px;}
+				}
+				.entretenimiento{padding-left: 5px;margin-left: 30px;width: 140px;
+					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $entretenimiento;}
+					.linea{border-left: 2px solid $entretenimiento;height: 163px;position: absolute;top: 5px;left: -1px;}
+				}
+				.servicios{padding-left: 5px;margin-left: 28px;width: 70px;
+					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $servicios;}
+				}
+				.participacion{padding-left: 5px;margin-left: 28px;width: 90px;
+					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $participacion;}
+				}
+			}//Fin seccion
+			.border{border:none;}
+			.redes_sociales.table{display: inline-block; vertical-align: initial;width: 38%;
+				ul{padding: 0;width: 100%;margin: 0;
+					li{list-style: none;display: inline-block;margin: 0 9px;}
+					a:hover{opacity: .7;}
+				}
+				.facebook{width: 30px;height: 30px;
+					a{display: block;background: url(../images/iconos/iconos_menu_redes.svg) no-repeat -10px -23px/260px auto transparent;width: 30px;height: 30px;}
+				}
+				.twitter{width: 30px;height: 30px;
+					a{display: block;background: url(../images/iconos/iconos_menu_redes.svg) no-repeat -81px -23px/260px auto transparent;width: 30px;height: 30px;}
+				}
+				.instagram{width: 30px;height: 30px;
+					a{display: block;background: url(../images/iconos/iconos_menu_redes.svg) no-repeat -152px -23px/260px auto transparent;width: 30px;height: 30px;}
+				}
+				.youtube{width: 30px;height: 30px;
+					a{display: block;background: url(../images/iconos/iconos_menu_redes.svg) no-repeat -222px -23px/260px auto transparent;width: 30px;height: 30px;}
+				}
+			}
+		}/*Fin menu table */  
 	}//Fin head movil
-	//Inicio Footer
+	/*Inicio Footer*/
 	#footer_desktop{
 		display: none;
 	}
@@ -84,13 +168,12 @@
 	          }
 	        }
         }//Fin copy_content
-	}
-	//Fin Footer
+	}//Fin Footer
 }//Fin media 768
 
 @media screen and (max-width: 400px){
 	.der{display: none;}
-	#head_movil{
+	#head_movil{//Icon hamburger mas pequeño
 		#hamburger{width: 36px;
 			span{height: 5px;}
 			span:nth-child(1), span:nth-child(2){top: 0px;}
@@ -108,11 +191,13 @@
 	}//Fin head movil
 }//Fin 400px
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
+	/*Menu movil*/
 	#head_movil{position: fixed;z-index: 50;
 		#menu_movil.desplegar{left: 0;}
 		#menu_movil{position: fixed;top: 90px;right: 0;bottom: 0;left: -100%;background-color: #333333;z-index: 50; width: 100%;transition: .5s;overflow: scroll;height: 80%;padding-bottom: 20%;
-			.seccion{width: 290px;margin: 0 auto;border-bottom: 2px solid #666666;padding-bottom: 10px;
+			.movil{display: block;}
+			.seccion{display: block;width: 290px;margin: 0 auto;border-bottom: 2px solid #666666;padding-bottom: 10px;
 				form{width: 290px;height: 30px;margin: 15px auto;
 					input{font-size: 18px;color: #fff;background: url(../images/iconos/lupa_menu.svg) no-repeat 1px 0px/40px auto transparent;width: 290px;height: 30px;border: none;background-color: #666666;}
 					input:focus{outline: none; background-image:none;}
@@ -127,6 +212,7 @@
 						a,span:hover{opacity: .7;}
 					}
 				}
+				.redes_sociales.table, .judicial.table, .frontera.table, .actualidad.table, .opinion.table, .deportes.table, .entretenimiento.table, .servicios.table, .participacion.table{display: none;}
 				.bloque{padding: 0;width: 135px;display: inline-block;vertical-align: top;position: relative;margin-top: 15px;margin-bottom: 0;
 					li{list-style: none;margin-bottom: 5px;
 						a{text-decoration: none; color: #CCCCCC; font-size: 14px; text-transform: uppercase;}
@@ -136,7 +222,7 @@
 					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $cucuta;}
 					.linea{border-left: 2px solid $cucuta;height: 62px;position: absolute;top: 5px;left: -1px;}
 				}
-				.region{padding-left: 5px;margin-left: 30px;width: 90px;
+				.region{padding-left: 5px;margin-left: 10%;width: 90px;
 					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $region;}
 					.linea{border-left: 2px solid $region;height: 62px;position: absolute;top: 5px;left: -1px;}
 				}
@@ -150,7 +236,7 @@
 					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $actualidad;}
 					.linea{border-left: 2px solid $actualidad;height: 136px;position: absolute;top: 5px;left: -1px;}
 				}
-				.opinion{padding-left: 5px;margin-left: 30px;width: 90px;
+				.opinion{padding-left: 5px;margin-left: 10%;width: 90px;
 					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $opinion;}
 					.linea{border-left: 2px solid $opinion;height: 86px;position: absolute;top: 5px;left: -1px;}
 				}
@@ -158,7 +244,7 @@
 					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $deportes;}
 					.linea{border-left: 2px solid $deportes;height: 152px;position: absolute;top: 5px;left: -1px;}
 				}
-				.entretenimiento{padding-left: 5px;margin-left: 30px;width: 90px;
+				.entretenimiento{padding-left: 5px;margin-left: 10%;width: 90px;
 					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $entretenimiento;}
 					.linea{border-left: 2px solid $entretenimiento;height: 182px;position: absolute;top: 5px;left: -1px;}
 				}
@@ -169,7 +255,7 @@
 					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $participacion;}
 				}
 			}//Fin seccion
-			.redes_sociales{margin-top: 15px;
+			.redes_sociales{margin-top: 15px;display: block;width: auto;
 				ul{padding: 0;width: 225px;margin: 0 auto;
 					li{list-style: none;display: inline-block;margin: 0 11px;}
 					a:hover{opacity: .7;}

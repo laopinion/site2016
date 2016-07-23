@@ -22,6 +22,22 @@
 			<li><a href="<?php print base_path(); ?>contactenos"><span id="contac"></span>Contáctenos</a></li>
 			<li><a href="<?php print base_path(); ?>suscripciones"><span id="suscrip"></span>Suscripciones</a></li>
 		</ul>
+		<div class="redes_sociales table">
+			<ul>
+				<li class="facebook">
+					<a href="https://www.facebook.com/laopinioncucuta/" target="_blank"></a>							
+				</li>
+				<li class="twitter">
+					<a href="https://www.twitter.com/laopinioncucuta/" target="_blank"></a>
+				</li>
+				<li class="instagram">
+					<a href="https://www.instagram.com/laopinioncucuta/" target="_blank"></a>
+				</li>
+				<li class="youtube">
+					<a href="https://www.youtube.com/user/WEBLAOPINION" target="_blank"></a>
+				</li>
+			</ul>
+		</div>
 	</div>
 	<div class="seccion">
 		<ul class="bloque cucuta">
@@ -36,8 +52,20 @@
             <li><a href="<?php print base_path(); ?>ocana">ocaña</a></li>
             <li><a href="<?php print base_path(); ?>pamplona">pamplona</a></li> 
         </ul>
+        <ul class="bloque judicial table">
+			<span></span>
+			<li><a href="<?php print base_path(); ?>judicial">Judicial</a></li> 
+		</ul>
+		<ul class="bloque frontera table">
+			<span></span>
+			<li><a href="<?php print base_path(); ?>frontera">Frontera</a></li>
+		</ul>		
+		<ul class="bloque participacion table">
+			<span></span>
+			<li><a href="<?php print base_path(); ?>participacion">Participación</a></li>
+		</ul>
 	</div>
-	<div class="seccion">
+	<div class="seccion movil">
 		<ul class="bloque judicial">
 			<span></span>
 			<li><a href="<?php print base_path(); ?>judicial">Judicial</a></li> 
@@ -47,7 +75,7 @@
 			<li><a href="<?php print base_path(); ?>frontera">Frontera</a></li>
 		</ul>
 	</div>
-	<div class="seccion">
+	<div class="seccion border">
 		<ul class="bloque actualidad">
 			<span></span><div class="linea"></div>
 			<li><a href="<?php print base_path(); ?>actualidad">Actualidad</a></li>
@@ -64,8 +92,30 @@
             <li><a href="<?php print base_path(); ?>columnistas">Columnistas</a></li>
             <li><a href="<?php print base_path(); ?>caricaturas">Caricaturas</a></li>
 		</ul>
+		<ul class="bloque deportes table">
+			<span></span><div class="linea"></div>
+			<li><a href="<?php print base_path(); ?>deportes">Deportes</a></li> 
+			<li><a href="<?php print base_path(); ?>cucuta-deportivo">Cúcuta deportivo</a></li> 
+            <li><a href="<?php print base_path(); ?>futbol">Futbol</a></li>
+            <li><a href="<?php print base_path(); ?>mas-deportes">+ deportes</a></li>
+            <li><a href="#opcion4">Juegos olímpicos</a></li>
+		</ul>
+		<ul class="bloque entretenimiento table">
+			<span></span><div class="linea"></div>
+			<li><a href="<?php print base_path(); ?>entretenimiento">Entretenimiento</a></li>
+			<li><a href="<?php print base_path(); ?>actividad-social">Actividad social</a></li>
+            <li><a href="<?php print base_path(); ?>tecnologia">Tecnología</a></li>
+            <li><a href="<?php print base_path(); ?>cultura">Cultura</a></li> 
+            <li><a href="<?php print base_path(); ?>tendencias">Tendencias</a></li>
+            <li><a href="<?php print base_path(); ?>viral">Viral</a></li> 
+            <li><a href="<?php print base_path(); ?>vida-y-salud">Vida y salud</a></li> 
+		</ul>
+		<ul class="bloque servicios table">
+			<span></span>
+			<li><a href="<?php print base_path(); ?>servicios">Servicios</a></li>
+		</ul>
 	</div>
-	<div class="seccion">
+	<div class="seccion movil">
 		<ul class="bloque deportes">
 			<span></span><div class="linea"></div>
 			<li><a href="<?php print base_path(); ?>deportes">Deportes</a></li> 
@@ -85,7 +135,7 @@
             <li><a href="<?php print base_path(); ?>vida-y-salud">Vida y salud</a></li> 
 		</ul>
 	</div>
-	<div class="seccion" style="border: none;">
+	<div class="seccion movil" style="border: none;">
 		<ul class="bloque servicios">
 			<span></span>
 			<li><a href="<?php print base_path(); ?>servicios">Servicios</a></li>
@@ -95,7 +145,7 @@
 			<li><a href="<?php print base_path(); ?>participacion">Participación</a></li>
 		</ul>
 	</div>
-	<div class="redes_sociales">
+	<div class="redes_sociales movil">
 		<ul>
 			<li class="facebook">
 				<a href="https://www.facebook.com/laopinioncucuta/" target="_blank"></a>							
