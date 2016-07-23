@@ -2,7 +2,7 @@
 	#head_desktop{
 		display: none;
 	}
-	//Icon menu normal
+	//Icon menu normal en 400px se hace un poco mas pequeño el hamburger
 	#head_movil{position: fixed;z-index: 50;display: flex;display: -webkit-flex;display: -moz-flex;align-items: center;-webkit-align-items: center;-moz-align-items: center;background-color: #BB1D1E;height: 90px;width: 100%;
 		#hamburger{width: 50px;height: 30px;position: relative;top: -9px; left: 5%;transition: .5s ease-in-out;cursor: pointer;
 			span{display: block;position: absolute;height: 7px;width: 50%;background: transparent;opacity: 1;-webkit-transform: rotate(0deg);-moz-transform: rotate(0deg);-o-transform: rotate(0deg);transform: rotate(0deg);-webkit-transition: .25s ease-in-out;-moz-transition: .25s ease-in-out;-o-transition: .25s ease-in-out;transition: .25s ease-in-out;}
@@ -114,6 +114,7 @@
 			}
 		}/*Fin menu table */  
 	}//Fin head movil
+
 	/*Inicio Footer*/
 	#footer_desktop{
 		display: none;
@@ -275,4 +276,28 @@
 			}
 		}//Fin menu movil
 	}//Fin head movil
+
+	/*Inicio Notas */
+	#nota{width: 100%;padding: 45px 0px;
+		.izq{width: 96%;margin: 0 2%;
+			.menu_seccion{margin-bottom: 10px;
+				.submenu{padding: 0; border: none;height: auto;}
+			}
+			.compartir{display: none!important;}
+			.contenido{width: 100%;
+				.foto{width: 100%; left: 0;
+					.desktop{display: none;}
+					img{width: 100%; height: auto;}
+					.pie{width: 100%;height: auto;display: block;padding: 5px 0px;margin: 0;
+						.descripcion{float: none;}
+						.credito{float: none;}
+					}
+				}
+				.texto{width: 100%;}
+				.compartirbarra{
+					.redes_sociales{display: none;}
+				}
+			}//Fin contenido
+		}
+	}/* Fin Notas */
 }//Fin 500 px
