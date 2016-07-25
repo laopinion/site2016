@@ -16,7 +16,7 @@
 
 
 <title><?php print $head_title; ?> | Cúcuta, Norte de Santander</title>
-<meta name="viewport" content="width=device-width, height=device-height" >
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
 <meta name="robots" content="index, follow">
 <meta name="keywords" content="noticias,periódico,información,prensa,colombia,colombian,economía,internacional,cultura,deportes,entretenimiento,clasificados,salud,la opinion cúcuta,paz,investigación,actualidad,news"  />
 <meta charset="utf-8">

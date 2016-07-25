@@ -234,6 +234,88 @@
 		.center{display: none;}
 		hr{display: none;}
 	}/* Fin Notas */
+
+	/*------------Secciones--------------*/
+	#cucuta{width: 96%;margin: 0 2%;padding: 0;float: left;
+		.content{margin-top: 100px;
+			.izq{width: 100%; margin: 0;
+				.view-s-general.view-id-s_general.view-display-id-block{width: 100%;height: auto;margin: 0;
+					.nota{width: 100%;
+						.foto{width: 100%;
+							img{width: 100%; height: auto;}
+						}
+						.galeria{width: 100%;
+							img{width: 100%; height: auto;}
+						}
+						.video{width: 100%;
+							img{width: 100%; height: auto;}
+						}
+					}
+				}
+				.view-s-general.view-id-s_general.view-display-id-block_2{display: none;}
+			}//Fin izq
+			.der{
+				.pauta.desktop{display: none;}
+				.view-s-general.view-id-s_general.view-display-id-block_1{margin-top: 40px;
+					.views-row-3{display: none;}
+				}
+			}
+			.mid{border: none;
+				.view-id-s_general_sub.view-display-id-block_2{border: none;width: 100%;
+					.views-row{float: none;margin-right: 0;width: 100%;
+						.nota{
+							.foto{width: 50%;
+								img{width: 100%; height: auto;}
+							}
+							.galeria{width: 50%;
+								img{width: 100%; height: auto;}
+							}
+							.video{width: 50%;
+								img{width: 100%; height: auto;}
+							}
+							.seccion{width: 128px;}
+							.titulo{width: 40%;}
+							.resumen{display: none;}
+						}
+					}
+					.views-row-3{ display: none;}
+				}
+				.view-id-s_general_sub.view-display-id-block_6{border: none;width: 100%;
+					.views-row{float: none;margin: 15px 10px;width: 95%;height: 120px;
+						.nota{width: 100%;
+							.foto{width: 45%;
+								img{width: 100%; height: auto;}
+							}
+							.galeria{width: 45%;
+								img{width: 100%; height: auto;}
+							}
+							.video{width: 45%;
+								img{width: 100%; height: auto;}
+							}
+							.seccion{width: 128px;}
+							.titulo{width: 49%;}
+							.resumen{display: none;}
+						}
+					}
+				}
+				.view-id-s_general.view-display-id-block_5{width: 100%;
+					.view-content{display: block; width: auto; height: auto;
+						.views-row{width: 100%;margin: 0;margin-top: 10px;
+							.seguir_leyendo{width: 100%;}
+						}
+						.views-row-4,.views-row-5,.views-row-6{display: none;}
+					}
+				}
+				.divisor{display: none;}
+				.view-id-s_general.view-display-id-block_4{width: 100%;
+					.views-row{float: none;width: 90%;margin: 0 auto;}
+				}
+			}
+			.pauta.movil{display: block;}
+			.pauta.desktop{display: none;}
+		}//Fin content
+	}//Fin Cúcuta
+	/*-----------Fin secciones---------------*/
 }//Fin media 768
 
 @media screen and (max-width: 400px){
