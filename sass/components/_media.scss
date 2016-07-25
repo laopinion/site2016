@@ -149,8 +149,8 @@
 	            span{text-transform:uppercase;font-weight:600;}
 	          }
 	        }
-	        .redes_footer{width: 150px; height: 75px; position: relative; list-style: none; top:15px; left:0px; padding:0px;text-align: center;margin: 0 auto;
-	          h2{font-size:14px; color:#333; text-transform:uppercase; width:100%; padding:0px 0px 0px 5px;}
+	        .redes_footer{width: 125px; height: 75px; position: relative; list-style: none; top:15px; left:0px; padding:0px;text-align: center;margin: 0 auto;
+	          h2{font-size:14px; color:#333; text-transform:uppercase; width:100%; padding:0; text-align: center;}
 	          a{margin: 0px;}
 	          a:hover{opacity: 0.7;}
 	          li.leaf{list-style: none; margin: 0px; padding: 0px;}
@@ -170,6 +170,70 @@
 	        }
         }//Fin copy_content
 	}//Fin Footer
+
+	/*Inicio Notas */
+	#nota{width: 100%;padding: 45px 0px;
+		.pauta{width: 100%;margin: 14px auto;}
+		.izq{width: 96%;margin: 0 2%;
+			.menu_seccion{margin-bottom: 10px;
+				.submenu{padding: 0; border: none;height: auto;}
+			}
+			.compartir_table{ display: block;
+				.compartirbarra{float:right;right: 0px;position:relative; display:inline-block; vertical-align:middle;transition:all 0.5s ease; 
+                    .redes_sociales{margin:0px;position: relative;float:left;width:auto;padding:0px;right:10px;
+                        li{list-style:none; float:left; width: 30px;padding: 0px;display: inline-block;vertical-align: middle;height:30px; cursor:pointer;margin:0px;}
+                        .fb{ 
+                            .st_facebook_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -34px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                        .tw{ 
+                            .st_twitter_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -60px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                        .go{ 
+                            .st_googleplus_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -86px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                        .pin{ 
+                            .st_pinterest_large{background: url(../images/iconos/redes_nota.svg) no-repeat -12px -113px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                        .wp{
+                            .st_whatsapp_large{background: url(../images/movil/whatsapp.svg) no-repeat -6px 0px/41px auto transparent;position: relative; width: 40px; height: 40px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                    }
+                }//FIN COMPARTIR
+			}
+			.compartir{display: none!important;}
+			.contenido{width: 100%;
+				.foto{width: 100%; left: 0;
+					.desktop{display: none;}
+					img{width: 100%; height: auto;}
+					.pie{width: 100%;height: auto;display: block;padding: 5px 0px;margin: 0;
+						.descripcion{float: none;}
+						.credito{float: none;}
+					}
+				}
+				.texto{width: 100%;}
+				.autor{
+					h2{margin: 0;}
+					.field-name-field-descripcion{width: 70%;height: auto;}
+				}
+				.barra.table{display: block;}
+				.compartirbarra{
+					.redes_sociales{display: none;}
+				}
+			}//Fin contenido
+			.comentarios{margin-right: 0; width: 100%;
+				.bloque{width: 95%;}
+			}
+			.divisor_taboola{left: 0;}
+			#taboola-below-article-thumbnails{left: 0;}
+		}//Fin izq
+		.der{display: none;}
+		.recientes_footer{display: none;}
+		.notas_footer{display: none;}
+		.multimedia_recientes_footer{display: none;}
+		.multimedia_footer{display: none;}
+		.center{display: none;}
+		hr{display: none;}
+	}/* Fin Notas */
 }//Fin media 768
 
 @media screen and (max-width: 400px){
@@ -275,29 +339,5 @@
 				}
 			}
 		}//Fin menu movil
-	}//Fin head movil
-
-	/*Inicio Notas */
-	#nota{width: 100%;padding: 45px 0px;
-		.izq{width: 96%;margin: 0 2%;
-			.menu_seccion{margin-bottom: 10px;
-				.submenu{padding: 0; border: none;height: auto;}
-			}
-			.compartir{display: none!important;}
-			.contenido{width: 100%;
-				.foto{width: 100%; left: 0;
-					.desktop{display: none;}
-					img{width: 100%; height: auto;}
-					.pie{width: 100%;height: auto;display: block;padding: 5px 0px;margin: 0;
-						.descripcion{float: none;}
-						.credito{float: none;}
-					}
-				}
-				.texto{width: 100%;}
-				.compartirbarra{
-					.redes_sociales{display: none;}
-				}
-			}//Fin contenido
-		}
-	}/* Fin Notas */
+	}//Fin head movil	
 }//Fin 500 px

@@ -3,6 +3,9 @@
   <!--ANUNCIO 1000x30--><div class="pauta p1000x30"><?php $block =block_load('block',71); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div><!--FIN ANUNCIO 1000x30-->
   <div class="izq">
     <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); print drupal_render(_block_get_renderable_array(_block_render_blocks(array($taxonomy_menu_block))));?><!--FIN seccion-->
+      <div class="compartir_table">
+        <?php include("compartirbarra.php"); ?>
+      </div>
        <?php include("compartir.tpl.php"); ?>
        <?php include("recomendada.tpl.php"); ?>
        <?php include("recomendada_movil.tpl.php"); ?>
@@ -12,7 +15,7 @@
       print "<div class=seccion>".render($content['field_seccion'])."</div>";
       print "<div class=sep> - </div>";
       print "<div class=fecha>".render($content['field_fecha_de_publicacion'])."</div>";
-      print "<h2 class=titulo>".$title."</h2>";
+      print "<h2 class=titulo>".$title."</h2>"; 
       ?>
       <!--Resumen--><?php $view = views_get_view('detalle'); print $view->preview('block_2'); ?><!--FIN Resumen-->
       <?php
@@ -121,6 +124,5 @@
   <div class="center">
         <div class="productos"><div class="color"></div><a href="<?php print base_path(); ?>productos">Productos La Opinión</a></div><?php include_once("productos.php") ?>
   </div>
-
 </div>
 <!--Fin Contenido-->
