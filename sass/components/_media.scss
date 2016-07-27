@@ -716,18 +716,18 @@
 				.submenu{height: auto;}
 			}
 			#block-block-74{
-				.seccion_economia{width: 96%;padding: 20px 2%;
+				.seccion_economia{width: 96%;padding: 20px 2%;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
 					.item{width: 138px;}
 				}
 				.seccion_economia_otros{height: auto;width: 100%;padding: 0;
-					.item_empleo{width: 90%;padding: 0 5%;
+					.item_empleo{width: 90%;padding: 0 5%;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
 						.empleo_1{
 							.titulo{width: 100%;}
 						}
 						.empleo_2{margin: 0;margin-top: 34px;}
 					}
-					.item_comercio{width: 90%;padding: 0 5%;
-
+					.item_comercio{width: 90%;padding: 0 5%;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+						.costo_de_vida{width: 230px;}
 					}
 				}
 			}
@@ -862,6 +862,92 @@
 			.pauta.desktop{display: none;}
 		}//Fin content
 	}//Fin Economia
+
+	#opinion{width: 100%;float: left;padding: 0;
+		.izq{width: 96%;margin: 0 2%;margin-top: 100px;
+			.compartir{display: none!important;}
+			.contenido{width: 100%;
+				.view-id-opinion.view-display-id-block{width: 100%;
+					.views-row{
+						.titulo{width: 100%;}
+					}
+				}
+				.caricaturas{width: 100%;
+					h2{width: auto;}
+					.cari{padding: 0; left: 0;display: flex;flex-wrap: wrap;justify-content: space-around;
+						.otras{width: 291px;height: 375px;margin: 0;
+							.view-id-opinion.view-display-id-block_2{width: 96%;margin: 0 2%;top: 0;height: 375px;margin-top: 10px;
+							
+							}
+						}
+					}
+					.view-id-opinion.view-display-id-block_1{width: 291px;height: auto;margin: 0;margin-top: 10px;
+						.views-row{width: 100%; margin: 0;}
+						.ultima{width: 100%; padding: 0; margin: 0;}
+						.caricatura{width: 100%;
+							img{width: 100%; height: auto;}
+						}
+					}
+				}
+				.view-id-opinion.view-display-id-block_3{width: 100%;
+					h2{width: auto;}
+					.view-content{display: flex;justify-content: center;flex-wrap: wrap;}
+					.views-row{width: 300px;margin: 5px;
+						.foto{margin-bottom: 12px;}
+						.autor{top: 70px;}
+						.titulo{width: 100%;}
+						.resumen{width: 100%;}
+					}
+				}
+				
+				.paginador{display: none;}
+			}
+		}//Fin izq
+		.der{display: none;}
+	}//Fin opinion
+
+	#editorial{width: 100%;float: left;padding: 0;
+		.izq{width: 96%;margin: 0 2%;margin-top: 100px;
+			.compartir{display: none!important;}
+			.contenido{width: 100%;
+				.view-id-opinion.view-display-id-block{width: 100%;
+					.views-row{
+						.titulo{width: 100%;}
+					}
+				}
+				.caricaturas{width: 100%;
+					h2{width: auto;}
+					.cari{padding: 0; left: 0;display: flex;flex-wrap: wrap;justify-content: space-around;
+						.otras{width: 291px;height: 375px;margin: 0;
+							.view-id-opinion.view-display-id-block_2{width: 96%;margin: 0 2%;top: 0;height: 375px;margin-top: 10px;
+							
+							}
+						}
+					}
+					.view-id-opinion.view-display-id-block_1{width: 291px;height: auto;margin: 0;margin-top: 10px;
+						.views-row{width: 100%; margin: 0;}
+						.ultima{width: 100%; padding: 0; margin: 0;}
+						.caricatura{width: 100%;
+							img{width: 100%; height: auto;}
+						}
+					}
+				}
+				.view-id-opinion.view-display-id-block_3{width: 100%;
+					h2{width: auto;}
+					.view-content{display: flex;justify-content: center;flex-wrap: wrap;}
+					.views-row{width: 300px;margin: 5px;
+						.foto{margin-bottom: 12px;}
+						.autor{top: 70px;}
+						.titulo{width: 100%;}
+						.resumen{width: 100%;}
+					}
+				}
+				
+				.paginador{display: none;}
+			}
+		}//Fin izq
+		.der{display: none;}
+	}//Fin editorial
 
 	//Secciones generales
 	#secciones{width: 96%;margin: 0 2%;padding: 0;float: left;
