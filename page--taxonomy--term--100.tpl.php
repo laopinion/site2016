@@ -18,11 +18,4 @@
            <!--ANUNCIO 300x600--><div class="pauta p300x600" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php $block =block_load('block',49); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div></div><!--FIN 2.ANUNCIO 300x600-->
           <!--Noticias Recientes--><?php $view = views_get_view('recientes'); print $view->preview('block_1'); ?><!--FIN Noticias Recientes--> <!--Juegos--><div class="juegos"><a href="http://juegos.laopinion.com.co/"><img src="<?php print base_path(); ?>sites/default/themes/op/images/juegos.jpg"></a></div><!--FIN Juegos-->
         </div> <!--Fin derecha-->
-      <div id="footer_movil">
-        <?php include("footer_movil.tpl.php"); ?>
-      </div> <!-- /#footer -->  
-      <footer id="footer">
-          <?php //include("footer.tpl.php"); ?>
-          <?php // print render($page['footer']) ?>
-      </footer> <!-- /#footer -->
 </section><!--Fin seccion-->
