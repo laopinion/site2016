@@ -15,7 +15,8 @@
 		      		<!--Cúcuta--><div class="cucuta"><div class="color"></div><a href="<?php print base_path(); ?>cucuta">Cúcuta</a></div><?php $view = views_get_view('principal'); print $view->preview('block_7'); ?><!--FIN Cúcuta-->
 		      		<!--Columna--><?php $view = views_get_view('principal'); print $view->preview('block_4'); ?><!--FIN Columna-->
 		      	</div>
-		      	<div class="mid">	      		
+		      	<div class="mid">
+		      		<!--ANUNCIO 600x90--><div class="pauta p600x90" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php $block =block_load('block',49); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div></div><!--FIN ANUNCIO 600x90-->
 		      		<!--Lista 3--><?php $view = views_get_view('principal'); print $view->preview('block_3'); ?><!--FIN Lista 3-->
 		      		<!--Columna 2--><?php $view = views_get_view('principal'); print $view->preview('block_5'); ?><!--FIN Columna 2-->
 	      		</div>
@@ -36,9 +37,10 @@
 	      		<?php include("zonacomercial.tpl.php"); ?>
 	      		<!--VIDEOS--><?php $view = views_get_view('principal'); print $view->preview('block_9'); ?><!--FIN VIDEOS-->
 	      		<!--GALERIAS--><div class="galerias"><div class="color"></div><a href="<?php print base_path(); ?>galerias">Galerías</a></div><?php $view = views_get_view('principal'); print $view->preview('block_10'); ?><!--FIN GALERIAS-->
+	      		<!--PODCAST--><div class="podcasts"><div class="color"></div><a href="<?php print base_path(); ?>podcast">Podcast</a></div><?php $view = views_get_view('principal'); print $view->preview('block_11'); ?><!--FIN PODCAST-->
 	      	</div>
 	      	<div class="left">
-	      		<!--PODCAST--><div class="podcasts"><div class="color"></div><a href="<?php print base_path(); ?>podcast">Podcast</a></div><?php $view = views_get_view('principal'); print $view->preview('block_11'); ?><!--FIN PODCAST-->
+	      		
 	      		<div class="izq">
 	      			<!--FOTONOTICIAS--><div class="foto_noticias"><div class="color"></div><a class="fotos" href="<?php print base_path(); ?>foto-noticias">Fotonoticias</a><?php $view = views_get_view('principal'); print $view->preview('block_14'); ?></div><!--FIN FOTO NOTICIAS-->
 				</div>
@@ -57,7 +59,6 @@
 				<!--Opinión--><div class="opinion"><div class="color"></div><a href="<?php print base_path(); ?>opinion">Opinión</a></div><?php $view = views_get_view('side'); print $view->preview('block_7'); ?>
 				<!--Columnistas--><?php $view = views_get_view('side'); print $view->preview('block_8'); ?><!--FIN Columnistas--><!--FIN Opinión-->
 				<!--Actividad social--><div class="actividad"><div class="color"></div>Actividad social</a></div><?php $view = views_get_view('side'); print $view->preview('block_5'); ?><!--FIN Actividad social-->
-				<!--Participacion--><div class="participacion"><div class="color"></div>Así opinan</a></div><?php $view = views_get_view('side'); print $view->preview('block_6'); ?><!--FIN Participacion-->
 			</div> 
 			<div class="center">
 				<div class="productos"><div class="color"></div><a href="<?php print base_path(); ?>productos">Productos La Opinión</a></div><?php include_once("productos.php") ?>

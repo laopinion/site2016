@@ -278,18 +278,20 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
         .control{top: 10px;z-index:3;cursor: pointer;margin:0px; cursor:pointer; width: 20px;height: 245px;float: left;position: absolute;text-indent:-9999px;}
         .control_left{left: 0px;background: url(../images/iconos/flechas.svg) -8px 80px/55px auto no-repeat #fff;}
         .control_right{right: 0px;background: url(../images/iconos/flechas.svg) -25px 80px/55px auto no-repeat #fff;}
-    }
+    } 
     
     //PORTADA
-    .view-id-principal.view-display-id-block_16{width:380px; height:180px; position: relative; float:left; border-bottom:1px solid $servicios;padding: 0px 0px 20px 0px;margin-bottom: 20px;margin-right:15px;
-        .pdf{width:360px; padding:10px; float:left;
-            .imagen{width:140px; height:180px; position: absolute;z-index:1;border:1px solid $estandar;left:20px;}
-            .portada{width:210px;padding: 5px 0px 5px 170px;height: 15px;float:left;background:$servicios; position: relative; display:block;left:-10px; margin-top:50px;color:#fff; font-size:13px;margin-bottom:10px;
-                .color{background:#fff; height:10px; width:25px; float:left;position: relative;text-indent:-9999px; margin-left: 20px; margin-right:10px;}
+    .view-id-principal.view-display-id-block_16{width: 380px;height: 172px;position: relative;float: left;border-bottom: 1px solid $servicios;padding: 0px 0px 20px 0px;margin-bottom: 20px;margin-right: 15px;top: 0px;
+        .pdf{width:210px;height:170px; padding:10px; float:left;
+            .imagen{width:140px; height:180px; position: absolute;z-index:1;border:1px solid $estandar;right:10px;}
+            .portada{width: 210px;padding: 7px 170px 7px 0px;height: 15px;float: left;background: $servicios;position: relative;display: block;left: -10px;margin-top: -7px;color: #fff;font-size: 13px;margin-bottom: 10px;top: -2px;text-transform: uppercase;
+                .color{background: #fff;height: 10px;width: 25px;float: left;position: relative;text-indent: -9999px;margin-left: 20px;margin-right: 10px;margin-top: 3px;text-transform: uppercase;}
             }
-            .descripcion{font-size: 15px;position: relative;float: left;color: #646464;font-weight: 300;padding: 10px 0px;margin-left: 190px;text-align: center;}
-            .boton{width: 60px;height: 20px;padding: 5px 10px;color: #fff;font-weight: 300;font-size: 14px;background: #BB1D1E;position: relative;float:left;margin-left:230px;
-                a{color:#fff; text-decoration:none;}
+            .info{width:200px; float:left; position: relative; height:auto;
+                .descripcion{width:180px; font-size: 15px;position: relative;float: left;color: #646464;font-weight: 300;padding: 10px 0px;margin-left: 20px;text-align: center;}
+                .boton{width: 60px;height: 20px;padding: 5px 10px;color: #fff;font-weight: 300;font-size: 14px;background: #BB1D1E;position: relative;float:left;margin-left:60px;
+                    a{color:#fff; text-decoration:none;}
+                }
             }
         }
     }
@@ -298,8 +300,8 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
         .color{background:#fff; height:10px; width:25px; float:left;position: relative;text-indent:-9999px; margin-left: 20px;}
         a{color:#fff; text-decoration:none; text-transform:uppercase;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
     }
-    .servicios-content{width:570px;height:150px; float:left;position: relative;margin-bottom:20px;padding:10px;overflow:hidden;left:10px;border-bottom:1px solid $servicios;
-        .content{width:570px;height:160px; float:left; position: relative;}
+    .servicios-content{width:570px;height:142px; float:left;position: relative;margin-bottom:20px;padding:10px;overflow:hidden;left:10px;border-bottom:1px solid $servicios;
+        .content{width:570px;height:152px; float:left; position: relative;}
         .separador{ width:570px; height:1px; background:#D9D9D9; position:relative; float:left;margin:0px 0px 5px 0px;}
         .item {margin-bottom:5px;float:left; width:120px; height:45px; margin-right:0px;border-right:1px solid #D9D9D9; padding:10px;}
         .servicio{height:auto; float:left; position: relative; width:110px;
