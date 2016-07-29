@@ -1,7 +1,11 @@
 <!--Contenido-->
 <div id="video">
   <!--ANUNCIO 1000x30--><div class="pauta p1000x30"><?php $block =block_load('block',57); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div><!--FIN ANUNCIO 1000x30-->
+  <div class="cen">
     <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); print drupal_render(_block_get_renderable_array(_block_render_blocks(array($taxonomy_menu_block))));?><!--FIN seccion-->
+      <div class="compartir_table">
+        <?php include("compartirbarra.php"); ?>
+      </div>
        <?php include("compartir.tpl.php"); ?>
        <?php include("recomendada.tpl.php"); ?>
        <?php include("recomendada_movil.tpl.php"); ?>
@@ -21,6 +25,7 @@
       print "<div class=miniatura>".render($content['field_imagen'])."</div>";
       ?>
     </div><!--Fin contenido-->
+  </div>  
       <div class="izq">
         <?php
         print "<div class=barra>";
