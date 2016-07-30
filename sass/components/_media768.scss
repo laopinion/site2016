@@ -1761,6 +1761,7 @@
 
 	#suscripciones{width: 96%;float: left;padding: 0;margin: 0 2%;
 		.content{margin-top: 100px;
+			hr{border: 1px solid #efefef;}
 			.suscrip_desktop{display: none;}
 			.logos{margin: 0; width: 100%;float: none;
 				.izq{width: 100%;float: none;
@@ -1768,7 +1769,7 @@
 				}
 			}
 			.suscrip_movil{display: block;
-				.iconos{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+				.iconos{width: 100%;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
 					.logo_1{background:url(../images/iconos/suscripciones_logos.svg) 0px 0px/500px auto no-repeat;height: 90px;width: 140px;float: none; display: inline-block; margin: 0 auto;}
 					.logo_2{background:url(../images/iconos/suscripciones_logos.svg) -360px 0px/500px auto no-repeat;height: 90px;width: 140px;float: none; display: inline-block; margin: 0 auto;}
 					.logo_3{background:url(../images/iconos/suscripciones_logos.svg) -173px 0px/500px auto no-repeat;height: 90px;width: 140px;float: none; display: inline-block; margin: 0 auto;}
@@ -1798,7 +1799,7 @@
 					.form-actions{margin: 30px auto; display: block;width: 250px;
 						input{margin: 0;}
 					}
-					.texto{margin: 0;width: 100%;}
+					.texto{margin: 0 auto;width: 250px;display: block;}
 				}
 			}
 			#mas_info{width: 100%; margin: 0;

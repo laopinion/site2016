@@ -92,7 +92,50 @@
             </div>
           </section>
         </section>
+        <hr> 
+        <section class="iconos">
+          <div class="logo_2"></div>
+          <div class="logo_3"></div>
+        </section>
+        <article>
+          <p id="p1">Por ser suscriptor se le obsequia una publicación de una foto social en grupo para el día de sus cumpleaños y además obtiene un 15% de descuento en avisos sociales.</p>
+          <p id="p3">Le llegara el servicio del periódico, adicional con todos los fascículos e insertos antes de las 6am a su casa u oficina.</p>
+        </article>
+        <section class="mes">
+        <section class="cuadro">
+            <div class="info"> 
+              <div class="tiempo" id="3m">
+                <h2>3</h2>
+                <div class="descripcion">
+                  <span><strong><aside>Meses</aside>$110.000</strong> <br><p>A pagar por adquirir la suscripción</p></span>
+                </div>
+              </div>
+              <span class="diario">$1.222 Ejemplar diario con la suscripción</span>
+            </div>
+        </section>
+        </section>
+        <hr>
+        <section class="iconos">
+          <div class="logo_3"></div>
+        </section>
+        <article>
+          <p id="p3">Le llegara el servicio del periódico, adicional con todos los fascículos e insertos antes de las 6am a su casa u oficina.</p>
+        </article>
+        <section class="mes">
+          <section class="cuadro">
+              <div class="info">
+                <div class="tiempo" id="1m">
+                   <h2>1</h2>
+                  <div class="descripcion">
+                    <span><strong><aside>Meses</aside>$42.000</strong> <br><p>A pagar por adquirir la suscripción</p></span>
+                  </div>
+                </div>      
+                <span class="diario">$1.400 Ejemplar diario con la suscripción</span>
+              </div>
+          </section>
+        </section>
     </section>
+    <hr>  
     <section id="formulario">
       <h2>Formulario para suscripciones</h2>
       <!-- Falta codigo php -->

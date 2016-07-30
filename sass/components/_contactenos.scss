@@ -1,5 +1,5 @@
 #contactenos{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;
-    .content{width: 100%; float:left; margin-top: 40px; position: relative;
+    .content{width: 100%; float:left; margin-top: 40px; position: relative;margin-bottom: 50px;
         .menu_seccion{border-bottom: 1px solid #8E9398;}
         .izq{width: 640px;margin-right: 15px;float: left;position: relative;height: auto;
             h1{font-size: 18px;color: $estandar;border-bottom: 1px solid $estandar;text-transform: uppercase;padding-bottom: 5px;}
@@ -14,6 +14,7 @@
                 }
             }
             .siganos{float: left; background-color: #CCCCCC;width: 100%;margin-top: 123px;height: 70px;font-size: 13px;
+                a{text-decoration: none; color: #333;}
                 h2{text-align: center;margin: 0;font-size: 14px;color: #333333;}
                 .f{background: url(../images/iconos/redes_contactenos.svg) -18px -6px/232px auto no-repeat;height: 32px;width: 32px;display: inline-block; vertical-align: middle;margin: 5px 12px;}
                 .t{background: url(../images/iconos/redes_contactenos.svg) -73px -6px/232px auto no-repeat;height: 32px;width: 32px;display: inline-block; vertical-align: middle;margin: 5px 12px;}
