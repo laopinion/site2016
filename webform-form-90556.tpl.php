@@ -18,10 +18,18 @@
           </div>
           <div class="siganos">
             <h2>Siganos</h2>
-            <div class="f"></div>laopinioncucuta
-            <div class="t"></div>@laopinioncucuta
-            <div class="i"></div>@laopinioncucuta
-            <div class="y"></div>laopinioncucuta
+            <a href="https://www.facebook.com/laopinioncucuta/" target="_blank">
+              <div class="f"></div><span>laopinioncucuta</span>
+            </a>
+            <a href="https://www.twitter.com/laopinioncucuta/" target="_blank">
+              <div class="t"></div><span>@laopinioncucuta</span>
+            </a>
+            <a href="https://www.instagram.com/laopinioncucuta/" target="_blank">
+              <div class="i"></div><span>@laopinioncucuta</span>
+            </a>
+            <a href="https://www.youtube.com/user/WEBLAOPINION" target="_blank">
+              <div class="y"></div><span>laopinioncucuta</span>
+            </a>
           </div>
           <div class="formulario">
             <h2>Escríbanos</h2>

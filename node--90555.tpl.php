@@ -5,18 +5,18 @@
       <div class="izq">
         <img src="<?php print base_path(); ?>sites/default/themes/op/images/suscripcion_izq.jpg" alt="Suscripción" width="420">
       </div>
-      <div class="der">
+      <div class="der suscrip_desktop">
         <div class="logo_1"></div>
         <div class="logo_2"></div>
         <div class="logo_3"></div>
-        <article>
+        <article class="suscrip_desktop">
           <p id="p1">Por ser suscriptor se le obsequia una publicación de una foto social en grupo para el día de sus cumpleaños y además obtiene un 15% de descuento en avisos sociales.</p>
           <p id="p2">En optativos, se les da un descuento dependiendo de la promoción; y eventos se obsequian boletas o se hacen descuentos especiales.</p>
           <p id="p3">Le llegara el servicio del periódico, adicional con todos los fascículos e insertos antes de las 6am a su casa u oficina.</p>
         </article>
       </div>
     </section><!--Fin logos-->
-    <section class="meses">
+    <section class="meses suscrip_desktop">
       <div class="info">        
         <div class="tiempo" id="1a">
           <h2>1</h2>
@@ -57,6 +57,85 @@
         <p>Valor diario del periódico: De Lunes a Sábados:$1.500 y los Domingos:$2.800.</p>
       </div>
     </section><!--Fin meses-->
+    <section class="suscrip_movil">
+      <section class="iconos">
+        <div class="logo_1"></div>
+        <div class="logo_2"></div>
+        <div class="logo_3"></div>
+      </section>
+        <article>
+          <p id="p1">Por ser suscriptor se le obsequia una publicación de una foto social en grupo para el día de sus cumpleaños y además obtiene un 15% de descuento en avisos sociales.</p>
+          <p id="p2">En optativos, se les da un descuento dependiendo de la promoción; y eventos se obsequian boletas o se hacen descuentos especiales.</p>
+          <p id="p3">Le llegara el servicio del periódico, adicional con todos los fascículos e insertos antes de las 6am a su casa u oficina.</p>
+        </article>
+        <section class="mes">
+          <section class="cuadro">
+            <div class="info">        
+              <div class="tiempo" id="1a">
+                <h2>1</h2>
+                <div class="descripcion">
+                  <span><strong><aside>Año</aside>$299.000</strong> <br><p>A pagar por adquirir la suscripción</p></span>
+                </div>
+              </div>
+              <span class="diario">$828 Ejemplar diario con la suscripción</span>
+            </div>
+          </section>
+          <section class="cuadro">
+            <div class="info">
+              <div class="tiempo" id="6m">
+                <h2>6</h2>
+                <div class="descripcion">
+                  <span><strong><aside>Meses</aside>$190.000</strong> <br><p>A pagar por adquirir la suscripción</p></span>
+                </div>
+              </div>
+              <span class="diario">$1.056 Ejemplar diario con la suscripción</span>
+            </div>
+          </section>
+        </section>
+        <hr> 
+        <section class="iconos">
+          <div class="logo_2"></div>
+          <div class="logo_3"></div>
+        </section>
+        <article>
+          <p id="p1">Por ser suscriptor se le obsequia una publicación de una foto social en grupo para el día de sus cumpleaños y además obtiene un 15% de descuento en avisos sociales.</p>
+          <p id="p3">Le llegara el servicio del periódico, adicional con todos los fascículos e insertos antes de las 6am a su casa u oficina.</p>
+        </article>
+        <section class="mes">
+        <section class="cuadro">
+            <div class="info"> 
+              <div class="tiempo" id="3m">
+                <h2>3</h2>
+                <div class="descripcion">
+                  <span><strong><aside>Meses</aside>$110.000</strong> <br><p>A pagar por adquirir la suscripción</p></span>
+                </div>
+              </div>
+              <span class="diario">$1.222 Ejemplar diario con la suscripción</span>
+            </div>
+        </section>
+        </section>
+        <hr>
+        <section class="iconos">
+          <div class="logo_3"></div>
+        </section>
+        <article>
+          <p id="p3">Le llegara el servicio del periódico, adicional con todos los fascículos e insertos antes de las 6am a su casa u oficina.</p>
+        </article>
+        <section class="mes">
+          <section class="cuadro">
+              <div class="info">
+                <div class="tiempo" id="1m">
+                   <h2>1</h2>
+                  <div class="descripcion">
+                    <span><strong><aside>Meses</aside>$42.000</strong> <br><p>A pagar por adquirir la suscripción</p></span>
+                  </div>
+                </div>      
+                <span class="diario">$1.400 Ejemplar diario con la suscripción</span>
+              </div>
+          </section>
+        </section>
+    </section>
+    <hr>  
     <section id="formulario">
       <h2>Formulario para suscripciones</h2>
       <!-- Falta codigo php -->
@@ -134,7 +213,7 @@
           <div class="texto">Tarjetas débito presenciales y crédito</div>
         </div>
         <div class="circulo_3"></div>
-        <div class="texto">Domicilio para efectivo y tarjetas</div>
+        <div class="texto desktop">Domicilio para efectivo y tarjetas</div>
       </div>
     </section>
   </div><!-- Fin content--> 

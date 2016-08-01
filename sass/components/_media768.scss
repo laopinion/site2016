@@ -1702,4 +1702,113 @@
 		}//Fin content
 	}//Fin secciones generales
 	/*-----------Fin secciones---------------*/
+
+	#registrar{width: 96%;float: left;padding: 0;margin: 0 2%;
+		.content{margin-top: 100px;
+			#registrar_user{width: 100%; 
+				form{
+					.field-type-text{margin: 10px 23px;}
+					.form-item{margin-bottom: 20px;}
+					.field-type-datetime{width: 100%;margin: 0;margin-bottom: 20px;}
+					.field-type-list-text{width: 100%;margin-bottom: 20px;
+						.form-item{margin: 0; margin-bottom: 20px;
+							label{margin: 0;}
+							#edit-field-genero-und--2{margin: 0;}
+							#edit-field-ciudad-und--2{margin: 0;}
+						}
+					}
+					.field-type-list-boolean{margin: 0; margin-bottom: 20px;}
+				}
+			}
+		}
+	}//Fin registrar
+
+	#password{width: 96%;float: left;padding: 0;margin: 0 2%;
+		.content{margin-top: 100px;
+			#password_user{width: 100%;
+				.region{
+					.content{margin-top: 0;
+						form{
+							.form-item{font-size: 13px;}
+							.form-actions{width: 100%;
+								input{width: 100%;font-size: 0.9rem;}
+							}
+						}
+					}
+				}
+			}
+		}
+	}//Fin password
+
+	#contactenos{width: 96%;float: left;padding: 0;margin: 0 2%;
+		.content{margin-top: 100px;
+			.izq{width: 100%;margin: 0;
+				.gps{width: 200px;margin: 0 auto;display: block;background: url(../images/gps.jpg) -25px 0px/245px auto no-repeat;height: 200px;}
+				.tel{height: 145px;width: 200px;margin: 0 auto;margin-top: 55px;display: block;background: url(../images/tel.jpg) 25px 0px/165px auto no-repeat;}
+				.siganos{height: auto;padding: 5% 2%;width: 96%;
+					.f, .t, .i, .y{display: inline-block;margin: 10px 4px;}
+					span{display: inline-block;width: 95px;}
+					a{text-decoration: none;color: #333;}
+				}
+				.formulario{
+					.form-item{margin: 15px auto;display: block;}
+					.webform-component-textarea{width: 250px;}
+				}
+			}
+			.der{display: none;}
+		}
+	}//Fin contantenos
+
+	#suscripciones{width: 96%;float: left;padding: 0;margin: 0 2%;
+		.content{margin-top: 100px;
+			hr{border: 1px solid #efefef;}
+			.suscrip_desktop{display: none;}
+			.logos{margin: 0; width: 100%;float: none;
+				.izq{width: 100%;float: none;
+					img{width: 100%;height: auto;}
+				}
+			}
+			.suscrip_movil{display: block;
+				.iconos{width: 100%;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+					.logo_1{background:url(../images/iconos/suscripciones_logos.svg) 0px 0px/500px auto no-repeat;height: 90px;width: 140px;float: none; display: inline-block; margin: 0 auto;}
+					.logo_2{background:url(../images/iconos/suscripciones_logos.svg) -360px 0px/500px auto no-repeat;height: 90px;width: 140px;float: none; display: inline-block; margin: 0 auto;}
+					.logo_3{background:url(../images/iconos/suscripciones_logos.svg) -173px 0px/500px auto no-repeat;height: 90px;width: 140px;float: none; display: inline-block; margin: 0 auto;}
+				}
+				article{width: 100%;
+					p{color: #CC3333;font-size: 15px;line-height: 17px;}
+				}
+				.tiempo{float: left;height: 87px;background: rgba(255,255,255,0.98);background: -moz-linear-gradient(left, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.98) 14%, rgba(235,235,235,0.99) 60%, rgba(235,235,235,1) 100%);background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255,255,255,0.98)), color-stop(14%, rgba(255,255,255,0.98)), color-stop(60%, rgba(235,235,235,0.99)), color-stop(100%, rgba(235,235,235,1)));background: -webkit-linear-gradient(left, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.98) 14%, rgba(235,235,235,0.99) 60%, rgba(235,235,235,1) 100%);background: -o-linear-gradient(left, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.98) 14%, rgba(235,235,235,0.99) 60%, rgba(235,235,235,1) 100%);background: -ms-linear-gradient(left, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.98) 14%, rgba(235,235,235,0.99) 60%, rgba(235,235,235,1) 100%);background: linear-gradient(to right, rgba(255,255,255,0.98) 0%, rgba(255,255,255,0.98) 14%, rgba(235,235,235,0.99) 60%, rgba(235,235,235,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ebebeb', GradientType=1 );
+				h2{font-size: 120px; color: #CC3333;margin: 0;float: left;position: relative;    top: -36px;}
+				.descripcion{color: #666666;float: left;position: relative;top: 9px;width: 110px; height: 85px;
+					strong{font-size: 21px; line-height: 23px}
+					aside{font-size: 16px; line-height: 18px}
+					p{margin: 0;font-size: 12px;line-height: 14px;}
+				}
+			}
+			.mes{margin-top: 30px;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;}
+			.cuadro{background: url(../images/iconos/suscripciones-movil.jpg) 0px 0px/260px auto no-repeat;height: 190px;width: 260px;display: -webkit-flex;display: -moz-flex;display: flex;}
+			.info{margin: 30px auto;float: none;width: 180px;display: inline-block;}
+			.info_ps{position: relative;width: 60%;float: left;height: 25px;top: 10px;text-align: center;left: 0;right: 0;margin: 0 20%;
+				p{margin: 0;color: #999999; font-size: 14px;}
+			}
+			.diario{color: #999999;display: block;width: 180px;font-size: 12px;text-align: center;}
+			}
+			#formulario{margin: 0;width: 100%;
+				.formulario{
+					.form-item{margin: 15px auto;display: block;}
+					.form-actions{margin: 30px auto; display: block;width: 250px;
+						input{margin: 0;}
+					}
+					.texto{margin: 0 auto;width: 250px;display: block;}
+				}
+			}
+			#mas_info{width: 100%; margin: 0;
+				.info{margin-top: 50px;margin-bottom: 30px;
+					.circulo, .circulo_2, .circulo_3{display: none;}
+					.centro{width: 100%;}					
+					.texto.desktop{display: none;}
+				}
+			}
+		}
+	}//FIn suscripciones
 }//Fin media 768
