@@ -1068,24 +1068,24 @@ $(document).ready(function(){
 //Fin script player podcast
 
 //Script player videos-->
-  var id = $(".contenido .video_id .field-name-field-video-id .field-item").html();
-  var plataforma = $(".contenido .plataforma .field-name-field-plataforma .field-item").html();
+  var id = $("#video .cen .contenido .video_id .field-name-field-video-id .field-item").html();
+  var plataforma = $("#video .cen .contenido .plataforma .field-name-field-plataforma .field-item").html();
   var youtubeplayer = "<iframe id=frame-video width=1006 height500 src=http://www.youtube.com/embed/" + id + "?hl=es&fs=1&rel=0&showinfo=0 frameborder=0 allowfullscreen></iframe>";
   var facebookplayer = "<div class=fb-video data-href=https://www.facebook.com/" + id + "/ data-width=1006 data-show-text=false><blockquote cite=https://www.facebook.com/" + id + "/ class=fb-xfbml-parse-ignore><a href=https://www.facebook.com/" + id + "/></a></blockquote></div>";
   var vineplayer = "<iframe src=https://vine.co/v/" + id + "/embed/simple width=1006 height=500 frameborder=0></iframe>";
   var instagramplayer = "<blockquote class=instagram-media data-instgrm-captioned data-instgrm-version=7 style= background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);><div style=padding:8px;> <div style= background:#F8F8F8; line-height:0; margin-top:40px; padding:28.125% 0; text-align:center; width:100%;> <div style= background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;></div></div> <p style= margin:8px 0 0 0; padding:0 4px;> <a href=https://www.instagram.com/p/" + id + "/ style= color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word; target=_blank>Te enseñamos a preparar las tajadas de maduro de otra manera. Mira la receta completa en nuestro portal.</a></p> <p style= color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;>Un vídeo publicado por Deléitese Gastronomia (@deleitese_co) el <time style= font-family:Arial,sans-serif; font-size:14px; line-height:17px; datetime=2016-06-19T20:43:02+00:00>19 de Jun de 2016 a la(s) 1:43 PDT</time></p></div></blockquote>";
 
   if(plataforma == "YouTube"){
-    $('.video-player').append(youtubeplayer);
+    $('#video .cen  .contenido .video-player').append(youtubeplayer);
   }else
   if(plataforma == "Facebook"){
-    $('.video-player').append(facebookplayer);
+    $('#video .cen .contenido .video-player').append(facebookplayer);
   }else
   if(plataforma == "Vine"){
-    $('.video-player').append(vineplayer);
+    $('#video .cen .contenido .video-player').append(vineplayer);
   }else
   if(plataforma == "Instagram"){
-    $('.video-player').append(instagramplayer);
+    $('#video .cen .contenido .video-player').append(instagramplayer);
   }
 //Fin script video
 
@@ -1201,6 +1201,73 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       $(".mid .view-header .subseccion .color").css({background:"#C60B77"}); 
     }
 //FIN COLOR SECCIONES
+
+
+//COLOR DE LA SECCION DE TAGS
+    $("#tags .content .view-id-taxonomy_term .views-row").each(function(){
+      var seccionT = $(this).find(".nota .seccion .color").html();
+      if(seccionT == "Cúcuta" || seccionT == "Memorias" || seccionT == "Por los barrios"){
+        $(this).find(".nota .seccion .color").css({background:"#BA2025"}); 
+      }else
+      if(seccionL == "Región" || seccionT == "Pamplona" || seccionT == "Ocaña"){
+        $(this).find(".nota .seccion .color").css({background:"#F9D821"}); 
+      }else
+      if(seccionT == "Judicial"){
+        $(this).find(".nota .seccion .color").css({background:"#F87917"}); 
+      }else
+      if(seccionT == "Frontera"){
+        $(this).find(".nota .seccion .color").css({background:"#89C33F"}); 
+      }else
+      if(seccionT == "Actualidad" || seccionT == "Economía" || seccionT == "Política" || seccionT == "Colombia" || seccionT == "Venezuela" || seccionT == "Mundo"){
+        $(this).find(".nota .seccion .color").css({background:"#3D9E04"}); 
+      }else
+      if(seccionT == "Opinión" || seccionT == "Editorial" || seccionT == "Columnistas" || seccionT == "Caricaturas"){
+        $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
+      }else
+      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
+        $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
+      }else
+      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
+        $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
+      }else
+      if(seccionT == "Participación" || seccionT == "Reportero ciudadano" || seccionT == "Así opinan"){
+        $(this).find(".nota .seccion .color").css({background:"#C60B77"}); 
+      }
+    });
+/*-----------------------------------------------------------------------------*/
+//FIN COLOR SECCION TAGS
+
+//NOTAS SECCION TAGS
+  $("#tags .content .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".galeria .icon_galeria").css("display","block");
+        $(this).find(".galeria .galeria").css("display","block");
+        $(this).find(".galeria .icon_video").css("display","none");
+        $(this).find(".galeria .video").css("display","none");
+        $(this).find(".galeria .icon_podcast").css("display","none");
+        $(this).find(".galeria .podcast").css("display","none");
+        $(this).find(".galeria .foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".galeria .icon_video").css("display","block");
+        $(this).find(".galeria .video").css("display","block");
+        $(this).find(".galeria .icon_galeria").css("display","none");
+        $(this).find(".galeria .galeria").css("display","none");
+        $(this).find(".galeria .icon_podcast").css("display","none");
+        $(this).find(".galeria .podcast").css("display","none");
+        $(this).find(".galeria .foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".galeria .icon_podcast").css("display","block");
+        $(this).find(".galeria .podcast").css("display","block");
+        $(this).find(".galeria .icon_video").css("display","none");
+        $(this).find(".galeria .video").css("display","none");
+        $(this).find(".galeria .icon_galeria").css("display","none");
+        $(this).find(".galeria .galeria").css("display","none");
+        $(this).find(".galeria .foto").css("display","none");
+      }
+  });
+//FIN NOTAS SECCION TAGS
+
 
 /*Validacion si existe submenu*/
 if($("#secciones .menu_seccion .submenu ul li").length == 0 ){

@@ -1,28 +1,31 @@
 //NOTA
 #video{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;
-    //.color_video{width: 25px; height: 10px; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
-    .contenido{width:1006px; height:auto; float:left; position: relative; background:#fff; margin-bottom:0px;
-        .color{width: 25px; height: 10px; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
-        .seccion{font-size:15px;position:relative; float:left; margin-bottom:0px;
-        a{color:$gris; text-decoration:none;font-weight:600;}
-        a:hover{text-decoration:underline;}
-        }
-        .sep{width:10px; float:left; position:relative;margin:0px 5px;}
-        .fecha{padding: 2px 0;font-size:13px;position:relative; float:left; color:$gris; font-weight:300;margin-right:5px; margin-bottom:0px;}
-        .resumen{position:relative; float:left; font-weight:300;margin-bottom:20px;width:100%; margin-bottom:20px;
-            p{color:$grisOscuro;}
-            } 
-        
-        .resumen{line-height:18px;font-size:16px;position:relative; float:left; color:$gris;  font-weight:300;}
-        h2{font-size:36px; font-weight:600; line-height:38px; float:left; position: relative; margin:10px 0px; width:100%;}
-        .video_id{display:none;}
-        .plataforma{display:none;}
-        .video-player{position: relative; float:left; left:0px; border: none;margin-bottom:20px;
-            iframe{width: 1006px;height: 500px;}
-            .fb-video{width: 1006px;height: 500px;}
-            .instagram-media{width: 1006px; height: 500px;}
-        }
-    }//Fin contenido            
+    .cen{width: 100%;float:left;position: relative;height: auto;
+        .compartir_table{display:none;}
+        //.color_video{width: 25px; height: 10px; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
+        .contenido{width:1006px; height:auto; float:left; position: relative; background:#fff; margin-bottom:0px;
+            .color{width: 25px; height: 10px; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
+            .seccion{font-size:15px;position:relative; float:left; margin-bottom:0px;
+            a{color:$gris; text-decoration:none;font-weight:600;}
+            a:hover{text-decoration:underline;}
+            }
+            .sep{width:10px; float:left; position:relative;margin:0px 5px;}
+            .fecha{padding: 2px 0;font-size:13px;position:relative; float:left; color:$gris; font-weight:300;margin-right:5px; margin-bottom:0px;}
+            .resumen{position:relative; float:left; font-weight:300;margin-bottom:20px;width:100%; margin-bottom:20px;
+                p{color:$grisOscuro;}
+                } 
+            
+            .resumen{line-height:18px;font-size:16px;position:relative; float:left; color:$gris;  font-weight:300;}
+            h2{font-size:36px; font-weight:600; line-height:38px; float:left; position: relative; margin:10px 0px; width:100%;}
+            .video_id{display:none;}
+            .plataforma{display:none;}
+            .video-player{position: relative; float:left; left:0px; border: none;margin-bottom:20px;
+                iframe{width: 1006px;height: 500px;}
+                .fb-video{width: 1006px;height: 500px;}
+                .instagram-media{width: 1006px; height: 500px;}
+            }
+        }//Fin contenido            
+    }
     .izq{width: 690px;margin-right: 15px;float: left;position: relative;height: auto;
         //ETIQUETAS Y COMPARTIR
         .barra{background-color: #f1f1f1; position:relative; float:left; width:100%;padding: 5px 0px;

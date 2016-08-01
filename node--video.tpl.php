@@ -50,7 +50,7 @@
           <div class="bloque"><?php include("disqus.php"); ?></div>
         </div>
         <div class="mas_galerias"><!--Más galerias-->
-          <div class="mas_galerias"><h2><div class="color"></div>+ GALERIAS</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block_1'); ?>
+          <div class="mas_galerias"><h2><div class="color"></div>+ VIDEOS</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block_1'); ?>
         </div><!--FIN Más galerias-->
         <hr class="divisor_taboola">
         <!--TABOOLA-->
