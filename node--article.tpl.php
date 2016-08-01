@@ -75,6 +75,9 @@
       <div class="color"></div><h2>Comentarios</h2>
       <div class="bloque"><?php include("disqus.php"); ?></div>
     </div>
+    <div class="mas_notas"><!--Más notas-->
+      <div class="mas_notas"><h2><div class="color"></div>+ NOTAS</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block_5'); ?>
+    </div><!--FIN Más notas-->
     <hr class="divisor_taboola">
     <!--TABOOLA-->
     <div id="taboola-below-article-thumbnails"></div>

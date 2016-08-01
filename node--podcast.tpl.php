@@ -42,9 +42,9 @@
       <div class="color"></div><h2>Comentarios</h2>
       <div class="bloque"><?php include("disqus.php"); ?></div>
     </div>
-     <div class="mas_galerias"><!--Más galerias-->
-          <div class="mas_galerias"><h2><div class="color"></div>+ GALERIAS</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block_3'); ?>
-     </div><!--FIN Más galerias-->
+    <div class="mas_podcast"><!--Más podcast-->
+      <div class="mas_podcast"><h2><div class="color"></div>+ PODCAST</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block_4'); ?>
+    </div><!--FIN Más podcast-->
     <hr class="divisor_taboola">
     <!--TABOOLA-->
     <div id="taboola-below-article-thumbnails"></div>
