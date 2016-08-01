@@ -1,6 +1,6 @@
-<section id="actualidad">
+<section id="tags">
       <div class="content">
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat eius pariatur explicabo quaerat vero sunt corrupti nam consectetur assumenda optio. Nesciunt quidem recusandae alias quia enim, atque fugiat aliquam veritatis?
+       <h4><span>Temas -</span><?php print render($title); ?></h4>
        <?php print render($page['content']); ?>
       </div><!-- Fin content--> 
 </section> <!-- /#seccion -->
