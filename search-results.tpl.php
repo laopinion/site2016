@@ -23,7 +23,6 @@
  * @ingroup themeable
  */
 ?>
-
 <div class="busquedas">
 	<div class="head">
 		<h2>Resultados para </h2>
