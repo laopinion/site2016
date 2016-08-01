@@ -234,6 +234,7 @@
 		.center{display: none;}
 		hr{display: none;}
 	}/* Fin Notas */
+
 	/*Inicio Videos */
 	#video{width: 100%;padding: 45px 0px;
 		.p1000x30{display:none;}
@@ -266,9 +267,9 @@
 			}
 			.compartir{display: none!important;}
 			.contenido{width: 100%;
-				.video-player{width: 100% !important; left: 0;
+				.video-player{float: none;position: relative;padding-top: 56.25%;top: 75px;margin-bottom: 50px;
 					.desktop{display: none;}
-					iframe{width: 100%; height: 410px;}
+					iframe{position: absolute;left: 0;right: 0;top: 0;bottom: 0;width: 100%;height: 100%;}
 				}
 				.texto{width: 100%;}
 				.autor{
@@ -286,12 +287,41 @@
 			.comentarios{margin-right: 0; width: 100%;
 				.bloque{width: 94%; padding: 2%;} 
 			}
+			.mas_galerias{
+				.view-id-detalle.view-display-id-block_1{width: 100%;
+					.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+						.views-row{margin-right: 0;}
+					}
+				}
+			}
 			.divisor_taboola{left: 0;}
-			#taboola-below-article-thumbnails{left: 0;}
+			#taboola-below-article-thumbnails{left: 0;
+				.trc_rbox_container{
+					.trc_rbox{
+						.trc_rbox_outer{
+							#rbox-t2m{margin-left: 0;
+								div:first-child{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+									.trc_spotlight_item{margin-left: 0;margin: 5px 10px;}
+								}
+							}
+						}
+					}
+				}
+			}
 		}//Fin izq
 		.der{display: none;}
 		.recientes_footer{display: block;}
-		.notas_footer{display: none;}
+		.notas_footer{width: 96%;margin: 30px 2%;
+			.view-id-recientes.view-display-id-block_3{
+				.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+					.views-row{margin-right: 0;margin-bottom: 10px;width: 300px;
+						.nota{
+							.info{width: 160px;}
+						}
+					}
+				}
+			}
+		}
 		.multimedia_recientes_footer{display: none;}
 		.multimedia_footer{display: none;}
 		.center{display: none;}
