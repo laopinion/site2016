@@ -60,15 +60,6 @@
       ?>
     </div>
 
-    <!-- <div class="relacionadas">
-     <?php
-      /*if (!empty($content['field_contenidos_relacionados'])){ 
-          print "<h2>Relacionadas</h2><div class=linea></div>
-          <div class=item>".render($content['field_contenidos_relacionados'])."</div>";
-        }*/
-     ?>
-    </div> -->
-
     <!-- ANUNCIO 468x60<div class="pauta p468x60"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php //$block =block_load('block',34); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div></div> --><!--FIN ANUNCIO 468x60-->
     <div class="comentarios">
       <div class="linea"></div>
