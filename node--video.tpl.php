@@ -1,4 +1,4 @@
-<!--Contenido-->
+<!--VIDEO-->
 <div id="video">
   <!--ANUNCIO 1000x30--><div class="pauta p1000x30"><?php $block =block_load('block',57); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div><!--FIN ANUNCIO 1000x30-->
   <div class="cen">
@@ -25,7 +25,7 @@
       print "<div class=miniatura>".render($content['field_imagen'])."</div>";
       ?>
     </div><!--Fin contenido-->
-  </div>  
+  </div>    
       <div class="izq">
         <?php
         print "<div class=barra>";
@@ -49,9 +49,9 @@
           <div class="color"></div><h2>Comentarios</h2>
           <div class="bloque"><?php include("disqus.php"); ?></div>
         </div>
-        <div class="mas_galerias"><!--Más galerias-->
-          <div class="mas_galerias"><h2><div class="color"></div>+ VIDEOS</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block_1'); ?>
-        </div><!--FIN Más galerias-->
+        <div class="mas_videos"><!--Más videos-->
+          <div class="mas_videos"><h2><div class="color"></div>+ VIDEOS</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block_1'); ?>
+        </div><!--FIN Más videos-->
         <hr class="divisor_taboola">
         <!--TABOOLA-->
         <div id="taboola-below-article-thumbnails"></div>

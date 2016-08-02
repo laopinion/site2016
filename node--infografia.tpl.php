@@ -1,39 +1,42 @@
 <!--Contenido-->
 <div id="infografia">
      <!--ANUNCIO 1000x30--><div class="pauta p1000x30"><?php $block =block_load('block',57); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div><!--FIN ANUNCIO 1000x30-->
-    <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); print drupal_render(_block_get_renderable_array(_block_render_blocks(array($taxonomy_menu_block))));?><!--FIN seccion-->
-
+    <div class="cen">
+      <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); print drupal_render(_block_get_renderable_array(_block_render_blocks(array($taxonomy_menu_block))));?><!--FIN seccion-->
+      <div class="compartir_table">
+        <?php include("compartirbarra.php"); ?>
+      </div>
        <?php include("compartir.tpl.php"); ?>
        <?php include("recomendada.tpl.php"); ?>
        <?php include("recomendada_movil.tpl.php"); ?>
-
-    <div class="contenido">
-        <div class="color"></div>
-        <?php 
-          print "<div class=seccion>".render($content['field_seccion'])."</div>";
-          print "<div class=sep> - </div>";
-          print "<div class=fecha>".render($content['field_fecha_de_publicacion'])."</div>";
-          print "<h2 class=titulo>".$title."</h2>";
-        ?>
-        <!--Resumen--><?php  $view = views_get_view('detalle'); print $view->preview('block_2'); ?><!--FIN Resumen-->
-        <?php 
-            print "<div class=infog>";
-            print render($content['field_imagen']);
-            print "</div>";
-            print "<div class=barra>";
-              if (!empty($content['field_tags'])){ 
-              print "<div class=etiquetas><span>Temas - </span>";
-              //render($content['field_tags'])
-              if (!empty($node->field_tags)) { 
-                foreach($node->field_tags['und'] as $tag) {
-                  print  '<a href="/'.drupal_lookup_path('alias', 'taxonomy/term/'.$tag['taxonomy_term']->tid).'">'.$tag['taxonomy_term']->name.'</a>';
+      <div class="contenido">
+          <div class="color"></div>
+          <?php 
+            print "<div class=seccion>".render($content['field_seccion'])."</div>";
+            print "<div class=sep> - </div>";
+            print "<div class=fecha>".render($content['field_fecha_de_publicacion'])."</div>";
+            print "<h2 class=titulo>".$title."</h2>";
+          ?>
+          <!--Resumen--><?php  $view = views_get_view('detalle'); print $view->preview('block_2'); ?><!--FIN Resumen-->
+          <?php 
+              print "<div class=infog>";
+              print render($content['field_imagen']);
+              print "</div>";
+              print "<div class=barra>";
+                if (!empty($content['field_tags'])){ 
+                print "<div class=etiquetas><span>Temas - </span>";
+                //render($content['field_tags'])
+                if (!empty($node->field_tags)) { 
+                  foreach($node->field_tags['und'] as $tag) {
+                    print  '<a href="/'.drupal_lookup_path('alias', 'taxonomy/term/'.$tag['taxonomy_term']->tid).'">'.$tag['taxonomy_term']->name.'</a>';
+                  }
                 }
-              }
-                print "</div>";
-              }
-              include("compartirbarra.php");
-            print "</div>";
-        ?>
+                  print "</div>";
+                }
+                include("compartirbarra.php");
+              print "</div>";
+          ?>
+      </div>
     </div>
     <!--Fin Contenido-->
     <div class="izq">
@@ -49,9 +52,8 @@
             <?php include("disqus.php"); ?>
           </div>
         </div>
-        <div class="mas_galerias">
-        <!--Más galerias--><div class="mas_galerias"><h2><div class="color"></div>+ GALERIAS</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block'); ?>
-        </div><!--FIN Más galerias-->
+        <div class="mas_infografias">
+        <!--Más infografias--><div class="mas_infografias"><h2><div class="color"></div>+ INFOGRAFIAS</h2><div class="linea"></div></div><?php $view = views_get_view('detalle'); print $view->preview('block_3'); ?></div><!--FIN Más infografias-->
         <hr class="divisor_taboola">
         <!--TABOOLA-->
         <div id="taboola-below-article-thumbnails"></div>
