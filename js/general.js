@@ -1204,12 +1204,12 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
 
 
 //COLOR DE LA SECCION DE TAGS
-    $("#tags .content .view-id-taxonomy_term .views-row").each(function(){
+    $("#tags .content  .view-tags.view-id-tags .views-row").each(function(){
       var seccionT = $(this).find(".nota .seccion .color").html();
       if(seccionT == "Cúcuta" || seccionT == "Memorias" || seccionT == "Por los barrios"){
         $(this).find(".nota .seccion .color").css({background:"#BA2025"}); 
       }else
-      if(seccionL == "Región" || seccionT == "Pamplona" || seccionT == "Ocaña"){
+      if(seccionT == "Región" || seccionT == "Pamplona" || seccionT == "Ocaña"){
         $(this).find(".nota .seccion .color").css({background:"#F9D821"}); 
       }else
       if(seccionT == "Judicial"){
@@ -1238,32 +1238,32 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
 //FIN COLOR SECCION TAGS
 
 //NOTAS SECCION TAGS
-  $("#tags .content .views-row").each(function(){
-      var ContentTypeL = $(this).find(".tipo").html();
+  $("#tags .content .view-tags.view-id-tags .views-row").each(function(){
+      var ContentTypeL = $(this).find(".nota .tipo").html();
       if(ContentTypeL == "Galería de imagenes"){
-        $(this).find(".galeria .icon_galeria").css("display","block");
-        $(this).find(".galeria .galeria").css("display","block");
-        $(this).find(".galeria .icon_video").css("display","none");
-        $(this).find(".galeria .video").css("display","none");
-        $(this).find(".galeria .icon_podcast").css("display","none");
-        $(this).find(".galeria .podcast").css("display","none");
-        $(this).find(".galeria .foto").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","block");
+        $(this).find(".nota .galeria").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
       }else if(ContentTypeL == "Video"){
-        $(this).find(".galeria .icon_video").css("display","block");
-        $(this).find(".galeria .video").css("display","block");
-        $(this).find(".galeria .icon_galeria").css("display","none");
-        $(this).find(".galeria .galeria").css("display","none");
-        $(this).find(".galeria .icon_podcast").css("display","none");
-        $(this).find(".galeria .podcast").css("display","none");
-        $(this).find(".galeria .foto").css("display","none");
+        $(this).find(".nota .icon_video").css("display","block");
+        $(this).find(".nota .video").css("display","block");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","none");
+        $(this).find(".nota .podcast").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
       }else if(ContentTypeL == "Podcast"){
-        $(this).find(".galeria .icon_podcast").css("display","block");
-        $(this).find(".galeria .podcast").css("display","block");
-        $(this).find(".galeria .icon_video").css("display","none");
-        $(this).find(".galeria .video").css("display","none");
-        $(this).find(".galeria .icon_galeria").css("display","none");
-        $(this).find(".galeria .galeria").css("display","none");
-        $(this).find(".galeria .foto").css("display","none");
+        $(this).find(".nota .icon_podcast").css("display","block");
+        $(this).find(".nota .podcast").css("display","block");
+        $(this).find(".nota .icon_video").css("display","none");
+        $(this).find(".nota .video").css("display","none");
+        $(this).find(".nota .icon_galeria").css("display","none");
+        $(this).find(".nota .galeria").css("display","none");
+        $(this).find(".nota .foto").css("display","none");
       }
   });
 //FIN NOTAS SECCION TAGS
