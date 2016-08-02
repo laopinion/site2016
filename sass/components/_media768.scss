@@ -216,9 +216,6 @@
 					.field-name-field-descripcion{width: 70%;height: auto;}
 				}
 				.barra.table{display: block;}
-				.compartirbarra{
-					.redes_sociales{display: none;}
-				}
 			}//Fin contenido
 			.comentarios{margin-right: 0; width: 100%;
 				.bloque{width: 94%; padding: 2%;} 
@@ -296,7 +293,14 @@
 			}
 			.compartir{display: none!important;}
 			.contenido{width: 100%;
-				.video-player{float: none;position: relative;padding-top: 56.25%;top: 75px;margin-bottom: 50px;
+				.barra.table{display: block;background-color: #f1f1f1; position:relative; float:left; width:100%;padding: 5px 0px;
+		            .etiquetas{font-weight:600; margin-bottom:0px; margin-left: 17px; 
+		                span{line-height:2;float:left; position: relative; width:60px;}
+		                a{line-height:2;font-size:13px; color:$gris; text-decoration:none;font-weight:300;font-size:14px; float:left; margin-right:10px; position: relative;padding:3px 0px;}
+		                a:hover{text-decoration:underline;}
+		            }//FIN ETIQUETAS
+				}
+				.video-player{float: none;position: relative;padding-top: 56.25%;top: 75px;margin-bottom: 55px;
 					.desktop{display: none;}
 					iframe{position: absolute;left: 0;right: 0;top: 0;bottom: 0;width: 100%;height: 100%;}
 				}
@@ -447,10 +451,10 @@
 	}/* Fin Galerias */
 
 	/*Inicio Infografias */
-	#infografias{width: 100%;padding: 45px 0px;
+	#infografia{width: 96%;margin: 0 2%;margin-top: 100px;float:left;padding: 0;
 		.p1000x30{display:none;}
 		.pauta {width: 100%;margin: 14px auto;}
-		.cen{width: 96%;margin: 0 2%;margin-top: 50px;float:left;
+		.cen{width: 100%;margin: 0;float:left;
 			.menu_seccion{margin-bottom: 10px;
 				.submenu{padding: 0; border: none;height: auto;}
 			}
@@ -477,24 +481,22 @@
 	            }//FIN COMPARTIR
 			}
 			.compartir{display: none!important;}
-			.contenido{width: 100%;
-				.video-player{float: none;position: relative;padding-top: 56.25%;top: 75px;margin-bottom: 50px;
-					.desktop{display: none;}
-					iframe{position: absolute;left: 0;right: 0;top: 0;bottom: 0;width: 100%;height: 100%;}
-				}
-				.texto{width: 100%;}
-				.autor{
-					h2{margin: 0;}
-					.field-name-field-descripcion{width: 70%;height: auto;}
-				}
-				
+			.contenido{width: 100%;margin: 0;
+				.desktop{display: none;}
+				.infog{width: 100%; height: auto;left: 0;margin: 0;
+					.barra.table{display: block;background-color: #f1f1f1; position:relative; float:left; width:100%;padding: 5px 0px;
+			            .etiquetas{font-weight:600; margin-bottom:0px; margin-left: 17px; 
+			                span{line-height:2;float:left; position: relative; width:60px;}
+			                a{line-height:2;font-size:13px; color:$gris; text-decoration:none;font-weight:300;font-size:14px; float:left; margin-right:10px; position: relative;padding:3px 0px;}
+			                a:hover{text-decoration:underline;}
+			            }//FIN ETIQUETAS
+					}
+					img{width: 100%; height: auto;}
+				}				
 			}//Fin contenido
 		}
 		.izq{width: 96%;margin: 0 2%;margin-top: 0px;
-			.barra, .table{display: none !important;}
-			.compartirbarra{
-				.redes_sociales{display: none !important;}
-			}
+			.barra.desktop{display: none;}
 			.comentarios{margin-right: 0; width: 100%;
 				.bloque{width: 94%; padding: 2%;} 
 			}
@@ -541,6 +543,7 @@
 
 	/*Inicio podcast */
 	#podcast{width: 100%;padding: 45px 0px;
+		.p1000x30{display: none;}
 		.pauta{width: 100%;margin: 14px auto;}
 		.izq{width: 96%;margin: 0 2%;margin-top: 50px;
 			.menu_seccion{margin-bottom: 10px;
@@ -571,7 +574,11 @@
 			.compartir{display: none!important;}
 			.contenido{width: 100%;
 				.foto{width: 100%; left: 0;
-					.desktop{display: none;}
+					.barra.table{display: block;}
+					.barra.desktop{display: none;}
+					.audio-player{width: 100%;
+						iframe{width: 100%;}
+					}
 					img{width: 100%; height: auto;}
 					.pie{width: 100%;height: auto;display: block;padding: 5px 0px;margin: 0;
 						.descripcion{float: none;}
@@ -583,7 +590,6 @@
 					h2{margin: 0;}
 					.field-name-field-descripcion{width: 70%;height: auto;}
 				}
-				.barra.table{display: block;}
 				.compartirbarra{
 					.redes_sociales{display: none;}
 				}

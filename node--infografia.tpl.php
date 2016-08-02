@@ -18,11 +18,30 @@
             print "<h2 class=titulo>".$title."</h2>";
           ?>
           <!--Resumen--><?php  $view = views_get_view('detalle'); print $view->preview('block_2'); ?><!--FIN Resumen-->
-          <?php 
+
+          <?php               
               print "<div class=infog>";
+                print "<div class='barra table'>";
+                if (!empty($content['field_tags'])){ 
+                print "<div class=etiquetas><span>Temas - </span>";
+                //render($content['field_tags'])
+                if (!empty($node->field_tags)) { 
+                  foreach($node->field_tags['und'] as $tag) {
+                    print  '<a href="/'.drupal_lookup_path('alias', 'taxonomy/term/'.$tag['taxonomy_term']->tid).'">'.$tag['taxonomy_term']->name.'</a>';
+                  }
+                }
+                  print "</div>";
+                }
+                print "</div>";
               print render($content['field_imagen']);
-              print "</div>";
-              print "<div class=barra>";
+              print "</div>";            
+          ?>
+      </div>
+    </div>
+    <!--Fin Contenido-->
+    <div class="izq">
+        <?php 
+          print "<div class='barra desktop'>";
                 if (!empty($content['field_tags'])){ 
                 print "<div class=etiquetas><span>Temas - </span>";
                 //render($content['field_tags'])
@@ -34,13 +53,7 @@
                   print "</div>";
                 }
                 include("compartirbarra.php");
-              print "</div>";
-          ?>
-      </div>
-    </div>
-    <!--Fin Contenido-->
-    <div class="izq">
-        <?php 
+            print "</div>";
             print "<div class=texto>".render($content['body'])."</div>";
             print "<div class=autor>".render($content['field_autor'])."</div>"; 
         ?>
