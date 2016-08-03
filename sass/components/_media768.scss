@@ -2265,8 +2265,16 @@
 
 	//HOME
 	#home{width: 96%;margin: 0 2%;padding: 0;float:left;
-		#content{margin-top: 100px; width:96.8%;
-			.left{width: 100%; margin: 0;
+		#content{margin-top: 100px;width: 100%;padding: 0;
+			.left{width: 100%;margin: 0;float: none;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+				.mid{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;width: 100%;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+					.infografias{width: 100%;padding: 20px 0;
+						.view-id-principal.view-display-id-block_15{width: 100%;
+							.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;width: 100%;}
+						}
+					}
+				}
+				.cen{margin-top: 50px;}
 			}
 			.right{display:none;
 			}

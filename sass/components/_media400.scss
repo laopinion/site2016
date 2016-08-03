@@ -16,4 +16,95 @@
 			span:nth-child(6){top: 23px;}
 		}
 	}//Fin head movil
+
+	#home{
+		#content{
+			.left{
+				.izq{
+					.view-id-principal.view-display-id-block{width: 100%;
+						.view-content{width: 100%;
+							.views-row{width: 100%;
+								.nota{width: 100%;
+									.video{img{width: 100%; height: auto;}}
+									.galeria{img{width: 100%; height: auto;}}
+									.foto{img{width: 100%; height: auto;}}
+									.podcast{img{width: 100%; height: auto;}}
+									.icon_video{top: 86px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
+									.icon_galeria{top: 86px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
+									.icon_podcast{top: 86px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
+								}
+							}
+						}
+					}
+					.view-id-principal.view-display-id-block_1{width: 300px;
+						.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
+							.views-row{width: 100%;height: auto;
+								.nota{width: 100%;
+									.info{width: 48%;}
+								}
+							}
+						}
+					}
+					.view-id-principal.view-display-id-block_2{width: 300px;
+						.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
+							.views-row{width: 100%;height: auto;
+								.nota{width: 100%;
+									.info{width: 48%;}
+								}
+							}
+						}
+					}
+				}//Fin izq
+				.cen{
+					.deportes{width: 100%;}
+					.view-id-principal.view-display-id-block_6{width: 100%; padding: 0;}
+					.economia{width: 100%;}
+					#indicadores{width: 100%;
+						.info{width: 100%; padding: 5px;}
+					}
+					.view-id-principal.view-display-id-block_8{width: 100%; padding: 0;}
+					.cucuta{width: 100%;}
+					.view-id-principal.view-display-id-block_7{width: 100%;padding: 10px 0;}
+					.view-id-principal.view-display-id-block_4{width: 100%;
+						.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
+							.views-row{width: 100%;height: auto;
+								.nota{width: 100%;
+									.info{width: 48%;}
+								}
+							}
+						}
+					}
+				}//Fin cen
+				.mid{
+					.view-id-principal.view-display-id-block_3{width: 100%;margin: 0;
+						.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
+							.views-row{width: 100%;height: auto;
+								.nota{width: 100%;
+									.info{width: 48%;}
+								}
+							}
+						}
+					}
+					.view-id-principal.view-display-id-block_5{width: 100%;
+						.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
+							.views-row{width: 100%;height: auto;
+								.nota{width: 100%;
+									.info{width: 48%;}
+								}
+							}
+						}
+					}
+				}
+			}//Fin left
+			.center{
+				.zonacomercial{width: 100%;}
+				.view-id-principal.view-display-id-block_9{width: 100%; padding: 0;
+					.videos{width: 100%;}
+					.frame_video{width: 100%;
+						iframe{width: 100%;padding: 0;}
+					}
+				}
+			}
+		}
+	}
 }//Fin 400px
