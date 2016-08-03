@@ -641,6 +641,25 @@
 
 	/*------------Secciones--------------*/
 
+	#tags{width: 96%;margin: 0 2%;padding: 0;
+		.content{margin-top: 100px;
+			.view-id-tags.view-display-id-page{width: 100%;
+				.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;width: 100%;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+					.views-row{margin-right: 5px;height: auto;
+						.nota{height: auto;}
+					}
+					.views-row-6, .views-row-12, .views-row-18, .views-row-24{margin-right:5px !important;}
+				}
+			}
+			.item-list{width: 100%;
+				.pager{width: 100%;display: flex;display: -webkit-flex;display: -moz-flex;flex-direction: column;-webkit-flex-direction: column;-moz-flex-direction: column;align-items: center;-webkit-align-items: center;-moz-align-items: center;
+					li{margin: 0;margin-bottom: 10px;width: 50%;}
+					.pager-item{a{padding: 8px 40%;}}
+				}
+			}
+		}
+	}
+
 	//Inicio Multimedia
 	#videos{width: 96%;margin: 0 2%;padding: 0;
 		.content{margin-top: 100px;
