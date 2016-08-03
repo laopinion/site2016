@@ -2147,12 +2147,35 @@
 	}//FIn suscripciones
 
 	//HOME
-	#home{
-		.content{
-			width: 760px;
+	#home{width: 96%;margin: 0 2%;padding: 0;float:left;
+		#content{margin-top: 100px; width:96.8%;
+			.left{width: 100%; margin: 0;
+			}
+			.right{display:none;
+			}
+			.center{width: 100%; margin: 0;
+				.zonacomercial{width:96%; height:auto;
+					.content{width:auto; height:auto;}
+				}
+				.view-id-principal.view-display-id-block_9{width:93.7%;
+					.frame_video{width:98%; border-right: none; margin:0px; height:430px;
+						iframe{width:97%; height:385px;}
+					}
+					.view-content{width: 100%;margin: 0px;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+						.views-row{margin-right:10px;}
+					}
+				}
+				.view-id-principal.view-display-id-block_10{width:96.7%;}
+				.view-id-principal.view-display-id-block_11{width:96.7%;}
+				.product-content{width:98.5%;}
+				.view-id-principal.view-display-id-block_17{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;}
+				.view-id-principal.view-display-id-block_16{display:none;}
+				.servicios {width:100%;}
+				.servicios-content {width:90.7%;
+					.content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center; width:initial; height:initial;}
+				}
+			}	
 		}
 	}
-
 	//FIN HOME
-
 }//Fin media 768
