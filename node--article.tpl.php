@@ -31,7 +31,6 @@
           }
             print "</div>";
           }
-          include("compartirbarra.php");
         print "</div>";
       print "<div class=foto>";
       print render($content['field_portada']);
