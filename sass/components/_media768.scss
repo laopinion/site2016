@@ -2303,4 +2303,22 @@
 		}
 	}
 	//FIN HOME
+
+	//Inico 404
+	#error_404{width: 96%;margin: 0 2%;padding: 0;padding-top: 100px;
+		.container{width: 100%;
+			h1{font-size: 160px;}
+		}
+		.img{width: 100%;margin-top: 70px;left: 0px;}
+		.descripcion{width: 100%;}
+		h4{}
+		.notas{width: 100%;
+			.view-id-404.view-display-id-block{width: 100%;
+				.view-content{justify-content: center;}
+				.views-row{width: 150px;margin-bottom: 15px;}
+				.views-row-2, .views-row-4, .views-row-6{margin-left: 0;}
+			}
+			.divisor{display: none;}
+		}//Fin notas
+	}//Fin 404
 }//Fin media 768
