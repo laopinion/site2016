@@ -20,11 +20,12 @@
 	#home{
 		#content{
 			.left{
-				.izq{
+				.izq{margin-bottom: 20px;
 					.view-id-principal.view-display-id-block{width: 100%;
 						.view-content{width: 100%;
 							.views-row{width: 100%;
 								.nota{width: 100%;
+									.titulo{width: 100%;}
 									.video{img{width: 100%; height: auto;}}
 									.galeria{img{width: 100%; height: auto;}}
 									.foto{img{width: 100%; height: auto;}}
@@ -54,8 +55,20 @@
 							}
 						}
 					}
+					.foto_noticias{width: 100%; padding: 0;
+						.view-id-principal.view-display-id-block_14{width: 100%;
+							.view-content{
+								.views-row{width: 100%;
+									.foto{width: 100%;
+										.miniatura{width: 100%;}
+									}
+								}
+							}
+						}
+					}
 				}//Fin izq
 				.cen{
+					.trailers{padding: 20px 0;}
 					.deportes{width: 100%;}
 					.view-id-principal.view-display-id-block_6{width: 100%; padding: 0;}
 					.economia{width: 100%;}
@@ -96,15 +109,30 @@
 					}
 				}
 			}//Fin left
-			.center{
-				.zonacomercial{width: 100%;}
+			.center{margin-bottom: 40px;
+				.zonacomercial{width: 100%;
+					.content{padding: 0;
+						.separador{display: none;}
+						.empresa{
+							.pagina{margin-top: 17px;}	
+						}
+					}
+				}
 				.view-id-principal.view-display-id-block_9{width: 100%; padding: 0;
-					.videos{width: 100%;}
-					.frame_video{width: 100%;
-						iframe{width: 100%;padding: 0;}
+					.videos{width: 95%;}
+					.frame_video{width: 100%;position: relative;padding-top: 56.25%;margin-bottom: 15px;margin-top: 15px;height: auto;
+						iframe{padding: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;width: 100%;height: 100%;}
 					}
 				}
 			}
 		}
-	}
+	}//Fin home
+
+	#video{
+		.cen{
+			.contenido{
+				.video-player{margin-bottom: 50px;margin-top:118px}				
+			}//Fin contenido
+		}
+	}/* Fin Videos */
 }//Fin 400px
