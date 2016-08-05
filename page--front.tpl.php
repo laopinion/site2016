@@ -22,8 +22,7 @@
 		      		<!--Columna 2--><?php $view = views_get_view('principal'); print $view->preview('block_5'); ?><!--FIN Columna 2-->
 	      		</div>
 		    </div>
-	      	
-	      	<div class="right">	      		
+	      	<div class="right">      		
 		      	<!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php $block =block_load('block',49); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div></div><!--FIN 1.ANUNCIO 300x250-->
 		      	<!--Lo+ destacada--><div class="lo"><div class="mas">Lo<span>+</span></div></div><?php $view = views_get_view('side'); print $view->preview('block'); ?><!--FIN Lo+ destacada-->
 		      	<!--Lo+ otros--><?php $view = views_get_view('side'); print $view->preview('block_1'); ?><!--FIN Lo+ otros-->
