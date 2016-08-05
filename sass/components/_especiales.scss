@@ -1,3 +1,130 @@
+// OLIMPICOS
+
+#olimpicos{width: 100%;position: relative;height:auto; float:left;
+    .content{width:960px;padding:20px 09px;margin:0 auto; position: relative;
+        .head{background: url(../images/iconos/olimpicos/back_logos.svg) -3px -3px/320px auto no-repeat;height: 100px;width: 320px;margin:0 320px;position: absolute;z-index: 1;top: 11px;
+            .logo_olimpicos{background: url(../images/iconos/olimpicos/logo_olimpicos.svg) 15px 5px/70px auto no-repeat;padding: 0px;position: relative;float: left;width: 120px;height: 80px;opacity: 1;left: 45px;top: 5px;transition: all 0.5s ease-in-out;
+              a {display:block; height:70px; text-indent:-9999px;}
+            }
+            .logo_o{background: url(../images/iconos/olimpicos/logo_o.svg) 0px 7px/130px auto no-repeat;padding: 0px;position: relative;float: left; width: 120px;height: 80px;opacity: 1;left: 20px;top: 26px;transition: all 0.5s ease-in-out;
+              a {display:block; height:70px; text-indent:-9999px;}
+            }
+        }
+        .up{width:960px; margin:0 auto; height:auto;position: relative;
+            .view-id-olimpicos_2016.view-display-id-block{width:720px; height:540px; float:left; position: relative; 
+                .nota{height:540px; float:left; position: relative;
+                    .tipo{display:none;}
+                    .icon_video{display:none;background:url(../images/iconos/video.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
+                    .icon_galeria{display:none;background:url(../images/iconos/galeria.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
+                    .icon_podcast{display:none;background:url(../images/iconos/podcast.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
+                    .seccion{width:100%; border-bottom:1px solid #DBDBDB; padding: 0px 0px 5px 0px;height: 11px;
+                        .color{background:$seccion; height:10px; width:25px; float:left;position: relative;text-indent:-9999px;}
+                        a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
+                    }
+                    .info{width:700px; padding:10px; position: absolute; bottom:0px;z-index:1;
+                        background: rgba(252,248,247,0);
+                        background: -moz-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,248,247,0)), color-stop(34%, rgba(175,172,171,0.17)), color-stop(52%, rgba(134,131,131,0.36)), color-stop(70%, rgba(94,91,90,0.67)), color-stop(100%, rgba(26,23,23,0.97)));
+                        background: -webkit-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -o-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -ms-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: linear-gradient(to bottom, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf8f7', endColorstr='#1a1717', GradientType=0 );
+                        .titulo{float:left; position: relative; width:700px; height:auto; float:left; line-height:26px;padding:5px 0px; margin-bottom:0px;
+                            a{font-size: 24px; font-weight:600; text-decoration:none; color:#fff;}
+                        }
+                    }
+                    .foto{width:720px; height:auto; float:left; position: relative;}
+                    .galeria{width:720px; height:auto; float:left; position: relative;}
+                    .video{width:720px; height:auto; float:left; position: relative;}
+                }
+            }
+            .view-id-olimpicos_2016.view-display-id-block_1{width:240px; height:540px; float:left; position: relative; 
+                .nota{height:180px; float:left; position: relative;
+                    .tipo{display:none;}
+                    .icon_video{display:none;background:url(../images/iconos/video.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
+                    .icon_galeria{display:none;background:url(../images/iconos/galeria.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
+                    .icon_podcast{display:none;background:url(../images/iconos/podcast.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
+                    .seccion{width:100%; border-bottom:1px solid #DBDBDB; padding: 0px 0px 5px 0px;height: 11px;
+                        .color{background:$seccion; height:10px; width:25px; float:left;position: relative;text-indent:-9999px;}
+                        a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
+                    }
+                    .info{width:220px; padding:10px; position: absolute; bottom:0px;z-index:1;
+                        background: rgba(252,248,247,0);
+                        background: -moz-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,248,247,0)), color-stop(34%, rgba(175,172,171,0.17)), color-stop(52%, rgba(134,131,131,0.36)), color-stop(70%, rgba(94,91,90,0.67)), color-stop(100%, rgba(26,23,23,0.97)));
+                        background: -webkit-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -o-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -ms-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: linear-gradient(to bottom, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf8f7', endColorstr='#1a1717', GradientType=0 );
+                        .titulo{float:left; position: relative; width:220px; height:auto; float:left; line-height:18px;padding:5px 0px; margin-bottom:0px;
+                            a{font-size: 16px; font-weight:600; text-decoration:none; color:#fff;}
+                        }
+                    }
+                    .foto{width:240px; height:auto; float:left; position: relative;}
+                    .galeria{width:240px; height:auto; float:left; position: relative;}
+                    .video{width:240px; height:auto; float:left; position: relative;}
+                }
+            }
+        }    
+        .middle{width:960px; margin:0;height:auto;position: relative;float: left;
+            .view-id-olimpicos_2016.view-display-id-block_2{width:960px; height:auto; float:left; position: relative; background:#525A5C;
+                .titulo_bloque{color:#fff; padding:10px; text-align:center;font-weight:400; font-size:18px;}
+                .view-content{margin: 0px 20px;}
+                .views-row{float:left;}
+                .views-row-1, .views-row-2{margin-right:10px;}
+                .nota{height:250px; float:left; position: relative;
+                    .tipo{display:none;}
+                    .icon_video{display:none;background:url(../images/iconos/olimpica/video.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
+                    .info{width:280px; padding:10px; position: absolute; bottom:0px;z-index:1;
+                        background: rgba(252,248,247,0);
+                        background: -moz-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,248,247,0)), color-stop(34%, rgba(175,172,171,0.17)), color-stop(52%, rgba(134,131,131,0.36)), color-stop(70%, rgba(94,91,90,0.67)), color-stop(100%, rgba(26,23,23,0.97)));
+                        background: -webkit-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -o-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -ms-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: linear-gradient(to bottom, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf8f7', endColorstr='#1a1717', GradientType=0 );
+                        .titulo{float:left; position: relative; width:280px; height:auto; float:left; line-height:18px;padding:5px 0px; margin-bottom:0px;
+                            a{font-size: 16px; font-weight:600; text-decoration:none; color:#fff;}
+                        }
+                    }
+                    .foto{width:300px; height:auto; float:left; position: relative;}
+                    .galeria{width:300px; height:auto; float:left; position: relative;}
+                    .video{width:300px; height:auto; float:left; position: relative;}
+                }
+            }
+            .view-id-olimpicos_2016.view-display-id-block_3{width:960px; height:auto; float:left; position: relative; background:#525A5C;
+                .titulo_bloque{color:#fff; padding:10px; text-align:center;font-weight:400; font-size:18px;}
+                .view-content{margin: 0px 20px;}
+                .views-row{float:left;}
+                .views-row-1, .views-row-2{margin-right:10px;}
+                .nota{height:250px; float:left; position: relative;
+                    .tipo{display:none;}
+                    .icon_galeria{display:none;background:url(../images/iconos/olimpica/galeria.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
+                    .info{width:280px; padding:10px; position: absolute; bottom:0px;z-index:1;
+                        background: rgba(252,248,247,0);
+                        background: -moz-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,248,247,0)), color-stop(34%, rgba(175,172,171,0.17)), color-stop(52%, rgba(134,131,131,0.36)), color-stop(70%, rgba(94,91,90,0.67)), color-stop(100%, rgba(26,23,23,0.97)));
+                        background: -webkit-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -o-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -ms-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: linear-gradient(to bottom, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf8f7', endColorstr='#1a1717', GradientType=0 );
+                        .titulo{float:left; position: relative; width:280px; height:auto; float:left; line-height:18px;padding:5px 0px; margin-bottom:0px;
+                            a{font-size: 16px; font-weight:600; text-decoration:none; color:#fff;}
+                        }
+                    }
+                    .foto{width:300px; height:auto; float:left; position: relative;}
+                    .galeria{width:300px; height:auto; float:left; position: relative;}
+                    .video{width:300px; height:auto; float:left; position: relative;}
+                }
+            }
+        }
+    }
+}
+// FIN OLIMPICOS
 // COPA AMERICA -----------------------------------------------------------------
 //HOME 
 #copa_america_home{width:960px;margin: 0px;float: left; position: relative; 
