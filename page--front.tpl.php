@@ -1,6 +1,7 @@
   <section class="detailContent">
       <div id="home">
       	<div id="content">
+      		<?php include("olimpicos_home.tpl.php"); ?>
 		    <div class="left">
 		      	<div class="izq">
 		      		<!--Destacada--><?php $view = views_get_view('principal'); print $view->preview('block'); ?><!--FIN Destacada-->
