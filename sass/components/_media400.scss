@@ -73,7 +73,9 @@
 					.view-id-principal.view-display-id-block_6{width: 100%; padding: 0;}
 					.economia{width: 100%;}
 					#indicadores{width: 100%;
-						.info{width: 100%; padding: 5px;}
+						.info{width: 100%; padding: 5px;
+							.portada{.linea{width:100%;}}
+						}
 					}
 					.view-id-principal.view-display-id-block_8{width: 100%; padding: 0;}
 					.cucuta{width: 100%;}
@@ -136,4 +138,25 @@
 			}//Fin contenido
 		}
 	}/* Fin Videos */
+
+	#error_404{
+		.img{width: 100%;left: -10px;}
+	}//Fin Error 404
+
+	//Inicios Juegos Olimpicos
+	#olimpicos_home{width: 100%;
+		.container{
+			.cintillo{
+				.logo_rio{background: url(../images/iconos/olimpicos/logobannerrio.svg) no-repeat 0px -3px/120px auto transparent;position: relative;width: 121px;height: 37px;padding: 5px 0;left: -7px;}
+				.pestana{background: url(../images/iconos/olimpicos/pestanabannerprincipal.svg) no-repeat -7px -3px/200px auto transparent;position: relative;width: 200px;height: 57px;padding: 5px 0;top: 0px;right: 10px;
+					.calendario{right: -28px;}
+					.divisor{left: 97px;}
+					.bandera{right: -45px;}
+				}
+			}
+			
+		}
+	}
+	//Fin Juegos Olimpicos
+
 }//Fin 400px

@@ -176,6 +176,11 @@ function op_preprocess_page(&$vars, $hook)
       $vname = taxonomy_vocabulary_load(taxonomy_term_load($tid)->vid)->machine_name;
       $vars['theme_hook_suggestions'][] = 'page__vocabulary__'.$vname;
     }
+
+    $status = drupal_get_http_header("status");  
+  if($status == "404 Not Found") {      
+    $vars['theme_hook_suggestions'][] = 'page__404';
+  }
 }
 
 function op_preprocess_search_result(&$variables) {
