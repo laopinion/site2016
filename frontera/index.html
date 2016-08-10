@@ -3,8 +3,62 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Frontera</title>
+	<link rel="stylesheet" href="normalize.css">
+	<link rel="stylesheet" href="style.css">
+	
 </head>
 <body>
-	<h1>Hola mundoo.</h1>
+	<section id="seccion-1">
+		<h1>Hola mundo</h1>
+	</section>
+	<!--VIDEO-->
+	<section id="video">
+	  <object width="847" height="499.7">
+	    <param name="movie" value="http://www.youtube.com/embed/1NhTEv3SOeA">
+	    <param name="allowFullScreen" value="true">
+	    <param name="allowscriptaccess" value="always">
+	    <embed src="http://www.youtube.com/v/1NhTEv3SOeA?version=2&autoplay=1&loop=1&controls=1&showinfo=0&autohide=1&modestbranding=1" type=
+	    "application/x-shockwave-flash" width="847" height="499.7" allowscriptaccess="always"
+	    allowfullscreen frameborder="0">
+	  </object>
+	</section>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			console.log("ready");
+			var altoTotal = $(window).height();
+			var anchoTotal = $(window).width();
+			var altoTitulo = (altoTotal - 78) / 2;
+
+			$("#video iframe, #video object, #video embed").css({"width":anchoTotal , "height":( altoTotal+ (altoTotal*12/100) )});
+			  
+			function centrarTitulo(){
+			    altoTotal = $(window).height();
+			    anchoTotal = $(window).width();
+			    altoTitulo = (altoTotal - 78) / 2;
+			    $("#Escena1 .titulo").css("top" , altoTitulo);
+			}
+			function anchoTitulo(){
+			    var anchoTitulo1 = $("#Escena1 .top").width();
+			    var anchoTitulo2 = $("#Escena1 .bottom").width();
+			    var anchoTituloTotal = anchoTitulo1 + anchoTitulo2;
+			    $("#Escena1 .titulo").css("width", anchoTituloTotal);
+			}
+
+			if(anchoTotal < 1000){
+			    $("#Escena2, #Escena3, #Escena4, #Escena5, #Escena8").css({"background-position" : "0px 0px"});
+			    anchoTitulo();
+			}
+
+			$(window).resize(function(){
+			    centrarTitulo();
+			    anchoTitulo();
+			    console.log("Se ejecuto");
+			    //var altoTotal = $(window).height();
+			    var anchoTotal = $(window).width();
+			    $("#video iframe, #video object, #video embed").css({"width":anchoTotal , "height":( altoTotal+ (altoTotal*12/100) )});
+			});
+		});
+	</script>
 </body>
 </html>
