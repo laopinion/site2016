@@ -176,30 +176,4 @@
 		.img{width: 100%;margin-top: 80px;left: -25px;}
 	}//Fin Error 404
 
-	//Inicios Juegos Olimpicos
-	#olimpicos_home{width: 100%;
-		.container{
-			.contenido{position: relative;overflow: hidden;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;align-items: baseline;-webkit-align-items: baseline;-moz-align-items: baseline;
-				.view-id-olimpicos_home.view-display-id-block{width: 100%;height: 253px;margin: 10px auto;display: block;
-					.view-content{
-						.views-row{
-							.nota{
-								.video{img{width: 100%; height: auto;}}
-								.articulo{img{width: 100%; height: auto;}}
-								.galeria{img{width: 100%; height: auto;}}
-								.degradado{
-									.titulo{width: 100%;}
-								}
-							}
-						}
-					}
-				}
-				.view-id-olimpicos_home.view-display-id-block_1{width: 100%;position: static;
-					.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;}
-				}
-			}
-		}
-	}
-	//Fin Juegos Olimpicos
-
 }//Fin 600 px
