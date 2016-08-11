@@ -1,18 +1,322 @@
 body{
-	width: 100%; 
-	height: 100%;
+	display: flex;
+    flex-direction: column;
+    -webkit-display: flex;
+    -webkit-flex-direction: column;
+    -moz-display: flex;
+    -moz-flex-direction: column;
+    min-height: 100vh;
 }
+
+/*---------------------------------------------------------------------*/
+
+header{
+  position: static;
+  z-index: 50;
+  display: flex;
+  display: -webkit-flex;
+  display: -moz-flex;
+  align-items: center;
+  -webkit-align-items: center;
+  -moz-align-items: center;
+  /*background-color: #BB1D1E;*/
+  height: 90px;
+  width: 100%;
+}
+
+header #hamburger {
+  width: 60px;
+  height: 63px;
+  position: relative;
+  top: 10px;
+  left: 28px;
+  transition: .5s ease-in-out;
+  cursor: pointer;
+  border: 1px solid #493E3A;
+  border-radius: 5px;
+  z-index: 51;
+}
+
+header #hamburger span {
+  display: block;
+  position: absolute;
+  height: 7px;
+  width: 50%;
+  background: #493E3A;
+  opacity: 1;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: .25s ease-in-out;
+  -moz-transition: .25s ease-in-out;
+  -o-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+}
+header #hamburger span:nth-child(even) {
+  left: 50%;
+  border-radius: 0 9px 9px 0;
+}
+header #hamburger span:nth-child(odd) {
+  left: 0px;
+  border-radius: 9px 0 0 9px;
+}
+header #hamburger span:nth-child(1), header #hamburger span:nth-child(2) {
+  top: 10px;
+}
+header #hamburger span:nth-child(3), header #hamburger span:nth-child(4) {
+  top: 28px;
+}
+header #hamburger span:nth-child(5), header #hamburger span:nth-child(6) {
+  top: 46px;
+}
+header #hamburger.open{
+	border: none;
+}
+header #hamburger.open span:nth-child(1), header #hamburger.open span:nth-child(6) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+header #hamburger.open span:nth-child(2), header #hamburger.open span:nth-child(5) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+header #hamburger.open span:nth-child(1) {
+  left: 5px;
+  top: 7px;
+}
+header #hamburger.open span:nth-child(2) {
+  left: calc(50% - 5px);
+  top: 7px;
+}
+header #hamburger.open span:nth-child(3) {
+  left: -50%;
+  opacity: 0;
+}
+header #hamburger.open span:nth-child(4) {
+  left: 100%;
+  opacity: 0;
+}
+header #hamburger.open span:nth-child(5) {
+  left: 5px;
+  top: 29px;
+}
+header #hamburger.open span:nth-child(6) {
+  left: calc(50% - 5px);
+  top: 29px;
+}
+header #logo {
+  padding: 0px;
+  position: relative;
+  float: left;
+  width: 235px;
+  top: 0;
+  opacity: 1;
+  transition: all 0.5s ease-in-out;
+  margin: 0 auto;
+}
+header #logo h1 {
+  background: url(../images/logo.svg) 5px -5px/230px auto no-repeat;
+  height: 50px;
+  width: auto;
+  display: block;
+  text-indent: -9999px;
+  margin: 0 auto;
+}
+header #logo a {
+  display: block;
+  text-indent: -9999px;
+  height: 50px;
+}
+header #menup.desplegar {
+  left: 0;
+}
+header #menup {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: -100%;
+  background-color: #fff;
+  z-index: 50;
+  width: 100%;
+  transition: .5s;
+}
+header #menup .movil {
+  display: none;
+}
+header #menup .opciones {
+  width: 96%;
+  margin: 0 2%;
+  border-bottom: 2px solid #666666;
+  padding-bottom: 10px;
+  position: relative;
+  top: 130px;
+}
+
+header #menup .opciones .iconos {
+  padding: 0;
+  width: 60%;
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+header #menup .opciones .iconos li {
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  margin: 0 6px;
+}
+
+header #menup .opciones .iconos li a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+header #menup .opciones .iconos li a, header #menup .opciones .iconos li span:hover {
+  opacity: .7;
+}
+header #menup .opciones .table {
+  display: block;
+}
+header #menup .opciones .bloque {
+  padding: 0;
+  width: 135px;
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+header #menup .opciones .bloque li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+header #menup .opciones .bloque li a {
+  text-decoration: none;
+  color: #CCCCCC;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+/*------------------------------------------------------------------------------*/
+
+#footer{
+	width: 100%;
+	height: 50px;
+	background-color: #493E3A;
+}
+
+#footer .bloque1{
+	display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    justify-content: space-around;
+    -moz-justify-content: space-around;
+    -moz-justify-content: space-around;
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+    height: 50px;
+    width: 100%;
+}
+
+#footer .bloque1 .derechos{
+	margin: 0;
+	padding: 0;
+}
+
+#footer .bloque1 .derechos li{	
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+	color: #9E9790;
+}
+
+#footer .bloque1 .derechos .logo{
+	background: url(iconos/logo-opinion.svg) 0px 0px/130px auto no-repeat;
+    height: 30px;
+    width: 125px;
+}
+
+#footer .bloque1 .derechos .logo a{
+	display: block;
+	height: 35px;
+}
+
+#footer .redes-sociales{
+	margin: 0;
+	padding: 0;
+	height: 35px;
+}
+
+#footer .redes-sociales li{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#footer .redes-sociales .f a{
+	display: block;
+    background: url(iconos/redes-sociales.svg) no-repeat -24px -9px/260px auto;
+    width: 30px;
+    height: 30px;
+}
+
+#footer .redes-sociales .t a{
+	display: block;
+    background: url(iconos/redes-sociales.svg) no-repeat -86px -9px/260px auto;
+    width: 30px;
+    height: 30px;
+}
+
+#footer .redes-sociales .i a{
+	display: block;
+    background: url(iconos/redes-sociales.svg) no-repeat -147px -9px/260px auto;
+    width: 30px;
+    height: 30px;
+}
+
+#footer .redes-sociales .y a{
+	display: block;
+    background: url(iconos/redes-sociales.svg) no-repeat -210px -9px/260px auto;
+    width: 30px;
+    height: 30px;
+}
+
+/*------------------------------------------------------------*/
 
 #video{
 	position: fixed;
-    top: -145px;
+    top: 0;
     width: 100%; 
-    height: 96%;
-    overflow: hidden;
+    /*height: 96%;
+    overflow: hidden;*/
+    padding-top: 56.25%;
     z-index: -100;
 }
 
+#video iframe{
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
 #seccion-1{
-	width: 960px;
-	margin: 0 auto;
+    max-width: 960px;
+	width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    flex: 1;
+    -webkit-flex: 1;
+    -moz-flex: 1;
 }
