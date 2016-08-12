@@ -15,7 +15,9 @@
     </div><!--Fin cintillo -->
     <div class="content">
     <!--Destacada--><?php $view = views_get_view('olimpicos_home'); print $view->preview('block'); ?><!--FIN Destacada-->
-    <!--Lista de notas--><?php $view = views_get_view('olimpicos_home'); print $view->preview('block_1'); ?><!--FIN lista notas-->      
+    <span class="boton_izq"></span>
+    <!--Lista de notas--><?php $view = views_get_view('olimpicos_home'); print $view->preview('block_1'); ?><!--FIN lista notas-->
+    <span class="boton_der"></span>      
     </div>
   </article>    
 </seccion>
