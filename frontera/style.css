@@ -1,9 +1,9 @@
 body{
 	display: flex;
     flex-direction: column;
-    -webkit-display: flex;
+    display: -webkit-flex;
     -webkit-flex-direction: column;
-    -moz-display: flex;
+    display: -moz-flex;
     -moz-flex-direction: column;
     min-height: 100vh;
 }
@@ -207,9 +207,90 @@ header #menup .opciones .bloque li a {
 
 /*------------------------------------------------------------------------------*/
 
+#frases{
+	width: 100%;
+	height: 780px;
+	background-color: #493E3A;
+	margin: 60px 0;
+	overflow: hidden;
+	position: relative;
+	/*
+	display: flex;
+    align-items: center;
+    justify-content: center;*/
+}
+
+#frases .btn-izq{
+	background: url(iconos/icono-flechas.svg) -23px 8px/280px auto no-repeat;
+    width: 90px;
+    height: 115px;
+    position: absolute;
+    left: 0;
+    bottom: 45%;
+    cursor: pointer;
+}
+
+#frases .btn-der{
+	background: url(iconos/icono-flechas.svg) -160px 8px/280px auto no-repeat;
+    width: 90px;
+    height: 115px;
+    position: absolute;
+    right: 0;
+    bottom: 45%;
+    cursor: pointer;
+}
+
+#frases .caja{
+	height: 300px;
+	width: 1000px;
+    margin: 310px auto 163px auto;
+}
+
+#frases .caja .bloque .frase.activo{
+	display: block;
+}
+
+#frases .caja .bloque .frase{
+	width: 1000px;
+    margin: 310px auto auto auto;
+    padding: 0;
+    display: none;
+    right: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: .3s;
+}
+
+#frases .bloque{
+	width: 100%;
+	height: 100%;
+	transition: .3s;
+	/*position: relative;
+    left: -1158px;*/
+}
+
+#frases .caja .bloque .frase h2{
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    color: #DBCCBA;
+    margin: 0 auto;
+    width: 938px;
+}
+
+#frases .caja .bloque .frase .info{
+	display: flex;
+    justify-content: space-around;
+    font-size: 40px;
+    color: #9E9790;
+    height: 60px;
+    margin-top: 130px;
+}
+
 #footer{
 	width: 100%;
-	height: 50px;
+	height: auto;
 	background-color: #493E3A;
 }
 
@@ -250,43 +331,103 @@ header #menup .opciones .bloque li a {
 	height: 35px;
 }
 
-#footer .redes-sociales{
+#footer .bloque1 .redes-sociales{
 	margin: 0;
 	padding: 0;
-	height: 35px;
+	height: 30px;
 }
 
-#footer .redes-sociales li{
+#footer .bloque1 .redes-sociales li{
 	display: inline-block;
 	vertical-align: middle;
 }
 
-#footer .redes-sociales .f a{
-	display: block;
-    background: url(iconos/redes-sociales.svg) no-repeat -24px -9px/260px auto;
-    width: 30px;
-    height: 30px;
+#footer .bloque1 .redes-sociales li:hover{
+	opacity: 0.7;
 }
 
-#footer .redes-sociales .t a{
+#footer .bloque1 .redes-sociales .f a{
 	display: block;
-    background: url(iconos/redes-sociales.svg) no-repeat -86px -9px/260px auto;
-    width: 30px;
-    height: 30px;
+    background: url(iconos/redes-sociales.svg) no-repeat -20px -8px/225px auto;
+    width: 25px;
+    height: 25px;
 }
 
-#footer .redes-sociales .i a{
+#footer .bloque1 .redes-sociales .t a{
 	display: block;
-    background: url(iconos/redes-sociales.svg) no-repeat -147px -9px/260px auto;
-    width: 30px;
-    height: 30px;
+    background: url(iconos/redes-sociales.svg) no-repeat -74px -9px/225px auto;
+    width: 25px;
+    height: 25px;
 }
 
-#footer .redes-sociales .y a{
+#footer .bloque1 .redes-sociales .i a{
 	display: block;
-    background: url(iconos/redes-sociales.svg) no-repeat -210px -9px/260px auto;
-    width: 30px;
-    height: 30px;
+    background: url(iconos/redes-sociales.svg) no-repeat -127px -9px/225px auto;
+    width: 25px;
+    height: 25px;
+}
+
+#footer .bloque1 .redes-sociales .y a{
+	display: block;
+    background: url(iconos/redes-sociales.svg) no-repeat -183px -9px/225px auto;
+    width: 25px;
+    height: 25px;
+}
+
+#footer .bloque1 .redes-sociales .creditos{
+    background: url(iconos/icono-creditos.svg) no-repeat -4px -1px/50px auto;
+    width: 40px;
+    height: 35px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+
+#footer .bloque2{
+	width: 765px;
+	margin: 40px auto;
+	display: none;
+}
+
+#footer .bloque2 ul{
+	margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 75px;
+}
+
+#footer .bloque2 .last{
+	margin-right: 0;
+}
+
+#footer .bloque2 ul>li{
+	list-style: none;
+	display: block;
+	color: #DBCCBA;
+	font-size: 16px;
+}
+
+#footer .bloque2 ul li ul{
+	margin: 10px 0;
+	padding: 0;
+	display: block;
+}
+
+#footer .bloque2 ul li ul>li{
+	font-size: 14px;
+	color: #9E9790;
+}
+
+#footer .bloque2 span{
+	display: block;
+    width: 300px;
+    font-size: 11px;
+    margin: 0px auto;
+    text-align: center;
+    color: #9E9790;
+    position: relative;
+    top: 15px;
 }
 
 /*------------------------------------------------------------*/
