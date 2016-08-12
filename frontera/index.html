@@ -3,72 +3,35 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Frontera</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
-	
+	<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
 </head>
 <body>
-	<header>
-		<!--Contenido HEADER-->
-		<div id="hamburger">
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-			<span></span>
-		</div>
-		<!--Menú Principal-->
-		<section id="menup">
-			<div class="opciones">
-				<ul class="iconos">
-					<li><a href="#">titulo</a></li>
-					<li><a href="#">titulo</a></li>
-					<li><a href="#">titulo</a></li>
-					<li><a href="#">titulo</a></li>
-				</ul>				
-			</div>
-		</section><!--Fin menu-->
-		<!--Fin Menú Principal--> 
-	</header>
+	<script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script>
+        jssor_slider1_starter = function (containerId) {
+            var options = {
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 0,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
 
-	<section id="seccion-1">
-		<!-- <h1>Hola mundo</h1> -->
-	</section>	
+            var jssor_slider1 = new $JssorSlider$(containerId, options);
+        };
+    </script>
 
-	<!--VIDEO-->
-	<section id="video">
-		<iframe id="player" width="100%" height="100%" src="//www.youtube.com/embed/1NhTEv3SOeA?modestbranding=1&rel=0&autoplay=1&loop=1&playlist=1NhTEv3SOeA&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
-
-
-	  <!-- <object width="640" height="390">
-		  <param name="movie"
-		         value="https://www.youtube.com/v/1NhTEv3SOeA?version=2&modestbranding=1&rel=0&autoplay=1&loop=1&playlist=1NhTEv3SOeA&autohide=1&showinfo=0&controls=0"></param>
-		  <param name="allowScriptAccess" value="always"></param>
-		  <embed src="https://www.youtube.com/v/1NhTEv3SOeA?version=2&modestbranding=1&rel=0&autoplay=1&loop=1&playlist=1NhTEv3SOeA&autohide=1&showinfo=0&controls=0"
-		         type="application/x-shockwave-flash"
-		         allowscriptaccess="always"
-		         width="640" height="390"></embed>
-		</object> -->
-	</section>
-
-	<footer id="footer">
-		<section class="bloque1">
-			<ul class="derechos">
-				<li class="logo"><a href="http://www.laopinion.com.co"></a></li>
-				<li>-  Todos los Derechos Reservados.</li>
-			</ul>
-			<ul class="redes-sociales">
-				<li class="f"><a href="#"></a></li>
-				<li class="t"><a href="#"></a></li>
-				<li class="i"><a href="#"></a></li>
-				<li class="y"><a href="#"></a></li>
-			</ul>
-		</section>
-	</footer>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script>
-
+        //SCRIPT GENERAL
 		$(document).ready(function(){
 			console.log("ready");
 			$('#hamburger').click(function(){
@@ -80,7 +43,6 @@
 			// var altoTotal = $(window).height();
 			// var anchoTotal = $(window).width();
 			// var altoTitulo = (altoTotal - 78) / 2;
-
 			// $("#video iframe, #video object, #video embed").css({"width":anchoTotal , "height":( altoTotal+ (altoTotal*12/100) )});
 			  
 			// function centrarTitulo(){
@@ -112,5 +74,217 @@
 			// });
 		});
 	</script>
+	<header>
+		<!--Contenido HEADER-->
+		<div id="hamburger">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!--Menú Principal-->
+		<section id="menup">
+			<div class="opciones">
+				<ul class="iconos">
+					<li><a href="#">titulo</a></li>
+					<li><a href="#">titulo</a></li>
+					<li><a href="#">titulo</a></li>
+					<li><a href="#">titulo</a></li>
+				</ul>				
+			</div>
+		</section><!--Fin menu-->
+		<!--Fin Menú Principal--> 
+	</header>
+
+	<section id="notas">
+		<div class="content">
+		    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></h2>
+		    <div class="bloque uno">
+		      <div class="foto">
+		      	<img src="historias/historia1.jpg">
+		      </div>	
+		      <div class="titulo">	
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit
+		      </div>
+		      <div class="resumen">	
+		      	Suspendisse vitae dolor arcu. Aliquam id elit vitae leo pharetra ultricies. Integer eget malesuada lorem
+		      </div>		
+		      <div class="historia">
+		      	<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>	
+		      	<p>Sed ultrices felis eget fringilla convallis. Cras vel hendrerit ex. Mauris diam nibh, lobortis vitae dui et, sodales sollicitudin felis. Suspendisse vitae dolor arcu. Aliquam id elit vitae leo pharetra ultricies. Integer eget malesuada lorem. Duis mattis, quam vel facilisis scelerisque, turpis est malesuada ex, rutrum convallis tortor ante ac orci. Cras ut arcu luctus, eleifend velit vitae, pulvinar leo. Nulla eu turpis vehicula, sagittis ante a, auctor quam. Curabitur et sem vitae felis tempor venenatis sed quis dui. Etiam facilisis, est nec congue maximus, orci magna ornare ex, a mollis tellus quam vitae ante. Aliquam non quam accumsan, malesuada velit in, venenatis quam. Nam interdum nisl pellentesque nibh laoreet, sed aliquet dui elementum. Phasellus porta est lorem, non suscipit odio pellentesque vitae. Nullam eget felis diam. Donec non suscipit ipsum.</p>
+				
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/tYkn3MD4zMc" frameborder="0" allowfullscreen></iframe>
+
+				<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ut viverra est. Quisque cursus at diam nec rutrum. Integer ut gravida velit. Quisque venenatis eu ipsum nec vulputate. Sed tincidunt leo augue, sollicitudin pretium erat blandit id. Vivamus elementum rhoncus magna, luctus luctus turpis bibendum tincidunt. Nunc nisi mauris, efficitur a porta sed, tempor non sapien. In hac habitasse platea dictumst. Aenean at metus vitae neque vestibulum fringilla. Pellentesque pulvinar ipsum tortor, at pretium diam facilisis a. Maecenas varius eleifend urna in rhoncus. Suspendisse lacinia turpis ligula, id hendrerit lectus accumsan eget.</p>
+
+				<p>Phasellus a efficitur justo. Aliquam vestibulum sapien lectus, malesuada efficitur ipsum pretium eget. Nam rutrum, justo vel convallis congue, diam augue ullamcorper urna, ut malesuada elit diam bibendum eros. Nullam vel posuere felis. Nunc eget lacinia elit. Duis turpis odio, convallis vel turpis eget, pellentesque lobortis orci. Curabitur venenatis libero vitae lectus accumsan viverra. Vestibulum euismod dolor ut cursus lobortis. Nulla tempus luctus sem, quis rhoncus leo cursus eget. Donec porta condimentum est. Pellentesque eu quam mattis, tristique augue rutrum, ullamcorper erat. Quisque vitae nisi ante.</p>
+
+				<p>Proin quam sem, ullamcorper consequat augue a, aliquet feugiat est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce blandit enim vel ultricies pellentesque. Aenean sagittis dui nec metus tincidunt congue. Proin nec accumsan dui. Vestibulum quis tortor lectus. Vestibulum hendrerit, mi congue viverra placerat, ante dolor efficitur massa, non rutrum ex nisi nec elit. Proin non libero nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+				<p>Donec molestie massa sapien, eu euismod felis vulputate sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nec ante ipsum. Praesent ut nulla massa. Duis condimentum diam a leo congue elementum vehicula ultrices libero. Pellentesque cursus odio lacus. Phasellus sagittis aliquam velit, vel varius ante hendrerit eget. Suspendisse in ipsum purus. Pellentesque et libero sit amet ex pretium finibus.</p>
+		      </div>
+		    </div>
+
+
+		    <div class="bloque uno">
+		      <div class="foto">
+		      	<img src="historias/historia1.jpg">
+		      </div>	
+		      <div class="titulo">	
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit
+		      </div>
+		      <div class="resumen">	
+		      	Suspendisse vitae dolor arcu. Aliquam id elit vitae leo pharetra ultricies. Integer eget malesuada lorem
+		      </div>		
+		      <div class="historia">
+		      	<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>	
+		      	<img src="historias/historia2.jpg">
+		      	<p>Sed ultrices felis eget fringilla convallis. Cras vel hendrerit ex. Mauris diam nibh, lobortis vitae dui et, sodales sollicitudin felis. Suspendisse vitae dolor arcu. Aliquam id elit vitae leo pharetra ultricies. Integer eget malesuada lorem. Duis mattis, quam vel facilisis scelerisque, turpis est malesuada ex, rutrum convallis tortor ante ac orci. Cras ut arcu luctus, eleifend velit vitae, pulvinar leo. Nulla eu turpis vehicula, sagittis ante a, auctor quam. Curabitur et sem vitae felis tempor venenatis sed quis dui. Etiam facilisis, est nec congue maximus, orci magna ornare ex, a mollis tellus quam vitae ante. Aliquam non quam accumsan, malesuada velit in, venenatis quam. Nam interdum nisl pellentesque nibh laoreet, sed aliquet dui elementum. Phasellus porta est lorem, non suscipit odio pellentesque vitae. Nullam eget felis diam. Donec non suscipit ipsum.</p>
+				
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/tYkn3MD4zMc" frameborder="0" allowfullscreen></iframe>
+
+				<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ut viverra est. Quisque cursus at diam nec rutrum. Integer ut gravida velit. Quisque venenatis eu ipsum nec vulputate. Sed tincidunt leo augue, sollicitudin pretium erat blandit id. Vivamus elementum rhoncus magna, luctus luctus turpis bibendum tincidunt. Nunc nisi mauris, efficitur a porta sed, tempor non sapien. In hac habitasse platea dictumst. Aenean at metus vitae neque vestibulum fringilla. Pellentesque pulvinar ipsum tortor, at pretium diam facilisis a. Maecenas varius eleifend urna in rhoncus. Suspendisse lacinia turpis ligula, id hendrerit lectus accumsan eget.</p>
+
+				<p>Phasellus a efficitur justo. Aliquam vestibulum sapien lectus, malesuada efficitur ipsum pretium eget. Nam rutrum, justo vel convallis congue, diam augue ullamcorper urna, ut malesuada elit diam bibendum eros. Nullam vel posuere felis. Nunc eget lacinia elit. Duis turpis odio, convallis vel turpis eget, pellentesque lobortis orci. Curabitur venenatis libero vitae lectus accumsan viverra. Vestibulum euismod dolor ut cursus lobortis. Nulla tempus luctus sem, quis rhoncus leo cursus eget. Donec porta condimentum est. Pellentesque eu quam mattis, tristique augue rutrum, ullamcorper erat. Quisque vitae nisi ante.</p>
+
+				<p>Proin quam sem, ullamcorper consequat augue a, aliquet feugiat est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce blandit enim vel ultricies pellentesque. Aenean sagittis dui nec metus tincidunt congue. Proin nec accumsan dui. Vestibulum quis tortor lectus. Vestibulum hendrerit, mi congue viverra placerat, ante dolor efficitur massa, non rutrum ex nisi nec elit. Proin non libero nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+
+				<p>Donec molestie massa sapien, eu euismod felis vulputate sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nec ante ipsum. Praesent ut nulla massa. Duis condimentum diam a leo congue elementum vehicula ultrices libero. Pellentesque cursus odio lacus. Phasellus sagittis aliquam velit, vel varius ante hendrerit eget. Suspendisse in ipsum purus. Pellentesque et libero sit amet ex pretium finibus.</p>
+		      </div>
+		    </div>
+		</div>
+	</section>	
+	<section id="galerias">
+		<div class="content">
+			<!--GALERIA 1-->
+			<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+			<div id="galeria1" style="position: relative; top: 0px; left: 0px; width: 1000px;height: 450px; ">
+		        <!-- Slides Container -->
+		        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 450px;overflow: hidden;">
+		            <div>
+		            	<img u="image" src="galerias/dos/01.jpg" />
+		            	<div class="info">
+		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
+		            		<div class="autor">Lorem ipsum dolor </div>
+		            	</div>
+		            </div>
+		            <div>
+		            	<img u="image" src="galerias/dos/02.jpg" />
+		            	<div class="info">
+		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
+		            		<div class="autor">Lorem ipsum dolor </div>
+		            	</div>
+		            </div>
+		            <div>
+		            	<img u="image" src="galerias/dos/03.jpg" />
+		            	<div class="info">
+		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
+		            		<div class="autor">Lorem ipsum dolor </div>
+		            	</div>
+		            </div>
+		            <div>
+		            	<img u="image" src="galerias/dos/04.jpg" />
+		            	<div class="info">
+		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
+		            		<div class="autor">Lorem ipsum dolor </div>
+		            	</div>
+		            </div>
+		        </div>	        
+		        <!-- Arrow Left -->
+		        <span u="arrowleft" class="jssora03l" style="top: 40%; left: 8px;">
+		        </span>
+		        <!-- Arrow Right -->
+		        <span u="arrowright" class="jssora03r" style="top: 40%; right: 8px;">
+		        </span>
+		        <script>
+		            jssor_slider1_starter('galeria1');
+		        </script>
+	    	</div>
+	    	<!--GALERIA 2-->
+	    	<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+	    	<div id="galeria2" style="position: relative; top: 0px; left: 0px; width: 1000px;height: 450px; ">
+		        <!-- Slides Container -->
+		        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 450px;overflow: hidden;">
+		            <div>
+		            	<img u="image" src="galerias/dos/01.jpg" />
+		            	<div class="info">
+		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
+		            		<div class="autor">Lorem ipsum dolor </div>
+		            	</div>
+		            </div>
+		            <div>
+		            	<img u="image" src="galerias/dos/02.jpg" />
+		            	<div class="info">
+		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
+		            		<div class="autor">Lorem ipsum dolor </div>
+		            	</div>
+		            </div>
+		            <div>
+		            	<img u="image" src="galerias/dos/03.jpg" />
+		            	<div class="info">
+		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
+		            		<div class="autor">Lorem ipsum dolor </div>
+		            	</div>
+		            </div>
+		            <div>
+		            	<img u="image" src="galerias/dos/04.jpg" />
+		            	<div class="info">
+		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
+		            		<div class="autor">Lorem ipsum dolor </div>
+		            	</div>
+		            </div>
+		            <div>
+		            	<img u="image" src="galerias/dos/05.jpg" />
+		            	<div class="info">
+		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
+		            		<div class="autor">Lorem ipsum dolor </div>
+		            	</div>
+		            </div>
+		        </div>	        
+		        <!-- Arrow Left -->
+		        <span u="arrowleft" class="jssora03l" style="top: 40%; left: 8px;">
+		        </span>
+		        <!-- Arrow Right -->
+		        <span u="arrowright" class="jssora03r" style="top: 40%; right: 8px;">
+		        </span>
+		        <script>
+		            jssor_slider1_starter('galeria2');
+		        </script>
+	    	</div>
+		</div>
+	</section>
+
+	<!--VIDEO-->
+	<section id="video">
+		<iframe id="player" width="100%" height="100%" src="//www.youtube.com/embed/1NhTEv3SOeA?modestbranding=1&rel=0&autoplay=1&loop=1&playlist=1NhTEv3SOeA&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+
+
+	  <!-- <object width="640" height="390">
+		  <param name="movie"
+		         value="https://www.youtube.com/v/1NhTEv3SOeA?version=2&modestbranding=1&rel=0&autoplay=1&loop=1&playlist=1NhTEv3SOeA&autohide=1&showinfo=0&controls=0"></param>
+		  <param name="allowScriptAccess" value="always"></param>
+		  <embed src="https://www.youtube.com/v/1NhTEv3SOeA?version=2&modestbranding=1&rel=0&autoplay=1&loop=1&playlist=1NhTEv3SOeA&autohide=1&showinfo=0&controls=0"
+		         type="application/x-shockwave-flash"
+		         allowscriptaccess="always"
+		         width="640" height="390"></embed>
+		</object> -->
+	</section>
+
+	<footer id="footer">
+		<section class="bloque1">
+			<ul class="derechos">
+				<li class="logo"><a href="http://www.laopinion.com.co"></a></li>
+				<li>-  Todos los Derechos Reservados.</li>
+			</ul>
+			<ul class="redes-sociales">
+				<li class="f"><a href="#"></a></li>
+				<li class="t"><a href="#"></a></li>
+				<li class="i"><a href="#"></a></li>
+				<li class="y"><a href="#"></a></li>
+			</ul>
+		</section>
+	</footer>
 </body>
 </html>
