@@ -27,12 +27,12 @@ header{
 header #hamburger {
   width: 60px;
   height: 63px;
-  position: relative;
+  position: fixed;
   top: 10px;
   left: 28px;
   transition: .5s ease-in-out;
   cursor: pointer;
-  border: 1px solid #493E3A;
+  background: #493E3A;
   border-radius: 5px;
   z-index: 51;
 }
@@ -41,8 +41,8 @@ header #hamburger span {
   display: block;
   position: absolute;
   height: 7px;
-  width: 50%;
-  background: #493E3A;
+  width: 40%;
+  background: #fff;
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -54,11 +54,11 @@ header #hamburger span {
   transition: .25s ease-in-out;
 }
 header #hamburger span:nth-child(even) {
-  left: 50%;
+  left: 40%;
   border-radius: 0 9px 9px 0;
 }
 header #hamburger span:nth-child(odd) {
-  left: 0px;
+  left: 20%;
   border-radius: 9px 0 0 9px;
 }
 header #hamburger span:nth-child(1), header #hamburger span:nth-child(2) {
@@ -86,12 +86,12 @@ header #hamburger.open span:nth-child(2), header #hamburger.open span:nth-child(
   transform: rotate(-45deg);
 }
 header #hamburger.open span:nth-child(1) {
-  left: 5px;
-  top: 7px;
+  left: 12px;
+  top: 20px;
 }
 header #hamburger.open span:nth-child(2) {
-  left: calc(50% - 5px);
-  top: 7px;
+  left: calc(50% - 4px);
+  top: 20px;
 }
 header #hamburger.open span:nth-child(3) {
   left: -50%;
@@ -102,12 +102,12 @@ header #hamburger.open span:nth-child(4) {
   opacity: 0;
 }
 header #hamburger.open span:nth-child(5) {
-  left: 5px;
-  top: 29px;
+  left: 12px;
+  top: 34px;
 }
 header #hamburger.open span:nth-child(6) {
-  left: calc(50% - 5px);
-  top: 29px;
+  left: calc(50% - 4px);
+  top: 34px;
 }
 header #logo {
   padding: 0px;
@@ -152,7 +152,6 @@ header #menup .movil {
 header #menup .opciones {
   width: 96%;
   margin: 0 2%;
-  border-bottom: 2px solid #666666;
   padding-bottom: 10px;
   position: relative;
   top: 130px;
@@ -160,8 +159,9 @@ header #menup .opciones {
 
 header #menup .opciones .iconos {
   padding: 0;
-  width: 60%;
-  margin: 0;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
   display: inline-block;
   vertical-align: middle;
 }
@@ -171,6 +171,12 @@ header #menup .opciones .iconos li {
   vertical-align: top;
   text-align: center;
   margin: 0 6px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 10px 0px;
+  border-bottom: 1px solid #666666
 }
 
 header #menup .opciones .iconos li a {
@@ -452,12 +458,84 @@ header #menup .opciones .bloque li a {
     height: 100%;
 }
 
-#seccion-1{
-    max-width: 960px;
-	width: 100%;
-    margin: 0 auto;
-    text-align: center;
-    flex: 1;
-    -webkit-flex: 1;
-    -moz-flex: 1;
+#notas{
+  background: #fff;
+  width: 100%; 
+  float: left;
+  position: relative;    
+  text-align: center;
+  flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
 }
+#notas .content{
+  margin:0 auto;
+  position: relative;
+  width: 1000px;
+  height: auto;
+}
+
+#galerias{
+  background: #fff;
+  width: 100%; 
+  float: left;
+  position: relative;    
+  text-align: center;
+  flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+}
+#galerias .content{
+  margin:0 auto;
+  position: relative;
+  width: 1000px;
+  height: auto;
+}
+#galerias .content #galeria1, #galerias .content #galeria2{
+  position: relative; 
+  width: 1000px; 
+  height: 500px;
+  top: 0px; 
+  left: 0px;
+}
+
+#galerias .content .info{
+  z-index: 10;
+  position: absolute; 
+  bottom: 0px; 
+  width: 980px; 
+  padding: 10px;
+  height: auto; 
+  background: rgba(0, 0, 0, 0.5); 
+  color: #fff;
+}
+
+#galerias .content .info .desc{
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  float: left;
+}
+
+#galerias .content .info .autor{
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+}
+
+.jssora03l, .jssora03r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 55px;
+    height: 55px;
+    cursor: pointer;
+    background: url(iconos/controles_galerias.svg) -4px -70px/140px no-repeat;
+    overflow: hidden;
+}
+.jssora03l { background-position: 0px 0px; }
+.jssora03r { background-position: -85px 0px; }
+.jssora03l:hover { background-position: 0px 0px; opacity: 0.7; }
+.jssora03r:hover { background-position: -85px 0px; opacity: 0.7;}
+.jssora03l.jssora03ldn { background-position: 0px 0px; }
+.jssora03r.jssora03rdn { background-position: -85px 0px; }
