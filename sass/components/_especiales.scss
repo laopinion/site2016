@@ -14,9 +14,8 @@
             .view-id-olimpicos_2016.view-display-id-block{width:720px; height:540px; float:left; position: relative; 
                 .nota{height:540px; float:left; position: relative;
                     .tipo{display:none;}
-                    .icon_video{display:none;background:url(../images/iconos/video.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
-                    .icon_galeria{display:none;background:url(../images/iconos/galeria.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
-                    .icon_podcast{display:none;background:url(../images/iconos/podcast.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
+                    .icon_video{display:none;background:url(../images/iconos/olimpicos/cintillo_botones.svg) -550px -18px/1100px auto no-repeat;height: 70px;width: 70px;text-indent: -9999px;float: left;position: absolute;top: 20px;right: 20px;opacity:0.7; z-index: 1;}
+                    .icon_galeria{display:none;background:url(../images/iconos/olimpicos/cintillo_botones.svg) -380px -18px/1100px auto no-repeat;height: 70px;width: 70px;text-indent: -9999px;float: left;position: absolute;top: 20px;right: 20px;opacity:0.7; z-index: 1;}
                     .seccion{width:100%; border-bottom:1px solid #DBDBDB; padding: 0px 0px 5px 0px;height: 11px;
                         .color{background:$seccion; height:10px; width:25px; float:left;position: relative;text-indent:-9999px;}
                         a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
@@ -42,10 +41,8 @@
             .view-id-olimpicos_2016.view-display-id-block_1{width:240px; height:540px; float:left; position: relative; 
                 .nota{height:180px; float:left; position: relative;
                     .tipo{display:none;}
-                    .icon_video{display:none;background:url(../images/iconos/video.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
-                    .icon_galeria{display:none;background:url(../images/iconos/galeria.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
-                    .icon_podcast{display:none;background:url(../images/iconos/podcast.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
-                    .seccion{width:100%; border-bottom:1px solid #DBDBDB; padding: 0px 0px 5px 0px;height: 11px;
+                    .icon_video{display:none;background:url(../images/iconos/olimpicos/cintillo_botones.svg) -415px -15px/830px auto no-repeat;height: 50px;width: 50px;text-indent: -9999px;float: left;position: absolute;top: 20px;right: 20px;opacity:0.7; z-index: 1;}
+                    .icon_galeria{display:none;background:url(../images/iconos/olimpicos/cintillo_botones.svg) -288px -15px/830px auto no-repeat;height: 50px;width: 50px;text-indent: -9999px;float: left;position: absolute;top: 20px;right: 20px;opacity:0.7; z-index: 1;}                    .seccion{width:100%; border-bottom:1px solid #DBDBDB; padding: 0px 0px 5px 0px;height: 11px;
                         .color{background:$seccion; height:10px; width:25px; float:left;position: relative;text-indent:-9999px;}
                         a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
                     }
@@ -76,7 +73,7 @@
                 .views-row-1, .views-row-2{margin-right:10px;}
                 .nota{height:250px; float:left; position: relative;
                     .tipo{display:none;}
-                    .icon_video{display:none;background:url(../images/iconos/olimpica/video.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
+                    .icon_video{display:block;background:url(../images/iconos/olimpicos/cintillo_botones.svg) -415px -15px/830px auto no-repeat;height: 50px;width: 50px;text-indent: -9999px;float: left;position: absolute;top: 20px;right: 20px;opacity:0.7; z-index: 1;}
                     .info{width:280px; padding:10px; position: absolute; bottom:0px;z-index:1;
                         background: rgba(252,248,247,0);
                         background: -moz-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
@@ -102,7 +99,34 @@
                 .views-row-1, .views-row-2{margin-right:10px;}
                 .nota{height:250px; float:left; position: relative;
                     .tipo{display:none;}
-                    .icon_galeria{display:none;background:url(../images/iconos/olimpica/galeria.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 205px;opacity:0.7; z-index: 1;}
+                    .icon_galeria{display:block;background:url(../images/iconos/olimpicos/cintillo_botones.svg) -288px -15px/830px auto no-repeat;height: 50px;width: 50px;text-indent: -9999px;float: left;position: absolute;top: 20px;right: 20px;opacity:0.7; z-index: 1;}
+                    .info{width:280px; padding:10px; position: absolute; bottom:0px;z-index:1;
+                        background: rgba(252,248,247,0);
+                        background: -moz-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,248,247,0)), color-stop(34%, rgba(175,172,171,0.17)), color-stop(52%, rgba(134,131,131,0.36)), color-stop(70%, rgba(94,91,90,0.67)), color-stop(100%, rgba(26,23,23,0.97)));
+                        background: -webkit-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -o-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -ms-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: linear-gradient(to bottom, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf8f7', endColorstr='#1a1717', GradientType=0 );
+                        .titulo{float:left; position: relative; width:280px; height:auto; float:left; line-height:18px;padding:5px 0px; margin-bottom:0px;
+                            a{font-size: 16px; font-weight:600; text-decoration:none; color:#fff;}
+                        }
+                    }
+                    .foto{width:300px; height:auto; float:left; position: relative;}
+                    .galeria{width:300px; height:auto; float:left; position: relative;}
+                    .video{width:300px; height:auto; float:left; position: relative;}
+                }
+            }
+            .view-id-olimpicos_2016.view-display-id-block_4{width:960px; height:auto; float:left; position: relative; background:#525A5C;
+                .titulo_bloque{color:#fff; padding:10px; text-align:center;font-weight:400; font-size:18px;}
+                .view-content{margin: 0px 20px;}
+                .views-row{float:left; position: relative; width:300px; height:250px;margin-right:10px;}
+                .views-row-3, .views-row-6, .views-row-9, .views-row-12{margin-right:0px;}
+                .nota{height:250px; float:left; position: relative;
+                    .tipo{display:none;}
+                    .icon_video{display:block;background:url(../images/iconos/olimpicos/cintillo_botones.svg) -415px -15px/830px auto no-repeat;height: 50px;width: 50px;text-indent: -9999px;float: left;position: absolute;top: 20px;right: 20px;opacity:0.7; z-index: 1;}
+                    .icon_galeria{display:block;background:url(../images/iconos/olimpicos/cintillo_botones.svg) -288px -15px/830px auto no-repeat;height: 50px;width: 50px;text-indent: -9999px;float: left;position: absolute;top: 20px;right: 20px;opacity:0.7; z-index: 1;}
                     .info{width:280px; padding:10px; position: absolute; bottom:0px;z-index:1;
                         background: rgba(252,248,247,0);
                         background: -moz-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
