@@ -41,6 +41,9 @@
 
 			$('#footer .bloque1 .redes-sociales .creditos').click(function(){
 				$('#footer .bloque2').toggle("slow");
+				$(this).toggleClass('down');
+				var position = $("#footer").offset().top;
+				$("html, body").animate({scrollTop:position+"px"});
 			});
 
 			var click = 0;

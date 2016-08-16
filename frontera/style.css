@@ -395,6 +395,10 @@ header #menup .opciones .bloque li a {
     cursor: pointer;
 }
 
+#footer .bloque1 .redes-sociales .creditos.down{
+	background: url(iconos/icono-creditos-down.svg) no-repeat -179px -56px/1430px auto;
+}
+
 #footer .bloque2{
 	width: 765px;
 	margin: 40px auto;
