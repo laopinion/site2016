@@ -1,4 +1,6 @@
+@import 'https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700';
 body{
+	font-family: 'PT Sans Narrow', sans-serif;
 	display: flex;
     flex-direction: column;
     display: -webkit-flex;
@@ -250,6 +252,7 @@ header #menup .opciones .bloque li a {
 	height: 300px;
 	width: 1000px;
     margin: 310px auto 163px auto;
+
 }
 
 #frases .caja .bloque .frase.activo{
@@ -258,20 +261,23 @@ header #menup .opciones .bloque li a {
 
 #frases .caja .bloque .frase{
 	width: 1000px;
-    margin: 310px auto auto auto;
+    /*margin: 0 50px;*/
     padding: 0;
-    display: none;
-    right: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
+    display: inline-block;
+    vertical-align: top;
     transition: .3s;
+    position: relative;
+    left: 0;
+    background: url(iconos/linea-punteada.svg);
+    background-position-y: -84px;
+    background-position-x: -150px;
 }
 
 #frases .bloque{
-	width: 100%;
+	width: 20000px;
 	height: 100%;
 	transition: .3s;
+	overflow: hidden;
 	/*position: relative;
     left: -1158px;*/
 }
@@ -282,7 +288,7 @@ header #menup .opciones .bloque li a {
     text-align: center;
     color: #DBCCBA;
     margin: 0 auto;
-    width: 938px;
+    width: 900px;
 }
 
 #frases .caja .bloque .frase .info{
@@ -291,7 +297,7 @@ header #menup .opciones .bloque li a {
     font-size: 40px;
     color: #9E9790;
     height: 60px;
-    margin-top: 130px;
+    margin-top: 125px;
 }
 
 #footer{
