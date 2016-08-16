@@ -24,6 +24,106 @@ header{
   width: 100%;
 }
 
+header .logo_top{
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 51;
+  top: 42px;
+  left: 100px;
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+
+header .logo_top li{  
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 11px;
+    color: #9E9790;
+}
+
+header .logo_top .logo{
+  background: url(iconos/logo-opinion.svg) 0px 0px/130px auto no-repeat;
+    height: 30px;
+    width: 125px;
+}
+
+header .logo_top .logo a{
+  display: block;
+  height: 35px;
+}
+
+header .logo_top.open{
+    opacity: 0;
+}
+header .logo_top.desplegar{
+    opacity: 1;
+}
+
+header .redes-sociales{
+  margin: 0;
+  padding: 0;
+  height: 30px;
+  position: fixed;
+  z-index: 51;
+  top: 42px;
+  right: 20px;
+  opacity: 0;
+  transition: .5s ease-in-out;
+}
+
+header .redes-sociales li{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header .redes-sociales li:hover{
+  opacity: 0.7;
+}
+
+header .redes-sociales .f a{
+  display: block;
+    background: url(iconos/redes-sociales.svg) no-repeat -20px -8px/225px auto;
+    width: 25px;
+    height: 25px;
+}
+
+header .redes-sociales .t a{
+  display: block;
+    background: url(iconos/redes-sociales.svg) no-repeat -74px -9px/225px auto;
+    width: 25px;
+    height: 25px;
+}
+
+header .redes-sociales .i a{
+  display: block;
+    background: url(iconos/redes-sociales.svg) no-repeat -127px -9px/225px auto;
+    width: 25px;
+    height: 25px;
+}
+
+header .redes-sociales .y a{
+  display: block;
+    background: url(iconos/redes-sociales.svg) no-repeat -183px -9px/225px auto;
+    width: 25px;
+    height: 25px;
+}
+
+header .redes-sociales .creditos{
+    background: url(iconos/icono-creditos.svg) no-repeat -4px -1px/50px auto;
+    width: 40px;
+    height: 35px;
+    position: relative;
+    top: 5px;
+    cursor: pointer;
+}
+header .redes-sociales.open{
+    opacity: 0;
+}
+header .redes-sociales.desplegar{
+    opacity: 1;
+}
+
 header #hamburger {
   width: 60px;
   height: 63px;
@@ -32,7 +132,7 @@ header #hamburger {
   left: 28px;
   transition: .5s ease-in-out;
   cursor: pointer;
-  background: #493E3A;
+  background: #DBCBBA;
   border-radius: 5px;
   z-index: 51;
 }
@@ -42,7 +142,7 @@ header #hamburger span {
   position: absolute;
   height: 7px;
   width: 40%;
-  background: #fff;
+  background: #483F3A;
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -72,6 +172,10 @@ header #hamburger span:nth-child(5), header #hamburger span:nth-child(6) {
 }
 header #hamburger.open{
 	border: none;
+  border-radius: 5px;
+}
+header #hamburger.desplegar{
+  border-radius: 35px;
 }
 header #hamburger.open span:nth-child(1), header #hamburger.open span:nth-child(6) {
   -webkit-transform: rotate(45deg);
@@ -133,17 +237,16 @@ header #logo a {
   height: 50px;
 }
 header #menup.desplegar {
-  left: 0;
+  top: 0;
 }
 header #menup {
   position: fixed;
   top: 0;
-  right: 0;
-  bottom: 0;
-  left: -100%;
-  background-color: #fff;
+  top: -100%;
+  background-color: #493E3A;
   z-index: 50;
   width: 100%;
+  height: 100%;
   transition: .5s;
 }
 header #menup .movil {
@@ -176,14 +279,14 @@ header #menup .opciones .iconos li {
   text-align: center;
   text-transform: uppercase;
   padding: 10px 0px;
-  border-bottom: 1px solid #666666
+  background: url(iconos/punto_menu.svg) 5px 30px/15px auto repeat-x
 }
 
 header #menup .opciones .iconos li a {
-  color: #333;
+  color: #DBCBBA;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 10px;
+  font-size: 16px;
 }
 header #menup .opciones .iconos li a, header #menup .opciones .iconos li span:hover {
   opacity: .7;
@@ -459,23 +562,78 @@ header #menup .opciones .bloque li a {
 }
 
 #notas{
-  background: #fff;
+  margin:50px 0px;
+  background: #DBCBBA;
   width: 100%; 
   float: left;
   position: relative;    
   text-align: center;
+  padding: 10px 0px;
   flex: 1;
   -webkit-flex: 1;
   -moz-flex: 1;
 }
+
 #notas .content{
   margin:0 auto;
   position: relative;
   width: 1000px;
   height: auto;
 }
+#notas .content .bloque.tres{
+  margin:20px 0px 20px 30px;
+}
+
+#notas .content .bloque.uno{
+  margin:20px 30px 20px 0px;
+}
+
+#notas .content .bloque{
+  color: #fff;
+  width: 300px; 
+  float: left;
+  position: relative;
+  height: 260px; 
+  background: #493E3A;
+  margin: 20px;
+}
+
+#notas .content .bloque img{
+  width: 300px;
+  height: auto;
+  position: relative;
+  float: left;
+}
+
+#notas .content .bloque .titulo a{ 
+  font-size: 18px;
+  line-height: 20x;
+  position: relative;
+  float: left;
+  padding: 10px 5px;
+  width: 97%;
+  font-weight: 600;
+  height: 67px;
+}
+
+#notas .content .bloque .resumen{
+  font-size: 14px;
+  line-height: 16px;
+  position: relative;
+  float: left;
+  padding: 10px 5px;
+}
+
+#notas .content .historia{
+  display: none;
+  font-size: 16px;
+  line-height: 18px;
+  position: relative;
+  float: left;
+}
 
 #galerias{
+  margin:50px 0px;
   background: #fff;
   width: 100%; 
   float: left;

@@ -36,11 +36,15 @@
 			console.log("ready");
 			$('#hamburger').click(function(){
 				$(this).toggleClass('open');
+				$('.logo_top').toggleClass('open');
+				$('.redes-sociales').toggleClass('open');
 			});
 			$('#hamburger').click(function(){
 				$('#menup').toggleClass('desplegar');
+				$(this).toggleClass('desplegar');
+				$('.logo_top').toggleClass('desplegar');
+				$('.redes-sociales').toggleClass('desplegar');
 			});
-
 			$('#footer .bloque1 .redes-sociales .creditos').click(function(){
 				$('#footer .bloque2').toggle("slow");
 			});
@@ -74,6 +78,15 @@
 			<span></span>
 			<span></span>
 		</div>
+		<ul class="logo_top">
+			<li class="logo"><a href="http://www.laopinion.com.co/"></a></li>
+		</ul>
+		<ul class="redes-sociales">
+			<li class="f"><a href="#"></a></li>
+			<li class="t"><a href="#"></a></li>
+			<li class="i"><a href="#"></a></li>
+			<li class="y"><a href="#"></a></li>
+		</ul>
 		<!--Menú Principal-->
 		<section id="menup">
 			<div class="opciones">
@@ -98,39 +111,27 @@
 		      <div class="titulo">	
 		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit
 		      </div>
-		      <div class="resumen">	
-		      	Suspendisse vitae dolor arcu. Aliquam id elit vitae leo pharetra ultricies. Integer eget malesuada lorem
-		      </div>		
-		      <div class="historia">
-		      	<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>	
-		      	<p>Sed ultrices felis eget fringilla convallis. Cras vel hendrerit ex. Mauris diam nibh, lobortis vitae dui et, sodales sollicitudin felis. Suspendisse vitae dolor arcu. Aliquam id elit vitae leo pharetra ultricies. Integer eget malesuada lorem. Duis mattis, quam vel facilisis scelerisque, turpis est malesuada ex, rutrum convallis tortor ante ac orci. Cras ut arcu luctus, eleifend velit vitae, pulvinar leo. Nulla eu turpis vehicula, sagittis ante a, auctor quam. Curabitur et sem vitae felis tempor venenatis sed quis dui. Etiam facilisis, est nec congue maximus, orci magna ornare ex, a mollis tellus quam vitae ante. Aliquam non quam accumsan, malesuada velit in, venenatis quam. Nam interdum nisl pellentesque nibh laoreet, sed aliquet dui elementum. Phasellus porta est lorem, non suscipit odio pellentesque vitae. Nullam eget felis diam. Donec non suscipit ipsum.</p>
-				
-				<iframe width="100%" height="315" src="https://www.youtube.com/embed/tYkn3MD4zMc" frameborder="0" allowfullscreen></iframe>
-
-				<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ut viverra est. Quisque cursus at diam nec rutrum. Integer ut gravida velit. Quisque venenatis eu ipsum nec vulputate. Sed tincidunt leo augue, sollicitudin pretium erat blandit id. Vivamus elementum rhoncus magna, luctus luctus turpis bibendum tincidunt. Nunc nisi mauris, efficitur a porta sed, tempor non sapien. In hac habitasse platea dictumst. Aenean at metus vitae neque vestibulum fringilla. Pellentesque pulvinar ipsum tortor, at pretium diam facilisis a. Maecenas varius eleifend urna in rhoncus. Suspendisse lacinia turpis ligula, id hendrerit lectus accumsan eget.</p>
-
-				<p>Phasellus a efficitur justo. Aliquam vestibulum sapien lectus, malesuada efficitur ipsum pretium eget. Nam rutrum, justo vel convallis congue, diam augue ullamcorper urna, ut malesuada elit diam bibendum eros. Nullam vel posuere felis. Nunc eget lacinia elit. Duis turpis odio, convallis vel turpis eget, pellentesque lobortis orci. Curabitur venenatis libero vitae lectus accumsan viverra. Vestibulum euismod dolor ut cursus lobortis. Nulla tempus luctus sem, quis rhoncus leo cursus eget. Donec porta condimentum est. Pellentesque eu quam mattis, tristique augue rutrum, ullamcorper erat. Quisque vitae nisi ante.</p>
-
-				<p>Proin quam sem, ullamcorper consequat augue a, aliquet feugiat est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce blandit enim vel ultricies pellentesque. Aenean sagittis dui nec metus tincidunt congue. Proin nec accumsan dui. Vestibulum quis tortor lectus. Vestibulum hendrerit, mi congue viverra placerat, ante dolor efficitur massa, non rutrum ex nisi nec elit. Proin non libero nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-
-				<p>Donec molestie massa sapien, eu euismod felis vulputate sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nec ante ipsum. Praesent ut nulla massa. Duis condimentum diam a leo congue elementum vehicula ultrices libero. Pellentesque cursus odio lacus. Phasellus sagittis aliquam velit, vel varius ante hendrerit eget. Suspendisse in ipsum purus. Pellentesque et libero sit amet ex pretium finibus.</p>
-		      </div>
 		    </div>
-
-
-		    <div class="bloque uno">
-		      <div class="foto">
-		      	<img src="historias/historia1.jpg">
-		      </div>	
+		    <div class="bloque dos">
 		      <div class="titulo">	
 		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit
 		      </div>
 		      <div class="resumen">	
 		      	Suspendisse vitae dolor arcu. Aliquam id elit vitae leo pharetra ultricies. Integer eget malesuada lorem
 		      </div>		
-		      <div class="historia">
+		    </div>
+		    <div class="bloque tres">
+		      <div class="titulo">	
+		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit
+		      </div>
+		      <div class="foto">
+		      	<img src="historias/historia1.jpg">
+		      </div>	
+		    </div>
+
+
+		    <div class="historia huno">
 		      	<h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>	
-		      	<img src="historias/historia2.jpg">
 		      	<p>Sed ultrices felis eget fringilla convallis. Cras vel hendrerit ex. Mauris diam nibh, lobortis vitae dui et, sodales sollicitudin felis. Suspendisse vitae dolor arcu. Aliquam id elit vitae leo pharetra ultricies. Integer eget malesuada lorem. Duis mattis, quam vel facilisis scelerisque, turpis est malesuada ex, rutrum convallis tortor ante ac orci. Cras ut arcu luctus, eleifend velit vitae, pulvinar leo. Nulla eu turpis vehicula, sagittis ante a, auctor quam. Curabitur et sem vitae felis tempor venenatis sed quis dui. Etiam facilisis, est nec congue maximus, orci magna ornare ex, a mollis tellus quam vitae ante. Aliquam non quam accumsan, malesuada velit in, venenatis quam. Nam interdum nisl pellentesque nibh laoreet, sed aliquet dui elementum. Phasellus porta est lorem, non suscipit odio pellentesque vitae. Nullam eget felis diam. Donec non suscipit ipsum.</p>
 				
 				<iframe width="100%" height="315" src="https://www.youtube.com/embed/tYkn3MD4zMc" frameborder="0" allowfullscreen></iframe>
@@ -142,8 +143,8 @@
 				<p>Proin quam sem, ullamcorper consequat augue a, aliquet feugiat est. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce blandit enim vel ultricies pellentesque. Aenean sagittis dui nec metus tincidunt congue. Proin nec accumsan dui. Vestibulum quis tortor lectus. Vestibulum hendrerit, mi congue viverra placerat, ante dolor efficitur massa, non rutrum ex nisi nec elit. Proin non libero nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
 
 				<p>Donec molestie massa sapien, eu euismod felis vulputate sit amet. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse nec ante ipsum. Praesent ut nulla massa. Duis condimentum diam a leo congue elementum vehicula ultrices libero. Pellentesque cursus odio lacus. Phasellus sagittis aliquam velit, vel varius ante hendrerit eget. Suspendisse in ipsum purus. Pellentesque et libero sit amet ex pretium finibus.</p>
-		      </div>
 		    </div>
+		    
 		</div>
 	</section>	
 	<section id="galerias">
