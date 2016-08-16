@@ -245,7 +245,7 @@ header #menup {
   position: fixed;
   top: 0;
   top: -100%;
-  background-color: #493E3A;
+  background-color: #303841;
   z-index: 50;
   width: 100%;
   height: 100%;
@@ -321,7 +321,7 @@ header #menup .opciones .bloque li a {
 #frases{
 	width: 100%;
 	height: 780px;
-	background-color: #493E3A;
+	background-color: #303841;
 	margin: 60px 0;
 	overflow: hidden;
 	position: relative;
@@ -337,7 +337,7 @@ header #menup .opciones .bloque li a {
     height: 115px;
     position: absolute;
     left: 60px;
-    bottom: 45%;
+    bottom: 55%;
     cursor: pointer;
 }
 
@@ -347,24 +347,24 @@ header #menup .opciones .bloque li a {
     height: 115px;
     position: absolute;
     right: 60px;
-    bottom: 45%;
+    bottom: 55%;
     cursor: pointer;
     z-index: 1;
 }
 
 #frases .cuadro-oculto{
-	height: 300px;
+	height: 723px;
     width: 77px;
     position: absolute;
     right: 0;
-    top: 290px;
-    background-color: #493E3A;
+    top: 0;
+    background-color: #303841;
 }
 
 #frases .caja{
-	height: 300px;
+	height: auto;
 	width: 1000px;
-    margin: 310px auto 163px auto;
+    margin: 220px auto 163px auto;
 
 }
 
@@ -381,13 +381,13 @@ header #menup .opciones .bloque li a {
     transition: .3s;
     position: relative;
     left: 0;
-    background: url(iconos/linea-punteada.svg);
+    background: url(iconos/linea-punteada.svg) no-repeat;
     background-position-y: -84px;
     background-position-x: -150px;
 }
 
 #frases .bloque{
-	width: 20000px;
+	width: 45000px;
 	height: 100%;
 	transition: .3s;
 	overflow: hidden;
@@ -416,7 +416,7 @@ header #menup .opciones .bloque li a {
 #footer{
 	width: 100%;
 	height: auto;
-	background-color: #493E3A;
+	background-color: #303841;
 }
 
 #footer .bloque1{
@@ -614,7 +614,7 @@ header #menup .opciones .bloque li a {
   float: left;
   position: relative;
   height: 260px; 
-  background: #493E3A;
+  background: #303841;
   margin: 20px;
 }
 
