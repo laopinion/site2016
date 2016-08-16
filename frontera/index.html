@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="normalize.css">
 	<link rel="stylesheet" href="style.css">
-	<!--	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
 	<script type="text/javascript" src="js/jssor.js"></script>
@@ -47,24 +45,50 @@
 			});
 			$('#footer .bloque1 .redes-sociales .creditos').click(function(){
 				$('#footer .bloque2').toggle("slow");
+				$(this).toggleClass('down');
+				var position = $("#footer").offset().top;
+				$("html, body").animate({scrollTop:position+"px"});
 			});
+
 			var click = 0;
-			var conleft = 0;
 			$('#frases .btn-izq').click(function(){
-				
+				click++;
+				if(click == 16){
+					$('#frases .caja .bloque .frase').css("left", "0px");
+					click = 0;
+				}else{
+					if(click == 1){
+						$('#frases .caja .bloque .frase').css("left", "-1000px");
+						click++;
+					}else{
+						var valor = $('#frases .caja .bloque .frase').attr("style");
+						valor = valor.substring(6, 12);
+						valor = parseInt(valor);
+						valor = valor - 1000;
+						$('#frases .caja .bloque .frase').css("left", valor);
+					}
+				}
 			});
-			
-			var conright = 0;
+
 			$('#frases .btn-der').click(function(){
-				
+				click++;
+				if(click == 16){
+					console.log('Es 16 clicks');
+					$('#frases .caja .bloque .frase').css("left", "0px");
+					click = 0;
+				}else{
+					if(click == 1){
+						$('#frases .caja .bloque .frase').css("left", "-1000px");
+						click++;
+					}else{
+						var valor = $('#frases .caja .bloque .frase').attr("style");
+						valor = valor.substring(6, 12);
+						valor = parseInt(valor);
+						valor = valor - 1000;
+						$('#frases .caja .bloque .frase').css("left", valor);
+					}
+				}
 			});
-
-			$('.bloque').carousel();
-
-			$('.carousel').carousel({
-			  interval: 2000
-			});
-
 			
 		});
 	</script>
@@ -106,12 +130,13 @@
 		    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</span></h2>
 		    <div class="bloque uno">
 		      <div class="foto">
-		      	<img src="historias/historia1.jpg">
+		      	<img src="">
 		      </div>	
 		      <div class="titulo">	
 		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit
 		      </div>
 		    </div>
+		    
 		    <div class="bloque dos">
 		      <div class="titulo">	
 		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -120,6 +145,7 @@
 		      	Suspendisse vitae dolor arcu. Aliquam id elit vitae leo pharetra ultricies. Integer eget malesuada lorem
 		      </div>		
 		    </div>
+
 		    <div class="bloque tres">
 		      <div class="titulo">	
 		      	Lorem ipsum dolor sit amet, consectetur adipiscing elit
@@ -264,116 +290,116 @@
 	</section>
 
 	<section id="frases">
-		
-		<section class="caja carousel slide" data-ride="carousel">
-			<section class="bloque carousel-inner" role="listbox">
-				<div class="frase item activo" data-slide-to="0">
+		<section class="caja">
+			<section class="bloque">
+				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
-				<div class="frase item" data-slide-to="1">
+				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 2”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
-				<div class="frase item" data-slide-to="2">
+				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 3”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
 				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 4”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
 				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 5”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
 				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 6”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
 				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 7”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
 				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 8”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
 				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 9”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
 				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 10”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
 				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 11”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
 				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 12”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
 				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 13”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
 				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 14”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
 				<div class="frase">
 					<h2>“La mujer que le regalaron la casa por ayudar voluntariamente a los deportados 15”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
-						<span class="fecha">2015</span>
+						<span class="fecha">03/05/2015</span>
 					</div>
 				</div>
-				<div class="btn-izq" data-slide="prev"></div>
-				<div class="btn-der" data-slide="next"></div>
+				<div class="btn-izq"></div>
+				<div class="btn-der"></div>
+				<div class="cuadro-oculto"></div>
 			</section>
 		</section>
 	</section>
