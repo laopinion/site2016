@@ -245,7 +245,7 @@ header #menup {
   position: fixed;
   top: 0;
   top: -100%;
-  background-color: #493E3A;
+  background-color: #fff;
   z-index: 50;
   width: 100%;
   height: 100%;
@@ -255,7 +255,7 @@ header #menup .movil {
   display: none;
 }
 header #menup .opciones {
-  width: 96%;
+  width: 300px;
   margin: 0 2%;
   padding-bottom: 10px;
   position: relative;
@@ -285,7 +285,7 @@ header #menup .opciones .iconos li {
 }
 
 header #menup .opciones .iconos li a {
-  color: #DBCBBA;
+  color: #303334;
   text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
@@ -364,8 +364,8 @@ header #menup .opciones .bloque li a {
 #frases .caja{
 	height: 300px;
 	width: 1000px;
-    margin: 310px auto 163px auto;
-
+  margin: 310px auto 163px auto;
+  overflow: hidden;
 }
 
 #frases .caja .bloque .frase.activo{
@@ -374,16 +374,16 @@ header #menup .opciones .bloque li a {
 
 #frases .caja .bloque .frase{
 	width: 1000px;
-    /*margin: 0 50px;*/
-    padding: 0;
-    display: inline-block;
-    vertical-align: top;
-    transition: .3s;
-    position: relative;
-    left: 0;
-    background: url(iconos/linea-punteada.svg);
-    background-position-y: -84px;
-    background-position-x: -150px;
+  height: 310px;
+  padding: 0;
+  display: inline-block;
+  vertical-align: top;
+  transition: .3s;
+  position: relative;
+  left: 0;
+  background: url(iconos/linea-punteada.svg);
+  background-position-y: -84px;
+  background-position-x: -150px;
 }
 
 #frases .bloque{
