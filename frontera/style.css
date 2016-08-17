@@ -8,6 +8,7 @@ body{
     display: -moz-flex;
     -moz-flex-direction: column;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 /*---------------------------------------------------------------------*/
@@ -342,6 +343,84 @@ header #menup .opciones .iconos #icono-mapa:before{
 	top: 278px;
 	left: 0;
 	content: url(iconos/icono-mapa.svg);
+}
+
+#fondo-color{
+	width: 100%;
+    height: 100%;
+    background-color: rgba(48,56,65,0.85);
+    position: fixed;
+    z-index: 59;
+    display: none;
+}
+
+#fondo-color.open{
+	display: block;
+}
+
+#historia-1.open{
+	display: block;
+}
+
+#historia-2.open{
+	display: block;
+}
+
+#historia-3.open{
+	display: block;
+}
+
+.historia{
+	width: 1002px;
+    height: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 1%;
+    bottom: 0;
+    margin: 0 auto;
+    background-color: #303841;
+    z-index: 60;
+    color: #fff;    
+    display: none;
+}
+
+.historia h3{
+	text-align: center;
+    font-size: 25px;
+    margin-bottom: 0;
+}
+
+.historia .info{
+	margin: 10px 70px 70px 70px;
+    font-size: 18px;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 380px;
+    scrollbar-thumb: background: #9E9E9E; ;
+}
+
+/* Let's get this party started */
+::-webkit-scrollbar {
+    width: 12px;
+}
+ 
+/* Track */
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #9E9E9E; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #303841; 
 }
 
 /*------------------------------------------------------------------------------*/
