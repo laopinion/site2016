@@ -23,7 +23,7 @@ header{
   -moz-align-items: center;
   /*background-color: #BB1D1E;*/
   height: 90px;
-  width: 100%;
+  width: 320px;
 }
 
 header .logo_top{
@@ -41,7 +41,7 @@ header .logo_top li{
     display: inline-block;
     vertical-align: middle;
     font-size: 11px;
-    color: #9E9790;
+    color: #A4A4A4;
 }
 
 header .logo_top .logo{
@@ -55,76 +55,77 @@ header .logo_top .logo a{
   height: 35px;
 }
 
-header .logo_top.open{
-    opacity: 0;
-}
 header .logo_top.desplegar{
     opacity: 1;
 }
 
-header .redes-sociales{
-  margin: 0;
-  padding: 0;
-  height: 30px;
-  position: fixed;
-  z-index: 51;
-  top: 42px;
-  right: 20px;
-  opacity: 0;
-  transition: .5s ease-in-out;
+header #menup .redes-sociales{
+	display: flex;
+	display: -webkit-flex;
+	display: -moz-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+    padding: 0;
+    height: 30px;
+    position: fixed;
+    z-index: 110;
+    top: 477px;
+    width: 12%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: 0 83px;
+    opacity: 0;
+    transition: .3s ease-in-out;
 }
 
-header .redes-sociales li{
+header #menup .redes-sociales.open{
+	opacity: 0;
+}
+
+header #menup .redes-sociales.desplegar{
+	opacity: 1;
+}
+
+header #menup .redes-sociales li{
   display: inline-block;
   vertical-align: middle;
 }
 
-header .redes-sociales li:hover{
+header #menup .redes-sociales li:hover{
   opacity: 0.7;
 }
 
-header .redes-sociales .f a{
+header #menup .redes-sociales .f a{
   display: block;
     background: url(iconos/redes-sociales.svg) no-repeat -20px -8px/225px auto;
     width: 25px;
     height: 25px;
 }
 
-header .redes-sociales .t a{
+header #menup .redes-sociales .t a{
   display: block;
     background: url(iconos/redes-sociales.svg) no-repeat -74px -9px/225px auto;
     width: 25px;
     height: 25px;
 }
 
-header .redes-sociales .i a{
+header #menup .redes-sociales .i a{
   display: block;
     background: url(iconos/redes-sociales.svg) no-repeat -127px -9px/225px auto;
     width: 25px;
     height: 25px;
 }
 
-header .redes-sociales .y a{
+header #menup .redes-sociales .y a{
   display: block;
     background: url(iconos/redes-sociales.svg) no-repeat -183px -9px/225px auto;
     width: 25px;
     height: 25px;
 }
 
-header .redes-sociales .creditos{
-    background: url(iconos/icono-creditos.svg) no-repeat -4px -1px/50px auto;
-    width: 40px;
-    height: 35px;
-    position: relative;
-    top: 5px;
-    cursor: pointer;
-}
-header .redes-sociales.open{
-    opacity: 0;
-}
-header .redes-sociales.desplegar{
-    opacity: 1;
-}
+
 
 header #hamburger {
   width: 60px;
@@ -134,8 +135,8 @@ header #hamburger {
   left: 28px;
   transition: .5s ease-in-out;
   cursor: pointer;
-  background: #DBCBBA;
-  border-radius: 5px;
+  background: #fff;
+  border-radius: 50%;
   z-index: 51;
 }
 
@@ -144,7 +145,7 @@ header #hamburger span {
   position: absolute;
   height: 7px;
   width: 40%;
-  background: #483F3A;
+  background: #303841;
   opacity: 1;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
@@ -157,23 +158,21 @@ header #hamburger span {
 }
 header #hamburger span:nth-child(even) {
   left: 40%;
-  border-radius: 0 9px 9px 0;
 }
 header #hamburger span:nth-child(odd) {
   left: 20%;
-  border-radius: 9px 0 0 9px;
 }
 header #hamburger span:nth-child(1), header #hamburger span:nth-child(2) {
-  top: 10px;
+  top: 15px;
 }
 header #hamburger span:nth-child(3), header #hamburger span:nth-child(4) {
   top: 28px;
 }
 header #hamburger span:nth-child(5), header #hamburger span:nth-child(6) {
-  top: 46px;
+  top: 41px;
 }
 header #hamburger.open{
-	border: none;
+  border: none;
   border-radius: 5px;
 }
 header #hamburger.desplegar{
@@ -245,9 +244,13 @@ header #menup {
   position: fixed;
   top: 0;
   top: -100%;
+<<<<<<< HEAD
   background-color: #fff;
+=======
+  background-color: #303841;
+>>>>>>> ed793d1dd2342e825d0c7a1bab17048fa776f0d5
   z-index: 50;
-  width: 100%;
+  width: 320px;
   height: 100%;
   transition: .5s;
 }
@@ -274,46 +277,76 @@ header #menup .opciones .iconos li {
   list-style: none;
   display: inline-block;
   vertical-align: top;
-  text-align: center;
-  margin: 0 6px;
-  width: 100%;
-  height: auto;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 10px 0px;
-  background: url(iconos/punto_menu.svg) 5px 30px/15px auto repeat-x
+  width: 240px;
+  height: 40px;
+  margin-left: 40px;
+  text-align: left;
+  padding: 0;
+}
+
+header #menup .opciones .iconos hr{
+	border: none;
+    margin: 0;
+    padding: 0;
+    background: url(iconos/punto_menu.svg) 5px 0px/15px auto repeat-x;
+    height: 15px;
+    width: 100%;
 }
 
 header #menup .opciones .iconos li a {
+<<<<<<< HEAD
   color: #303334;
+=======
+  color: #fff;
+>>>>>>> ed793d1dd2342e825d0c7a1bab17048fa776f0d5
   text-decoration: none;
-  text-transform: uppercase;
   font-size: 16px;
+  margin-left: 5px;
 }
-header #menup .opciones .iconos li a, header #menup .opciones .iconos li span:hover {
+header #menup .opciones .iconos li a:hover {
   opacity: .7;
 }
-header #menup .opciones .table {
-  display: block;
+
+header #menup .opciones .iconos #icono-historias:before{
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: url(iconos/icono-historias.svg);
 }
-header #menup .opciones .bloque {
-  padding: 0;
-  width: 135px;
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  margin-top: 15px;
-  margin-bottom: 0;
+
+header #menup .opciones .iconos #icono-videos:before{
+	position: absolute;
+	top: 58px;
+	left: 0;
+	content: url(iconos/icono-video.svg);
 }
-header #menup .opciones .bloque li {
-  list-style: none;
-  margin-bottom: 5px;
+
+header #menup .opciones .iconos #icono-galeria:before{
+	position: absolute;
+	top: 107px;
+	left: 0;
+	content: url(iconos/icono-galerias.svg);
 }
-header #menup .opciones .bloque li a {
-  text-decoration: none;
-  color: #CCCCCC;
-  font-size: 14px;
-  text-transform: uppercase;
+
+header #menup .opciones .iconos #icono-grafico:before{
+	position: absolute;
+	top: 170px;
+	left: 0;
+	content: url(iconos/icono-grafico.svg);
+}
+
+header #menup .opciones .iconos #icono-frases:before{
+	position: absolute;
+	top: 225px;
+	left: 0;
+	content: url(iconos/icono-frases.svg);
+}
+
+header #menup .opciones .iconos #icono-mapa:before{
+	position: absolute;
+	top: 278px;
+	left: 0;
+	content: url(iconos/icono-mapa.svg);
 }
 
 /*------------------------------------------------------------------------------*/
@@ -321,7 +354,7 @@ header #menup .opciones .bloque li a {
 #frases{
 	width: 100%;
 	height: 780px;
-	background-color: #493E3A;
+	background-color: #303841;
 	margin: 60px 0;
 	overflow: hidden;
 	position: relative;
@@ -337,7 +370,7 @@ header #menup .opciones .bloque li a {
     height: 115px;
     position: absolute;
     left: 60px;
-    bottom: 45%;
+    bottom: 48%;
     cursor: pointer;
 }
 
@@ -347,25 +380,25 @@ header #menup .opciones .bloque li a {
     height: 115px;
     position: absolute;
     right: 60px;
-    bottom: 45%;
+    bottom: 48%;
     cursor: pointer;
     z-index: 1;
 }
 
 #frases .cuadro-oculto{
-	height: 300px;
+	height: 723px;
     width: 77px;
     position: absolute;
     right: 0;
-    top: 290px;
-    background-color: #493E3A;
+    top: 0;
+    background-color: #303841;
 }
 
 #frases .caja{
-	height: 300px;
+	height: auto;
 	width: 1000px;
-  margin: 310px auto 163px auto;
   overflow: hidden;
+  margin: 220px auto 163px auto;
 }
 
 #frases .caja .bloque .frase.activo{
@@ -374,20 +407,20 @@ header #menup .opciones .bloque li a {
 
 #frases .caja .bloque .frase{
 	width: 1000px;
-  height: 310px;
+  /*margin: 0 50px;*/
   padding: 0;
   display: inline-block;
   vertical-align: top;
   transition: .3s;
   position: relative;
   left: 0;
-  background: url(iconos/linea-punteada.svg);
-  background-position-y: -84px;
+  background: url(iconos/linea-punteada.svg) no-repeat;
+  background-position-y: -65px;
   background-position-x: -150px;
 }
 
 #frases .bloque{
-	width: 20000px;
+	width: 45000px;
 	height: 100%;
 	transition: .3s;
 	overflow: hidden;
@@ -399,7 +432,7 @@ header #menup .opciones .bloque li a {
     font-size: 50px;
     font-weight: 400;
     text-align: center;
-    color: #DBCCBA;
+    color: #fff;
     margin: 0 auto;
     width: 900px;
 }
@@ -408,7 +441,7 @@ header #menup .opciones .bloque li a {
 	display: flex;
     justify-content: space-around;
     font-size: 40px;
-    color: #9E9790;
+    color: #A4A4A4;
     height: 60px;
     margin-top: 125px;
 }
@@ -416,7 +449,7 @@ header #menup .opciones .bloque li a {
 #footer{
 	width: 100%;
 	height: auto;
-	background-color: #493E3A;
+	background-color: #303841;
 }
 
 #footer .bloque1{
@@ -442,7 +475,7 @@ header #menup .opciones .bloque li a {
     display: inline-block;
     vertical-align: middle;
     font-size: 11px;
-	color: #9E9790;
+	color: #A4A4A4;
 }
 
 #footer .bloque1 .derechos .logo{
@@ -533,7 +566,7 @@ header #menup .opciones .bloque li a {
 #footer .bloque2 ul>li{
 	list-style: none;
 	display: block;
-	color: #DBCCBA;
+	color: #fff;
 	font-size: 16px;
 }
 
@@ -545,7 +578,7 @@ header #menup .opciones .bloque li a {
 
 #footer .bloque2 ul li ul>li{
 	font-size: 14px;
-	color: #9E9790;
+	color: #A4A4A4;
 }
 
 #footer .bloque2 span{
@@ -554,7 +587,7 @@ header #menup .opciones .bloque li a {
     font-size: 11px;
     margin: 0px auto;
     text-align: center;
-    color: #9E9790;
+    color: #A4A4A4;
     position: relative;
     top: 15px;
 }
@@ -582,16 +615,24 @@ header #menup .opciones .bloque li a {
 }
 
 #notas{
-  margin:50px 0px;
-  background: #DBCBBA;
-  width: 100%; 
-  float: left;
-  position: relative;    
-  text-align: center;
-  padding: 10px 0px;
-  flex: 1;
-  -webkit-flex: 1;
-  -moz-flex: 1;
+	background: rgba(255,255,255,1);
+	background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(240,242,246,1) 66%, rgba(232,236,241,1) 100%);
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(66%, rgba(240,242,246,1)), color-stop(100%, rgba(232,236,241,1)));
+	background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(240,242,246,1) 66%, rgba(232,236,241,1) 100%);
+	background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(240,242,246,1) 66%, rgba(232,236,241,1) 100%);
+	background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(240,242,246,1) 66%, rgba(232,236,241,1) 100%);
+	background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(240,242,246,1) 66%, rgba(232,236,241,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8ecf1', GradientType=0 );
+ 	margin:50px 0px;
+ 	margin-top: 550px;
+ 	height: 1955px;
+	width: 100%; 
+	float: left;
+	position: relative; 
+	padding: 10px 0px;
+	flex: 1;
+	-webkit-flex: 1;
+	-moz-flex: 1;
 }
 
 #notas .content{
@@ -600,22 +641,74 @@ header #menup .opciones .bloque li a {
   width: 1000px;
   height: auto;
 }
-#notas .content .bloque.tres{
-  margin:20px 0px 20px 30px;
-}
-
-#notas .content .bloque.uno{
-  margin:20px 30px 20px 0px;
-}
 
 #notas .content .bloque{
-  color: #fff;
-  width: 300px; 
+  color: #303841;
+  height: auto; 
+  width: 100%; 
   float: left;
   position: relative;
-  height: 260px; 
-  background: #493E3A;
-  margin: 20px;
+  margin: 0;
+}
+
+#notas .content .bloque .left{
+	display: inline-block;
+	vertical-align: top;
+	width: 499px;
+}
+
+#notas .content .bloque .right{
+	display: inline-block;
+	vertical-align: top;	
+    width: 495px;
+}
+
+#notas .content .bloque h2{
+	font-size: 80px;
+    margin: 0;
+    text-align: left;
+    line-height: 82px;
+}
+
+#notas .content .bloque .titulo{
+	color: #6C737E;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 55px;
+}
+
+#notas .content .bloque .cuadro{
+	width: 355px;
+    height: 60px;
+    background-color: #B54333;
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+#notas .content .bloque.dos{
+	margin-top: 160px;
+}
+
+#notas .content .bloque.tres{
+	margin-top: 160px;
+}
+
+#notas .content .bloque.tres h2{
+	margin-bottom: 40px;
+}
+
+#notas .content .bloque.tres .cuadro{
+	display: inline-block;
+	vertical-align: top;
+}
+
+#notas .content .bloque.tres .titulo{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0;
+	margin-left: 20%;
 }
 
 #notas .content .bloque img{
