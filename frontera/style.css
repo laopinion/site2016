@@ -63,21 +63,21 @@ header #menup .redes-sociales{
 	display: flex;
 	display: -webkit-flex;
 	display: -moz-flex;
-    justify-content: space-between;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    padding: 0;
-    height: 30px;
-    position: fixed;
-    z-index: 110;
-    top: 477px;
-    width: 12%;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: 0 83px;
-    opacity: 0;
-    transition: .3s ease-in-out;
+  justify-content: space-between;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  padding: 0px;
+  height: 30px;
+  position: relative;
+  z-index: 110;
+  top: 160px;
+  width: 50%;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: 0px 25%;
+  opacity: 0;
+  transition: .3s ease-in-out;
 }
 
 header #menup .redes-sociales.open{
@@ -244,11 +244,7 @@ header #menup {
   position: fixed;
   top: 0;
   top: -100%;
-<<<<<<< HEAD
-  background-color: #fff;
-=======
   background-color: #303841;
->>>>>>> ed793d1dd2342e825d0c7a1bab17048fa776f0d5
   z-index: 50;
   width: 320px;
   height: 100%;
@@ -294,14 +290,13 @@ header #menup .opciones .iconos hr{
 }
 
 header #menup .opciones .iconos li a {
-<<<<<<< HEAD
-  color: #303334;
-=======
   color: #fff;
->>>>>>> ed793d1dd2342e825d0c7a1bab17048fa776f0d5
   text-decoration: none;
   font-size: 16px;
   margin-left: 5px;
+  padding: 7px 0px 10px 0px;
+  position: relative;
+  float: left;
 }
 header #menup .opciones .iconos li a:hover {
   opacity: .7;
@@ -648,26 +643,40 @@ header #menup .opciones .iconos #icono-mapa:before{
   width: 100%; 
   float: left;
   position: relative;
-  margin: 0;
+  margin: 70px 0px;
 }
 
 #notas .content .bloque .left{
 	display: inline-block;
 	vertical-align: top;
-	width: 499px;
+	width: 500px;
+  float: left;
+  position: relative;
 }
 
 #notas .content .bloque .right{
 	display: inline-block;
 	vertical-align: top;	
-    width: 495px;
+  width: 500px;
+  float: left;
+  position: relative;
 }
 
+#notas .content .bloque .right .foto{
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
 #notas .content .bloque h2{
 	font-size: 80px;
     margin: 0;
     text-align: left;
     line-height: 82px;
+}
+
+#notas .content .bloque h2 a{
+  text-decoration: none;
+  color: #303841;
 }
 
 #notas .content .bloque .titulo{
@@ -687,12 +696,27 @@ header #menup .opciones .iconos #icono-mapa:before{
     cursor: pointer;
 }
 
-#notas .content .bloque.dos{
-	margin-top: 160px;
+#notas .content .bloque .cuadro a{
+    padding: 4px 0px 16px 0px;
+    height: 40px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    float: left;
+    position: relative;
+    margin: 0px 120px;
+    width: auto;
+}
+
+#notas .content .bloque.dos .left{
+  margin-right: 20px;
+}
+#notas .content .bloque.dos .right{
+  width: 480px;
 }
 
 #notas .content .bloque.tres{
-	margin-top: 160px;
 }
 
 #notas .content .bloque.tres h2{
@@ -712,7 +736,7 @@ header #menup .opciones .iconos #icono-mapa:before{
 }
 
 #notas .content .bloque img{
-  width: 300px;
+  width: 500px;
   height: auto;
   position: relative;
   float: left;
