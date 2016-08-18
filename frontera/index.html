@@ -12,6 +12,8 @@
 <body>
 	<script type="text/javascript" src="js/jssor.js"></script>
     <script type="text/javascript" src="js/jssor.slider.js"></script>
+
+    
     <script>
     	jQuery(document).ready(function ($) {
     		var _CaptionTransitions = [];
@@ -120,7 +122,20 @@
         //SCRIPT GENERAL
 		$(document).ready(function(){
 
-		
+			//scroll mas suave 
+			$('a[href^="#"]').on('click',function (e) {
+			      e.preventDefault();
+
+			      var target = this.hash,
+			      $target = $(target);
+
+			      $('html, body').stop().animate({
+			          'scrollTop': $target.offset().top
+			      }, 1000, 'swing', function () {
+			          window.location.hash = target;
+			      });
+			});
+
 			var altoTotal = $(window).height();
   			var anchoTotal = $(window).width();
   			var altoTitulo = (altoTotal - 78) / 2;
