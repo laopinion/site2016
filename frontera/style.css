@@ -899,6 +899,21 @@ header #menup .opciones .iconos #icono-mapa{
     color: #303841;
 }
 
+#videos .video{
+	position: relative;
+    padding-top: 56.25%;
+}
+
+#videos .video iframe{
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%!important;
+    height: 100%!important;
+}
+
 
 #galerias{
   background: rgba(255,255,255,1);
