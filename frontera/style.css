@@ -384,7 +384,7 @@ header #menup .opciones .iconos #icono-mapa:before{
     position: fixed;
     left: 0;
     right: 0;
-    top: 1%;
+    top: 0;
     bottom: 0;
     margin: 0 auto;
     background-color: #303841;
@@ -749,11 +749,18 @@ header #menup .opciones .iconos #icono-mapa:before{
 
 #notas .content .bloque{
   color: #303841;
-  height: auto; 
   width: 100%; 
   float: left;
   position: relative;
   margin: 70px 0px;
+}
+
+#notas .content .bloque.uno{
+  height: 378px; 
+}
+
+#notas .content .bloque.dos{
+	height: 450px;
 }
 
 #notas .content .bloque .left{
@@ -778,10 +785,11 @@ header #menup .opciones .iconos #icono-mapa:before{
   height: auto;
 }
 #notas .content .bloque h2{
-	font-size: 80px;
+	font-size: 70px;
     margin: 0;
     text-align: left;
-    line-height: 82px;
+    line-height: 72px;
+    margin-bottom: 30px;
 }
 
 #notas .content .bloque h2 a{
@@ -807,15 +815,12 @@ header #menup .opciones .iconos #icono-mapa:before{
 }
 
 #notas .content .bloque .cuadro a{
-    padding: 4px 0px 16px 0px;
+    padding: 0px 90px;
     height: 40px;
     color: #fff;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
-    float: left;
-    position: relative;
-    margin: 0px 120px;
     width: auto;
 }
 
