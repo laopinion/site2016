@@ -13,6 +13,92 @@
 	<script type="text/javascript" src="js/jssor.js"></script>
     <script type="text/javascript" src="js/jssor.slider.js"></script>
     <script>
+    	jQuery(document).ready(function ($) {
+    		var _CaptionTransitions = [];
+            _CaptionTransitions["L"] = { $Duration: 900, x: 0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["R"] = { $Duration: 900, x: -0.6, $Easing: { $Left: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["T"] = { $Duration: 900, y: 0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["B"] = { $Duration: 900, y: -0.6, $Easing: { $Top: $JssorEasing$.$EaseInOutSine }, $Opacity: 2 };
+            _CaptionTransitions["ZMF|10"] = { $Duration: 900, $Zoom: 11, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 };
+            _CaptionTransitions["RTT|10"] = { $Duration: 900, $Zoom: 11, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseOutQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInExpo }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["RTT|2"] = { $Duration: 900, $Zoom: 3, $Rotate: 1, $Easing: { $Zoom: $JssorEasing$.$EaseInQuad, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInQuad }, $Opacity: 2, $Round: { $Rotate: 0.5} };
+            _CaptionTransitions["RTTL|BR"] = { $Duration: 900, x: -0.6, y: -0.6, $Zoom: 11, $Rotate: 1, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Zoom: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear, $Rotate: $JssorEasing$.$EaseInCubic }, $Opacity: 2, $Round: { $Rotate: 0.8} };
+            _CaptionTransitions["CLIP|LR"] = { $Duration: 900, $Clip: 15, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic }, $Opacity: 2 };
+            _CaptionTransitions["MCLIP|L"] = { $Duration: 900, $Clip: 1, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+            _CaptionTransitions["MCLIP|R"] = { $Duration: 900, $Clip: 2, $Move: true, $Easing: { $Clip: $JssorEasing$.$EaseInOutCubic} };
+
+            var options = {
+                $FillMode: 2,                                       //[Optional] The way to fill image in slide, 0 stretch, 1 contain (keep aspect ratio and put all inside slide), 2 cover (keep aspect ratio and cover whole slide), 4 actual size, 5 contain for large image, actual size for small image, default value is 0
+                $AutoPlay: false,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 6000,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                   //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideEasing: $JssorEasing$.$EaseOutQuint,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
+                $SlideDuration: 1200,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
+                $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
+                //$SlideWidth: 600,                                 //[Optional] Width of every slide in pixels, default value is width of 'slides' container
+                //$SlideHeight: 300,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideSpacing: 0, 					                //[Optional] Space between each slide in pixels, default value is 0
+                $DisplayPieces: 1,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
+                $ParkingPosition: 0,                                //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
+                $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
+                $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
+                $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+
+                $CaptionSliderOptions: {                            //[Optional] Options which specifies how to animate caption
+                    $Class: $JssorCaptionSlider$,                   //[Required] Class to create instance to animate caption
+                    $CaptionTransitions: _CaptionTransitions,       //[Required] An array of caption transitions to play caption, see caption transition section at jssor slideshow transition builder
+                    $PlayInMode: 1,                                 //[Optional] 0 None (no play), 1 Chain (goes after main slide), 3 Chain Flatten (goes after main slide and flatten all caption animations), default value is 1
+                    $PlayOutMode: 3                                 //[Optional] 0 None (no play), 1 Chain (goes before main slide), 3 Chain Flatten (goes before main slide and flatten all caption animations), default value is 1
+                },
+
+                $BulletNavigatorOptions: {                                //[Optional] Options to specify and enable navigator or not
+                    $Class: $JssorBulletNavigator$,                       //[Required] Class to create navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 1,                                 //[Optional] Auto center navigator in parent container, 0 None, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1,                                      //[Optional] Steps to go for each navigation request, default value is 1
+                    $Lanes: 1,                                      //[Optional] Specify lanes to arrange items, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each item in pixel, default value is 0
+                    $SpacingY: 8,                                   //[Optional] Vertical space between each item in pixel, default value is 0
+                    $Orientation: 1                                 //[Optional] The orientation of the navigator, 1 horizontal, 2 vertical, default value is 1
+                },
+
+                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                    $AutoCenter: 2,                                 //[Optional] Auto center arrows in parent container, 0 No, 1 Horizontal, 2 Vertical, 3 Both, default value is 0
+                    $Steps: 1                                       //[Optional] Steps to go for each navigation request, default value is 1
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("galeria1", options);
+            var jssor_slider2 = new $JssorSlider$("galeria2", options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var bodyWidth = document.body.clientWidth;
+                var bodyWidth2 = document.body.clientWidth;
+                if (bodyWidth)
+                    jssor_slider1.$ScaleWidth(Math.min(bodyWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+
+                if (bodyWidth2)
+                    jssor_slider2.$ScaleWidth(Math.min(bodyWidth, 1920));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+            ScaleSlider();
+
+            $(window).bind("load", ScaleSlider);
+            $(window).bind("resize", ScaleSlider);
+            $(window).bind("orientationchange", ScaleSlider);
+            //responsive code end
+        });
+
+//SCRIPT ANTERIOR
+/*
         jssor_slider1_starter = function (containerId) {
             var options = {
                 $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
@@ -26,11 +112,25 @@
 
             var jssor_slider1 = new $JssorSlider$(containerId, options);
         };
+*/
     </script>
+
 
 	<script>
         //SCRIPT GENERAL
 		$(document).ready(function(){
+
+		
+			var altoTotal = $(window).height();
+  			var anchoTotal = $(window).width();
+  			var altoTitulo = (altoTotal - 78) / 2;
+  			/*
+  			$("#video iframe, #video object, #video embed").css({"width":anchoTotal , "height":( altoTotal+ (altoTotal*12/100) )});
+			*/
+
+  			$("#videos iframe, #videos object, #videos embed").css({"width":anchoTotal , "height":( altoTotal+ (altoTotal*12/100) )});
+  		
+
 			console.log("ready");
 			$('#hamburger').click(function(){
 				$(this).toggleClass('open');
@@ -88,7 +188,6 @@
 					}
 				}
 			});
-			
 		});
 	</script>
 	<header>
@@ -109,28 +208,24 @@
 		<section id="menup">
 			<div class="opciones">
 				<ul class="iconos">
-					<li id="icono-historias"><a href="#">Tres historias en texto y video</a></li>
+					<li id="icono-historias"><a href="#notas">Perspectivas de la separación</a></li>
 					<hr>
-					<li id="icono-videos"><a href="#">Video con los momentos
-									más importantes del año</a></li>
+					<li id="icono-videos"><a href="#videos">Lo vivido en un año de división</a></li>
 					<hr>
-					<li id="icono-galeria"><a href="#">Galerías de imágenes</a></li>
+					<li id="icono-galeria"><a href="#galerias">El cierre en imágenes</a></li>
 					<hr>
-					<li id="icono-grafico"><a href="#">Gráfico de las cifras más importantes
-									de la afectación económica </a></li>
+					<li id="icono-grafico"><a href="#grafico">Gráfico de sectores económicos</a></li>
 					<hr>
-					<li id="icono-frases"><a href="">Línea de tiempo con las frases de los
-									momentos cumbre del año del cierre</a></li>
+					<li id="icono-frases"><a href="">Frases destacadas</a></li>
 					<hr>
-					<li id="icono-mapa"><a href="">Mapa de los lugares del
-									cruce por la frontera</a></li>
+					<li id="icono-mapa"><a href="">Éxodo de patrias hermanas</a></li>
 				</ul>				
 			</div>
 			<ul class="redes-sociales">
-				<li class="f"><a href="http://www.facebook.com/laopinion.com/"></a></li>
-				<li class="t"><a href="http://www.twitter.com/laopinion.com/"></a></li>
-				<li class="i"><a href="http://www.instagram.com/laopinion.com/"></a></li>
-				<li class="y"><a href="#"></a></li>
+				<li class="f"><a href="https://www.facebook.com/laopinioncucuta"></a></li>
+				<li class="t"><a href="https://twitter.com/laopinioncucuta"></a></li>
+				<li class="i"><a href="https://www.instagram.com/laopinioncucuta/"></a></li>
+				<li class="y"><a href="https://www.youtube.com/user/WEBLAOPINION"></a></li>
 			</ul>
 		</section><!--Fin menu-->
 		<!--Fin Menú Principal--> 
@@ -198,122 +293,376 @@
 		    </div>
 		    
 		</div>
+	</section>
+	<section id="videos">
+		<div class="content">
+			<h2>El año en el que se separaron dos países hermanos</h2>
+		</div>
+		<iframe width="100%" height="750" src="https://www.youtube.com/embed/kpP7wjB8RpY?autoplay=0&showinfo=0&autohide=1&color=white&controls=2" frameborder="0" allowfullscreen ></iframe>	
 	</section>	
 	<section id="galerias">
+
 		<div class="content">
-			<!--GALERIA 1-->
-			<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-			<div id="galeria1" style="position: relative; top: 0px; left: 0px; width: 1000px;height: 450px; ">
-		        <!-- Slides Container -->
-		        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 450px;overflow: hidden;">
-		            <div>
-		            	<img u="image" src="galerias/dos/01.jpg" />
-		            	<div class="info">
-		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
-		            		<div class="autor">Lorem ipsum dolor </div>
-		            	</div>
-		            </div>
-		            <div>
-		            	<img u="image" src="galerias/dos/02.jpg" />
-		            	<div class="info">
-		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
-		            		<div class="autor">Lorem ipsum dolor </div>
-		            	</div>
-		            </div>
-		            <div>
-		            	<img u="image" src="galerias/dos/03.jpg" />
-		            	<div class="info">
-		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
-		            		<div class="autor">Lorem ipsum dolor </div>
-		            	</div>
-		            </div>
-		            <div>
-		            	<img u="image" src="galerias/dos/04.jpg" />
-		            	<div class="info">
-		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
-		            		<div class="autor">Lorem ipsum dolor </div>
-		            	</div>
-		            </div>
-		        </div>	        
-		        <!-- Arrow Left -->
-		        <span u="arrowleft" class="jssora03l" style="top: 40%; left: 8px;">
-		        </span>
-		        <!-- Arrow Right -->
-		        <span u="arrowright" class="jssora03r" style="top: 40%; right: 8px;">
-		        </span>
-		        <script>
-		            jssor_slider1_starter('galeria1');
-		        </script>
-	    	</div>
-	    	<!--GALERIA 2-->
-	    	<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
-	    	<div id="galeria2" style="position: relative; top: 0px; left: 0px; width: 1000px;height: 450px; ">
-		        <!-- Slides Container -->
-		        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1000px; height: 450px;overflow: hidden;">
-		            <div>
-		            	<img u="image" src="galerias/dos/01.jpg" />
-		            	<div class="info">
-		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
-		            		<div class="autor">Lorem ipsum dolor </div>
-		            	</div>
-		            </div>
-		            <div>
-		            	<img u="image" src="galerias/dos/02.jpg" />
-		            	<div class="info">
-		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
-		            		<div class="autor">Lorem ipsum dolor </div>
-		            	</div>
-		            </div>
-		            <div>
-		            	<img u="image" src="galerias/dos/03.jpg" />
-		            	<div class="info">
-		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
-		            		<div class="autor">Lorem ipsum dolor </div>
-		            	</div>
-		            </div>
-		            <div>
-		            	<img u="image" src="galerias/dos/04.jpg" />
-		            	<div class="info">
-		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
-		            		<div class="autor">Lorem ipsum dolor </div>
-		            	</div>
-		            </div>
-		            <div>
-		            	<img u="image" src="galerias/dos/05.jpg" />
-		            	<div class="info">
-		            		<div class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque massa nec justo accumsan, nec semper eros gravida</div>
-		            		<div class="autor">Lorem ipsum dolor </div>
-		            	</div>
-		            </div>
-		        </div>	        
-		        <!-- Arrow Left -->
-		        <span u="arrowleft" class="jssora03l" style="top: 40%; left: 8px;">
-		        </span>
-		        <!-- Arrow Right -->
-		        <span u="arrowright" class="jssora03r" style="top: 40%; right: 8px;">
-		        </span>
-		        <script>
-		            jssor_slider1_starter('galeria2');
-		        </script>
-	    	</div>
+			<h2>Lo vivido tras el cierre de frontera</h2>
 		</div>
+		<!--GALERIA 1-->
+		<div id="galeria1" style="position: relative; margin: 0 auto;top: 0px; left: 0px; width: 1300px; height: 700px; overflow: hidden;">
+        	<!-- Slides Container -->
+	        <div data-u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;height: 700px; overflow: hidden;">
+	            <div>
+	                <img data-u="image" src="galerias/uno/01.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Lenny Trinidad Mora, una teniente de las fuerzas militares venezolanas, recibió a su hija en el Puente Internacional Simón Bolívar, quince días después del cierre.</div>
+	            		<div class="autor">Foto: Rodrigo Sandoval</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/02.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Esta foto, que se volvió viral y se convirtió en el símbolo del cierre de la frontera refleja la inocencia de uno hermanas, separadas físicamente, pero unidas de corazón.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/03.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Iván Enrique Bustos Sosa, el campesino que huyó de Venezuela y que intentó conseguir refugio con 11 vacas de su propiedad en Colombia.</div>
+	            		<div class="autor">Foto: Mario Caicedo</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/04.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Yanid Antonio Villa Arboleda, posa con el documento expedido por las autoridades venezolanas, y en el que se le reconoce como refugiado, frente a los pocos objetos que logró sacar de su vivienda y traer hasta La Parada.</div>
+	            		<div class="autor">Foto: Edinsson Figueroa</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/05.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Edinsson Figueroa</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/06.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/07.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/08.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/09.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/10.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/11.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/12.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/13.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/14.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/15.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/16.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/17.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/18.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/19.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/20.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	        </div>
+	        <!-- Arrow Left -->
+	        <span u="arrowleft" class="jssora21l" style="top: 40%; left: 8px;"></span>
+	        <!-- Arrow Right -->
+	        <span u="arrowright" class="jssora21r" style="top: 40%; right: 8px;"></span>
+	    </div>
+        <!--FIN GALERIA 1-->
+
+		<div class="content">
+			<h2>Momentos inolvidables de frontera</h2>
+		</div>
+		<!--GALERIA 2-->
+		<div id="galeria2" style="position: relative; margin: 0 auto;top: 0px; left: 0px; width: 1300px; height: 700px; overflow: hidden;">
+        	<!-- Slides Container -->
+	        <div data-u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;height: 700px; overflow: hidden;">
+	            <div>
+	                <img data-u="image" src="galerias/dos/01.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Lenny Trinidad Mora, una teniente de las fuerzas militares venezolanas, recibió a su hija en el Puente Internacional Simón Bolívar, quince días después del cierre.</div>
+	            		<div class="autor">Foto: Rodrigo Sandoval</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/02.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Esta foto, que se volvió viral y se convirtió en el símbolo del cierre de la frontera refleja la inocencia de dos hermanas, separadas físicamente, pero unidas de corazón.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/03.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Iván Enrique Bustos Sosa, el campesino que huyó de Venezuela y que intentó conseguir refugio con 11 vacas de su propiedad en Colombia.</div>
+	            		<div class="autor">Foto: Mario Caicedo</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/04.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Yanid Antonio Villa Arboleda, posa con el documento expedido por las autoridades venezolanas, y en el que se le reconoce como refugiado, frente a los pocos objetos que logró sacar de su vivienda y traer hasta La Parada.</div>
+	            		<div class="autor">Foto: Edinsson Figueroa</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/05.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Edinsson Figueroa</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/06.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/07.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/08.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/09.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/10.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/11.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/12.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/13.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/14.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/15.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/16.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/17.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/18.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/19.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/20.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/21.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/22.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/23.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/24.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc"></div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	        </div>
+	        <!-- Arrow Left -->
+	        <span u="arrowleft" class="jssora21l" style="top: 40%; left: 8px;"></span>
+	        <!-- Arrow Right -->
+	        <span u="arrowright" class="jssora21r" style="top: 40%; right: 8px;"></span>
+	    </div>
+        <!--FIN GALERIA 2-->
+
+
+
+		
 	</section>
 
 	<!--VIDEO-->
 	<section id="video">
-		<iframe id="player" width="100%" height="100%" src="//www.youtube.com/embed/1NhTEv3SOeA?modestbranding=1&rel=0&autoplay=1&loop=1&playlist=1NhTEv3SOeA&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
-
-
-	  <!-- <object width="640" height="390">
-		  <param name="movie"
-		         value="https://www.youtube.com/v/1NhTEv3SOeA?version=2&modestbranding=1&rel=0&autoplay=1&loop=1&playlist=1NhTEv3SOeA&autohide=1&showinfo=0&controls=0"></param>
-		  <param name="allowScriptAccess" value="always"></param>
-		  <embed src="https://www.youtube.com/v/1NhTEv3SOeA?version=2&modestbranding=1&rel=0&autoplay=1&loop=1&playlist=1NhTEv3SOeA&autohide=1&showinfo=0&controls=0"
-		         type="application/x-shockwave-flash"
-		         allowscriptaccess="always"
-		         width="640" height="390"></embed>
-		</object> -->
+		
+		<iframe id="player" width="100%" height="100%" src="//www.youtube.com/embed/Qr85LclTOfM?modestbranding=1&rel=0&autoplay=1&loop=1&playlist=Qr85LclTOfM&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
+		
+		<!--
+		<object width="847" height="499.7">
+		    <param name="movie" value="http://www.youtube.com/embed/Qr85LclTOfM">
+		    <param name="allowFullScreen" value="true">
+		    <param name="allowscriptaccess" value="always">
+		    <embed src="http://www.youtube.com/v/Qr85LclTOfM?version=2&amp;autoplay=1&amp;loop=1&amp;controls=0;" type=
+		    "application/x-shockwave-flash" width="847" height="499.7" allowscriptaccess="always"
+		    allowfullscreen="true">
+	  	</object>
+		-->  	
 	</section>
+
+
 
 	<section id="frases">
 		<section class="caja">
@@ -340,7 +689,7 @@
 					</div>
 				</div>
 				<div class="frase">
-					<h2>“Cerrar la frontera trae perjuicios de lado y. Hay mucha gente inocente, sobre todo niños que viven del otro lado de la frontera y se quedan sin colegio…voy a ver si hablo con el presidente Maduro, a ver si podemos arreglar esta situación lo más rápido posible”</h2>
+					<h2>“Cerrar la frontera trae perjuicios de lado y lado. Hay mucha gente inocente, sobre todo niños que viven del otro lado de la frontera y se quedan sin colegio. Voy a ver si hablo con el presidente Maduro, a ver si podemos arreglar esta situación lo más rápido posible”</h2>
 					<div class="info">
 						<span class="autor">Juan Manuel Santos</span>
 						<span class="fecha">22 de agosto de 2015</span>
@@ -628,10 +977,10 @@
 				<li>-  Todos los Derechos Reservados.</li>
 			</ul>
 			<ul class="redes-sociales">
-				<li class="f"><a href="#"></a></li>
-				<li class="t"><a href="#"></a></li>
-				<li class="i"><a href="#"></a></li>
-				<li class="y"><a href="#"></a></li>
+				<li class="f"><a href="https://www.facebook.com/laopinioncucuta"></a></li>
+				<li class="t"><a href="https://twitter.com/laopinioncucuta"></a></li>
+				<li class="i"><a href="https://www.instagram.com/laopinioncucuta/"></a></li>
+				<li class="y"><a href="https://www.youtube.com/user/WEBLAOPINION"></a></li>
 				<li class="creditos"></li>
 			</ul>
 		</section>
