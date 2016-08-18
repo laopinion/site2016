@@ -893,11 +893,18 @@ header #menup .opciones .iconos #icono-mapa{
 }
 
 #videos .content h2{
-    font-size: 80px;
+    font-size: 24px;
     margin: 0;
     text-align: left;
-    line-height: 82px;
-    margin: 40px 0px;
+    line-height: 52px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #303841;
+    color: #fff;
+    position: relative;
+    top: 74px;
+    width: 500px;
+    height: 60px;
 }
 
 #videos .video{
@@ -944,11 +951,18 @@ header #menup .opciones .iconos #icono-mapa{
 }
 
 #galerias .content h2{
-    font-size: 70px;
+    font-size: 24px;
     margin: 0;
     text-align: left;
-    line-height: 72px;
-    margin: 40px 0px;
+    line-height: 52px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #303841;
+    color: #fff;
+    position: relative;
+    top: 74px;
+    width: 500px;
+    height: 60px
 }
 
 #galerias .info{
@@ -1030,3 +1044,27 @@ header #menup .opciones .iconos #icono-mapa{
 .jssora21l.jssora21ldn { background-position:  -36px -30px;  }
 .jssora21r.jssora21rdn { background-position: -223px -30px; }
 
+
+@media screen and (max-width: 768px){
+	#notas .content{
+		width: 100%;
+	}
+
+	#notas .content .bloque{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		width: 100%;
+		height: auto;
+	}
+
+	#notas .content .bloque.uno{
+		height: auto;
+		margin-bottom: 0;
+	}
+
+	#notas .content .bloque .left, #notas .content .bloque .right{
+		float: none;
+		display: block;
+	}
+}
