@@ -370,8 +370,16 @@ header #menup .opciones .iconos #icono-mapa:before{
 	display: block;
 }
 
+#historia-4.open{
+	display: block;
+}
+
+#historia-5.open{
+	display: block;
+}
+
 .historia{
-	width: 1002px;
+	width: 700px;
     height: auto;
     position: fixed;
     left: 0;
@@ -386,18 +394,36 @@ header #menup .opciones .iconos #icono-mapa:before{
 }
 
 .historia h3{
-	text-align: center;
+	text-align: left;
     font-size: 25px;
     margin-bottom: 0;
+    margin-left: 70px;
+    width: 580px;
 }
 
 .historia .info{
-	margin: 10px 70px 70px 70px;
+	margin: 10px 60px 25px 60px;
     font-size: 18px;
     overflow: scroll;
     overflow-x: hidden;
-    height: 380px;
+    height: 395px;
+    padding: 0 10px;
     scrollbar-thumb: background: #9E9E9E; ;
+}
+
+.historia .media .video{
+	position: relative;
+    padding-top: 56.25%;
+}
+
+.historia .media .video iframe{
+	position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
 }
 
 /* Let's get this party started */
@@ -650,9 +676,14 @@ header #menup .opciones .iconos #icono-mapa:before{
 	display: block;
 }
 
-#footer .bloque2 ul li ul>li{
+#footer .bloque2 ul li ul>li a{
 	font-size: 14px;
 	color: #A4A4A4;
+	text-decoration: none;
+}
+
+#footer .bloque2 ul li ul>li a:hover{
+	text-decoration: underline;
 }
 
 #footer .bloque2 span{
@@ -699,7 +730,7 @@ header #menup .opciones .iconos #icono-mapa:before{
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e8ecf1', GradientType=0 );
  	margin:50px 0px;
  	margin-top: 550px;
- 	height: 1955px;
+ 	height: auto;
 	width: 100%; 
 	float: left;
 	position: relative; 
@@ -791,7 +822,16 @@ header #menup .opciones .iconos #icono-mapa:before{
 #notas .content .bloque.dos .left{
   margin-right: 20px;
 }
+
 #notas .content .bloque.dos .right{
+  width: 480px;
+}
+
+#notas .content .bloque.cinco .left{
+  margin-right: 20px;
+}
+
+#notas .content .bloque.cinco .right{
   width: 480px;
 }
 
