@@ -824,10 +824,10 @@ header #menup .opciones .iconos #icono-mapa{
 	margin-bottom: 40px;
 }
 
-#notas .content .bloque.tres .cuadro{
+/*#notas .content .bloque.tres .cuadro{
 	display: inline-block;
 	vertical-align: top;
-}
+}*/
 
 #notas .content .bloque.tres .titulo{
 	display: inline-block;
@@ -1166,7 +1166,7 @@ header #menup .opciones .iconos #icono-mapa{
 	}
 
 	#notas .content .bloque.tres{
-		margin-top: 419px;
+		margin-top: 0;
 	}
 
 	#notas .content .bloque.tres h2{
@@ -1177,10 +1177,11 @@ header #menup .opciones .iconos #icono-mapa{
 	#notas .content .bloque.tres .titulo{
 		margin: 0 auto;
 		text-align: center;
+		width: 300px;
 	}
 
 	#notas .content .bloque.cuatro{
-		margin-top: 0;
+		margin-top: 440px;
 	}
 
 	#notas .content .bloque .dos h2{
@@ -1354,7 +1355,11 @@ header #menup .opciones .iconos #icono-mapa{
 	}
 
 	#notas .content .bloque.tres{
-		margin-top: 210px;
+		margin-top: 0;
+	}
+
+	#notas .content .bloque.cuatro{
+		margin-top: 180px;
 	}
 
 }
