@@ -12,6 +12,8 @@
 <body>
 	<script type="text/javascript" src="js/jssor.js"></script>
     <script type="text/javascript" src="js/jssor.slider.js"></script>
+
+    
     <script>
     	jQuery(document).ready(function ($) {
     		var _CaptionTransitions = [];
@@ -120,7 +122,20 @@
         //SCRIPT GENERAL
 		$(document).ready(function(){
 
-		
+			//scroll mas suave 
+			$('#menup a[href^="#"]').on('click',function (e) {
+			      e.preventDefault();
+
+			      var target = this.hash,
+			      $target = $(target);
+
+			      $('html, body').stop().animate({
+			          'scrollTop': $target.offset().top
+			      }, 1000, 'swing', function () {
+			          window.location.hash = target;
+			      });
+			});
+
 			var altoTotal = $(window).height();
   			var anchoTotal = $(window).width();
   			var altoTitulo = (altoTotal - 78) / 2;
@@ -255,9 +270,9 @@
 					<hr>
 					<li id="icono-grafico"><a href="#grafico">Gráfico de sectores económicos</a></li>
 					<hr>
-					<li id="icono-frases"><a href="">Frases destacadas</a></li>
+					<li id="icono-frases"><a href="#frases">Frases destacadas</a></li>
 					<hr>
-					<li id="icono-mapa"><a href="">Éxodo de patrias hermanas</a></li>
+					<li id="icono-mapa"><a href="#mapa">Éxodo de patrias hermanas</a></li>
 				</ul>				
 			</div>
 			<ul class="redes-sociales">
@@ -711,141 +726,141 @@
 	            <div>
 	                <img data-u="image" src="galerias/uno/01.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc">Lenny Trinidad Mora, una teniente de las fuerzas militares venezolanas, recibió a su hija en el Puente Internacional Simón Bolívar, quince días después del cierre.</div>
-	            		<div class="autor">Foto: Rodrigo Sandoval</div>
+	            		<div class="desc">Incertidumbre después del cierre de frontera. Varios deportados miran los reportes noticiosos de los medios colombianos.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/uno/02.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc">Esta foto, que se volvió viral y se convirtió en el símbolo del cierre de la frontera refleja la inocencia de uno hermanas, separadas físicamente, pero unidas de corazón.</div>
+	            		<div class="desc">Aspecto del cierre fronterizo en Puerto Santander. El flujo de contrabando de gasolina y el paso de personas por el río.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/uno/03.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc">Iván Enrique Bustos Sosa, el campesino que huyó de Venezuela y que intentó conseguir refugio con 11 vacas de su propiedad en Colombia.</div>
-	            		<div class="autor">Foto: Mario Caicedo</div>
+	            		<div class="desc">Cientos de venezolanos hicieron largas filas en el consulado venezolano en Cúcuta esperando la autorización para retornar a su lugar de origen.</div>
+	            		<div class="autor">Foto: Edinsson Figueroa</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/uno/04.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc">Yanid Antonio Villa Arboleda, posa con el documento expedido por las autoridades venezolanas, y en el que se le reconoce como refugiado, frente a los pocos objetos que logró sacar de su vivienda y traer hasta La Parada.</div>
-	            		<div class="autor">Foto: Edinsson Figueroa</div>
+	            		<div class="desc">Durante varios días la gente se agolpó en la frontera esperando una oportunidad para poder cruzar.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/uno/05.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Edinsson Figueroa</div>
+	            		<div class="desc">Autoridades custodiaron las vallas constantemente para impedir el paso de personas entre Colombia y Venezuela.</div>
+	            		<div class="autor">Foto: Mario Caicedo</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/uno/06.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">Miles de colombianos fueron deportados de Venezuela, lo que generó una crisis humanitaria que afectó directamente a Norte de Santander.</div>
+	            		<div class="autor">Foto: Luis Alfredo Estévez</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/uno/07.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">Las autoridades colombianas y venezolanas replantearon el paso de pacientes con medicamentos por los puentes Simón Bolívar y Francisco de Paula Santander.</div>
+	            		<div class="autor">Foto: Luis Alfredo Estévez</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/uno/08.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">El paso a estudiantes también fue permitido. Los niños empezaron a recibir las primeras atenciones de parte de las autoridades colombo-venezolanas y se amplió en dos horas el paso de personas.</div>
+	            		<div class="autor">Foto: Rodrigo Sandoval</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/uno/09.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">Encuentro de los obispos de Cúcuta y San Cristóbal, monseñor Víctor Manuel Ochoa y monseñor Mario del Valle Moronta en el puente internacional Simón Bolívar, donde reclamaron a los gobiernos de Colombia y Venezuela una pronta solución a la crisis.</div>
+	            		<div class="autor">Foto: Mario Caicedo</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/uno/10.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">Por decreto presidencial, la República Bolivariana de Venezuela cerró el 3 de diciembre de 2015, a las 6 de la tarde, el corredor humanitario que había sido habilitado después del cierre de frontera.</div>
+	            		<div class="autor">Foto: Mario Caicedo</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/uno/11.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">Paso masivo de venezolanos hacia Cúcuta en busca de productos de la canasta familiar.</div>
+	            		<div class="autor">Foto: Juan Pablo Bayona</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/uno/12.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
-	            	</div>
-	            </div>
-	            <div>
-	                <img data-u="image" src="galerias/uno/13.jpg" alt="" />
-	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
-	            	</div>
-	            </div>
-	            <div>
-	                <img data-u="image" src="galerias/uno/14.jpg" alt="" />
-	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
-	            	</div>
-	            </div>
-	            <div>
-	                <img data-u="image" src="galerias/uno/15.jpg" alt="" />
-	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
-	            	</div>
-	            </div>
-	            <div>
-	                <img data-u="image" src="galerias/uno/16.jpg" alt="" />
-	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
-	            	</div>
-	            </div>
-	            <div>
-	                <img data-u="image" src="galerias/uno/17.jpg" alt="" />
-	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
-	            	</div>
-	            </div>
-	            <div>
-	                <img data-u="image" src="galerias/uno/18.jpg" alt="" />
-	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
-	            	</div>
-	            </div>
-	            <div>
-	                <img data-u="image" src="galerias/uno/19.jpg" alt="" />
-	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">Hasta animales como este cerdo, sufrieron el drama del cierre de frontera. Ayudados por sus dueños muchos cruzaron por el río Táchira.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/uno/20.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">En la frontera hicieron presencia miembros de la Comisión Interamericana de Derechos Humanos (CIDH) para verificar las condiciones en que llegaron los repatriados.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/13.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Esta imagen lograda en los días posteriores al cierre de frontera muestra las montañas de enseres al lado del río Táchira, traídas por los colombianos repatriados desde Venezuela.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/14.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Autoridades colombianas y venezolanas custodiaron ambos lados de la frontera.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/15.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">El contrabando no cesó pese al cierre de frontera, esta imagen captada en La Parada lo demuestra.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/16.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Tras el paso masivo de venezolanos con la apertura parcial de la frontera, decenas de buses colmaron su cupo con el traslado de los connacionales a Cúcuta.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/17.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Miembros de la Defensa Civil monitorearon la apertura parcial del sábado 13 de agosto del 2016.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/18.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Casi un año después del cierre, la alcabala de San Antonio volvió a ver el paso masivo de propios y turistas sin restricciones.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/uno/19.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Miembros de la Guardia Nacional Bolivariana (GNB) controlaron el paso de personas durante la apertura de la frontera.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	        </div>
@@ -880,113 +895,113 @@
 	            <div>
 	                <img data-u="image" src="galerias/dos/03.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc">Iván Enrique Bustos Sosa, el campesino que huyó de Venezuela y que intentó conseguir refugio con 11 vacas de su propiedad en Colombia.</div>
-	            		<div class="autor">Foto: Mario Caicedo</div>
-	            	</div>
-	            </div>
-	            <div>
-	                <img data-u="image" src="galerias/dos/04.jpg" alt="" />
-	                <div class="info">
 	            		<div class="desc">Yanid Antonio Villa Arboleda, posa con el documento expedido por las autoridades venezolanas, y en el que se le reconoce como refugiado, frente a los pocos objetos que logró sacar de su vivienda y traer hasta La Parada.</div>
 	            		<div class="autor">Foto: Edinsson Figueroa</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/05.jpg" alt="" />
+	                <img data-u="image" src="galerias/dos/04.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
+	            		<div class="desc">Reencuentro de Brayan Rueda y Marcela Maldonado, con su pequeño hijo de un año de nacido en el puente internacional Simón Bolívar tras el cierre de la frontera entre Colombia y Venezuela.</div>
+	            		<div class="autor">Foto: Jean Carlo Estupiñán</div>
+	            	</div>
+	            </div>
+	            <div>
+	            	<img data-u="image" src="galerias/dos/05.jpg" alt="" />
+	            	<div class="info">
+	            		<div class="desc">Este niño de apellidos Martínez Murillo es amante del rap y se encargó de devolver la alegria con su canto a las personas del albergue.</div>
 	            		<div class="autor">Foto: Edinsson Figueroa</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/dos/06.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">Duquesa, la perrita que se volvió famosa porque su dueño, un niño que fue deportado, decidió regresar a Venezuela por ella y no lo querían dejar pasar. Finalmente el reencuentro se dio. </div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/dos/07.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">Los niños, los más afectados con el cierre pues aguantaron largas horas al sol, desolados y esperando su regreso.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/dos/08.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">En esta foto se mezclan la frustración, la desesperación y el amor, pues esta mujer comparte lo que tiene para comer con sus mascotas, mientras llora al lado de lo que pudo sacar de Venezuela.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/dos/09.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">En el albergue de Juan Frío los víveres se convirtieron en un lugar de juegos, para los más pequeños.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/dos/10.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">Tras su visita a los albergues, Luis Almagro, secretario general de la OEA, abraza a dos deportados y juntos sonríen.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/dos/11.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">La frialdad con la que este guardia venezolano revisa los papeles de una menor que le implora que le permita el paso fue motivo de rechazo por parte de la comunidad.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/dos/12.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">Jornadas de vacunación en los albergues fueron motivo de dolor para unos y de aprendizaje para otros.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/dos/13.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">A los niños no les importa el lugar donde tengan que comer, desde que esté rico, lo disfrutan sin mediar palabra.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/dos/14.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">La alimentación fue motivo de sonrisas para estos pequeños, que vivieron de cerca el drama del cierre fronterizo.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/dos/15.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">Visitar los supermercados en Cúcuta llenó de alegria a algunos y de esperanza a otros, ante la escasez en Venezuela.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/dos/16.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">Visitar los supermercados en Cúcuta llenó de alegria a algunos y de esperanza a otros, ante la escasez en Venezuela.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/dos/17.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">La noche del cierre dos deportados aguardaban pacientemente y mirando por una de las ventanas de Migración la frontera con la esperanza de que la situación mejorara pronto, como en otras ocasiones.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
 	                <img data-u="image" src="galerias/dos/18.jpg" alt="" />
 	                <div class="info">
-	            		<div class="desc"></div>
-	            		<div class="autor">Foto: Roberto Vargas</div>
+	            		<div class="desc">Después de varios intentos fallidos para cruzar la frontera, estas monjitas lograron su cometido.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
@@ -1031,6 +1046,27 @@
 	            		<div class="autor">Foto: Roberto Vargas</div>
 	            	</div>
 	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/24.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Francinet Cuervo Echeverry, un anciano de 101 años de edad que fue deportado desde Venezuela.</div>
+	            		<div class="autor">Foto: Roberto Vargas</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/25.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">Iván Enrique Bustos Sosa, el campesino que huyó de Venezuela y que intentó conseguir refugio con 11 vacas de su propiedad en Colombia.</div>
+	            		<div class="autor">Foto: Mario Caicedo</div>
+	            	</div>
+	            </div>
+	            <div>
+	                <img data-u="image" src="galerias/dos/26.jpg" alt="" />
+	                <div class="info">
+	            		<div class="desc">La reapertura permitió a uno de nuestros fotografos registrar nuevamente la mirada de Bolivar, en este mural de San Antonio del Táchira.</div>
+	            		<div class="autor">Foto: Juan Pablo Cohen</div>
+	            	</div>
+	            </div>
 	        </div>
 	        <!-- Arrow Left -->
 	        <span u="arrowleft" class="jssora21l" style="top: 40%; left: 8px;"></span>
@@ -1038,11 +1074,16 @@
 	        <span u="arrowright" class="jssora21r" style="top: 40%; right: 8px;"></span>
 	    </div>
         <!--FIN GALERIA 2-->
-
-
-
-		
 	</section>
+
+
+	<section id="grafico">
+		<div class="content">
+			<h2>Los sectores económicos y el cierre de frontera</h2>
+			<img src="grafico/tabla1000px.png">
+		</div>
+	</section>
+
 
 	<!--VIDEO-->
 	<section id="video">
