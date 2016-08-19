@@ -1078,6 +1078,21 @@ header #menup .opciones .iconos #icono-mapa{
 
 @media screen and (max-width: 768px){
 	
+	#grafico .content{
+		width: 100%;
+	}
+
+	#grafico .content h2{
+		width: 320px;
+    	margin: 0 auto;
+	}
+
+	#grafico .content img{
+		content: url("grafico/tabla720px.png");
+		display: block;
+		margin: 0 auto;
+	}
+	
 	#notas{
 		margin-top: 305px;
 	}
@@ -1264,6 +1279,12 @@ header #menup .opciones .iconos #icono-mapa{
 }
 
 @media screen and (max-width: 480px){
+	
+	#grafico .content img{
+		content: url("grafico/tabla480px.png");
+		display: block;
+	}
+
 	#notas{
 		margin-top: 139px;
 	}
@@ -1301,6 +1322,13 @@ header #menup .opciones .iconos #icono-mapa{
 }
 
 @media screen and (max-width: 430px){
+	
+	#grafico .content img{
+		content: url("grafico/tabla320px.png");
+		display: block;
+		margin: 0 auto;
+	}
+
 	#footer .bloque1 .derechos{
 		width: 130px;
 	}
