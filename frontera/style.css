@@ -894,11 +894,6 @@ header #menup .opciones .iconos #icono-mapa{
     font-size: 24px;
     margin: 0;
     text-align: left;
-<<<<<<< HEAD
-    line-height: 82px;
-    margin: 40px 0px;
-    color: #303841;
-=======
     line-height: 52px;
     margin: 0 auto;
     text-align: center;
@@ -908,7 +903,6 @@ header #menup .opciones .iconos #icono-mapa{
     top: 74px;
     width: 500px;
     height: 60px;
->>>>>>> 75345848fa1b0581f8e9d22772b73813147a45b4
 }
 
 #videos .video{
@@ -1099,7 +1093,81 @@ header #menup .opciones .iconos #icono-mapa{
     margin: 0 auto;
 }
 
+#galerias .icono-movil, #galerias .icono-movil-2{
+	display: none;
+}
+
+#share{
+	position: fixed;
+    width: 125px;
+    height: 300px;
+    bottom: -265px;
+    right: -9px;
+    z-index: 600;
+}
+
+#share ul{
+	padding: 0;
+	margin: 0;
+}
+
+#share ul li{
+	list-style: none;
+	display: inline-block;
+    vertical-align: top;
+}
+
+#share ul .f a{
+	display: block;
+	width: 77px;
+    height: 77px;
+}
+
+#share ul .t a{
+	display: block;
+	width: 33px;
+    height: 77px;
+}
+
+#share ul .f{
+	background: url(iconos/icono-share.svg) no-repeat -12px -10px/160px auto;
+    width: 80px;
+    height: 38px;
+}
+
+#share ul .t{
+	background: url(iconos/icono-share.svg) no-repeat -94px -10px/160px auto;
+    width: 33px;
+    height: 38px;
+    position: relative;
+    left: -3px;
+}
+
 @media screen and (max-width: 768px){
+	
+	#galerias .icono-movil{
+		display: block;
+	    background: url(iconos/botonera-movil.svg) no-repeat 0px 0px/120px auto;
+	    width: 105px;
+	    height: 38px;
+	    position: absolute;
+	    top: 120px;
+	    right: 50px;
+	    z-index: 50;
+	    opacity: .7;
+	}
+
+	#galerias .icono-movil-2{
+		display: block;
+	    background: url(iconos/botonera-movil.svg) no-repeat 0px 0px/120px auto;
+	    width: 105px;
+	    height: 38px;
+	    position: absolute;
+	    top: 120px;
+	    right: 50px;
+	    z-index: 50;
+	    opacity: .7;
+	}
 
 	.titulo-frontera{
 		width: 100%;
