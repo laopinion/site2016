@@ -1046,8 +1046,26 @@ header #menup .opciones .iconos #icono-mapa{
 
 
 @media screen and (max-width: 768px){
+	
+	#notas{
+		margin-top: 305px;
+	}
+
 	#notas .content{
 		width: 100%;
+	}
+
+	#notas .content .bloque h2{
+		width: 100%;
+		text-align: center;
+	}
+
+	#notas .content .bloque .cuadro{
+		margin: 0 auto;
+	}
+
+	#notas .content .bloque .right .foto{
+		margin-top: 10px;
 	}
 
 	#notas .content .bloque{
@@ -1063,8 +1081,204 @@ header #menup .opciones .iconos #icono-mapa{
 		margin-bottom: 0;
 	}
 
+	#notas .content .bloque.tres{
+		margin-top: 419px;
+	}
+
+	#notas .content .bloque.tres h2{
+		width: 100%;
+		text-align: center;
+	}
+
+	#notas .content .bloque.tres .titulo{
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#notas .content .bloque.cuatro{
+		margin-top: 0;
+	}
+
+	#notas .content .bloque .dos h2{
+		width: 100%;
+		text-align: center;
+	}
+
 	#notas .content .bloque .left, #notas .content .bloque .right{
 		float: none;
 		display: block;
+	}
+
+	#videos .content{
+		width: 100%;
+	}
+
+	#galerias .content{
+		width: 100%;
+	}
+
+	#frases{
+		height: 500px;
+	}
+
+	#frases .caja{
+		width: 100%;
+		margin: 60px auto 60px auto
+	}
+
+
+	#frases .caja .bloque .frase h2{
+		font-size: 30px;
+	    width: 300px;
+	    margin: 0 20%;
+	}
+
+	#frases .caja .bloque .frase .info{
+		margin-top: 60px;
+	    flex-direction: column;
+	    justify-content: center;
+	    align-items: center;
+	    -webkit-justify-content: center;
+	    -webkit-flex-direction: column;
+	    -webkit-align-items: center;
+	    -moz-justify-content: center;
+	    -moz-flex-direction: column;
+	    -moz-align-items: center;
+	    width: 70%;
+	}
+
+	#frases .caja .bloque .frase .info span{
+		font-size: 25px;
+	}
+
+	#frases .caja .bloque .frase{
+		background-position-y: -80px;
+    	background-position-x: -60px;
+	}
+
+	#frases .btn-izq{
+		bottom: 53%;
+	}
+
+	#frases .btn-der{
+		bottom: 53%;
+	}
+
+	#footer .bloque2{
+		width: 100%;
+	}
+
+	#footer .bloque2 ul{
+		margin: 0 60px;
+	}
+
+	.historia{
+		width: 80%;
+	}
+
+	.historia .media img{
+		width: 100%;
+    	height: auto;
+	}
+
+	.historia .info{
+		margin: 0;
+	    margin-top: 10px;
+	    height: 463px;
+	}
+
+	.historia h3{
+		width: 100%;
+    	margin-left: 10px;
+	}
+}
+
+@media screen and (max-width: 600px){
+	#frases{
+		display: none;
+	}
+
+	#notas{
+		margin-top: 235px;
+	}
+}
+
+@media screen and (max-width: 530px){
+	#videos .content h2{
+		width: 100%;
+		height: auto;
+	}
+
+	#galerias .content h2{
+		width: 100%;
+		height: auto;
+	}
+
+	.historia .info{
+		height: 550px;
+	}
+
+	#notas .content .bloque img{
+		width: 100%;
+		height: auto;
+	}
+
+	#notas .content .bloque.dos .left{
+		margin-right: 0;
+	}
+
+	#notas .content .bloque.cinco .left{
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 480px){
+	#notas{
+		margin-top: 139px;
+	}
+
+	#footer .bloque2 ul{
+		margin: 0 50px;
+	}
+
+	header #menup{
+		left: -150%;
+	}
+
+	#videos{
+		margin: 0;
+	}
+
+	#galerias{
+		margin: 0;
+	}
+
+	#notas .content .bloque h2{
+		font-size: 50px;
+		line-height: 52px;
+	}
+
+	.historia h3{
+		font-size: 22px;
+    	margin-left: 5px;
+	}
+
+	#notas .content .bloque.tres{
+		margin-top: 210px;
+	}
+
+}
+
+@media screen and (max-width: 430px){
+	#footer .bloque1 .derechos{
+		width: 130px;
+	}
+
+	#footer .bloque2 ul{
+		margin: 0 8%;
+	}
+
+	#notas .content .bloque .cuadro{
+		width: 100%;
 	}
 }
