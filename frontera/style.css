@@ -1076,8 +1076,28 @@ header #menup .opciones .iconos #icono-mapa{
   margin-bottom: 70px;
 }
 
+.titulo-frontera{
+	width: 645px;
+    height: auto;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
 
 @media screen and (max-width: 768px){
+
+	.titulo-frontera{
+		width: 100%;
+	    height: auto;
+	    top: 0;
+	}
+
+	.titulo-frontera img{
+		width: 100%;
+    	height: auto;
+	}
 	
 	#grafico .content{
 		width: 100%;
@@ -1323,6 +1343,12 @@ header #menup .opciones .iconos #icono-mapa{
 }
 
 @media screen and (max-width: 430px){
+
+	.titulo-frontera img{
+		position: relative;
+	    right: -20px;
+	    top: 40px;
+	}
 	
 	#grafico .content img{
 		content: url("grafico/tabla320px.png");
@@ -1340,5 +1366,11 @@ header #menup .opciones .iconos #icono-mapa{
 
 	#notas .content .bloque .cuadro{
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 320px){
+	#notas{
+		margin-top: 83px;
 	}
 }
