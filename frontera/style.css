@@ -1,6 +1,6 @@
 @import 'https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700';
 body{
-	font-family: 'PT Sans Narrow', sans-serif;
+	font-family: 'PT Sans Narrow', sans-serif !important;
 	display: flex;
     flex-direction: column;
     display: -webkit-flex;
@@ -1076,6 +1076,19 @@ header #menup .opciones .iconos #icono-mapa{
   margin-bottom: 70px;
 }
 
+#mapa{
+  background: rgba(255,255,255,1);
+  padding: 40px 0px 40px 0px;
+  margin:70px 0px;
+  width: 100%; 
+  float: left;
+  position: relative;    
+  text-align: center;
+  flex: 1;
+  -webkit-flex: 1;
+  -moz-flex: 1;
+}
+
 .titulo-frontera{
 	width: 645px;
     height: auto;
@@ -1113,6 +1126,10 @@ header #menup .opciones .iconos #icono-mapa{
 		display: block;
 		margin: 0 auto;
 	}
+
+  #mapa .content{
+    width: 100%;
+  }
 	
 	#notas{
 		margin-top: 305px;

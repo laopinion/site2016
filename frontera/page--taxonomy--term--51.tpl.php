@@ -6,8 +6,7 @@
 	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="normalize.css">
-	<link rel="stylesheet" href="style.css">
-	<link rel="icon" type="image/png" href="favicon.png" />
+	<link rel="stylesheet" href="<?php print base_path(); ?>sites/default/themes/especiales/frontera/style.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" >
@@ -36,21 +35,10 @@
 
 </head>
 <body>
-	<script type="text/javascript" src="js/jssor.js"></script>
-    <script type="text/javascript" src="js/jssor.slider.js"></script>
+	<script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/js/jssor.js"></script>
+    <script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/js/jssor.slider.js"></script>
 
-    <!-- GOOGLE ANALYTICS -->
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-67615305-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-<!-- FIN GOOGLE ANALYTICS -->
+    
     <script>
     	jQuery(document).ready(function ($) {
     		var _CaptionTransitions = [];
@@ -325,7 +313,7 @@
 	<section id="fondo-color"></section>
 	<div id="historia-1" class="historia">
 		<div class="media">
-			<img src="historias/paracos-2.jpg" alt="historia-1">
+			<img src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/historias/paracos-2.jpg" alt="historia-1">
 		</div>
 		<h3>Las bandas criminales que Maduro llama paramilitares</h3>
 		<article class="info">
@@ -404,7 +392,7 @@
 
 	<div id="historia-2" class="historia">
 		<div class="media">
-			<img src="historias/sanantonio-2.jpg" alt="historia-2">
+			<img src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/historias/sanantonio-2.jpg" alt="historia-2">
 		</div>
 		<h3>San Antonio y Ureña, de poblaciones concurridas a fantasmas</h3>
 		<article class="info">
@@ -460,7 +448,7 @@
 
 	<div id="historia-3" class="historia">
 		<div class="media">
-			<img src="historias/analisis-2.jpg" alt="historia-3">
+			<img src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/historias/analisis-2.jpg" alt="historia-3">
 		</div>
 		<h3>El principio del fin</h3>
 		<article class="info">
@@ -499,7 +487,7 @@
 
 	<div id="historia-4" class="historia">
 		<div class="media">
-			<img src="historias/contrabando-2.jpg" alt="historia-4">
+			<img src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/historias/contrabando-2.jpg" alt="historia-4">
 		</div>
 		<h3>El contrabando: antes y ahora</h3>
 		<article class="info">
@@ -598,7 +586,7 @@
 
 	<div id="historia-5" class="historia">
 		<div class="media">
-			<img src="historias/rita-2.jpg" alt="historia-5">
+			<img src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/historias/rita-2.jpg" alt="historia-5">
 		</div>
 		<h3>Rita, una de las caras solidarias que dejó la crisis fronteriza</h3>
 		<article class="info">
@@ -646,7 +634,7 @@
 		</article>
 	</div>
 	<div class="titulo-frontera">
-		<img src="titulo.png" alt="Frontera">
+		<img src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/titulo.png" alt="Frontera">
 	</div>
 	<section id="notas">
 		<div class="content">
@@ -657,12 +645,12 @@
 				      	Jhon Jairo Jácome
 				    </div> -->
 				    <div class="cuadro">
-				    	<a href="#historia1">Ver nota</a>
+				    	<a href="#historia1">ver nota</a>
 				    </div>
 		    	</div>
 		    	<div class="right">
 				    <div class="foto">
-				      	<a href="#historia1"><img src="historias/paracos-1.jpg"></a>
+				      	<a href="#historia1"><img src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/historias/paracos-1.jpg"></a>
 				    </div>	
 		    	</div>
 		    </div>
@@ -670,7 +658,7 @@
 		    <div class="bloque dos">
 		      <div class="left">
 				    <div class="foto">
-				      	<a href="#historia2"><img src="historias/sanantonio-1.jpg"></a>
+				      	<a href="#historia2"><img src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/historias/sanantonio-1.jpg"></a>
 				    </div>
 		    	</div>
 		    	<div class="right">
@@ -679,9 +667,19 @@
 				      	Eilyn Cardozo
 				    </div> -->
 				    <div class="cuadro">
-				    	<a href="#historia2">Ver nota</a>
+				    	<a href="#historia2">ver nota</a>
 				    </div>
 		    	</div>	
+		    </div>
+
+		    <div class="bloque tres">
+		        <h2><a href="#historia3">El principio del fin</a></h2>
+		       <div class="cuadro">
+			    	<a href="#historia3">ver nota</a>
+			    </div>	
+			    <div class="titulo">	
+				    Analista universidad del Rosario
+				</div>
 		    </div>
 
 		    <div class="bloque cuatro">
@@ -691,12 +689,12 @@
 				      	Helena Sánchez
 				    </div> -->
 				    <div class="cuadro">
-				    	<a href="#historia4">Ver nota</a>
+				    	<a href="#historia4">ver nota</a>
 				    </div>
 		    	</div>
 		    	<div class="right">
 				    <div class="foto">
-				      	<a href="#historia4"><img src="historias/contrabando-1.jpg"></a>
+				      	<a href="#historia4"><img src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/historias/contrabando-1.jpg"></a>
 				    </div>	
 		    	</div>
 		    </div>
@@ -704,7 +702,7 @@
 		    <div class="bloque cinco">
 		      <div class="left">
 				    <div class="foto">
-				      	<a href="#historia5"><img src="historias/rita-1.jpg"></a>
+				      	<a href="#historia5"><img src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/historias/rita-1.jpg"></a>
 				    </div>
 		    	</div>
 		    	<div class="right">
@@ -713,19 +711,9 @@
 				      	#
 				    </div> -->
 				    <div class="cuadro">
-				    	<a href="#historia5">Ver nota</a>
+				    	<a href="#historia5">ver nota</a>
 				    </div>
 		    	</div>	
-		    </div>
-
-		    <div class="bloque tres">
-		        <h2><a href="#historia3">El principio del fin</a></h2>
-		       <div class="cuadro">
-			    	<a href="#historia3">Ver nota</a>
-			    </div>	
-			    <div class="titulo">	
-				    Ronal Rodríguez
-				</div>
 		    </div>
 
 		    <div class="historia huno">
@@ -763,140 +751,140 @@
         	<!-- Slides Container -->
 	        <div data-u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;height: 700px; overflow: hidden;">
 	            <div>
-	                <img data-u="image" src="galerias/uno/12.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/12.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Hasta animales como este cerdo, sufrieron el drama del cierre de frontera. Ayudados por sus dueños muchos cruzaron por el río Táchira.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/01.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/01.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Incertidumbre después del cierre de frontera. Varios deportados miran los reportes noticiosos de los medios colombianos.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/02.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/02.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Aspecto del cierre fronterizo en Puerto Santander. El flujo de contrabando de gasolina y el paso de personas por el río.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/03.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/03.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Cientos de venezolanos hicieron largas filas en el consulado venezolano en Cúcuta esperando la autorización para retornar a su lugar de origen.</div>
 	            		<div class="autor">Foto: Edinsson Figueroa</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/04.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/04.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Durante varios días la gente se agolpó en la frontera esperando una oportunidad para poder cruzar.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/05.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/05.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Autoridades custodiaron las vallas constantemente para impedir el paso de personas entre Colombia y Venezuela.</div>
 	            		<div class="autor">Foto: Mario Caicedo</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/06.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/06.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Miles de colombianos fueron deportados de Venezuela, lo que generó una crisis humanitaria que afectó directamente a Norte de Santander.</div>
 	            		<div class="autor">Foto: Luis Alfredo Estévez</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/07.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/07.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Las autoridades colombianas y venezolanas replantearon el paso de pacientes con medicamentos por los puentes Simón Bolívar y Francisco de Paula Santander.</div>
 	            		<div class="autor">Foto: Luis Alfredo Estévez</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/08.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/08.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">El paso a estudiantes también fue permitido. Los niños empezaron a recibir las primeras atenciones de parte de las autoridades colombo-venezolanas y se amplió en dos horas el paso de personas.</div>
 	            		<div class="autor">Foto: Rodrigo Sandoval</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/09.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/09.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Encuentro de los obispos de Cúcuta y San Cristóbal, monseñor Víctor Manuel Ochoa y monseñor Mario del Valle Moronta en el puente internacional Simón Bolívar, donde reclamaron a los gobiernos de Colombia y Venezuela una pronta solución a la crisis.</div>
 	            		<div class="autor">Foto: Mario Caicedo</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/10.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/10.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Por decreto presidencial, la República Bolivariana de Venezuela cerró el 3 de diciembre de 2015, a las 6 de la tarde, el corredor humanitario que había sido habilitado después del cierre de frontera.</div>
 	            		<div class="autor">Foto: Mario Caicedo</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/11.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/11.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Paso masivo de venezolanos hacia Cúcuta en busca de productos de la canasta familiar.</div>
 	            		<div class="autor">Foto: Juan Pablo Bayona</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/20.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/20.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">En la frontera hicieron presencia miembros de la Comisión Interamericana de Derechos Humanos (CIDH) para verificar las condiciones en que llegaron los repatriados.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/13.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/13.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Esta imagen lograda en los días posteriores al cierre de frontera muestra las montañas de enseres al lado del río Táchira, traídas por los colombianos repatriados desde Venezuela.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/14.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/14.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Autoridades colombianas y venezolanas custodiaron ambos lados de la frontera.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/15.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/15.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">El contrabando no cesó pese al cierre de frontera, esta imagen captada en La Parada lo demuestra.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/16.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/16.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Tras el paso masivo de venezolanos con la apertura parcial de la frontera, decenas de buses colmaron su cupo con el traslado de los connacionales a Cúcuta.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/17.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/17.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Miembros de la Defensa Civil monitorearon la apertura parcial del sábado 13 de agosto del 2016.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/18.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/18.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Casi un año después del cierre, la alcabala de San Antonio volvió a ver el paso masivo de propios y turistas sin restricciones.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/uno/19.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/uno/19.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Miembros de la Guardia Nacional Bolivariana (GNB) controlaron el paso de personas durante la apertura de la frontera.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
@@ -918,175 +906,175 @@
         	<!-- Slides Container -->
 	        <div data-u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 1300px;height: 700px; overflow: hidden;">
 	            <div>
-	                <img data-u="image" src="galerias/dos/12.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/12.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Jornadas de vacunación en los albergues fueron motivo de dolor para unos y de aprendizaje para otros.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/01.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/01.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Lenny Trinidad Mora, una teniente de las fuerzas militares venezolanas, recibió a su hija en el Puente Internacional Simón Bolívar, quince días después del cierre.</div>
 	            		<div class="autor">Foto: Rodrigo Sandoval</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/02.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/02.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Esta foto, que se volvió viral y se convirtió en el símbolo del cierre de la frontera refleja la inocencia de dos hermanas, separadas físicamente, pero unidas de corazón.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/03.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/03.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Yanid Antonio Villa Arboleda, posa con el documento expedido por las autoridades venezolanas, y en el que se le reconoce como refugiado, frente a los pocos objetos que logró sacar de su vivienda y traer hasta La Parada.</div>
 	            		<div class="autor">Foto: Edinsson Figueroa</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/04.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/04.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Reencuentro de Brayan Rueda y Marcela Maldonado, con su pequeño hijo de un año de nacido en el puente internacional Simón Bolívar tras el cierre de la frontera entre Colombia y Venezuela.</div>
 	            		<div class="autor">Foto: Jean Carlo Estupiñán</div>
 	            	</div>
 	            </div>
 	            <div>
-	            	<img data-u="image" src="galerias/dos/05.jpg" alt="" />
+	            	<img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/05.jpg" alt="" />
 	            	<div class="info">
 	            		<div class="desc">Este niño de apellidos Martínez Murillo es amante del rap y se encargó de devolver la alegria con su canto a las personas del albergue.</div>
 	            		<div class="autor">Foto: Edinsson Figueroa</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/06.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/06.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Duquesa, la perrita que se volvió famosa porque su dueño, un niño que fue deportado, decidió regresar a Venezuela por ella y no lo querían dejar pasar. Finalmente el reencuentro se dio. </div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/07.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/07.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Los niños, los más afectados con el cierre pues aguantaron largas horas al sol, desolados y esperando su regreso.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/08.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/08.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">En esta foto se mezclan la frustración, la desesperación y el amor, pues esta mujer comparte lo que tiene para comer con sus mascotas, mientras llora al lado de lo que pudo sacar de Venezuela.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/09.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/09.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">En el albergue de Juan Frío los víveres se convirtieron en un lugar de juegos, para los más pequeños.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/10.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/10.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Tras su visita a los albergues, Luis Almagro, secretario general de la OEA, abraza a dos deportados y juntos sonríen.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/11.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/11.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">La frialdad con la que este guardia venezolano revisa los papeles de una menor que le implora que le permita el paso fue motivo de rechazo por parte de la comunidad.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/13.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/13.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">A los niños no les importa el lugar donde tengan que comer, desde que esté rico, lo disfrutan sin mediar palabra.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/14.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/14.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">La alimentación fue motivo de sonrisas para estos pequeños, que vivieron de cerca el drama del cierre fronterizo.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/15.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/15.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Visitar los supermercados en Cúcuta llenó de alegria a algunos y de esperanza a otros, ante la escasez en Venezuela.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/16.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/16.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Visitar los supermercados en Cúcuta llenó de alegria a algunos y de esperanza a otros, ante la escasez en Venezuela.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/17.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/17.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">La noche del cierre dos deportados aguardaban pacientemente y mirando por una de las ventanas de Migración la frontera con la esperanza de que la situación mejorara pronto, como en otras ocasiones.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/18.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/18.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Después de varios intentos fallidos para cruzar la frontera, estas monjitas lograron su cometido.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/19.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/19.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Los resguardos improvisados días después del cierre fueron protagonistas en la travesía fronteriza de colombianos, que con sus cosas al hombro trataban de salvar lo conseguido en varios años.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/20.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/20.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">La desesperación de los colombianos días despues del cierre se reflejó en las trochas cuando intentaron salvar lo poco que tenían.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/21.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/21.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Niños, jóvenes y adultos protegieron sus pertenencias pese a las inclemencias del clima.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/22.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/22.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Con sus cosas al hombro, los repatriados trataban de salvar lo conseguido en varios años de vida en Venezuela.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/23.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/23.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Francinet Cuervo Echeverry, un anciano de 101 años de edad que fue deportado desde Venezuela, luego, al ver la situación en Colombia, volvió voluntariamente a cruzar la frontera.</div>
 	            		<div class="autor">Foto: Edinson Figueroa</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/24.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/24.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">Iván Enrique Bustos Sosa, el campesino que huyó de Venezuela y que intentó conseguir refugio con 11 vacas de su propiedad en Colombia.</div>
 	            		<div class="autor">Foto: Mario Caicedo</div>
 	            	</div>
 	            </div>
 	            <div>
-	                <img data-u="image" src="galerias/dos/25.jpg" alt="" />
+	                <img data-u="image" src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/galerias/dos/25.jpg" alt="" />
 	                <div class="info">
 	            		<div class="desc">La reapertura permitió a uno de nuestros fotografos registrar nuevamente la mirada de Bolivar, en este mural de San Antonio del Táchira.</div>
 	            		<div class="autor">Foto: Juan Pablo Cohen</div>
@@ -1105,10 +1093,10 @@
 	<section id="grafico">
 		<div class="content">
 			<h2>Los sectores económicos y el cierre de frontera</h2>
-			<img src="grafico/tabla1000px.png">
+			<img src="<?php print base_path(); ?>sites/default/themes/especiales/frontera/grafico/tabla1000px.png">
 		</div>
 	</section>
-	
+
 
 	<!--VIDEO-->
 	<section id="video">
@@ -1435,12 +1423,6 @@
 		</section>
 	</section>
 
-
-	<section id="mapa">
-			<iframe src="https://uploads.knightlab.com/storymapjs/30a476e8569b55fa6c45aa747d6389f0/cierre-de-frontera-el-exodo-de-patrias-hermanas/index.html" frameborder="0" width="100%" height="800"></iframe>
-	</section>
-	
-
 	<footer id="footer">
 		<section class="bloque1">
 			<ul class="derechos">
@@ -1475,9 +1457,9 @@
 			<ul>
 				<li>Reporteros
 					<ul>
-						<li><a href="https://twitter.com/jhonjacome" target="_blank">- Jhon Jacome</a></li>
 						<li><a href="https://twitter.com/helenasanchezt" target="_blank">- Helena Sanchez</a></li>
 						<li><a href="https://twitter.com/jennifer_rincon" target="_blank">- Jennifer Rincon</a></li>
+						<li><a href="https://twitter.com/jhonjacome" target="_blank">- Jhon Jacome</a></li>
 						<li><a href="https://twitter.com/Eilyncardozo" target="_blank">- Eilyn Cardozo</a></li>
 						<li><a href="https://twitter.com/najivy">- Najivy Benitez</a></li>
 						<li><a href="https://twitter.com/leo_reportero">- Leonardo Oliveros</a></li>
