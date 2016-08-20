@@ -278,7 +278,25 @@
 				$("#historia-4").removeClass("open");
 				$("#historia-5").removeClass("open");
 				$('body').css('overflow-y','scroll');
-			});			
+			});
+
+			var windows_width = $(window).width();
+			if (windows_width <= 480){
+				$('#player').remove();
+				$('#video .movil').css("display", "block");
+			}
+
+			$(window).resize(function(){
+				var windows_width = $(window).width();
+				if(windows_width <= 480){
+					$('#video #player').remove();
+					$('#video .movil').css("display", "block");
+				}else{
+					$('#video').append('<iframe id="player" width="100%" height="100%" src="//www.youtube.com/embed/Qr85LclTOfM?modestbranding=1&rel=0&autoplay=1&loop=1&playlist=Qr85LclTOfM&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>');
+					$('#video .movil').css("display", "none");
+				}
+			});
+
 		});
 	</script>
 	<header>
@@ -1121,7 +1139,7 @@
 	<section id="video">
 		
 		<iframe id="player" width="100%" height="100%" src="//www.youtube.com/embed/Qr85LclTOfM?modestbranding=1&rel=0&autoplay=1&loop=1&playlist=Qr85LclTOfM&autohide=1&showinfo=0&controls=0" frameborder="0" allowfullscreen></iframe>
-		
+		<img class="movil" src="bgr.jpg" alt="fondo">
 		<!--
 		<object width="847" height="499.7">
 		    <param name="movie" value="http://www.youtube.com/embed/Qr85LclTOfM">
