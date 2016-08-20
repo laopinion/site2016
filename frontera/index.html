@@ -18,8 +18,8 @@
 	<meta itemprop="inLanguage" content="es-ES" />
 	<meta property="og:locale:alternate" content="es_CO" />
 	<meta property="og:locale" content="es_CO" />
-	<link rel="canonical" href="http://www.laopinion.com.co">
-	<link rel="image_src" href="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg" />
+	<link rel="canonical" href="http://especiales.laopinion.com.co">
+	<link rel="image_src" href="http://especiales.laopinion.com.co/frontera/compartir.jpg" />
 
 	<meta name="ROBOTS" content="FOLLOW">
 	<meta name="author" content="Especiales - La Opinión" />
@@ -31,8 +31,19 @@
 	<meta itemprop="name" content="Especiales del diario La Opinión" />
 	<meta itemprop="description" name="description" content="Especiales noticiosos del diario La Opinión de Cúcuta, Norte de santander y la frontera entre Colombia y Venezuela especiales.laopinion.com.co"/>
 
-	<meta itemprop="image" content="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg" />
-	<meta name="twitter:image" content="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg"/>
+	<meta itemprop="image" content="http://especiales.laopinion.com.co/frontera/compartir.jpg" />
+	<meta name="twitter:image" content="http://especiales.laopinion.com.co/frontera/compartir.jpg"/>
+	<!-- Open Graph data -->
+	<meta property="og:title" content="La frontera, un año despues del cierre" />
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="http://especiales.laopinion.com.co/frontera/index.html" />
+	<meta property="og:image" content="http://especiales.laopinion.com.co/frontera/compartir.jpg" />
+	<meta property="og:site_name" content="Especiales - La Opinión" />
+	<!-- Twitter data -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:site" content="@laopinioncucuta">
+	<meta name="twitter:title" content="La frontera, un año despues del cierre">
+	<meta name="twitter:image" content="http://especiales.laopinion.com.co/frontera/compartir.jpg">
 
 </head>
 <body>
@@ -51,6 +62,17 @@
 
 </script>
 <!-- FIN GOOGLE ANALYTICS -->
+<!-- TWITTER SHARE-->
+<script>
+    !function(d,s,id){
+      var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';
+      if(!d.getElementById(id)){
+        js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js,fjs);
+      }
+    }(document,"script","twitter-wjs");
+</script>
+<!-- FIN TWITTER SHARE-->
     <script>
     	jQuery(document).ready(function ($) {
     		var _CaptionTransitions = [];
@@ -171,10 +193,6 @@
 			      }, 1000, 'swing', function () {
 			          window.location.hash = target;
 			      });
-			      $("#menup").toggleClass('desplegar');
-			      $('.logo_top').toggleClass('desplegar');
-				  $('.redes-sociales').toggleClass('desplegar');
-				  $('#hamburger').toggleClass('desplegar');
 			});
 
 			var altoTotal = $(window).height();
@@ -725,6 +743,9 @@
 		    <div class="bloque tres">
 		    	<div class="left">
 		        	<h2><a href="#historia3">El principio del fin</a></h2>
+		        	<div class="titulo">	
+					    Ronal Rodríguez
+					</div>
 			       <div class="cuadro">
 				    	<a href="#historia3">Ver nota</a>
 				    </div>	
@@ -733,9 +754,6 @@
 		    		<div class="foto">
 		    			<a href="#historia3"><img src="historias/principio-fin-1.jpg" alt="historia"></a>
 		    		</div>
-				    <div class="titulo">	
-					    Ronal Rodríguez
-					</div>
 		    	</div>
 		    </div>
 
@@ -1455,9 +1473,10 @@
 
 	<div id="share">
 		<ul>
-			<li class="f"><a href="#facebook"></a></li>
-			<li class="t"><a href="#twitter"></a></li>
-		</ul>
+			<li class="f"><a href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=http://especiales.laopinion.com.co/frontera/index.html ?>&amp;title=La frontera, un año despues del cierre', 'facebook-share-dialog', 'width=626,height=436'); return false;"></a></li>
+          	
+          	<li class="t"><a href="https://twitter.com/intent/tweet?original_referer=http://especiales.laopinion.com.co/frontera/index.html&amp;text=La frontera, un año despues del cierre. - Especiales La Opinión&amp;tw_p=tweetbutton&amp;url=http://especiales.laopinion.com.co/frontera/index.html"></a></li>
+        </ul>
 	</div>
 	<footer id="footer">
 		<section class="bloque1">
