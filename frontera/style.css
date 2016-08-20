@@ -686,6 +686,15 @@ header #menup .opciones .iconos #icono-mapa{
     z-index: -100;
 }
 
+#video .movil{
+	display: none;
+	position: fixed;
+	top: 0;
+	height: auto;
+	width: 100%;
+	z-index: -100;
+}
+
 #video iframe{
 	position: absolute;
     left: 0;
