@@ -1,7 +1,7 @@
   <section class="detailContent">
       <div id="home">
       	<div id="content">
-      		<?php include("olimpicos_home.tpl.php"); ?>
+      		<?php //include("olimpicos_home.tpl.php"); ?>
 		    <div class="left">
 		      	<div class="izq">
 		      		<!--Destacada--><?php $view = views_get_view('principal'); print $view->preview('block'); ?><!--FIN Destacada-->
@@ -68,3 +68,20 @@
 		</div>
       </div> 
   </section>
+
+  <!-- Script FACEBOOK player -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<!-- FIN Script FACEBOOK player -->
+<!-- Script INSTAGRAM player -->
+<script async defer src=//platform.instagram.com/en_US/embeds.js></script>
+<!-- FIN Script INSTAGRAM player -->
+<!-- Script VINE player -->
+<script src=https://platform.vine.co/static/scripts/embed.js></script>
+<!-- FIN Script VINE player -->

@@ -583,39 +583,64 @@ $(document).ready(function(){
     });
 
 //VIDEOS
-      var fila = ".view-id-principal.view-display-id-block_9 .views-row-";
-      var titulo = $(".view-id-principal.view-display-id-block_9 .video .titulo").text();
-      var idYoutube = $(fila + "1" + " .video .id").text();
-      var autoPlay = 0;
-      $(".view-id-principal.view-display-id-block_9 .views-row").addClass("inactive");
-      //GlobalFunctions
-      function limpiar(valFila){ $(fila + valFila + ".inactive" + " .video").css({opacity:"0.9"});}
-      function llenar(valFila){$(fila + valFila + ".inactive" + " .video").css({opacity:"1", left:"0"});}
-      function videoContent(valIdYoutube, valAutoPlay, titulo){
-        $(".view-id-principal.view-display-id-block_9 .frame_video").empty().append("<iframe width=685 height=500px src=http://www.youtube.com/embed/" + valIdYoutube + "?showinfo=0&autohide=0&autoplay=" + valAutoPlay + " frameborder=0 allowfullscreen></iframe>");
-        $(".view-id-principal.view-display-id-block_9 .titulo_video").empty().append(titulo);
-        $(".view-id-principal.view-display-id-block_9 .views-row").addClass("inactive");
+  var contador = 0;
+  var valAutoPlay = 0;
+  var principal = 0;
+  var fila = ".view-id-principal.view-display-id-block_9 .views-row-";
+  $(".view-id-principal.view-display-id-block_9 .views-row").each(function(){
+    var plataforma = $(this).find(".plataforma").html();
+    if(principal == 0){
+      if(plataforma == "YouTube"){ 
+        var idYoutube = $(this).find(".id").html();
+        var youtubeplayer = "<iframe class=iframeyoutube width=685 height=500px src=http://www.youtube.com/embed/" + idYoutube + "?showinfo=0&autohide=0&autoplay=" + valAutoPlay + " frameborder=0 allowfullscreen></iframe>";
+        $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
+        principal++;
+      }else{
+        var idfacebook = $(this).find(".id").html();
+        var facebookplayer = "<div class=fb-video data-href=https://www.facebook.com/" + idfacebook + "/ data-width=685 data-show-text=false><blockquote cite=https://www.facebook.com/" + idfacebook + "/ class=fb-xfbml-parse-ignore><a href=https://www.facebook.com/" + idfacebook + "/></a></blockquote></div>";
+        $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
+        principal++;
       }
-      
-      //LoadVideo
-      llenar(1);
-      videoContent(idYoutube, 0);
-      //OverFunction
-      $(fila + "1.inactive").mouseover(function(){llenar(1);});$(fila + "1.inactive").mouseleave(function(){limpiar(1);});
-      $(fila + "2.inactive").mouseover(function(){llenar(2);});$(fila + "2.inactive").mouseleave(function(){limpiar(2);});
-      $(fila + "3.inactive").mouseover(function(){llenar(3);});$(fila + "3.inactive").mouseleave(function(){limpiar(3);});
-      $(fila + "4.inactive").mouseover(function(){llenar(4);});$(fila + "4.inactive").mouseleave(function(){limpiar(4);});
-      //ClickFunction
-      $(fila + "1").click(function(){idYoutube = $(fila + "1" + " .video .id").text();videoContent(idYoutube, 1);$(fila + "1").removeClass("inactive");limpiar(2);limpiar(3);limpiar(4);});
-      $(fila + "2").click(function(){idYoutube = $(fila + "2" + " .video .id").text();videoContent(idYoutube, 1);$(fila + "2").removeClass("inactive");limpiar(1);limpiar(3);limpiar(4);});
-      $(fila + "3").click(function(){idYoutube = $(fila + "3" + " .video .id").text();videoContent(idYoutube, 1);$(fila + "3").removeClass("inactive");limpiar(1);limpiar(2);limpiar(4);});
-      $(fila + "4").click(function(){idYoutube = $(fila + "4" + " .video .id").text();videoContent(idYoutube, 1);$(fila + "4").removeClass("inactive");limpiar(1);limpiar(2);limpiar(3);});
-      $(".view-id-principal.view-display-id-block_9 .views-row-1").removeClass("inactive");
-//PAGINADOR VIDEOS
-      var contentV = ".view-id-principal.view-display-id-block_9 .view-content";
-      function cambiarV(itemV){$(".videos .pagerV li").css({background:"#333"});$(".videos .pagerV .itemV" + itemV).css({background:"#333"});}
-      $(".videos .pagerV .itemV1").click(function(){$(contentV).css({left:"0px"});cambiarV(1);});
-      $(".videos .pagerV .itemV2").click(function(){$(contentV).css({left:"-305px"});cambiarV(2);});
+    }
+
+    if(plataforma == "YouTube"){ 
+      contador++;
+      var id = $(this).find(".id").html();
+      var youtubeplayer = "<div class=youtubeplayer> <iframe class=iframeyoutube width=685 height=500px src=http://www.youtube.com/embed/" + id + "?showinfo=0&autohide=0&autoplay=" + valAutoPlay + " frameborder=0 allowfullscreen></iframe></div>";
+      $(".view-id-principal.view-display-id-block_9 .views-row-"+contador).append(youtubeplayer);
+    }else{
+      contador++;
+      var id = $(this).find(".id").html();
+      var facebookplayer = "<div class=fbplayer> <div class=fb-video data-href=https://www.facebook.com/" + id + "/ data-width=685 data-show-text=false><blockquote cite=https://www.facebook.com/" + id + "/ class=fb-xfbml-parse-ignore><a href=https://www.facebook.com/" + id + "/></a></blockquote></div>";
+      $(".view-id-principal.view-display-id-block_9 .views-row-"+contador).append(facebookplayer);
+    }
+  });
+
+  $(fila + "1").click(function(){
+    var youtubeplayer = $(this).find(".youtubeplayer").html();
+    var facebookplayer = $(this).find(".fbplayer").html(); 
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
+  });
+  $(fila + "2").click(function(){
+    var youtubeplayer = $(this).find(".youtubeplayer").html();
+    var facebookplayer = $(this).find(".fbplayer").html();
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
+  });
+  $(fila + "3").click(function(){
+    var youtubeplayer = $(this).find(".youtubeplayer").html();
+    var facebookplayer = $(this).find(".fbplayer").html();
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
+  });
+  $(fila + "4").click(function(){
+    var youtubeplayer = $(this).find(".youtubeplayer").html();
+    var facebookplayer = $(this).find(".fbplayer").html();
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
+  });
+   
 //COLOR
     $(".view-principal.view-display-id-block_9 .views-row").each(function(){
       var seccionL = $(this).find(".video .seccion .color").html();
