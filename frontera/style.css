@@ -1108,16 +1108,20 @@ header #menup .opciones .iconos #icono-mapa{
 
 #share{
 	position: fixed;
-    width: 125px;
-    height: 300px;
-    bottom: -265px;
-    right: -9px;
+    width: 127px;
+    height: 47px;
+    bottom: 70px;
+    right: 0px;
     z-index: 600;
 }
 
 #share ul{
-	padding: 0;
+  background: url(iconos/icono-share.svg) no-repeat -12px -10px/190px auto;
+	padding: 0px 0px 0px 40px;
 	margin: 0;
+  float: left;
+  position: relative;
+  height: 47px;
 }
 
 #share ul li{
@@ -1128,35 +1132,39 @@ header #menup .opciones .iconos #icono-mapa{
 
 #share ul .f a{
 	display: block;
-	width: 77px;
-    height: 77px;
+	width: 30px;
+  height: 30px;
 }
 
 #share ul .t a{
 	display: block;
-	width: 33px;
-    height: 77px;
+	width: 30px;
+  height: 30px;
 }
 
 #share ul .f{
-	background: url(iconos/icono-share.svg) no-repeat -12px -10px/160px auto;
-    width: 80px;
-    height: 38px;
+	background: url(iconos/icono-share.svg) no-repeat -15px -82px/230px auto;
+  width: 35px;
+  height: 30px;
+  padding: 3px 5px 3px 10px;
+  float: left;
+  position: relative;
 }
 
 #share ul .t{
-	background: url(iconos/icono-share.svg) no-repeat -94px -10px/160px auto;
-    width: 33px;
-    height: 38px;
-    position: relative;
-    left: -3px;
+	background: url(iconos/icono-share.svg) no-repeat -26px -114px/230px auto;
+  width: 35px;
+  height: 30px;
+  padding: 3px 0px 3px 0px;
+  float: left;
+  position: relative;
 }
 
 @media screen and (max-width: 768px){
 	
 	#galerias .icono-movil{
 		display: block;
-	    background: url(iconos/botonera-movil.svg) no-repeat 0px 0px/120px auto;
+	    background: url(iconos/icono-share.svg) no-repeat -20px -114px/230px auto;
 	    width: 105px;
 	    height: 38px;
 	    position: absolute;
