@@ -26,7 +26,17 @@
             }
         }//Fin contenido            
     }
-    .izq{width: 690px;margin-right: 15px;float: left;position: relative;height: auto;
+    .izq{width: 690px;margin-right: 15px;float: left;position: relative;height: auto;   
+        .poster{width: 250px;height: auto;float: left;
+            img{width: 250px;height: auto;}
+        }
+        .info_trailer{width: 670px;height: 330px;background-color: #B92025;position: relative;top: 11px;z-index: -1;padding: 10px;
+            .info{width: 385px;height: 318px;color: #fff;text-align: left;margin-left: 260px;
+                h4{margin-bottom: 0; font-size: 14px;font-weight: 400;}
+                h3{margin-top: 0;font-size: 18px;line-height: 20px;font-weight: 400;}
+                p{margin:0;font-size: 12px;}
+            }
+        }
         //ETIQUETAS Y COMPARTIR
         .barra{background-color: #f1f1f1; position:relative; float:left; width:100%;padding: 5px 0px;
             .etiquetas{font-weight:600; margin-bottom:0px; margin-left: 17px; 

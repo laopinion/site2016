@@ -213,7 +213,7 @@
 				.texto{width: 100%;}
 				.autor{
 					h2{margin: 0;}
-					.field-name-field-descripcion{width: 70%;height: auto;}
+					.field-name-field-descripcion{width: 70%;height: 50px;}
 				}
 				.barra.table{display: block;}
 			}//Fin contenido
@@ -2283,8 +2283,10 @@
 					.content{width:auto; height:auto;}
 				}
 				.view-id-principal.view-display-id-block_9{width:93.7%;
-					.frame_video{width:98%; border-right: none; margin:0px; height:430px;
-						.iframeyoutube{width:97%; height:385px;}
+					.videos{width: 95%;}
+					.frame_video{border: none;width: 100%;position: relative;padding-top: 56.25%;margin-bottom: 15px;margin-top: 15px;height: auto;
+						.iframeyoutube{padding: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;width: 100%;height: 100%;}
+						.fb-video{padding: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;width: 100%;height: 100%;}
 					}
 					.view-content{width: 100%;margin: 0px;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
 						.views-row{margin-right:10px;}
