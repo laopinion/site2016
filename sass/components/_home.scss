@@ -630,10 +630,13 @@
                     .iframeyoutube{padding:15px; position: relative; float:left; height:455px;}
                     .fb-video{padding:15px; position: relative; float:left; height:455px;}
                     .fb-video span iframe{height: 455px!important;}
+                    .iframevine{padding:15px; position: relative; float:left; height:455px;padding-left: 0;}
+                    .instagram-media{display: block;padding:15px; position: relative;height:470px;width: 430px;margin: 0 auto;}
                 }
                 .views-row {margin-bottom:25px;float:left;}
                 .views-row iframe{display: none;}
                 .views-row .fb-video{display: none;}
+                .views-row .instagram-media{display: none!important;}
                 .video{height:auto; float:left; position: relative; width:250px;
                     .plataforma{display: none;}
                     .id{display:none;}

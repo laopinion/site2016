@@ -295,7 +295,7 @@
             $("#description").val('Suscripción por 6 meses');
             ajax('190000');
         }else if(opcion == "1 ano"){
-            $("#amount").val('290000');
+            $("#amount").val('299000');
             $("#description").val('Suscripción por 1 año');
             ajax('290000');
         }else if(opcion == "1 mes"){

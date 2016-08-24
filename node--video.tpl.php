@@ -29,23 +29,7 @@
       <div class="izq">
         <?php
          $tipo_video = render(field_view_field('node', $node, 'field_tipo_de_video', array('label'=>'hidden')));
-         if(stristr($tipo_video, "Trailer")){
-            print "<div class=poster>".render(field_view_field('node', $node, 'field_poster', array('label'=>'hidden')))."</div>";
-            print "<div class=info_trailer>
-              <div class=info>
-                <h4>Película</h4>
-                <h3>Suicide Squad</h3>
-
-                <h4>Director</h4>
-                <h3>Zack Snyder</h3>
-
-                <h4>Reparto</h4>
-                <h3>Will Smith - Jared Leto - Margot Robbie - Joel Kinnaman - Viola Davis</h3>
-                <h4>Sinopsis</h4>
-                <p>Mientras el gobierno no tiene claro cómo responder a una visita alienígena a la Tierra con intenciones malignas, Amanda 'El Muro' Waller (Viola Davis), la líder de la agencia secreta A.R.G.U.S., ofrece una curiosa solución. Esta Oficial de Inteligencia estadounidense cree que la respuesta es reclutar a los villanos más crueles, con habilidades letales y mágicas, para que trabajen para ellos. </p>
-              </div>
-            </div>";
-         }
+         
         print "<div class=barra>";
         if (!empty($content['field_tags'])){ 
           print "<div class=etiquetas><span>Temas - </span>";
@@ -59,7 +43,23 @@
         }
         include("compartirbarra.php");
         print "</div>";
-        print "<div class=texto>".render($content['body'])."</div>";
+
+        if(stristr($tipo_video, "Trailer")){
+            print "<div class=poster>".render(field_view_field('node', $node, 'field_poster', array('label'=>'hidden')))."</div>";
+            print "<div class=info_trailer>
+              <div class=info>
+                <h4>Estreno</h4>
+                <h3>".render(field_view_field('node', $node, 'field_estreno', array('label'=>'hidden')))."</h3>
+
+                <h4>Director</h4>
+                <h3>".render(field_view_field('node', $node, 'field_director', array('label'=>'hidden')))."</h3>
+                <h4>Sinopsis</h4>
+                <div>".render($content['body'])."</div>
+              </div>
+            </div>";
+        }else{
+          print "<div class=texto>".render($content['body'])."</div>";
+        }
         print "<div class=autor>".render($content['field_autor'])."</div>";            
         ?>
         <div class="comentarios">
