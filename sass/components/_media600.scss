@@ -163,13 +163,19 @@
 	}
 	//FIN HOME
 
-	#nota .izq .contenido .texto{
-		overflow: hidden;
-	}
+	#nota .izq .contenido .texto{overflow: hidden;}
 
-	#nota .izq .contenido .texto .twitter-tweet, iframe, img{
-		width: 100%!important;
-	}
+	#nota .izq .contenido .texto .twitter-tweet{width: 100%!important;}
+
+	#nota .izq .contenido .texto iframe{width: 100%!important;}
+
+	#nota .izq .contenido .texto img{width: 100%!important;}
+
+	.notas_footer .vista-recientes-footer .icon_video{right: 90px;}
+
+	.notas_footer .vista-recientes-footer .icon_galeria{right: 90px;}
+
+	.notas_footer .vista-recientes-footer .icon_podcast {right: 90px;}
 
 
 	/*Inicio Videos */

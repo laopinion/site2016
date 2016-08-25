@@ -55,8 +55,9 @@
       }
       print "</div>";
       print "<div class=texto>".render($content['body'])."</div>";
-      print "<div class=autor>".render($content['field_autor'])."</div>";            
+      print "<div class=autor>".render($content['field_autor'])."</div>";           
       ?>
+      <!--formulario--><?php $block = module_invoke('webform', 'block_view', 'newsletter-90572');print render($block['content']); ?><!--FIN formulario-->
     </div>
 
     <!-- ANUNCIO 468x60<div class="pauta p468x60"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php //$block =block_load('block',34); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div></div> --><!--FIN ANUNCIO 468x60-->

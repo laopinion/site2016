@@ -595,10 +595,19 @@ $(document).ready(function(){
         var youtubeplayer = "<iframe class=iframeyoutube width=685 height=500px src=http://www.youtube.com/embed/" + idYoutube + "?showinfo=0&autohide=0&autoplay=" + valAutoPlay + " frameborder=0 allowfullscreen></iframe>";
         $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
         principal++;
-      }else{
+      }else if(plataforma == "Facebook"){
         var idfacebook = $(this).find(".id").html();
         var facebookplayer = "<div class=fb-video data-href=https://www.facebook.com/" + idfacebook + "/ data-width=685 data-show-text=false><blockquote cite=https://www.facebook.com/" + idfacebook + "/ class=fb-xfbml-parse-ignore><a href=https://www.facebook.com/" + idfacebook + "/></a></blockquote></div>";
         $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
+        principal++;
+      }else if(plataforma == "Vine"){
+        var idvine = $(this).find(".id").html();
+        var vineplayer = "<div class=vineplayer> <iframe class=iframevine src=https://vine.co/v/" + idvine + "/embed/simple width=1006 height=500 frameborder=0></iframe></div>";
+        $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(vineplayer);
+        principal++;
+      }else{
+        var idinstagram = $(this).find(".id").html();
+        var instagramplayer = "<div class=instagramplayer><iframe class=instagram-media allowtransparency=true frameborder=0 height=710 scrolling=no src=//instagram.com/p/"+idinstagram+"/embed/ width=612></div>";        $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(instagramplayer);
         principal++;
       }
     }
@@ -608,37 +617,73 @@ $(document).ready(function(){
       var id = $(this).find(".id").html();
       var youtubeplayer = "<div class=youtubeplayer> <iframe class=iframeyoutube width=685 height=500px src=http://www.youtube.com/embed/" + id + "?showinfo=0&autohide=0&autoplay=" + valAutoPlay + " frameborder=0 allowfullscreen></iframe></div>";
       $(".view-id-principal.view-display-id-block_9 .views-row-"+contador).append(youtubeplayer);
-    }else{
+    }else if(plataforma == "Facebook"){
       contador++;
       var id = $(this).find(".id").html();
       var facebookplayer = "<div class=fbplayer> <div class=fb-video data-href=https://www.facebook.com/" + id + "/ data-width=685 data-show-text=false><blockquote cite=https://www.facebook.com/" + id + "/ class=fb-xfbml-parse-ignore><a href=https://www.facebook.com/" + id + "/></a></blockquote></div>";
-      $(".view-id-principal.view-display-id-block_9 .views-row-"+contador).append(facebookplayer);
+      $(".view-id-principal.view-display-id-block_9 .views-row-"+contador).append(facebookplayer); 
+    }else if(plataforma == "Vine"){
+      contador++;
+      var idvine = $(this).find(".id").html();
+      var vineplayer = "<div class=vineplayer> <iframe class=iframevine src=https://vine.co/v/" + idvine + "/embed/simple width=1006 height=500 frameborder=0></iframe></div>";
+      $(".view-id-principal.view-display-id-block_9 .views-row-"+contador).append(vineplayer);
+    }else{
+      contador++;
+      var idinstagram = $(this).find(".id").html();
+      var instagramplayer = "<div class=instagramplayer><iframe class=instagram-media allowtransparency=true frameborder=0 height=710 scrolling=no src=//instagram.com/p/"+idinstagram+"/embed/ width=612></div>";
+      $(".view-id-principal.view-display-id-block_9 .views-row-"+contador).append(instagramplayer);
     }
   });
 
   $(fila + "1").click(function(){
     var youtubeplayer = $(this).find(".youtubeplayer").html();
     var facebookplayer = $(this).find(".fbplayer").html(); 
+    var vineplayer = $(this).find(".vineplayer").html();
+    var instagramplayer = $(this).find(".instagramplayer").html();
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(vineplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(instagramplayer);
   });
   $(fila + "2").click(function(){
     var youtubeplayer = $(this).find(".youtubeplayer").html();
     var facebookplayer = $(this).find(".fbplayer").html();
+    var vineplayer = $(this).find(".vineplayer").html();
+    var instagramplayer = $(this).find(".instagramplayer").html();
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(vineplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(instagramplayer);
   });
   $(fila + "3").click(function(){
     var youtubeplayer = $(this).find(".youtubeplayer").html();
     var facebookplayer = $(this).find(".fbplayer").html();
+    var vineplayer = $(this).find(".vineplayer").html();
+    var instagramplayer = $(this).find(".instagramplayer").html();
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(vineplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(instagramplayer);
   });
   $(fila + "4").click(function(){
     var youtubeplayer = $(this).find(".youtubeplayer").html();
     var facebookplayer = $(this).find(".fbplayer").html();
+    var vineplayer = $(this).find(".vineplayer").html();
+    var instagramplayer = $(this).find(".instagramplayer").html();
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(vineplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(instagramplayer);
+  });
+  $(fila + "5").click(function(){
+    var youtubeplayer = $(this).find(".youtubeplayer").html();
+    var facebookplayer = $(this).find(".fbplayer").html();
+    var vineplayer = $(this).find(".vineplayer").html();
+    var instagramplayer = $(this).find(".instagramplayer").html();
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(vineplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(instagramplayer);
   });
    
 //COLOR
