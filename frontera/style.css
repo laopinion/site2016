@@ -1455,7 +1455,7 @@ header #menup .opciones .iconos #icono-mapa{
 	}
 
 	#notas{
-		margin-top: 139px;
+		margin-top: 189px;
 	}
 
 	#footer .bloque2 ul{
@@ -1491,6 +1491,11 @@ header #menup .opciones .iconos #icono-mapa{
 	#notas .content .bloque.cuatro{
 		margin-top: 180px;
 	}
+  #video .movil {
+    height: 289px;
+    width: auto;
+    left: -110px;
+  }
 
 }
 

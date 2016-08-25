@@ -58,7 +58,9 @@
             h3{font-size:18px;color:#646464;font-weight:600;}
             p{margin-bottom:15px; max-width:690px;
                 img{max-width: 690px; height:auto; float:left;margin:10px 10px; position: relative;left:-10px;}
-                }
+                .desktop{display:block;}
+                .movil{display:none;}
+            }
             strong{font-weight:600;}
             a{color:#DB0E24;text-decoration:none;}
             a:hover{text-decoration:underline;}
