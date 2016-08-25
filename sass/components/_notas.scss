@@ -107,8 +107,16 @@
             }
             .odd{margin-right:0px;}
         } */
-        .webform-client-form.webform-client-form-90572{
-            float: left;
+        .webform-client-form.webform-client-form-90572{float: left;background-color: #F2F2F2;width: 645px;height: 60px;display: flex;display: -webkit-flex;display: -moz-flex; justify-content: center; -webkit-justify-content: center; -moz-justify-content: center;
+            .form-item.webform-component{display: inline-block;vertical-align: top;margin-bottom: 0;position: relative;bottom: -10px;
+                .email{width: 300px;background-color: #D8D8D8;border: 0;height: 21px;
+                    
+                }
+                .description{position: relative;top: -45px;text-align: center;font-size: 13px;color: #808080;}
+            }
+            .form-actions{display: inline-block; vertical-align: top;margin-bottom: 0;position: relative;bottom: -10px;
+                input{background-color: #BB0410;border: none;color: #fff;cursor: pointer;height: 21px;}
+            }
         }
         .comentarios{width: 95%; height:auto; margin-right:20px; float:left; position: relative;margin-bottom:20px;
             .color{height: 10px; width: 25px;float: left;position: relative;text-indent: -9999px;background-color: $comentarios;margin-top: 6px;margin-right: 5px;}

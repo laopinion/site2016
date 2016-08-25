@@ -22,7 +22,9 @@
             .video-player{position: relative; float:left; left:0px; border: none;margin-bottom:20px;
                 iframe{width: 1006px;height: 500px;}
                 .fb-video{width: 1006px;height: 500px;}
-                .instagram-media{width: 1006px; height: 500px;}
+            }
+            .video-instagram{position: relative; float:left; left:0px; border: none;margin-bottom:20px;
+                .instagram-media{width: 1006px; height: 800px;}
             }
         }//Fin contenido            
     }

@@ -22,6 +22,7 @@
       print "<div class=video_id>".render($content['field_video_id'])."</div>";
       print "<div class=plataforma>".render($content['field_plataforma'])."</div>";
       print "<div class=video-player></div>";
+      print "<div class=video-instagram></div>";
       print "<div class=miniatura>".render($content['field_imagen'])."</div>";
       ?>
     </div><!--Fin contenido-->

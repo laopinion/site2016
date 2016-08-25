@@ -31,9 +31,9 @@
 									.galeria{img{width: 100%; height: auto;}}
 									.foto{img{width: 100%; height: auto;}}
 									.podcast{img{width: 100%; height: auto;}}
-									.icon_video{top: 86px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
-									.icon_galeria{top: 86px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
-									.icon_podcast{top: 86px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
+									.icon_video{top: 60px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
+									.icon_galeria{top: 60px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
+									.icon_podcast{top: 60px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
 								}
 							}
 						}
@@ -144,6 +144,18 @@
 	#error_404{
 		.img{width: 100%;left: -10px;}
 	}//Fin Error 404
+
+	#nota{
+		.izq{
+			.webform-client-form.webform-client-form-90572{margin-top: 20px;
+				.form-item.webform-component{position: static;
+					.email{width:300px;}
+					.description{position: static;margin-top: 5px;}
+				}
+				.form-actions{margin: 10px auto;position: static;display: block;width: 50px;}
+			}
+		}
+	}
 
 	//Inicios Juegos Olimpicos
 	#olimpicos_home{width: 100%;
