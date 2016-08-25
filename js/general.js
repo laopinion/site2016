@@ -1147,12 +1147,15 @@ $(document).ready(function(){
 
   if(plataforma == "YouTube"){
     $('#video .cen  .contenido .video-player').append(youtubeplayer);
+     $('#video .cen .contenido .video-instagram').css("display", "none");
   }else
   if(plataforma == "Facebook"){
     $('#video .cen .contenido .video-player').append(facebookplayer);
+     $('#video .cen .contenido .video-instagram').css("display", "none");
   }else
   if(plataforma == "Vine"){
     $('#video .cen .contenido .video-player').append(vineplayer);
+     $('#video .cen .contenido .video-instagram').css("display", "none");
   }else
   if(plataforma == "Instagram"){
     $('#video .cen .contenido .video-player').css('display', 'none');
