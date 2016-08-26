@@ -1158,7 +1158,22 @@ $(document).ready(function(){
     $('#video .cen .contenido .video-player').append(instagramplayer);
   }
 //Fin script video
+//player miniatura
+  $(window).scroll(function() {
+   var scrolled = $(window).scrollTop();           
+    $(".dev").empty().append(scrolled);
 
+    if(scrolled >= "950"){
+      $("#video .cen .contenido .video-player iframe").addClass("miniplayer");
+      $("#video .cen .contenido .video-player").css({height:"550px"});
+     }else{
+     $("#video .cen .contenido .video-player iframe").removeClass("miniplayer");
+     $("#video .cen .contenido .video-player").css({height:"auto"});
+     }
+  });    
+
+
+//FIN player miniatura
 /*Botones de caricaturas*/
 $("#opinion .izq .contenido .caricaturas .paginador .item1").click(function(argument) {
   $("#opinion .izq .contenido .caricaturas .otras").css({top:"0px"})
