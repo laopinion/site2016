@@ -1147,15 +1147,19 @@ $(document).ready(function(){
 
   if(plataforma == "YouTube"){
     $('#video .cen  .contenido .video-player').append(youtubeplayer);
+     $('#video .cen .contenido .video-instagram').css("display", "none");
   }else
   if(plataforma == "Facebook"){
     $('#video .cen .contenido .video-player').append(facebookplayer);
+     $('#video .cen .contenido .video-instagram').css("display", "none");
   }else
   if(plataforma == "Vine"){
     $('#video .cen .contenido .video-player').append(vineplayer);
+     $('#video .cen .contenido .video-instagram').css("display", "none");
   }else
   if(plataforma == "Instagram"){
-    $('#video .cen .contenido .video-player').append(instagramplayer);
+    $('#video .cen .contenido .video-player').css('display', 'none');
+    $('#video .cen .contenido .video-instagram').append(instagramplayer);
   }
 //Fin script video
 //player miniatura
@@ -2226,6 +2230,15 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
 });
 //Fin notas horizontales Mas Vida y Salud
 /*FIN ICONOS DE LAS SECCIONES*/
+
+  // var pathname = window.location.pathname;
+  // console.log(pathname);
+  // if(pathname != "/OP2016/"){
+  //   $("header .top").css({"height":"auto", "position":"fixed", "z-index":"1"})
+  //   $("header .top .msup").css("display", "none");
+  //   $("header .top .center").css("display", "none");
+  //   $("#nota").css("margin-top", "40px");
+  // }
 
 
     //MENU MOVIL

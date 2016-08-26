@@ -78,10 +78,6 @@
 
   <?php print $page_top; ?>
   <div class="centerContent borderContent">
-    <div id="head_desktop"><?php include("header.tpl.php"); ?></div>
-    <div id="head_movil"><?php include("header_movil.tpl.php"); ?></div>
-
-
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <?php include_once("dataexpandtracking.php") ?>
