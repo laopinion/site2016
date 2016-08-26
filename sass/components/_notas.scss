@@ -1,5 +1,5 @@
 //NOTA
-#nota{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;
+#nota{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative; margin-top: 50px;
     .especial{width:300px; height:210px; overflow:hidden; margin-bottom:20px;}
     
 
@@ -79,20 +79,22 @@
                 img{max-width:690px!important;margin: 0 auto!important;}
                 iframe{max-width:680px!important;margin: 0 auto!important;}
             }
-            .autor{position: relative;float: left;font-weight: 300;width: 95%;height: 110px;color: #646464;overflow: hidden;
+            .autor{position: relative;float: left;font-weight: 300;width: 95%;height: 110px;color: #646464;overflow: hidden;margin-bottom:30px;
                 h2{font-size: 14px;padding: 0px 5px;font-weight: 600;width: auto;float: left;left: 96px;top: 20px;margin: 0;
                     a{color:#BB1D1E; text-decoration:none;}
                    }
                 .field-name-field-perfil{float: left;position: relative;width: auto;text-align: left;left: -21px;top: 50px;font-size: 12px;color: #808080;
                     a{color:#646464; text-decoration:none;}
                     }
-                .field-name-field-descripcion{float: left;position: absolute;width: 320px;text-align: left;top: 58px;left: 100px;height: 30px;font-size: 12px;color: #808080;
+                .field-name-field-descripcion{float: left;position: absolute;width: 210px;text-align: left;top: 58px;left: 100px;height: 30px;font-size: 12px;color: #808080;
                     a{color:#646464; text-decoration:none;}
                     }
                 .field-name-field-imagen{float: left;position: absolute;width: 80px;margin-left: 10px;top: 20px;left: 0px;
-                    img{width:80px; height:77px;background-color: #f1f1f1;border-radius: 50%;}
+                    img{width:80px; height:auto;background-color: #f1f1f1;border-radius: 50%;}
                 }
                 .links{display:none;}
+                
+                .node-autor{width: 50%; overflow:hidden; position: relative;float:left; height:100px;}
             }
             .adm-intext{display:none;
                 .video-js, .vjs_video_6048-dimensions, .vjs_video_3-dimensions, .vjs-default-skin{display:block;}
@@ -109,17 +111,6 @@
             }
             .odd{margin-right:0px;}
         } */
-        .webform-client-form.webform-client-form-90572{float: left;background-color: #F2F2F2;width: 645px;height: 60px;display: flex;display: -webkit-flex;display: -moz-flex; justify-content: center; -webkit-justify-content: center; -moz-justify-content: center;
-            .form-item.webform-component{display: inline-block;vertical-align: top;margin-bottom: 0;position: relative;bottom: -10px;
-                .email{width: 300px;background-color: #D8D8D8;border: 0;height: 21px;
-                    
-                }
-                .description{position: relative;top: -45px;text-align: center;font-size: 13px;color: #808080;}
-            }
-            .form-actions{display: inline-block; vertical-align: top;margin-bottom: 0;position: relative;bottom: -10px;
-                input{background-color: #BB0410;border: none;color: #fff;cursor: pointer;height: 21px;}
-            }
-        }
         .comentarios{width: 95%; height:auto; margin-right:20px; float:left; position: relative;margin-bottom:20px;
             .color{height: 10px; width: 25px;float: left;position: relative;text-indent: -9999px;background-color: $comentarios;margin-top: 6px;margin-right: 5px;}
             h2{font-size:17px; color:$estandar; text-transform:uppercase; width:145px; padding:0px 0px;margin:0px 0px 10px 0px; display:inline-block; vertical-align:middle;}
