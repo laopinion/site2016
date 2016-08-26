@@ -22,6 +22,8 @@
             .video-player{position: relative; float:left; left:0px; border: none;margin-bottom:20px;
                 iframe{width: 1006px;height: 500px;}
                 .fb-video{width: 1006px;height: 500px;}
+                .instagram-media{width: 1006px; height: 500px;}
+                .miniplayer {width: 300px !important;z-index: 1000;height: 173px;position: fixed;right: 0px;bottom: 20px;transition: all 2s ease;-webkit-transition: all 2s ease;height: 169px !important;}
             }
             .video-instagram{position: relative; float:left; left:0px; border: none;margin-bottom:20px;
                 .instagram-media{width: 1006px; height: 800px;}
