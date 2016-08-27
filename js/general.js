@@ -2370,6 +2370,38 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       }
   });
 
+  var tipo = $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row").find(".tipo").html();
+  
+  if(tipo == "Artículo"){
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .icon_galeria").css({display:"none"}); 
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .icon_video").css({display:"none"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .galeria").css({display:"none"}); 
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .video").css({display:"none"}); 
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .foto").css({display:"block"});
+      }else
+  if(tipo == "Galería de imagenes"){
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .icon_galeria").css({display:"block"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .icon_video").css({display:"none"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .galeria").css({display:"block"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .foto").css({display:"none"});
+      }else 
+  if(tipo == "Video"){
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .video").css({display:"block"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .icon_video").css({display:"block"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .icon_galeria").css({display:"none"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .galeria").css({display:"none"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .foto").css({display:"none"});
+      }else 
+  if(tipo == "Podcast"){
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .podcast").css({display:"block"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .icon_podcast").css({display:"block"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .video").css({display:"none"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .icon_video").css({display:"none"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .icon_galeria").css({display:"none"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .galeria").css({display:"none"});
+    $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row .nota .foto").css({display:"none"});
+      }
+
 /*Fin Aperturas*/
 
 

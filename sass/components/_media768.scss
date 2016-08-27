@@ -2359,6 +2359,85 @@
 			.divisor{display: none;}
 		}//Fin notas
 	}//Fin 404
+	
+	//Inicio aperturas
+	#aperturas{width: 100%;
+		/* Aperturas #1 */
+		.view-aperturas.view-id-aperturas.view-display-id-block{
+			.views-row{
+				.nota{
+					.video, .foto, .galeria{
+						img{width: 100%; height: auto;}
+					}
+					.info{bottom: 30px;}
+				}
+			}
+		}
+		
+		.view-aperturas.view-id-aperturas.view-display-id-block_1{position: static;padding-bottom: 15px;
+			.view-content{display: flex;flex-wrap: wrap;justify-content: center; display: -webkit-flex;-webkit-flex-wrap: wrap;-webkit-justify-content: center;display: -moz-flex;-moz-flex-wrap: wrap;-moz-justify-content: center;
+				.views-row{width: 170px;
+					.nota{
+						.info{margin-left: 0;}
+					}
+				} 
+			}
+		}
+
+		/* Aperturas #2 */
+		.view-aperturas.view-id-aperturas.view-display-id-block_2{
+			.view-content{
+				.views-row{
+					.nota{display: flex;justify-content: center;display: -webkit-flex;-webkit-justify-content: center;display: -moz-flex;-moz-justify-content: center;
+						.video, .foto, .galeria{
+							img{width: 100%; height: auto;}
+						}
+					}
+				}
+			}
+		}
+
+		.view-aperturas.view-id-aperturas.view-display-id-block_3{position: static;border: none;width: 100%;
+			.view-content{display: flex;flex-wrap: wrap;justify-content: space-around;
+				.views-row{width: 40%;height: auto;margin: 0;
+					.nota{
+						.info{margin-left: 0;}
+					}
+				}
+			}
+		}
+
+		.view-aperturas.view-id-aperturas.view-display-id-block_4{height: auto;
+			.view-header{
+				.divisor{display: none;}
+			}
+			.view-content{display: flex;flex-wrap: wrap;justify-content: center;
+				.views-row{margin-right: 0;}
+			}
+		}
+
+		/* Aperturas #3 */
+		.view-aperturas.view-id-aperturas.view-display-id-block_5{
+			.views-row{
+				.nota{
+					.video, .foto, .galeria{
+						img{width: 100%; height: auto;}
+					}
+					.info{bottom: 30px;}
+				}
+			}
+		}
+
+		.view-aperturas.view-id-aperturas.view-display-id-block_6{height: auto;position: static;
+			.view-header{
+				.divisor{display: none;}
+			}
+			.view-content{display: flex;flex-wrap: wrap;justify-content: center;
+				.views-row{margin-right: 0;}
+			}
+		}
+
+	}//Fin aperturas
 
 	//Juegos Olimpicos
 	#olimpicos_home{width: 100%;

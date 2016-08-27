@@ -190,4 +190,22 @@
 	#error_404{
 		.img{width: 100%;margin-top: 80px;left: -25px;}
 	}//Fin Error 404
+
+	#aperturas{
+		.view-aperturas.view-id-aperturas.view-display-id-block{
+			.views-row{
+				.nota{
+					.info{width: 90%;}
+				}
+			}
+		}
+
+		.view-aperturas.view-id-aperturas.view-display-id-block_2{
+			.view-content{
+				 .views-row{
+				 	.nota{flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;}
+				}
+			}
+		}
+	}
 }//Fin 600 px
