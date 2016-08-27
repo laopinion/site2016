@@ -27,10 +27,18 @@
 							.views-row{width: 100%;
 								.nota{width: 100%;
 									.titulo{width: 100%;}
-									.video{img{width: 100%; height: auto;}}
-									.galeria{img{width: 100%; height: auto;}}
-									.foto{img{width: 100%; height: auto;}}
-									.podcast{img{width: 100%; height: auto;}}
+									.video{width: 100%;
+										img{width: 100%; height: auto;}
+									}
+									.galeria{width: 100%;
+										img{width: 100%; height: auto;}
+									}
+									.foto{width: 100%;
+										img{width: 100%; height: auto;}
+									}
+									.podcast{width: 100%;
+										img{width: 100%; height: auto;}
+									}
 									.icon_video{top: 60px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
 									.icon_galeria{top: 60px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
 									.icon_podcast{top: 60px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
@@ -195,7 +203,7 @@
 			}
 		}
 
-		.view-aperturas.view-id-aperturas.view-display-id-block_6{
+		.view-aperturas.view-id-aperturas.view-display-id-block_6{margin-top: 0px;
 			.view-content{
 				.views-row{height: auto;overflow: auto;}
 				.views-row-1{margin-top: 115px;}
