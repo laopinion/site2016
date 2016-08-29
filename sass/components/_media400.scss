@@ -256,5 +256,14 @@
 		}
 	}
 	//Fin Juegos Olimpicos
-
+	//FORM BOLETIN
+	#newsletter{
+	    .form-item.webform-component{width:90%;
+	        .email{width: 100%;margin: 0px 10px;}
+	        .description{height:auto;}
+	    }
+	    .form-actions{padding:0px 40%; float:left; bottom:10px;
+	        input{}
+	    }
+	}
 }//Fin 400px

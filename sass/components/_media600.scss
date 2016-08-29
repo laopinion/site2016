@@ -163,13 +163,21 @@
 	}
 	//FIN HOME
 
-	#nota .izq .contenido .texto{overflow: hidden;}
+	#nota {
+		.izq {
+			.contenido {
+				.texto{overflow: hidden;
+					.twitter-tweet{width: 100%!important;}
+					iframe{width: 100%!important;}
+					img{width: 100%!important;}
 
-	#nota .izq .contenido .texto .twitter-tweet{width: 100%!important;}
-
-	#nota .izq .contenido .texto iframe{width: 100%!important;}
-
-	#nota .izq .contenido .texto img{width: 100%!important;}
+				}
+				.autor {height:auto;
+					.node-autor{width: 95%;height:110px;}
+				}
+			}
+		}
+	}
 
 	.notas_footer .vista-recientes-footer .icon_video{right: 90px;}
 
@@ -208,4 +216,15 @@
 			}
 		}
 	}
+	//FORM BOLETIN
+	#newsletter{
+	    .form-item.webform-component{width:80%;
+	        .email{width: 90%;margin: 0px 10px;}
+	        .description{height:auto;}
+	    }
+	    .form-actions{
+	        input{}
+	    }
+	}
+
 }//Fin 600 px
