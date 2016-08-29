@@ -27,11 +27,9 @@
       .opinion:after{left: 57px;}
       .deportes:after{left: 66px;} 
       .entretenimiento:after{left: 112px;} 
-
       .dropdown{
         span{height: 15px;width: 3px;position: absolute;top: 10px;left: 5px; }
       }
-      
       .region{ 
         span{background-color: $region;}
         ul li:hover > a{color: $region;} 
