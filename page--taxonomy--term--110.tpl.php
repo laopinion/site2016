@@ -1,4 +1,5 @@
 <div id="head_desktop"><?php include("header_n.tpl.php"); ?></div>
+<div id="head_movil"><?php include("header_movil.tpl.php"); ?></div>
 <section id="especiales">
 	<div class="logo"></div>
 	<div class="container">

@@ -30,7 +30,7 @@
 
 	.notas{float: left;margin-top: 20px;
 		.view-especiales.view-id-especiales.view-display-id-block_1{
-			.view-content{display: flex;flex-wrap: wrap;justify-content: space-between;
+			.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: space-between;-webkit-justify-content: space-between;-moz-justify-content: space-between;
 				.views-row{margin-bottom: 20px;width: 315px;position: relative;
 					.info{
 						.tipo{display: none;}
@@ -59,7 +59,7 @@
 	.notas-relacionadas{float: left; margin-top: 20px;
 		h2{text-align: center;border-top: 1px solid #8E9398;padding-top: 20px;color: #8E9398;font-size: 28px;}
 		.view-especiales.view-id-especiales.view-display-id-block_2{
-			.view-content{display: flex;flex-wrap: wrap;justify-content: space-between;
+			.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: space-between;-webkit-justify-content: space-between;-moz-justify-content: space-between;
 				.views-row{margin-bottom: 20px;width: 243px;position: relative;
 					.info{
 						.tipo{display: none;}

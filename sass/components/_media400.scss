@@ -266,4 +266,35 @@
 	        input{}
 	    }
 	}
+
+	#especiales{
+		.destacada{width: 100%;
+			.view-especiales.view-id-especiales.view-display-id-block{width: 100%;
+				.views-row{
+					.info{
+						.nota{width: 100%;}
+					}
+				}
+			}
+		}
+		.notas{width: 100%;
+			.view-especiales.view-id-especiales.view-display-id-block_1{
+				.view-content{
+					.views-row{width: 100%;
+						img{width: 100%; height: auto;}
+						.info{
+							.nota{width: 100%;}
+						}
+					}
+				}
+			}
+		}
+		.galerias{
+			.view-especiales.view-id-especiales.view-display-id-block_4{
+				.view-content{
+					.views-row{width: 235px;}
+				}
+			}
+		}
+	}
 }//Fin 400px
