@@ -310,6 +310,7 @@
 		            }//FIN ETIQUETAS
 				}
 				.video-player{float: none;position: relative;padding-top: 56.25%;top: 75px;margin-bottom: 50px;margin-top:80px;
+						.miniplayer{top:initial;}
 					.desktop{display: none;}
 					iframe{position: absolute;left: 0;right: 0;top: 0;bottom: 0;width: 100%;height: 100%;}
 				}

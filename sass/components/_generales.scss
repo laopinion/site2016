@@ -26,6 +26,28 @@
     }
 }
 
+//Apertura Four NOTAS
+.view-aperturas.view-id-aperturas.view-display-id-block_8{float: left;width: 200px;height:auto; position: fixed; bottom: 70px;z-index:50;transition:all 0.5s ease; 
+    .pestana{width: 0;height: 0;border-top: 20px solid transparent;border-right: 20px solid #F2F2F2;border-bottom: 20px solid transparent;position: absolute;top: 40%;}
+    .nota{ float: left;width: 180px;margin-top: 10px;background: #F2F2F2;height: auto;padding: 5px 0px;left: 20px;position: relative; box-shadow:7px 5px 10px #888;
+        .tipo{display: none;}
+        .icon_video{display: none;background: url(../images/iconos/video.svg) -3px -3px/70px auto no-repeat;height: 66px;width: 88px;float: left;position: absolute;left: 0;top: 3px;opacity: 0.7;z-index: 1;}
+        .icon_galeria{display:none;background: url(../images/iconos/galeria.svg) -3px -3px/70px auto no-repeat;height: 66px;width: 88px;float: left;position: absolute;left: 0;top: 3px;opacity: 0.7;z-index: 1;}
+        .icon_podcast{display:none;background: url(../images/iconos/podcast.svg) -3px -3px/70px auto no-repeat;height: 66px;width: 88px;float: left;position: absolute;left: 0;top: 3px;opacity: 0.7;z-index: 1;}
+        .video{float: left;}
+        .foto{float: left;}
+        .galeria{float: left;}
+        .info{width:100%; float:left; padding:10px; position: relative;text-align:center;
+            span{width: 100px;color: #BD1D1D;float: left;position: relative;text-transform: uppercase;font-weight: 600;text-align: left;}
+            .sep{width:20px; float:left; position: relative; margin:0px 10px;}
+            .titulo{width: 90%;text-align: left;position: relative;float: left;padding: 10px 0px;height: auto;
+                a{text-decoration: none;color: #333;font-size: 20px;line-height:22px;font-weight: 600;}
+            }
+            .resumen{width: 90%;font-size: 16px;line-height: 18px;text-align: left;position: relative;float: left;}
+        }
+    }
+}
+
 //COMPARTIR EMERGENTE
 .compartir{z-index:20; display:none;left:20px; position: fixed; top:500px;margin:-50px;transition:all 0.5s ease; 
     .redes_sociales{position: relative;float:left;width:40px;padding:0px;
