@@ -2440,6 +2440,37 @@
 
 	}//Fin aperturas
 
+	/* Especiales seccion */
+	#especiales{
+		.logo{margin-top: 100px;}
+		.container{width: 96%;margin: 0 2%;float: left;padding: 0;}
+		.destacada{
+			.view-especiales.view-id-especiales.view-display-id-block .views-row{
+				.info{
+					.video, .galeria, .foto{width: 100%;
+						img{width: 100%; height: auto;}
+					}
+					.nota{margin: 0;}
+				}
+			} 
+		}
+
+		.notas{
+			.view-especiales.view-id-especiales.view-display-id-block_1{
+				.view-content{justify-content: center;}
+			}
+		}
+
+		.galerias{
+			.btn-izq{display: none;}
+			.btn-der{display: none;}
+			.view-especiales.view-id-especiales.view-display-id-block_3{display: none;}
+			.view-especiales.view-id-especiales.view-display-id-block_4{width: 100%;
+				.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;}
+			}
+		}
+	}
+
 	//Juegos Olimpicos
 	#olimpicos_home{width: 100%;
 		.container{
