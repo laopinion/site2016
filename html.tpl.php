@@ -68,8 +68,10 @@
   }
   window.addEventListener('load', loaded, false);
 </script>
-  <meta name="fechaprint" content="<?php print date('m/d/Y h:i:s a', time()); ?>" />
-  <?php include_once("heapanalytics.php") ?>
+<meta name="fechaprint" content="<?php print date('m/d/Y h:i:s a', time()); ?>" />
+<?php include_once("lemonnet.php") ?>
+
+
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
@@ -85,6 +87,22 @@
     <div id="footer_desktop"><?php include("footer.tpl.php"); ?></div>
     <div id="footer_movil"><?php include("footer_movil.tpl.php"); ?></div>
   </div>
+  <!-- Google SEO Structured Data -->
+  <script type="application/ld+json">{
+    "@context" : "http://schema.org",
+    "@type" : "Organization",
+    "name" : "Diario La Opinión",
+    "url" : "http://www.laopinion.com.co ",
+    "logo": "http://www.laopinion.com.co/sites/default/themes/op/images/logo150x150.jpg",
+    "alternateName" : "La Opinión, Noticias y de Cúcuta y Colombia",
+    "sameAs" : [
+      "https://www.facebook.com/laopinioncucuta",
+      "https://twitter.com/laopinioncucuta",
+      "https://www.youtube.com/user/WEBLAOPINION",
+      "https://www.instagram.com/laopinioncucuta"
+    ]
+  }
+  </script>
+  <!-- END - Google SEO Structured Data -->
 </body>
-
 </html>

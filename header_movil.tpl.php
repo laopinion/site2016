@@ -100,13 +100,13 @@
             <li><a href="<?php print base_path(); ?>mas-deportes">+ deportes</a></li>
             <li><a href="#opcion4">Juegos olímpicos</a></li>
 		</ul>
-		<ul class="bloque entretenimiento table">
+		<ul class="bloque tendencias table">
 			<span></span><div class="linea"></div>
-			<li><a href="<?php print base_path(); ?>entretenimiento">Entretenimiento</a></li>
+			<li><a href="<?php print base_path(); ?>tendencias">Tendencias</a></li>
 			<li><a href="<?php print base_path(); ?>actividad-social">Actividad social</a></li>
             <li><a href="<?php print base_path(); ?>tecnologia">Tecnología</a></li>
             <li><a href="<?php print base_path(); ?>cultura">Cultura</a></li> 
-            <li><a href="<?php print base_path(); ?>tendencias">Tendencias</a></li>
+            <li><a href="<?php print base_path(); ?>entretenimiento">Entretenimiento</a></li>
             <li><a href="<?php print base_path(); ?>viral">Viral</a></li> 
             <li><a href="<?php print base_path(); ?>vida-y-salud">Vida y salud</a></li> 
 		</ul>
@@ -124,13 +124,13 @@
             <li><a href="<?php print base_path(); ?>mas-deportes">+ deportes</a></li>
             <li><a href="#opcion4">Juegos olímpicos</a></li>
 		</ul>
-		<ul class="bloque entretenimiento">
+		<ul class="bloque tendencias">
 			<span></span><div class="linea"></div>
-			<li><a href="<?php print base_path(); ?>entretenimiento">Entretenimiento</a></li>
+			<li><a href="<?php print base_path(); ?>tendencias">Tendencias</a></li>
 			<li><a href="<?php print base_path(); ?>actividad-social">Actividad social</a></li>
             <li><a href="<?php print base_path(); ?>tecnologia">Tecnología</a></li>
             <li><a href="<?php print base_path(); ?>cultura">Cultura</a></li> 
-            <li><a href="<?php print base_path(); ?>tendencias">Tendencias</a></li>
+            <li><a href="<?php print base_path(); ?>entretenimiento">Entretenimiento</a></li>
             <li><a href="<?php print base_path(); ?>viral">Viral</a></li> 
             <li><a href="<?php print base_path(); ?>vida-y-salud">Vida y salud</a></li> 
 		</ul>

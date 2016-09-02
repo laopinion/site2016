@@ -93,7 +93,7 @@
 			            </ul> 
 			        </li>
 			        <li class="divider"></li>
-			        <li class="dropdown entretenimiento"><a href="<?php print base_path(); ?>entretenimiento">Entretenimiento</a> 
+			        <li class="dropdown tendencias"><a href="<?php print base_path(); ?>tendencias">Tendencias</a> 
 			            <ul> 
 			                <li><span></span><a href="<?php print base_path(); ?>actividad-social">Actividad social</a></li>
 			                <hr> 
@@ -101,7 +101,7 @@
 			                <hr>
 			                <li><span></span><a href="<?php print base_path(); ?>cultura">Cultura</a></li>
 			                <hr> 
-			                <li><span></span><a href="<?php print base_path(); ?>tendencias">Tendencias</a></li>
+			                <li><span></span><a href="<?php print base_path(); ?>entretenimiento">Entretenimiento</a></li>
 			                <hr> 
 			                <li><span></span><a href="<?php print base_path(); ?>viral">Viral</a></li> 
 			                <hr> 
