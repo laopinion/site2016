@@ -22,6 +22,7 @@
 
       if($ultima_hora == "1"){
         //vista de las ultimas horas.
+        $view = views_get_view('aperturas'); print $view->preview('block_7');
       }
     ?>
   </div>
