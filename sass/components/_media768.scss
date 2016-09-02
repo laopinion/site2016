@@ -82,9 +82,9 @@
 					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $deportes;}
 					.linea{border-left: 2px solid $deportes;height: 114px;position: absolute;top: 5px;left: -1px;}
 				}
-				.entretenimiento{padding-left: 5px;margin-left: 30px;width: 140px;
-					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $entretenimiento;}
-					.linea{border-left: 2px solid $entretenimiento;height: 163px;position: absolute;top: 5px;left: -1px;}
+				.tendencias{padding-left: 5px;margin-left: 30px;width: 140px;
+					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $tendencias;}
+					.linea{border-left: 2px solid $tendencias;height: 163px;position: absolute;top: 5px;left: -1px;}
 				}
 				.servicios{padding-left: 5px;margin-left: 28px;width: 70px;
 					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $servicios;}
@@ -1709,7 +1709,7 @@
 		}//Fin content
 	}//Fin deportes
 
-	#entretenimiento{width: 96%;margin: 0 2%;padding: 0;float: left;
+	#tendencias{width: 96%;margin: 0 2%;padding: 0;float: left;
 		.content{margin-top: 100px;
 			.menu_seccion{
 				.submenu{height: auto;}
@@ -1934,7 +1934,7 @@
 			.pauta.movil{display: block;left: -3px;}
 			.pauta.desktop{display: none;}
 		}//Fin content
-	}//Fin entretenimiento
+	}//Fin Tendencias
 
 	#servicios{width: 96%;margin: 0 2%;padding: 0;float: left;
 		.content{margin-top: 100px;

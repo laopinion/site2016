@@ -26,7 +26,7 @@
       .actualidad:after{left: 78px;}
       .opinion:after{left: 57px;}
       .deportes:after{left: 66px;} 
-      .entretenimiento:after{left: 112px;} 
+      .tendencias:after{left: 112px;} 
       .dropdown{
         span{height: 15px;width: 3px;position: absolute;top: 10px;left: 5px; }
       }
@@ -46,9 +46,9 @@
         span{background-color: $deportes;}
         ul li:hover > a{color: $deportes;} 
       }
-      .entretenimiento {
-        span{background-color: $entretenimiento;}
-        ul li:hover > a{color: $entretenimiento;} 
+      .tendencias {
+        span{background-color: $tendencias;}
+        ul li:hover > a{color: $tendencias;} 
       }
 
       #redes_sociales{padding: 0;left: 110px;margin: 5px 0px;position: relative; width: 107px; float: left;
@@ -173,7 +173,7 @@
       .actualidad:after{left: 78px;}
       .opinion:after{left: 57px;}
       .deportes:after{left: 66px;} 
-      .entretenimiento:after{left: 112px;} 
+      .tendencias:after{left: 112px;} 
 
       .dropdown{
         span{height: 15px;width: 3px;position: absolute;top: 10px;left: 5px; }
@@ -195,9 +195,9 @@
         span{background-color: $deportes;}
         ul li:hover > a{color: $deportes;} 
       }
-      .entretenimiento {
-        span{background-color: $entretenimiento;}
-        ul li:hover > a{color: $entretenimiento;} 
+      .tendencias {
+        span{background-color: $tendencias;}
+        ul li:hover > a{color: $tendencias;} 
       }
 
       #redes_sociales{padding: 0;left: 110px;margin: 5px 0px;position: relative; width: 107px; float: left;

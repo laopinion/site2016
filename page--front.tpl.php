@@ -1,5 +1,8 @@
 <div id="head_desktop"><?php include("header.tpl.php"); ?></div>
 <div id="head_movil"><?php include("header_movil.tpl.php"); ?></div>
+<?php include("pautas/home.php"); ?>
+<div id= "oreja_div"></div>
+<?php include("laterales.tpl.php"); ?>
   <section class="detailContent">
       <div id="home">
       	<div id="content">

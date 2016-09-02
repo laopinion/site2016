@@ -875,7 +875,7 @@
             }
             //ACTIVIDAD SOCIAL
             .actividad{width:100%;height: 11px;color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px 0px 5px 5px;top: -2px;position: relative;margin: 0px;
-                .color{background:$entretenimiento; height:10px; width:25px; float:left;position: relative;text-indent:-9999px; margin-right:5px;}
+                .color{background:$tendencias; height:10px; width:25px; float:left;position: relative;text-indent:-9999px; margin-right:5px;}
             }
             .view-id-side.view-display-id-block_5{background:#F2F2F2; width:258px;height:auto; float:left;position: relative;margin-bottom:20px; border:1px solid #D9D9D9; padding:20px;
                 .views-row {margin-bottom:10px;float:left;width:258px; padding:0px 0px 10px 0px; border-bottom:1px solid #ccc;}
@@ -1461,13 +1461,13 @@
 
         }/*FIN Reportero cuidadano*/
 
-        /*lista entretenimiento*/
+        /*lista tendencias*/
         .view-id-front.view-display-id-block_7 {display: block;float:left; position: relative; width:640px;
             .view-header{height:38px;}
-            h2{font-size:21px; color:$entretenimiento; text-transform:uppercase; width:185px; padding:0px 0px;margin:0px 0px 10px 0px;margin:0px 0px 10px 0px; float:left;
-                a{color:$entretenimiento;text-decoration:none;} 
+            h2{font-size:21px; color:$tendencias; text-transform:uppercase; width:185px; padding:0px 0px;margin:0px 0px 10px 0px;margin:0px 0px 10px 0px; float:left;
+                a{color:$tendencias;text-decoration:none;} 
             }
-            .linea{border-bottom: 2px solid $entretenimiento; width:455px; float:left; position: relative;height:15px; margin-bottom: 20px;}
+            .linea{border-bottom: 2px solid $tendencias; width:455px; float:left; position: relative;height:15px; margin-bottom: 20px;}
             .views-row{display:inline-block;}
             .views-row-odd{margin:0px 20px 20px 0px; float:left; position: relative;}
             .views-row-even{margin:0px 0px 20px 0px; float:left; position: relative;}
@@ -1512,7 +1512,7 @@
                 }
             }
 
-        }/*FIN entretenimiento*/
+        }/*FIN tendencias*/
 
         /*Otras inferior*/
         .view-id-front.view-display-id-block_8 {display: block;float:left; position: relative; width:640px;

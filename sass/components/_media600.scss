@@ -19,7 +19,7 @@
 						a,span:hover{opacity: .7;}
 					}
 				}
-				.redes_sociales.table, .judicial.table, .frontera.table, .actualidad.table, .opinion.table, .deportes.table, .entretenimiento.table, .servicios.table, .participacion.table{display: none;}
+				.redes_sociales.table, .judicial.table, .frontera.table, .actualidad.table, .opinion.table, .deportes.table, .tendencias.table, .servicios.table, .participacion.table{display: none;}
 				.bloque{padding: 0;width: 135px;display: inline-block;vertical-align: top;position: relative;margin-top: 15px;margin-bottom: 0;
 					li{list-style: none;margin-bottom: 5px;
 						a{text-decoration: none; color: #CCCCCC; font-size: 14px; text-transform: uppercase;}
@@ -51,9 +51,9 @@
 					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $deportes;}
 					.linea{border-left: 2px solid $deportes;height: 152px;position: absolute;top: 5px;left: -1px;}
 				}
-				.entretenimiento{padding-left: 5px;margin-left: 10%;width: 90px;
-					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $entretenimiento;}
-					.linea{border-left: 2px solid $entretenimiento;height: 182px;position: absolute;top: 5px;left: -1px;}
+				.tendencias{padding-left: 5px;margin-left: 10%;width: 90px;
+					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $tendencias;}
+					.linea{border-left: 2px solid $tendencias;height: 182px;position: absolute;top: 5px;left: -1px;}
 				}
 				.servicios{padding-left: 5px;margin-left: 28px;width: 112px;
 					span{width: 27px;height: 10px;position: absolute;left: -28px;top: 5px;background-color: $servicios;}
