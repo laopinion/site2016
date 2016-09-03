@@ -26,7 +26,7 @@
         </div>
          <!--ANUNCIO 728x90--><div class="pauta desktop p728x90" style="margin: 0 135px 15px 135px;"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php $block =block_load('block',49); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div></div><!--FIN ANUNCIO 728x90-->
         <div class="mid" style="border-bottom: none;">           
-          <!--Tendencias--><?php $view = views_get_view('s_general_sub'); print $view->preview('block_18'); ?><!--FIN Tendencias-->
+          <!--Entretenimiento--><?php $view = views_get_view('s_general_sub'); print $view->preview('block_18'); ?><!--FIN Entretenimiento-->
         </div>
         <div class="mid" style="border-bottom: none;">           
           <!--Viral--><?php $view = views_get_view('s_general_sub'); print $view->preview('block_19'); ?><!--FIN Viral-->
