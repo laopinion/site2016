@@ -1,0 +1,235 @@
+// HOME -----------------------------------------------------------------
+#seccion{width: 100%;position: relative;border-top:2px solid #BA2025; height:auto; float:left;
+#seccion_content{width:960px;padding:20px;margin:0 auto; position: relative;
+    //REGISTRO
+    #registro{border:1px solid #E8E7E8;width:960px; height:auto;float:left; position: relative;background:#fff; margin-bottom:20px;
+        h2{font-size:18px; color:#fff; text-transform:uppercase; width:910px; margin:20px; padding: 5px 0px 0px 10px; background:#BA2025; font-weight:500;}
+        .logo_o{background: url(../images/iconos/icon_lao.svg) 5px -5px/90px auto no-repeat;height: 100px;width:100px;display: block;text-indent: -9999px;margin: 0 auto;}
+        #user-register-form{width:600px; position: relative; height:auto; color:#969696; font-size:16px; margin:0 auto; padding:20px 0px;
+            .form-item{text-align:center;
+                label{font-weight:600; color:#969696;}
+                input{background:#F5F5F5;border:1px solid #DFDFDF; border-radius:5px; color:#969696; width:250px; text-align:center;margin:5px 0px;font-size:14px;}
+                .description{color:#b1b1b1; font-size:15px; line-height:16px;margin:5px 0px 20px 0px; font-weight:300;}
+            }
+            #edit-field-fecha-de-nacimiento{border:none;margin:0px; width:310px;
+                #field-fecha-de-nacimiento-add-more-wrapper{border:none; border: none;left: 140px;position: relative;
+                    .fieldset-legend{font-weight:600; color:#969696;}
+                }
+            }
+            #edit-field-recibir-ofertas{
+                label{font-weight:300; color:#969696;font-size:15px;}
+                input{background:#F5F5F5;border:1px solid #DFDFDF; border-radius:5px; color:#969696; width:10px; height:auto; text-align:center;margin:3px 0px;font-size:14px;}
+            }
+            #edit-field-beneficios-club-suscriptor{
+                label{font-weight:300; color:#969696;font-size:15px;}
+                input{background:#F5F5F5;border:1px solid #DFDFDF; border-radius:5px; color:#969696; width:10px; height:auto; text-align:center;margin:3px 0px;font-size:14px;}
+            }
+            #edit-field-aceptar-terminos{
+                label{font-weight:300; color:#969696;font-size:15px;}
+                input{background:#F5F5F5;border:1px solid #DFDFDF; border-radius:5px; color:#969696; width:10px; height:auto; text-align:center;margin:3px 0px;font-size:14px;}
+            }
+            #edit-actions{width:150px; margin:0 auto; position: relative;
+                #edit-submit{background:#BA2025; color:#fff; border-radius:5px; border:1px solid #fff;font-size:15px;}
+            }
+        }
+    }//FIN REGISTRO
+
+    //LOGIN
+    #login{border:1px solid #E8E7E8;width:960px; height:auto;float:left; position: relative;background:#fff; margin-bottom:20px; padding:0px 0px 20px 0px;
+        h2{font-size:18px; color:#fff; text-transform:uppercase; width:910px; margin:20px; padding: 5px 0px 0px 10px; background:#BA2025; font-weight:500;}
+        .logo_o{background: url(../images/iconos/icon_lao.svg) 5px -5px/90px auto no-repeat;height: 100px;width:100px;display: block;text-indent: -9999px;margin: 0 auto;}
+    }//FIN LOGIN
+    //FORM
+    #user-login{width:960px; position: relative; height:auto; color:#969696; font-size:16px; margin:0 auto; padding:20px 0px;
+            .form-item{text-align:center;
+                label{font-weight:600; color:#969696;}
+                input{background:#F5F5F5;border:1px solid #DFDFDF; border-radius:5px; color:#969696; width:250px; text-align:center;margin:5px 0px;font-size:14px;}
+                .description{color:#b1b1b1; font-size:15px; line-height:16px;margin:5px 0px 20px 0px; font-weight:300;}
+            }
+            #edit-actions{width:150px; margin:0 auto; position: relative;
+                #edit-submit{background:#BA2025; color:#fff; border-radius:5px; border:1px solid #fff;font-size:15px;}
+            }
+    }//FIN FORM
+
+    //PASSWORD
+    #password{border:1px solid #E8E7E8;width:960px; height:auto;float:left; position: relative;background:#fff; margin-bottom:20px; padding:0px 0px 20px 0px;
+        h2{font-size:18px; color:#fff; text-transform:uppercase; width:910px; margin:20px; padding: 5px 0px 0px 10px; background:#BA2025; font-weight:500;}
+        .logo_o{background: url(../images/iconos/icon_lao.svg) 5px -5px/90px auto no-repeat;height: 100px;width:100px;display: block;text-indent: -9999px;margin: 0 auto;}
+    }//FIN PASSWORD
+    //FORM
+    #user-pass{border:1px solid #E8E7E8;width:960px; height:110px;float:left; position: relative;background:#fff; margin-bottom:20px; padding:0px 0px 20px 0px;color:#969696; font-size:16px; padding-top:100px; 
+            .form-item{text-align:center;
+                label{font-weight:600; color:#969696;}
+                input{background:#F5F5F5;border:1px solid #DFDFDF; border-radius:5px; color:#969696; width:250px; text-align:center;margin:5px 0px;font-size:14px;}
+                .description{color:#b1b1b1; font-size:15px; line-height:16px;margin:5px 0px 20px 0px; font-weight:300;}
+            }
+            #edit-actions{width:300px; margin:0 auto; position: relative;
+                #edit-submit{background:#BA2025; color:#fff; border-radius:5px; border:1px solid #fff;font-size:15px;}
+            }
+    }//FIN FORM
+
+    //OPTATIVOS
+    #optativos{float:left; position: relative;
+        h2{font-size:18px; color:#fff; text-transform:uppercase; width:960px; margin:20px 0px; padding: 5px 0px 0px 10px; background:#BA2025; font-weight:500;}
+        .info{border:2px solid #E8E7E8;width:960px; height:auto;float:left; position: relative;background:#fff; margin-bottom:20px; padding:0px;
+            .logo_o{background: url(../images/iconos/icon_lao.svg) 5px -5px/90px auto no-repeat;height: 100px;width:100px;display: block;text-indent: -9999px;margin: 0 auto;}
+            .izquierda{width:544px; height:590px;position: relative; float:left; margin-right:0px; border-right:1px solid #E8E7E8; border-bottom:1px solid #E8E7E8;
+                .listado{ list-style:none; padding:10px; float:left; position: relative; margin:0px;
+                    li{ list-style: none; float:left; position: relative; width:535px; margin-bottom:20px;
+                        .imagen{height: 150px;width:300px;float:left; margin:0px;}
+                        .informacion{ width:214px; float:left; position: relative; margin:0px; padding: 0px 10px;border: none;
+                            .titulo{font-size:20px; font-weight:600; color:#BA2025; text-transform:uppercase;}
+                            .desc{color:#666; font-size:14px; font-weight:100;margin-bottom:5px;}
+                            .precio{
+                                .item_head{color: #fff;background: #BA2025;padding: 2px 10px;border-radius: 9px;width: 40px; text-transform:uppercase; font-size:12px;}
+                                .item_b{width:134px; font-weight:600; float:left; position: relative; margin:0px;margin-right:10px;}
+                                .valor_b{width:70px; font-weight:600; float:left; position: relative; margin:0px;text-align:right;}
+                                .item{width:134px; font-weight:200; float:left; position: relative; margin:0px;margin-right:10px;}
+                                .valor{width:70px; font-weight:200; float:left; position: relative; margin:0px;text-align:right;}
+                            }
+                            .unidades{color:#666; font-size:12px; font-weight:100;margin-top:10px;text-align:center;float:left;position: relative;width: 170px;}
+                        }
+                    }
+                    .uno{
+                        .imagen{background: url(../images/optativos/carros.jpg) 0px 0px/300px auto no-repeat;}
+                        .imagen:hover{cursor:pointer;}
+                        .imagenb{background: url(../images/optativos/carrosb.jpg) 0px 0px/800px auto no-repeat; display:none;width: 800px;height: 600px;position: absolute;top: -50%;left: 100px;right: 0px;z-index: 3;}
+                    }
+                    .dos{
+                        .imagen{background: url(../images/optativos/trapero.jpg) 0px 0px/300px auto no-repeat;}
+                        .imagen:hover{cursor:pointer;}
+                        .imagenb{background: url(../images/optativos/trapero_b.jpg) 0px 0px/800px auto no-repeat; display:none;width: 800px;height: 600px;position: absolute;top: -50%;left: 100px;right: 0px;z-index: 3;}
+                    }
+                    .tres{
+                        .imagen{background: url(../images/optativos/billetera.jpg) 0px 0px/800px auto no-repeat;}
+                        .imagen:hover{cursor:pointer;}
+                        .imagenb{background: url(../images/optativos/billetera_b.jpg) 0px 0px/800px auto no-repeat; display:none;width: 800px;height: 600px;position: absolute;top: -50%;left: 100px;right: 0px;z-index: 3;}
+                    }
+                }
+            }
+            .derecha{width:414px; height:590px;position: relative; float:left;  border-bottom:1px solid #E8E7E8;
+                h3{font-size:18px; color:#fff; text-transform:uppercase; width:196px; margin:20px 0px; padding:10px 110px; background:#BA2025; font-weight:500; text-align:center;}
+                .leyenda{font-size:15px;position:relative; float:left; color:#101314; font-weight:300; width:260px; padding:5px 80px; float:left; position: relative; height:auto; text-align:center; margin:0px;
+                    span{font-weight:600; text-transform:uppercase;}
+                }
+                .rollo{display: block;float: left;position: relative;overflow: hidden;width: 150px;height: 85px;padding:0px 133px; background: url(../images/rollo_periodico.png) 130px 15px/160px auto no-repeat;}
+                .formulario{width:300px; float:left; position: relative;margin-bottom:20px; padding:0px 58px;color:#969696; font-size:16px; ; 
+                    .form-item{text-align:center;
+                        label{font-weight:600; color:#969696;}
+                        input{background:#F5F5F5;border:1px solid #DFDFDF; border-radius:5px; color:#969696; width:250px; text-align:center;margin:5px 0px;font-size:14px;}
+                        .description{color:#b1b1b1; font-size:15px; line-height:16px;margin:5px 0px 20px 0px; font-weight:300;}
+                    }
+                    .form-actions{width:100px; margin:0 auto; position: relative;
+                        .webform-submit{width:100px; background:#BA2025; color:#fff; border-radius:5px; border:1px solid #fff;font-size:15px;}
+                    }
+                }//FIN FORM
+                .llame{ width:180px; height:50px; border:1px solid #E8E7E8;padding:20px; float: left; position: relative; margin:0px 90px;
+                    .ya{text-transform:uppercase; text-align:center; font-weight:100; font-size:20px; color:#999;}
+                    .num{color:#BA2025; text-transform:uppercase; font-weight:600;font-size:22px;}
+                }
+            }
+            .bottom{width:960px; height:240px;position: relative; float:left; 
+                h4{font-size:36px; color:#BA2025; text-transform:uppercase; width:430px; margin:20px 0px; padding:10px 264px; font-weight:600; text-align:center;}
+                .items{width:960px; position: relative;margin:0 auto; height:100px;
+                    .item{width:150px; float:left; text-align:center; border-right:1px solid #BA2025; height:30px; padding:10px 30px; font-size:18px;}
+                    .item1{}
+                    .item2{
+                         span{top:-4px;position: relative;}
+                    }
+                    .item3{
+                           span{top:-4px;position: relative;}
+                    }
+                    .item4{border-right:none;
+                           span{top:-4px;position: relative;}
+                    }
+                }
+                .final{width:770px; font-size:14px;font-weight:300;position: relative;margin:0 auto;}
+            } 
+
+        }//FIN INFO
+    }//FIN OPTATIVOS
+
+    //CONTACTENOS
+   /*  #contactenos{float:left; position: relative;
+        h2{font-size:18px; color:#fff; text-transform:uppercase; width:960px; margin:20px 0px; padding: 5px 0px 0px 10px; background:#BA2025; font-weight:500;}
+        .arriba{border:2px solid #E8E7E8;width:960px; height:220px;float:left; position: relative;background:#fff; margin-bottom:20px; padding:0px;
+            .leyenda{font-size:15px;color:#101314; font-weight:300; width:750px; padding:5px 80px; float:left; position: relative; height:auto; text-align:center; margin:20px;}
+            .info{width:900px; background:#F5F5F5; height:130px;margin:75px 30px 10px 30px;position: relative;
+                .item{width:170px; position: relative; height: 100px;float: left;margin: 0px 70px;
+                    .logo_o{background: url(../images/iconos/icon_lao.svg) 5px -5px/50px auto no-repeat;height: 60px;width:60px;display: block;text-indent: -9999px;margin: 0 auto;}
+                    .dir{color:#969696; font-weight:300;font-size:14px;}
+                    .ciudad{color:#969696; font-weight:300;font-size:14px;}
+                    .tel{background: url(../images/iconos/icon_tel.svg) 5px -5px/50px auto no-repeat;height: 60px;width:60px;display: block;text-indent: -9999px;margin: 0 auto;}
+                    .pbx{color:#969696; font-weight:300;font-size:14px;}
+                    .fax{color:#969696; font-weight:300;font-size:14px;}
+                    .redes-sociales{width: 200px; height: 50px; position: relative; list-style: none; margin:0px; top:30px; left:0px; padding:0px; float:left;
+                            a{margin: 0px;}
+                            a:hover{opacity: 0.9;}
+                            li.leaf{list-style: none; margin: 0px; padding: 0px;}
+                            .facebook{ 
+                                a{background: url(../images/iconos/redes_sociales.svg) no-repeat -8px -6px/210px auto transparent;position: relative; width: 50px; height: 50px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                            }
+                            .twitter{ 
+                                a{background: url(../images/iconos/redes_sociales.svg) no-repeat -56px -6px/210px auto transparent;position: relative; width: 50px; height: 50px; float: left; text-indent: -9999px; transition:all 0.2s ease;}
+                            }
+                            .instagram{ 
+                                a{background: url(../images/iconos/redes_sociales.svg) no-repeat -106px -6px/210px  auto transparent;position: relative; width: 50px; height: 50px; float: left; text-indent: -9999px; transition:all 0.2s ease;}
+                            }
+                            .youtube{ 
+                                a{background: url(../images/iconos/redes_sociales.svg) no-repeat -154px -6px/210px auto transparent;position: relative; width: 50px; height: 50px; float: left; text-indent: -9999px; transition:all 0.2s ease;}
+                            }
+                        }//FIN REDES
+                }//FIN ITEM
+                .item3{margin: 0px 30px; width:190px;}
+            }
+        }        
+        .abajo{border:2px solid #E8E7E8;width:960px; height:510px;float:left; position: relative;background:#fff; margin-bottom:20px; padding:0px; margin-top:20px;
+            h3{font-size:18px; color:#fff; text-transform:uppercase; width:950px; margin:20px 0px; padding: 5px 0px 0px 10px; background:#BA2025; font-weight:500;}
+            .logo_o{background: url(../images/iconos/icon_lao.svg) 5px -5px/90px auto no-repeat;height: 100px;width:100px;display: block;text-indent: -9999px;margin: 0 auto;}
+            .formulario{width:800px; float:left; position: relative;margin-bottom:20px; padding:0px 80px;color:#969696; font-size:16px;  
+                .form-item{text-align:center;
+                    label{font-weight:600; color:#969696;}
+                    input{background:#F5F5F5;border:1px solid #DFDFDF; border-radius:5px; color:#969696; width:250px; text-align:center;margin:5px 0px;font-size:14px;}
+                    .description{color:#b1b1b1; font-size:15px; line-height:16px;margin:5px 0px 20px 0px; font-weight:300;}
+                }
+                .webform-component--nombre{float:left; width:380px; margin-right:30px;position: relative;
+                    input{width:370px;}
+                }
+                .webform-component--apellidos{float:left; width:380px; position: relative;
+                    input{width:370px;}
+                }
+                .webform-component--ciudad{float:left; width:250px; margin-right:20px;position: relative;
+                    input{width:240px;}
+                }
+                .webform-component--telefono{float:left; width:250px; margin-right:0px;position: relative;
+                    input{width:240px;}
+                }
+                .webform-component--correo-electronico{float:left; width:250px; margin-right:20px;position: relative;
+                    input{width:240px;}
+                }
+                .webform-component--mensaje{width:800px;
+                    textarea{background:#F5F5F5;border:1px solid #DFDFDF; border-radius:5px; color:#969696; width:800px; text-align:center;margin:5px 0px;font-size:14px;}
+                    .grippie{display:none;}
+                }
+                .form-actions{width:100px; margin:0 auto; position: relative;
+                .webform-submit{width:100px; background:#BA2025; color:#fff; border-radius:5px; border:1px solid #fff;font-size:15px;}
+                }
+            }//FIN FORM
+        }
+    }//FIN CONTACTENOS */
+
+    //FORM
+    #user-login{width:960px; position: relative; height:auto; color:#969696; font-size:16px; margin:0 auto; padding:20px 0px;
+            .form-item{text-align:center;
+                label{font-weight:600; color:#969696;}
+                input{background:#F5F5F5;border:1px solid #DFDFDF; border-radius:5px; color:#969696; width:250px; text-align:center;margin:5px 0px;font-size:14px;}
+                .description{color:#b1b1b1; font-size:15px; line-height:16px;margin:5px 0px 20px 0px; font-weight:300;}
+            }
+            #edit-actions{width:150px; margin:0 auto; position: relative;
+                #edit-submit{background:#BA2025; color:#fff; border-radius:5px; border:1px solid #fff;font-size:15px;}
+            }
+    }//FIN FORM
+
+}/*FIN Seccion content*/
+}/*FIN Seccion*/
+

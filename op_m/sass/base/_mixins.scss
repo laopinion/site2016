@@ -1,0 +1,15 @@
+// Custom mixins
+
+// fuentes 
+@mixin fonts($font, $size, $weight) {
+  font-family:$font;
+  font-size:$size;
+  font-weight:$weight;
+}
+
+@mixin background($urlimage, $position, $color, $repeat) {
+  background-image:$urlimage;
+  background-position:$position;
+  background-color:$color;
+  background-repeat:$repeat
+}

@@ -1,0 +1,301 @@
+@media screen and (max-width: 400px){
+	.pauta_movil{display: block;}
+	.pauta{display: none;}
+	.der{display: none;}
+	#head_movil{//Icon hamburger mas pequeño
+		#hamburger{width: 36px;
+			span{height: 5px;}
+			span:nth-child(1), span:nth-child(2){top: 0px;}
+			span:nth-child(3), span:nth-child(4){top: 10px;}
+			span:nth-child(5), span:nth-child(6){top: 20px;}
+			.izq_arriba{width: 25%;border-bottom: 5px solid #fff;}
+			.der_arriba{width: 25%;border-bottom: 5px solid #fff;}
+			.izq_abajo{width: 25%;border-top: 5px solid #fff;}
+			.der_abajo{width: 25%;border-top: 5px solid #fff;}
+		}
+		#hamburger.open{
+			span:nth-child(5){top: 23px;}
+			span:nth-child(6){top: 23px;}
+		}
+	}//Fin head movil
+
+	#home{
+		#content{
+			.left{
+				.izq{margin-bottom: 20px;
+					.view-id-principal.view-display-id-block{width: 100%;
+						.view-content{width: 100%;
+							.views-row{width: 100%;
+								.nota{width: 100%;
+									.titulo{width: 100%;}
+									.video{width: 100%;
+										img{width: 100%; height: auto;}
+									}
+									.galeria{width: 100%;
+										img{width: 100%; height: auto;}
+									}
+									.foto{width: 100%;
+										img{width: 100%; height: auto;}
+									}
+									.podcast{width: 100%;
+										img{width: 100%; height: auto;}
+									}
+									.icon_video{top: 60px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
+									.icon_galeria{top: 60px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
+									.icon_podcast{top: 60px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
+								}
+							}
+						}
+					}
+					.view-id-principal.view-display-id-block_1{width: 100%;margin: 0;
+						.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
+							.views-row{width: 290px;height: auto;
+								.nota{width: 290px;
+									.info{width: 140px;}
+								}
+							}
+						}
+					}
+					.view-id-principal.view-display-id-block_2{width: 100%;
+						.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
+							.views-row{width: 290px;height: auto;
+								.nota{width: 290px;
+									.info{width: 140px;}
+								}
+							}
+						}
+					}
+					.foto_noticias{width: 100%; padding: 0;
+						.view-id-principal.view-display-id-block_14{width: 100%;
+							.view-content{
+								.views-row{width: 100%;
+									.foto{width: 100%;
+										.miniatura{width: 100%;}
+									}
+								}
+							}
+						}
+					}
+				}//Fin izq
+				.cen{
+					.trailers{padding: 20px 0;}
+					.deportes{width: 100%;}
+					.view-id-principal.view-display-id-block_6{width: 100%; padding: 0;}
+					.economia{width: 100%;}
+					#indicadores{width: 100%;
+						.info{width: 100%; padding: 5px;
+							.portada{.linea{width:100%;}}
+						}
+					}
+					.view-id-principal.view-display-id-block_8{width: 100%; padding: 0;}
+					.cucuta{width: 100%;}
+					.view-id-principal.view-display-id-block_7{width: 100%;padding: 10px 0;}
+					.view-id-principal.view-display-id-block_4{width: 100%;
+						.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
+							.views-row{width: 100%;height: auto;
+								.nota{width: 100%;
+									.info{width: 185px;}
+								}
+							}
+						}
+					}
+				}//Fin cen
+				.mid{
+					.view-id-principal.view-display-id-block_3{width: 100%;margin: 0;
+						.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
+							.views-row{width: 100%;height: auto;
+								.nota{width: 100%;
+									.info{width: 140px;}
+								}
+							}
+						}
+					}
+					.view-id-principal.view-display-id-block_5{width: 100%;
+						.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
+							.views-row{width: 100%;height: auto;
+								.nota{width: 100%;
+									.info{width: 185px;}
+								}
+							}
+						}
+					}
+				}
+			}//Fin left
+			.center{margin-bottom: 40px;
+				.zonacomercial{width: 100%;
+					.content{padding: 0;
+						.separador{display: none;}
+						.empresa{
+							.pagina{margin-top: 17px;}	
+						}
+					}
+				}
+				.view-id-principal.view-display-id-block_9{width: 100%; padding: 0;
+					.videos{width: 95%;}
+					.frame_video{width: 100%;position: relative;padding-top: 56.25%;margin-bottom: 15px;margin-top: 15px;height: auto;
+						.iframeyoutube{padding: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;width: 100%;height: 100%;}
+						.fb-video{padding: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;width: 100%;height: 100%;}
+					}
+				}
+				.servicios-content{width: 100%;padding: 0;left: 0;}
+			}//Fin center
+		}
+	}//Fin home
+
+	#video{
+		.cen{
+			.contenido{
+				.video-player{margin-bottom: 50px;margin-top:118px}				
+			}//Fin contenido
+		}
+	}/* Fin Videos */
+
+	#error_404{
+		.img{width: 100%;left: -10px;}
+	}//Fin Error 404
+
+	#nota{
+		.izq{
+			.webform-client-form.webform-client-form-90572{margin-top: 20px;
+				.form-item.webform-component{position: static;
+					.email{width:300px;}
+					.description{position: static;margin-top: 5px;}
+				}
+				.form-actions{margin: 10px auto;position: static;display: block;width: 50px;}
+			}
+		}
+	}
+
+	#aperturas{background-color: #282E30;
+		.view-aperturas.view-id-aperturas.view-display-id-block{
+			.views-row{
+				.nota{
+					.info{bottom: -128px;}
+				}
+			}
+		}
+
+		.view-aperturas.view-id-aperturas.view-display-id-block_1{
+			.view-content{
+				.views-row-1{margin-top: 180px;}
+				.views-row{margin-bottom: 0;}
+			}
+		}
+
+		.view-aperturas.view-id-aperturas.view-display-id-block_2{color: #fff;
+			.view-content{
+				.views-row{
+					.nota{
+						.info{
+							.titulo{
+								a{color: #fff;}
+							}
+						}
+					}
+				}
+			}
+		}
+
+		/* Apertura #2 */
+		.view-aperturas.view-id-aperturas.view-display-id-block_3{
+			.view-content{
+				 .views-row{width: 200px;margin-bottom: 10px;
+					.nota{
+						.titulo{
+							a{color: #fff;}
+						}
+					}
+				 }
+			}
+		}
+
+		.view-aperturas.view-id-aperturas.view-display-id-block_4{border-top: 1px solid #757575;
+			.view-content{
+				 .views-row{overflow: auto;height: auto;margin-left: 10px;}
+			}
+		}
+
+		/* Apertura #3 */
+		.view-aperturas.view-id-aperturas.view-display-id-block_5{
+			.views-row{
+				.nota{
+					.info{width: 90%;bottom: -90px;}
+				}
+			}
+		}
+
+		.view-aperturas.view-id-aperturas.view-display-id-block_6{margin-top: 0px;
+			.view-content{
+				.views-row{height: auto;overflow: auto;margin-left: 10px;}
+				.views-row-1{margin-top: 115px;}
+			}
+		}
+	}//Fin aperturas
+
+	//Inicios Juegos Olimpicos
+	#olimpicos_home{width: 100%;
+		.container{
+			.cintillo{
+				.logo_rio{background: url(../images/iconos/olimpicos/logobannerrio.svg) no-repeat 0px -3px/120px auto transparent;position: relative;width: 121px;height: 37px;padding: 5px 0;left: -7px;}
+				.pestana{background: url(../images/iconos/olimpicos/pestanabannerprincipal.svg) no-repeat -7px -3px/200px auto transparent;position: relative;width: 200px;height: 57px;padding: 5px 0;top: 0px;right: 10px;
+					.calendario{right: -28px;}
+					.divisor{left: 97px;}
+					.bandera{right: -45px;}
+				}
+			}
+			.contenido{
+				.view-id-olimpicos_home.view-display-id-block{height: 220px;
+					.view-content{
+						.nota{
+							.degradado{
+								.titulo{width: 98%; left: 5px;}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	//Fin Juegos Olimpicos
+	//FORM BOLETIN
+	#newsletter{
+	    .form-item.webform-component{width:90%;
+	        .email{width: 100%;margin: 0px 10px;}
+	        .description{height:auto;}
+	    }
+	    .form-actions{padding:0px 40%; float:left; bottom:10px;
+	        input{}
+	    }
+	}
+
+	#especiales{
+		.destacada{width: 100%;
+			.view-especiales.view-id-especiales.view-display-id-block{width: 100%;
+				.views-row{
+					.info{
+						.nota{width: 100%;}
+					}
+				}
+			}
+		}
+		.notas{width: 100%;
+			.view-especiales.view-id-especiales.view-display-id-block_1{
+				.view-content{
+					.views-row{width: 100%;
+						img{width: 100%; height: auto;}
+						.info{
+							.nota{width: 100%;}
+						}
+					}
+				}
+			}
+		}
+		.galerias{
+			.view-especiales.view-id-especiales.view-display-id-block_4{
+				.view-content{
+					.views-row{width: 235px;}
+				}
+			}
+		}
+	}
+}//Fin 400px

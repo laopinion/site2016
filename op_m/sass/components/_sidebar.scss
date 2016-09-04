@@ -1,0 +1,341 @@
+/*Tema del dia*/
+.view-id-sidebar.view-display-id-block{width:300px;float:left; position: relative;height:auto; border:1px solid #E8E7E8; background:#fff;margin-bottom:20px;
+    h2{font-size:18px; color:#fff; text-transform:uppercase; width:280px; border-bottom:2px solid $estandar; padding: 5px 10px 0px 10px;margin: 0px 0px 10px 0px; background:$estandar; font-weight:500;}
+        .nota{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+                .tipo{display:none;}
+                .icon_video{display:none;background: url(../images/iconos/icon_video.svg) 0px 0px/60px auto no-repeat;height: 40px;width: 60px;display: block;text-indent: -9999px;float: left;position: absolute;left: 220px;top: 125px; opacity:0.7; z-index: 1;}
+                .video{display:none; float:left; position: relative; overflow:hidden; width:280px; height:180px;
+                    img{width:280px; height:180px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .icon_galeria{display:none;background: url(../images/iconos/icon_galeria.svg) 0px 0px/60px auto no-repeat;height: 40px;width: 60px;display: block;text-indent: -9999px;float: left;position: absolute;left: 220px;top: 125px; opacity:0.7; z-index: 1;}    
+                .galeria{display:none; float:left; position: relative; overflow:hidden; width:280px; height:180px;
+                    img{width:280px; height:180px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .foto{display:block; float:left; position: relative; overflow:hidden; width:280px; height:180px;
+                    img{width:280px; height:180px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .info{width:280px; padding:10px 0px; float:left; position: relative;background:#fff; height:auto;
+                    .titulo{float:left; position: relative; width:280px; height:auto; float:left; line-height:22px;padding:10px 0px; border-bottom:1px solid #E8E7E8; margin-bottom:0px;
+                        a{font-size: 20px; font-weight:600; text-decoration:none; color:#101314;}
+                    }
+                    .seccion{font-size:15px;position:relative; float:left; 
+                        a{color:#646464; text-decoration:none;font-weight:600;}
+                        a:hover{text-decoration:underline;}
+                    }
+                    .sep{margin:0px 3px;color:#646464;position:relative; float:left;font-size:13px;}
+                    .fecha{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;margin-right:5px;}
+                    .hora{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;}
+                    .resumen{font-size:15px;position:relative; float:left; color:#646464;  font-weight:300;}
+                }
+            }
+    }/*FIN Tema del dia*/
+
+/*Caricatura*/
+.view-id-sidebar.view-display-id-block_1{width:300px;float:left; position: relative;height:auto; border:1px solid #E8E7E8; background:#fff;margin-bottom:20px;
+    h2{font-size:18px; color:#fff; text-transform:uppercase; width:280px; border-bottom:2px solid $opinion;  padding: 5px 10px 0px 10px;margin: 0px 0px 10px 0px; background:$opinion; font-weight:500;}
+    .linea{}
+        .caricatura{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+                .fecha{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;margin-right:5px;}
+                .foto{display:block; float:left; position: relative; overflow:hidden; width:280px; height:320px;
+                    img{width:280px; height:320px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+            }
+    }/*FIN Caricatura*/
+
+
+/*Viral*/
+.view-id-sidebar.view-display-id-block_2{width:300px;float:left; position: relative;height:auto; border:1px solid #E8E7E8; background:#fff;margin-bottom:20px;
+    h2{font-size:18px; color:#fff; text-transform:uppercase; width:280px; border-bottom:2px solid $entretenimiento; padding: 5px 10px 0px 10px;margin: 0px 0px 10px 0px; background:$entretenimiento; font-weight:500;
+        a{color:#fff;text-decoration:none;}
+    }
+        .nota{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+                .tipo{display:none;}
+                .icon_video{display:none;background: url(../images/iconos/icon_video.svg) 0px 0px/60px auto no-repeat;height: 40px;width: 60px;display: block;text-indent: -9999px;float: left;position: absolute;left: 220px;top: 125px; opacity:0.7; z-index: 1;}
+                .video{display:none; float:left; position: relative; overflow:hidden; width:280px; height:180px;
+                    img{width:280px; height:180px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .icon_galeria{display:none;background: url(../images/iconos/icon_galeria.svg) 0px 0px/60px auto no-repeat;height: 40px;width: 60px;display: block;text-indent: -9999px;float: left;position: absolute;left: 220px;top: 125px; opacity:0.7; z-index: 1;}    
+                .galeria{display:none; float:left; position: relative; overflow:hidden; width:280px; height:180px;
+                    img{width:280px; height:180px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .foto{display:block; float:left; position: relative; overflow:hidden; width:280px; height:180px;
+                    img{width:280px; height:180px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .info{width:280px; padding:10px 0px; float:left; position: relative;background:#fff; height:auto;
+                    .titulo{float:left; position: relative; width:280px; height:auto; float:left; line-height:22px;padding:10px 0px 0px 0px;margin-bottom:0px;
+                        a{font-size: 20px; font-weight:600; text-decoration:none; color:#101314;}
+                    }
+                    .seccion{font-size:15px;position:relative; float:left; 
+                        a{color:#646464; text-decoration:none;font-weight:600;}
+                        a:hover{text-decoration:underline;}
+                    }
+                    .sep{margin:0px 3px;color:#646464;position:relative; float:left;font-size:13px;}
+                    .fecha{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;margin-right:5px;}
+                    .hora{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;}
+                    .resumen{font-size:15px;position:relative; float:left; color:#646464;  font-weight:300;}
+                }
+            }
+    }/*FIN Viral*/
+
+/*Actividad social*/
+.view-id-sidebar.view-display-id-block_3{width:300px;float:left; position: relative;height:auto; border:1px solid #E8E7E8; background:#fff;margin-bottom:20px;
+    h2{font-size:18px; color:#fff; text-transform:uppercase; width:280px; border-bottom:2px solid $entretenimiento;  padding: 5px 10px 0px 10px;margin: 0px 0px 10px 0px; background:$entretenimiento; font-weight:500;
+        a{color:#fff;text-decoration:none;}
+    }
+        .nota{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+                .tipo{display:none;}
+                .icon_galeria{display:none;background: url(../images/iconos/icon_galeria.svg) 0px 0px/60px auto no-repeat;height: 40px;width: 60px;display: block;text-indent: -9999px;float: left;position: absolute;left: 220px;top: 125px; opacity:0.7; z-index: 1;}    
+                .galeria{display:none; float:left; position: relative; overflow:hidden; width:280px; height:180px;
+                    img{width:280px; height:180px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .foto{display:block; float:left; position: relative; overflow:hidden; width:280px; height:180px;
+                    img{width:280px; height:180px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .info{width:280px; padding:10px 0px; float:left; position: relative;background:#fff; height:auto;
+                    .titulo{float:left; position: relative; width:280px; height:auto; float:left; line-height:22px;padding:10px 0px 0px 0px;margin-bottom:0px;
+                        a{font-size: 20px; font-weight:600; text-decoration:none; color:#101314;}
+                    }
+                    .seccion{font-size:15px;position:relative; float:left; 
+                        a{color:#646464; text-decoration:none;font-weight:600;}
+                        a:hover{text-decoration:underline;}
+                    }
+                    .sep{margin:0px 3px;color:#646464;position:relative; float:left;font-size:13px;}
+                    .fecha{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;margin-right:5px;}
+                    .hora{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;}
+                    .resumen{font-size:15px;position:relative; float:left; color:#646464;  font-weight:300;}
+                }
+            }
+    }/*FIN Actividad social*/
+
+/*Participacion*/
+.view-id-sidebar.view-display-id-block_7{width:300px;float:left; position: relative;height:auto; border:1px solid #E8E7E8; background:#fff;margin-bottom:20px;
+    h2{font-size:18px; color:#fff; text-transform:uppercase; width:280px; border-bottom:2px solid $participacion;  padding: 5px 10px 0px 10px;margin: 0px 0px 10px 0px; background:$participacion; font-weight:500;
+        a{color:#fff;text-decoration:none;}
+    }
+        .nota{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+                .tipo{display:none;}
+                .icon_galeria{display:none;background: url(../images/iconos/icon_galeria.svg) 0px 0px/60px auto no-repeat;height: 40px;width: 60px;display: block;text-indent: -9999px;float: left;position: absolute;left: 220px;top: 125px; opacity:0.7; z-index: 1;}    
+                .galeria{display:none; float:left; position: relative; overflow:hidden; width:280px; height:180px;
+                    img{width:280px; height:180px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .foto{display:block; float:left; position: relative; overflow:hidden; width:280px; height:180px;
+                    img{width:280px; height:180px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .info{width:280px; padding:10px 0px; float:left; position: relative;background:#fff; height:auto;
+                    .titulo{float:left; position: relative; width:280px; height:auto; float:left; line-height:22px;padding:10px 0px 0px 0px;margin-bottom:0px;
+                        a{font-size: 20px; font-weight:600; text-decoration:none; color:#101314;}
+                    }
+                    .seccion{font-size:15px;position:relative; float:left; 
+                        a{color:#646464; text-decoration:none;font-weight:600;}
+                        a:hover{text-decoration:underline;}
+                    }
+                    .sep{margin:0px 3px;color:#646464;position:relative; float:left;font-size:13px;}
+                    .fecha{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;margin-right:5px;}
+                    .hora{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;}
+                    .resumen{font-size:15px;position:relative; float:left; color:#646464;  font-weight:300;}
+                }
+            }
+    }/*FIN Participacion*/
+
+/*Tecnologia*/
+.view-id-sidebar.view-display-id-block_8{width:300px;float:left; position: relative;height:auto; border:1px solid #E8E7E8; background:#fff;margin-bottom:20px;
+    h2{font-size:18px; color:#fff; text-transform:uppercase; width:280px; border-bottom:2px solid $entretenimiento;  padding: 5px 10px 0px 10px;margin: 0px 0px 10px 0px; background:$entretenimiento; font-weight:500;
+        a{color:#fff;text-decoration:none;}
+    }
+        .nota{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+                .tipo{display:none;}
+                .icon_galeria{display:none;background: url(../images/iconos/icon_galeria.svg) 0px 0px/60px auto no-repeat;height: 40px;width: 60px;display: block;text-indent: -9999px;float: left;position: absolute;left: 220px;top: 125px; opacity:0.7; z-index: 1;}    
+                .galeria{display:none; float:left; position: relative; overflow:hidden; width:280px; height:180px;
+                    img{width:280px; height:180px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .foto{display:block; float:left; position: relative; overflow:hidden; width:280px; height:180px;
+                    img{width:280px; height:180px;transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .info{width:280px; padding:10px 0px; float:left; position: relative;background:#fff; height:auto;
+                    .titulo{float:left; position: relative; width:280px; height:auto; float:left; line-height:22px;padding:10px 0px 0px 0px;margin-bottom:0px;
+                        a{font-size: 20px; font-weight:600; text-decoration:none; color:#101314;}
+                    }
+                    .seccion{font-size:15px;position:relative; float:left; 
+                        a{color:#646464; text-decoration:none;font-weight:600;}
+                        a:hover{text-decoration:underline;}
+                    }
+                    .sep{margin:0px 3px;color:#646464;position:relative; float:left;font-size:13px;}
+                    .fecha{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;margin-right:5px;}
+                    .hora{font-size:13px;position:relative; float:left; color:#646464; font-weight:300;}
+                    .resumen{font-size:15px;position:relative; float:left; color:#646464;  font-weight:300;}
+                }
+            }
+    }/*FIN Tecnologia*/
+
+/* + Leidos*/
+.view-id-sidebar.view-display-id-block_5{width:300px;float:left; position: relative;height:auto; border:1px solid #E8E7E8; background:#fff;margin-bottom:20px;
+    h2{font-size: 18px;color: #101314;text-transform: uppercase;width: 280px;border-bottom: 2px solid #101314;padding: 10px 0px 0px 0px; margin:0px 10px 10px 10px;}
+        .nota{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+            .titulo{float:left; position: relative; width:220px; height:auto; float:left; line-height:22px;padding:0px 0px 10px 10px; margin-bottom:10px; border-left: 4px solid #BA2025;
+                a{font-size: 16px; font-weight:600; text-decoration:none; color:#101314;}
+            }
+            .numero{font-size:24px;position:relative; float:left; color:#fff; font-weight:600; background:$estandar; padding:1px 2px 1px 20px; width:15px; height: auto; text-align:right; margin-right:5px;}
+        }
+    }/*FIN + Leidos*/
+
+/*Portada impresa*/
+.bottom{
+    .view-id-sidebar.view-display-id-block_4{margin:0px 29px 20px 0px;}
+    #block-block-65{margin:0px 29px 20px 0px;}
+    #block-block-66{margin:0px 0px 20px 0px;}
+}
+.view-id-sidebar.view-display-id-block_4{width:300px;float:left; position: relative;height:180px; border:1px solid #E8E7E8; background:#fff;margin:0px 0px 20px 0px;display: block; 
+    h2{font-size:18px; color:#fff; text-transform:uppercase; width:280px; border-bottom:1px solid $servicios; padding: 5px 10px 0px 10px;margin: 0px 0px 10px 0px; background:$servicios; font-weight:500;}
+        .pdf{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+                .imagen{display:block; float:left; position: relative; overflow:hidden; width: 142px;height: 137px;margin-right: 18px;
+                    img{width:140px; height:130px; border:1px solid #E8E7E8; transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .descripcion{font-size:15px;position:relative; float:left; color:#101314; font-weight:300; width:120px; padding:10px 0px; float:left; position: relative;background:#fff; height:auto; text-align:center; margin:4px 0px;
+                    span{font-weight:600; text-transform:uppercase;}
+                    }
+                .boton{position:relative; float:left; width:100px; background:#C02428; border-radius:6px; margin:0px 10px;
+                    a{font-size:15px;color:#fff; font-weight:500; text-align:center; float:left;padding:5px 0px; margin:0px 10px; text-decoration:none; text-transform:uppercase;}
+                }
+
+            }
+    }/*FIN Portada impresa*/
+
+.view-id-sidebar.view-display-id-block_6{width:300px;float:left; position: relative;height:180px; border:1px solid #E8E7E8; background:#fff;margin:0px 0px 20px 0px;display: block; 
+    h2{font-size:18px; color:#fff; text-transform:uppercase; width:280px; border-bottom:1px solid $servicios; padding: 5px 10px 0px 10px;margin: 0px 0px 10px 0px; background:$servicios; font-weight:500;}
+        .calendario{width:280px; height:auto;float:left; position: relative; padding:0px 10px;
+                .imagen{display:block; float:left; position: relative; overflow:hidden; width: 142px;height: 137px;margin-right: 18px;
+                    img{width:140px; height:130px; border:1px solid #E8E7E8; transition:all 0.2s ease;}
+                    img:hover{opacity:0.9; transition:all 0.2s ease;}
+                    a{border:none;}
+                }
+                .descripcion{font-size:15px;position:relative; float:left; color:#101314; font-weight:300; width:120px; padding:10px 0px 0px 0px; float:left; position: relative;background:#fff; height:auto; text-align:center; margin:4px 0px;
+                    span{font-weight:600; text-transform:uppercase;}
+                    }
+                .boton{position:relative; float:left; width:100px; background:#C02428; border-radius:6px; margin:0px 10px;
+                    a{font-size:15px;color:#fff; font-weight:500; text-align:center; float:left;padding:5px 0px; margin:0px 10px; text-decoration:none; text-transform:uppercase;}
+                }
+
+            }
+    }/*FIN calendario tributario*/
+
+
+/*Suscripciones*/
+#block-block-65{width:300px;float:left; position: relative; height:180px;-moz-height:190px;margin:0px 0px 20px 0px;}
+.suscripciones{ width:300px;float:left; position: relative; height:180px; -moz-height:190px;
+    h2{font-size:18px; color:#fff; text-transform:uppercase; width:290px; border-bottom:2px solid $servicios; padding: 5px 0px 0px 10px;margin: 0px; background:$servicios; font-weight:500;}
+        .info{padding:0px 10px;border:1px solid #E8E7E8;width:280px;background:#fff;height:150px; -webkit-height:150px; -o-height:150px; -moz-height:160px;
+            .imagen{display:block; float:left; position: relative; overflow:hidden; width: 280px;height: 67px;background: url(../images/rollo_periodico.png) 80px 15px/120px auto no-repeat;
+                }
+            .leyenda{font-size:15px;position:relative; float:left; color:#101314; font-weight:300; width:260px; padding:4px 10px 0px; float:left; position: relative; height:auto; text-align:center; margin:0px;
+                    span{font-weight:600; text-transform:uppercase;}
+                }
+            .boton{position:relative; float:left; width:100px; background:#C02428; border-radius:6px; margin:0px 90px;
+                a{font-size:15px;color:#fff; font-weight:500; text-align:center; float:left;padding:5px 0px; margin:0px 10px; text-decoration:none; text-transform:uppercase;}
+                }
+        }
+    }
+/*FIN Suscripciones*/
+
+/*Clasificados*/
+#block-block-66{width:300px;float:left; position: relative; height:180px;margin:0px 0px 20px 0px;}
+.clasificados{ width:300px;float:left; position: relative; height:180px;
+    h2{font-size:18px; color:#fff; text-transform:uppercase; width:290px; border-bottom:2px solid $servicios; padding: 5px 0px 0px 10px;margin: 0px; background:$servicios; font-weight:500;}
+        .info{padding:0px 10px;border:1px solid #E8E7E8;width:280px;background:#fff;height:150px;
+            .imagen{display:block; float:left; position: relative; overflow:hidden; width: 280px;height: 67px;background: url(../images/rollo_periodico.png) 80px 15px/120px auto no-repeat;}
+            .leyenda{font-size:15px;position:relative; float:left; color:#101314; font-weight:300; width:180px; padding:4px 10px 0px; float:left; position: relative; height:auto; text-align:left; margin:0px;
+                    span{font-weight:400; text-transform:none;}
+                }
+            .enlace{background:$servicios; font-size:15px;position:relative; float:left; color:#fff; font-weight:300; width:220px; padding:2px 5px 0px; float:left; position: relative; height:auto; text-align:left; margin:5px 0px;
+                    a{font-weight:600; text-transform:none; color:#fff; text-decoration:none;}
+                }         
+            ul{width:280px; height:60px; position: relative; float:left;margin:0px; padding:0px; list-style: none;
+                .empleos{background: url(../images/iconos/clasificados.svg) 2px 7px/200px auto no-repeat;width: 55px;height: 60px;margin-right: 10px;padding: 0px;position: relative;float:left; 
+                        a{color: $servicios;text-decoration: underline;top: 45px;position: relative; text-decoration:none; font-size:12px; left:6px;}
+                    }
+                .vehiculos{background: url(../images/iconos/clasificados.svg) -49px 7px/200px auto no-repeat;width: 50px;height: 60px;margin:0px 10px;padding: 0px;position: relative;float:left; 
+                        a{color:$servicios;text-decoration: underline;top: 45px;position: relative;text-decoration:none; font-size:12px;}
+                    }
+                .finca{background: url(../images/iconos/clasificados.svg) -95px 7px/200px auto no-repeat;width: 55px;height: 60px;margin:0px 10px;padding: 0px;position: relative;float:left; 
+                        a{color: $servicios;text-decoration: underline;top: 45px;position: relative;text-decoration:none; font-size:12px;}
+                    }
+                .varios{background: url(../images/iconos/clasificados.svg) -158px 7px/200px auto no-repeat;width: 55px;height: 60px;margin:0px 0px 0px 10px;padding: 0px;position: relative;float:left; 
+                        a{color: $servicios;text-decoration: underline;top: 45px;position: relative;text-decoration:none; font-size:12px;}
+                    }
+                }
+            }
+        }
+/*FIN Clasificados*/
+
+/*TWITTER*/
+#twitter{width: 300px; margin: 0 auto; border:1px solid #E8E7E8; background:#fff;height: auto;float:left; margin-bottom:20px;
+    h2{background:#00A2DE; color:#fff;margin: 0px;height: 30px;
+        .icon{background: url(../images/iconos/icon_twitter.svg) 0px -6px/130px no-repeat;width: 130px;height: 30px;float: left;position: relative;margin: 0px;}
+    }
+    .item{width:260px; padding:10px 20px 0px 20px; float:left; position: relative;}
+    
+    .head{position: relative;margin:0 auto; width:140px; height:110px; margin-bottom:10px;
+        .icono{-moz-background: url(../images/iconos/icon_logo.png) 0px -3px no-repeat;-webkit-background: url(../images/iconos/icon_logo.png) 0px -3px no-repeat;-o-background: url(../images/iconos/icon_logo.png) 0px -3px no-repeat;background: url(../images/iconos/icon_logo.png) 0px -3px no-repeat;width: 60px;height: 50px;position: relative;margin:0 auto;}
+        .nombre{color:#646464; text-transform: capitalize;text-align: center;font-weight: 300;font-size: 17px;width: 140px;margin: 0px;position: relative;padding:4px 0px;margin:0 auto;}
+        .pajaro{-moz-background: url(../images/iconos/bird.svg) no-repeat;-webkit-background: url(../images/iconos/bird.svg) no-repeat;-o-background: url(../images/iconos/bird.svg) no-repeat;background: url(../images/iconos/bird.svg) no-repeat;width: 40px;height: 30px;position: relative;float:left;}
+        .cuenta{text-transform: capitalize;text-align: center;font-weight: 300;font-size: 14px;width: 100px;margin: 0px;float: left;position: relative;padding:9px 0px;
+           a{-moz-color: $estandar; -webkit-color: $estandar; -o-color: $estandar; color: $estandar; text-decoration: none;}
+           }
+    }
+}
+/*TUIT*/
+#tweet {margin: 0 auto;
+    .user{display:none;}
+    a{color:#BA2025;}
+    p{color:#646464;}
+    ul {margin: 0 auto; padding:0px;float:left;position: relative;
+      li{list-style:none;margin: 0px;padding:15px 10px 15px 10px; height:auto;border-bottom: 1px solid #00A2DE;width:230px; overflow:hidden;
+        .tweet{font-size:15px; color: #646464;margin: 0 auto; position: relative; text-align: center; 
+        a{font-weight:600;text-decoration:none;}
+        a:hover{text-decoration:underline;}
+        }
+        .timePosted{display:none;}
+        .interact{width:90px;margin:0 auto; height:30px;
+             a{padding:0px 2px;}  
+             .twitter_reply_icon{text-indent: -9999px;-moz-background: url(../images/iconos/tw_acciones.svg) -10px -19px/120px no-repeat;-webkit-background: url(../images/iconos/iconos/tw_acciones.svg) no-repeat;-o-background: url(../images/iconos/tw_acciones.svg) -10px -19px/120px no-repeat;background: url(../images/iconos/tw_acciones.svg) -10px -19px/120px no-repeat;width: 25px;height: 20px; position: relative; float:left;}
+             .twitter_retweet_icon{text-indent: -9999px;-moz-background: url(../images/iconos/tw_acciones.svg) -43px -18px/115px no-repeat;-webkit-background: url(../images/iconos/tw_acciones.svg) -43px -18px/115px no-repeat;-o-background: url(../images/iconos/tw_acciones.svg) -43px -18px/115px no-repeat;background: url(../images/iconos/tw_acciones.svg) -43px -18px/115px no-repeat;width: 25px;height: 20px; position: relative; float:left;}
+             .twitter_fav_icon{text-indent: -9999px;-moz-background: url(../images/iconos/tw_acciones.svg) -83px -20px/120px no-repeat;-webkit-background: url(../images/iconos/tw_acciones.svg) -83px -20px/120px no-repeat;-o-background: url(../images/iconos/tw_acciones.svg) -83px -20px/120px no-repeat;background: url(../images/iconos/tw_acciones.svg) -83px -20px/120px no-repeat;width: 25px;height: 20px; position: relative; float:left;}
+        }
+      }
+      li:hover {background-color:none;}
+    }    
+}/*FIN TUIT*/
+/*FIN TWITTER*/
+/*JUEGOS*/
+.juegos {width: 300px;height: 156px;float: left;position: relative;margin: 0;
+    img{width: 300px;height: auto;float: left;position: relative;}
+}
+/*FIN JUEGOS*/
+

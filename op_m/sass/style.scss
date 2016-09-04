@@ -1,0 +1,60 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+@import "base/base";
+
+// BASE STYLES -----------------------------------------------------------------
+@import "base/fonts";
+@import "base/general";
+// LAYOUT ----------------------------------------------------------------------
+
+
+
+// COMPONENT STYLES ------------------------------------------------------------
+@import "components/header";
+@import "components/footer";
+@import "components/pautas";
+@import "components/home";
+@import "components/secciones";
+@import "components/notas";
+@import "components/video";
+@import "components/generales";
+@import "components/galeria";
+@import "components/podcast";
+@import "components/infografia";
+@import "components/caricatura";
+@import "components/columna_opinion";
+@import "components/columnista";
+@import "components/cucuta";
+@import "components/especiales";
+@import "components/aperturas";
+@import "components/especial";
+@import "components/buscador";
+@import "components/opinion";
+@import "components/editorial";
+@import "components/caricaturas";
+@import "components/region";
+@import "components/actualidad";
+@import "components/deportes";
+@import "components/tendencias";
+@import "components/economia";
+@import "components/suscripciones";
+@import "components/servicios";
+@import "components/contactenos";
+@import "components/participacion";
+@import "components/usuarios";
+@import "components/404";
+@import "components/olimpicos_home";
+@import "components/media768";
+@import "components/media600";
+@import "components/media400";
+
+/*
+*/
+// COMPATIBILIDAD CON IE 
+@import "compatibility/global-ie8"; 
+@import "http://static.laopinion.com.co/modules/contextual/contextual.css";
+
+
+
+
+
