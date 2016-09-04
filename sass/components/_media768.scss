@@ -2,6 +2,7 @@
 	#head_desktop{
 		display: none;
 	}
+	.pauta_movil{display: none;}
 	//Icon menu normal en 400px se hace un poco mas pequeño el hamburger
 	#head_movil{top:0px;position: fixed;z-index: 50;display: flex;display: -webkit-flex;display: -moz-flex;align-items: center;-webkit-align-items: center;-moz-align-items: center;background-color: #BB1D1E;height: 90px;width: 100%;
 		#hamburger{width: 50px;height: 30px;position: relative;top: -9px; left: 5%;transition: .5s ease-in-out;cursor: pointer;
@@ -2473,6 +2474,100 @@
 			}
 		}
 	}
+
+	/*Columna de opinion*/
+	#columna_opinion{width: 100%;padding: 0px 0px; margin-top:0px;
+		.pauta{width: 100%;margin: 14px auto;}
+		.izq{width: 96%;margin: 0 2%;margin-top: 50px;
+			.menu_seccion{margin-bottom: 10px;
+				.submenu{padding: 0; border: none;height: auto;}
+			}
+			.compartir_table{ display: block;
+				.compartirbarra{float:right;right: 0px;position:relative; display:inline-block; vertical-align:middle;transition:all 0.5s ease; 
+                    .redes_sociales{margin:0px;position: relative;float:left;width:auto;padding:0px;right:10px;
+                        li{list-style:none; float:left; width: 30px;padding: 0px;display: inline-block;vertical-align: middle;height:30px; cursor:pointer;margin:0px;}
+                        .fb{ 
+                            .st_facebook_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -34px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                        .tw{ 
+                            .st_twitter_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -60px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                        .go{ 
+                            .st_googleplus_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -86px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                        .pin{ 
+                            .st_pinterest_large{background: url(../images/iconos/redes_nota.svg) no-repeat -12px -113px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                        .wp{
+                            .st_whatsapp_large{background: url(../images/movil/whatsapp.svg) no-repeat -6px 0px/41px auto transparent;position: relative; width: 40px; height: 40px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                    }
+                }//FIN COMPARTIR
+			}
+			.compartir{display: none!important;}
+			.contenido{width: 100%;
+				.foto{width: 100%; left: 0;margin-top: 20px;
+					.desktop{display: none;}
+				}
+				.texto{width: 100%;
+					p{
+						.desktop{display:block;}
+                    	.movil{display:none;}
+					}                    	
+				}
+				.autor{
+					h2{margin: 0;}
+					.field-name-field-descripcion{width: 70%;height: 50px;}
+				}
+				.barra.table{display: block;}
+			}//Fin contenido
+			.webform-client-form.webform-client-form-90572{width: 100%;height: auto;}
+			.comentarios{margin-right: 0; width: 100%;
+				.bloque{width: 94%; padding: 2%;} 
+			}
+			.mas_notas{
+				.view-id-detalle.view-display-id-block_5{width: 100%;
+					.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+						.views-row{margin-right: 0;}
+					}
+				}
+			}
+			.divisor_taboola{left: 0;}
+			#taboola-below-article-thumbnails{left: 0;
+				.trc_rbox_container{
+					.trc_rbox{
+						.trc_rbox_outer{
+							#rbox-t2m{margin-left: 0;
+								div:first-child{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+									.trc_spotlight_item{margin-left: 0;margin: 5px 10px;}
+								}
+							}
+						}
+					}
+				}
+			}
+		}//Fin izq
+		.der{display: none;}
+		.recientes_footer{display: block;}
+		.notas_footer{width: 96%;margin: 30px 2%;
+			.view-id-recientes.view-display-id-block_3{
+				.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+					.views-row{margin-right: 0;margin-bottom: 10px;width: 300px;
+						.nota{
+							.info{width: 160px;}
+						}
+					}
+				}
+			}
+		}
+		.notas_footer .vista-recientes-footer .icon_video{right: 90px;}
+		.notas_footer .vista-recientes-footer .icon_galeria{right: 90px;}
+		.notas_footer .vista-recientes-footer .icon_podcast{right: 90px;}
+		.multimedia_recientes_footer{display: none;}
+		.multimedia_footer{display: none;}
+		.center{display: none;}
+		hr{display: none;}
+	}/* Fin columna de opinion */
 
 	//Juegos Olimpicos
 	#olimpicos_home{width: 100%;

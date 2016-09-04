@@ -1,4 +1,6 @@
 @media screen and (max-width: 600px){
+	.pauta_movil{display: block;}
+	.pauta{display: none;}
 	/*Menu movil*/
 	#head_movil{position: fixed;z-index: 50;
 		#menu_movil.desplegar{left: 0;}
