@@ -7,7 +7,7 @@
 <!--Contenido-->
 <div id="nota">
   <!--ANUNCIO 1000x90--><div class="pauta p1000x90_nota" style="display: none"><?php include("pautas/N_1000x90.php"); ?></div><!--FIN ANUNCIO 1000x90-->
-  <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil fijo p320x50"><?php include("pautas/Nm_320x50_4.php"); ?></div><!--FIN ANUNCIO 320x50-->
+  <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil fijo"><?php include("pautas/Nm_320x50_4.php"); ?></div><!--FIN ANUNCIO 320x50-->
   <div class="izq">
     <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Nm_320x50_1.php"); ?></div><!--FIN ANUNCIO 320x50-->
     <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); print drupal_render(_block_get_renderable_array(_block_render_blocks(array($taxonomy_menu_block))));?><!--FIN seccion-->
@@ -65,10 +65,8 @@
       print "<div class=texto>".render($content['body'])."</div>";
       print "<div class=autor>".render($content['field_autor'])."</div>";           
       ?>
-      <!--formulario-->
-      <div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-90577');print render($block['content']); ?></div><!--FIN formulario-->
+      <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-90577');print render($block['content']); ?></div><!--FIN formulario-->
     </div>
-
     <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_300x250_4.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
     <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Nm_320x50_2.php"); ?></div><!--FIN ANUNCIO 320x50-->
     <div class="comentarios">
