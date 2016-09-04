@@ -2,6 +2,7 @@
 	#head_desktop{
 		display: none;
 	}
+	.pauta_movil{display: none;}
 	//Icon menu normal en 400px se hace un poco mas pequeño el hamburger
 	#head_movil{top:0px;position: fixed;z-index: 50;display: flex;display: -webkit-flex;display: -moz-flex;align-items: center;-webkit-align-items: center;-moz-align-items: center;background-color: #BB1D1E;height: 90px;width: 100%;
 		#hamburger{width: 50px;height: 30px;position: relative;top: -9px; left: 5%;transition: .5s ease-in-out;cursor: pointer;
