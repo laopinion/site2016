@@ -489,6 +489,43 @@
                     .resumen{font-size:15px;position:relative; float:left; color:#646464;  font-weight:300;}
                 }
             }
+            //OPINIÓN
+            .opinion{width:100%;height: 11px;color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px 0px 5px 5px;top: -2px;position: relative;margin: 0px;
+                .color{background:$opinion; height:10px; width:25px; float:left;position: relative;text-indent:-9999px; margin-right:5px;}
+                a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
+            }
+            .view-id-side.view-display-id-block_7{background:#F2F2F2; width:258px;height:174px; float:left;position: relative;margin-bottom:0px; border:1px solid #D9D9D9; padding:5px 20px 0px 20px; border-bottom:none;
+                .views-row {margin-bottom:10px;float:left;width:258px; padding:0px 0px 15px 0px; border-bottom:1px solid #D5D5D5;}
+                .nota{height:auto; float:left; position: relative; width:258px;
+                    .tipo{display:none;}
+                    .seccion{width:100%; padding: 5px 0px;height: 11px;float:left;
+                        a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px;top: -2px;position: relative;margin: 0px; width:155px;}
+                    }
+                    .titulo{float:left; position: relative; width:100%; height:auto; float:left; line-height:20px; text-align: center;padding: 10px 0px;
+                        a{font-size: 30px; font-weight:400; text-decoration:none; color:$opinion;}
+                    }
+                    .resumen{font-size:16px;position:relative; float:left; color:#646464;  font-weight:200; line-height:20px;
+                        p{margin-top:0px;}
+                    }
+                }
+            }
+            .view-id-side.view-display-id-block_8{background:#F2F2F2; width:258px;height:auto; float:left;position: relative;margin-bottom:20px; border:1px solid #D9D9D9; padding:0px 20px 10px 20px;border-top:none;
+                .seccion{width:100%; padding: 10px 0px;height: 11px;float:left;color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; position: relative;margin: 0px; width:155px;}
+                .views-row-last{border-bottom:none !important; margin-bottom:0px !important; padding:0px !important;}
+                .views-row {margin-bottom:10px;float:left;width:258px; padding:0px 0px 5px 0px; border-bottom:1px solid #D5D5D5;}
+                .nota{height:auto; float:left; position: relative; width:258px;
+                    .autor{background:$opinion; float:left; position: relative; width:auto; height:auto; float:left; line-height:14px; text-align: center;padding: 3px;margin-right:20px;margin-top:5px;
+                        a{font-size: 14px; font-weight:400; text-decoration:none; color:#fff;}
+                    }
+                    .titulo{float:left; position: relative; width:160px; height:auto; float:left; line-height:16px;padding: 10px 0px;
+                        a{font-size: 16px; font-weight:400; text-decoration:none; color:#101314;}
+                    }
+                    .foto{display: block;float: left;position: relative;overflow: hidden;width: 85px;height: 85px;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;border-color: #BFD63E;background: #fff;border: 3px solid #BFD63E;margin-right: 5px;
+                        img{width:80px; height:80px; top:10px; position:relative; transition:all 0.2s ease;}
+                        a{border:none;}
+                    }
+                }
+            }
             //DELEITESE
             .deleitese{width:100%;padding: 0px 0px 5px 0px;top: 0px;position: relative;float:left;
                 a{background:url(../images/iconos/deleitese.svg) 10px -6px/125px auto no-repeat #000;height: 50px;width: 140px;text-indent: -9999px; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px 0px 0px 5px;z-index: 1;left: 10px;position: relative;margin: 0px; z-index:1;top:20px;}
@@ -530,60 +567,6 @@
                         a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px;top: -2px;position: relative;margin: 0px; width:100%;}
                     }
                     .titulo{float:left; position: relative; width:128px; height:auto; float:left; line-height:16px; border-top: 2px solid #F98D00;padding: 5px 0px 0px 0px;margin-right: 10px;
-                        a{font-size: 14px; font-weight:600; text-decoration:none; color:#101314; text-transform:uppercase;}
-                    }
-                    .foto{width:120px; height:auto; float:left; position: relative; overflow:hidden;
-                        img{width:145px; height:auto;}
-                    }
-                    .video{width:120px; height:auto; float:left; position: relative; overflow:hidden;
-                        img{width:145px; height:auto;}
-                    }
-                    .galeria{width:120px; height:auto; float:left; position: relative; overflow:hidden;
-                        img{width:145px; height:auto;}
-                    }
-                }
-            }
-            //REVISTA LA O
-            .revista{width:100%;padding: 0px 0px 5px 0px;top: 0px;position: relative;float:left;
-                a{background:url(../images/iconos/lao.svg) 5px -9px/70px auto no-repeat #FF0000;height: 50px;width: 70px;text-indent: -9999px; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px 0px 0px 5px;z-index: 1;left: 10px;position: relative;margin: 0px; z-index:1;top:20px;}
-            }
-            .view-id-side.view-display-id-block_4{background:#fff; width:258px;height:auto; float:left;position: relative;margin-bottom:10px; border:1px solid #D9D9D9; padding:20px;
-                .views-row {margin-bottom:10px;float:left;width:258px; padding:0px;}
-                .views-row-last{margin-bottom:0px; border-bottom:none;padding:0px;}
-                .views-row-1{margin-bottom:10px; padding:0px 0px 10px 0px;
-                    .nota{height:auto; float:left; position: relative; width:258px;
-                        .tipo{display:none;}
-                        .icon_video{display:none;background:url(../images/iconos/video.svg) -9px -3px/55px auto no-repeat;height: 34px;width: 40px;text-indent: -9999px;float: left;position: absolute; right: 160px;top: 25px;opacity:0.7; z-index: 1;}
-                        .icon_galeria{display:none;background:url(../images/iconos/galeria.svg) -9px -3px/55px auto no-repeat;height: 34px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 160px;top: 25px;opacity:0.7; z-index: 1;}
-                        .icon_podcast{display:none;background:url(../images/iconos/podcast.svg) -9px -3px/55px auto no-repeat;height: 34px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 160px;top: 25px;opacity:0.7; z-index: 1;}
-                        .seccion{width:100%; padding: 5px 0px;height: 11px;
-                            .color{background:$seccion; height:10px; width:25px; float:left;position: relative;text-indent:-9999px;}
-                                a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px;top: -2px;position: relative;margin: 0px; width:100%;}
-                            }
-                        .titulo{float:left; position: relative; width:auto; height:auto; float:left; line-height:20px; border-top:none; padding:0px; margin-right:0px;
-                            a{font-size: 20px; font-weight:600; text-decoration:none; color:#101314;}
-                        }
-                        .resumen{font-size:15px;position:relative; float:left; color:#646464;  font-weight:300;}
-                        .foto{width:258px; height:auto; float:left; position: relative;
-                            img{width: 258px; height:auto;}
-                        }
-                        .video{width:258px; height:auto; float:left; position: relative;
-                            img{width: 258px; height:auto;}
-                        }
-                        .galeria{width:258px; height:auto; float:left; position: relative;
-                            img{width: 258px; height:auto;}
-                        }
-                    }
-                }
-                .nota{height:auto; float:left; position: relative; width:258px;
-                    .tipo{display:none;}
-                    .icon_video{display:none;background: url(../images/iconos/video.svg) -9px -3px/48px auto no-repeat;height: 30px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 83px;top: 22px;opacity: 0.7;z-index: 1;}
-                    .icon_galeria{display:none;background: url(../images/iconos/galeria.svg) -9px -3px/48px auto no-repeat;height: 30px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 83px;top: 22px;opacity: 0.7;z-index: 1;}
-                    .icon_podcast{display:none;background: url(../images/iconos/podcast.svg) -9px -3px/48px auto no-repeat;height: 30px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 83px;top: 22px;opacity: 0.7;z-index: 1;}
-                    .seccion{width:100%; padding: 5px 0px;height: 11px;
-                        a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px;top: -2px;position: relative;margin: 0px; width:100%;}
-                    }
-                    .titulo{float:left; position: relative; width:128px; height:auto; float:left; line-height:16px; border-top: 2px solid #FF0000;padding: 5px 0px 0px 0px;margin-right: 10px;
                         a{font-size: 14px; font-weight:600; text-decoration:none; color:#101314; text-transform:uppercase;}
                     }
                     .foto{width:120px; height:auto; float:left; position: relative; overflow:hidden;
@@ -836,48 +819,66 @@
         }
         //FIN LEFT
         .right{
-            //OPINIÓN
-            .opinion{width:100%;height: 11px;color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px 0px 5px 5px;top: -2px;position: relative;margin: 0px;
-                .color{background:$opinion; height:10px; width:25px; float:left;position: relative;text-indent:-9999px; margin-right:5px;}
-                a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
+            //REVISTA LA O
+            .revista{width:100%;padding: 0px 0px 5px 0px;top:-40px;position: relative;float:left;
+                a{background:url(../images/iconos/lao.svg) 5px -9px/70px auto no-repeat #FF0000;height: 50px;width: 70px;text-indent: -9999px; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px 0px 0px 5px;z-index: 1;left: 10px;position: relative;margin: 0px; z-index:1;top:20px;}
             }
-            .view-id-side.view-display-id-block_7{background:#F2F2F2; width:258px;height:174px; float:left;position: relative;margin-bottom:0px; border:1px solid #D9D9D9; padding:5px 20px 0px 20px; border-bottom:none;
-                .views-row {margin-bottom:10px;float:left;width:258px; padding:0px 0px 15px 0px; border-bottom:1px solid #D5D5D5;}
-                .nota{height:auto; float:left; position: relative; width:258px;
-                    .tipo{display:none;}
-                    .seccion{width:100%; padding: 5px 0px;height: 11px;float:left;
-                        a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px;top: -2px;position: relative;margin: 0px; width:155px;}
-                    }
-                    .titulo{float:left; position: relative; width:100%; height:auto; float:left; line-height:20px; text-align: center;padding: 10px 0px;
-                        a{font-size: 30px; font-weight:400; text-decoration:none; color:$opinion;}
-                    }
-                    .resumen{font-size:16px;position:relative; float:left; color:#646464;  font-weight:200; line-height:20px;
-                        p{margin-top:0px;}
+            .view-id-side.view-display-id-block_4{background:#fff; width:258px;height:509px; float:left;position: relative;margin-bottom:10px; border:1px solid #D9D9D9; padding:20px;top:-55px;
+                .view-content{top: 40px;position: relative;}
+                .views-row {margin-bottom:10px;float:left;width:258px; padding:0px;}
+                .views-row-last{margin-bottom:0px; border-bottom:none;padding:0px;}
+                .views-row-1{margin-bottom:10px; padding:0px 0px 10px 0px;
+                    .nota{height:auto; float:left; position: relative; width:258px;
+                        .tipo{display:none;}
+                        .icon_video{display:none;background:url(../images/iconos/video.svg) -9px -3px/55px auto no-repeat;height: 34px;width: 40px;text-indent: -9999px;float: left;position: absolute; right: 160px;top: 25px;opacity:0.7; z-index: 1;}
+                        .icon_galeria{display:none;background:url(../images/iconos/galeria.svg) -9px -3px/55px auto no-repeat;height: 34px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 160px;top: 25px;opacity:0.7; z-index: 1;}
+                        .icon_podcast{display:none;background:url(../images/iconos/podcast.svg) -9px -3px/55px auto no-repeat;height: 34px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 160px;top: 25px;opacity:0.7; z-index: 1;}
+                        .seccion{width:100%; padding: 5px 0px;height: 11px;
+                            .color{background:$seccion; height:10px; width:25px; float:left;position: relative;text-indent:-9999px;}
+                                a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px;top: -2px;position: relative;margin: 0px; width:100%;}
+                            }
+                        .titulo{float:left; position: relative; width:auto; height:auto; float:left; line-height:20px; border-top:none; padding:0px; margin-right:0px;
+                            a{font-size: 20px; font-weight:600; text-decoration:none; color:#101314;}
+                        }
+                        .resumen{font-size:15px;position:relative; float:left; color:#646464;  font-weight:300;}
+                        .foto{width:258px; height:auto; float:left; position: relative;
+                            img{width: 258px; height:auto;}
+                        }
+                        .video{width:258px; height:auto; float:left; position: relative;
+                            img{width: 258px; height:auto;}
+                        }
+                        .galeria{width:258px; height:auto; float:left; position: relative;
+                            img{width: 258px; height:auto;}
+                        }
                     }
                 }
-            }
-            .view-id-side.view-display-id-block_8{background:#F2F2F2; width:258px;height:auto; float:left;position: relative;margin-bottom:20px; border:1px solid #D9D9D9; padding:0px 20px 10px 20px;border-top:none;
-                .seccion{width:100%; padding: 10px 0px;height: 11px;float:left;color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; position: relative;margin: 0px; width:155px;}
-                .views-row-last{border-bottom:none !important; margin-bottom:0px !important; padding:0px !important;}
-                .views-row {margin-bottom:10px;float:left;width:258px; padding:0px 0px 5px 0px; border-bottom:1px solid #D5D5D5;}
                 .nota{height:auto; float:left; position: relative; width:258px;
-                    .autor{background:$opinion; float:left; position: relative; width:auto; height:auto; float:left; line-height:14px; text-align: center;padding: 3px;margin-right:20px;margin-top:5px;
-                        a{font-size: 14px; font-weight:400; text-decoration:none; color:#fff;}
+                    .tipo{display:none;}
+                    .icon_video{display:none;background: url(../images/iconos/video.svg) -9px -3px/48px auto no-repeat;height: 30px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 83px;top: 22px;opacity: 0.7;z-index: 1;}
+                    .icon_galeria{display:none;background: url(../images/iconos/galeria.svg) -9px -3px/48px auto no-repeat;height: 30px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 83px;top: 22px;opacity: 0.7;z-index: 1;}
+                    .icon_podcast{display:none;background: url(../images/iconos/podcast.svg) -9px -3px/48px auto no-repeat;height: 30px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 83px;top: 22px;opacity: 0.7;z-index: 1;}
+                    .seccion{width:100%; padding: 5px 0px;height: 11px;
+                        a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px;top: -2px;position: relative;margin: 0px; width:100%;}
                     }
-                    .titulo{float:left; position: relative; width:160px; height:auto; float:left; line-height:16px;padding: 10px 0px;
-                        a{font-size: 16px; font-weight:400; text-decoration:none; color:#101314;}
+                    .titulo{float:left; position: relative; width:128px; height:auto; float:left; line-height:16px; border-top: 2px solid #FF0000;padding: 5px 0px 0px 0px;margin-right: 10px;
+                        a{font-size: 14px; font-weight:600; text-decoration:none; color:#101314; text-transform:uppercase;}
                     }
-                    .foto{display: block;float: left;position: relative;overflow: hidden;width: 85px;height: 85px;-moz-border-radius: 50%;-webkit-border-radius: 50%;border-radius: 50%;border-color: #BFD63E;background: #fff;border: 3px solid #BFD63E;margin-right: 5px;
-                        img{width:80px; height:80px; top:10px; position:relative; transition:all 0.2s ease;}
-                        a{border:none;}
+                    .foto{width:120px; height:auto; float:left; position: relative; overflow:hidden;
+                        img{width:145px; height:auto;}
+                    }
+                    .video{width:120px; height:auto; float:left; position: relative; overflow:hidden;
+                        img{width:145px; height:auto;}
+                    }
+                    .galeria{width:120px; height:auto; float:left; position: relative; overflow:hidden;
+                        img{width:145px; height:auto;}
                     }
                 }
             }
             //ACTIVIDAD SOCIAL
-            .actividad{width:100%;height: 11px;color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px 0px 5px 5px;top: -2px;position: relative;margin: 0px;
+            .actividad{top:-44px; width:100%;height: 11px;color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px 0px 5px 5px;position: relative;margin: 0px;
                 .color{background:$tendencias; height:10px; width:25px; float:left;position: relative;text-indent:-9999px; margin-right:5px;}
             }
-            .view-id-side.view-display-id-block_5{background:#F2F2F2; width:258px;height:auto; float:left;position: relative;margin-bottom:20px; border:1px solid #D9D9D9; padding:20px;
+            .view-id-side.view-display-id-block_5{background:#F2F2F2; width:258px;height:auto; float:left;position: relative;margin-bottom:20px; border:1px solid #D9D9D9; padding:20px;top:-44px;
                 .views-row {margin-bottom:10px;float:left;width:258px; padding:0px 0px 10px 0px; border-bottom:1px solid #ccc;}
                 .views-row-last{margin-bottom:0px; border-bottom:none;padding:0px;}
                 .nota{height:auto; float:left; position: relative; width:258px;
