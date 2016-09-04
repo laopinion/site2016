@@ -3,27 +3,27 @@
       <div class="zonacomercial">
           <div class="content">
               <div class="empresa">
-                <div class="imagen"><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/unicentro.png"></div>
-                <div class="info"></div>
+                <div class="imagen"><a href="http://www.unicentrocucuta.com" target="_blank" ><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/unicentro.png"></a></div>
+                <div class="info">Unicentro Cúcuta</div>
                 <div class="pagina"><a href="http://www.unicentrocucuta.com" target="_blank" >www.unicentrocucuta.com</a></div>
               </div>
               <div class="separador"></div>
               <div class="empresa">
-                <div class="imagen"><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/aycardi.png"></div>
-                <div class="info">Av Libertadores # 27 - 42, Cel. (+57) 3174341077</div>
-                <div class="pagina"><a href="http://www.aycardiinmobiliaria.co" target="_blank" >www.aycardiinmobiliaria.co</a></div>
+                <div class="imagen"><a href="http://www.laopinion.com.co/sites/default/files/ads/2016/08/02_08_2016_fersautos.html" target="_blank" ><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/fersautos.png"></a></div>
+                <div class="info">Fersautos</div>
+                <div class="pagina"><a href="http://www.laopinion.com.co/sites/default/files/ads/2016/08/02_08_2016_fersautos.html" target="_blank" >Taxiton</a></div>
               </div>
               <div class="separador"></div>
               <div class="empresa">
-                <div class="imagen"><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/globocar.png"></div>
-                <div class="info">Av Libertadores, entrada a Niza Tel. (+57) (7)5847430</div>
-                <div class="pagina"></div>
+                <div class="imagen"><a href="http://www.deleitese.co" target="_blank" ><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/deleitese.png"></a></div>
+                <div class="info">Deléitese</div>
+                <div class="pagina"><a href="http://www.deleitese.co" target="_blank" >www.deleitese.co</a></div>
               </div>
               <div class="separador"></div>
               <div class="empresa">
-                <div class="imagen"><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/tcm.png"></div>
-                <div class="info">Av Libertadores # 15N - 23, Tel. (+57) (7)5798789</div>
-                <div class="pagina"></div>
+                <div class="imagen"><a href="http://clasificados.laopinion.com.co" target="_blank" ><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/clasificados.png"></a></div>
+                <div class="info">Clasificados La Opinión</div>
+                <div class="pagina"><a href="http://clasificados.laopinion.com.co" target="_blank" >Clasificados.laopinion.com.co</a></div>
               </div>
           </div>
       </div>
