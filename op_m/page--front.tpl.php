@@ -18,67 +18,67 @@
 		    <!--ANUNCIO 1000x90--><div class="pauta p1000x90" style="display: none"><?php include("pautas/H_1000x90.php"); ?></div><!--FIN ANUNCIO 1000x90-->
 		    <div class="left">
 		      	<div class="izq">
-		      		<!--Destacada--><?php $view = views_get_view('principal'); print $view->preview('block'); ?><!--FIN Destacada-->
-		      		<!--Lista--><?php $view = views_get_view('principal'); print $view->preview('block_1'); ?><!--FIN Lista-->
+		      		<!--Destacada--><?php print EjecutarViewCache('principal','block','corto'); ?><!--FIN Destacada-->
+		      		<!--Lista--><?php print EjecutarViewCache('principal','block_1','corto'); ?><!--FIN Lista-->
 		      		<!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/clickio300x250.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
-		      		<!--Lista 2--><?php $view = views_get_view('principal'); print $view->preview('block_2'); ?><!--FIN Lista 2-->
+		      		<!--Lista 2--><?php print EjecutarViewCache('principal','block_2','mediano'); ?><!--FIN Lista 2-->
 		      	</div>
 		      	<!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Nm_320x50_2.php"); ?></div><!--FIN ANUNCIO 320x50-->
 		      	<div class="cen">
-		      		<!--Deportes--><div class="deportes"><div class="color"></div><a href="<?php print base_path(); ?>deportes">Deportes</a></div><?php $view = views_get_view('principal'); print $view->preview('block_6'); ?><!--FIN Deportes-->
+		      		<!--Deportes--><div class="deportes"><div class="color"></div><a href="<?php print base_path(); ?>deportes">Deportes</a></div><?php print EjecutarViewCache('principal','block_6','corto'); ?><!--FIN Deportes-->
 		      		<!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/H_300x250_3.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
 					<!--Economía--><div class="economia"><div class="color"></div><a href="<?php print base_path(); ?>economia">Economía</a></div><div id="indicadores"><h2>Indicadores</h2><div class="info"><?php $tmp = op_indicadores_home(); print $tmp; ?></div><div class="patrocinio"><span>Patrocinado por</span><div class="pauta p88x31"><a href="http://megacambio.blogspot.com/" target="_blank"><img src="<?php print base_path(); ?>sites/default/files/ads/megacambio.png"> </a></div></div></div><?php $view = views_get_view('principal'); print $view->preview('block_8'); ?><!--FIN Economía-->
-		      		<!--Cúcuta--><div class="cucuta"><div class="color"></div><a href="<?php print base_path(); ?>cucuta">Cúcuta</a></div><?php $view = views_get_view('principal'); print $view->preview('block_7'); ?><!--FIN Cúcuta-->
-		      		<!--Columna--><?php $view = views_get_view('principal'); print $view->preview('block_4'); ?><!--FIN Columna-->
+		      		<!--Cúcuta--><div class="cucuta"><div class="color"></div><a href="<?php print base_path(); ?>cucuta">Cúcuta</a></div><?php print EjecutarViewCache('principal','block_7','mediano'); ?><!--FIN Cúcuta-->
+		      		<!--Columna--><?php print EjecutarViewCache('principal','block_4','mediano'); ?><!--FIN Columna-->
 		      	</div>
 		      	<!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Nm_320x50_3.php"); ?></div><!--FIN ANUNCIO 320x50-->
 		      	<div class="mid">
 		      		<!--ANUNCIO 600x90--><div class="pauta p600x90" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php $block =block_load('block',49); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div></div><!--FIN ANUNCIO 600x90-->
-		      		<!--Lista 3--><?php $view = views_get_view('principal'); print $view->preview('block_3'); ?><!--FIN Lista 3-->
-		      		<!--Columna 2--><?php $view = views_get_view('principal'); print $view->preview('block_5'); ?><!--FIN Columna 2-->
+		      		<!--Lista 3--><?php print EjecutarViewCache('principal','block_3','mediano'); ?><!--FIN Lista 3-->
+		      		<!--Columna 2--><?php print EjecutarViewCache('principal','block_5','mediano'); ?><!--FIN Columna 2-->
 	      		</div>
 		    </div>
 	      	<div class="right">      		
 		      	<!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/clickio300x250.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
-		      	<!--Lo+ destacada--><div class="lo"><div class="mas">Lo<span>+</span></div></div><?php $view = views_get_view('side'); print $view->preview('block'); ?><!--FIN Lo+ destacada-->
-		      	<!--Lo+ otros--><?php $view = views_get_view('side'); print $view->preview('block_1'); ?><!--FIN Lo+ otros-->
+		      	<!--Lo+ destacada--><div class="lo"><div class="mas">Lo<span>+</span></div></div><?php print EjecutarViewCache('side','block','corto'); ?><!--FIN Lo+ destacada-->
+		      	<!--Lo+ otros--><?php print EjecutarViewCache('side','block_1','corto'); ?><!--FIN Lo+ otros-->
 		      	<!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/H_300x250.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
-		      	<!--Tema del dia--><div class="tema"><div class="color"></div>Tema del dia</a></div><?php $view = views_get_view('side'); print $view->preview('block_2'); ?><!--FIN Tema del dia-->
+		      	<!--Tema del dia--><div class="tema"><div class="color"></div>Tema del dia</a></div><?php print EjecutarViewCache('side','block_2','mediano'); ?><!--FIN Tema del dia-->
 				<!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/H_300x250_1.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
-				<!--Opinión--><div class="opinion"><div class="color"></div><a href="<?php print base_path(); ?>opinion">Opinión</a></div><?php $view = views_get_view('side'); print $view->preview('block_7'); ?>
-				<!--Columnistas--><?php $view = views_get_view('side'); print $view->preview('block_8'); ?><!--FIN Columnistas--><!--FIN Opinión-->
+				<!--Opinión--><div class="opinion"><div class="color"></div><a href="<?php print base_path(); ?>opinion">Opinión</a></div><?php print EjecutarViewCache('side','block_7','hora'); ?>
+				<!--Columnistas--><?php print EjecutarViewCache('side','block_8','hora'); ?><!--FIN Columnistas--><!--FIN Opinión-->
 				<!--ANUNCIO 300x600--><div class="pauta p300x600" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/H_300x250_2.php"); ?></div></div><!--FIN ANUNCIO 300x600-->
-				<!--Deléitese--><div class="deleitese"><a href="http://www.deleitese.co" target="_blank">Deléitese</a></div><?php $view = views_get_view('side'); print $view->preview('block_3'); ?><!--FIN Deléitese-->	
+				<!--Deléitese--><div class="deleitese"><a href="http://www.deleitese.co" target="_blank">Deléitese</a></div><?php print EjecutarViewCache('side','block_3','hora'); ?><!--FIN Deléitese-->	
 	      	</div>
 	      	<div class="center">
 	      		<?php include("zonacomercial.tpl.php"); ?>
-	      		<!--VIDEOS--><?php $view = views_get_view('principal'); print $view->preview('block_9'); ?><!--FIN VIDEOS-->
-	      		<!--GALERIAS--><div class="galerias"><div class="color"></div><a href="<?php print base_path(); ?>galerias">Galerías</a></div><?php $view = views_get_view('principal'); print $view->preview('block_10'); ?><!--FIN GALERIAS-->
-	      		<!--PODCAST--><div class="podcasts"><div class="color"></div><a href="<?php print base_path(); ?>podcast">Podcast</a></div><?php $view = views_get_view('principal'); print $view->preview('block_11'); ?><!--FIN PODCAST-->
+	      		<!--VIDEOS--><?php print EjecutarViewCache('principal','block_9','mediano'); ?><!--FIN VIDEOS-->
+	      		<!--GALERIAS--><div class="galerias"><div class="color"></div><a href="<?php print base_path(); ?>galerias">Galerías</a></div><?php print EjecutarViewCache('principal','block_10','mediano'); ?><!--FIN GALERIAS-->
+	      		<!--PODCAST--><div class="podcasts"><div class="color"></div><a href="<?php print base_path(); ?>podcast">Podcast</a></div><?php print EjecutarViewCache('principal','block_11','mediano'); ?><!--FIN PODCAST-->
 	      	</div>
 	      	<div class="left">
 	      		
 	      		<div class="izq">
-	      			<!--FOTONOTICIAS--><div class="foto_noticias"><div class="color"></div><a class="fotos" href="<?php print base_path(); ?>foto-noticias">Fotonoticias</a><?php $view = views_get_view('principal'); print $view->preview('block_14'); ?></div><!--FIN FOTO NOTICIAS-->
+	      			<!--FOTONOTICIAS--><div class="foto_noticias"><div class="color"></div><a class="fotos" href="<?php print base_path(); ?>foto-noticias">Fotonoticias</a><?php print EjecutarViewCache('principal','block_14','mediano'); ?></div><!--FIN FOTO NOTICIAS-->
 				</div>
 				<div class="cen">
 					<!--TRAILERS--><div class="trailers"><div class="color"></div><a class="cine" href="<?php print base_path(); ?>cine">Cine</a>
-	      			<?php $view = views_get_view('principal'); print $view->preview('block_12'); ?>
-	      			<?php $view = views_get_view('principal'); print $view->preview('block_13'); ?>
+	      			<?php print EjecutarViewCache('principal','block_12','largo'); ?>
+	      			<?php print EjecutarViewCache('principal','block_13','largo'); ?>
 	      			</div>
 	      			<!--FIN TRAILERS-->
 				</div>
 				<div class="mid">
-					<!--INFOGRAFIAS--><div class="infografias"><div class="color"></div><a class="infogra" href="<?php print base_path(); ?>infografias">Infografías</a><?php $view = views_get_view('principal'); print $view->preview('block_15'); ?></div><!--FIN INFOGRAFIAS-->
+					<!--INFOGRAFIAS--><div class="infografias"><div class="color"></div><a class="infogra" href="<?php print base_path(); ?>infografias">Infografías</a><?php print EjecutarViewCache('principal','block_15','hora'); ?></div><!--FIN INFOGRAFIAS-->
 				</div>	
 	      	</div>
 	      	<div class="right">
-	      		<!--Revista La O--><div class="revista"><a href="http://www.revistalao.co" target="_blank">Revista La Ó</a></div><?php $view = views_get_view('side'); print $view->preview('block_4'); ?><!--FIN Revista La O-->
-				<!--Actividad social--><div class="actividad"><div class="color"></div>Actividad social</a></div><?php $view = views_get_view('side'); print $view->preview('block_5'); ?><!--FIN Actividad social-->
+	      		<!--Revista La O--><div class="revista"><a href="http://www.revistalao.co" target="_blank">Revista La Ó</a></div><?php print EjecutarViewCache('side','block_4','hora'); ?><!--FIN Revista La O-->
+				<!--Actividad social--><div class="actividad"><div class="color"></div>Actividad social</a></div><?php print EjecutarViewCache('side','block_5','hora'); ?><!--FIN Actividad social-->
 			</div> 
 			<div class="center">
 				<div class="productos"><div class="color"></div><a href="<?php print base_path(); ?>productos">Productos La Opinión</a></div><?php include_once("productos.php") ?>
-				<!--PORTADA--><?php $view = views_get_view('principal'); print $view->preview('block_16'); ?><!--FIN PORTADA-->
+				<!--PORTADA--><?php print EjecutarViewCache('principal','block_16','hora'); ?><!--FIN PORTADA-->
 				<div class="servicios"><div class="color"></div><a href="<?php print base_path(); ?>servicios">Servicios</a></div><?php include_once("servicios.php") ?>
 			</div>	
 		</div>
