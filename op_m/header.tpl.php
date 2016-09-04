@@ -38,7 +38,7 @@
 		</div>
 		<!--FIN MENU SUPERIOR-->
 		<div class="center">		
-			<!--FECHA--><?php $block =block_load('block',60); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?><!--FIN FECHA-->			
+			<!--FECHA--><?php print EjecutarBlockCache('block',60,'hora'); ?><!--FIN FECHA-->			
 			<div id="logo"><h1><a class="logo" href="<?php print base_path(); ?>"></a></h1></div>
 		</div>
 		<!--MENU PRINCIPAL-->

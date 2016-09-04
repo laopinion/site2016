@@ -1,5 +1,150 @@
 <?php
+/* FUNCIONES GLOBALES */
 
+
+function EjecutarBlockCache($blockname, $blockid, $arguments = '', $cachetime = 30)
+{
+    // colocar un nombre global
+    $uniqueid = "LO1-block-".$blockid."-".$arguments; 
+    
+    // id unico
+    $uniqueidmd5 = md5($uniqueid); 
+    // print $uniqueidmd5; 
+      
+    $currentdate = date('Y-m-d H:i:s');
+    $host='memcache.bmgoix.cfg.usw1.cache.amazonaws.com';   
+    if ($arguments == "muycorto") { $cachetime = 30; }
+          else if ($arguments == "corto") { $cachetime = 60; }
+          else if ($arguments == "mediano") { $cachetime = 300; }
+    else if ($arguments == "largo") { $cachetime = 600; }
+          else if ($arguments == "hora") { $cachetime = 3600; }
+    else { $cachetime = 360;  }
+     
+    $port=22422;
+    $memcache = new Memcache();
+    $memcache->addServer($host, $port);
+    $stats = @$memcache->getExtendedStats();
+    $available = (bool)$stats["$host:$port"];
+    if ($available && @$memcache->connect($host, $port))
+    {
+      $var = $memcache->get($uniqueidmd5);  
+      if ($var) {  $blockhtmloutput = $var; return $blockhtmloutput; }
+      else
+      {
+            // $block = block_load('block', 39);
+            // $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block))));
+          
+            $block = block_load($blockname, $blockid);
+        $bloquetmpredner  = _block_render_blocks(array($block));  
+        $bloquetmpredner2 = _block_get_renderable_array($bloquetmpredner);          
+        $blockhtmloutput  = drupal_render($bloquetmpredner2)."<div style='display:none' class='execdate'>bcached ".$cachetime.": ".$currentdate."</div>";;
+        $memcache->set($uniqueidmd5, $blockhtmloutput, 0, $cachetime);  
+        return $blockhtmloutput;
+      } 
+    }     
+    else  
+    {   
+        $block = block_load($blockname, $blockid);
+        $bloquetmpredner = _block_render_blocks(array($block));
+      $blockhtmloutput = drupal_render(_block_get_renderable_array($bloquetmpredner))."<div style='display:none' class='execdate'>bnoncached ".$cachetime.": ".$currentdate."</div>";;
+    }
+        
+    return $blockhtmloutput;
+}
+
+  
+function EjecutarViewCache($viewname, $blockid, $arguments, $cachetime = 60)
+{
+    // colocar un nombre global
+    $uniqueid = "VC-".$viewname."-".$blockid."-".$arguments; 
+      
+    // id unico
+    $uniqueidmd5 = md5($uniqueid); 
+    // print $uniqueidmd5; 
+    
+    $currentdate = date('Y-m-d H:i:s');
+                $host='memcache.bmgoix.cfg.usw1.cache.amazonaws.com';
+                if ($arguments == "muycorto") { $cachetime = 30; }
+                else if ($arguments == "corto") { $cachetime = 60; }
+                else if ($arguments == "mediano") { $cachetime = 300; }
+                else if ($arguments == "largo") { $cachetime = 600; }
+                else if ($arguments == "hora") { $cachetime = 3600; }
+                else { $cachetime = 360;  }
+        
+    $port=22422;
+    $memcache = new Memcache();
+    $memcache->addServer($host, $port);
+    $stats = @$memcache->getExtendedStats();
+    $available = (bool)$stats["$host:$port"];
+    if ($available && @$memcache->connect($host, $port))
+    {
+      $var = $memcache->get($uniqueidmd5);  
+      if ($var) {  $htmloutput = $var; return $htmloutput; }
+      else
+      {
+        // php $view = views_get_view('columna_derecha'); print $view->preview('block_11');  
+        $view = views_get_view($viewname); 
+        $htmloutput = $view->preview($blockid)."<div style='display:none' class='excecdate'>vcache ".$cachetime.": ".$currentdate."</div>";
+        $memcache->set($uniqueidmd5, $htmloutput, 0, $cachetime);       
+        return $htmloutput;
+      } 
+    }     
+    else  
+    {  
+        $view = views_get_view($viewname);  
+        $htmloutput = $view->preview($blockid)."<div style='display:none' class='excecdate'>vnoncache: ".$currentdate."</div>";   
+    }
+    
+    return $htmloutput;
+}
+
+function EjecutarViewCacheArg($viewname, $blockid, $arguments, $contexto, $cachetime = 60)
+{
+                // colocar un nombre global
+                $uniqueid = "VC-".$viewname."-".$blockid."-".$arguments."-".$contexto;
+
+                // id unico
+                $uniqueidmd5 = md5($uniqueid);
+                // print $uniqueidmd5; 
+
+                $currentdate = date('Y-m-d H:i:s');
+
+                $host='memcache.bmgoix.cfg.usw1.cache.amazonaws.com';
+                if ($arguments == "muycorto") { $cachetime = 30; }
+                else if ($arguments == "corto") { $cachetime = 60; }
+                else if ($arguments == "mediano") { $cachetime = 300; }
+                else if ($arguments == "largo") { $cachetime = 600; }
+                else if ($arguments == "hora") { $cachetime = 3600; }
+                else { $cachetime = 360;  }
+
+                $port=22422;
+                $memcache = new Memcache();
+                $memcache->addServer($host, $port);
+                $stats = @$memcache->getExtendedStats();
+                $available = (bool)$stats["$host:$port"];
+                if ($available && @$memcache->connect($host, $port))
+                {
+                        $var = $memcache->get($uniqueidmd5);
+                        if ($var) {      $htmloutput = $var; return $htmloutput; }
+                        else
+                        {
+                                // php $view = views_get_view('columna_derecha'); print $view->preview('block_11');  
+                                $view = views_get_view($viewname);
+                                $htmloutput = $view->preview($blockid)."<div style='display:none' class='excecdate'>vargcache ".$cachetime.": ".$currentdate."</div>";
+                                $memcache->set($uniqueidmd5, $htmloutput, 0, $cachetime);
+                                return $htmloutput;
+                        }
+                }
+                else
+                {
+                                $view = views_get_view($viewname);
+                                $htmloutput = $view->preview($blockid)."<div style='display:none' class='excecdate'>vargnoncache: ".$currentdate."</div>";
+                }
+
+                return $htmloutput;
+}
+
+/* FIN FUNCIONES GLOBALES*/
 
 /* funciones globales personalizadas 
 ******************************************** */
