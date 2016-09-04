@@ -757,7 +757,7 @@ $(document).ready(function(){
       var contentG = ".view-principal.view-display-id-block_10 .view-content";
       function cambiarG(itemG){$(".view-principal.view-display-id-block_10 .control").css({opacity:"0.8"});$(".view-principal.view-display-id-block_10 .control" + itemG).css({background:"#f2f2f2"});}
       $(".view-principal.view-display-id-block_10 .control_left").click(function(){$(contentG).css({left:"20px"});cambiarG(1);});
-      $(".view-principal.view-display-id-block_10 .control_right").click(function(){$(contentG).css({left:"-325px"});cambiarG(2);});
+      $(".view-principal.view-display-id-block_10 .control_right").click(function(){$(contentG).css({left:"-775px"});cambiarG(2);});
 //FIN GALERIAS
 
 //PODCAST
@@ -794,10 +794,10 @@ $(document).ready(function(){
     });
 //FIN COLOR
 //PAGINADOR PODCAST
-      var contentP = ".view-principal.view-display-id-block_11 .view-content";
-      function cambiarP(itemP){$(".view-principal.view-display-id-block_11 .control").css({opacity:"0.8"});$(".view-principal.view-display-id-block_11 .control" + itemP).css({background:"#f2f2f2"});}
-      $(".view-principal.view-display-id-block_11 .control_left").click(function(){$(contentP).css({left:"20px"});cambiarP(1);});
-      $(".view-principal.view-display-id-block_11 .control_right").click(function(){$(contentP).css({left:"-325px"});cambiarP(2);});
+      var contentA = ".view-principal.view-display-id-block_11 .view-content";
+      function cambiarA(itemA){$(".view-principal.view-display-id-block_11 .control").css({opacity:"0.8"});$(".view-principal.view-display-id-block_11 .control" + itemA).css({background:"#f2f2f2"});}
+      $(".view-principal.view-display-id-block_11 .control_left").click(function(){$(contentA).css({left:"20px"});cambiarA(1);});
+      $(".view-principal.view-display-id-block_11 .control_right").click(function(){$(contentA).css({left:"-775px"});cambiarA(2);});
 //FIN PODCAST
 
 
