@@ -1,1 +1,0 @@
-<script type="text/javascript">eplAD4M("Home_Barra_Flotante");</script>

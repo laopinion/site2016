@@ -1,1 +1,0 @@
-<script type="text/javascript">eplAD4M("728x90_Cucuta");</script>

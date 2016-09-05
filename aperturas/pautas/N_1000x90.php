@@ -1,1 +1,0 @@
-<script type="text/javascript">eplAD4M("1000x30_Nota_Interna");</script>
