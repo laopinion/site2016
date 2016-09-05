@@ -1,10 +1,11 @@
 @media screen and (max-width: 600px){
 	.pauta_movil{display: block;}
 	.pauta{display: none;}
+	.pautas_header{display: none;}
 	/*Menu movil*/
 	#head_movil{position: fixed;z-index: 50;
 		#menu_movil.desplegar{left: 0;}
-		#menu_movil{position: fixed;top: 90px;right: 0;bottom: 0;left: -100%;background-color: #333333;z-index: 50; width: 100%;transition: .5s;overflow: scroll;height: 80%;padding-bottom: 23%;
+		#menu_movil{position: fixed;top: 60px;right: 0;bottom: 0;left: -100%;background-color: #333333;z-index: 50; width: 100%;transition: .5s;overflow: scroll;height: 80%;padding-bottom: 23%;
 			.movil{display: block;}
 			.seccion{display: block;width: 290px;margin: 0 auto;border-bottom: 2px solid #666666;padding-bottom: 10px;
 				form{width: 290px;height: 30px;margin: 15px auto;
@@ -88,7 +89,15 @@
 	#home{
 		#content{
 			.left{
-				.izq{width: 100%; margin: 0;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;}
+				.izq{width: 100%; margin: 0;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+					.view-id-principal.view-display-id-block{
+						.nota{
+							.icon_video{left: -5px;top: 55px;}
+							.icon_galeria{left: -5px;top: 55px;}
+							.icon_podcast{left: -5px;top: 55px;}
+						}
+					}
+				}
 				.cen{width: 100%; margin: 0;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
 					.deportes{width:67%;}
 					.view-id-principal.view-display-id-block_6{width:60%;
@@ -98,7 +107,7 @@
 					.economia{width:67%;}
 					#indicadores{width:68%;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
 						.info{width: 100%;
-							.portada{width:100%; display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
+							.portada{width:100%; display: flex!important;display: -webkit-flex!important;display: -moz-flex!important;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
 								.linea{width: 100%;}
 							}
 						}
