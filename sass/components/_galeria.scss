@@ -28,10 +28,10 @@
     .izq{width: 690px;margin-right: 15px;float: left;position: relative;height: auto;
          //ETIQUETAS Y COMPARTIR
         .barra{background-color: #f1f1f1; position:relative; float:left; width:100%;padding: 5px 0px;
-            .etiquetas{font-weight:600; margin-bottom:0px; margin-left: 17px; 
-                span{line-height:2;float:left; position: relative; width:60px;}
-                a{line-height:2;font-size:13px; color:$gris; text-decoration:none;font-weight:300;font-size:14px; float:left; margin-right:10px; position: relative;padding:3px 0px;}
-                a:hover{text-decoration:underline;}
+            .etiquetas{font-weight:600; margin-bottom:0px; margin-left: 17px;float: left;width: 500px;height: auto;
+                    span{line-height:2;float:left; position: relative; width:60px;}
+                    a{line-height:2;font-size:13px; color:$gris; text-decoration:none;font-weight:300;font-size:14px; float:left; margin-right:10px; position: relative;padding:3px 0px;height: 20px;}
+                    a:hover{text-decoration:underline;}
             }//FIN ETIQUETAS
             .compartirbarra{float:right;right: 0px;position:relative; display:inline-block; vertical-align:middle;transition:all 0.5s ease; 
                 .redes_sociales{margin:0px;position: relative;float:left;width:auto;padding:0px;right:10px;
