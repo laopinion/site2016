@@ -21,13 +21,12 @@
       print "<div class=fecha>".render($content['field_fecha_de_publicacion'])."</div>";
       print "<h2 class=titulo>".$title."</h2>";
       ?>
-       <!--Resumen--><?php print EjecutarViewCache('detalle','block_2','mediano'); ?><!--FIN Resumen-->
+       <!--Resumen--><?php print EjecutarViewCacheArg('detalle','block_2','q'.$_GET["q"],'corto'); ?><!--FIN Resumen-->
       <?php
       print "<div class=video_id>".render($content['field_video_id'])."</div>";
       print "<div class=plataforma>".render($content['field_plataforma'])."</div>";
       print "<div class=video-player></div>";
       print "<div class=video-instagram></div>";
-      print "<div class=miniatura>".render($content['field_imagen'])."</div>";
       ?>
     </div><!--Fin contenido-->
   </div>    

@@ -26,12 +26,12 @@
         <!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/S_300x250_2.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
         <!--ANUNCIO 300x250--><div class="pauta_movil p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/S_300x250_1.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
         <div class="mid"><!--Seguir leyendo-->         
-          <!--Centro--><?php print EjecutarViewCache('s_general','block_5','mediano'); ?><!--FIN Centro-->
+          <!--Centro--><?php print EjecutarViewCacheArg('s_general','block_5','q'.$_GET["q"],'mediano'); ?><!--FIN Centro-->
           <div class="divisor"></div>
           <!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/S_300x250_1.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
         </div><!--Fin Seguir leyendo--> 
         <div class="mid" style="border: none;"> <!--Mas noticias-->        
-          <!--Centro--><?php print EjecutarViewCache('s_general','block_4','mediano'); ?><!--FIN Centro-->
+          <!--Centro--><?php print EjecutarViewCacheArg('s_general','block_4','q'.$_GET["q"],'mediano'); ?><!--FIN Centro-->
         </div><!--Fin Mas noticias-->
       </div>  
 </section> <!-- /#seccion -->

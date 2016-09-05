@@ -23,7 +23,7 @@
       print "<div class=fecha>".render($content['field_fecha_de_publicacion'])."</div>";
       print "<h2 class=titulo>".$title."</h2>";
       ?>
-      <!--Resumen--><?php $view = views_get_view('detalle'); print $view->preview('block_2'); ?><!--FIN Resumen-->
+      <!--Resumen--><?php print EjecutarViewCacheArg('detalle','block_2','q'.$_GET["q"],'corto'); ?><!--FIN Resumen-->
       <?php
       print "<div class=foto>";
         print "<div class='barra table'>";
