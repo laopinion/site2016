@@ -10,13 +10,13 @@
       <?php if (!empty($tabs['#primary'])): ?><div id="tabs"><?php print render($tabs); ?></div><?php endif; ?>
       <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); $taxtmprender = _block_render_blocks(array($taxonomy_menu_block)); $taxtmprender2 = _block_get_renderable_array($taxtmprender); print drupal_render($taxtmprender2); ?><!--FIN seccion-->
        <?php include("compartir.tpl.php"); ?>
-       <?php include("recomendada.tpl.php"); ?>
-       <?php include("recomendada_movil.tpl.php"); ?>
+       <?php // include("recomendada.tpl.php"); ?>
+       <?php // include("recomendada_movil.tpl.php"); ?>
        <div class="contenido">
         <!--Editorial--><?php print EjecutarViewCache('opinion','block_6','mediano'); ?><!--FIN Editorial-->
         <div class="caricatura_principal">
           <?php print render($content['field_imagen']);?>
-        <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-90577');print render($block['content']); ?></div><!--FIN formulario-->
+        <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-118209');print render($block['content']); ?></div><!--FIN formulario-->
        </div>
        <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_300x250_4.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
        <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Nm_320x50_2.php"); ?></div><!--FIN ANUNCIO 320x50-->
@@ -40,14 +40,21 @@
        <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Nm_320x50_3.php"); ?></div><!--FIN ANUNCIO 320x50-->
     </div><!--Fin izquierda-->
     <div class="der">
-      <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/clickio300x250.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
       <!--Columnistas destacados--><?php print EjecutarViewCache('opinion','block_4','mediano'); ?><!--FIN Columnistas destacados-->
+      <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/clickio300x250.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
       <!--Noticias Recientes--><?php print EjecutarViewCache('recientes','block','mediano'); ?><!--FIN Noticias Recientes-->
       <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_300x250_1.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
       <!--Noticias Recientes--><?php print EjecutarViewCache('recientes','block_1','mediano'); ?><!--FIN Noticias Recientes-->   
-      <!--Juegos<div class="juegos"><?php include("juegos.tpl.php"); ?></div>-->
       <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_300x250_2.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
       <!--Noticias Recientes--><?php print EjecutarViewCache('recientes','block_2','mediano'); ?><!--FIN Noticias Recientes-->  
+      <!--ANUNCIO 300x600--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_300x600.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
+      <!--Inicio Suscripciones--> 
+      <div class="suscripciones">
+        <a href="<?php print base_path(); ?>suscripciones"><img src="<?php print base_path(); ?>sites/default/themes/op/images/suscripcion.png" alt="suscripciones"></a>
+      </div><!--FIN Suscripciones-->
+      <!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_lemonnet.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
+      <!--Juegos--><div class="juegos"><a href="http://juegos.laopinion.com.co/"><img src="<?php print base_path(); ?>sites/default/themes/op/images/juegos.jpg"></a></div><!--FIN Juegos-->
+      <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_300x250_3.php"); ?></div></div><!--FIN ANUNCIO 300x250-->    
     </div><!--FIN Derecha-->
 </section>
 <!--Fin Contenido-->

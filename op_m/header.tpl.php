@@ -38,7 +38,7 @@
 		</div>
 		<!--FIN MENU SUPERIOR-->
 		<div class="center">		
-			<!--FECHA--><?php print EjecutarBlockCache('block',60,'hora'); ?><!--FIN FECHA-->			
+			<!--FECHA--><?php print EjecutarBlockCache('block',60,'corto'); ?><!--FIN FECHA-->			
 			<div id="logo"><h1><a class="logo" href="<?php print base_path(); ?>"></a></h1></div>
 		</div>
 		<!--MENU PRINCIPAL-->
