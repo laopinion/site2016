@@ -10,8 +10,8 @@
       <!--ANUNCIO 1000x30--><div class="p1000x30"><?php  $block =block_load('block',39); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div><!--FIN 1.ANUNCIO 1000x30-->
       <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); $taxtmprender = _block_render_blocks(array($taxonomy_menu_block)); $taxtmprender2 = _block_get_renderable_array($taxtmprender); print drupal_render($taxtmprender2); ?><!--FIN seccion-->
        <?php include("compartir.tpl.php"); ?>
-       <?php include("recomendada.tpl.php"); ?>
-       <?php include("recomendada_movil.tpl.php"); ?>
+       <?php // include("recomendada.tpl.php"); ?>
+       <?php // include("recomendada_movil.tpl.php"); ?>
        <div class="contenido">
         <!--Editorial--><?php print EjecutarViewCache('opinion','block_8','hora');?><!--FIN Editorial--> 
         <!--Columnistas--><?php print EjecutarViewCache('opinion','block_3','hora');?><!--FIN Columnistas-->
