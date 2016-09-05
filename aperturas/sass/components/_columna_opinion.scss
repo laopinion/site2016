@@ -1,0 +1,152 @@
+//NOTA
+#columna_opinion{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative; margin-top: 50px;
+    .especial{width:300px; height:210px; overflow:hidden; margin-bottom:20px;}
+    
+  .izq{width: 690px;margin-right: 15px;float: left;position: relative;height: auto;
+        //Agrege la clase color andrey
+        .compartir_table{display: none;}
+        .contenido{width:690px; height:auto; float:left; position: relative; background:#fff; margin-bottom:20px;
+            .autor_columna{margin-bottom: 30px;}
+            .color{width: 25px; height: 10px; background-color: transparent; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
+            .seccion{font-size:15px;position:relative; float:left; margin-bottom:0px;
+                .color{height: 10px; width: 25px;float: left;position: relative;text-indent: -9999px;background-color: $gris;margin-top: 5px;margin-right: 5px;}
+                a{color:$gris; text-decoration:none;font-weight:600;}
+                a:hover{text-decoration:underline;}
+            }
+            .sep{width:10px; float:left; position:relative;margin:0px 5px;}
+            .fecha{padding: 2px 0;font-size:13px;position:relative; float:left; color:$gris; font-weight:300;margin-right:5px; margin-bottom:0px;}
+            .resumen{position:relative; float:left; font-weight:300;margin-bottom:20px;width:100%; margin-bottom:20px;
+                p{color:$grisOscuro;}
+                } 
+            //ETIQUETAS Y COMPARTIR
+            .barra.table{display: none;}
+            .barra{background-color: #f1f1f1; position:relative; float:left; width:100%;padding: 5px 0px;
+                .etiquetas{font-weight:600; margin-bottom:0px; margin-left: 17px; 
+                    span{line-height:2;float:left; position: relative; width:60px;}
+                    a{line-height:2;font-size:13px; color:$gris; text-decoration:none;font-weight:300;font-size:14px; float:left; margin-right:10px; position: relative;padding:3px 0px;}
+                    a:hover{text-decoration:underline;}
+                }//FIN ETIQUETAS
+                .compartirbarra{float:right;right: 0px;position:relative; display:inline-block; vertical-align:middle;transition:all 0.5s ease; 
+                    .redes_sociales{margin:0px;position: relative;float:left;width:auto;padding:0px;right:10px;
+                        li{list-style:none; float:left; width: 30px;padding: 0px;display: inline-block;vertical-align: middle;height:30px; cursor:pointer;margin:0px;}
+                        .fb{ 
+                            .st_facebook_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -34px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                        .tw{ 
+                            .st_twitter_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -60px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                        .go{ 
+                            .st_googleplus_large{background: url(../images/iconos/redes_nota.svg) no-repeat -11px -86px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                        .pin{ 
+                            .st_pinterest_large{background: url(../images/iconos/redes_nota.svg) no-repeat -12px -113px/93px auto transparent;position: relative; width: 30px; height: 30px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                        .wp{
+                            .st_whatsapp_large{background: url(../images/movil/whatsapp.svg) no-repeat -6px 0px/41px auto transparent;position: relative; width: 40px; height: 40px; float: left; text-indent: -9999px; transition:all 0.2s ease; }
+                        }
+                    }
+                }//FIN COMPARTIR
+            }//FIN ETIQUETAS Y COMPARTIR
+            .resumen{line-height:18px;font-size:16px;position:relative; float:left; color:$gris;  font-weight:300;}
+            h2{font-size:36px; font-weight:600; line-height:38px; float:left; position: relative; margin:10px 0px; width:100%;}
+            .audio_id{display:none;}
+            .audio-player{position: relative; float:left; left:-20px; border: none; width:640px; height:250px;}
+            .video_id{display:none;}
+            .video-player{position: relative; float:left; left:-20px; border: none;}
+            
+            .miniatura{display:none;}
+            .foto{
+                img {border-radius: 50%;border: 1px solid $opinion;}
+            }
+            .texto{margin-top:20px; font-size:16px;position:relative; float:left; color:#646464;font-weight:300;width:95%;
+                h3{font-size:18px;color:#646464;font-weight:600;}
+                p{margin-bottom:15px; max-width:690px;
+                    img{max-width: 690px; height:auto; float:left;margin:10px 10px; position: relative;left:-10px;}
+                    .desktop{display:block;}
+                    .movil{display:none;}
+                }
+                strong{font-weight:600;}
+                a{color:#DB0E24;text-decoration:none;}
+                a:hover{text-decoration:underline;}
+                .twitter-tweet{max-width:690px!important;margin: 0 auto!important;}
+                //.instagram-media{max-width:690px!important;margin: 0 auto!important;}
+                img{max-width:690px!important;margin: 0 auto!important;}
+                iframe{max-width:680px!important;margin: 0 auto!important;}
+            }
+            .autor{position: relative;float: left;font-weight: 300;width: 95%;height: 110px;color: #646464;overflow: hidden;margin-bottom:30px;
+                h2{font-size: 14px;padding: 0px 5px;font-weight: 600;width: auto;float: left;left: 96px;top: 20px;margin: 0;
+                    a{color:#BB1D1E; text-decoration:none;}
+                   }
+                .field-name-field-perfil{position: relative;width: 150px;height: auto;text-align: left;left: 100px;top: 12px;font-size: 12px;color: #808080;
+                    a{color:#646464; text-decoration:none;}
+                    }
+                .field-name-field-descripcion{float: left;position: absolute;width: 210px;text-align: left;top: 58px;left: 100px;height: 30px;font-size: 12px;color: #808080;
+                    a{color:#646464; text-decoration:none;}
+                    }
+                .field-name-field-imagen{float: left;position: absolute;width: 80px;margin-left: 10px;top: 20px;left: 0px;
+                    img{width:80px; height:auto;background-color: #f1f1f1;border-radius: 50%;}
+                }
+                .links{display:none;}
+                
+                .node-autor{width: 50%; overflow:hidden; position: relative;float:left; height:100px;}
+            }
+            .adm-intext{display:none;
+                .video-js, .vjs_video_6048-dimensions, .vjs_video_3-dimensions, .vjs-default-skin{display:block;}
+            }
+
+        }/*FIN INFO*/
+        /*RELACIONADAS*/
+       /*  .relacionadas{width:640px; height:auto; margin-right:20px; float:left; position: relative;
+            h2{font-size:21px; color:$estandar; text-transform:uppercase; width:155px; padding:0px 0px;margin:0px 0px 10px 0px; float:left;}
+            .linea{border-bottom: 2px solid $estandar; width:485px; float:left; position: relative;height:15px; margin-bottom: 21px;}
+            .field-item{border:1px solid #E8E7E8; background:#fff;border:1px solid #E8E7E8; padding:20px; position: relative;float:left; width:268px;margin:0px 20px 20px 0px; line-height:17px;
+                a{color:#646464; font-weight:300; text-decoration:none; font-size:15px;}
+                a:hover{text-decoration:underline;}
+            }
+            .odd{margin-right:0px;}
+        } */
+        .comentarios{width: 95%; height:auto; margin-right:20px; float:left; position: relative;margin-bottom:20px;
+            .color{height: 10px; width: 25px;float: left;position: relative;text-indent: -9999px;background-color: $comentarios;margin-top: 6px;margin-right: 5px;}
+            h2{font-size:17px; color:$estandar; text-transform:uppercase; width:145px; padding:0px 0px;margin:0px 0px 10px 0px; display:inline-block; vertical-align:middle;}
+            .linea{border-bottom: 1px solid $estandar; width:100%; float:left; position: relative;height:15px; margin-bottom: 20px;}
+            .bloque{border:1px solid #E8E7E8; background:#fff;padding:10px; position: relative;float:left; width:97%;}
+        }
+        .juegos{display:none;}
+       //Inicio mas notas
+       .mas_notas{width: 100%;height: auto;position: relative;float: left;
+            .color{
+                width: 25px; height: 10px; background-color: #000; float:left; position: relative; margin-top: 5px;margin-right: 5px;
+            }
+            h2{font-size: 16px; font-weight:600;float: left;position: relative; width: 200px;}
+       }
+        .view-id-detalle.view-display-id-block_5{width: 690px;height: auto;float: left;position: relative;margin-bottom: 10px;padding: 10px 0px;overflow: hidden;left: 0px;
+            .views-row{margin-bottom: 20px;float: left;width: 207px;height: 150px;margin-right: 20px;
+                .field-content{height: auto;float: left;position: relative;width: 200px;
+                    .info_notas{overflow:hidden;top: 90px;position: absolute;float: left;bottom: 5px;left: 0px;height: auto;width: 190px;padding: 5px;z-index: 1;
+                        background: rgba(252,248,247,0);
+                        background: -moz-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(252,248,247,0)), color-stop(34%, rgba(175,172,171,0.17)), color-stop(52%, rgba(134,131,131,0.36)), color-stop(70%, rgba(94,91,90,0.67)), color-stop(100%, rgba(26,23,23,0.97)));
+                        background: -webkit-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -o-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: -ms-linear-gradient(top, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        background: linear-gradient(to bottom, rgba(252,248,247,0) 0%, rgba(175,172,171,0.17) 34%, rgba(134,131,131,0.36) 52%, rgba(94,91,90,0.67) 70%, rgba(26,23,23,0.97) 100%);
+                        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcf8f7', endColorstr='#1a1717', GradientType=0 );                        
+                        .seccion{padding-bottom: 5px!important;width: 220px;padding: 0px;height: 11px;margin: 0px;float: left;
+                            .color{width: 25px; height: 10px; background-color: transparent; float:left; position: relative; margin-top: 0px;margin-right: 5px;}
+                            a{color: #fff;text-shadow: 1px 1px #000;text-decoration: none;text-transform: uppercase;font-size: 13px;float: left;padding: 0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;width: 180px
+                            }
+                        }
+                        .titulo{float: left;position: relative;width: 200px;height: auto;line-height: 20px;padding: 0px;
+                                //float: left;position: relative;top: 139px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;width: 200px;padding: 0 2px;color:#fff; z-index:1;
+                            a{text-decoration:none; font-size:18px; color:#fff; font-weight:500;text-shadow: 1px 1px #000;}
+                        }
+                    }
+                    .imagen{width: 245px;height: auto;float: left;position: relative;cursor: pointer;}
+                }
+            }
+        }//Fin mas notas
+    }/*FIN izq*/
+   .der{width: 300px;float: left;position: relative;height: auto;background-color: #f1f1f1;}
+}
+
+.juegos{img{width:300px;}}

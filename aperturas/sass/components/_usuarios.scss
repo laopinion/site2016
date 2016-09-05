@@ -1,0 +1,84 @@
+#login{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;
+    .content{width: 100%; float:left; margin-top: 40px; position: relative;
+        h2{font-size: 18px;text-transform: uppercase;border-bottom: 1px solid $estandar;padding-bottom: 5px;color: $estandar;font-weight: 400;}      
+        .login{    background: url(../images/login.jpg) -3px -3px/293px auto no-repeat;height: 214px;width: 293px;margin: 0 auto;}
+        #inicio_sesion{width: 600px;margin: 0 auto; text-align: center;margin-top: 50px; color: #CC3333;
+            .form-item{width: 250px; display: inline-block;margin: 0 23px;
+                input{width: 250px;height: 20px;border: none;background-color: #E8E8E8;}
+                input:focus{outline: none;}
+            }
+            .item-list{display: none;}
+            .form-actions{width: 250px; margin: 50px auto;
+                input{width: 250px;height: 40px;border: none;color: white;background-color: #CC3333;font-size: 18px;cursor: pointer;}
+            }
+        }
+    }
+}//FIN Login
+
+#registrar{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;
+    .content{width: 100%; float:left; margin-top: 40px; position: relative;
+        h2{font-size: 18px;text-transform: uppercase;border-bottom: 1px solid $estandar;padding-bottom: 5px;color: $estandar;font-weight: 400;}      
+        .registrar{    background: url(../images/registre.jpg) -3px -3px/293px auto no-repeat;height: 214px;width: 293px;margin: 0 auto;}
+        #registrar_user{width: 600px;margin: 0 auto; text-align: center;margin-top: 50px; color: #CC3333;
+            .form-item{width: 250px; display: inline-block;margin: 0 23px;vertical-align: top;
+                input{width: 250px;height: 20px;border: none;background-color: #E8E8E8;}
+                input:focus{outline: none;}
+                .description{text-align: left;}
+            }
+            .form-type-password-confirm{width: 100%; margin: 30px 0;
+                .description{text-align: center;}
+            }
+            .field-type-text{width: 250px; display: inline-block;margin: 30px 23px;
+                .form-item{margin: 0;}
+            }
+            .field-type-datetime{display: inline-block;width: 250px; vertical-align: top;margin-left: -45px;
+                fieldset{border: none;margin: 0;padding: 0;
+                    span{font-weight: 600;}
+                }
+                .form-item{margin: 0;}
+                #edit-field-fecha-de-nacimiento-und-0-value--2{padding: 0;}
+            }
+            .field-type-list-text{display: inline-block; width: 250px; 
+                .form-item{margin: 0;margin-left: -45px;
+                    select{width: 250px;height: 20px;border: none;background-color: #E8E8E8;color: $gris;}
+                    #edit-field-genero-und--2{margin-left: 68px;}
+                    #edit-field-ciudad-und--2{margin-left: 46px;}
+                    select:focus{outline: none;}
+                }
+            }
+            .field-type-list-boolean{display: inline-block;width: 195px; margin-top: 30px;
+                .form-item{margin: 0; width: 180px;
+                    input{width: 180px;display: block;}
+                }
+            }
+            .item-list{display: none;}
+            .form-actions{width: 250px; margin: 50px auto;
+                input{width: 250px;height: 40px;border: none;color: white;background-color: #CC3333;font-size: 18px;cursor: pointer;}
+            }
+            .form-item-field-genero-und{
+                label{margin-left: 140px;}
+            }
+            .form-item-field-ciudad-und{
+                label{margin-left: 100px;}
+            }
+        }
+    }
+}//FIN Registrar
+
+
+#password{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative; 
+    .content{width: 100%; float:left; margin-top: 40px; position: relative; margin-bottom: 50px;
+        h2{font-size: 18px;text-transform: uppercase;border-bottom: 1px solid $estandar;padding-bottom: 5px;color: $estandar;font-weight: 400;}      
+        .password{background: url(../images/password.jpg) -3px -3px/293px auto no-repeat;height: 214px;width: 293px;margin: 0 auto;}
+        #password_user{width: 600px;margin: 0 auto; text-align: center;color: #CC3333;
+            .form-item{width: 250px; display: inline-block;margin: 0 23px;vertical-align: top; font-size: 12px;
+                input{width: 250px;height: 20px;border: none;background-color: #E8E8E8;}
+                input:focus{outline: none;}
+                .description{text-align: left;}
+            }
+            .form-actions{width: 370px; margin: 40px auto;
+                input{width: 370px;height: 40px;border: none;color: white;background-color: #CC3333;font-size: 18px;cursor: pointer;}
+            }            
+        }
+    }
+}//FIN Registrar

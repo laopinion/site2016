@@ -9,7 +9,7 @@
 <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil fijo"><?php include("pautas/Hm_320x50_4.php"); ?></div><!--FIN ANUNCIO 320x50-->
 <!--ANUNCIO Layer--><?php include("pautas/H_layer.php"); ?></div><!--FIN ANUNCIO Layer-->
 <div id= "oreja_div"></div>
-<?php include("laterales.tpl.php"); ?>
+<?php include("pautas/laterales.tpl.php"); ?>
   <section class="detailContent">
       <div id="home">
       	<div id="content">
@@ -33,7 +33,7 @@
 		      	</div>
 		      	<!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Nm_320x50_3.php"); ?></div><!--FIN ANUNCIO 320x50-->
 		      	<div class="mid">
-		      		<!--ANUNCIO 600x90--><div class="pauta p600x90" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php $block =block_load('block',49); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></div></div><!--FIN ANUNCIO 600x90-->
+		      		<!--ANUNCIO 600x90--><div class="pauta p600x90" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"></div></div><!--FIN ANUNCIO 600x90-->
 		      		<!--Lista 3--><?php print EjecutarViewCache('principal','block_3','mediano'); ?><!--FIN Lista 3-->
 		      		<!--Columna 2--><?php print EjecutarViewCache('principal','block_5','mediano'); ?><!--FIN Columna 2-->
 	      		</div>

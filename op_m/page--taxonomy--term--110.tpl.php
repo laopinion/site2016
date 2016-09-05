@@ -7,23 +7,23 @@
 	<div class="logo"></div>
 	<div class="container">
 		<div class="destacada">
-			<?php $view = views_get_view('especiales'); print $view->preview('block');?>
+			<?php print EjecutarViewCache('especiales','block','corto');?>
 		</div>
 		<div class="notas">
-			<?php $view = views_get_view('especiales'); print $view->preview('block_1');?>
+			<?php print EjecutarViewCache('especiales','block_1','corto');?>
 		</div>
 	</div>
 	<div class="galerias">
 		<div class="btn-izq"></div>
 		<h2>FOTO GALERÍAS Y VIDEOS</h2>
-		<?php $view = views_get_view('especiales'); print $view->preview('block_3');?>
-		<?php $view = views_get_view('especiales'); print $view->preview('block_4');?>
+		<?php print EjecutarViewCache('especiales','block_3','mediano');?>
+		<?php print EjecutarViewCache('especiales','block_4','mediano');?>
 		<div class="btn-der"></div>
 	</div>
 	<div class="container">
 		<div class="notas-relacionadas">
 			<h2>NOTAS RELACIONADAS</h2>
-			<?php $view = views_get_view('especiales'); print $view->preview('block_2');?>
+			<?php print EjecutarViewCache('especiales','block_2','mediano');?>
 		</div>
 	</div>
 </section>

@@ -7,20 +7,20 @@
     <div class="izq">
        <!--ANUNCIO 1000x90--><div class="pauta p1000x90" style="display: none"><?php include("pautas/S_1000x90.php"); ?></div><!--FIN ANUNCIO 1000x90-->
         <?php if (!empty($tabs['#primary'])): ?><div id="tabs"><?php print render($tabs); ?></div><?php endif; ?>
-        <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); print drupal_render(_block_get_renderable_array(_block_render_blocks(array($taxonomy_menu_block))));?><!--FIN seccion-->
+        <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); $taxtmprender = _block_render_blocks(array($taxonomy_menu_block)); $taxtmprender2 = _block_get_renderable_array($taxtmprender); print drupal_render($taxtmprender2); ?><!--FIN seccion-->
          <?php include("compartir.tpl.php"); ?>
          <?php include("recomendada.tpl.php"); ?>
          <?php include("recomendada_movil.tpl.php"); ?>
          <div class="contenido">
-          <!--Editorial--><?php $view = views_get_view('opinion'); print $view->preview('block_5'); ?><!--FIN Editorial--> 
-          <!--Columnistas Destacado--><?php $view = views_get_view('opinion'); print $view->preview('block_4'); ?><!--FIN Columnistas Destacado-->
-          <!--Columnistas--><?php $view = views_get_view('opinion'); print $view->preview('block_3'); ?><!--FIN Columnistas-->
+          <!--Editorial--><?php print EjecutarViewCache('opinion','block_5','hora');?><!--FIN Editorial--> 
+          <!--Columnistas Destacado--><?php print EjecutarViewCache('opinion','block_4','hora');?><!--FIN Columnistas Destacado-->
+          <!--Columnistas--><?php print EjecutarViewCache('opinion','block_3','hora');?><!--FIN Columnistas-->
          </div>
         </div><!--Fin izquierda-->
         <div class="der">
           <!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/S_300x250_1.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
-          <?php $view = views_get_view('recientes'); print $view->preview('block'); ?><!--FIN Noticias Recientes-->
+          <?php print EjecutarViewCache('recientes','block','mediano');?><!--FIN Noticias Recientes-->
            <!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/S_300x250_2.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
-          <!--Noticias Recientes--><?php $view = views_get_view('recientes'); print $view->preview('block_1'); ?><!--FIN Noticias Recientes--> <!--Juegos--><div class="juegos"><a href="http://juegos.laopinion.com.co/"><img src="<?php print base_path(); ?>sites/default/themes/op/images/juegos.jpg"></a></div><!--FIN Juegos-->
+          <!--Noticias Recientes--><?php print EjecutarViewCache('opinion','block_1','mediano');?><!--FIN Noticias Recientes--> <!--Juegos--><div class="juegos"><a href="http://juegos.laopinion.com.co/"><img src="<?php print base_path(); ?>sites/default/themes/op/images/juegos.jpg"></a></div><!--FIN Juegos-->
         </div> <!--Fin derecha-->
 </section><!--Fin seccion-->

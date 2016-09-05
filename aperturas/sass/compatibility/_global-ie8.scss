@@ -1,0 +1,37 @@
+/* Compatibilidad con IE 8 */
+.ie8{
+  #block-block-22 {
+    .fech-dig {
+      .views-widget{ 
+        input{
+          height:26px;
+          padding:4px 10px 3px 20px;
+          width:300px;
+        }
+      }
+      .views-exposed-widget{
+        top:11px;
+      }
+    }
+  }
+  #zone-user-wrapper{
+    #block-search-form {
+      .form-item-search-block-form {
+        input.form-text{
+          padding-top:8px;
+        }
+      }
+    }
+  }
+  #zone-branding-wrapper{
+    #block-system-main-menu {
+      ul.menu {
+        li.participacion {
+          ul{
+            left:-148px;
+          }
+        }
+      }
+    }
+  }
+}
