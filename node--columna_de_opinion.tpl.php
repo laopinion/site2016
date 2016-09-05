@@ -14,8 +14,8 @@
         <?php include("compartirbarra.php"); ?>
       </div>
        <?php include("compartir.tpl.php"); ?>
-       <?php include("recomendada.tpl.php"); ?>
-       <?php include("recomendada_movil.tpl.php"); ?>
+       <?php //include("recomendada.tpl.php"); ?>
+       <?php //include("recomendada_movil.tpl.php"); ?>
     <div class="contenido">
       <div class="autor_columna">
                 <?php 
@@ -114,7 +114,6 @@
     <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/clickio300x250.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
     <!--Noticias Recientes--><?php $view = views_get_view('recientes'); print $view->preview('block'); ?><!--FIN Noticias Recientes-->
     <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_300x250_1.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
-    <!--Juegos<div class="juegos"><?php include("juegos.tpl.php"); ?></div>-->
     <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_300x250_2.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
     <!--Noticias Recientes--><?php $view = views_get_view('recientes'); print $view->preview('block_1'); ?><!--FIN Noticias Recientes-->   
     <!--ANUNCIO 300x600--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_300x600.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
