@@ -31,7 +31,7 @@
 			    <ul class="mder">
 			    	<li class="clasificados_icon"><a href="http://clasificados.laopinion.com.co" style="border:0px;">Clasificados</a></li>
 			        <!--PICO Y PLACA--><!--<li class="picoyplaca"><?php // $block =block_load('block',61); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?></li>--><!--FIN PICO Y PLACA-->
-			    	<li class="ingreso"><span>Ingreso</span></li>
+			    	<li class="ingreso"><a href="<?php print base_path(); ?>user"><span>Ingreso</span></a></li>
 					<li class="border registro"><a href="<?php print base_path(); ?>user/register" title="Registro">Regístrese</a></li>
 			    </ul>
 			</div>
