@@ -4,7 +4,7 @@
     //Apertura One
     .view-aperturas.view-id-aperturas.view-display-id-block{
         .nota{position: relative;
-            .degradado{width: 100%;height: 50%;position: absolute;bottom: 0;background: rgba(40,46,48,0);background: -moz-linear-gradient(top, rgba(40,46,48,0) 8%, rgba(40,46,48,0.51) 55%, rgba(40,46,48,1) 100%);background: -webkit-gradient(left top, left bottom, color-stop(8%, rgba(40,46,48,0)), color-stop(55%, rgba(40,46,48,0.51)), color-stop(100%, rgba(40,46,48,1)));background: -webkit-linear-gradient(top, rgba(40,46,48,0) 8%, rgba(40,46,48,0.51) 55%, rgba(40,46,48,1) 100%);background: -o-linear-gradient(top, rgba(40,46,48,0) 8%, rgba(40,46,48,0.51) 55%, rgba(40,46,48,1) 100%);background: -ms-linear-gradient(top, rgba(40,46,48,0) 8%, rgba(40,46,48,0.51) 55%, rgba(40,46,48,1) 100%);background: linear-gradient(to bottom, rgba(40,46,48,0) 8%, rgba(40,46,48,0.51) 55%, rgba(40,46,48,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282e30', endColorstr='#282e30', GradientType=0 );}
+            .degradado{width: 100%;height: 70%;position: absolute;bottom: 0;background: rgba(40,46,48,0);background: -moz-linear-gradient(top, rgba(40,46,48,0) 8%, rgba(40,46,48,0.51) 55%, rgba(40,46,48,1) 100%);background: -webkit-gradient(left top, left bottom, color-stop(8%, rgba(40,46,48,0)), color-stop(55%, rgba(40,46,48,0.51)), color-stop(100%, rgba(40,46,48,1)));background: -webkit-linear-gradient(top, rgba(40,46,48,0) 8%, rgba(40,46,48,0.51) 55%, rgba(40,46,48,1) 100%);background: -o-linear-gradient(top, rgba(40,46,48,0) 8%, rgba(40,46,48,0.51) 55%, rgba(40,46,48,1) 100%);background: -ms-linear-gradient(top, rgba(40,46,48,0) 8%, rgba(40,46,48,0.51) 55%, rgba(40,46,48,1) 100%);background: linear-gradient(to bottom, rgba(40,46,48,0) 8%, rgba(40,46,48,0.51) 55%, rgba(40,46,48,1) 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#282e30', endColorstr='#282e30', GradientType=0 );}
             .icon_video{display: none;background: url(../images/iconos/video.svg) -3px -3px/70px auto no-repeat;height: 66px;width: 88px;float: left;position: absolute;left: 0;top: 3px;opacity: 0.7;z-index: 1;}
             .icon_galeria{display:none;background: url(../images/iconos/galeria.svg) -3px -3px/70px auto no-repeat;height: 66px;width: 88px;float: left;position: absolute;left: 0;top: 3px;opacity: 0.7;z-index: 1;}
             .icon_podcast{display:none;background: url(../images/iconos/podcast.svg) -3px -3px/70px auto no-repeat;height: 66px;width: 88px;float: left;position: absolute;left: 0;top: 3px;opacity: 0.7;z-index: 1;}
@@ -17,7 +17,6 @@
             }
         }
     }
-
     .view-aperturas.view-id-aperturas.view-display-id-block_1{background-color: rgba(40,46,48, .8);position: absolute;bottom: 0;width: 100%;
         .views-row{display: inline-block; vertical-align: middle;width:305px;margin: 23px 20px;
             .nota{position: relative;
@@ -117,7 +116,7 @@
             .divisor{height: 90px;position: absolute;border-right: 1px solid #757575;top: 10px;right: 508px;}
         }
         .view-content{display: flex;flex-wrap: wrap;justify-content: center;
-            .views-row{width: 450px;height: 28px;margin: 15px 40px 15px 0;overflow: hidden;
+            .views-row{width: 450px;height: auto;margin: 15px 40px 15px 0;overflow: hidden;
                 .titulo{
                     a{text-decoration: none;color: #fff;font-size: 20px;}
                     a:hover{text-decoration: underline;}
