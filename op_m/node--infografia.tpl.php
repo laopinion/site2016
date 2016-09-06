@@ -39,6 +39,7 @@
                 }
                 print "</div>";
               print render($content['field_imagen']);
+              print render($content['field_portada']);
               print "</div>";            
           ?>
       </div>
