@@ -366,6 +366,44 @@ $(document).ready(function(){
         $(this).find(".foto").css("display","block");
       }
     });
+    //Lista
+    $(".view-principal.view-display-id-block_6 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".icon_galeria").css("display","block");
+        $(this).find(".galeria").css("display","block");
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".icon_video").css("display","block");
+        $(this).find(".video").css("display","block");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".icon_podcast").css("display","block");
+        $(this).find(".podcast").css("display","block");
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Artículo"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
+      }
+    });
+
     //COLOR
     $(".view-principal.view-display-id-block_4 .views-row").each(function(){
       var seccionL = $(this).find(".nota .seccion .color").html();

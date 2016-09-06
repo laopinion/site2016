@@ -166,9 +166,9 @@
                 .views-row-last{margin-right:0px;}
                 .nota{width: 100%;height:auto; float:left; position: relative;
                     .tipo{display:none;}
-                    .icon_video{display:none;background:url(../images/iconos/video.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 220px;opacity:0.7; z-index: 1;}
-                    .icon_galeria{display:none;background:url(../images/iconos/galeria.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 220px;opacity:0.7; z-index: 1;}
-                    .icon_podcast{display:none;background:url(../images/iconos/podcast.svg) -3px -3px/108px auto no-repeat;height: 68px;width: 100px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 220px;opacity:0.7; z-index: 1;}
+                    .icon_video{display:none;background:url(../images/iconos/video.svg) -3px -3px/60px auto no-repeat;height: 40px;width: 60px;text-indent: -9999px;float: left;position: absolute;left: -6px;bottom: 47px;opacity:0.7; z-index: 1;}
+                    .icon_galeria{display:none;background:url(../images/iconos/galeria.svg) -3px -3px/60px auto no-repeat;height: 40px;width: 60px;text-indent: -9999px;float: left;position: absolute;left: -6px;bottom: 47px;opacity:0.7; z-index: 1;}
+                    .icon_podcast{display:none;background:url(../images/iconos/podcast.svg) -3px -3px/60px auto no-repeat;height: 40px;width: 60px;text-indent: -9999px;float: left;position: absolute;left: -6px;bottom: 47px;opacity:0.7; z-index: 1;}
                     .seccion{width:240px; padding: 0px 0px 5px 0px;height: 11px;float:left;
                         .color{background:$seccion; height:10px; width:25px; float:left;position: relative;text-indent:-9999px;}
                         a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
