@@ -417,6 +417,19 @@
 		}
 	}//Fin aperturas
 
+	#infografia{
+		.cen{
+			.contenido{
+				.infog{
+					.field-name-field-imagen{display: none;}
+					.field-name-field-portada{display: block;
+						img{width: 100%; height: auto;}
+					}
+				}
+			}
+		}
+	}
+
 	//Inicios Juegos Olimpicos
 	#olimpicos_home{width: 100%;
 		.container{

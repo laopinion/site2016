@@ -18,6 +18,7 @@
             .resumen{line-height:18px;font-size:16px;position:relative; float:left; color:$gris;  font-weight:300;}
             h2{font-size:36px; font-weight:600; line-height:38px; float:left; position: relative; margin:10px 0px; width:100%;}
             .infog{position: relative; top: 0px; left: -20px; width:1024px; height: auto; overflow: hidden; margin-bottom:20px;
+                .field-name-field-portada{display: none;}
                 img{width:1024px; height: auto;}
                 .pie{width:1024px; height:auto; color:#fff; position: absolute; bottom:0; font-size:12px; background:rgba(0,0,0,0.5); padding:5px 10px;font-size:12px;z-index:1; 
                 .descripcion{float:left; width:auto;position: relative;}
