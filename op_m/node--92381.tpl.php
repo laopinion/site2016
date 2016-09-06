@@ -195,7 +195,8 @@
                   <input class="submit" name="Submit" type="submit"  value="Pagar" >
               </div>
               <div class="texto">
-                <p>PRINCIPAL: Av. 4#16-12 La Playa ATALAYA: Av. 0# 1-36 Lt. 2 Comuneros Tel: 5794646. CONDICIONES Y RESTRICCIONES: Válido para renovaciones semestrales y nuevas suscripciones semestrales. Bono redimible del 1 de junio al 31 de julio de 2016. Cantidad de bonos 100. Válido para Cúcuta y su área metropolitana.</p>
+                <p>PRINCIPAL: Av. 4#16-12 La Playa.</p>
+                <p>ATALAYA: Av. 0# 1-36 Lt. 2 Comuneros Tel: 5794646.</p>
                 <a class="logo_tel" href="tel:5829999"></a>
                 <a class="logo_wp" href="tel:3184156086"></a>
               </div>
@@ -216,6 +217,7 @@
         <div class="texto desktop">Domicilio para efectivo y tarjetas</div>
       </div>
     </section>
+    <img class="formas_pago" src="<?php print base_path(); ?>sites/default/themes/op/images/formas-pago.png" alt="Formas de pago">
   </div><!-- Fin content--> 
 </section> <!-- /#seccion -->
      
@@ -309,7 +311,7 @@
         var nuevoAmount = amount;
         $.ajax({
             type: "POST",
-            url: "funcion.php",
+            url: "http://www.laopinion.com.co/sites/default/themes/op/templates/funcion.php",
             data: {"amount": nuevoAmount},
             success: function(data){
                 separador = " ", // un espacio en blanco
