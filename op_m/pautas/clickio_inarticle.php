@@ -1,5 +1,4 @@
 <!-- Clickio Mobile InArticle -->
-
 <script async type='text/javascript' src='//s.clickiocdn.com/t/common_258.js'></script>
 <div class='__lxGc__'></div>
 <script type='text/javascript'>
