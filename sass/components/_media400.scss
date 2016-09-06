@@ -330,6 +330,11 @@
 
 	#nota{
 		.izq{
+			.contenido{
+				.barra{
+					.etiquetas{width: 100%;margin-left: 2px;}
+				}
+			}
 			.webform-client-form.webform-client-form-90572{margin-top: 20px;
 				.form-item.webform-component{position: static;
 					.email{width:300px;}
@@ -433,11 +438,12 @@
 	//Fin Juegos Olimpicos
 	//FORM BOLETIN
 	#newsletter{
+		form{width: 100%;}
 	    .form-item.webform-component{width:90%;
 	        .email{width: 100%;margin: 0px 10px;}
 	        .description{height:auto;}
 	    }
-	    .form-actions{padding:0px 40%; float:left; bottom:10px;
+	    .form-actions{padding: 0px;width: 82px;margin: 0 auto;float: none;display: block;bottom:10px;
 	        input{}
 	    }
 	}
