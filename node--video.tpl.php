@@ -6,6 +6,7 @@
 <!--ANUNCIO Layer--><?php include("pautas/N_layer.php"); ?><!--FIN ANUNCIO Layer-->
 <div id="video">
   <div class="cen">
+  <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Nm_320x50_1.php"); ?></div><!--FIN ANUNCIO 320x50-->
     <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); print drupal_render(_block_get_renderable_array(_block_render_blocks(array($taxonomy_menu_block))));?><!--FIN seccion-->
       <div class="compartir_table">
         <?php include("compartirbarra.php"); ?>
@@ -31,7 +32,6 @@
     </div><!--Fin contenido-->
   </div>    
       <div class="izq">
-      <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Nm_320x50_1.php"); ?></div><!--FIN ANUNCIO 320x50-->
         <?php
          $tipo_video = render(field_view_field('node', $node, 'field_tipo_de_video', array('label'=>'hidden')));
          

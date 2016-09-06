@@ -6,6 +6,7 @@
     <!--ANUNCIO Layer--><?php include("pautas/N_layer.php"); ?><!--FIN ANUNCIO Layer-->
 <div id="infografia">
     <div class="cen">
+    <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Nm_320x50_1.php"); ?></div><!--FIN ANUNCIO 320x50-->
       <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); print drupal_render(_block_get_renderable_array(_block_render_blocks(array($taxonomy_menu_block))));?><!--FIN seccion-->
       <div class="compartir_table">
         <?php include("compartirbarra.php"); ?>
@@ -44,7 +45,6 @@
     </div>
     <!--Fin Contenido-->
     <div class="izq">
-      <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Nm_320x50_1.php"); ?></div><!--FIN ANUNCIO 320x50-->
         <?php 
           print "<div class='barra desktop'>";
                 if (!empty($content['field_tags'])){ 

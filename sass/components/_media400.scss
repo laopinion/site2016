@@ -319,8 +319,13 @@
 	#video{
 		.cen{
 			.contenido{
-				.video-player{margin-bottom: 50px;margin-top:118px}				
+				.video-player{margin-bottom: 50px;margin-top:130px}				
 			}//Fin contenido
+		}
+		.izq{
+			.barra{margin: 20px 0;
+				.etiquetas{width: 100%;margin-left: 2px;}
+			}
 		}
 	}/* Fin Videos */
 
@@ -330,6 +335,7 @@
 
 	#nota{
 		.izq{
+			.p320x50{margin-top: 20px;}
 			.contenido{
 				.barra{
 					.etiquetas{width: 100%;margin-left: 2px;}
@@ -440,10 +446,10 @@
 	#newsletter{
 		form{width: 100%;}
 	    .form-item.webform-component{width:90%;
-	        .email{width: 100%;margin: 0px 10px;}
+	        .email{width: 100%;margin: 0px 10px;position: relative;top: 10px;}
 	        .description{height:auto;}
 	    }
-	    .form-actions{padding: 0px;width: 82px;margin: 0 auto;float: none;display: block;bottom:10px;
+	    .form-actions{padding: 0px;width: 82px;margin: 0 auto;float: none;display: block;bottom:10px;margin-top: 20px;
 	        input{}
 	    }
 	}
