@@ -2575,6 +2575,18 @@
 		hr{display: none;}
 	}/* Fin columna de opinion */
 
+	#perfil_columnista{width: 96%;margin: 0 2%;padding: 0;
+		.izq{width: 100%;margin-right: 0;margin-top: 80px;
+			.contenido{width: 100%;display: flex;display: -webkit-flex;display: -moz-flex;
+				.foto{float: none;}
+				.titulo{float: none;}
+				.texto{float: none;width: 100%;}
+			}
+
+		}
+		.der{display: none;}
+	}
+
 	//Juegos Olimpicos
 	#olimpicos_home{width: 100%;
 		.container{

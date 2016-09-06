@@ -242,6 +242,20 @@
 				.view-content{justify-content: center;}
 			}
 		}	
-	}   
+	} 
+
+	#perfil_columnista{
+		.izq{
+			.contenido{flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;}
+			.columnas{
+				.view-id-opinion.view-display-id-block_9{
+					.view-content{flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;
+						.views-row{width: 100%;}
+					}
+				}
+			}
+		}
+		.der{display: none;}
+	}
 
 }//Fin 600 px
