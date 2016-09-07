@@ -1,0 +1,25 @@
+#optativos{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;
+	.container{width: 100%; float:left; margin-top: 70px; position: relative;
+		.titulo{h2{text-transform: uppercase;font-size: 16px;color: $estandar;border-bottom: 1px solid $estandar;margin: 0;padding: 5px 0;}}
+		.imagenes{width: 100%;display: flex;display: -webkit-flex;display: -moz-flex;justify-content: space-between;-webkit-justify-content: space-between;-moz-justify-content: space-between;margin-top: 20px;
+			.img-izq, .img-der{width: 48%;
+				img{width: 100%; height: auto;}
+			}
+		}
+		.formulario{margin-top: 50px;
+			h2{text-align: center; color: #CC3333;}
+			.form-item{display: inline-block;width: 250px;text-align: center;color: #CC3333;margin: 25px 22px;
+				input{width: 250px;border: none; background-color: #E8E8E8; height: 20px;font-size: 14px;font-weight: 600;}
+				input:focus{outline: none;}
+				#edit-submitted-seleccione-su-producto{width: 250px;border: none; background-color: #E8E8E8; height: 20px;font-size: 14px;font-weight: 600;}
+				#edit-submitted-seleccione-su-producto:focus{outline: none;}
+			}
+			.form-actions{display: inline-block;
+				input{width: 250px;margin-left: 23px;height: 40px;background-color: #CC3333;border: none;position: relative;top: -9px;color: white;font-size: 16px;font-weight: 600;cursor: pointer;text-transform: uppercase;}
+			}
+    	}
+    	.telefono{width: 100%;margin-bottom: 50px;
+			img{margin: 0 auto; display: block;}
+    	}
+	}
+}

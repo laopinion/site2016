@@ -106,7 +106,7 @@ $(document).ready(function(){
     if(seccion == "Opinión" || seccion == "Editorial" || seccion == "Columnistas" || seccion == "Caricatura"){
       $(".view-principal.view-display-id-block .nota .seccion .color").css({background:"#BFD63E"}); 
     }else
-    if(seccion == "Deportes" || seccion == "Cúcuta deportivo" || seccion == "Fútbol" || seccion == "+ deportes" || seccion == "Copa américa 2016" || seccion == "Copa américa 2016"){
+    if(seccion == "Deportes" || seccion == "Cúcuta deportivo" || seccion == "Fútbol" || seccion == "+ Deportes" || seccion == "Copa américa 2016" || seccion == "Copa américa 2016"){
       $(".view-principal.view-display-id-block .nota .seccion .color").css({background:"#3FA6F2"}); 
     }else
     if(seccion == "Entretenimiento" || seccion == "Actividad Social" || seccion == "Tecnología" || seccion == "Cultura" || seccion == "Tendencias" || seccion == "Viral" || seccion == "Vida y salud"){
@@ -170,13 +170,13 @@ $(document).ready(function(){
       if(seccionL == "Frontera"){
         $(this).find(".nota .seccion .color").css({background:"#89C33F"}); 
       }else
-      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
         $(this).find(".nota .seccion .color").css({background:"#3D9E04"}); 
       }else
       if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
         $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -239,13 +239,13 @@ $(document).ready(function(){
       if(seccionL == "Frontera"){
         $(this).find(".nota .seccion .color").css({background:"#89C33F"}); 
       }else
-      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
         $(this).find(".nota .seccion .color").css({background:"#3D9E04"}); 
       }else
       if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
         $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -310,13 +310,13 @@ $(document).ready(function(){
       if(seccionL == "Frontera"){
         $(this).find(".nota .seccion .color").css({background:"#89C33F"}); 
       }else
-      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
         $(this).find(".nota .seccion .color").css({background:"#3D9E04"}); 
       }else
       if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
         $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -419,13 +419,13 @@ $(document).ready(function(){
       if(seccionL == "Frontera"){
         $(this).find(".nota .seccion .color").css({background:"#89C33F"}); 
       }else
-      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
         $(this).find(".nota .seccion .color").css({background:"#3D9E04"}); 
       }else
       if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
         $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -489,13 +489,13 @@ $(document).ready(function(){
       if(seccionL == "Frontera"){
         $(this).find(".nota .seccion .color").css({background:"#89C33F"}); 
       }else
-      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
         $(this).find(".nota .seccion .color").css({background:"#3D9E04"}); 
       }else
       if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
         $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -739,13 +739,13 @@ $(document).ready(function(){
       if(seccionL == "Frontera"){
         $(this).find(".video .seccion .color").css({background:"#89C33F"}); 
       }else
-      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
         $(this).find(".video .seccion .color").css({background:"#3D9E04"}); 
       }else
       if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
         $(this).find(".video .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".video .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -774,13 +774,13 @@ $(document).ready(function(){
       if(seccionL == "Frontera"){
         $(this).find(".galeria .info .seccion .color").css({background:"#89C33F"}); 
       }else
-      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
         $(this).find(".galeria .info .seccion .color").css({background:"#3D9E04"}); 
       }else
       if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
         $(this).find(".galeria .info .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".galeria .info .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -814,13 +814,13 @@ $(document).ready(function(){
       if(seccionL == "Frontera"){
         $(this).find(".podcast .info .seccion .color").css({background:"#89C33F"}); 
       }else
-      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
         $(this).find(".podcast .info .seccion .color").css({background:"#3D9E04"}); 
       }else
       if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
         $(this).find(".podcast .info .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".podcast .info .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -855,13 +855,13 @@ $(document).ready(function(){
       if(seccionL == "Frontera"){
         $(this).find(".infografia .seccion .color").css({background:"#89C33F"}); 
       }else
-      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+      if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
         $(this).find(".infografia .seccion .color").css({background:"#3D9E04"}); 
       }else
       if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
         $(this).find(".infografia .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".infografia .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -908,7 +908,7 @@ $(document).ready(function(){
   if(seccion == "Opinión" || seccion == "Editorial" || seccion == "Columnistas" || seccion == "Caricatura"){
     $(".contenido .color").css({background:"#BFD63E"}); 
   }else
-  if(seccion == "Deportes" || seccion == "Cúcuta deportivo" || seccion == "Fútbol" || seccion == "+ deportes" || seccion == "Copa américa 2016" || seccion == "Copa américa 2016"){
+  if(seccion == "Deportes" || seccion == "Cúcuta deportivo" || seccion == "Fútbol" || seccion == "+ Deportes" || seccion == "Copa américa 2016" || seccion == "Copa américa 2016"){
     $(".contenido .color").css({background:"#3FA6F2"}); 
   }else
   if(seccion == "Entretenimiento" || seccion == "Actividad Social" || seccion == "Tecnología" || seccion == "Cultura" || seccion == "Tendencias" || seccion == "Viral" || seccion == "Vida y salud"){
@@ -1010,13 +1010,13 @@ $(document).ready(function(){
     if(seccionL == "Frontera"){
       $(this).find(".nota .seccion .color").css({background:"#89C33F"}); 
     }else
-    if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+    if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
       $(this).find(".nota .seccion .color").css({background:"#3D9E04"}); 
     }else
     if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
       $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
     }else
-    if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+    if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
       $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
     }else
     if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -1071,13 +1071,13 @@ $(document).ready(function(){
     if(seccionL == "Frontera"){
       $(this).find(".field-content .seccion .color").css({background:"#89C33F"}); 
     }else
-    if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+    if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
       $(this).find(".field-content .seccion .color").css({background:"#3D9E04"}); 
     }else
     if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
       $(this).find(".field-content .seccion .color").css({background:"#BFD63E"}); 
     }else
-    if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+    if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
       $(this).find(".field-content .seccion .color").css({background:"#3FA6F2"}); 
     }else
     if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -1116,13 +1116,13 @@ $(document).ready(function(){
     if(seccionL == "Frontera"){
       $(this).find(".field-content .seccion .color").css({background:"#89C33F"}); 
     }else
-    if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+    if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
       $(this).find(".field-content .seccion .color").css({background:"#3D9E04"}); 
     }else
     if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
       $(this).find(".field-content .seccion .color").css({background:"#BFD63E"}); 
     }else
-    if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+    if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
       $(this).find(".field-content .seccion .color").css({background:"#3FA6F2"}); 
     }else
     if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -1151,13 +1151,13 @@ $(document).ready(function(){
     if(seccionL == "Frontera"){
       $(this).find(".field-content .seccion .color").css({background:"#89C33F"}); 
     }else
-    if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Poítica" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
+    if(seccionL == "Actualidad" || seccionL == "Economía" || seccionL == "Política" || seccionL == "Colombia" || seccionL == "Venezuela" || seccionL == "Mundo"){
       $(this).find(".field-content .seccion .color").css({background:"#3D9E04"}); 
     }else
     if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
       $(this).find(".field-content .seccion .color").css({background:"#BFD63E"}); 
     }else
-    if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+    if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
       $(this).find(".field-content .seccion .color").css({background:"#3FA6F2"}); 
     }else
     if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -1257,7 +1257,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
         $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -1288,7 +1288,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionL == "Opinión" || seccionL == "Editorial" || seccionL == "Columnistas" || seccionL == "Caricaturas"){
         $(this).find(".nota .seccion a").css({color:"#BFD63E"}); 
       }else
-      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
+      if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion a").css({color:"#3FA6F2"}); 
       }else
       if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
@@ -1318,7 +1318,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
     if(nomSeccion == "Opinión" || nomSeccion == "Editorial" || nomSeccion == "Columnistas" || nomSeccion == "Caricaturas"){
       $(".mid .view-header .subseccion .color").css({background:"#BFD63E"}); 
     }else
-    if(nomSeccion == "Deportes" || nomSeccion == "Cúcuta Deportivo" || nomSeccion == "Fútbol" || nomSeccion == "+ deportes" || nomSeccion == "Copa América 2015" || nomSeccion == "Copa América 2016"){
+    if(nomSeccion == "Deportes" || nomSeccion == "Cúcuta Deportivo" || nomSeccion == "Fútbol" || nomSeccion == "+ Deportes" || nomSeccion == "Copa América 2015" || nomSeccion == "Copa América 2016"){
       $(".mid .view-header .subseccion .color").css({background:"#3FA6F2"}); 
     }else
     if(nomSeccion == "Entretenimiento" || nomSeccion == "Actividad social" || nomSeccion == "Tecnología" || nomSeccion == "Cultura" || nomSeccion == "Cultura" || nomSeccion == "Tendencias" || nomSeccion == "Viral" || nomSeccion == "Vida y salud"){
@@ -1351,7 +1351,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionT == "Opinión" || seccionT == "Editorial" || seccionT == "Columnistas" || seccionT == "Caricaturas"){
         $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
+      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
@@ -1418,7 +1418,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionT == "Opinión" || seccionT == "Editorial" || seccionT == "Columnistas" || seccionT == "Caricaturas"){
         $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
+      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
@@ -1454,7 +1454,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionT == "Opinión" || seccionT == "Editorial" || seccionT == "Columnistas" || seccionT == "Caricaturas"){
         $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
+      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
@@ -1490,7 +1490,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionT == "Opinión" || seccionT == "Editorial" || seccionT == "Columnistas" || seccionT == "Caricaturas"){
         $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
+      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
@@ -1526,7 +1526,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionT == "Opinión" || seccionT == "Editorial" || seccionT == "Columnistas" || seccionT == "Caricaturas"){
         $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
+      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
@@ -1558,7 +1558,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionT == "Opinión" || seccionT == "Editorial" || seccionT == "Columnistas" || seccionT == "Caricaturas"){
         $(this).find(".nota .seccion .color").css({background:"#BFD63E"}); 
       }else
-      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
+      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
       if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
@@ -2463,7 +2463,7 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       if(seccionT == "Opinión" || seccionT == "Editorial" || seccionT == "Columnistas" || seccionT == "Caricaturas"){
         $(this).find(".info .nota .head .seccion a").css({color:"#BFD63E"}); 
       }else
-      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
+      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".info .nota .head .seccion a").css({color:"#3FA6F2"}); 
       }else
       if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
@@ -2494,7 +2494,7 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       if(seccionT == "Opinión" || seccionT == "Editorial" || seccionT == "Columnistas" || seccionT == "Caricaturas"){
         $(this).find(".info .nota .head .seccion a").css({color:"#BFD63E"}); 
       }else
-      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
+      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".info .nota .head .seccion a").css({color:"#3FA6F2"}); 
       }else
       if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
@@ -2631,7 +2631,7 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       if(seccionT == "Opinión" || seccionT == "Editorial" || seccionT == "Columnistas" || seccionT == "Caricaturas"){
         $(this).find(".info .nota .head .seccion a").css({color:"#BFD63E"}); 
       }else
-      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
+      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".info .nota .head .seccion a").css({color:"#3FA6F2"}); 
       }else
       if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
@@ -2736,7 +2736,7 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       if(seccionT == "Opinión" || seccionT == "Editorial" || seccionT == "Columnistas" || seccionT == "Caricaturas"){
         $(this).find(".info .nota .head .seccion a").css({color:"#BFD63E"}); 
       }else
-      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
+      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".info .nota .head .seccion a").css({color:"#3FA6F2"}); 
       }else
       if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
@@ -2767,7 +2767,7 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       if(seccionT == "Opinión" || seccionT == "Editorial" || seccionT == "Columnistas" || seccionT == "Caricaturas"){
         $(this).find(".info .nota .head .seccion a").css({color:"#BFD63E"}); 
       }else
-      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
+      if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".info .nota .head .seccion a").css({color:"#3FA6F2"}); 
       }else
       if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){

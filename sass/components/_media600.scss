@@ -256,6 +256,24 @@
 			}
 		}
 		.der{display: none;}
+	}//Fin perfil
+
+	#optativos{
+		.container{
+			.imagenes{display: block;
+				.img-izq, .img-der{width: 100%;
+					img{width: 100%; height: auto;}
+				}
+			}
+			.formulario{display: flex;display: -webkit-flex;display: -moz-flex;flex-direction: column;-webkit-flex-direction: column;-moz-flex-direction: column;align-items: center;-webkit-align-items: center;-moz-align-items: center;
+				.form-actions{margin-top: 25px;
+					input{margin-left: 0;}
+				}
+			}
+			.telefono{
+				img{width: 100%; height: auto;}
+			}
+		}
 	}
 
 }//Fin 600 px
