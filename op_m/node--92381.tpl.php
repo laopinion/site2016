@@ -1,3 +1,26 @@
+<?php
+
+  function GenerateRandomString($length) {
+      $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+      $charactersLength = strlen($characters);
+      $randomString = '';
+      for ($i = 0; $i < $length; $i++) {
+          $randomString .= $characters[rand(0, $charactersLength - 1)];
+      }
+      return $randomString;
+  }
+    $accountId = "564188";
+    $merchantId = "561677";
+    $referenceCode = GenerateRandomString(8);
+    $apiKey = "s7rVA73TjpE2R7p8SpJ0cFizTj";
+    $currency = "COP";
+    $amount = "42000";
+    $stringToHash = "$apiKey~$merchantId~$referenceCode~$amount~$currency";
+    $signature = md5($stringToHash);
+    $url = "https://gateway.payulatam.com/ppp-web-gateway";
+    $responUrl = "http://www.laopinion.com.co/gracias-por-suscribirse-la-opinion";
+?>
+
 <section id="suscripciones">
   <div class="content">
     <section class="titulo"><h2>Suscripciones</h2></section>
@@ -210,6 +233,7 @@
               </div>
           </div>
       </form>
+      <img class="formas_pago" src="<?php print base_path(); ?>sites/default/themes/op/images/formas-pago.png" alt="Formas de pago">
     </section><!--Fin formulario-->
     <section id="mas_info">
           <h2>LO HACEMOS MÁS FÁCIL</h2>
@@ -225,7 +249,6 @@
         <div class="texto desktop">Domicilio para efectivo y tarjetas</div>
       </div>
     </section>
-    <img class="formas_pago" src="<?php print base_path(); ?>sites/default/themes/op/images/formas-pago.png" alt="Formas de pago">
   </div><!-- Fin content--> 
 </section> <!-- /#seccion -->
      

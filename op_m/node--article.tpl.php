@@ -65,6 +65,7 @@
       print "<div class=texto>".render($content['body'])."</div>";
       print "<div class=autor>".render($content['field_autor'])."</div>";           
       ?>
+      <script src="http://icarus-wings.admanmedia.com/intext/intext_vast.js?pmu=ed9c414a;pmb=247b8ee9;size=600x338;visibility=50"data-adm-player="intext"></script>
       <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-118209');print render($block['content']); ?></div><!--FIN formulario-->
     </div>
     <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_468x60.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
@@ -95,19 +96,21 @@
   </div><!--FIN Izquierda-->
   <div class="der">
     <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/clickio300x250.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
-    <!--Noticias Recientes--><?php print EjecutarViewCache('recientes','block','mediano'); ?><!--FIN Noticias Recientes-->
+    <!--Noticias Recientes--><?php print EjecutarViewCacheArg('recientes','block','q'.$_GET["q"],'mediano'); ?><!--FIN Noticias Recientes-->
     <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_300x250_1.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
-    <!--Noticias Recientes--><?php print EjecutarViewCache('recientes','block_1','mediano'); ?><!--FIN Noticias Recientes-->   
+    <!--Noticias Recientes--><?php print EjecutarViewCacheArg('recientes','block_1','q'.$_GET["q"],'mediano'); ?><!--FIN Noticias Recientes-->   
     <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_300x250_2.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
-    <!--Noticias Recientes--><?php print EjecutarViewCache('recientes','block_2','mediano'); ?><!--FIN Noticias Recientes-->  
+    <!--Noticias Recientes--><?php print EjecutarViewCacheArg('recientes','block_2','q'.$_GET["q"],'mediano'); ?><!--FIN Noticias Recientes-->  
     <!--ANUNCIO 300x600--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_300x600.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
     <!--Inicio Suscripciones--> 
     <div class="suscripciones">
       <a href="<?php print base_path(); ?>suscripciones"><img src="<?php print base_path(); ?>sites/default/themes/op/images/suscripcion.png" alt="suscripciones"></a>
     </div><!--FIN Suscripciones-->
     <!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/clickio300x250.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
-    <!--Juegos--><div class="juegos"><a href="http://juegos.laopinion.com.co/"><img src="<?php print base_path(); ?>sites/default/themes/op/images/juegos.jpg"></a></div><!--FIN Juegos-->
+    <!--Noticias Recientes--><?php print EjecutarViewCacheArg('recientes','block_5','q'.$_GET["q"],'mediano'); ?><!--FIN Noticias Recientes-->
+    <!--Juegos--><div class="juegos"><a href="http://juegos.laopinion.com.co/"><img src="<?php print base_path(); ?>sites/default/themes/op/images/juegos_n.jpg"></a></div><!--FIN Juegos-->
     <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/lemonnet_2.php"); ?></div></div><!--FIN ANUNCIO 300x250-->    
+    <!--Noticias Recientes--><?php print EjecutarViewCacheArg('recientes','block_6','q'.$_GET["q"],'mediano'); ?><!--FIN Noticias Recientes-->
     <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/adman_inbanner.php"); ?></div></div><!--FIN ANUNCIO 300x250-->    
   </div><!--FIN Derecha-->
   <!--Noticias recientes footer-->
@@ -115,15 +118,15 @@
     <div class="titulo"><div class="color"></div><h2>ULTIMAS NOTICIAS</h2></div>
   </div>
   <div class="notas_footer">
-    <!--Noticias Recientes--><?php print EjecutarViewCache('recientes','block_3','mediano'); ?><!--FIN Noticias Recientes-->
+    <!--Noticias Recientes--><?php print EjecutarViewCacheArg('recientes','block_3','q'.$_GET["q"],'corto'); ?><!--FIN Noticias Recientes-->
   </div><!--Fin Noticias recientes footer-->
   <hr>
   <!--Multimedia footer-->
   <div class="multimedia_recientes_footer">
     <div class="titulo"><div class="color"></div><h2>MULTIMEDIA</h2></div>
   </div>
-  <div class="multimedia_footer">   
-   <!--GALERIAS--><div class="galerias"></div><?php print EjecutarViewCache('recientes','block_4','mediano'); ?><!--FIN GALERIAS-->
+  <div class="multimedia_footer">  
+   <!--GALERIAS--><div class="galerias"></div><?php print EjecutarViewCacheArg('recientes','block_4','q'.$_GET["q"],'mediano'); ?><!--FIN GALERIAS-->
   </div>
   <!--FIN Multimedia footer-->
   <hr>

@@ -1,6 +1,6 @@
 @media screen and (max-width: 400px){
-	.pauta_movil{display: block;width: 100%;}
-	.pauta{display: none;}
+	.pauta_movil{display: block;}
+	.pauta{display: none; margin: 0 auto; float:initial !important;}
 	.der{display: none;}
 	#head_movil{//Icon hamburger mas pequeño
 		#hamburger{width: 36px;

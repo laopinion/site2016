@@ -3,10 +3,10 @@
     <div class="titulo"><h2>Optativos</h2></div>
     <div class="imagenes">
       <div class="img-izq">
-        <img src="<?php print base_path(); ?>sites/default/themes/op/images/optativos/carros.jpg" alt="carros">
+        <img src="<?php print base_path(); ?>sites/default/themes/op/images/optativos/carros_n.jpg" alt="carros">
       </div>
       <div class="img-der">
-        <img src="<?php print base_path(); ?>sites/default/themes/op/images/optativos/gafas.jpg" alt="gafas">
+        <img src="<?php print base_path(); ?>sites/default/themes/op/images/optativos/gafas_n.jpg" alt="gafas">
       </div>
     </div>
     <div class="formulario">
