@@ -381,6 +381,19 @@
                             img{width:140px; height:150px;}
                         }
                     }
+                    .view-footer{float: left;width: 395px;
+                        #vyv-pauta{position: relative;width: 100%;float: left;padding-bottom: 10px;
+                            .title{position: relative;top: 12px;left: 0;text-align: center;padding: 2px 0;background: #BB0411;width: 178px;font-size: 12px;color: #fff;text-transform: uppercase;}
+                            article{float: left;border-top: 1px solid #CCCCCC;margin-top: 18px;}
+                            .triangulo{top: 12px;right: 217px;position: absolute;width: 0;height: 0;border-top: 10px solid transparent;border-right: 5px solid #fff;border-bottom: 10px solid transparent;}
+                            .titulo{margin-top: 15px;
+                                a{text-decoration: none;color: #333;font-size: 20px;font-weight: 600;line-height: 22px;}
+                            }
+                            .foto{float: left; width: 55%; overflow: hidden; margin-top: 18px;}
+                            .resumen{float: left;width: 42%;margin-right: 10px;}
+                            .info{font-size: 16px;line-height: 18px;    margin-top: 10px;}
+                        }
+                    }
                 }
                 //COLUMNA 2
                 .view-id-principal.view-display-id-block_5{width:300px;height:auto; float:left;position: relative;margin-bottom:10px;
@@ -525,6 +538,14 @@
                         a{border:none;}
                     }
                 }
+            }
+            #vyv-pauta{position: relative;background: #F2F2F2;width: 260px;float: left;border: 1px solid #CCCCCC;padding: 0 20px;padding-bottom: 10px;
+                .title{position: relative;top: 12px;left: -20px;text-align: center;padding: 2px 0;background: #BB0411;width: 178px;font-size: 12px;color: #fff;text-transform: uppercase;}
+                .triangulo{top: 12px;right: 121px;position: absolute;width: 0;height: 0;border-top: 10px solid transparent;border-right: 5px solid #F2F2F2;border-bottom: 10px solid transparent;}
+                .titulo{margin-top: 15px;
+                    a{text-decoration: none;color: #333;font-size: 20px;font-weight: 600;line-height: 22px;}
+                }
+                .info{font-size: 16px;line-height: 18px;}
             }
             //DELEITESE
             .deleitese{width:100%;padding: 0px 0px 5px 0px;top: 0px;position: relative;float:left;
