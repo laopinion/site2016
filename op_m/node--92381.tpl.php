@@ -164,7 +164,11 @@
                   <input id="apellidos" type="text" name="apellidos" class="form-text">
               </div>
               <div class="form-item">
-                  <label for="telefono">Teléfono</label>
+                  <label for="cedula">Cédula de ciudadanía</label>
+                  <input id="cedula" type="text" name="payerDocument" class="form-text">
+              </div>
+              <div class="form-item">
+                  <label for="telefono">Teléfono (celular)</label>
                   <input type="text" name="mobilePhone" class="form-text" required>
               </div>
               <div class="form-item">
@@ -173,11 +177,15 @@
               </div>
               <!-- //////// -->
               <div class="form-item">
-                  <label for="dirección">Dirección</label>
-                  <input type="text" name="shippingAddress" class="form-text" required>
+                  <label for="dirección">Dirección de correspondencia</label>
+                  <input type="text" name="billingAddress" class="form-text" required>
               </div>
               <div class="form-item">
-                  <label for="ciudad">Ciudad</label>
+                  <label for="envio">Dirección de envío del ejemplar</label>
+                  <input type="text" name="shippingAddress" class="form-text">
+              </div>
+              <div class="form-item">
+                  <label for="ciudad">Ciudad de entrega del ejemplar</label>
                   <input type="text"  name="shippingCity" class="form-text" required>
               </div>
               <input type="hidden" name="shippingCountry" value="CO">
@@ -311,7 +319,7 @@
         var nuevoAmount = amount;
         $.ajax({
             type: "POST",
-            url: "http://www.laopinion.com.co/sites/default/themes/op/templates/funcion.php",
+            url: "http://www.laopinion.com.co/sites/default/themes/op/funcion.php",
             data: {"amount": nuevoAmount},
             success: function(data){
                 separador = " ", // un espacio en blanco

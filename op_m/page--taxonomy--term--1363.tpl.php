@@ -9,8 +9,8 @@
         <?php if (!empty($tabs['#primary'])): ?><div id="tabs"><?php print render($tabs); ?></div><?php endif; ?>
         <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); $taxtmprender = _block_render_blocks(array($taxonomy_menu_block)); $taxtmprender2 = _block_get_renderable_array($taxtmprender); print drupal_render($taxtmprender2); ?><!--FIN seccion-->
          <?php include("compartir.tpl.php"); ?>
-         <?php include("recomendada.tpl.php"); ?>
-         <?php include("recomendada_movil.tpl.php"); ?>
+         <?php //include("recomendada.tpl.php"); ?>
+         <?php //include("recomendada_movil.tpl.php"); ?>
          <div class="contenido">
           <!--Editorial--><?php print EjecutarViewCache('opinion','block','hora'); ?><!--FIN Editorial--> 
           <!--Caricaturas-->
