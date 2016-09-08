@@ -4,7 +4,9 @@
 <!--ANUNCIO 1000x50 Flotante--><div class="pauta flotante"><?php include("pautas/S_flotante.php"); ?></div><!--FIN ANUNCIO 1000x50 Flotante-->
 <!--ANUNCIO Layer--><?php include("pautas/S_layer.php"); ?></div><!--FIN ANUNCIO Layer-->
 <section id="especiales">
-	<div class="logo"></div>
+	<div class="title">
+		<div class="logo"></div>
+	</div>
 	<div class="container">
 		<div class="destacada">
 			<?php $view = views_get_view('especiales'); print $view->preview('block');?>
