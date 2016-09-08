@@ -172,50 +172,7 @@
 						}
 					}
 					.view-id-principal.view-display-id-block_8{width: 100%; padding: 0;}
-					.cucuta{width: 100%;}
-					.view-id-principal.view-display-id-block_7{width: 100%;padding: 10px 0;
-						.views-row-1{
-							.nota{width: 95%;padding: 0 8px;
-								.info{width: 100%;}
-								.video{width: 100%;height: auto;
-									img{width: 100%; height: auto;}
-								}
-								.galeria{width: 100%;height: auto;
-									img{width: 100%; height: auto;}
-								}
-								.foto{width: 100%;height: auto;
-									img{width: 100%; height: auto;}
-								}
-								.podcast{width: 100%;height: auto;
-									img{width: 100%; height: auto;}
-								}
-								.icon_video{right: 7px;top: 78px;}
-								.icon_galeria{right: 7px;top: 78px;}
-								.icon_podcast{right: 7px;top: 78px;}
-							}
-						}
-						.views-row-2{
-							.views-field{width: 100%;}
-							.nota{width: 95%;padding: 0 8px;
-								.info{width: 50%;}
-								.video{width: 46%;height: auto;
-									img{width: 100%; height: auto;}
-								}
-								.galeria{width: 46%;height: auto;
-									img{width: 100%; height: auto;}
-								}
-								.foto{width: 46%;height: auto;
-									img{width: 100%; height: auto;}
-								}
-								.podcast{width: 46%;height: auto;
-									img{width: 100%; height: auto;}
-								}
-								.icon_video{right: 7px;top: 78px;}
-								.icon_galeria{right: 7px;top: 78px;}
-								.icon_podcast{right: 7px;top: 78px;}
-							}
-						}
-					}
+					//Aqui estaba Cúcuta
 					.view-id-principal.view-display-id-block_4{width: 100%;
 						.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
 							.views-row{width: 100%;height: auto;
@@ -242,6 +199,50 @@
 					}
 				}//Fin cen
 				.mid{
+					.cucuta{width: 100%;}
+					.view-id-principal.view-display-id-block_7{width: 100%;padding: 20px 0;
+						.views-row-1{width: 100%;
+							.nota{width: 95%;padding: 0 8px;
+								.info{width: 100%;}
+								.video{width: 100%;height: auto;
+									img{width: 100%; height: auto;}
+								}
+								.galeria{width: 100%;height: auto;
+									img{width: 100%; height: auto;}
+								}
+								.foto{width: 100%;height: auto;
+									img{width: 100%; height: auto;}
+								}
+								.podcast{width: 100%;height: auto;
+									img{width: 100%; height: auto;}
+								}
+								.icon_video{right: 7px;top: 78px;}
+								.icon_galeria{right: 7px;top: 78px;}
+								.icon_podcast{right: 7px;top: 78px;}
+							}
+						}
+						.views-row-2{width: 100%;
+							.views-field{width: 100%;}
+							.nota{width: 95%;padding: 0 8px;
+								.info{width: 50%;}
+								.video{width: 46%;height: auto;
+									img{width: 100%; height: auto;}
+								}
+								.galeria{width: 46%;height: auto;
+									img{width: 100%; height: auto;}
+								}
+								.foto{width: 46%;height: auto;
+									img{width: 100%; height: auto;}
+								}
+								.podcast{width: 46%;height: auto;
+									img{width: 100%; height: auto;}
+								}
+								.icon_video{right: 7px;top: 78px;}
+								.icon_galeria{right: 7px;top: 78px;}
+								.icon_podcast{right: 7px;top: 78px;}
+							}
+						}
+					}//Fin Cucuta agg
 					.view-id-principal.view-display-id-block_3{width: 100%;margin: 0;
 						.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
 							.views-row{width: 100%;height: auto;
@@ -263,6 +264,15 @@
 									.icon_video{right: 2px;}
 									.icon_galeria{right: 2px;}
 									.icon_podcast{right: 2px;}
+								}
+							}
+						}
+						.view-footer{width: 100%;
+							#vyv-pauta{width: 300px;
+								.triangulo{right: 122px;}
+								article{
+									.resumen{width: 100%;margin: 0;}
+									.foto{width: 100%;}
 								}
 							}
 						}

@@ -12,12 +12,23 @@
             } 
             /* Inicio caricaturas */
             .view-id-opinion.view-display-id-block_7{background-color: #8E9398; height: auto;margin-top: 40px;position: relative; width:690px; float: left;
-                .views-row{position: relative;float: left; width: 300px;height: auto;margin: 0px 0px 10px 30px;vertical-align: top;
+                .views-row{position: relative;display: inline-block;vertical-align: middle;width: 300px;height: auto;margin: 0px 0px 10px 30px;
                     .caricatura{float: left;position: relative;overflow: hidden;}
                 }
                /*  .views-row-odd{margin-top: -30px;}
                 .views-row-last{top: -30px;}  */
                 .views-row-1,.views-row-2{margin-top: 20px!important;}
+                .pager{
+                    .pager-item{background-color: #BB1D1E;border-radius: 3px;
+                        a{color: #fff; text-decoration: none;}
+                    }
+                    .pager-next{background-color: #BB1D1E;border-radius: 3px;
+                        a{color: #fff; text-decoration: none;}
+                    }
+                    .pager-last{background-color: #BB1D1E;border-radius: 3px;
+                        a{color: #fff; text-decoration: none;}
+                    }
+                }//Fin pager
             }//fin caricaturas        
         }//Fin contenido
 	}//fin izq
