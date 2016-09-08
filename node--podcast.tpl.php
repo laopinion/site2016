@@ -58,6 +58,7 @@
       print "<div class=texto>".render($content['body'])."</div>";
       print "<div class=autor>".render($content['field_autor'])."</div>";            
       ?>
+      <script src="http://icarus-wings.admanmedia.com/intext/intext_vast.js?pmu=ed9c414a;pmb=247b8ee9;size=600x338;visibility=50"data-adm-player="intext"></script>
       <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-90577');print render($block['content']); ?></div><!--FIN formulario-->
     </div>
     <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_300x250_4.php"); ?></div></div><!--FIN ANUNCIO 300x250-->

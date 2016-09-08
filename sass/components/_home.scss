@@ -381,11 +381,11 @@
                             img{width:140px; height:150px;}
                         }
                     }
-                    .view-footer{float: left;width: 395px;
+                    .view-footer{float: left;width: 375px;
                         #vyv-pauta{position: relative;width: 100%;float: left;padding-bottom: 10px;
                             .title{position: relative;top: 12px;left: 0;text-align: center;padding: 2px 0;background: #BB0411;width: 178px;font-size: 12px;color: #fff;text-transform: uppercase;}
                             article{float: left;border-top: 1px solid #CCCCCC;margin-top: 18px;}
-                            .triangulo{top: 12px;right: 217px;position: absolute;width: 0;height: 0;border-top: 10px solid transparent;border-right: 5px solid #fff;border-bottom: 10px solid transparent;}
+                            .triangulo{top: 12px;right: 197px;position: absolute;width: 0;height: 0;border-top: 10px solid transparent;border-right: 5px solid #fff;border-bottom: 10px solid transparent;}
                             .titulo{margin-top: 15px;
                                 a{text-decoration: none;color: #333;font-size: 20px;font-weight: 600;line-height: 22px;}
                             }
@@ -633,12 +633,12 @@
                     .color{background:#fff; height:10px; width:25px; float:left;position: relative;text-indent:-9999px;}
                     a{color:#fff; text-decoration:none; text-transform:uppercase;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -3px;position: relative;margin: 0px;}
                 }
-                .frame_video{width:715px; height:470px; position: relative; float:left; margin-right:10px; border-right:1px solid #ccc;
+                .frame_video{width:715px; height:470px; position: relative; float:left; margin-right:10px; border-right:1px solid #ccc;overflow:hidden;
                     .iframeyoutube{padding:15px; position: relative; float:left; height:455px;}
                     .fb-video{padding:15px; position: relative; float:left; height:455px;}
                     .fb-video span iframe{height: 455px!important;}
                     .iframevine{padding:15px; position: relative; float:left; height:455px;padding-left: 0;}
-                    .instagram-media{display: block;padding:15px; position: relative;height:470px;width: 430px;margin: 0 auto;}
+                    .instagram-media{display: block;padding:15px; position: relative;height:470px;width: 660px;margin: 0 auto;}
                 }
                 .views-row {margin-bottom:25px;float:left;}
                 .views-row iframe{display: none;}

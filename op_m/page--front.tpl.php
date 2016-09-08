@@ -33,7 +33,7 @@
 		      	</div>
 		      	<!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Hm_320x50_3.php"); ?></div><!--FIN ANUNCIO 320x50-->
 		      	<div class="mid">
-		      		<!--ANUNCIO 600x90--><div class="pauta p600x90" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"></div></div><!--FIN ANUNCIO 600x90-->
+		      		<!--ANUNCIO 600x90--><div class="pauta p600x90" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/H_especial.php"); ?></div></div><!--FIN ANUNCIO 600x90-->
 		      		<!--Lista 3--><?php print EjecutarViewCache('principal','block_3','corto'); ?><!--FIN Lista 3-->
 		      		<!--Columna 2--><?php print EjecutarViewCache('principal','block_5','corto'); ?><!--FIN Columna 2-->
 	      		</div>
@@ -48,7 +48,8 @@
 				<!--Opinión--><div class="opinion"><div class="color"></div><a href="<?php print base_path(); ?>opinion">Opinión</a></div><?php print EjecutarViewCache('side','block_7','hora'); ?>
 				<!--Columnistas--><?php print EjecutarViewCache('side','block_8','hora'); ?><!--FIN Columnistas--><!--FIN Opinión-->
 				<!--ANUNCIO 300x600--><div class="pauta p300x600" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/H_300x250_2.php"); ?></div></div><!--FIN ANUNCIO 300x600-->
-				<!--Deléitese--><div class="deleitese"><a href="http://www.deleitese.co" target="_blank">Deléitese</a></div><?php print EjecutarViewCache('side','block_3','mediano'); ?><!--FIN Deléitese-->	
+				<!--Deléitese--><div class="deleitese"><a href="http://www.deleitese.co" target="_blank">Deléitese</a></div><?php print EjecutarViewCache('side','block_3','mediano'); ?><!--FIN Deléitese-->
+				<?php // include("vyv.php"); ?>
 	      	</div>
 	      	<div class="center">
 	      		<?php include("zonacomercial.tpl.php"); ?>
