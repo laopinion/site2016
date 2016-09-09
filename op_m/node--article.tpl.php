@@ -75,7 +75,7 @@
       <div class="color"></div><h2>Comentarios</h2>
       <div class="bloque"><?php include("disqus.php"); ?></div>
     </div>
-    <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><a style="width: 300px;height: 250px;float: left;position: relative;" href="http://www.laopinion.com.co/optativos"><iframe width="300" height="250" src="https://www.youtube.com/embed/PlHsjZ5acrQ?autoplay=1" frameborder="0" allowfullscreen></iframe></a></div></div><!--FIN ANUNCIO 300x250-->
+    <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><a style="width: 300px;height: 250px;float: left;position: relative;" href="http://www.laopinion.com.co/optativos"><iframe width="300" height="250" src="https://www.youtube.com/embed/PlHsjZ5acrQ?autoplay=0" frameborder="0" allowfullscreen></iframe></a></div></div><!--FIN ANUNCIO 300x250-->
     <!--ANUNCIO 300x250--><!--<div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php // include("pautas/lemonnet_1.php"); ?></div></div>--><!--FIN ANUNCIO 300x250-->
     <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p300x250"><?php include("pautas/Nm_320x50_3.php"); ?></div><!--FIN ANUNCIO 320x50-->
     <div class="mas_notas"><!--Más notas-->

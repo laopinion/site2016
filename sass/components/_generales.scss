@@ -26,6 +26,19 @@
     }
 }
 
+/*PAGINADOR PARA SECCIONES*/
+.pager{
+    .pager-item{background-color: #BB1D1E;border-radius: 3px;
+        a{color: #fff; text-decoration: none;}
+    }
+    .pager-next{background-color: #BB1D1E;border-radius: 3px;
+        a{color: #fff; text-decoration: none;}
+    }
+    .pager-last{background-color: #BB1D1E;border-radius: 3px;
+        a{color: #fff; text-decoration: none;}
+    }
+}
+
 //Apertura Four NOTAS
 .view-aperturas.view-id-aperturas.view-display-id-block_8{float: left;width: 200px;height:auto; position: fixed; bottom: 70px;z-index:50;transition:all 0.5s ease; 
     .pestana{width: 0;height: 0;border-top: 20px solid transparent;border-right: 20px solid #F2F2F2;border-bottom: 20px solid transparent;position: absolute;top: 40%;}

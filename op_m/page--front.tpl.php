@@ -25,10 +25,10 @@
 		      	</div>
 		      	<!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Hm_320x50_2.php"); ?></div><!--FIN ANUNCIO 320x50-->
 		      	<div class="cen">
-		      		<!--Deportes--><div class="deportes"><div class="color"></div><a href="<?php print base_path(); ?>deportes">Deportes</a></div><?php print EjecutarViewCache('principal','block_6','corto'); ?><!--FIN Deportes-->
+		      		<!--Proceso de paz--><?php print EjecutarViewCache('especiales','block_5','corto'); ?><!--FIN Proceso de paz-->
 		      		<!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/H_300x250_3.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
 					<!--Economía--><div class="economia"><div class="color"></div><a href="<?php print base_path(); ?>economia">Economía</a></div><div id="indicadores"><h2>Indicadores</h2><div class="info"><a href="<?php print base_path(); ?>economia"><?php $tmp = op_indicadores_home(); print $tmp; ?></a></div><div class="patrocinio"><span>Patrocinado por</span><div class="pauta p88x31"><a href="http://megacambio.blogspot.com/" target="_blank"><img src="<?php print base_path(); ?>sites/default/files/ads/megacambio.png"> </a></div></div></div><?php print EjecutarViewCache('principal','block_8','corto'); ?><!--FIN Economía-->
-		      		<!--Cúcuta--><div class="cucuta"><div class="color"></div><a href="<?php print base_path(); ?>cucuta">Cúcuta</a></div><?php print EjecutarViewCache('principal','block_7','corto'); ?><!--FIN Cúcuta-->
+		      		<!--Deportes--><div class="deportes"><div class="color"></div><a href="<?php print base_path(); ?>deportes">Deportes</a></div><?php print EjecutarViewCache('principal','block_6','corto'); ?><!--FIN Deportes-->
 		      		<!--Columna--><?php print EjecutarViewCache('principal','block_4','corto'); ?><!--FIN Columna-->
 		      	</div>
 		      	<!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Hm_320x50_3.php"); ?></div><!--FIN ANUNCIO 320x50-->
@@ -36,6 +36,7 @@
 		      		<!--ANUNCIO 600x90--><div class="pauta p600x90" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/H_especial.php"); ?></div></div><!--FIN ANUNCIO 600x90-->
 		      		<!--Lista 3--><?php print EjecutarViewCache('principal','block_3','corto'); ?><!--FIN Lista 3-->
 		      		<!--Columna 2--><?php print EjecutarViewCache('principal','block_5','corto'); ?><!--FIN Columna 2-->
+		      		<!--Cúcuta--><div class="cucuta"><div class="color"></div><a href="<?php print base_path(); ?>cucuta">Cúcuta</a></div><?php print EjecutarViewCache('principal','block_7','corto'); ?><!--FIN Cúcuta-->
 	      		</div>
 		    </div>
 	      	<div class="right">      		
