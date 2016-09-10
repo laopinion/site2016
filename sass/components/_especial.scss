@@ -1,6 +1,6 @@
 #especiales{width: 100%;float: left;
 	.title{height: 58px;width: 1006px;background-color: #78BAC6;margin: 0 auto;margin-top: 70px;
-		.logo{background: url(../images/iconos/logo_paz.svg) -184px -117px/430px auto no-repeat;height: 58px;width: 200px;margin: 0 auto;}
+		.logo{background: url(../images/iconos/logo_paz.svg) -184px -117px/430px auto no-repeat !important;height: 58px;width: 200px;margin: 0 auto;}
 	}
 	//.logo{width: 300px;margin: 0 auto;margin-top: 30px;}
 	.container{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;}
@@ -48,7 +48,7 @@
 							}
 							.seccion:hover{text-decoration: underline;}
 							.titulo{margin-top: 5px;
-								a{font-size: 26px;text-decoration: none;color: #333;line-height: 28px;font-weight: 600;}
+								a{font-size: 22px;text-decoration: none;color: #333;line-height: 24px;font-weight: 600;}
 							}
 							.resumen{color: #808080;}
 						}

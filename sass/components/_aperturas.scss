@@ -116,9 +116,9 @@
             .divisor{height: 90px;position: absolute;border-right: 1px solid #757575;top: 10px;right: 508px;}
         }
         .view-content{display: flex;flex-wrap: wrap;justify-content: center;
-            .views-row{width: 450px;height: auto;margin: 15px 40px 15px 0;overflow: hidden;
+            .views-row{width: 450px;height: auto;margin: 14px 40px 0px 0px;overflow: hidden;
                 .titulo{
-                    a{text-decoration: none;color: #fff;font-size: 20px;}
+                    a{text-decoration: none;color: #fff;font-size: 18px;line-height: 20px;}
                     a:hover{text-decoration: underline;}
                 }
                 .icono{background: url(../images/iconos/icono-aperturas.svg) -16px -14px/60px auto no-repeat;height: 28px;width: 30px;margin-right: 5px;float: left;}

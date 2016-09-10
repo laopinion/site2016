@@ -188,19 +188,53 @@
 					.node-autor{width: 95%;height:110px;}
 				}
 			}
+			.relacionadas{
+				.item{display: flex;display: -webkit-flex;display: -moz-flex;flex-direction: column;-webkit-flex-direction: column;-moz-flex-direction: column;align-items: center;-webkit-align-items: center;-moz-align-items: center;
+					.field-item{width:40%}
+				}
+			}
 		}
 	}
+
 
 	.notas_footer .vista-recientes-footer .icon_video{right: 90px;}
 	.notas_footer .vista-recientes-footer .icon_galeria{right: 90px;}
 	.notas_footer .vista-recientes-footer .icon_podcast {right: 90px;}
 
+	#galeria{
+		.relacionadas{
+			.item{display: flex;display: -webkit-flex;display: -moz-flex;flex-direction: column;-webkit-flex-direction: column;-moz-flex-direction: column;align-items: center;-webkit-align-items: center;-moz-align-items: center;
+				.field-item{width:40%}
+			}
+		}
+	}
+
+	#podcast{
+		.relacionadas{
+			.item{display: flex;display: -webkit-flex;display: -moz-flex;flex-direction: column;-webkit-flex-direction: column;-moz-flex-direction: column;align-items: center;-webkit-align-items: center;-moz-align-items: center;
+				.field-item{width:40%}
+			}
+		}
+	}
 	/*Inicio Videos */
 	#video{
 		.cen{
 			.contenido{
 				.video-player{margin-bottom: 50px;margin-top:70px;}				
 			}//Fin contenido
+		}
+		.relacionadas{
+			.item{display: flex;display: -webkit-flex;display: -moz-flex;flex-direction: column;-webkit-flex-direction: column;-moz-flex-direction: column;align-items: center;-webkit-align-items: center;-moz-align-items: center;
+				.field-item{width:40%}
+			}
+		}
+	}/* Fin Videos */
+
+	#infografia{
+		.relacionadas{
+			.item{display: flex;display: -webkit-flex;display: -moz-flex;flex-direction: column;-webkit-flex-direction: column;-moz-flex-direction: column;align-items: center;-webkit-align-items: center;-moz-align-items: center;
+				.field-item{width:40%}
+			}
 		}
 	}/* Fin Videos */
 

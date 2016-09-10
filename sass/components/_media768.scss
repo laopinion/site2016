@@ -228,7 +228,10 @@
 				}
 				.barra.table{display: block;}
 			}//Fin contenido
-			.webform-client-form.webform-client-form-90572{width: 100%;height: auto;}
+			.newsletter{width: 100%;height: auto;}
+			.relacionadas{margin-right: 0; width: 100%;
+				.item{width: 100%; }
+			}
 			.comentarios{margin-right: 0; width: 100%;
 				.bloque{width: 94%; padding: 2%;} 
 			}
@@ -347,6 +350,9 @@
 			.compartirbarra{
 				.redes_sociales{display: none !important;}
 			}
+			.relacionadas{margin-right: 0; width: 100%;
+				.item{width: 100%; }
+			}
 			.comentarios{margin-right: 0; width: 100%;
 				.bloque{width: 94%; padding: 2%;} 
 			}
@@ -438,6 +444,9 @@
 			.barra, .table{display: none !important;}
 			.compartirbarra{
 				.redes_sociales{display: none !important;}
+			}
+			.relacionadas{margin-right: 0; width: 100%;
+				.item{width: 100%; }
 			}
 			.comentarios{margin-right: 0; width: 100%;
 				.bloque{width: 94%; padding: 2%;} 
@@ -533,6 +542,9 @@
 		}
 		.izq{width: 96%;margin: 0 2%;margin-top: 0px;
 			.barra.desktop{display: none;}
+			.relacionadas{margin-right: 0; width: 100%;
+				.item{width: 100%; }
+			}
 			.comentarios{margin-right: 0; width: 100%;
 				.bloque{width: 94%; padding: 2%;} 
 			}
@@ -635,6 +647,9 @@
 					.redes_sociales{display: none;}
 				}
 			}//Fin contenido
+			.relacionadas{margin-right: 0; width: 100%;
+				.item{width: 100%; }
+			}
 			.comentarios{margin-right: 0; width: 100%;
 				.bloque{width: 94%; padding: 2%;} 
 			}
@@ -2440,7 +2455,7 @@
 			.view-header{
 				.divisor{display: none;}
 			}
-			.view-content{display: flex;flex-wrap: wrap;justify-content: center;
+			.view-content{display: flex;flex-wrap: wrap;justify-content: center;padding:10px 0px;
 				.views-row{margin-right: 0;}
 			}
 		}
@@ -2528,7 +2543,10 @@
 				}
 				.barra.table{display: block;}
 			}//Fin contenido
-			.webform-client-form.webform-client-form-90572{width: 100%;height: auto;}
+			.newsletter{width: 100%;height: auto;}
+			.relacionadas{margin-right: 0; width: 100%;
+				.item{width: 100%; }
+			}
 			.comentarios{margin-right: 0; width: 100%;
 				.bloque{width: 94%; padding: 2%;} 
 			}

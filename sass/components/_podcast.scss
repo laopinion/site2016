@@ -101,6 +101,17 @@
                 .video-js, .vjs_video_6048-dimensions, .vjs_video_3-dimensions, .vjs-default-skin{display:block;}
             }
         }/*FIN INFO*/
+        .relacionadas{width: 95%; height:auto; margin-right:20px; float:left; position: relative;margin-bottom:20px;
+            .color{height: 10px; width: 25px;float: left;position: relative;text-indent: -9999px;background-color: #000000;margin-top: 6px;margin-right: 5px;}
+            h2{font-size:17px; color:$estandar; text-transform:uppercase; width:175px; padding:0px 0px;margin:0px 0px 10px 0px; display:inline-block; vertical-align:middle;}
+            .linea{border-bottom: 1px solid $estandar; width:100%; float:left; position: relative;height:15px; margin-bottom: 20px;}
+            .item{position: relative;float:left; width:100%;
+                .even{margin-right:10px;}
+                .field-item{width: 28.5%;background: #EAEAEA;padding: 10px;float: left;position: relative;font-size: 16px;height: 60px;margin: 0px 10px 10px 0px;
+                    a{color: #8E9397; font-weight:600; text-decoration:none;}
+                }
+            }
+        }
         .comentarios{width: 95%; height:auto; margin-right:20px; float:left; position: relative;margin-bottom:20px;
             .color{height: 10px; width: 25px;float: left;position: relative;text-indent: -9999px;background-color: $comentarios;margin-top: 6px;margin-right: 5px;}
             h2{font-size:17px; color:$estandar; text-transform:uppercase; width:145px; padding:0px 0px;margin:0px 0px 10px 0px; display:inline-block; vertical-align:middle;}
