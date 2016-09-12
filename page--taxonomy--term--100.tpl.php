@@ -9,8 +9,8 @@
         <?php if (!empty($tabs['#primary'])): ?><div id="tabs"><?php print render($tabs); ?></div><?php endif; ?>
         <!--Seccion--><?php $taxonomy_menu_block = block_load('taxonomy_menu_block','1'); print drupal_render(_block_get_renderable_array(_block_render_blocks(array($taxonomy_menu_block))));?><!--FIN seccion-->
          <?php include("compartir.tpl.php"); ?>
-         <?php include("recomendada.tpl.php"); ?>
-         <?php include("recomendada_movil.tpl.php"); ?>
+         <?php //include("recomendada.tpl.php"); ?>
+         <?php //include("recomendada_movil.tpl.php"); ?>
          <div class="contenido">
           <!--Editorial--><?php $view = views_get_view('opinion'); print $view->preview('block_5'); ?><!--FIN Editorial--> 
           <!--Columnistas Destacado--><?php $view = views_get_view('opinion'); print $view->preview('block_4'); ?><!--FIN Columnistas Destacado-->

@@ -13,8 +13,8 @@
        <?php include("recomendada.tpl.php"); ?>
        <?php include("recomendada_movil.tpl.php"); ?>
        <div class="contenido">
-        <!--Editorial--><?php $view = views_get_view('opinion'); print $view->preview('block_8'); ?><!--FIN Editorial--> 
-        <!--Columnistas--><?php $view = views_get_view('opinion'); print $view->preview('block_3'); ?><!--FIN Columnistas-->
+        <!--Editorial--><?php //$view = views_get_view('opinion'); print $view->preview('block_8'); ?><!--FIN Editorial--> 
+        <!--Columnistas--><?php $view = views_get_view('opinion'); print $view->preview('block_10'); ?><!--FIN Columnistas-->
        </div>
     </div><!--Fin izquierda-->
       <div class="der">
