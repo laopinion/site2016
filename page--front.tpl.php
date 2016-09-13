@@ -50,7 +50,7 @@
 				<!--Columnistas--><?php $view = views_get_view('side'); print $view->preview('block_8'); ?><!--FIN Columnistas--><!--FIN Opinión-->
 				<!--ANUNCIO 300x600--><div class="pauta p300x600" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/H_300x250_2.php"); ?></div></div><!--FIN ANUNCIO 300x600-->
 				<!--Deléitese--><div class="deleitese"><a href="http://www.deleitese.co" target="_blank">Deléitese</a></div><?php $view = views_get_view('side'); print $view->preview('block_3'); ?><!--FIN Deléitese-->
-				<?php include("vyv.php"); ?>
+				<?php // include("vyv.php"); ?>
 	      	</div>
 	      	<div class="center">
 	      		<?php include("zonacomercial.tpl.php"); ?>
