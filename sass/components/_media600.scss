@@ -1,5 +1,5 @@
 @media screen and (max-width: 600px){
-	.pauta_movil{display: block;}
+	.pauta_movil{display: block;float: none;margin: 0 auto;margin-bottom: 20px;}
 	.pauta{display: none;}
 	.pautas_header{display: none;}
 	.notas_header{display: none;}
@@ -131,8 +131,9 @@
 				}
 				.mid{width: 100%; margin: 0;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
 					.p600x90{display:none;}
-					.view-id-principal.view-display-id-block_3{width:67%;
+					.view-id-principal.view-display-id-block_3{width:67%;width: 100%;float: left;margin-right: 0;
 						.views-row{width:100%; display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;}
+						.view-footer{float: none; margin: 0 auto;}
 					}
 					.view-id-principal.view-display-id-block_5{width:67%;
 						.views-row{width:100%; display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
@@ -144,6 +145,7 @@
 					.infografias{width:92%;height:auto;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
 						.view-id-principal.view-display-id-block_15{width:100%;height:auto;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;}
 					}
+					.cucuta{width: 75%;}
 				}
 			}
 			.right{display:none;
@@ -307,6 +309,10 @@
 				img{width: 100%; height: auto;}
 			}
 		}
+	}
+
+	#temas-dia{
+		.figur-1{border-left: 180px solid transparent;border-right: 190px solid transparent;border-top: 20px solid #B5B5B5;}
 	}
 
 }//Fin 600 px

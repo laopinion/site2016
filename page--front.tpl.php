@@ -13,9 +13,10 @@
   <section class="detailContent">
       <div id="home">
       	<div id="content">
-      		<?php include("aperturas.tpl.php"); ?>
+      		<?php //include("aperturas.tpl.php"); ?>
 		    <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Hm_320x50_1.php"); ?></div><!--FIN ANUNCIO 320x50-->
 		    <!--ANUNCIO 1000x90--><div class="pauta p1000x90" style="display: none"><?php include("pautas/H_1000x90.php"); ?></div><!--FIN ANUNCIO 1000x90-->
+		    <?php include("temas.tpl.php"); ?>
 		    <div class="left">
 		      	<div class="izq">
 		      		<!--Destacada--><?php $view = views_get_view('principal'); print $view->preview('block'); ?><!--FIN Destacada-->
