@@ -73,29 +73,36 @@
 			        <li><a href="<?php print base_path(); ?>servicios">Servicios</a></li>
 			        <li class="divider"></li>
 			        <li><a href="<?php print base_path(); ?>participacion">Participación</a></li>
-					<!--
-					<ul id="redes_sociales">
-						<li class="facebook">
-							<a href="https://www.facebook.com/laopinioncucuta/" target="_blank"></a>							
-						</li>
-						<li class="twitter">
-							<a href="https://www.twitter.com/laopinioncucuta/" target="_blank"></a>
-						</li>
-						<li class="instagram">
-							<a href="https://www.instagram.com/laopinioncucuta/" target="_blank"></a>
-						</li>
-						<li class="youtube">
-							<a href="https://www.youtube.com/user/WEBLAOPINION" target="_blank"></a>
-						</li>
+					<li class="divider"></li>
+					<ul id="iconos">
+						<li class="lupa"><div></div></li>
+						<li class="user"><a href="<?php print base_path(); ?>user"></a></li>
 					</ul>
-					--> 
-			    </ul> 
+			    </ul>
 			</div>
 		</nav>
 		<!--FIN MENU PRINCIPAL-->
 	</div>
+	<div class="buscador">
+		<ul id="redes">
+			<li class="facebook">
+				<a href="https://www.facebook.com/laopinioncucuta/" target="_blank"></a>							
+			</li>
+			<li class="twitter">
+				<a href="https://www.twitter.com/laopinioncucuta/" target="_blank"></a>
+			</li>
+			<li class="instagram">
+				<a href="https://www.instagram.com/laopinioncucuta/" target="_blank"></a>
+			</li>
+			<li class="youtube">
+				<a href="https://www.youtube.com/user/WEBLAOPINION" target="_blank"></a>
+			</li>
+		</ul>
+    	<form action="">
+    		<input type="text">
+    	</form>
+    </div>
 </header>
-
 
 <!--Contenido HEADER-->
 <div class="botonup"></div>

@@ -2816,6 +2816,16 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       }
     }
   });
+  var c = 0;
+  $("header .top_n #menup_n .menu_p #iconos .lupa").click(function(){
+      if(c == 0){
+        $("header .buscador").css("top", "56px");
+        c++;
+      }else{
+        $("header .buscador").css("top", "33px");
+        c = 0;
+      }
+  });
 
 
 

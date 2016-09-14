@@ -1,4 +1,7 @@
 @media screen and (max-width: 768px){
+	header{
+		.buscador{display: none;}
+	}
 	#head_desktop{
 		display: none;
 	}
