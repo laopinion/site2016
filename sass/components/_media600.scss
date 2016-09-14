@@ -184,6 +184,10 @@
 					.twitter-tweet{width: 100%!important;}
 					iframe{width: 100%!important;}
 					img{width: 100%!important;}
+					p{
+						.desktop{display:none;}
+                		.movil{display:block;}
+					}                		
 				}
 				.autor {height:auto;
 					.node-autor{width: 95%;height:110px;}

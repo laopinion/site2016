@@ -40,8 +40,8 @@
 }
 
 #temas-dia{float: left;width: 100%;margin-bottom: 30px;background-color: #F1F1F1;height: 50px;
-    .titulo{float: left;font-size: 18px;font-weight: 600;color: #4C4C4C;background-color: #B5B5B5;width: 75px;text-align: center;padding: 5px 0; position: relative; top: -3px;}
-    .tema{float: left;width: 125px;padding: 4px 0;margin-left: 39px;
+    .titulo{float: left;font-size: 18px;line-height:20px; font-weight: 600;color: #4C4C4C;background-color: #B5B5B5;width: 75px;text-align: center;padding: 8px 0px; position: relative; top: -3px;}
+    .tema{float: left;width: 125px;padding: 8px 0;margin-left: 39px; line-height: 16px;
         a{font-size: 14px;text-decoration: none;color: #4C4C4C;}
         a:hover{text-decoration: underline;}
     }

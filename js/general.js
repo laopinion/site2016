@@ -1,5 +1,8 @@
 $(document).ready(function(){
-                    
+      
+   $( "#search .informacion .opciones .fechas .form-item-from-date label.edit-from-date" ).replaceWith( "Desde" );
+   $( "#search .informacion .opciones .fechas .form-item-to-date label.edit-to-date" ).replaceWith( "Hasta" );
+                  
    $(window).scroll(function() {
    var scrolled = $(window).scrollTop();           
     $('.slide').css({'background-position' : '50% '+ (-(scrolled / 5)) + 'px'});
@@ -643,9 +646,14 @@ $(document).ready(function(){
         var vineplayer = "<div class=vineplayer> <iframe class=iframevine src=https://vine.co/v/" + idvine + "/embed/simple width=1006 height=500 frameborder=0></iframe></div>";
         $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(vineplayer);
         principal++;
-      }else{
+      }else if(plataforma == "Instagram"){
         var idinstagram = $(this).find(".id").html();
         var instagramplayer = "<div class=instagramplayer><iframe class=instagram-media allowtransparency=true frameborder=0 height=710 scrolling=no src=//instagram.com/p/"+idinstagram+"/embed/ width=612></div>";        $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(instagramplayer);
+        principal++;
+      }else if(plataforma == "Twitter"){
+        var idtwitter = $(this).find(".id").html();
+        var twitterplayer = "<div class=twitterplayer> <iframe class=iframetwitter frameborder=0 width=1006 height=610 src=https://twitter.com/i/cards/tfw/v1/" + idtwitter + "></iframe></div>";
+        $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(twitterplayer);
         principal++;
       }
     }
@@ -665,11 +673,16 @@ $(document).ready(function(){
       var idvine = $(this).find(".id").html();
       var vineplayer = "<div class=vineplayer> <iframe class=iframevine src=https://vine.co/v/" + idvine + "/embed/simple width=1006 height=500 frameborder=0></iframe></div>";
       $(".view-id-principal.view-display-id-block_9 .views-row-"+contador).append(vineplayer);
-    }else{
+    }else if(plataforma == "Instagram"){
       contador++;
       var idinstagram = $(this).find(".id").html();
       var instagramplayer = "<div class=instagramplayer><iframe class=instagram-media allowtransparency=true frameborder=0 height=710 scrolling=no src=//instagram.com/p/"+idinstagram+"/embed/ width=612></div>";
       $(".view-id-principal.view-display-id-block_9 .views-row-"+contador).append(instagramplayer);
+    }else if(plataforma == "Twitter"){
+      contador++;
+      var idtwitter = $(this).find(".id").html();
+      var twitterplayer = "<div class=twitterplayer> <iframe class=iframetwitter frameborder=0 width=1006 height=610 src=https://twitter.com/i/cards/tfw/v1/" + idtwitter + "></iframe></div>";
+      $(".view-id-principal.view-display-id-block_9 .views-row-"+contador).append(twitterplayer);
     }
   });
 
@@ -678,50 +691,60 @@ $(document).ready(function(){
     var facebookplayer = $(this).find(".fbplayer").html(); 
     var vineplayer = $(this).find(".vineplayer").html();
     var instagramplayer = $(this).find(".instagramplayer").html();
+    var twitterplayer = $(this).find(".twitterplayer").html();
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(vineplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(instagramplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(twitterplayer);
   });
   $(fila + "2").click(function(){
     var youtubeplayer = $(this).find(".youtubeplayer").html();
     var facebookplayer = $(this).find(".fbplayer").html();
     var vineplayer = $(this).find(".vineplayer").html();
     var instagramplayer = $(this).find(".instagramplayer").html();
+    var twitterplayer = $(this).find(".twitterplayer").html();
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(vineplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(instagramplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(twitterplayer);
   });
   $(fila + "3").click(function(){
     var youtubeplayer = $(this).find(".youtubeplayer").html();
     var facebookplayer = $(this).find(".fbplayer").html();
     var vineplayer = $(this).find(".vineplayer").html();
     var instagramplayer = $(this).find(".instagramplayer").html();
+    var twitterplayer = $(this).find(".twitterplayer").html();
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(vineplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(instagramplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(twitterplayer);
   });
   $(fila + "4").click(function(){
     var youtubeplayer = $(this).find(".youtubeplayer").html();
     var facebookplayer = $(this).find(".fbplayer").html();
     var vineplayer = $(this).find(".vineplayer").html();
     var instagramplayer = $(this).find(".instagramplayer").html();
+    var twitterplayer = $(this).find(".twitterplayer").html();
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(vineplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(instagramplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(twitterplayer);
   });
   $(fila + "5").click(function(){
     var youtubeplayer = $(this).find(".youtubeplayer").html();
     var facebookplayer = $(this).find(".fbplayer").html();
     var vineplayer = $(this).find(".vineplayer").html();
     var instagramplayer = $(this).find(".instagramplayer").html();
+    var twitterplayer = $(this).find(".twitterplayer").html();
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(youtubeplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(facebookplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(vineplayer);
     $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(instagramplayer);
+    $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(twitterplayer);
   });
    
 //COLOR
@@ -1182,6 +1205,7 @@ $(document).ready(function(){
   var facebookplayer = "<div class=fb-video data-href=https://www.facebook.com/" + id + "/ data-width=1006 data-show-text=false><blockquote cite=https://www.facebook.com/" + id + "/ class=fb-xfbml-parse-ignore><a href=https://www.facebook.com/" + id + "/></a></blockquote></div>";
   var vineplayer = "<iframe src=https://vine.co/v/" + id + "/embed/simple width=1006 height=500 frameborder=0></iframe>";
   var instagramplayer = "<blockquote class=instagram-media data-instgrm-captioned data-instgrm-version=7 style= background:#FFF; border:0; border-radius:3px; box-shadow:0 0 1px 0 rgba(0,0,0,0.5),0 1px 10px 0 rgba(0,0,0,0.15); margin: 1px; max-width:658px; padding:0; width:99.375%; width:-webkit-calc(100% - 2px); width:calc(100% - 2px);><div style=padding:8px;> <div style= background:#F8F8F8; line-height:0; margin-top:40px; padding:28.125% 0; text-align:center; width:100%;> <div style= background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAMAAAApWqozAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAMUExURczMzPf399fX1+bm5mzY9AMAAADiSURBVDjLvZXbEsMgCES5/P8/t9FuRVCRmU73JWlzosgSIIZURCjo/ad+EQJJB4Hv8BFt+IDpQoCx1wjOSBFhh2XssxEIYn3ulI/6MNReE07UIWJEv8UEOWDS88LY97kqyTliJKKtuYBbruAyVh5wOHiXmpi5we58Ek028czwyuQdLKPG1Bkb4NnM+VeAnfHqn1k4+GPT6uGQcvu2h2OVuIf/gWUFyy8OWEpdyZSa3aVCqpVoVvzZZ2VTnn2wU8qzVjDDetO90GSy9mVLqtgYSy231MxrY6I2gGqjrTY0L8fxCxfCBbhWrsYYAAAAAElFTkSuQmCC); display:block; height:44px; margin:0 auto -44px; position:relative; top:-22px; width:44px;></div></div> <p style= margin:8px 0 0 0; padding:0 4px;> <a href=https://www.instagram.com/p/" + id + "/ style= color:#000; font-family:Arial,sans-serif; font-size:14px; font-style:normal; font-weight:normal; line-height:17px; text-decoration:none; word-wrap:break-word; target=_blank>Te enseñamos a preparar las tajadas de maduro de otra manera. Mira la receta completa en nuestro portal.</a></p> <p style= color:#c9c8cd; font-family:Arial,sans-serif; font-size:14px; line-height:17px; margin-bottom:0; margin-top:8px; overflow:hidden; padding:8px 0 7px; text-align:center; text-overflow:ellipsis; white-space:nowrap;>Un vídeo publicado por Deléitese Gastronomia (@deleitese_co) el <time style= font-family:Arial,sans-serif; font-size:14px; line-height:17px; datetime=2016-06-19T20:43:02+00:00>19 de Jun de 2016 a la(s) 1:43 PDT</time></p></div></blockquote>";
+  var twitterplayer = "<iframe src=https://twitter.com/i/cards/tfw/v1/"+ id + " width=1006 height=610 frameborder=0></iframe>";
 
   if(plataforma == "YouTube"){
     $('#video .cen  .contenido .video-player').append(youtubeplayer);
@@ -1198,6 +1222,10 @@ $(document).ready(function(){
   if(plataforma == "Instagram"){
     $('#video .cen .contenido .video-player').css('display', 'none');
     $('#video .cen .contenido .video-instagram').append(instagramplayer);
+  }else
+  if(plataforma == "Twitter"){
+    $('#video .cen .contenido .video-twitter').append(twitterplayer);
+     $('#video .cen .contenido .video-player').css("display", "none");
   }
 //Fin script video
 //player miniatura
@@ -1208,9 +1236,13 @@ $(document).ready(function(){
     if(scrolled >= "950"){
       $("#video .cen .contenido .video-player iframe").addClass("miniplayer");
       $("#video .cen .contenido .video-player").css({height:"550px"});
+      $("#video .cen .contenido .video-twitter iframe").addClass("miniplayer");
+      $("#video .cen .contenido .video-twitter").css({height:"610px"});
      }else{
      $("#video .cen .contenido .video-player iframe").removeClass("miniplayer");
      $("#video .cen .contenido .video-player").css({height:"auto"});
+     $("#video .cen .contenido .video-twitter iframe").removeClass("miniplayer");
+     $("#video .cen .contenido .video-twitter").css({height:"auto"});
      }
   });    
 

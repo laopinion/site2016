@@ -28,6 +28,7 @@
       print "<div class=plataforma>".render($content['field_plataforma'])."</div>";
       print "<div class=video-player></div>";
       print "<div class=video-instagram></div>";
+      print "<div class=video-twitter></div>";
       ?>
     </div><!--Fin contenido-->
   </div>    
