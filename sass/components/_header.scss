@@ -68,6 +68,15 @@
           a{background: url("../images/iconos/redes_rojo.svg") -96px -9px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
         }
       }
+
+      #iconos{
+        .lupa{
+          div{background: url("../images/iconos/lupa.svg") 0px 0px/25px auto no-repeat;width: 33px;height: 29px;position: relative;float: left;margin-left: 10px;cursor:pointer;}
+        }
+        .user{
+          a{background: url("../images/iconos/user.svg") 0px 0px/25px auto no-repeat;width: 20px;height: 20px;position: relative;float: left;}
+        }
+      }
     }
   }  
 }
