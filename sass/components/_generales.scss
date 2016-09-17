@@ -89,27 +89,30 @@
  -    }
  -}
  -*/
-
- header{
-    .buscador{position: fixed;right: 80px;width: 175px;z-index: 1;top: 33px;transition: .3s;padding: 10px;background-color: #a0352d;
-        #redes{padding: 0;left: 110px;margin: 5px 0px;position: relative; width: 107px; float: left;
-            li{padding:0;width: 24px;height: 24px;margin: 0;list-style: none; float:left;position:relative;}
-            .facebook{
-              a{background: url("../images/iconos/iconos-buscador.svg") -16px -9px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
+header{
+    section{width: 25%;height: 50px;position: fixed;right: 0;z-index: 1;top: -21px;transition: .3s;
+        .buscador{border-radius: 4px;width: 100px;padding: 10px;background-color: #7C181F;
+            #redes{padding: 0;left: 0;margin: 5px 0px;position: relative; width: 107px; float: left;
+                li{padding:0;width: 24px;height: 24px;margin: 0;list-style: none; float:left;position:relative;}
+                .facebook{
+                  a{background: url("../images/iconos/iconos-buscador.svg") -1px -4px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
+                }
+                .twitter{
+                  a{background: url("../images/iconos/iconos-buscador.svg") -33px -4px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
+                }
+                .instagram{
+                  a{background: url("../images/iconos/iconos-buscador.svg") -73px -4px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
+                }
+                .youtube{
+                  a{background: url("../images/iconos/iconos-buscador.svg") -107px -4px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
+                }
             }
-            .twitter{
-              a{background: url("../images/iconos/iconos-buscador.svg") -43px -9px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
-            }
-            .instagram{
-              a{background: url("../images/iconos/iconos-buscador.svg") -70px -9px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
-            }
-            .youtube{
-              a{background: url("../images/iconos/iconos-buscador.svg") -96px -9px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
+            form{
+                input{width: 96px;}
             }
         }
-        form{}
     }
- }
+}
 
 //NOTAS
 #tabs{background-color: #FFF;border: 1px solid #DDD;padding: 10px;position: fixed;right: 0px;top: 250px;z-index: 3;
