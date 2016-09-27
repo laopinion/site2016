@@ -77,6 +77,7 @@
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php // include_once("admanmedia.php") ?>
   <?php include_once("analyticstracking.php") ?>
+  <?php include_once("io.php") ?>
 
   <?php print $page_top; ?>
   <div class="centerContent borderContent">
