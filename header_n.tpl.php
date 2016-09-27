@@ -83,25 +83,27 @@
 		</nav>
 		<!--FIN MENU PRINCIPAL-->
 	</div>
-	<div class="buscador">
-		<ul id="redes">
-			<li class="facebook">
-				<a href="https://www.facebook.com/laopinioncucuta/" target="_blank"></a>							
-			</li>
-			<li class="twitter">
-				<a href="https://www.twitter.com/laopinioncucuta/" target="_blank"></a>
-			</li>
-			<li class="instagram">
-				<a href="https://www.instagram.com/laopinioncucuta/" target="_blank"></a>
-			</li>
-			<li class="youtube">
-				<a href="https://www.youtube.com/user/WEBLAOPINION" target="_blank"></a>
-			</li>
-		</ul>
-    	<form action="">
-    		<input type="text">
-    	</form>
-    </div>
+	<section>
+	    <div class="buscador">
+	        <ul id="redes">
+	          <li class="facebook">
+	            <a href="https://www.facebook.com/laopinioncucuta/" target="_blank"></a>              
+	          </li>
+	          <li class="twitter">
+	            <a href="https://www.twitter.com/laopinioncucuta/" target="_blank"></a>
+	          </li>
+	          <li class="instagram">
+	            <a href="https://www.instagram.com/laopinioncucuta/" target="_blank"></a>
+	          </li>
+	          <li class="youtube">
+	            <a href="https://www.youtube.com/user/WEBLAOPINION" target="_blank"></a>
+	          </li>
+	        </ul>
+	          <form action="">
+	            <input type="text">
+	          </form>
+	    </div>
+	</section>
 </header>
 
 <!--Contenido HEADER-->
