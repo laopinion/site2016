@@ -6,7 +6,14 @@
         //Agrege la clase color andrey
         .compartir_table{display: none;}
         .contenido{width:690px; height:auto; float:left; position: relative; background:#fff; margin-bottom:20px;
-            .autor_columna{margin-bottom: 30px;}
+            .autor_columna{margin-bottom: 30px;position: relative;float:left; width:180px; height:160px;
+                .foto{width: 110px;left: 0;margin-top: 20px;float: left;position: relative;height: 110px;border-radius: 50%;border: 1px solid #BFD63E;padding: 10px;overflow: hidden;
+                    img{top: 1px;position: relative;overflow:hidden; border-radius:50%;}
+                }
+                .columnista{width:100%; margin-top:10px; float:left;position: relative;font-size:13px;
+                    span{font-weight:600;}
+                }
+            }
             .color{width: 25px; height: 10px; background-color: transparent; float:left; position: relative; margin-top: 5px;margin-right: 5px;}
             .seccion{font-size:15px;position:relative; float:left; margin-bottom:0px;
                 .color{height: 10px; width: 25px;float: left;position: relative;text-indent: -9999px;background-color: $gris;margin-top: 5px;margin-right: 5px;}
@@ -14,7 +21,7 @@
                 a:hover{text-decoration:underline;}
             }
             .sep{width:10px; float:left; position:relative;margin:0px 5px;}
-            .fecha{padding: 2px 0;font-size:13px;position:relative; float:left; color:$gris; font-weight:300;margin-right:5px; margin-bottom:0px;}
+            .fecha{padding: 2px 0;font-size:13px;position:relative; float:left; color:$gris; font-weight:300;margin-right:5px; margin-bottom:0px;margin-top:75px; width:70%;}
             .resumen{position:relative; float:left; font-weight:300;margin-bottom:20px;width:100%; margin-bottom:20px;
                 p{color:$grisOscuro;}
                 } 
@@ -48,17 +55,14 @@
                 }//FIN COMPARTIR
             }//FIN ETIQUETAS Y COMPARTIR
             .resumen{line-height:18px;font-size:16px;position:relative; float:left; color:$gris;  font-weight:300;}
-            h2{font-size:36px; font-weight:600; line-height:38px; float:left; position: relative; margin:10px 0px; width:100%;}
+            h2{font-size:36px; font-weight:600; line-height:38px; float:left; position: relative; margin:10px 0px; width:70%;}
             .audio_id{display:none;}
             .audio-player{position: relative; float:left; left:-20px; border: none; width:640px; height:250px;}
             .video_id{display:none;}
             .video-player{position: relative; float:left; left:-20px; border: none;}
             
             .miniatura{display:none;}
-            .foto{
-                img {border-radius: 50%;border: 1px solid $opinion;}
-            }
-            .texto{margin-top:20px; font-size:16px;position:relative; float:left; color:#646464;font-weight:300;width:95%;
+            .texto{margin-top:0px; font-size:16px;position:relative; float:left; color:#646464;font-weight:300;width:95%;
                 h3{font-size:18px;color:#646464;font-weight:600;}
                 p{margin-bottom:15px; max-width:690px;
                     img{max-width: 690px; height:auto; float:left;margin:10px 10px; position: relative;left:-10px;}

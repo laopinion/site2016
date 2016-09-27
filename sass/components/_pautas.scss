@@ -1,3 +1,6 @@
+/*CLICKIO*/
+#lx_fixed_603285 {position: fixed;bottom: 0px;width: 320px;height: 50px;z-index: 999999;display: none;left: 50%; margin-left: -160px; }
+#lx_fixed_603285 #lx_fix_close {display: none;position: absolute;top: 0;right: -19px;width: 19px;height: 17px;cursor: pointer;background: url(http://is.luxcdn.com/i/close.png);}
 /*PAUTAS*/
 .pauta {display: inline-block;vertical-align: top;margin-bottom: 20px;float:left; width:auto; height:auto; display:block;}
 .anuncio_txt {font: 9px/9px $ptSans;text-transform: uppercase;color: #999;margin-bottom: 4px;}
@@ -16,9 +19,9 @@
 .p600x90 {width: 600px;/*height: auto;*/height: 110px;padding: 0px;position: relative;top: 0px;overflow:hidden;}
 .p220x90 {width: 220px;height: 110px;padding: 10px 0px 0px 0px;position: relative;top: 0px;overflow:hidden;}
 .p200x200 {width: 200px;height: 220px;padding: 0px 0px 0px 0px;position: relative;top: 0px;float:left;overflow:hidden;}
-.p88x31 {width: 88px;height: 31px;padding: 10px 0px 0px 0px;position: relative;top: 0px;float:left;left:30px; margin:0px;overflow:hidden;}
-.p1000x90 {width: 1000px;height: auto;padding:0px;position: relative;top: 10px;left:-20px;z-index:2;}
-.p1000x90_nota {width: 1000px;height: auto;padding:0px;position: relative;top: -10px;left:-20px;}
+.p88x31 {width: 88px;height: 31px;padding: 10px 0px 0px 0px;position: relative;top: 0px;float:left;left:30px; margin:0px;overflow:hidden;display:block !important;}
+.p1000x90 {width: 1000px;height: auto;padding:0px;position: relative;top: 10px;left:-20px;z-index:2;display:block !important;}
+.p1000x90_nota {width: 1000px;height: auto;padding:0px;position: relative;top: -10px;left:-20px;display:block;}
 .flotante {bottom: -5px;left: 0;margin: 0 auto;position: fixed;right: 0;width: 1000px;z-index: 100;}
 .laterales{position: fixed; top:0; margin:0 auto; width:100%; z-index:101;overflow:hidden;
 	.content{position: relative; margin:0 auto;

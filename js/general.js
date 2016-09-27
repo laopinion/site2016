@@ -89,7 +89,16 @@ $(document).ready(function(){
       $(".view-principal.view-display-id-block .nota .icon_galeria").css({display:"none"});
       $(".view-principal.view-display-id-block .nota .galeria").css({display:"none"});
       $(".view-principal.view-display-id-block .nota .foto").css({display:"none"});
-        }
+        }else 
+    if(tipo == "Infografía"){
+      $(".view-principal.view-display-id-block .nota .video").css({display:"none"});
+      $(".view-principal.view-display-id-block .nota .icon_video").css({display:"none"});
+      $(".view-principal.view-display-id-block .nota .icon_galeria").css({display:"none"});
+      $(".view-principal.view-display-id-block .nota .galeria").css({display:"none"});
+      $(".view-principal.view-display-id-block .nota .icon_podcast").css({display:"none"});
+      $(".view-principal.view-display-id-block .nota .podcast").css({display:"none"});
+      $(".view-principal.view-display-id-block .nota .foto").css({display:"block"});
+    }
   //COLOR SECCION
     if(seccion == "Cúcuta" || seccion == "Memorias" || seccion == "Por los barrios"){
       $(".view-principal.view-display-id-block .nota .seccion .color").css({background:"#BA2025"}); 
@@ -112,7 +121,7 @@ $(document).ready(function(){
     if(seccion == "Deportes" || seccion == "Cúcuta deportivo" || seccion == "Fútbol" || seccion == "+ Deportes" || seccion == "Copa américa 2016" || seccion == "Copa américa 2016"){
       $(".view-principal.view-display-id-block .nota .seccion .color").css({background:"#3FA6F2"}); 
     }else
-    if(seccion == "Entretenimiento" || seccion == "Actividad Social" || seccion == "Tecnología" || seccion == "Cultura" || seccion == "Tendencias" || seccion == "Viral" || seccion == "Vida y salud"){
+    if(seccion == "Entretenimiento" || seccion == "Actividad Social" || seccion == "Tecnología" || seccion == "Cultura" || seccion == "Tendencias" || seccion == "Viral" || seccion == "Vida y salud" || seccion == "Zona verde"){
       $(".view-principal.view-display-id-block .nota .seccion .color").css({background:"#8B7AB5"}); 
     }else
     if(seccion == "Participación" || seccion == "Así opinan" || seccion == "Reportero ciudadano"){
@@ -156,6 +165,14 @@ $(document).ready(function(){
         $(this).find(".icon_podcast").css("display","none");
         $(this).find(".podcast").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
     });
     //COLOR
@@ -182,7 +199,7 @@ $(document).ready(function(){
       if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -225,6 +242,14 @@ $(document).ready(function(){
         $(this).find(".icon_galeria").css("display","none");
         $(this).find(".galeria").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
     });
     //COLOR
@@ -251,7 +276,7 @@ $(document).ready(function(){
       if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -296,6 +321,14 @@ $(document).ready(function(){
         $(this).find(".icon_podcast").css("display","none");
         $(this).find(".podcast").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
     });
     //COLOR
@@ -322,7 +355,7 @@ $(document).ready(function(){
       if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -367,6 +400,14 @@ $(document).ready(function(){
         $(this).find(".icon_podcast").css("display","none");
         $(this).find(".podcast").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
     });
     //Lista
@@ -404,6 +445,14 @@ $(document).ready(function(){
         $(this).find(".icon_podcast").css("display","none");
         $(this).find(".podcast").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
     });
 
@@ -431,7 +480,7 @@ $(document).ready(function(){
       if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -475,6 +524,14 @@ $(document).ready(function(){
         $(this).find(".icon_podcast").css("display","none");
         $(this).find(".podcast").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
     });
     //COLOR
@@ -501,7 +558,7 @@ $(document).ready(function(){
       if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -546,6 +603,14 @@ $(document).ready(function(){
         $(this).find(".icon_podcast").css("display","none");
         $(this).find(".podcast").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
     });
 //SIDEBAR LO+ otros
@@ -576,6 +641,14 @@ $(document).ready(function(){
         $(this).find(".galeria").css("display","none");
         $(this).find(".foto").css("display","none");
       }else if(ContentTypeL == "Artículo"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
         $(this).find(".icon_video").css("display","none");
         $(this).find(".video").css("display","none");
         $(this).find(".icon_galeria").css("display","none");
@@ -620,6 +693,14 @@ $(document).ready(function(){
         $(this).find(".icon_podcast").css("display","none");
         $(this).find(".podcast").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
     });
 
@@ -652,7 +733,7 @@ $(document).ready(function(){
         principal++;
       }else if(plataforma == "Twitter"){
         var idtwitter = $(this).find(".id").html();
-        var twitterplayer = "<div class=twitterplayer> <iframe class=iframetwitter frameborder=0 width=1006 height=610 src=https://twitter.com/i/cards/tfw/v1/" + idtwitter + "></iframe></div>";
+        var twitterplayer = "<div class=twitterplayer> <iframe class=iframetwitter frameborder=0 width=680 height=450px src=https://twitter.com/i/cards/tfw/v1/" + idtwitter + "></iframe></div>";
         $(".view-id-principal.view-display-id-block_9 .view-header .frame_video").html(twitterplayer);
         principal++;
       }
@@ -681,7 +762,7 @@ $(document).ready(function(){
     }else if(plataforma == "Twitter"){
       contador++;
       var idtwitter = $(this).find(".id").html();
-      var twitterplayer = "<div class=twitterplayer> <iframe class=iframetwitter frameborder=0 width=1006 height=610 src=https://twitter.com/i/cards/tfw/v1/" + idtwitter + "></iframe></div>";
+      var twitterplayer = "<div class=twitterplayer> <iframe class=iframetwitter frameborder=0 margin-top: 20px margin-left: 15px  width=680 height=450px src=https://twitter.com/i/cards/tfw/v1/" + idtwitter + "></iframe></div>";
       $(".view-id-principal.view-display-id-block_9 .views-row-"+contador).append(twitterplayer);
     }
   });
@@ -771,7 +852,7 @@ $(document).ready(function(){
       if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".video .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".video .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -806,7 +887,7 @@ $(document).ready(function(){
       if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".galeria .info .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".galeria .info .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -846,7 +927,7 @@ $(document).ready(function(){
       if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".podcast .info .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".podcast .info .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -887,7 +968,7 @@ $(document).ready(function(){
       if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".infografia .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".infografia .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -934,7 +1015,7 @@ $(document).ready(function(){
   if(seccion == "Deportes" || seccion == "Cúcuta deportivo" || seccion == "Fútbol" || seccion == "+ Deportes" || seccion == "Copa américa 2016" || seccion == "Copa américa 2016"){
     $(".contenido .color").css({background:"#3FA6F2"}); 
   }else
-  if(seccion == "Entretenimiento" || seccion == "Actividad Social" || seccion == "Tecnología" || seccion == "Cultura" || seccion == "Tendencias" || seccion == "Viral" || seccion == "Vida y salud"){
+  if(seccion == "Entretenimiento" || seccion == "Actividad Social" || seccion == "Tecnología" || seccion == "Cultura" || seccion == "Tendencias" || seccion == "Viral" || seccion == "Vida y salud" || seccion == "Zona verde"){
     $(".contenido .color").css({background:"#8B7AB5"}); 
   }else
   if(seccion == "Participación" || seccion == "Así opinan" || seccion == "Reportero ciudadano"){
@@ -970,6 +1051,14 @@ $(document).ready(function(){
         $(this).find(".galeria").css("display","none");
         $(this).find(".foto").css("display","none");
       }else if(ContentTypeL == "Artículo"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
         $(this).find(".icon_video").css("display","none");
         $(this).find(".video").css("display","none");
         $(this).find(".icon_galeria").css("display","none");
@@ -1016,6 +1105,14 @@ $(document).ready(function(){
         $(this).find(".icon_podcast").css("display","none");
         $(this).find(".podcast").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
   });
   //COLOR
@@ -1042,7 +1139,7 @@ $(document).ready(function(){
     if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
       $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
     }else
-    if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+    if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
       $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
     }else
     if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -1077,6 +1174,14 @@ $(document).ready(function(){
         $(this).find(".galeria .icon_galeria").css("display","none");
         $(this).find(".galeria .galeria").css("display","none");
         $(this).find(".galeria .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
   });
 //COLOR
@@ -1103,7 +1208,7 @@ $(document).ready(function(){
     if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
       $(this).find(".field-content .seccion .color").css({background:"#3FA6F2"}); 
     }else
-    if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+    if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
       $(this).find(".field-content .seccion .color").css({background:"#8B7AB5"}); 
     }else
     if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -1148,7 +1253,7 @@ $(document).ready(function(){
     if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
       $(this).find(".field-content .seccion .color").css({background:"#3FA6F2"}); 
     }else
-    if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+    if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
       $(this).find(".field-content .seccion .color").css({background:"#8B7AB5"}); 
     }else
     if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -1183,7 +1288,7 @@ $(document).ready(function(){
     if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
       $(this).find(".field-content .seccion .color").css({background:"#3FA6F2"}); 
     }else
-    if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+    if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
       $(this).find(".field-content .seccion .color").css({background:"#8B7AB5"}); 
     }else
     if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -1292,7 +1397,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -1323,7 +1428,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionL == "Deportes" || seccionL == "Cúcuta Deportivo" || seccionL == "Fútbol" || seccionL == "+ Deportes" || seccionL == "Copa América 2015" || seccionL == "Copa América 2016"){
         $(this).find(".nota .seccion a").css({color:"#3FA6F2"}); 
       }else
-      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud"){
+      if(seccionL == "Entretenimiento" || seccionL == "Actividad social" || seccionL == "Tecnología" || seccionL == "Cultura" || seccionL == "Cultura" || seccionL == "Tendencias" || seccionL == "Viral" || seccionL == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".nota .seccion a").css({color:"#8B7AB5"}); 
       }else
       if(seccionL == "Participación" || seccionL == "Reportero ciudadano" || seccionL == "Así opinan"){
@@ -1353,7 +1458,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
     if(nomSeccion == "Deportes" || nomSeccion == "Cúcuta Deportivo" || nomSeccion == "Fútbol" || nomSeccion == "+ Deportes" || nomSeccion == "Copa América 2015" || nomSeccion == "Copa América 2016"){
       $(".mid .view-header .subseccion .color").css({background:"#3FA6F2"}); 
     }else
-    if(nomSeccion == "Entretenimiento" || nomSeccion == "Actividad social" || nomSeccion == "Tecnología" || nomSeccion == "Cultura" || nomSeccion == "Cultura" || nomSeccion == "Tendencias" || nomSeccion == "Viral" || nomSeccion == "Vida y salud"){
+    if(nomSeccion == "Entretenimiento" || nomSeccion == "Actividad social" || nomSeccion == "Tecnología" || nomSeccion == "Cultura" || nomSeccion == "Cultura" || nomSeccion == "Tendencias" || nomSeccion == "Viral" || nomSeccion == "Vida y salud" || seccion == "Zona verde"){
       $(".mid .view-header .subseccion .color").css({background:"#8B7AB5"}); 
     }else
     if(nomSeccion == "Participación" || nomSeccion == "Reportero ciudadano" || nomSeccion == "Así opinan"){
@@ -1386,7 +1491,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
+      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionT == "Participación" || seccionT == "Reportero ciudadano" || seccionT == "Así opinan"){
@@ -1423,6 +1528,14 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
   });
 //FIN NOTAS SECCION TAGS
@@ -1453,7 +1566,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
+      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionT == "Participación" || seccionT == "Reportero ciudadano" || seccionT == "Así opinan"){
@@ -1489,7 +1602,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
+      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionT == "Participación" || seccionT == "Reportero ciudadano" || seccionT == "Así opinan"){
@@ -1525,7 +1638,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
+      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionT == "Participación" || seccionT == "Reportero ciudadano" || seccionT == "Así opinan"){
@@ -1561,7 +1674,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
+      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionT == "Participación" || seccionT == "Reportero ciudadano" || seccionT == "Así opinan"){
@@ -1593,7 +1706,7 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
       if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".nota .seccion .color").css({background:"#3FA6F2"}); 
       }else
-      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
+      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".nota .seccion .color").css({background:"#8B7AB5"}); 
       }else
       if(seccionT == "Participación" || seccionT == "Reportero ciudadano" || seccionT == "Así opinan"){
@@ -1627,6 +1740,14 @@ $("#caricatura .izq .contenido .mas_caricaturas .paginador .item2").click(functi
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
   });//FIn seccion multimedia
 
@@ -1640,35 +1761,48 @@ if($("#secciones .menu_seccion .submenu ul li").length == 0 ){
 /*Fin validacion*/
 
 /*ICONOS DE LAS SECCIONES*/
-//nota principal
-$(".view-id-s_general.view-display-id-block .views-row").each(function(){
-  var tipo = $(this).find(".tipo").html();
-  if(tipo == "Galería de imagenes"){
-      $(this).find(".nota .icon_galeria").css("display","block");
-      $(this).find(".nota .galeria").css("display","block");
-      $(this).find(".nota .icon_video").css("display","none");
-      $(this).find(".nota .video").css("display","none");
-      $(this).find(".nota .icon_podcast").css("display","none");
-      $(this).find(".nota .podcast").css("display","none");
-      $(this).find(".nota .foto").css("display","none");
-  }else if(tipo == "Video"){
-    $(this).find(".nota .icon_video").css("display","block");
-    $(this).find(".nota .video").css("display","block");
-    $(this).find(".nota .icon_galeria").css("display","none");
-    $(this).find(".nota .galeria").css("display","none");
-    $(this).find(".nota .icon_podcast").css("display","none");
-    $(this).find(".nota .podcast").css("display","none");
-    $(this).find(".nota .foto").css("display","none");
-  }else if(tipo == "Podcast"){
-    $(this).find(".nota .icon_podcast").css("display","block");
-    $(this).find(".nota .podcast").css("display","block");
-    $(this).find(".nota .icon_video").css("display","none");
-    $(this).find(".nota .video").css("display","none");
-    $(this).find(".nota .icon_galeria").css("display","none");
-    $(this).find(".nota .galeria").css("display","none");
-    $(this).find(".nota .foto").css("display","none");
-  }
-});
+//DESTACADA SECCIÓN
+    var tipoS = $(".view-id-s_general.view-display-id-block .nota .tipo").html();
+    if(tipoS == "Artículo"){
+      $(".view-id-s_general.view-display-id-block .nota .icon_galeria").css({display:"none"}); 
+      $(".view-id-s_general.view-display-id-block .nota .icon_video").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .galeria").css({display:"none"}); 
+      $(".view-id-s_general.view-display-id-block .nota .video").css({display:"none"}); 
+      $(".view-id-s_general.view-display-id-block .nota .foto").css({display:"block"});
+        }else
+    if(tipoS == "Galería de imagenes"){
+      $(".view-id-s_general.view-display-id-block .nota .icon_galeria").css({display:"block"});
+      $(".view-id-s_general.view-display-id-block .nota .icon_video").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .galeria").css({display:"block"});
+      $(".view-id-s_general.view-display-id-block .nota .foto").css({display:"none"});
+        }else 
+    if(tipoS == "Video"){
+      $(".view-id-s_general.view-display-id-block .nota .video").css({display:"block"});
+      $(".view-id-s_general.view-display-id-block .nota .icon_video").css({display:"block"});
+      $(".view-id-s_general.view-display-id-block .nota .icon_galeria").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .galeria").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .foto").css({display:"none"});
+        }else 
+    if(tipoS == "Podcast"){
+      $(".view-id-s_general.view-display-id-block .nota .podcast").css({display:"block"});
+      $(".view-id-s_general.view-display-id-block .nota .icon_podcast").css({display:"block"});
+      $(".view-id-s_general.view-display-id-block .nota .video").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .icon_video").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .icon_galeria").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .galeria").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .foto").css({display:"none"});
+        }else 
+    if(tipoS == "Infografía"){
+      $(".view-id-s_general.view-display-id-block .nota .video").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .icon_video").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .icon_galeria").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .galeria").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .icon_podcast").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .podcast").css({display:"none"});
+      $(".view-id-s_general.view-display-id-block .nota .foto").css({display:"block"});
+    }
+
+
 //Notas lado derecho secciones 
 $(".view-id-s_general.view-display-id-block_1 .views-row").each(function(){
       var ContentTypeL = $(this).find(".tipo").html();
@@ -1696,6 +1830,14 @@ $(".view-id-s_general.view-display-id-block_1 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
   });
 //Fin notas lado derecho secciones
@@ -1726,6 +1868,14 @@ $(".view-id-s_general.view-display-id-block_2 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
   });
 //Fin 2 notas horizontales despues de la destacada
@@ -1756,6 +1906,14 @@ $(".view-id-s_general.view-display-id-block_4 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
   });
 //Fin noticias
@@ -1786,6 +1944,14 @@ $(".view-id-s_general_sub.view-display-id-block_2 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales por los barrios
@@ -1816,6 +1982,14 @@ $(".view-id-s_general_sub.view-display-id-block_1 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales ocaña
@@ -1846,6 +2020,14 @@ $(".view-id-s_general_sub.view-display-id-block_3 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales pamplona
@@ -1876,6 +2058,14 @@ $(".view-id-s_general_sub.view-display-id-block_4 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales region
@@ -1906,6 +2096,14 @@ $(".view-id-s_general_sub.view-display-id-block_7 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Economia
@@ -1936,6 +2134,14 @@ $(".view-id-s_general_sub.view-display-id-block_8 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Politíca
@@ -1966,6 +2172,14 @@ $(".view-id-s_general_sub.view-display-id-block_9 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Colombia
@@ -1996,6 +2210,14 @@ $(".view-id-s_general_sub.view-display-id-block_10 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Venezuela
@@ -2026,6 +2248,14 @@ $(".view-id-s_general_sub.view-display-id-block_11 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Mundo
@@ -2056,6 +2286,14 @@ $(".view-id-s_general_sub.view-display-id-block_12 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Cúcuta deportivo
@@ -2086,6 +2324,14 @@ $(".view-id-s_general_sub.view-display-id-block_13 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Futbol
@@ -2116,6 +2362,14 @@ $(".view-id-s_general_sub.view-display-id-block_14 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Mas deportes
@@ -2146,6 +2400,14 @@ $(".view-id-s_general_sub.view-display-id-block_15 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Mas Actividad social
@@ -2176,6 +2438,14 @@ $(".view-id-s_general_sub.view-display-id-block_16 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Mas Tecnologia
@@ -2206,6 +2476,14 @@ $(".view-id-s_general_sub.view-display-id-block_17 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Mas Cultura
@@ -2236,6 +2514,14 @@ $(".view-id-s_general_sub.view-display-id-block_18 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Mas Tendencias
@@ -2266,6 +2552,14 @@ $(".view-id-s_general_sub.view-display-id-block_19 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Mas Viral
@@ -2296,6 +2590,14 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
         $(this).find(".nota .icon_galeria").css("display","none");
         $(this).find(".nota .galeria").css("display","none");
         $(this).find(".nota .foto").css("display","none");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
 });
 //Fin notas horizontales Mas Vida y Salud
@@ -2361,6 +2663,14 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
         $(this).find(".galeria").css("display","none");
         $(this).find(".foto").css("display","none");
       }else if(ContentTypeL == "Artículo"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
         $(this).find(".icon_video").css("display","none");
         $(this).find(".video").css("display","none");
         $(this).find(".icon_galeria").css("display","none");
@@ -2437,6 +2747,14 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
         $(this).find(".icon_podcast").css("display","none");
         $(this).find(".podcast").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
   });
 
@@ -2498,7 +2816,7 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".info .nota .head .seccion a").css({color:"#3FA6F2"}); 
       }else
-      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
+      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".info .nota .head .seccion a").css({color:"#8B7AB5"}); 
       }else
       if(seccionT == "Participación" || seccionT == "Reportero ciudadano" || seccionT == "Así opinan"){
@@ -2529,7 +2847,7 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".info .nota .head .seccion a").css({color:"#3FA6F2"}); 
       }else
-      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
+      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".info .nota .head .seccion a").css({color:"#8B7AB5"}); 
       }else
       if(seccionT == "Participación" || seccionT == "Reportero ciudadano" || seccionT == "Así opinan"){
@@ -2603,6 +2921,14 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
         $(this).find(".icon_podcast").css("display","none");
         $(this).find(".podcast").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
   });
 
@@ -2640,6 +2966,14 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
         $(this).find(".icon_podcast").css("display","none");
         $(this).find(".podcast").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
   });
 
@@ -2666,7 +3000,7 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".info .nota .head .seccion a").css({color:"#3FA6F2"}); 
       }else
-      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
+      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".info .nota .head .seccion a").css({color:"#8B7AB5"}); 
       }else
       if(seccionT == "Participación" || seccionT == "Reportero ciudadano" || seccionT == "Así opinan"){
@@ -2708,6 +3042,59 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
         $(this).find(".icon_podcast").css("display","none");
         $(this).find(".podcast").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
+      }
+  });
+
+  $(".view-especiales.view-id-especiales.view-display-id-block_5 .views-row").each(function(){
+      var ContentTypeE = $(this).find(".tipo").html();
+      if(ContentTypeE == "Galería de imagenes"){
+        $(this).find(".icon_galeria").css("display","block");
+        $(this).find(".galeria").css("display","block");
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeE == "Video"){
+        $(this).find(".icon_video").css("display","block");
+        $(this).find(".video").css("display","block");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeE == "Podcast"){
+        $(this).find(".podcast").css("display","block");
+        $(this).find(".icon_podcast").css("display","block");
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeE == "Artículo"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
+      }else if(ContentTypeE == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
   });
 
@@ -2745,6 +3132,14 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
         $(this).find(".icon_podcast").css("display","none");
         $(this).find(".podcast").css("display","none");
         $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
   });
 
@@ -2771,7 +3166,7 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".info .nota .head .seccion a").css({color:"#3FA6F2"}); 
       }else
-      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
+      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".info .nota .head .seccion a").css({color:"#8B7AB5"}); 
       }else
       if(seccionT == "Participación" || seccionT == "Reportero ciudadano" || seccionT == "Así opinan"){
@@ -2802,7 +3197,7 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       if(seccionT == "Deportes" || seccionT == "Cúcuta Deportivo" || seccionT == "Fútbol" || seccionT == "+ Deportes" || seccionT == "Copa América 2015" || seccionT == "Copa América 2016"){
         $(this).find(".info .nota .head .seccion a").css({color:"#3FA6F2"}); 
       }else
-      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud"){
+      if(seccionT == "Entretenimiento" || seccionT == "Actividad social" || seccionT == "Tecnología" || seccionT == "Cultura" || seccionT == "Cultura" || seccionT == "Tendencias" || seccionT == "Viral" || seccionT == "Vida y salud" || seccion == "Zona verde"){
         $(this).find(".info .nota .head .seccion a").css({color:"#8B7AB5"}); 
       }else
       if(seccionT == "Participación" || seccionT == "Reportero ciudadano" || seccionT == "Así opinan"){

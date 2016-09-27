@@ -1,4 +1,5 @@
 <?php include("pautas/home.php"); ?>
+<?php include("pautas/clickio_fixed.php"); ?>
 <div class="pautas_header">
     <!--ANUNCIO 728x90--><div class="pauta p728x90"><h2 class="anuncio_txt">Publicidad</h2><div class="info"></div><?php include("pautas/H_728x90.php"); ?></div><!--FIN 1.ANUNCIO 728x90-->
     <!--ANUNCIO 220x90--><div class="pauta p220x90"><h2 class="anuncio_txt">Publicidad</h2><div class="info"></div><?php include("pautas/H_220x90.php"); ?></div><!--FIN 2.ANUNCIO 220x90-->
@@ -26,11 +27,11 @@
 		      	</div>
 		      	<!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Hm_320x50_2.php"); ?></div><!--FIN ANUNCIO 320x50-->
 		      	<div class="cen">
-		      		<!--Proceso de paz--><?php print EjecutarViewCache('especiales','block_5','corto'); ?><!--FIN Proceso de paz-->
+		      		<!--Deportes--><div class="deportes"><div class="color"></div><a href="<?php print base_path(); ?>deportes">Deportes</a></div><?php print EjecutarViewCache('principal','block_6','corto'); ?><!--FIN Deportes-->
 		      		<!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/H_300x250_3.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
 					<!--Economía--><div class="economia"><div class="color"></div><a href="<?php print base_path(); ?>economia">Economía</a></div><div id="indicadores"><h2>Indicadores</h2><div class="info"><a href="<?php print base_path(); ?>economia"><?php $tmp = op_indicadores_home(); print $tmp; ?></a></div><div class="patrocinio"><span>Patrocinado por</span><div class="pauta p88x31"><a href="http://megacambio.blogspot.com/" target="_blank"><img src="<?php print base_path(); ?>sites/default/files/ads/megacambio.png"> </a></div></div></div><?php print EjecutarViewCache('principal','block_8','corto'); ?><!--FIN Economía-->
-		      		<!--Deportes--><div class="deportes"><div class="color"></div><a href="<?php print base_path(); ?>deportes">Deportes</a></div><?php print EjecutarViewCache('principal','block_6','corto'); ?><!--FIN Deportes-->
 		      		<!--Columna--><?php print EjecutarViewCache('principal','block_4','corto'); ?><!--FIN Columna-->
+		      		<!--Proceso de paz--><?php print EjecutarViewCache('especiales','block_5','corto'); ?><!--FIN Proceso de paz-->
 		      	</div>
 		      	<!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Hm_320x50_3.php"); ?></div><!--FIN ANUNCIO 320x50-->
 		      	<div class="mid">

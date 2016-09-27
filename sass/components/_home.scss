@@ -70,6 +70,19 @@
                 }
                 //LISTA 2
                 .view-id-principal.view-display-id-block_2{width:375px;height:auto; float:left;position: relative;margin-bottom:25px;
+                    .view-header{float: left;width: 375px;
+                        #vyv-pauta{position: relative;width: 100%;float: left;padding-bottom: 10px;
+                            .title{position: relative;top: 12px;left: 0;text-align: center;padding: 2px 0;background: #BB0411;width: 178px;font-size: 12px;color: #fff;text-transform: uppercase;}
+                            article{float: left;border-top: 1px solid #CCCCCC;margin-top: 18px;}
+                            .triangulo{top: 12px;right: 197px;position: absolute;width: 0;height: 0;border-top: 10px solid transparent;border-right: 5px solid #fff;border-bottom: 10px solid transparent;}
+                            .titulo{margin-top: 15px;
+                                a{text-decoration: none;color: #333;font-size: 20px;font-weight: 600;line-height: 22px;}
+                            }
+                            .foto{float: left; width: 55%; overflow: hidden; margin-top: 18px;}
+                            .resumen{float: left;width: 42%;margin-right: 10px;}
+                            .info{font-size: 16px;line-height: 18px;    margin-top: 10px;}
+                        }
+                    }
                     .views-row {margin-bottom:25px;float:left;height:185px;}
                     .views-row-last {margin-bottom:0px;}
                     .nota{height:auto; float:left; position: relative; width:375px;
@@ -144,7 +157,9 @@
                 //Proceso de Paz
                 .view-id-especiales.view-display-id-block_5{background:#F2F2F2; width:258px;height:auto; float:left;position: relative;margin-bottom:20px; border:1px solid #D9D9D9; padding:0px 20px 0px 20px;
                     .view-header{position: relative;left: -20px;top: -7px;width: 299px;
-                        .logo{background: url(../images/iconos/logo_paz.svg) -26px -25px/359px auto no-repeat;height: 40px;width: 299px;}
+                        .logo{background: url(../images/iconos/logo_paz.svg) -26px -25px/359px auto no-repeat;height: 40px;width: 299px;
+                            a{border:0px; text-decoration: none;text-indent: -9999px;float: left;width: 100%;height: 40px;}
+                        }
                     }
                     .views-row {margin-bottom:10px;float:left;width:258px; padding:0px 0px 5px 0px; border-bottom:1px solid #ccc;}
                     .views-row-last{margin-bottom:0px; border-bottom:none;padding:0px;}
@@ -177,9 +192,9 @@
                     }
                     .nota{height:auto; float:left; position: relative; width:258px;
                         .tipo{display:none;}
-                        .icon_video{display:none;background: url(../images/iconos/video.svg) -9px -3px/48px auto no-repeat;height: 30px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 83px;top: 22px;opacity: 0.7;z-index: 1;}
-                        .icon_galeria{display:none;background: url(../images/iconos/galeria.svg) -9px -3px/48px auto no-repeat;height: 30px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 83px;top: 22px;opacity: 0.7;z-index: 1;}
-                        .icon_podcast{display:none;background: url(../images/iconos/podcast.svg) -9px -3px/48px auto no-repeat;height: 30px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 83px;top: 22px;opacity: 0.7;z-index: 1;}
+                        .icon_video{display:none;background: url(../images/iconos/video.svg) -9px -3px/48px auto no-repeat;height: 30px;width: 40px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 0px;opacity: 0.7;z-index: 1;}
+                        .icon_galeria{display:none;background: url(../images/iconos/galeria.svg) -9px -3px/48px auto no-repeat;height: 30px;width: 40px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 0px;opacity: 0.7;z-index: 1;}
+                        .icon_podcast{display:none;background: url(../images/iconos/podcast.svg) -9px -3px/48px auto no-repeat;height: 30px;width: 40px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 0px;opacity: 0.7;z-index: 1;}
                         .seccion{width:100%; padding: 5px 0px;height: 11px;display:none;
                             a{color:$seccion; text-decoration:none;font-size:13px; float:left; padding:0px;top: -2px;position: relative;margin: 0px; width:100%;}
                         }
@@ -591,7 +606,7 @@
                 .views-row-last{border-bottom:none !important; margin-bottom:0px !important; padding:0px !important;}
                 .views-row {margin-bottom:10px;float:left;width:258px; padding:0px 0px 5px 0px; border-bottom:1px solid #D5D5D5;}
                 .nota{height:auto; float:left; position: relative; width:258px;
-                    .autor{background:$opinion; float:left; position: relative; width:auto; height:auto; float:left; line-height:14px; text-align: center;padding: 3px;margin-right:20px;margin-top:5px;
+                    .autor{background:$opinion; float:left; position: relative; width:auto; height:auto; float:left; line-height:14px; text-align: center;padding: 3px;margin-right:0px;margin-top:5px;
                         a{font-size: 14px; font-weight:400; text-decoration:none; color:#fff;}
                     }
                     .titulo{float:left; position: relative; width:160px; height:auto; float:left; line-height:16px;padding: 10px 0px;
@@ -703,6 +718,7 @@
                     .fb-video span iframe{height: 455px!important;}
                     .iframevine{padding:15px; position: relative; float:left; height:455px;padding-left: 0;}
                     .instagram-media{display: block;padding:15px; position: relative;height:470px;width: 660px;margin: 0 auto;}
+                    .twitterplayer{margin-left:15px; margin-top:20px;}
                 }
                 .views-row {margin-bottom:25px;float:left;}
                 .views-row iframe{display: none;}
@@ -730,7 +746,7 @@
                 a{color:#fff; text-decoration:none; text-transform:uppercase;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
             }
             .view-id-principal.view-display-id-block_10{width:1006px;height:245px; float:left;position: relative;margin-bottom:25px;padding:10px 0px 0px 0px;overflow:hidden;left:0px;
-                .view-content{width:1570px;left: 20px;position: relative;transition: all 0.5s ease-in-out;}
+                .view-content{width:1860px;left: 20px;position: relative;transition: all 0.5s ease-in-out;}
                 .views-row {margin-bottom:10px;float:left; width:245px; height:245px; margin-right:20px;}
                 .galeria{height:auto; float:left; position: relative; width:250px;
                     .id{display:none;}

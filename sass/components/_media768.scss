@@ -12,6 +12,7 @@
 	.pautas_header{width: 100%;float: left;padding: 0;margin-top: 60px;
 		.p728x90{width: 100%;padding: 0;}
 	}
+	.p1000x90{display:none !important;}
 	//Icon menu normal en 400px se hace un poco mas pequeño el hamburger
 	#head_movil{top:0px;position: fixed;z-index: 50;display: flex;display: -webkit-flex;display: -moz-flex;align-items: center;-webkit-align-items: center;-moz-align-items: center;background-color: #BB1D1E;height: 60px;width: 100%;
 		#hamburger{width: 50px;height: 30px;position: relative;top: 0; left: 5%;transition: .5s ease-in-out;cursor: pointer;
@@ -2615,7 +2616,7 @@
 		}
 	}
 
-	#temas-dia{width: 375px;margin: 0 auto;float: none;height: 350px;margin-bottom: 20px;
+	#temas-dia{display:none; width: 375px;margin: 0 auto;float: none;height: 350px;margin-bottom: 20px;
 		.titulo{width: 100%;padding-bottom: 0;float: none;}
 		.figur-1{float: none;width: 0;height: 0;border-left: 190px solid transparent;border-right: 190px solid transparent;border-top: 20px solid #B5B5B5;}
 		.tema{margin: 0;width: 100%;float: none;text-align: center;}

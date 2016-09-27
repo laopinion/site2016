@@ -40,9 +40,9 @@
 									.podcast{width: 100%;
 										img{width: 100%; height: auto;}
 									}
-									.icon_video{top: 55px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
-									.icon_galeria{top: 55px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
-									.icon_podcast{top: 55px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
+									.icon_video{top: 82px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
+									.icon_galeria{top: 82px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
+									.icon_podcast{top: 82px;    background: url(../images/iconos/video.svg) -3px -3px/80px auto no-repeat;}
 								}
 							}
 						}
@@ -69,10 +69,32 @@
 									.icon_podcast{right: 2px;}
 								}
 							}
+							.view-footer{width: 100%;
+								#vyv-pauta{width: 100%;
+									.triangulo{right: 122px;}
+									article{
+										.resumen{width: 100%;margin: 0;}
+										.foto{width: 100%;
+											img{width:100%; height:auto;}
+										}
+									}
+								}
+							}
 						}
 					}
 					.view-id-principal.view-display-id-block_2{width: 100%;
-						.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
+						.view-header{width: 100%;
+							#vyv-pauta{width: 100%;
+								.triangulo{right: 122px;}
+								article{
+									.resumen{width: 100%;margin: 0;}
+									.foto{width: 100%;
+										img{width:100%; height:auto;}
+									}
+								}
+							}
+						}
+						.view-content{float:left; display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-webkit-justify-content: center;
 							.views-row{width: 100%;height: auto;
 								.nota{width: 100%;
 									.info{width: 50%;}
@@ -112,6 +134,24 @@
 					}
 				}//Fin izq
 				.cen{
+					.view-id-especiales.view-display-id-block_5{width:100%;
+						.view-header{width:100%;top:-2px; left: initial;
+							.logo{background:url(../images/iconos/logo_paz.svg) -36px -32px/419px auto no-repeat;width:100%;}
+						}
+						.views-row{width:100%;
+							.nota{width:100%;
+								.info{width:50%;}
+							}	
+						}
+						.views-row-1{
+							.nota{width:100%;
+								.info{width:100%;}
+								.video, .galeria, .podcast, .foto{width:100%;
+									img{width:100%;}
+								}
+							}	
+						}
+					}
 					.trailers{padding: 20px 0;width: 100%;
 						.view-id-principal.view-display-id-block_12{width: 96%;padding: 0 2%;
 							.views-row-1{width: 100%;
@@ -268,11 +308,13 @@
 							}
 						}
 						.view-footer{width: 100%;
-							#vyv-pauta{width: 300px;
+							#vyv-pauta{width: 100%;
 								.triangulo{right: 122px;}
 								article{
 									.resumen{width: 100%;margin: 0;}
-									.foto{width: 100%;}
+									.foto{width: 100%;
+										img{width:100%; height:auto;}
+									}
 								}
 							}
 						}
@@ -561,6 +603,15 @@
 						}
 					}
 				}
+			}
+		}
+	}
+
+	#columna_opinion{
+		.izq{
+			.contenido{
+				.fecha{margin-top: 10px;width: 100%;}
+				h2{width:100%;}
 			}
 		}
 	}
