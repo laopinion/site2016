@@ -3254,6 +3254,51 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       }
   });
 
+  // $('.second.circle').circleProgress({
+  // value: 0.1,
+  // fill: {color: '#95D9E8'}
+  // }).on('circle-animation-progress', function(event, progress) {
+  //   $(this).find('strong').html(parseInt(80 * progress) + '<i>%</i>');
+  // });
+
+  var nacionalpsi = $('.nacionalpsi');
+  var porceNsi = $("#plebiscito .nacionalpsi .porcentaje").html();
+  console.log(porceNsi);
+  porceNsi = porceNsi / 100;
+  //porceNsi = "0."+porceNsi;
+
+  nacionalpsi.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: porceNsi,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { nacionalpsi.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { nacionalpsi.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { nacionalpsi.circleProgress('value', porceNsi); }, 2100);
+  $("#plebiscito .nacionalpsi .porcentaje").append("%");
+
+  var nacionalpno = $('.nacionalpno');
+  var porceNno = $("#plebiscito .nacionalpno .porcentaje").html();
+  console.log(porceNno);
+  porceNno = porceNno / 100;
+  //porceNno = "0."+porceNno;
+
+  nacionalpno.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: porceNno,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { nacionalpno.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { nacionalpno.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { nacionalpno.circleProgress('value', porceNno); }, 2100);
+  $("#plebiscito .nacionalpno .porcentaje").append("%");
+
 
 
     //MENU MOVIL
