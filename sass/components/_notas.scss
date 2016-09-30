@@ -78,6 +78,11 @@
                 //.instagram-media{max-width:690px!important;margin: 0 auto!important;}
                 img{max-width:690px!important;margin: 0 auto!important;}
                 iframe{max-width:680px!important;margin: 0 auto!important;}
+                iframe{z-index: 2;
+                    .ad{width:300px; height:250px; position:relative; display:inline-block; 
+                        .blocker{position:absolute; height:100%; width:100%; z-index:1;}
+                    }   
+                }
             }
             .autor{position: relative;float: left;font-weight: 300;width: 95%;height: 110px;color: #646464;overflow: hidden;margin-bottom:30px;
                 h2{font-size: 14px;padding: 0px 5px;font-weight: 600;width: auto;float: left;left: 96px;top: 20px;margin: 0;

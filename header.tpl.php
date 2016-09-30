@@ -38,7 +38,34 @@
 		</div>
 		<!--FIN MENU SUPERIOR-->
 		<div class="center">		
-			<!--FECHA--><?php $block =block_load('block',60); $output = drupal_render(_block_get_renderable_array(_block_render_blocks(array($block)))); print $output; ?><!--FIN FECHA-->			
+			<!--FECHA-->
+				<?php 
+				$dia = date("l");
+				$class = "";
+					if ($dia=="Monday") $dia="Lunes";
+					if ($dia=="Tuesday") $dia="Martes";
+					if ($dia=="Wednesday") $dia="Miércoles";
+					if ($dia=="Thursday") $dia="Jueves";
+					if ($dia=="Friday") $dia="Viernes";
+					if ($dia=="Saturday") $dia="Sábado";
+					if ($dia=="Sunday") $dia="Domingo";
+				$mes = date("F");
+				$class = "";
+					if ($mes=="January") $mes="Enero";
+					if ($mes=="February") $mes="Febrero";
+					if ($mes=="March") $mes="Marzo";
+					if ($mes=="April") $mes="Abril";
+					if ($mes=="May") $mes="Mayo";
+					if ($mes=="June") $mes="Junio";
+					if ($mes=="July") $mes="Julio";
+					if ($mes=="August") $mes="Agosto";
+					if ($mes=="September"){ $mes="Septiembre"; $class = "ltr";}
+					if ($mes=="October") $mes="Octubre";
+					if ($mes=="November"){ $mes="Noviembre"; $class = "ltr";}
+					if ($mes=="December"){ $mes="Diciembre"; $class = "ltr";}
+				?>
+				<div class="fecha"><span class="dia"><?php echo $dia ?></span><span class="mes"><?php echo date("d")." de ".$mes." de ".date(" Y"); ?></span><span class="ciudad">Cúcuta - Colombia</span></div>
+			<!--FIN FECHA-->			
 			<div id="logo"><h1><a class="logo" href="<?php print base_path(); ?>"></a></h1></div>
 		</div>
 		<!--MENU PRINCIPAL-->
@@ -70,8 +97,8 @@
 			                <li><span></span><a href="<?php print base_path(); ?>venezuela">Venezuela</a></li>
 			                <hr> 
 			                <li class="dropdown_2"><span></span><a href="<?php print base_path(); ?>mundo">Mundo</a>
-			                	
-			                </li> 
+			                </li>
+			                <li><span></span><a href="<?php print base_path(); ?>historicos">Históricos</a></li> 
 			            </ul> 
 			        </li>
 			        <li class="divider"></li>
@@ -106,6 +133,8 @@
 			                <li><span></span><a href="<?php print base_path(); ?>viral">Viral</a></li> 
 			                <hr> 
 			                <li><span></span><a href="<?php print base_path(); ?>vida-y-salud">Vida y salud</a></li> 
+			                <hr> 
+			                <li><span></span><a href="<?php print base_path(); ?>zona-verde">Zona verde</a></li> 
 			            </ul> 
 			        </li>
 			        <li class="divider"></li>
