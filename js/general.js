@@ -3263,7 +3263,7 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
 
   var nacionalpsi = $('.nacionalpsi');
   var porceNsi = $("#plebiscito .nacionalpsi .porcentaje").html();
-  console.log(porceNsi);
+  //console.log(porceNsi);
   porceNsi = porceNsi / 100;
   //porceNsi = "0."+porceNsi;
 
@@ -3280,9 +3280,10 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
   setTimeout(function() { nacionalpsi.circleProgress('value', porceNsi); }, 2100);
   $("#plebiscito .nacionalpsi .porcentaje").append("%");
 
+  /*--------------------------------------------------------------------------------------*/
   var nacionalpno = $('.nacionalpno');
   var porceNno = $("#plebiscito .nacionalpno .porcentaje").html();
-  console.log(porceNno);
+  //console.log(porceNno);
   porceNno = porceNno / 100;
   //porceNno = "0."+porceNno;
 
@@ -3298,6 +3299,286 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
   setTimeout(function() { nacionalpno.circleProgress('value', 1.0); }, 1100);
   setTimeout(function() { nacionalpno.circleProgress('value', porceNno); }, 2100);
   $("#plebiscito .nacionalpno .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var nulos = $('.nulosysufraga .nulos');
+  var nulosp = $("#plebiscito .nulosysufraga .nulos .porcentaje").html();
+  //console.log(nulos);
+  nulosp = nulosp / 100;
+  //nulos = "0."+nulos;
+
+  nulos.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: nulosp,
+    lineCap: 'round',
+    fill: {color: '#8B9799'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { nulos.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { nulos.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { nulos.circleProgress('value', nulosp); }, 2100);
+  $("#plebiscito .nulosysufraga .nulos .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var sufragantes = $('.nulosysufraga .sufragantes');
+  var sufragantesp = $("#plebiscito .nulosysufraga .sufragantes .porcentaje").html();
+  //console.log(nulos);
+  sufragantesp = sufragantesp / 100;
+  //nulos = "0."+nulos;
+
+  sufragantes.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: sufragantesp,
+    lineCap: 'round',
+    fill: {color: '#8B9799'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { sufragantes.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { sufragantes.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { sufragantes.circleProgress('value', sufragantesp); }, 2100);
+  $("#plebiscito .nulosysufraga .sufragantes .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var cucutapsi = $('.cucuta .cucutapsi');
+  var cucutaP = $("#plebiscito .cucuta .cucutapsi .porcentaje").html();
+  //console.log(nulos);
+  cucutaP = cucutaP / 100;
+  //nulos = "0."+nulos;
+
+  cucutapsi.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: cucutaP,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { cucutapsi.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { cucutapsi.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { cucutapsi.circleProgress('value', cucutaP); }, 2100);
+  $("#plebiscito .cucuta .cucutapsi .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var cucutapno = $('.cucuta .cucutapno');
+  var cucutaP2 = $("#plebiscito .cucuta .cucutapno .porcentaje").html();
+  //console.log(nulos);
+  cucutaP2 = cucutaP2 / 100;
+  //nulos = "0."+nulos;
+
+  cucutapno.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: cucutaP2,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { cucutapno.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { cucutapno.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { cucutapno.circleProgress('value', cucutaP2); }, 2100);
+  $("#plebiscito .cucuta .cucutapno .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var patiospsi = $('.patios .patiospsi');
+  var patiosP = $("#plebiscito .patios .patiospsi .porcentaje").html();
+  //console.log(nulos);
+  patiosP = patiosP / 100;
+  //nulos = "0."+nulos;
+
+  patiospsi.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: patiosP,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { patiospsi.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { patiospsi.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { patiospsi.circleProgress('value', patiosP); }, 2100);
+  $("#plebiscito .patios .patiospsi .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var patiospno = $('.patios .patiospno');
+  var patiosP = $("#plebiscito .patios .patiospno .porcentaje").html();
+  //console.log(nulos);
+  patiosP = patiosP / 100;
+  //nulos = "0."+nulos;
+
+  patiospno.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: patiosP,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { patiospno.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { patiospno.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { patiospno.circleProgress('value', patiosP); }, 2100);
+  $("#plebiscito .patios .patiospno .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var rosariopsi = $('.rosario .rosariopsi');
+  var rosarioP2 = $("#plebiscito .rosario .rosariopsi .porcentaje").html();
+  //console.log(nulos);
+  rosarioP2 = rosarioP2 / 100;
+  //nulos = "0."+nulos;
+
+  rosariopsi.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: rosarioP2,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { rosariopsi.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { rosariopsi.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { rosariopsi.circleProgress('value', rosarioP2); }, 2100);
+  $("#plebiscito .rosario .rosariopsi .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var rosariopno = $('.rosario .rosariopno');
+  var rosarioP2 = $("#plebiscito .rosario .rosariopno .porcentaje").html();
+  //console.log(nulos);
+  rosarioP2 = rosarioP2 / 100;
+  //nulos = "0."+nulos;
+
+  rosariopno.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: rosarioP2,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { rosariopno.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { rosariopno.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { rosariopno.circleProgress('value', rosarioP2); }, 2100);
+  $("#plebiscito .rosario .rosariopno .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var ocanapsi = $('.ocana .ocanapsi');
+  var ocanaP = $("#plebiscito .ocana .ocanapsi .porcentaje").html();
+  //console.log(nulos);
+  ocanaP = ocanaP / 100;
+  //nulos = "0."+nulos;
+
+  ocanapsi.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: ocanaP,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { ocanapsi.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { ocanapsi.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { ocanapsi.circleProgress('value', ocanaP); }, 2100);
+  $("#plebiscito .ocana .ocanapsi .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var ocanapno = $('.ocana .ocanapno');
+  var ocanaP2 = $("#plebiscito .ocana .ocanapno .porcentaje").html();
+  //console.log(nulos);
+  ocanaP2 = ocanaP2 / 100;
+  //nulos = "0."+nulos;
+
+  ocanapno.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: ocanaP2,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { ocanapno.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { ocanapno.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { ocanapno.circleProgress('value', ocanaP2); }, 2100);
+  $("#plebiscito .ocana .ocanapno .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var pamplonapsi = $('.pamplona .pamplonapsi');
+  var pamplonaP = $("#plebiscito .pamplona .pamplonapsi .porcentaje").html();
+  //console.log(nulos);
+  pamplonaP = pamplonaP / 100;
+  //nulos = "0."+nulos;
+
+  pamplonapsi.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: pamplonaP,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { pamplonapsi.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { pamplonapsi.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { pamplonapsi.circleProgress('value', pamplonaP); }, 2100);
+  $("#plebiscito .pamplona .pamplonapsi .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var pamplonapno = $('.pamplona .pamplonapno');
+  var pamplonaP2 = $("#plebiscito .pamplona .pamplonapno .porcentaje").html();
+  //console.log(nulos);
+  pamplonaP2 = pamplonaP2 / 100;
+  //nulos = "0."+nulos;
+
+  pamplonapno.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: pamplonaP2,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { pamplonapno.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { pamplonapno.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { pamplonapno.circleProgress('value', pamplonaP2); }, 2100);
+  $("#plebiscito .pamplona .pamplonapno .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var nortepsi = $('.norte .nortepsi');
+  var norteP = $("#plebiscito .norte .nortepsi .porcentaje").html();
+  //console.log(nulos);
+  norteP = norteP / 100;
+  //nulos = "0."+nulos;
+
+  nortepsi.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: norteP,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { nortepsi.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { nortepsi.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { nortepsi.circleProgress('value', norteP); }, 2100);
+  $("#plebiscito .norte .nortepsi .porcentaje").append("%");
+
+  /*--------------------------------------------------------------------------------------*/
+  var nortepno = $('.norte .nortepno');
+  var norteP2 = $("#plebiscito .norte .nortepno .porcentaje").html();
+  //console.log(nulos);
+  norteP2 = norteP2 / 100;
+  //nulos = "0."+nulos;
+
+  nortepno.circleProgress({
+    startAngle: -Math.PI / 2,
+    value: norteP2,
+    lineCap: 'round',
+    fill: {color: '#95D9E8'}
+  });
+
+  // let's emulate dynamic value update
+  setTimeout(function() { nortepno.circleProgress('value', 0.7); }, 1000);
+  setTimeout(function() { nortepno.circleProgress('value', 1.0); }, 1100);
+  setTimeout(function() { nortepno.circleProgress('value', norteP2); }, 2100);
+  $("#plebiscito .norte .nortepno .porcentaje").append("%");
 
 
 

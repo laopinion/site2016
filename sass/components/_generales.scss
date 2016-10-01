@@ -556,25 +556,138 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
     }
 }
 //PLEBISCITO
-#plebiscito{background-color: #F2F2F2;border: 1px solid #CCCCCC;margin-bottom: 30px;display: flex;display: -webkit-flex;display: -moz-flex;
-    .izq{width: 50%;position: relative;border-right: 1px solid #D5D5D5;
+#plebiscito{height: 540px;background-color: #F2F2F2;border: 1px solid #CCCCCC;margin-bottom: 30px;display: flex;display: -webkit-flex;display: -moz-flex;
+    .izq{width: 50%;position: relative;border-right: 2px solid #D5D5D5;
         .titulo{height: 32px;background-color: #95D9E8;position: relative;top: 15px;left: -1px;
             .logo{background: url(../images/iconos/logo_paz.svg) -106px -89px/310px auto no-repeat;width: 200px;height: 32px;margin: 0 auto;}
         }
         .nacional{display: flex;display: -webkit-flex;display: -moz-flex;margin-top: 80px;top: 50px;
-            .si{position: absolute;top: -6px;left: 100px;font-size: 60px;color: #375263;}
-            .no{position: absolute;top: 0;right: 80px;font-size: 60px;color: #375263;}
+            .si{position: absolute;top: -6px;left: 100px;font-size: 60px;color: #375263;font-family: 'PT Sans Narrow', sans-serif;}
+            .no{position: absolute;top: 0;right: 80px;font-size: 60px;color: #375263;font-family: 'PT Sans Narrow', sans-serif;}
             .nacionalpsi{width: 50%;margin-top: 10px;position: relative;
                 canvas{width: 180px;margin: 0 auto;display: block;}
-                .porcentaje{text-align: center;position: absolute;top: 25%;left: 0; right: 0;margin: 0 auto;width: 135px;font-size: 60px;color: #4A4A4A;}
-                .valor{text-align: center;margin: 10px 0;}
+                .porcentaje{text-align: center;position: absolute;top: 25%;left: 0; right: 0;margin: 0 auto;width: 140px;font-size: 65px;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
             }
             .nacionalpno{width: 50%;margin-top: 10px;position: relative;
                 canvas{width: 180px;margin: 0 auto;display: block;}
-                .porcentaje{text-align: center;position: absolute;top: 25%;left: 0;right: 0;margin: 0 auto;width: 135px;font-size: 60px;color: #4A4A4A;}
-                .valor{text-align: center;margin: 10px 0;}
+                .porcentaje{text-align: center;position: absolute;top: 25%;left: 0;right: 0;margin: 0 auto;width: 140px;font-size: 65px;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }
+        }
+        h3{display: block;margin: 0 auto;width: 250px;font-size: 14px;color: #9A9A9A;text-align: center;}
+        h3:after{content:"----------"}
+        h3:before{content:" ----------"}
+        .nulosysufraga{display: flex;display: -webkit-flex;display: -moz-flex;margin-top: 30px;
+            .nulos{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;color: #4A4A4A;font-size: 32px;width: 80px;text-align: center;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }
+            .sufragantes{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;color: #4A4A4A;font-size: 32px;width: 80px;text-align: center;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
             }
         }
     }
-    .der{width: 50%;}
+    .der{width: 50%;display: flex;display: -webkit-flex;display: -moz-flex;position: relative;
+        h3{position: absolute;margin: 5px auto;text-align: center;font-size: 16px;display: block;left: 0;right: 0;color: #9A9A9A;}
+        .colum1{width: 50%;margin-top: 35px;}
+        .colum2{width: 50%;margin-top: 35px;}
+        .cucuta{display: flex;display: -webkit-flex;display: -moz-flex;margin-top: 25px;width: 100%;position: relative;
+            .si{position: absolute;top: -40px;left: 50px;margin: 0;margin-top: 10px;color: #385162;}
+            .no{position: absolute;top: -40px;right: 50px;margin: 0;margin-top: 10px;color: #385162;}
+            .cucutapsi{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;width: 80px;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }
+            .cucutapno{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;width: 80px;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }
+        }
+        .cucuta:after{content: "Cúcuta";display: block;position: absolute;left: 0;right: 0;margin: 0px auto;width: 100px;text-align: center;bottom: -15px;color: #5E5E5E;font-size: 18px;font-weight: 600;}
+        .patios{display: flex;display: -webkit-flex;display: -moz-flex;margin-top: 25px;width: 100%;position: relative;
+           .si{position: absolute;top: -40px;left: 50px;margin: 0;margin-top: 10px;color: #385162;}
+            .no{position: absolute;top: -40px;right: 50px;margin: 0;margin-top: 10px;color: #385162;}
+            .patiospsi{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;width: 80px;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }
+            .patiospno{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;width: 80px;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }   
+        }
+        .patios:after{content: "Los Patios";display: block;position: absolute;left: 0;right: 0;margin: 0px auto;width: 100px;text-align: center;bottom: -15px;color: #5E5E5E;font-size: 18px;font-weight: 600;}
+
+        .rosario{display: flex;display: -webkit-flex;display: -moz-flex;margin-top: 50px;width: 100%;position: relative;
+           .si{position: absolute;top: -40px;left: 50px;margin: 0;margin-top: 10px;color: #385162;}
+            .no{position: absolute;top: -40px;right: 50px;margin: 0;margin-top: 10px;color: #385162;}
+            .rosariopsi{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;width: 80px;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }
+            .rosariopno{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;width: 80px;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }   
+        }
+        .rosario:after{content: "Villa del Rosario";display: block;position: absolute;left: 0;right: 0;margin: 0px auto;width: 130px;text-align: center;bottom: -15px;color: #5E5E5E;font-size: 18px;font-weight: 600;}
+
+        .ocana{display: flex;display: -webkit-flex;display: -moz-flex;margin-top: 50px;width: 100%;position: relative;
+           .si{position: absolute;top: -40px;left: 50px;margin: 0;margin-top: 10px;color: #385162;}
+            .no{position: absolute;top: -40px;right: 50px;margin: 0;margin-top: 10px;color: #385162;}
+            .ocanapsi{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;width: 80px;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }
+            .ocanapno{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;width: 80px;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }   
+        }
+        .ocana:after{content: "Ocaña";display: block;position: absolute;left: 0;right: 0;margin: 0px auto;width: 100px;text-align: center;bottom: -15px;color: #5E5E5E;font-size: 18px;font-weight: 600;}
+
+        .pamplona{display: flex;display: -webkit-flex;display: -moz-flex;margin-top: 60px;width: 100%;position: relative;
+           .si{position: absolute;top: -40px;left: 50px;margin: 0;margin-top: 10px;color: #385162;}
+            .no{position: absolute;top: -40px;right: 50px;margin: 0;margin-top: 10px;color: #385162;}
+            .pamplonapsi{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;width: 80px;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }
+            .pamplonapno{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;width: 80px;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }   
+        }
+        .pamplona:after{content: "Pamplona";display: block;position: absolute;left: 0;right: 0;margin: 0px auto;width: 100px;text-align: center;bottom: -15px;color: #5E5E5E;font-size: 18px;font-weight: 600;}
+
+        .norte{display: flex;display: -webkit-flex;display: -moz-flex;margin-top: 60px;width: 100%;position: relative;
+           .si{position: absolute;top: -40px;left: 50px;margin: 0;margin-top: 10px;color: #385162;}
+            .no{position: absolute;top: -40px;right: 50px;margin: 0;margin-top: 10px;color: #385162;}
+            .nortepsi{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;width: 80px;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }
+            .nortepno{width: 50%;position: relative;
+                canvas{display: block;margin: 0 auto;width: 80px;}
+                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+            }   
+        }
+        .norte:after{content: "Norte de Santander";display: block;position: absolute;left: 0;right: 0;margin: 0px auto;width: 160px;text-align: center;bottom: -15px;color: #5E5E5E;font-size: 18px;font-weight: 600;}
+    }
 }

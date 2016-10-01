@@ -15,10 +15,10 @@
       <div id="home">
       	<div id="content">
       		<?php include("plebiscito.tpl.php"); ?>
-      		<?php include("aperturas.tpl.php"); ?>
+			<?php include("aperturas.tpl.php"); ?>
 		    <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php //include("pautas/Hm_320x50_1.php"); ?></div><!--FIN ANUNCIO 320x50-->
 		    <!--ANUNCIO 1000x90--><div class="pauta p1000x90" style="display: none"><?php //include("pautas/H_1000x90.php"); ?></div><!--FIN ANUNCIO 1000x90-->
-		    <?php include("temas.tpl.php"); ?>
+      		<?php include("temas.tpl.php"); ?>
 		    <div class="left">
 		      	<div class="izq">
 		      		<!--Destacada--><?php $view = views_get_view('principal'); print $view->preview('block'); ?><!--FIN Destacada-->
@@ -79,13 +79,13 @@
 	      	</div>
 	      	<div class="right">
 	      		<!--Revista La O--><div class="revista"><a href="http://www.revistalao.co" target="_blank">Revista La Ó</a></div><?php $view = views_get_view('side'); print $view->preview('block_4'); ?><!--FIN Revista La O-->
-				<!--Actividad social--><div class="actividad"><div class="color"></div>Actividad social</a></div><?php $view = views_get_view('side'); print $view->preview('block_5'); ?><!--FIN Actividad social-->
+				<!--Actividad social--><div class="actividad"><div class="color"></div><a href="">Actividad social</a></div><?php $view = views_get_view('side'); print $view->preview('block_5'); ?><!--FIN Actividad social-->
 			</div> 
 			<div class="center">
-				<div class="productos"><div class="color"></div><a href="<?php print base_path(); ?>productos">Productos La Opinión</a></div><?php //include_once("productos.php") ?>
+				<div class="productos"><div class="color"></div><a href="<?php print base_path(); ?>productos">Productos La Opinión</a></div><?php include_once("productos.php") ?>
 				<!--PORTADA--><?php $view = views_get_view('principal'); print $view->preview('block_16'); ?><!--FIN PORTADA-->
 				<div class="servicios"><div class="color"></div><a href="<?php print base_path(); ?>servicios">Servicios</a></div><?php //include_once("servicios.php") ?>
-			</div>	
+			</div>     		
 		</div>
       </div> 
   </section>
