@@ -619,4 +619,131 @@
 	#temas-dia{width: 100%;display: none;
 		.figur-1{border: none;background: url(../images/iconos/linea_tama_day-2.svg) no-repeat;height: 29px;width: 100%; background-position: center;top: -13px;}
 	}
+
+	#plebiscito{height: 1055px;
+		.izq{
+			.nacional{
+	            .si{left: 50px;}
+	            .no{right: 35px;}
+	            .nacionalpsi{
+	                canvas{width: 140px;}
+	                .porcentaje{font-size: 50px;}
+	                .valor{}
+	            }
+	            .nacionalpno{
+	                canvas{width: 140px;}
+	                .porcentaje{font-size: 50px;}
+	                .valor{}
+	            }
+	        }
+	        h3{}
+	        .nulosysufraga{
+	            .nulos{
+	                canvas{}
+	                .porcentaje{}
+	                .valor{}
+	            }
+	            .sufragantes{
+	                canvas{}
+	                .porcentaje{}
+	                .valor{}
+	            }
+	        }
+		}
+		.der{
+			.colum1{margin-top: 50px;}
+        	.colum2{margin-top: 50px;}
+			.cucuta{
+	            .si{left: 25px;}
+	            .no{right: 15px;}
+	            .cucutapsi{
+	                canvas{width: 65px;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
+	                .valor{}
+	            }
+	            .cucutapno{
+	                canvas{width: 65px;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
+	                .valor{}
+	            }
+	        }
+	        .cucuta:after{}
+	        .patios{
+	            .si{left: 25px;}
+	            .no{right: 15px;}
+	            .patiospsi{
+	                canvas{width: 65px;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
+	                .valor{}
+	            }
+	            .patiospno{
+	                canvas{width: 65px;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
+	                .valor{}
+	            }   
+	        }
+	        
+
+	        .rosario{
+	           	.si{left: 25px;}
+	            .no{right: 15px;}
+	            .rosariopsi{
+	                canvas{width: 65px;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
+	                .valor{}
+	            }
+	            .rosariopno{
+	                canvas{width: 65px;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
+	                .valor{}
+	            }   
+	        }
+
+	        .ocana{
+	            .si{left: 25px;}
+	            .no{right: 15px;}
+	            .ocanapsi{
+	                canvas{width: 65px;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
+	                .valor{}
+	            }
+	            .ocanapno{
+	                canvas{width: 65px;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
+	                .valor{}
+	            }   
+	        }
+
+	        .pamplona{
+	            .si{left: 25px;}
+	            .no{right: 15px;}
+	            .pamplonapsi{
+	                canvas{width: 65px;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
+	                .valor{}
+	            }
+	            .pamplonapno{
+	                canvas{width: 65px;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
+	                .valor{}
+	            }   
+	        }
+
+	        .norte{
+	            .si{left: 25px;}
+	            .no{right: 15px;}
+	            .nortepsi{
+	                canvas{width: 65px;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
+	                .valor{}
+	            }
+	            .nortepno{
+	            	canvas{width: 65px;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
+	                .valor{}
+	            }   
+	        }
+	        .norte:after{width: 130px; bottom: -38px;}
+		}
+	}
 }//Fin 400px
