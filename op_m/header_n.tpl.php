@@ -10,9 +10,9 @@
 			        <li class="divider"></li> 
 			        <li class="dropdown region"><a href="<?php print base_path(); ?>region">Región</a> 
 			            <ul> 
-			                <li><span></span><a href="<?php print base_path(); ?>ocana">ocaña</a></li>
+			                <li><span></span><a href="<?php print base_path(); ?>ocana">Ocaña</a></li>
 			                <hr> 
-			                <li><span></span><a href="<?php print base_path(); ?>pamplona">pamplona</a></li> 
+			                <li><span></span><a href="<?php print base_path(); ?>pamplona">Pamplona</a></li> 
 			            </ul> 
 			        </li>
 			        <li class="divider"></li>  
@@ -31,8 +31,8 @@
 			                <li><span></span><a href="<?php print base_path(); ?>venezuela">Venezuela</a></li>
 			                <hr> 
 			                <li class="dropdown_2"><span></span><a href="<?php print base_path(); ?>mundo">Mundo</a>
-			                	
 			                </li> 
+			                <li><span></span><a href="<?php print base_path(); ?>historicos">Históricos</a></li> 
 			            </ul> 
 			        </li>
 			        <li class="divider"></li>
@@ -49,8 +49,6 @@
 			                <li><span></span><a href="<?php print base_path(); ?>cucuta-deportivo">Cúcuta deportivo</a></li><hr> 
 			                <li><span></span><a href="<?php print base_path(); ?>futbol">Futbol</a></li><hr>
 			                <li><span></span><a href="<?php print base_path(); ?>mas-deportes">+ deportes</a></li>
-			                <hr> 
-			                <li><span></span><a href="#opcion4">Copa américa 2015</a></li>
 			            </ul> 
 			        </li>
 			        <li class="divider"></li>
@@ -73,27 +71,37 @@
 			        <li><a href="<?php print base_path(); ?>servicios">Servicios</a></li>
 			        <li class="divider"></li>
 			        <li><a href="<?php print base_path(); ?>participacion">Participación</a></li>
-					<!--
-					<ul id="redes_sociales">
-						<li class="facebook">
-							<a href="https://www.facebook.com/laopinioncucuta/" target="_blank"></a>							
-						</li>
-						<li class="twitter">
-							<a href="https://www.twitter.com/laopinioncucuta/" target="_blank"></a>
-						</li>
-						<li class="instagram">
-							<a href="https://www.instagram.com/laopinioncucuta/" target="_blank"></a>
-						</li>
-						<li class="youtube">
-							<a href="https://www.youtube.com/user/WEBLAOPINION" target="_blank"></a>
-						</li>
+					<li class="divider"></li>
+					<ul id="iconos">
+						<li class="lupa"><div></div></li>
+						<li class="user"><a href="<?php print base_path(); ?>user/register"></a></li>
 					</ul>
-					--> 
 			    </ul> 
 			</div>
 		</nav>
 		<!--FIN MENU PRINCIPAL-->
 	</div>
+	<section>
+	    <div class="buscador">
+	        <ul id="redes">
+	          <li class="facebook">
+	            <a href="https://www.facebook.com/laopinioncucuta/" target="_blank"></a>              
+	          </li>
+	          <li class="twitter">
+	            <a href="https://www.twitter.com/laopinioncucuta/" target="_blank"></a>
+	          </li>
+	          <li class="instagram">
+	            <a href="https://www.instagram.com/laopinioncucuta/" target="_blank"></a>
+	          </li>
+	          <li class="youtube">
+	            <a href="https://www.youtube.com/user/WEBLAOPINION" target="_blank"></a>
+	          </li>
+	        </ul>
+	          <form action="">
+	            <input type="text">
+	          </form>
+	    </div>
+	</section>
 </header>
 
 

@@ -533,7 +533,28 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
 //FIN TABOOLA
 
 //FIN NOTAS
-
+#plebiscito_notas{margin-bottom: 30px;position: fixed; right:0px; bottom:50px; z-index:50;
+    .triangulo {width: 0;height: 0; border-top: 20px solid transparent;border-left: 40px solid #F2F2F2;border-bottom: 20px solid transparent;margin: 0px;margin: 0px;right: 0px;top: 40%;position: absolute;z-index: 2;}
+    .box{width: 180px;height:240px; position: relative;border-right: 1px solid #D5D5D5;background-color: #F2F2F2;border: 1px solid #CCCCCC;display: flex;display: -webkit-flex;display: -moz-flex; right:30px;
+        .titulo{height: 32px;background-color: #95D9E8;position: relative;top: 15px;left: -1px;
+            .logo{background: url(../images/iconos/logo_paz.svg) -106px -89px/310px auto no-repeat;width: 180px;height: 32px;margin: 0 auto;}
+        }
+        .nacional{display: flex;display: -webkit-flex;display: -moz-flex;width: 180px;height: auto;float: left;position: absolute;
+            .si{position: absolute;top: 35px;left: 40px;font-size: 20px;color: #375263;}
+            .no{position: absolute;top: 35px;right: 40px;font-size: 20px;color: #375263;}
+            .nacionalpsi{width: 40%;margin-top: 90px;position: relative;margin-right:5%; margin-left:5%;
+                canvas{width: 100%;margin: 0 auto;display: block;-z-index:50;}
+                .porcentaje{text-align: center;position: absolute;top: 20%;left: 0; right: 0;margin: 0 auto;width: 100%;font-size: 23px;color: #4A4A4A;}
+                .valor{text-align: center;margin: 10px 0;font-size:11px;}
+            }
+            .nacionalpno{width: 40%;margin-top: 90px;position: relative;
+                canvas{width: 100%;margin: 0 auto;display: block;}
+                .porcentaje{text-align: center;position: absolute;top: 25%;left: 0;right: 0;margin: 0 auto;width: 100%;font-size: 23px;color: #4A4A4A;}
+                .valor{text-align: center;margin: 10px 0;font-size:11px;}
+            }
+        }
+    }
+}
 //PLEBISCITO
 #plebiscito{background-color: #F2F2F2;border: 1px solid #CCCCCC;margin-bottom: 30px;display: flex;display: -webkit-flex;display: -moz-flex;
     .izq{width: 50%;position: relative;border-right: 1px solid #D5D5D5;

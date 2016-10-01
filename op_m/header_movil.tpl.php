@@ -84,6 +84,7 @@
             <li><a href="<?php print base_path(); ?>colombia">Colombia</a></li>
             <li><a href="<?php print base_path(); ?>venezuela">Venezuela</a></li>
             <li><a href="<?php print base_path(); ?>mundo">Mundo</a></li> 
+            <li><a href="<?php print base_path(); ?>historicos">Históricos</a></li> 
 		</ul>
 		<ul class="bloque opinion">
 			<span></span><div class="linea"></div>
