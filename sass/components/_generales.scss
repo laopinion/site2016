@@ -533,9 +533,14 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
 //FIN TABOOLA
 
 //FIN NOTAS
+#seccion {
+    .content{
+        #plebiscito {display:none !important;}
+    }
+}
 #plebiscito_notas{margin-bottom: 30px;position: fixed; right:0px; bottom:50px; z-index:50;
     .triangulo {width: 0;height: 0; border-top: 20px solid transparent;border-left: 40px solid #F2F2F2;border-bottom: 20px solid transparent;margin: 0px;margin: 0px;right: 0px;top: 40%;position: absolute;z-index: 2;}
-    .box{width: 180px;height:240px; position: relative;border-right: 1px solid #D5D5D5;background-color: #F2F2F2;border: 1px solid #CCCCCC;display: flex;display: -webkit-flex;display: -moz-flex; right:30px;
+    .box{width: 180px;height:220px; position: relative;border-right: 1px solid #D5D5D5;background-color: #F2F2F2;border: 1px solid #CCCCCC;display: flex;display: -webkit-flex;display: -moz-flex; right:30px;
         .titulo{height: 32px;background-color: #95D9E8;position: relative;top: 15px;left: -1px;
             .logo{background: url(../images/iconos/logo_paz.svg) -106px -89px/310px auto no-repeat;width: 180px;height: 32px;margin: 0 auto;}
         }
@@ -543,13 +548,13 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
             .si{position: absolute;top: 35px;left: 40px;font-size: 20px;color: #375263;}
             .no{position: absolute;top: 35px;right: 40px;font-size: 20px;color: #375263;}
             .nacionalpsi{width: 40%;margin-top: 90px;position: relative;margin-right:5%; margin-left:5%;
-                canvas{width: 100%;margin: 0 auto;display: block;-z-index:50;}
-                .porcentaje{text-align: center;position: absolute;top: 20%;left: 0; right: 0;margin: 0 auto;width: 100%;font-size: 23px;color: #4A4A4A;}
+                canvas{width: 100%;margin: 0 auto;display: block !important;}
+                .porcentaje{text-align: center;position: absolute;top: 20%;left: 0; right: 0;margin: 0 auto;width: 100%;font-size: 17px;color: #4A4A4A;}
                 .valor{text-align: center;margin: 10px 0;font-size:11px;}
             }
             .nacionalpno{width: 40%;margin-top: 90px;position: relative;
-                canvas{width: 100%;margin: 0 auto;display: block;}
-                .porcentaje{text-align: center;position: absolute;top: 25%;left: 0;right: 0;margin: 0 auto;width: 100%;font-size: 23px;color: #4A4A4A;}
+                canvas{width: 100%;margin: 0 auto;display: block !important;}
+                .porcentaje{text-align: center;position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 100%;font-size: 17px;color: #4A4A4A;}
                 .valor{text-align: center;margin: 10px 0;font-size:11px;}
             }
         }
@@ -566,12 +571,12 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
             .no{position: absolute;top: 0;right: 80px;font-size: 60px;color: #375263;font-family: 'PT Sans Narrow', sans-serif;}
             .nacionalpsi{width: 50%;margin-top: 10px;position: relative;
                 canvas{width: 180px;margin: 0 auto;display: block;}
-                .porcentaje{text-align: center;position: absolute;top: 25%;left: 0; right: 0;margin: 0 auto;width: 140px;font-size: 65px;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .porcentaje{text-align: center;position: absolute;top: 30%;left: 0; right: 0;margin: 0 auto;width: 140px;font-size: 43px;color: #4A4A4A;font-family: 'Abel', sans-serif;}
                 .valor{text-align: center;margin: 10px 0;font-size: 12px;}
             }
             .nacionalpno{width: 50%;margin-top: 10px;position: relative;
                 canvas{width: 180px;margin: 0 auto;display: block;}
-                .porcentaje{text-align: center;position: absolute;top: 25%;left: 0;right: 0;margin: 0 auto;width: 140px;font-size: 65px;color: #4A4A4A;font-family: 'Abel', sans-serif;}
+                .porcentaje{text-align: center;position: absolute;top: 30%;left: 0;right: 0;margin: 0 auto;width: 140px;font-size: 43px;color: #4A4A4A;font-family: 'Abel', sans-serif;}
                 .valor{text-align: center;margin: 10px 0;font-size: 12px;}
             }
         }
@@ -579,14 +584,14 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
         h3:after{content:"----------"}
         h3:before{content:" ----------"}
         .nulosysufraga{display: flex;display: -webkit-flex;display: -moz-flex;margin-top: 30px;
-            .nulos{width: 50%;position: relative;
-                canvas{display: block;margin: 0 auto;}
+            .nulos{width: 50%;position: relative; display:none;
+                canvas{display: block;margin: 0 auto;display:none;}
                 .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;color: #4A4A4A;font-size: 32px;width: 80px;text-align: center;font-family: 'Abel', sans-serif;}
                 .valor{text-align: center;margin: 10px 0;font-size: 12px;}
             }
-            .sufragantes{width: 50%;position: relative;
+            .sufragantes{width: 100%;position: relative;
                 canvas{display: block;margin: 0 auto;}
-                .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;color: #4A4A4A;font-size: 32px;width: 80px;text-align: center;font-family: 'Abel', sans-serif;}
+                .porcentaje{position: absolute;top: 25%;left: 0;right: 0;margin: 0 auto;color: #4A4A4A;font-size: 24px;width: 80px;text-align: center;font-family: 'Abel', sans-serif;}
                 .valor{text-align: center;margin: 10px 0;font-size: 12px;}
             }
         }
@@ -601,12 +606,12 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
             .cucutapsi{width: 50%;position: relative;
                 canvas{display: block;margin: 0 auto;width: 80px;}
                 .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
-                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+                .valor{text-align: center;margin:0px 15px 10px 15px;font-size: 12px;width:100px;}
             }
             .cucutapno{width: 50%;position: relative;
                 canvas{display: block;margin: 0 auto;width: 80px;}
                 .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
-                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+                .valor{text-align: center;margin: 0px 15px 10px 15px;font-size: 12px;width:100px;}
             }
         }
         .cucuta:after{content: "Cúcuta";display: block;position: absolute;left: 0;right: 0;margin: 0px auto;width: 100px;text-align: center;bottom: -15px;color: #5E5E5E;font-size: 18px;font-weight: 600;}
@@ -616,44 +621,44 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
             .patiospsi{width: 50%;position: relative;
                 canvas{display: block;margin: 0 auto;width: 80px;}
                 .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
-                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+                .valor{text-align: center;margin: 0px 15px 10px 15px;font-size: 12px;}
             }
             .patiospno{width: 50%;position: relative;
                 canvas{display: block;margin: 0 auto;width: 80px;}
                 .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
-                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+                .valor{text-align: center;margin: 0px 15px 10px 15px;font-size: 12px;width:100px;}
             }   
         }
         .patios:after{content: "Los Patios";display: block;position: absolute;left: 0;right: 0;margin: 0px auto;width: 100px;text-align: center;bottom: -15px;color: #5E5E5E;font-size: 18px;font-weight: 600;}
 
-        .rosario{display: flex;display: -webkit-flex;display: -moz-flex;margin-top: 50px;width: 100%;position: relative;
+        .rosario{display: flex;display: -webkit-flex;display: -moz-flex;margin-top: 40px;width: 100%;position: relative;
            .si{position: absolute;top: -40px;left: 50px;margin: 0;margin-top: 10px;color: #385162;}
             .no{position: absolute;top: -40px;right: 50px;margin: 0;margin-top: 10px;color: #385162;}
             .rosariopsi{width: 50%;position: relative;
                 canvas{display: block;margin: 0 auto;width: 80px;}
                 .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
-                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+                .valor{text-align: center;margin: 0px 15px 10px 15px;font-size: 12px;width:100px;}
             }
             .rosariopno{width: 50%;position: relative;
                 canvas{display: block;margin: 0 auto;width: 80px;}
                 .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
-                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+                .valor{text-align: center;margin: 0px 15px 10px 15px;font-size: 12px;width:100px;}
             }   
         }
         .rosario:after{content: "Villa del Rosario";display: block;position: absolute;left: 0;right: 0;margin: 0px auto;width: 130px;text-align: center;bottom: -15px;color: #5E5E5E;font-size: 18px;font-weight: 600;}
 
-        .ocana{display: flex;display: -webkit-flex;display: -moz-flex;margin-top: 50px;width: 100%;position: relative;
+        .ocana{display: flex;display: -webkit-flex;display: -moz-flex;margin-top: 40px;width: 100%;position: relative;
            .si{position: absolute;top: -40px;left: 50px;margin: 0;margin-top: 10px;color: #385162;}
             .no{position: absolute;top: -40px;right: 50px;margin: 0;margin-top: 10px;color: #385162;}
             .ocanapsi{width: 50%;position: relative;
                 canvas{display: block;margin: 0 auto;width: 80px;}
                 .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
-                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+                .valor{text-align: center;margin: 0px 15px 10px 15px;font-size: 12px;width:100px;}
             }
             .ocanapno{width: 50%;position: relative;
                 canvas{display: block;margin: 0 auto;width: 80px;}
                 .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
-                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+                .valor{text-align: center;margin: 0px 15px 10px 15px;font-size: 12px;width:100px;}
             }   
         }
         .ocana:after{content: "Ocaña";display: block;position: absolute;left: 0;right: 0;margin: 0px auto;width: 100px;text-align: center;bottom: -15px;color: #5E5E5E;font-size: 18px;font-weight: 600;}
@@ -664,12 +669,12 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
             .pamplonapsi{width: 50%;position: relative;
                 canvas{display: block;margin: 0 auto;width: 80px;}
                 .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
-                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+                .valor{text-align: center;margin: 0px 15px 10px 15px;font-size: 12px;width:100px;}
             }
             .pamplonapno{width: 50%;position: relative;
                 canvas{display: block;margin: 0 auto;width: 80px;}
                 .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
-                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+                .valor{text-align: center;margin: 0px 15px 10px 15px;font-size: 12px;width:100px;}
             }   
         }
         .pamplona:after{content: "Pamplona";display: block;position: absolute;left: 0;right: 0;margin: 0px auto;width: 100px;text-align: center;bottom: -15px;color: #5E5E5E;font-size: 18px;font-weight: 600;}
@@ -680,12 +685,12 @@ hr{float: left;width: 100%;height: 0!important;margin: 25px 0;}
             .nortepsi{width: 50%;position: relative;
                 canvas{display: block;margin: 0 auto;width: 80px;}
                 .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
-                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+                .valor{text-align: center;margin: 0px 15px 10px 15px;font-size: 12px;width:100px;}
             }
             .nortepno{width: 50%;position: relative;
                 canvas{display: block;margin: 0 auto;width: 80px;}
                 .porcentaje{position: absolute;top: 20%;left: 0;right: 0;margin: 0 auto;width: 80px;font-size: 30px;text-align: center;color: #4A4A4A;font-family: 'Abel', sans-serif;}
-                .valor{text-align: center;margin: 10px 0;font-size: 12px;}
+                .valor{text-align: center;margin: 0px 15px 10px 15px;font-size: 12px;width:100px;}
             }   
         }
         .norte:after{content: "Norte de Santander";display: block;position: absolute;left: 0;right: 0;margin: 0px auto;width: 160px;text-align: center;bottom: -15px;color: #5E5E5E;font-size: 18px;font-weight: 600;}

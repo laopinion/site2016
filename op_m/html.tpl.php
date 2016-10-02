@@ -10,6 +10,7 @@
 <script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/op/js/taboola.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript">if(typeof jQuery==='undefined'){document.write(unescape("<scri"+"pt src='<?php print base_path(); ?>sites/default/themes/op/js/jquery-1.8.2.min.js' type='text/javascript'></scri"+"pt>"));}</script>
+<script src="https://cdn.rawgit.com/kottenator/jquery-circle-progress/1.2.0/dist/circle-progress.js"></script>
 <script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/op/js/general.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php print base_path(); ?>sites/default/themes/op/css/add2homeScreen.css">
 <link href="<?php print base_path(); ?>sites/default/themes/op/css/style.css" rel="stylesheet" type="text/css">

@@ -1,4 +1,6 @@
 <?php include("pautas/clickio_inarticle.php"); ?>
+<?php // include("plebiscito.tpl.php"); ?>
+<?php // include("plebiscito_notas.tpl.php"); ?>
 <div class="notas_header">
     <!--ANUNCIO 728x90--><div class="pauta p728x90n"><?php include("pautas/N_728x90.php"); ?></div><!--FIN ANUNCIO 728x90-->
 </div>

@@ -620,19 +620,19 @@
 		.figur-1{border: none;background: url(../images/iconos/linea_tama_day-2.svg) no-repeat;height: 29px;width: 100%; background-position: center;top: -13px;}
 	}
 
-	#plebiscito{height: 1055px;
+	#plebiscito{height: 1115px;
 		.izq{
 			.nacional{
 	            .si{left: 50px;}
 	            .no{right: 35px;}
 	            .nacionalpsi{
 	                canvas{width: 140px;}
-	                .porcentaje{font-size: 50px;}
+	                .porcentaje{font-size: 25px; top: 25%;}
 	                .valor{}
 	            }
 	            .nacionalpno{
 	                canvas{width: 140px;}
-	                .porcentaje{font-size: 50px;}
+	                .porcentaje{font-size: 25px; top: 25%;}
 	                .valor{}
 	            }
 	        }
@@ -657,14 +657,14 @@
 	            .si{left: 25px;}
 	            .no{right: 15px;}
 	            .cucutapsi{
-	                canvas{width: 65px;}
-	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
-	                .valor{}
+	                canvas{width: 65px !important;height:65px !important;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 11%;}
+	                .valor{margin:0px 5px 10px 5px;width:65px;}
 	            }
 	            .cucutapno{
-	                canvas{width: 65px;}
-	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
-	                .valor{}
+	                canvas{width: 65px !important;height:65px !important;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 11%;}
+	                .valor{margin:0px 5px 10px 5px;width:65px;}
 	            }
 	        }
 	        .cucuta:after{}
@@ -672,14 +672,14 @@
 	            .si{left: 25px;}
 	            .no{right: 15px;}
 	            .patiospsi{
-	                canvas{width: 65px;}
-	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
-	                .valor{}
+	                canvas{width: 65px !important;height:65px !important;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 11%;}
+	                .valor{margin:0px 5px 10px 5px;width:65px;}
 	            }
 	            .patiospno{
-	                canvas{width: 65px;}
-	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
-	                .valor{}
+	                canvas{width: 65px !important;height:65px !important;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 11%;}
+	                .valor{margin:0px 5px 10px 5px;width:65px;}
 	            }   
 	        }
 	        
@@ -688,14 +688,14 @@
 	           	.si{left: 25px;}
 	            .no{right: 15px;}
 	            .rosariopsi{
-	                canvas{width: 65px;}
-	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
-	                .valor{}
+	                canvas{width: 65px !important;height:65px !important;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 11%;}
+	                .valor{margin:0px 5px 10px 5px;width:65px;}
 	            }
 	            .rosariopno{
-	                canvas{width: 65px;}
-	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
-	                .valor{}
+	                canvas{width: 65px !important;height:65px !important;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 11%;}
+	                .valor{margin:0px 5px 10px 5px;width:65px;}
 	            }   
 	        }
 
@@ -703,14 +703,14 @@
 	            .si{left: 25px;}
 	            .no{right: 15px;}
 	            .ocanapsi{
-	                canvas{width: 65px;}
-	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
-	                .valor{}
+	                canvas{width: 65px !important;height:65px !important;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 11%;}
+	                .valor{margin:0px 5px 10px 5px;width:65px;}
 	            }
 	            .ocanapno{
-	                canvas{width: 65px;}
-	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
-	                .valor{}
+	                canvas{width: 65px !important;height:65px !important;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 11%;}
+	                .valor{margin:0px 5px 10px 5px;width:65px;}
 	            }   
 	        }
 
@@ -718,14 +718,14 @@
 	            .si{left: 25px;}
 	            .no{right: 15px;}
 	            .pamplonapsi{
-	                canvas{width: 65px;}
-	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
-	                .valor{}
+	                canvas{width: 65px !important;height:65px !important;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 11%;}
+	                .valor{margin:0px 5px 10px 5px;width:65px;}
 	            }
 	            .pamplonapno{
-	                canvas{width: 65px;}
-	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
-	                .valor{}
+	                canvas{width: 65px !important;height:65px !important;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 11%;}
+	                .valor{margin:0px 5px 10px 5px;width:65px;}
 	            }   
 	        }
 
@@ -733,14 +733,14 @@
 	            .si{left: 25px;}
 	            .no{right: 15px;}
 	            .nortepsi{
-	                canvas{width: 65px;}
-	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
-	                .valor{}
+	                canvas{width: 65px !important;height:65px !important;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 11%;}
+	                .valor{margin:0px 5px 10px 5px;width:65px;}
 	            }
 	            .nortepno{
-	            	canvas{width: 65px;}
-	                .porcentaje{font-size: 26px;width: 55px;top: 15%;}
-	                .valor{}
+	            	canvas{width: 65px !important;height:65px !important;}
+	                .porcentaje{font-size: 26px;width: 55px;top: 11%;}
+	                .valor{margin:0px 5px 10px 5px;width:65px;}
 	            }   
 	        }
 	        .norte:after{width: 130px; bottom: -38px;}
