@@ -703,7 +703,7 @@ $(document).ready(function(){
       }
     });
 
- //INICIO HOME ECONOMIA
+  //INICIO HOME ECONOMIA
   $(".view-id-principal.view-display-id-block_8 .views-row").each(function(){
       var ContentTypeL = $(this).find(".tipo").html();
       if(ContentTypeL == "Galería de imagenes"){

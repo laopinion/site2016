@@ -1,17 +1,18 @@
 <?php
 
-  function GenerateRandomString($length) {
-      $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
-      $charactersLength = strlen($characters);
-      $randomString = '';
-      for ($i = 0; $i < $length; $i++) {
-          $randomString .= $characters[rand(0, $charactersLength - 1)];
-      }
-      return $randomString;
-  }
+  // function GenerateRandomString($length) {
+  //     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  //     $charactersLength = strlen($characters);
+  //     $randomString = '';
+  //     for ($i = 0; $i < $length; $i++) {
+  //         $randomString .= $characters[rand(0, $charactersLength - 1)];
+  //     }
+  //     return $randomString;
+  // }
     $accountId = "564188";
     $merchantId = "561677";
-    $referenceCode = GenerateRandomString(8);
+    //$referenceCode = GenerateRandomString(8);
+    $referenceCode = uniqid('id_',true);
     $apiKey = "s7rVA73TjpE2R7p8SpJ0cFizTj";
     $currency = "COP";
     $amount = "42000";
