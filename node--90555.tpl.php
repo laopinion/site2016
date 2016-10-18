@@ -1,3 +1,27 @@
+<?php
+
+  // function GenerateRandomString($length) {
+  //     $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ';
+  //     $charactersLength = strlen($characters);
+  //     $randomString = '';
+  //     for ($i = 0; $i < $length; $i++) {
+  //         $randomString .= $characters[rand(0, $charactersLength - 1)];
+  //     }
+  //     return $randomString;
+  // }
+    $accountId = "564188";
+    $merchantId = "561677";
+    //$referenceCode = GenerateRandomString(8);
+    $referenceCode = uniqid('id_',true);
+    $apiKey = "s7rVA73TjpE2R7p8SpJ0cFizTj";
+    $currency = "COP";
+    $amount = "42000";
+    $stringToHash = "$apiKey~$merchantId~$referenceCode~$amount~$currency";
+    $signature = md5($stringToHash);
+    $url = "https://gateway.payulatam.com/ppp-web-gateway";
+    $responUrl = "http://www.laopinion.com.co/gracias-por-suscribirse-la-opinion";
+?>
+
 <section id="suscripciones">
   <div class="content">
     <section class="titulo"><h2>Suscripciones</h2></section>
