@@ -9,9 +9,9 @@
               </div>
               <div class="separador"></div>
               <div class="empresa">
-                <div class="imagen"><a href="http://www.laopinion.com.co/sites/default/files/ads/2016/09/30_09_2016_botero.html" target="_blank" ><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/botero.png"></a></div>
+                <div class="imagen"><a href="http://www.laopinion.com.co/sites/default/files/ads/2016/10/11_10_2016_botero.html" target="_blank" ><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/botero.png"></a></div>
                 <div class="info">Boterotex</div>
-                <div class="pagina"><a href="http://www.laopinion.com.co/sites/default/files/ads/2016/09/30_09_2016_botero.html" target="_blank" >Boterotex</a></div>
+                <div class="pagina"><a href="http://www.laopinion.com.co/sites/default/files/ads/2016/10/11_10_2016_botero.html" target="_blank" >Boterotex</a></div>
               </div>
               <div class="separador"></div>
               <div class="empresa">

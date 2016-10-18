@@ -90,8 +90,8 @@
  -}
  -*/
 header{
-    section{width: 25%;height: 50px;position: fixed;right: 0;z-index: 1;top: -21px;transition: .3s;
-        .buscador{display:none; border-radius: 4px;width: 100px;padding: 10px;background-color: #7C181F;
+    section{width: 25%;height: 50px;position: fixed;right: 0;z-index: 1;top: -31px;transition: .3s;
+        .buscador{display:block; border-radius: 4px;width: 100px;padding: 10px;background-color: #BB1D1E;
             #redes{padding: 0;left: 0;margin: 5px 0px;position: relative; width: 107px; float: left;
                 li{padding:0;width: 24px;height: 24px;margin: 0;list-style: none; float:left;position:relative;}
                 .facebook{
@@ -107,9 +107,12 @@ header{
                   a{background: url("../images/iconos/iconos-buscador.svg") -107px -4px/135px auto no-repeat; width: 24px; height: 24px; position: relative; float: left;}
                 }
             }
-            form{
-                input{width: 96px;}
+            #search-block-form{
+                #edit-search-block-form--2-submit{
+                    input{width: 80px;}
+                }
             }
+            
         }
     }
 }
@@ -162,6 +165,7 @@ header{
     }
     .figur-1{position: relative; top: -3px;width: 0;height: 0;border-top: 27px solid transparent;border-left: 20px solid #B5B5B5;border-bottom: 29px solid transparent;float: left;}
     .figur{background: url(../images/iconos/flecha_tema_day.svg) 0px 0px/19px auto no-repeat;height: 50px;width: 18px;float: left;}
+    /*.figur{width: 0;height: 0;border-top: 50px solid transparent;border-left: 100px solid #000;border-bottom: 50px solid transparent;}*/
 }
 
 //Apertura Four NOTAS

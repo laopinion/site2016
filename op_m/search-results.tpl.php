@@ -30,7 +30,6 @@
 		    <li class="first notas item <?php echo (arg(0)=='search'&&arg(1)=='site')?'active':''; ?>"><a href="/search/site"><span>Notas</span> (<?php echo ReturnCountResultsApacheSolr('article'); ?>)</a></li>
 		    <li class="galerias item <?php echo (arg(0)=='search'&&arg(1)=='site')?'active':''; ?>"><a href="/search/site"><span>Galerías</span> (<?php echo ReturnCountResultsApacheSolr('galeria_imagenes'); ?>)</a></li>
 		    <li class="videos item <?php echo (arg(0)=='search'&&arg(1)=='site')?'active':''; ?>"><a href="/search/site"><span>Videos</span> (<?php echo ReturnCountResultsApacheSolr('video'); ?>)</a></li>
-		    <li class="podcast item <?php echo (arg(0)=='search'&&arg(1)=='site')?'active':''; ?>"><a href="/search/site"><span>Podcast</span> (<?php echo ReturnCountResultsApacheSolr('galeria_imagenes'); ?>)</a></li>
 		    <li class="columna item <?php echo (arg(0)=='search'&&arg(1)=='site')?'active':''; ?>"><a href="/search/site"><span>Columnas de opinión</span> (<?php echo ReturnCountResultsApacheSolr('columna_de_opinion'); ?>)</a></li>
 		    <li class="caricatura item <?php echo (arg(0)=='search'&&arg(1)=='site')?'active':''; ?>"><a href="/search/site"><span>Caricaturas</span> (<?php echo ReturnCountResultsApacheSolr('caricatura'); ?>)</a></li>
 		</ul>

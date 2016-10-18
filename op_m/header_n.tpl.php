@@ -97,9 +97,7 @@
 	            <a href="https://www.youtube.com/user/WEBLAOPINION" target="_blank"></a>
 	          </li>
 	        </ul>
-	          <form action="">
-	            <input type="text">
-	          </form>
+	          <!--BÚSQUEDA--><?php $bloque_busqueda = module_invoke('search', 'block_view', 'search'); print render($bloque_busqueda);?><!--FIN BÚSQUEDA-->
 	    </div>
 	</section>
 </header>

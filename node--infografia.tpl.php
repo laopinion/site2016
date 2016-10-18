@@ -46,7 +46,7 @@
     </div>
     <!--Fin Contenido-->
     <div class="izq">
-        <?php 
+          <?php 
           print "<div class='barra desktop'>";
                 if (!empty($content['field_tags'])){ 
                 print "<div class=etiquetas><span>Temas - </span>";
@@ -60,9 +60,14 @@
                 }
                 include("compartirbarra.php");
             print "</div>";
-            print "<div class=texto>".render($content['body'])."</div>";
+            ?>
+            <div class="texto">
+            <?php include("pautas/dashbid_inarticle.php"); ?>
+            <?php print render($content['body']); ?>
+            </div>
+            <?php
             print "<div class=autor>".render($content['field_autor'])."</div>"; 
-        ?>
+            ?>
         <script src="http://icarus-wings.admanmedia.com/intext/intext_vast.js?pmu=ed9c414a;pmb=247b8ee9;size=600x338;visibility=50"data-adm-player="intext"></script>
         <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-90577');print render($block['content']); ?></div><!--FIN formulario-->
     <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_468x60.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
