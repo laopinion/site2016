@@ -79,7 +79,27 @@
 	      	</div>
 	      	<div class="right">
 	      		<!--Revista La O--><div class="revista"><a href="http://www.revistalao.co" target="_blank">Revista La Ó</a></div><?php $view = views_get_view('side'); print $view->preview('block_4'); ?><!--FIN Revista La O-->
-				<!--Actividad social--><div class="actividad"><div class="color"></div><a href="">Actividad social</a></div><?php $view = views_get_view('side'); print $view->preview('block_5'); ?><!--FIN Actividad social-->
+	      		<div class="last-especiales">
+	      			<div class="header">
+	      				<div class="titulo"><a href="http://especiales.laopinion.com.co/"><h2>últimos especiales</h2></a></div>
+	      				<div class="logo"></div>
+	      			</div>
+	      			<div class="body">
+	      				<div class="especial">
+	      					<a class="foto" href="http://especiales.laopinion.com.co/frontera/index.html"></a>
+	      					<div class="info">
+	      						<a href="http://especiales.laopinion.com.co/frontera/index.html"><h3>LA FRONTERA, UN AÑO DESPUÉS DEL CIERRE</h3></a>
+	      					</div>
+	      				</div>
+	      				<div class="especial">
+	      					<a href="http://especiales.laopinion.com.co/republica-independiente-de-la-coca" class="foto"></a>
+	      					<div class="info">
+	      						<a href="http://especiales.laopinion.com.co/republica-independiente-de-la-coca"><h3>EL CATATUMBO Y LOS CULTIVOS ILÍCITOS</h3></a>
+	      					</div>
+	      				</div>
+	      			</div>
+	      		</div>
+				<!--Actividad social--><div class="actividad"><div class="color"></div><a href="<?php print base_path(); ?>actividad-social">Actividad social</a></div><?php $view = views_get_view('side'); print $view->preview('block_5'); ?><!--FIN Actividad social-->
 			</div> 
 			<div class="center">
 				<div class="productos"><div class="color"></div><a href="<?php print base_path(); ?>productos">Productos La Opinión</a></div><?php include_once("productos.php") ?>
