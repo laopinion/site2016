@@ -92,7 +92,7 @@
 	      					</div>
 	      				</div>
 	      				<div class="especial">
-	      					<a href="http://especiales.laopinion.com.co/republica-independiente-de-la-coca" class="foto"></a>
+	      					<a href="http://especiales.laopinion.com.co/republica-independiente-de-la-coca" class="foto2"></a>
 	      					<div class="info">
 	      						<a href="http://especiales.laopinion.com.co/republica-independiente-de-la-coca"><h3>EL CATATUMBO Y LOS CULTIVOS ILÍCITOS</h3></a>
 	      					</div>
