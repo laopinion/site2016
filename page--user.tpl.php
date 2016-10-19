@@ -5,7 +5,7 @@
         <div class="login"></div>
         <div id="inicio_sesion">
           <?php
-          print(drupal_render(drupal_get_form('user_login_block')));
+            print(drupal_render(drupal_get_form('user_login_block')));
           ?>
         </div>
         <!--Fin Contenido-->

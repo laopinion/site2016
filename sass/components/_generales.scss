@@ -132,12 +132,12 @@ header{
     display: none;
 }
 //FORM BOLETIN
-#newsletter{float: left;background-color: #F2F2F2;width: 100%;height: 60px;display: flex;display: -webkit-flex;display: -moz-flex; justify-content: center; -webkit-justify-content: center; -moz-justify-content: center;
+#newsletter{float: left;background-color: #7DA4AD;width: 100%;height: 80px;display: flex;display: -webkit-flex;display: -moz-flex; justify-content: center; -webkit-justify-content: center; -moz-justify-content: center;
     .form-item.webform-component{display: inline-block;vertical-align: top;margin-bottom: 0;position: relative;bottom: -10px;
-        .email{width: 300px;background-color: #D8D8D8;border: 0;height: 21px;
-            
+        .email{width: 300px;background-color: #D8D8D8;border: 0;height: 21px;position: absolute; bottom: 0;}
+        .description{position: relative;top: -28px;text-align: center;font-size: 16px;color: #fff;
+            strong{font-size: 28px;}
         }
-        .description{position: relative;top: -45px;text-align: center;font-size: 13px;color: #808080;}
     }
     .form-actions{display: inline-block; vertical-align: top;margin-bottom: 0;position: relative;bottom: -10px;
         input{background-color: #BB0410;border: none;color: #fff;cursor: pointer;height: 21px;}
