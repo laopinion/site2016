@@ -69,7 +69,7 @@
       </div>
       <?php
       print "<div class=autor>".render($content['field_autor'])."</div>";           
-      ?>
+      ?>      
       <script src="http://icarus-wings.admanmedia.com/intext/intext_vast.js?pmu=ed9c414a;pmb=247b8ee9;size=600x338;visibility=50"data-adm-player="intext"></script>
       <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-118209');print render($block['content']); ?></div><!--FIN formulario-->
     </div>
