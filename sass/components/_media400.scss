@@ -545,13 +545,13 @@
 	}
 	//Fin Juegos Olimpicos
 	//FORM BOLETIN
-	#newsletter{margin-bottom: 50px;
+	#newsletter{margin-bottom: 50px;height: 100px;
 		form{width: 100%;}
 	    .form-item.webform-component{width:90%;
-	        .email{width: 100%;margin: 0px 10px;position: relative;top: 10px;}
+	        .email{width: 60%;margin: 0px 10px;}
 	        .description{height:auto;}
 	    }
-	    .form-actions{padding: 0px;width: 82px;margin: 0 auto;float: none;display: block;bottom:10px;margin-top: 20px;
+	    .form-actions{
 	        input{}
 	    }
 	}
