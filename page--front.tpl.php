@@ -1,5 +1,6 @@
 <?php include("pautas/home.php"); ?>
 <?php include("pautas/clickio_fixed.php"); ?>
+<?php include("pautas/lemonnet_skin.php"); ?>
 <div class="pautas_header">
     <!--ANUNCIO 728x90--><div class="pauta p728x90"><h2 class="anuncio_txt">Publicidad</h2><div class="info"></div><?php include("pautas/H_728x90.php"); ?></div><!--FIN 1.ANUNCIO 728x90-->
     <!--ANUNCIO 220x90--><div class="pauta p220x90"><h2 class="anuncio_txt">Publicidad</h2><div class="info"></div><?php include("pautas/H_220x90.php"); ?></div><!--FIN 2.ANUNCIO 220x90-->
@@ -84,7 +85,7 @@
 			<div class="center">
 				<div class="productos"><div class="color"></div><a href="<?php print base_path(); ?>productos">Productos La Opinión</a></div><?php include_once("productos.php") ?>
 				<!--PORTADA--><?php $view = views_get_view('principal'); print $view->preview('block_16'); ?><!--FIN PORTADA-->
-				<div class="servicios"><div class="color"></div><a href="<?php print base_path(); ?>servicios">Servicios</a></div><?php //include_once("servicios.php") ?>
+				<div class="servicios"><div class="color"></div><a href="<?php print base_path(); ?>servicios">Servicios</a></div><?php include_once("servicios.php") ?>
 			</div>     		
 		</div>
       </div> 
