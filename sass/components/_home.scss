@@ -924,7 +924,7 @@
             .revista{width:100%;padding: 0px 0px 5px 0px;top:-40px;position: relative;float:left;
                 a{background:url(../images/iconos/lao.svg) 5px -9px/70px auto no-repeat #FF0000;height: 50px;width: 70px;text-indent: -9999px; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px 0px 0px 5px;z-index: 1;left: 10px;position: relative;margin: 0px; z-index:1;top:20px;}
             }
-            .view-id-side.view-display-id-block_4{background:#fff; width:258px;height:509px; float:left;position: relative;margin-bottom:10px; border:1px solid #D9D9D9; padding:20px;top:-55px;
+            .view-id-side.view-display-id-block_4{background:#fff; width:258px;height:auto; float:left;position: relative;margin-bottom:10px; border:1px solid #D9D9D9; padding:20px;top:-55px;
                 .view-content{top: 40px;position: relative;}
                 .views-row {margin-bottom:10px;float:left;width:258px; padding:0px;}
                 .views-row-last{margin-bottom:0px; border-bottom:none;padding:0px;}
@@ -975,9 +975,31 @@
                     }
                 }
             }
+            //Especiales bloque
+            .last-especiales{width: 280px;background-color: #ECECEC;float: left;padding: 25px 10px;position: relative;top: -60px;
+                .header{display: flex;display: -webkit-flex;display: -moz-flex;
+                    .titulo{height: 32px;width: 48%;text-align: center;font-size: 12px;text-transform: uppercase;line-height: 16px;padding: 10px 0;background-color: #B61D21;border-radius: 20px 0px 0px 20px;
+                        h2{margin: 0;font-weight: 400;}
+                        a{text-decoration: none; color: #fff;}
+                    }
+                    .logo{background: url(../images/iconos/logo-especiales-2.svg) -12px -6px/154px auto no-repeat;height: 51px;width: 51%;margin-left: 5px;}
+                }
+                .body{
+                    .especial{display: flex;display: -webkit-flex;display: -moz-flex;align-items: center;-webkit-align-items: center;-moz-align-items: center;margin-bottom: 0;margin-top: 10px; 
+                        a{text-decoration: none;color: #333;}
+                        .foto{margin-right: 5px;background: url(../images/especial-fron.jpg) 0px 0px/138px auto no-repeat;width: 50%;height: 79px;}
+                        .foto2{margin-right: 5px;background: url(../images/especial-coca.jpg) 0px 0px/138px auto no-repeat;width: 50%;height: 79px;}
+                        .info{width: 50%;
+                            h3{margin: 0;font-size: 16px;}
+                            p{font-size: 14px;margin-top: 5px;}
+                        }
+                    }
+                }
+            }
             //ACTIVIDAD SOCIAL
             .actividad{top:-44px; width:100%;height: 11px;color:$seccion; text-decoration:none; text-transform:uppercase;font-size:12px; float:left; padding:0px 0px 5px 5px;position: relative;margin: 0px;
                 .color{background:$tendencias; height:10px; width:25px; float:left;position: relative;text-indent:-9999px; margin-right:5px;}
+                a{text-decoration: none;color:$seccion;}
             }
             .view-id-side.view-display-id-block_5{background:#F2F2F2; width:258px;height:auto; float:left;position: relative;margin-bottom:20px; border:1px solid #D9D9D9; padding:20px;top:-44px;
                 .views-row {margin-bottom:10px;float:left;width:258px; padding:0px 0px 10px 0px; border-bottom:1px solid #ccc;}

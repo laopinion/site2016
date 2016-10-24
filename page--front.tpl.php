@@ -28,11 +28,11 @@
 		      	</div>
 		      	<!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php //include("pautas/Hm_320x50_2.php"); ?></div><!--FIN ANUNCIO 320x50-->
 		      	<div class="cen">
-		      		<!--Deportes--><div class="deportes"><div class="color"></div><a href="<?php print base_path(); ?>deportes">Deportes</a></div><?php $view = views_get_view('principal'); print $view->preview('block_6'); ?><!--FIN Deportes-->
+		      		<!--Proceso de paz--><?php $view = views_get_view('especiales'); print $view->preview('block_5'); ?><!--FIN Proceso de paz-->
 		      		<!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php //include("pautas/H_300x250_3.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
 					<!--Economía--><div class="economia"><div class="color"></div><a href="<?php print base_path(); ?>economia">Economía</a></div><div id="indicadores"><h2>Indicadores</h2><div class="info"><a href="<?php print base_path(); ?>economia"><?php $tmp = op_indicadores_home(); print $tmp; ?></a></div><div class="patrocinio"><span>Patrocinado por</span><div class="pauta p88x31"><a href="http://megacambio.blogspot.com/" target="_blank"><img src="<?php print base_path(); ?>sites/default/files/ads/megacambio.png"> </a></div></div></div><?php $view = views_get_view('principal'); print $view->preview('block_8'); ?><!--FIN Economía-->
 		      		<!--Columna--><?php $view = views_get_view('principal'); print $view->preview('block_4'); ?><!--FIN Columna-->
-		      		<!--Proceso de paz--><?php $view = views_get_view('especiales'); print $view->preview('block_5'); ?><!--FIN Proceso de paz-->
+		      		<!--Deportes--><div class="deportes"><div class="color"></div><a href="<?php print base_path(); ?>deportes">Deportes</a></div><?php $view = views_get_view('principal'); print $view->preview('block_6'); ?><!--FIN Deportes-->
 		      	</div>
 		      	<!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php //include("pautas/Hm_320x50_3.php"); ?></div><!--FIN ANUNCIO 320x50-->
 		      	<div class="mid">
@@ -80,7 +80,27 @@
 	      	</div>
 	      	<div class="right">
 	      		<!--Revista La O--><div class="revista"><a href="http://www.revistalao.co" target="_blank">Revista La Ó</a></div><?php $view = views_get_view('side'); print $view->preview('block_4'); ?><!--FIN Revista La O-->
-				<!--Actividad social--><div class="actividad"><div class="color"></div><a href="">Actividad social</a></div><?php $view = views_get_view('side'); print $view->preview('block_5'); ?><!--FIN Actividad social-->
+	      		<div class="last-especiales">
+	      			<div class="header">
+	      				<div class="titulo"><a href="http://especiales.laopinion.com.co/"><h2>últimos especiales</h2></a></div>
+	      				<div class="logo"></div>
+	      			</div>
+	      			<div class="body">
+	      				<div class="especial">
+	      					<a class="foto" href="http://especiales.laopinion.com.co/frontera/index.html"></a>
+	      					<div class="info">
+	      						<a href="http://especiales.laopinion.com.co/frontera/index.html"><h3>LA FRONTERA, UN AÑO DESPUÉS DEL CIERRE</h3></a>
+	      					</div>
+	      				</div>
+	      				<div class="especial">
+	      					<a href="http://especiales.laopinion.com.co/republica-independiente-de-la-coca" class="foto2"></a>
+	      					<div class="info">
+	      						<a href="http://especiales.laopinion.com.co/republica-independiente-de-la-coca"><h3>EL CATATUMBO Y LOS CULTIVOS ILÍCITOS</h3></a>
+	      					</div>
+	      				</div>
+	      			</div>
+	      		</div>
+				<!--Actividad social--><div class="actividad"><div class="color"></div><a href="<?php print base_path(); ?>actividad-social">Actividad social</a></div><?php $view = views_get_view('side'); print $view->preview('block_5'); ?><!--FIN Actividad social-->
 			</div> 
 			<div class="center">
 				<div class="productos"><div class="color"></div><a href="<?php print base_path(); ?>productos">Productos La Opinión</a></div><?php include_once("productos.php") ?>

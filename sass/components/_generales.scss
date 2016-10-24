@@ -132,17 +132,42 @@ header{
     display: none;
 }
 //FORM BOLETIN
-#newsletter{float: left;background-color: #F2F2F2;width: 100%;height: 60px;display: flex;display: -webkit-flex;display: -moz-flex; justify-content: center; -webkit-justify-content: center; -moz-justify-content: center;
-    .form-item.webform-component{display: inline-block;vertical-align: top;margin-bottom: 0;position: relative;bottom: -10px;
-        .email{width: 300px;background-color: #D8D8D8;border: 0;height: 21px;
-            
+#newsletter{margin: 0 auto;background-color: #7DA4AD;width: 98%;height: 80px;display: flex;display: -webkit-flex;display: -moz-flex; justify-content: center; -webkit-justify-content: center; -moz-justify-content: center;
+    form{position: relative;width: 100%;}
+    .form-item.webform-component{
+        .email{font-size: 18px;width: 350px;background-color: #fff;border: 0;height: 32px;position: absolute;bottom: 5px;left: 125px;padding: 0;}
+        .description{position: absolute;top: 0;left: 0;right: 0;margin: 0 auto;text-align: center;font-size: 16px;color: #fff;width: 480px;
+            strong{font-size: 28px;}
+            .logo{background: url(../images/logo.svg) -2px -4px/154px auto no-repeat;width: 145px;height: 30px;text-indent: -9999px;display: inline-block;vertical-align: bottom;}
         }
-        .description{position: relative;top: -45px;text-align: center;font-size: 13px;color: #808080;}
     }
-    .form-actions{display: inline-block; vertical-align: top;margin-bottom: 0;position: relative;bottom: -10px;
-        input{background-color: #BB0410;border: none;color: #fff;cursor: pointer;height: 21px;}
+    .form-actions{margin: 0;position: absolute;bottom: 5px;right: 122px;
+        input{background-color: #BB0410;border: none;color: #fff;cursor: pointer;height: 32px;width: 80px;}
     }
 }
+#newsletter:before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 0 25px 15px;
+    border-color: transparent transparent #536273 transparent;
+    position: absolute;
+    left: -9px;
+}
+
+#newsletter:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 25px 0 0 15px;
+    border-color: transparent transparent transparent #536273;
+    position: absolute;
+    right: -8px;
+}
+
+#adaptvSpotDiv_2{display: none;}
 
 /*PAGINADOR PARA SECCIONES*/
 .pager{
