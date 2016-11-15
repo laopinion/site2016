@@ -66,8 +66,7 @@
 		    	</ul>	
 				<ul class="bloque bloque5">
 		      		<li class="titulo">Términos legales</li>
-		      		<li class="item"><a href="<?php print base_path(); ?>terminos-y-condiciones-de-uso">Términos y condiciones</a></li>
-		      		<li class="item"><a href="<?php print base_path(); ?>politica-de-tratamiento-de-datos-personales">Política y aviso de privacidad de datos personales</a></li>
+		      		<li class="item"><a href="<?php print base_path(); ?>terminos-y-condiciones">Términos y condiciones</a></li>
 		            <li class="item"><a href="<?php print base_path(); ?>derechos-de-autor">Derechos de autor</a></li>
 		      		<li class="item"><a href="http://sic.gov.co">Superintendencia de Industria y Comercio</a></li>
 		    	</ul>

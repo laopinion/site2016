@@ -38,17 +38,18 @@
 <!-- Schema.org markup for Google+ -->
 <meta itemprop="name" content="Principales noticias de Cúcuta, Norte de santander y la frontera con Venezuela - La Opinión" />
 <meta itemprop="description" name="description" content="Principales noticias de Cúcuta, Norte de santander y la frontera entre Colombia y Venezuela: Últimas noticias en Cúcuta, frontera, economía, deportes, política y tecnología. Manténgase informado sobre las noticias de Cúcuta, Norte de Santander y la frontera con Venezuela en laopinion.com.co"/>
+<meta property="fb:pages" content="110045065716092" />
 
 <meta itemprop="image" content="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg" />
 <meta name="twitter:image" content="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg"/>
-
-     <!--Icono precomposed-->
-      <link rel="apple-touch-icon-precomposed" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone.png"/>
-      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad.png"/>
-      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-retina.png"/>
-      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad-retina.png"/>
-      <link rel="apple-touch-icon-precomposed" sizes="180x180" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-6-plus.png"/>
-     <!--FIN Icono precomposed-->
+ 
+ <!--Icono precomposed-->
+  <link rel="apple-touch-icon-precomposed" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-6-plus.png">
+ <!--FIN Icono precomposed-->
 
   <?php print $styles; ?>
   <?php print $scripts; ?>
@@ -107,5 +108,24 @@
   }
   </script>
   <!-- END - Google SEO Structured Data -->
+  <!-- Inicio App para instant articles Facebook Development-->
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        appId      : '1892529967635511',
+        xfbml      : true,
+        version    : 'v2.8'
+      });
+    };
+
+    (function(d, s, id){
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) {return;}
+       js = d.createElement(s); js.id = id;
+       js.src = "//connect.facebook.net/en_US/sdk.js";
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+  </script>
+  <!-- Fin App para instant articles Facebook -->
 </body>
 </html>
