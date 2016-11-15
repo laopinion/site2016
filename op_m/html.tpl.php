@@ -10,10 +10,10 @@
 <script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/op/js/taboola.js"></script>
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
 <script type="text/javascript">if(typeof jQuery==='undefined'){document.write(unescape("<scri"+"pt src='<?php print base_path(); ?>sites/default/themes/op/js/jquery-1.8.2.min.js' type='text/javascript'></scri"+"pt>"));}</script>
-<script src="https://cdn.rawgit.com/kottenator/jquery-circle-progress/1.2.0/dist/circle-progress.js"></script>
+<!--<script src="https://cdn.rawgit.com/kottenator/jquery-circle-progress/1.2.0/dist/circle-progress.js"></script>-->
 <script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/op/js/general.js"></script>
-<link rel="stylesheet" type="text/css" href="<?php print base_path(); ?>sites/default/themes/op/css/add2homeScreen.css">
-<link href="<?php print base_path(); ?>sites/default/themes/op/css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="<?php print base_path(); ?>sites/default/themes/op/css/add2homeScreen.css"/>
+<link href="<?php print base_path(); ?>sites/default/themes/op/css/style.css" rel="stylesheet" type="text/css"/>
 
 
 <title><?php print $head_title; ?> | Cúcuta, Norte de Santander</title>
@@ -26,8 +26,8 @@
 <meta itemprop="inLanguage" content="es-ES" />
 <meta property="og:locale:alternate" content="es_CO" />
 <meta property="og:locale" content="es_CO" />
-<link rel="canonical" href="http://www.laopinion.com.co">
-<link rel="image_src" href="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg" />
+<link rel="canonical" href="http://www.laopinion.com.co"/>
+<link rel="image_src" href="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg"/>
 
 <meta name="ROBOTS" content="FOLLOW">
 <meta name="author" content="Diario la Opinión" />
@@ -43,11 +43,11 @@
 <meta name="twitter:image" content="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg"/>
 
      <!--Icono precomposed-->
-      <link rel="apple-touch-icon-precomposed" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone.png">
-      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad.png">
-      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-retina.png">
-      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad-retina.png">
-      <link rel="apple-touch-icon-precomposed" sizes="180x180" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-6-plus.png">
+      <link rel="apple-touch-icon-precomposed" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone.png"/>
+      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad.png"/>
+      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-retina.png"/>
+      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad-retina.png"/>
+      <link rel="apple-touch-icon-precomposed" sizes="180x180" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-6-plus.png"/>
      <!--FIN Icono precomposed-->
 
   <?php print $styles; ?>

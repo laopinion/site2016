@@ -78,7 +78,10 @@
         <span class="diario">$1.400 Ejemplar diario con la suscripción</span>
       </div>
       <div class="info_ps">
-        <p>Valor diario del periódico: De Lunes a Sábados:$1.500 y los Domingos:$2.800.</p>
+        <p>Valor diario del periódico: 
+          Lunes, Miércoles y Viernes: $1.500
+          Martes, Jueves y Sábados: $1.700
+          Domingos: $3.000</p>
       </div>
     </section><!--Fin meses-->
     <section class="suscrip_movil">
@@ -331,7 +334,7 @@
         }else if(opcion == "1 ano"){
             $("#amount").val('299000');
             $("#description").val('Suscripción por 1 año');
-            ajax('290000');
+            ajax('299000');
         }else if(opcion == "1 mes"){
             $("#amount").val('42000');
             $("#description").val('Suscripción por 1 mes');

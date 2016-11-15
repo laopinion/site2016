@@ -20,7 +20,7 @@
 	}//Fin head movil
 
 	#home{
-		#content{
+		#content{margin-top:0px;
 			.left{
 				.izq{margin-bottom: 20px;
 					.view-id-principal.view-display-id-block{width: 100%;
@@ -391,6 +391,12 @@
 			.contenido{
 				.barra{
 					.etiquetas{width: 100%;margin-left: 2px;}
+				}
+				.video-js{width:300px !important; height:auto !important;
+					video{width:100% !important; height:auto !important;}
+				}
+				.clover-slot{width:300px !important; height:auto !important;
+					video{width:100% !important; height:auto !important;}
 				}
 			}
 			.webform-client-form.webform-client-form-90572{margin-top: 20px;

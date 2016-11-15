@@ -3291,10 +3291,10 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
   var c = 0;
   $("header .top_n #menup_n .menu_p #iconos .lupa").click(function(){
       if(c == 0){
-        $("header section").css("top", "56px");
+        $("header section").css("top", "50px");
         c++;
       }else{
-        $("header section").css("top", "-23px");
+        $("header section").css("top", "-40px");
         c = 0;
       }
   });
