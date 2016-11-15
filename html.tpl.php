@@ -42,14 +42,14 @@
 
 <meta itemprop="image" content="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg" />
 <meta name="twitter:image" content="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg"/>
-
-     <!--Icono precomposed-->
-      <link rel="apple-touch-icon-precomposed" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone.png">
-      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad.png">
-      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-retina.png">
-      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad-retina.png">
-      <link rel="apple-touch-icon-precomposed" sizes="180x180" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-6-plus.png">
-     <!--FIN Icono precomposed-->
+ 
+ <!--Icono precomposed-->
+  <link rel="apple-touch-icon-precomposed" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-6-plus.png">
+ <!--FIN Icono precomposed-->
 
   <?php print $styles; ?>
   <?php print $scripts; ?>
