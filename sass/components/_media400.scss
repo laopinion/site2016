@@ -20,7 +20,7 @@
 	}//Fin head movil
 
 	#home{
-		#content{
+		#content{margin-top:0px;
 			.left{
 				.izq{margin-bottom: 20px;
 					.view-id-principal.view-display-id-block{width: 100%;
@@ -392,10 +392,12 @@
 				.barra{
 					.etiquetas{width: 100%;margin-left: 2px;}
 				}
-				.adm-intext{
-	                .video-js, .vjs_video_6048-dimensions, .vjs_video_3-dimensions, .vjs-default-skin{display:block;}
-	            }
-            	.clover-slot{float:left;}
+				.video-js{width:300px !important; height:auto !important;
+					video{width:100% !important; height:auto !important;}
+				}
+				.clover-slot{width:300px !important; height:auto !important;
+					video{width:100% !important; height:auto !important;}
+				}
 			}
 			.webform-client-form.webform-client-form-90572{margin-top: 20px;
 				.form-item.webform-component{position: static;

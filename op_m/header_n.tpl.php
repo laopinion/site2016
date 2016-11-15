@@ -20,7 +20,7 @@
 			        <li class="divider"></li>  
 			        <li><a href="<?php print base_path(); ?>frontera">Frontera</a></li> 
 			        <li class="divider"></li>
-			        <li class="dropdown actualidad"><div class="notificacion"></div><a href="<?php print base_path(); ?>actualidad">Actualidad</a> 
+			        <li class="dropdown actualidad"><!--<div class="notificacion"></div>--><a href="<?php print base_path(); ?>actualidad">Actualidad</a> 
 			            <ul> 
 			                <li><span></span><a href="<?php print base_path(); ?>economia">Economía</a></li>
 			                <hr> 

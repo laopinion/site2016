@@ -9,9 +9,9 @@
               </div>
               <div class="separador"></div>
               <div class="empresa">
-                <div class="imagen"><a href="http://www.laopinion.com.co/sites/default/files/ads/2016/10/11_10_2016_botero.html" target="_blank" ><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/botero.png"></a></div>
+                <div class="imagen"><a href="https://www.facebook.com/boterotex/" target="_blank" ><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/botero.png"></a></div>
                 <div class="info">Boterotex</div>
-                <div class="pagina"><a href="http://www.laopinion.com.co/sites/default/files/ads/2016/10/11_10_2016_botero.html" target="_blank" >Boterotex</a></div>
+                <div class="pagina"><a href="https://www.facebook.com/boterotex/" target="_blank" >Boterotex</a></div>
               </div>
               <div class="separador"></div>
               <div class="empresa">
@@ -24,6 +24,12 @@
                 <div class="imagen"><a href="http://clasificados.laopinion.com.co" target="_blank" ><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/clasificados.png"></a></div>
                 <div class="info">Clasificados La Opinión</div>
                 <div class="pagina"><a href="http://clasificados.laopinion.com.co" target="_blank" >Clasificados.laopinion.com.co</a></div>
+              </div>
+              <div class="separador"></div>
+              <div class="empresa">
+                <div class="imagen"><a href="http://www.laopinion.com.co/sites/default/files/ads/2016/10/23_10_2016_chic.html" target="_blank" ><img src="<?php print base_path(); ?>sites/default/themes/op/images/zonacomercial/chic.png"></a></div>
+                <div class="info">Chic Peluqueria</div>
+                <div class="pagina"><a href="http://www.laopinion.com.co/sites/default/files/ads/2016/10/23_10_2016_chic.html" target="_blank" >Calle 12 # 5 - 15 Centro</a></div>
               </div>
           </div>
       </div>
