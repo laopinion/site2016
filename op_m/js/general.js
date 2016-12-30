@@ -2,7 +2,9 @@ $(document).ready(function(){
       
    $( "#search .informacion .opciones .fechas .form-item-from-date label.edit-from-date" ).replaceWith( "Desde" );
    $( "#search .informacion .opciones .fechas .form-item-to-date label.edit-to-date" ).replaceWith( "Hasta" );
-                  
+   
+   $(".autor a").removeAttr("href");
+
    $(window).scroll(function() {
    var scrolled = $(window).scrollTop();           
     $('.slide').css({'background-position' : '50% '+ (-(scrolled / 5)) + 'px'});
@@ -454,7 +456,51 @@ $(document).ready(function(){
         $(this).find(".foto").css("display","block");
       }
     });
-
+    //Lista
+    $(".view-principal.view-display-id-block_7 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".icon_galeria").css("display","block");
+        $(this).find(".galeria").css("display","block");
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".icon_video").css("display","block");
+        $(this).find(".video").css("display","block");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".icon_podcast").css("display","block");
+        $(this).find(".podcast").css("display","block");
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Artículo"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
+      }
+    });
     //COLOR
     $(".view-principal.view-display-id-block_4 .views-row").each(function(){
       var seccionL = $(this).find(".nota .seccion .color").html();
@@ -703,7 +749,7 @@ $(document).ready(function(){
       }
     });
 
- //INICIO HOME ECONOMIA
+  //INICIO HOME ECONOMIA
   $(".view-id-principal.view-display-id-block_8 .views-row").each(function(){
       var ContentTypeL = $(this).find(".tipo").html();
       if(ContentTypeL == "Galería de imagenes"){
@@ -2726,37 +2772,52 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       }
   });
 
- var tipo = $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row").find(".tipo").html();
-  
-  if(tipo == "Artículo"){
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_galeria").css({display:"none"}); 
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_video").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .galeria").css({display:"none"}); 
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .video").css({display:"none"}); 
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .foto").css({display:"block"});
-      }else
-  if(tipo == "Galería de imagenes"){
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_galeria").css({display:"block"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_video").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .galeria").css({display:"block"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .foto").css({display:"none"});
-      }else 
-  if(tipo == "Video"){
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .video").css({display:"block"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_video").css({display:"block"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_galeria").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .galeria").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .foto").css({display:"none"});
-      }else 
-  if(tipo == "Podcast"){
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .podcast").css({display:"block"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_podcast").css({display:"block"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .video").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_video").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_galeria").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .galeria").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .foto").css({display:"none"});
+
+$(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".icon_galeria").css("display","block");
+        $(this).find(".galeria").css("display","block");
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".icon_video").css("display","block");
+        $(this).find(".video").css("display","block");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".podcast").css("display","block");
+        $(this).find(".icon_podcast").css("display","block");
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Artículo"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
+  });
+
 
   $(".view-aperturas.view-id-aperturas.view-display-id-block_2 .views-row").each(function(){
       var ContentTypeL = $(this).find(".tipo").html();
@@ -2802,6 +2863,8 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
         $(this).find(".foto").css("display","block");
       }
   });
+
+  
 
   var tipo = $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row").find(".tipo").html();
   
@@ -2930,6 +2993,15 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
     $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .icon_galeria").css({display:"none"});
     $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .galeria").css({display:"none"});
     $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .foto").css({display:"none"});
+      }else 
+  if(tipo == "Infografia"){
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .podcast").css({display:"none"});
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .icon_podcast").css({display:"none"});
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .video").css({display:"none"});
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .icon_video").css({display:"none"});
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .icon_galeria").css({display:"none"});
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .galeria").css({display:"none"});
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .foto").css({display:"block"});
       }
 
     $(".view-especiales.view-id-especiales.view-display-id-block_1 .views-row").each(function(){
@@ -3291,10 +3363,10 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
   var c = 0;
   $("header .top_n #menup_n .menu_p #iconos .lupa").click(function(){
       if(c == 0){
-        $("header section").css("top", "56px");
+        $("header section").css("top", "50px");
         c++;
       }else{
-        $("header section").css("top", "-23px");
+        $("header section").css("top", "-70px");
         c = 0;
       }
   });
@@ -3306,369 +3378,369 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
   //   $(this).find('strong').html(parseInt(80 * progress) + '<i>%</i>');
   // });
 
-  var nacionalpsi = $('.nacionalpsi');
-  var porceNsi = $("#plebiscito .nacionalpsi .porcentaje").html();
-  //console.log(porceNsi);
-  porceNsi = porceNsi / 100;
-  //porceNsi = "0."+porceNsi;
+//   var nacionalpsi = $('.nacionalpsi');
+//   var porceNsi = $("#plebiscito .nacionalpsi .porcentaje").html();
+//   //console.log(porceNsi);
+//   porceNsi = porceNsi / 100;
+//   //porceNsi = "0."+porceNsi;
 
-  nacionalpsi.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: porceNsi,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   nacionalpsi.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: porceNsi,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { nacionalpsi.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { nacionalpsi.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { nacionalpsi.circleProgress('value', porceNsi); }, 2100);
-  $("#plebiscito .nacionalpsi .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { nacionalpsi.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { nacionalpsi.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { nacionalpsi.circleProgress('value', porceNsi); }, 2100);
+//   $("#plebiscito .nacionalpsi .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var nacionalpno = $('.nacionalpno');
-  var porceNno = $("#plebiscito .nacionalpno .porcentaje").html();
-  //console.log(porceNno);
-  porceNno = porceNno / 100;
-  //porceNno = "0."+porceNno;
+//   /*--------------------------------------------------------------------------------------*/
+//   var nacionalpno = $('.nacionalpno');
+//   var porceNno = $("#plebiscito .nacionalpno .porcentaje").html();
+//   //console.log(porceNno);
+//   porceNno = porceNno / 100;
+//   //porceNno = "0."+porceNno;
 
-  nacionalpno.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: porceNno,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   nacionalpno.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: porceNno,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { nacionalpno.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { nacionalpno.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { nacionalpno.circleProgress('value', porceNno); }, 2100);
-  $("#plebiscito .nacionalpno .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { nacionalpno.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { nacionalpno.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { nacionalpno.circleProgress('value', porceNno); }, 2100);
+//   $("#plebiscito .nacionalpno .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var nulos = $('.nulosysufraga .nulos');
-  var nulosp = $("#plebiscito .nulosysufraga .nulos .porcentaje").html();
-  //console.log(nulos);
-  nulosp = nulosp / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   var nulos = $('.nulosysufraga .nulos');
+//   var nulosp = $("#plebiscito .nulosysufraga .nulos .porcentaje").html();
+//   //console.log(nulos);
+//   nulosp = nulosp / 100;
+//   //nulos = "0."+nulos;
 
-  nulos.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: nulosp,
-    lineCap: 'round',
-    fill: {color: '#8B9799'}
-  });
+//   nulos.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: nulosp,
+//     lineCap: 'round',
+//     fill: {color: '#8B9799'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { nulos.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { nulos.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { nulos.circleProgress('value', nulosp); }, 2100);
-  $("#plebiscito .nulosysufraga .nulos .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { nulos.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { nulos.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { nulos.circleProgress('value', nulosp); }, 2100);
+//   $("#plebiscito .nulosysufraga .nulos .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var sufragantes = $('.nulosysufraga .sufragantes');
-  var sufragantesp = $("#plebiscito .nulosysufraga .sufragantes .porcentaje").html();
-  //console.log(nulos);
-  sufragantesp = sufragantesp / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   var sufragantes = $('.nulosysufraga .sufragantes');
+//   var sufragantesp = $("#plebiscito .nulosysufraga .sufragantes .porcentaje").html();
+//   //console.log(nulos);
+//   sufragantesp = sufragantesp / 100;
+//   //nulos = "0."+nulos;
 
-  sufragantes.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: sufragantesp,
-    lineCap: 'round',
-    fill: {color: '#8B9799'}
-  });
+//   sufragantes.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: sufragantesp,
+//     lineCap: 'round',
+//     fill: {color: '#8B9799'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { sufragantes.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { sufragantes.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { sufragantes.circleProgress('value', sufragantesp); }, 2100);
-  $("#plebiscito .nulosysufraga .sufragantes .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { sufragantes.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { sufragantes.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { sufragantes.circleProgress('value', sufragantesp); }, 2100);
+//   $("#plebiscito .nulosysufraga .sufragantes .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var cucutapsi = $('.cucuta .cucutapsi');
-  var cucutaP = $("#plebiscito .cucuta .cucutapsi .porcentaje").html();
-  //console.log(nulos);
-  cucutaP = cucutaP / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   var cucutapsi = $('.cucuta .cucutapsi');
+//   var cucutaP = $("#plebiscito .cucuta .cucutapsi .porcentaje").html();
+//   //console.log(nulos);
+//   cucutaP = cucutaP / 100;
+//   //nulos = "0."+nulos;
 
-  cucutapsi.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: cucutaP,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   cucutapsi.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: cucutaP,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { cucutapsi.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { cucutapsi.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { cucutapsi.circleProgress('value', cucutaP); }, 2100);
-  $("#plebiscito .cucuta .cucutapsi .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { cucutapsi.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { cucutapsi.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { cucutapsi.circleProgress('value', cucutaP); }, 2100);
+//   $("#plebiscito .cucuta .cucutapsi .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var cucutapno = $('.cucuta .cucutapno');
-  var cucutaP2 = $("#plebiscito .cucuta .cucutapno .porcentaje").html();
-  //console.log(nulos);
-  cucutaP2 = cucutaP2 / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   var cucutapno = $('.cucuta .cucutapno');
+//   var cucutaP2 = $("#plebiscito .cucuta .cucutapno .porcentaje").html();
+//   //console.log(nulos);
+//   cucutaP2 = cucutaP2 / 100;
+//   //nulos = "0."+nulos;
 
-  cucutapno.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: cucutaP2,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   cucutapno.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: cucutaP2,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { cucutapno.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { cucutapno.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { cucutapno.circleProgress('value', cucutaP2); }, 2100);
-  $("#plebiscito .cucuta .cucutapno .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { cucutapno.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { cucutapno.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { cucutapno.circleProgress('value', cucutaP2); }, 2100);
+//   $("#plebiscito .cucuta .cucutapno .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var patiospsi = $('.patios .patiospsi');
-  var patiosP = $("#plebiscito .patios .patiospsi .porcentaje").html();
-  //console.log(nulos);
-  patiosP = patiosP / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   var patiospsi = $('.patios .patiospsi');
+//   var patiosP = $("#plebiscito .patios .patiospsi .porcentaje").html();
+//   //console.log(nulos);
+//   patiosP = patiosP / 100;
+//   //nulos = "0."+nulos;
 
-  patiospsi.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: patiosP,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   patiospsi.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: patiosP,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { patiospsi.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { patiospsi.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { patiospsi.circleProgress('value', patiosP); }, 2100);
-  $("#plebiscito .patios .patiospsi .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { patiospsi.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { patiospsi.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { patiospsi.circleProgress('value', patiosP); }, 2100);
+//   $("#plebiscito .patios .patiospsi .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var patiospno = $('.patios .patiospno');
-  var patiosP = $("#plebiscito .patios .patiospno .porcentaje").html();
-  //console.log(nulos);
-  patiosP = patiosP / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   var patiospno = $('.patios .patiospno');
+//   var patiosP = $("#plebiscito .patios .patiospno .porcentaje").html();
+//   //console.log(nulos);
+//   patiosP = patiosP / 100;
+//   //nulos = "0."+nulos;
 
-  patiospno.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: patiosP,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   patiospno.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: patiosP,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { patiospno.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { patiospno.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { patiospno.circleProgress('value', patiosP); }, 2100);
-  $("#plebiscito .patios .patiospno .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { patiospno.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { patiospno.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { patiospno.circleProgress('value', patiosP); }, 2100);
+//   $("#plebiscito .patios .patiospno .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var rosariopsi = $('.rosario .rosariopsi');
-  var rosarioP2 = $("#plebiscito .rosario .rosariopsi .porcentaje").html();
-  //console.log(nulos);
-  rosarioP2 = rosarioP2 / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   var rosariopsi = $('.rosario .rosariopsi');
+//   var rosarioP2 = $("#plebiscito .rosario .rosariopsi .porcentaje").html();
+//   //console.log(nulos);
+//   rosarioP2 = rosarioP2 / 100;
+//   //nulos = "0."+nulos;
 
-  rosariopsi.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: rosarioP2,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   rosariopsi.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: rosarioP2,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { rosariopsi.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { rosariopsi.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { rosariopsi.circleProgress('value', rosarioP2); }, 2100);
-  $("#plebiscito .rosario .rosariopsi .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { rosariopsi.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { rosariopsi.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { rosariopsi.circleProgress('value', rosarioP2); }, 2100);
+//   $("#plebiscito .rosario .rosariopsi .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var rosariopno = $('.rosario .rosariopno');
-  var rosarioP2 = $("#plebiscito .rosario .rosariopno .porcentaje").html();
-  //console.log(nulos);
-  rosarioP2 = rosarioP2 / 100;
-  //nulos = "0."+nulos;
+//   --------------------------------------------------------------------------------------
+//   var rosariopno = $('.rosario .rosariopno');
+//   var rosarioP2 = $("#plebiscito .rosario .rosariopno .porcentaje").html();
+//   //console.log(nulos);
+//   rosarioP2 = rosarioP2 / 100;
+//   //nulos = "0."+nulos;
 
-  rosariopno.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: rosarioP2,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   rosariopno.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: rosarioP2,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { rosariopno.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { rosariopno.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { rosariopno.circleProgress('value', rosarioP2); }, 2100);
-  $("#plebiscito .rosario .rosariopno .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { rosariopno.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { rosariopno.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { rosariopno.circleProgress('value', rosarioP2); }, 2100);
+//   $("#plebiscito .rosario .rosariopno .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var ocanapsi = $('.ocana .ocanapsi');
-  var ocanaP = $("#plebiscito .ocana .ocanapsi .porcentaje").html();
-  //console.log(nulos);
-  ocanaP = ocanaP / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   var ocanapsi = $('.ocana .ocanapsi');
+//   var ocanaP = $("#plebiscito .ocana .ocanapsi .porcentaje").html();
+//   //console.log(nulos);
+//   ocanaP = ocanaP / 100;
+//   //nulos = "0."+nulos;
 
-  ocanapsi.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: ocanaP,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   ocanapsi.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: ocanaP,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { ocanapsi.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { ocanapsi.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { ocanapsi.circleProgress('value', ocanaP); }, 2100);
-  $("#plebiscito .ocana .ocanapsi .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { ocanapsi.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { ocanapsi.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { ocanapsi.circleProgress('value', ocanaP); }, 2100);
+//   $("#plebiscito .ocana .ocanapsi .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var ocanapno = $('.ocana .ocanapno');
-  var ocanaP2 = $("#plebiscito .ocana .ocanapno .porcentaje").html();
-  //console.log(nulos);
-  ocanaP2 = ocanaP2 / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   var ocanapno = $('.ocana .ocanapno');
+//   var ocanaP2 = $("#plebiscito .ocana .ocanapno .porcentaje").html();
+//   //console.log(nulos);
+//   ocanaP2 = ocanaP2 / 100;
+//   //nulos = "0."+nulos;
 
-  ocanapno.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: ocanaP2,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   ocanapno.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: ocanaP2,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { ocanapno.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { ocanapno.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { ocanapno.circleProgress('value', ocanaP2); }, 2100);
-  $("#plebiscito .ocana .ocanapno .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { ocanapno.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { ocanapno.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { ocanapno.circleProgress('value', ocanaP2); }, 2100);
+//   $("#plebiscito .ocana .ocanapno .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var pamplonapsi = $('.pamplona .pamplonapsi');
-  var pamplonaP = $("#plebiscito .pamplona .pamplonapsi .porcentaje").html();
-  //console.log(nulos);
-  pamplonaP = pamplonaP / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   var pamplonapsi = $('.pamplona .pamplonapsi');
+//   var pamplonaP = $("#plebiscito .pamplona .pamplonapsi .porcentaje").html();
+//   //console.log(nulos);
+//   pamplonaP = pamplonaP / 100;
+//   //nulos = "0."+nulos;
 
-  pamplonapsi.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: pamplonaP,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   pamplonapsi.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: pamplonaP,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { pamplonapsi.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { pamplonapsi.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { pamplonapsi.circleProgress('value', pamplonaP); }, 2100);
-  $("#plebiscito .pamplona .pamplonapsi .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { pamplonapsi.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { pamplonapsi.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { pamplonapsi.circleProgress('value', pamplonaP); }, 2100);
+//   $("#plebiscito .pamplona .pamplonapsi .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var pamplonapno = $('.pamplona .pamplonapno');
-  var pamplonaP2 = $("#plebiscito .pamplona .pamplonapno .porcentaje").html();
-  //console.log(nulos);
-  pamplonaP2 = pamplonaP2 / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   var pamplonapno = $('.pamplona .pamplonapno');
+//   var pamplonaP2 = $("#plebiscito .pamplona .pamplonapno .porcentaje").html();
+//   //console.log(nulos);
+//   pamplonaP2 = pamplonaP2 / 100;
+//   //nulos = "0."+nulos;
 
-  pamplonapno.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: pamplonaP2,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   pamplonapno.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: pamplonaP2,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { pamplonapno.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { pamplonapno.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { pamplonapno.circleProgress('value', pamplonaP2); }, 2100);
-  $("#plebiscito .pamplona .pamplonapno .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { pamplonapno.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { pamplonapno.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { pamplonapno.circleProgress('value', pamplonaP2); }, 2100);
+//   $("#plebiscito .pamplona .pamplonapno .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var nortepsi = $('.norte .nortepsi');
-  var norteP = $("#plebiscito .norte .nortepsi .porcentaje").html();
-  //console.log(nulos);
-  norteP = norteP / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   var nortepsi = $('.norte .nortepsi');
+//   var norteP = $("#plebiscito .norte .nortepsi .porcentaje").html();
+//   //console.log(nulos);
+//   norteP = norteP / 100;
+//   //nulos = "0."+nulos;
 
-  nortepsi.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: norteP,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   nortepsi.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: norteP,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { nortepsi.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { nortepsi.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { nortepsi.circleProgress('value', norteP); }, 2100);
-  $("#plebiscito .norte .nortepsi .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { nortepsi.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { nortepsi.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { nortepsi.circleProgress('value', norteP); }, 2100);
+//   $("#plebiscito .norte .nortepsi .porcentaje").append("%");
 
-  /*--------------------------------------------------------------------------------------*/
-  var nortepno = $('.norte .nortepno');
-  var norteP2 = $("#plebiscito .norte .nortepno .porcentaje").html();
-  //console.log(nulos);
-  norteP2 = norteP2 / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   var nortepno = $('.norte .nortepno');
+//   var norteP2 = $("#plebiscito .norte .nortepno .porcentaje").html();
+//   //console.log(nulos);
+//   norteP2 = norteP2 / 100;
+//   //nulos = "0."+nulos;
 
-  nortepno.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: norteP2,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   nortepno.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: norteP2,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { nortepno.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { nortepno.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { nortepno.circleProgress('value', norteP2); }, 2100);
-  $("#plebiscito .norte .nortepno .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { nortepno.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { nortepno.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { nortepno.circleProgress('value', norteP2); }, 2100);
+//   $("#plebiscito .norte .nortepno .porcentaje").append("%");
 
-//FIN CIRCULOS PLEBISCITO HOME
+// //FIN CIRCULOS PLEBISCITO HOME
 
-//CIRCULOS PLEBISCITO NOTAS
-  //SI
-  /*--------------------------------------------------------------------------------------*/
-  var notassi = $('#plebiscito_notas .box .nacionalpsi');
-  var notasP1 = $("#plebiscito_notas .box .nacionalpsi .porcentaje").html();
-  //console.log(nulos);
-  notasP1 = notasP1 / 100;
-  //nulos = "0."+nulos;
+// //CIRCULOS PLEBISCITO NOTAS
+//   //SI
+//   /*--------------------------------------------------------------------------------------*/
+//   var notassi = $('#plebiscito_notas .box .nacionalpsi');
+//   var notasP1 = $("#plebiscito_notas .box .nacionalpsi .porcentaje").html();
+//   //console.log(nulos);
+//   notasP1 = notasP1 / 100;
+//   //nulos = "0."+nulos;
 
-  notassi.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: notasP1,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   notassi.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: notasP1,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { notassi.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { notassi.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { notassi.circleProgress('value', notasP1); }, 2100);
-  $("#plebiscito_notas .box .nacionalpsi .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { notassi.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { notassi.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { notassi.circleProgress('value', notasP1); }, 2100);
+//   $("#plebiscito_notas .box .nacionalpsi .porcentaje").append("%");
   
-  /*--------------------------------------------------------------------------------------*/
-  //NO
-  var notasno = $('#plebiscito_notas .box .nacionalpno');
-  var notasP2 = $("#plebiscito_notas .box .nacionalpno .porcentaje").html();
-  //console.log(nulos);
-  notasP2 = notasP2 / 100;
-  //nulos = "0."+nulos;
+//   /*--------------------------------------------------------------------------------------*/
+//   //NO
+//   var notasno = $('#plebiscito_notas .box .nacionalpno');
+//   var notasP2 = $("#plebiscito_notas .box .nacionalpno .porcentaje").html();
+//   //console.log(nulos);
+//   notasP2 = notasP2 / 100;
+//   //nulos = "0."+nulos;
 
-  notasno.circleProgress({
-    startAngle: -Math.PI / 2,
-    value: notasP2,
-    lineCap: 'round',
-    fill: {color: '#95D9E8'}
-  });
+//   notasno.circleProgress({
+//     startAngle: -Math.PI / 2,
+//     value: notasP2,
+//     lineCap: 'round',
+//     fill: {color: '#95D9E8'}
+//   });
 
-  // let's emulate dynamic value update
-  setTimeout(function() { notasno.circleProgress('value', 0.7); }, 1000);
-  setTimeout(function() { notasno.circleProgress('value', 1.0); }, 1100);
-  setTimeout(function() { notasno.circleProgress('value', notasP2); }, 2100);
-  $("#plebiscito_notas .box .nacionalpno .porcentaje").append("%");
+//   // let's emulate dynamic value update
+//   setTimeout(function() { notasno.circleProgress('value', 0.7); }, 1000);
+//   setTimeout(function() { notasno.circleProgress('value', 1.0); }, 1100);
+//   setTimeout(function() { notasno.circleProgress('value', notasP2); }, 2100);
+//   $("#plebiscito_notas .box .nacionalpno .porcentaje").append("%");
 //FIN CIRCULOS PLEBISCITO NOTAS
 
     //MENU MOVIL

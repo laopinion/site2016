@@ -8,6 +8,11 @@
 #home{width: 100%;position: relative;height:auto; float:left;
     .fijo{display:none;}
     #content{width:1006px;padding:20px 09px;margin:0 auto; position: relative;
+        .enlace_especial{width: 100%;height: auto;padding: 0px 0px 0px 0px;position: relative;top: 0px; float: left;
+            a {
+                img{position: relative;margin: 0 auto;width: 320px;height: 90px;border:0;display: block;}
+            }
+        }
         .left{width:690px;margin-right:15px; float:left; position: relative; height:auto;
             //IZQUIERDA
             .izq{width:375px;height:auto; float:left;position: relative; margin:0px 15px 0px 0px;
@@ -377,9 +382,9 @@
                     .views-row-1{margin-bottom:10px; border-bottom:1px solid #D9D9D9; padding:0px 0px 10px 0px;
                         .nota{height:auto; float:left; position: relative; width:258px;
                             .tipo{display:none;}
-                            .icon_video{display:none;background:url(../images/iconos/video.svg) -9px -3px/55px auto no-repeat;height: 34px;width: 40px;text-indent: -9999px;float: left;position: absolute; right: 160px;top: 25px;opacity:0.7; z-index: 1;}
-                            .icon_galeria{display:none;background:url(../images/iconos/galeria.svg) -9px -3px/55px auto no-repeat;height: 34px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 160px;top: 25px;opacity:0.7; z-index: 1;}
-                            .icon_podcast{display:none;background:url(../images/iconos/podcast.svg) -9px -3px/55px auto no-repeat;height: 34px;width: 40px;text-indent: -9999px;float: left;position: absolute;right: 160px;top: 25px;opacity:0.7; z-index: 1;}
+                            .icon_video{display:none;background:url(../images/iconos/video.svg) -9px -3px/55px auto no-repeat;height: 34px;width: 40px;text-indent: -9999px;float: left;position: absolute; left: 0px;top: 100px;opacity:0.7; z-index: 1;}
+                            .icon_galeria{display:none;background:url(../images/iconos/galeria.svg) -9px -3px/55px auto no-repeat;height: 34px;width: 40px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 100px;opacity:0.7; z-index: 1;}
+                            .icon_podcast{display:none;background:url(../images/iconos/podcast.svg) -9px -3px/55px auto no-repeat;height: 34px;width: 40px;text-indent: -9999px;float: left;position: absolute;left: 0px;top: 100px;opacity:0.7; z-index: 1;}
                             .seccion{width:100%; border-bottom:1px solid #DBDBDB; padding: 0px 0px 5px 0px;height: 11px;margin-bottom:10px;
                                 .color{background:$seccion; height:10px; width:25px; float:left;position: relative;text-indent:-9999px;}
                                 a{color:$seccion; text-decoration:none; text-transform:uppercase;font-size:13px; float:left; padding:0px 0px 0px 5px;top: -2px;position: relative;margin: 0px;}
@@ -512,6 +517,18 @@
         }//FIN LEFT    
         //DERECHA
         .right{width:300px;float:left; position: relative; height:auto;
+            #envivo{background:#1A1A1A; position: relative; float:left; width:280px;height:auto; padding:10px; z-index:1;
+                span{background: url(../images/iconos/live.svg) 0px -6px/40px auto no-repeat;color: #fff;font-size: 12px;font-weight: 500;height: 20px;float: left;width: auto;position: relative;padding-left: 46px;text-transform: uppercase;}
+                .nota{width:280px; height:auto;float:left; position: relative; padding:0px;
+                    .player{display:block; float:left; position: relative; overflow:hidden; width:280px; height:180px;
+                        iframe{width:280px; height:180px;transition:all 0.2s ease;}
+                    }
+                    .info{width:280px; padding:10px 0px; float:left; position: relative;background:#1A1A1A; height:auto;
+                        .titulo{float:left; position: relative; width:100px; height:auto; float:left; line-height:20px;padding:10px 0px; margin-bottom:0px;font-size: 18px; font-weight:600; text-decoration:none; color:#fff;}
+                        .foto{background: url(../images/live/3vive.png) 0px 0px/160px auto no-repeat;height: 135px;width: 160px;float: left;position: relative;margin-right:10px;}
+                    }
+                }
+            }
             .lo{background:#1A1A1A; position: relative; float:left; width:280px;height:10px; padding:10px; z-index:1;
                 .mas{color:#fff; font-size:24px; font-weight:600; text-transform: uppercase;width: 60px;height: 30px;position: absolute;background: #1A1A1A;padding: 0px 10px 0px 0px;left: 0px;
                     span{color:#BD0000; font-size:26px; font-weight:600;float:left;width: auto;position: relative;left: 46px;}
@@ -976,21 +993,21 @@
                 }
             }
             //Especiales bloque
-            .last-especiales{width: 280px;background-color: #ECECEC;float: left;padding: 25px 10px;position: relative;top: -60px;
-                .header{display: flex;display: -webkit-flex;display: -moz-flex;
-                    .titulo{height: 32px;width: 48%;text-align: center;font-size: 12px;text-transform: uppercase;line-height: 16px;padding: 10px 0;background-color: #B61D21;border-radius: 20px 0px 0px 20px;
-                        h2{margin: 0;font-weight: 400;}
+            #especiales{width: 280px;background-color: #ECECEC;float: left;padding: 10px;position: relative;top: -60px;margin:10px 0px 6px;
+                .head{display: flex;display: -webkit-flex;display: -moz-flex;
+                    .titulo{height: 32px;width: 48%;text-align: center;font-size: 12px;line-height: 16px;padding: 10px 0;background-color: #B61D21;border-radius: 20px 0px 0px 20px;
+                        h2{margin: 0;font-weight: 400;text-transform:uppercase;}
                         a{text-decoration: none; color: #fff;}
                     }
                     .logo{background: url(../images/iconos/logo-especiales-2.svg) -12px -6px/154px auto no-repeat;height: 51px;width: 51%;margin-left: 5px;}
                 }
-                .body{
-                    .especial{display: flex;display: -webkit-flex;display: -moz-flex;align-items: center;-webkit-align-items: center;-moz-align-items: center;margin-bottom: 0;margin-top: 10px; 
+                .content{text-transform:initial;
+                    .especial{display: flex;display: -webkit-flex;display: -moz-flex;align-items: center;-webkit-align-items: center;-moz-align-items: center;margin-bottom: 0;margin-top: 10px;padding:5px 0px; 
                         a{text-decoration: none;color: #333;}
-                        .foto{margin-right: 5px;background: url(../images/especial-fron.jpg) 0px 0px/138px auto no-repeat;width: 50%;height: 79px;}
-                        .foto2{margin-right: 5px;background: url(../images/especial-coca.jpg) 0px 0px/138px auto no-repeat;width: 50%;height: 79px;}
+                        .foto{margin-right: 5px;background: url(../images/especiales/transito.jpg) 0px 0px/138px auto no-repeat;width: 50%;height: 79px;}
+                        .foto2{margin-right: 5px;background: url(../images/especiales/frontera.jpg) 0px 0px/138px auto no-repeat;width: 50%;height: 79px;}
                         .info{width: 50%;
-                            h3{margin: 0;font-size: 16px;}
+                            .nombre{margin: 0;font-size: 16px;font-weight: 600;line-height: 18px;top: 0px;position: relative;margin-top: 0px;}
                             p{font-size: 14px;margin-top: 5px;}
                         }
                     }
