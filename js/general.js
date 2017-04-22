@@ -1,7 +1,22 @@
-$(document).ready(function(){
+$(document).ready(function(e){
       
    $( "#search .informacion .opciones .fechas .form-item-from-date label.edit-from-date" ).replaceWith( "Desde" );
    $( "#search .informacion .opciones .fechas .form-item-to-date label.edit-to-date" ).replaceWith( "Hasta" );
+
+   $('#picoYplaca .btnPyp').click(function(){
+      var style = {
+        right: '0'
+      }
+      $('#picoYplaca .info').css(style);
+      $('#picoYplaca').css({height: '100%', overflow: 'visible'});
+      $(this).css({display: 'none'});
+   });
+
+   $('#picoYplaca .info .cerrar').click(function(){
+      $('#picoYplaca .info').css({right: '-365px'})
+      $('#picoYplaca').css({height: '50%', overflow: 'hidden'});
+      $('#picoYplaca .btnPyp').css({display: 'block'});
+   });
                   
    $(window).scroll(function() {
    var scrolled = $(window).scrollTop();           
@@ -3298,6 +3313,23 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
         c = 0;
       }
   });
+
+
+  //Cambiar la url cuando estamos en scroll infinito solo para la primera nota
+  var pathname = window.location.pathname;
+  $("#nota").data("urlp", pathname);
+  // $("#nota .izq").attr("in-view", "changeUrl('"+pathname+"')");
+  // console.log(pathname);
+  var notasScroll = $(".recientes_footer");
+  if(notasScroll.length){
+    $(window).scroll(function(){
+      var windowTop = $(document).scrollTop();
+      if(windowTop <= notasScroll.offset().top){
+        var ruta = $("#nota").data("urlp");
+        history.pushState(null, "", ruta);
+      }
+    });
+  }
 
   // $('.second.circle').circleProgress({
   // value: 0.1,
