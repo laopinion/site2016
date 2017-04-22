@@ -72,7 +72,7 @@
 </script>
 <meta name="fechaprint" content="<?php print date('m/d/Y h:i:s a', time()); ?>" />
 <?php include_once("lemonnet.php") ?>
-
+<?php include_once("clickio.php") ?>
 
 </head>
 

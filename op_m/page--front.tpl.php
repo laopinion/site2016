@@ -1,6 +1,6 @@
 <?php include("pautas/home.php"); ?>
 <?php include("pautas/clickio_fixed.php"); ?>
-<?php include("pautas/lemonnet_skin.php"); ?>
+<?php // include("pautas/lemonnet_skin.php"); ?>
 <div id= "oreja_div"></div>
 <?php include("pautas/laterales.tpl.php"); ?>
 <div class="pautas_header">
@@ -17,8 +17,10 @@
       	<div id="content">
 		    <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/Hm_320x50_1.php"); ?></div><!--FIN ANUNCIO 320x50-->
 		    <!--ANUNCIO 1000x90--><div class="pauta p1000x90" style="display: none"><?php include("pautas/H_1000x90.php"); ?></div><!--FIN ANUNCIO 1000x90-->
+		    <!-- <div class="movil"><?php // include("envivo.tpl.php"); ?></div> -->
 		    <?php include("aperturas.tpl.php"); ?>
 		    <?php include("temas.tpl.php"); ?>
+		    <!--Imagen Especial--><div class="enlace_especial pauta_movil"><a href="http://bit.ly/estrellamotilona" target="_blank"><img src="<?php print base_path(); ?>sites/default/themes/op/images/especiales/homecucuta.jpg"></a></div>
 		    <div class="left">
 		      	<div class="izq">
 		      		<!--Destacada--><?php print EjecutarViewCache('principal','block','corto'); ?><!--FIN Destacada-->
@@ -42,7 +44,8 @@
 		      		<!--Cúcuta--><div class="cucuta"><div class="color"></div><a href="<?php print base_path(); ?>cucuta">Cúcuta</a></div><?php print EjecutarViewCache('principal','block_7','corto'); ?><!--FIN Cúcuta-->
 	      		</div>
 		    </div>
-	      	<div class="right">      		
+	      	<div class="right"> 
+	      		<?php // include("envivo.tpl.php"); ?>     		
 		      	<!--ANUNCIO 300x250--><div class="pauta p300x250" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/clickio300x250.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
 		      	<!--Lo+ destacada--><div class="lo"><div class="mas">Lo<span>+</span></div></div><?php print EjecutarViewCache('side','block','corto'); ?><!--FIN Lo+ destacada-->
 		      	<!--Lo+ otros--><?php print EjecutarViewCache('side','block_1','corto'); ?><!--FIN Lo+ otros-->
@@ -53,7 +56,7 @@
 				<!--Columnistas--><?php print EjecutarViewCache('side','block_8','hora'); ?><!--FIN Columnistas--><!--FIN Opinión-->
 				<!--ANUNCIO 300x600--><div class="pauta p300x600" style="float:left"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/H_300x250_2.php"); ?></div></div><!--FIN ANUNCIO 300x600-->
 				<!--Deléitese--><div class="deleitese"><a href="http://www.deleitese.co" target="_blank">Deléitese</a></div><?php print EjecutarViewCache('side','block_3','mediano'); ?><!--FIN Deléitese-->
-				<iframe src="http://proyectos_especiales.peradigital.co/nutresa/lo/" width="300" height="250" frameborder="0" align="middle" allowfullscreen=""> </iframe>
+				<!--<iframe src="http://proyectos_especiales.peradigital.co/nutresa/lo/" width="300" height="250" frameborder="0" align="middle" allowfullscreen=""> </iframe>-->
 				<?php // include("vyv.php"); ?>
 	      	</div>
 	      	<div class="center">
@@ -80,6 +83,7 @@
 	      	</div>
 	      	<div class="right">
 	      		<!--Revista La O--><div class="revista"><a href="http://www.revistalao.co" target="_blank">Revista La Ó</a></div><?php print EjecutarViewCache('side','block_4','mediano'); ?><!--FIN Revista La O-->
+				<!--Especiales--><?php include("especiales.php"); ?><!--FIN Especiales-->
 				<!--Actividad social--><div class="actividad"><div class="color"></div>Actividad social</a></div><?php print EjecutarViewCache('side','block_5','hora'); ?><!--FIN Actividad social-->
 			</div> 
 			<div class="center">

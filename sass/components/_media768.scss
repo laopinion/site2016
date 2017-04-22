@@ -232,7 +232,9 @@
 				}
 				.barra.table{display: block;}
 			}//Fin contenido
-			.newsletter{width: 100%;height: auto;}
+			#newsletter{width: 100%;
+				#webform-ajax-wrapper-118209{ width:70%;}
+			}
 			.relacionadas{margin-right: 0; width: 100%;
 				.item{width: 100%; }
 			}
@@ -2387,6 +2389,21 @@
 		}//Fin notas
 	}//Fin 404
 	
+	//EN VIVO}
+	.movil {
+		#envivo{background:#1A1A1A; position: relative; float:left; width:100%;height:auto; padding:10px 0px; z-index:1; display:block; margin-bottom: 20px;
+            span{background: url(../images/iconos/live.svg) 0px -6px/40px auto no-repeat;color: #fff;font-size: 12px;font-weight: 500;height: 20px;float: left;width: auto;position: relative;padding-left: 46px;text-transform: uppercase;}
+            .nota{width:100%; height:auto;float:left; position: relative; padding:0px;
+                .player{display:block; float:left; position: relative; overflow:hidden; width: 98%;height: auto;
+                    iframe{width:100%; height:auto;transition:all 0.2s ease;}
+                }
+                .info{width:100%; padding:10px 0px; float:left; position: relative;background:#1A1A1A; height:auto;
+                    .titulo{float:left; position: relative; width:40%; height:auto; float:left; line-height:20px;padding:10px 0px; margin-bottom:0px;font-size: 18px; font-weight:600; text-decoration:none; color:#fff;}
+                    .foto{background: url(../images/live/3vive.png) 0px 0px/160px auto no-repeat;height: 135px;width: 50%;float: left;position: relative;margin-right:10px;}
+                }
+            }
+        }
+	}
 	//Inicio aperturas
 	#aperturas{width: 100%;
 		/* Aperturas #1 */

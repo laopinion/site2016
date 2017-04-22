@@ -442,7 +442,9 @@
 			}
 		}
 	}
-
+	#pagina{width: 100%;
+		iframe{width:100%;}
+	}
 
 	#aperturas{background-color: #282E30;
 		.view-aperturas.view-id-aperturas.view-display-id-block{
@@ -554,18 +556,26 @@
 	}
 	//Fin Juegos Olimpicos
 	//FORM BOLETIN
-	#newsletter{margin-bottom: 50px;height: 100px;
-		form{width: 100%;}
-	    .form-item.webform-component{width:90%;
-	        .email{width: 60%;margin: 0px 10px;}
-	        .description{height:auto;}
-	    }
-	    .form-actions{
-	        input{}
-	    }
+	#newsletter{margin-bottom: 50px;height:140px;
+		#webform-ajax-wrapper-118209{width:90%;
+			form{width: 100%;}
+		    .form-item.webform-component{width:90%;
+		        .email{width: 90%;margin-top:30px;}
+		        .description{height:auto;}
+		    }
+		    .form-actions{width:100%;
+		        input{width:95%;}
+		    }
+		}    
 	}
 
 	#especiales{
+		.title{
+			.hechos2016{background:url(../images/especiales/hechos2016.jpg) 50% 0px/1006px auto no-repeat !important;width:100%;}	
+		}
+		.pdf{width:100%;
+			a{background:url(../images/especiales/hechos2016_pdf.jpg) 50% 0px/1006px auto no-repeat !important;width:100%;}	
+		}
 		.destacada{width: 100%;
 			.view-especiales.view-id-especiales.view-display-id-block{width: 100%;
 				.views-row{

@@ -13,17 +13,20 @@
 <!-- <script src="https://cdn.rawgit.com/kottenator/jquery-circle-progress/1.2.0/dist/circle-progress.js"></script> -->
 
 <script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/op/js/general.js"></script>
-<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+<!-- <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-sanitize.js"></script>
 <script src="<?php print base_path(); ?>sites/default/themes/op/js/infinite-scroll.js"></script>
 <script src="//unpkg.com/angular-ui-router/release/angular-ui-router.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-inview/2.2.0/angular-inview.min.js"></script>
 <script src="<?php print base_path(); ?>sites/default/themes/op/js/angular-adsense.js"></script>
-<script src="<?php print base_path(); ?>sites/default/themes/op/js/angular.js"></script>
+<script src="<?php print base_path(); ?>sites/default/themes/op/js/angular.js"></script> -->
 <!-- <base href="/"> Importante para poder usar el config de angular  -->
 
 <link rel="stylesheet" type="text/css" href="<?php print base_path(); ?>sites/default/themes/op/css/add2homeScreen.css">
 <link href="<?php print base_path(); ?>sites/default/themes/op/css/style.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="<?php print base_path(); ?>sites/default/themes/op/css/add2homeScreen.css"/>
+<link href="<?php print base_path(); ?>sites/default/themes/op/css/style.css" rel="stylesheet" type="text/css"/>
 
 
 <title><?php print $head_title; ?> | Cúcuta, Norte de Santander</title>
@@ -36,8 +39,8 @@
 <meta itemprop="inLanguage" content="es-ES" />
 <meta property="og:locale:alternate" content="es_CO" />
 <meta property="og:locale" content="es_CO" />
-<link rel="canonical" href="http://www.laopinion.com.co">
-<link rel="image_src" href="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg" />
+<link rel="canonical" href="http://www.laopinion.com.co"/>
+<link rel="image_src" href="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg"/>
 
 <meta name="ROBOTS" content="FOLLOW">
 <meta name="author" content="Diario la Opinión" />

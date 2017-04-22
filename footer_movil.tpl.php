@@ -35,7 +35,7 @@
                 <li class="titulo">Términos legales</li>
                 <li class="item"><a href="<?php print base_path(); ?>terminos-y-condiciones">Términos y condiciones</a></li>
                 <li class="item"><a href="<?php print base_path(); ?>derechos-de-autor">Derechos de autor</a></li>
-                      <li class="item"><a href="http://sic.gov.co">Superintendencia de Industria y Comercio: <strong>www.sic.gov.co</strong></a></li>
+                <li class="item"><a href="http://sic.gov.co">Superintendencia de Industria y Comercio: <strong>www.sic.gov.co</strong></a></li>
             </ul>
             <div class="info_">
                   <ul class="redes_footer">

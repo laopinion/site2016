@@ -17,7 +17,9 @@ $(document).ready(function(e){
       $('#picoYplaca').css({height: '50%', overflow: 'hidden'});
       $('#picoYplaca .btnPyp').css({display: 'block'});
    });
-                  
+   
+   $(".autor a").removeAttr("href");
+
    $(window).scroll(function() {
    var scrolled = $(window).scrollTop();           
     $('.slide').css({'background-position' : '50% '+ (-(scrolled / 5)) + 'px'});
@@ -469,7 +471,51 @@ $(document).ready(function(e){
         $(this).find(".foto").css("display","block");
       }
     });
-
+    //Lista
+    $(".view-principal.view-display-id-block_7 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".icon_galeria").css("display","block");
+        $(this).find(".galeria").css("display","block");
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".icon_video").css("display","block");
+        $(this).find(".video").css("display","block");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".icon_podcast").css("display","block");
+        $(this).find(".podcast").css("display","block");
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Artículo"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
+      }
+    });
     //COLOR
     $(".view-principal.view-display-id-block_4 .views-row").each(function(){
       var seccionL = $(this).find(".nota .seccion .color").html();
@@ -2741,37 +2787,52 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
       }
   });
 
- var tipo = $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row").find(".tipo").html();
-  
-  if(tipo == "Artículo"){
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_galeria").css({display:"none"}); 
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_video").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .galeria").css({display:"none"}); 
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .video").css({display:"none"}); 
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .foto").css({display:"block"});
-      }else
-  if(tipo == "Galería de imagenes"){
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_galeria").css({display:"block"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_video").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .galeria").css({display:"block"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .foto").css({display:"none"});
-      }else 
-  if(tipo == "Video"){
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .video").css({display:"block"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_video").css({display:"block"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_galeria").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .galeria").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .foto").css({display:"none"});
-      }else 
-  if(tipo == "Podcast"){
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .podcast").css({display:"block"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_podcast").css({display:"block"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .video").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_video").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .icon_galeria").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .galeria").css({display:"none"});
-    $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row .nota .foto").css({display:"none"});
+
+$(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row").each(function(){
+      var ContentTypeL = $(this).find(".tipo").html();
+      if(ContentTypeL == "Galería de imagenes"){
+        $(this).find(".icon_galeria").css("display","block");
+        $(this).find(".galeria").css("display","block");
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Video"){
+        $(this).find(".icon_video").css("display","block");
+        $(this).find(".video").css("display","block");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Podcast"){
+        $(this).find(".podcast").css("display","block");
+        $(this).find(".icon_podcast").css("display","block");
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".foto").css("display","none");
+      }else if(ContentTypeL == "Artículo"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
+      }else if(ContentTypeL == "Infografía"){
+        $(this).find(".icon_video").css("display","none");
+        $(this).find(".video").css("display","none");
+        $(this).find(".icon_galeria").css("display","none");
+        $(this).find(".galeria").css("display","none");
+        $(this).find(".icon_podcast").css("display","none");
+        $(this).find(".podcast").css("display","none");
+        $(this).find(".foto").css("display","block");
       }
+  });
+
 
   $(".view-aperturas.view-id-aperturas.view-display-id-block_2 .views-row").each(function(){
       var ContentTypeL = $(this).find(".tipo").html();
@@ -2817,6 +2878,8 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
         $(this).find(".foto").css("display","block");
       }
   });
+
+  
 
   var tipo = $(".view-aperturas.view-id-aperturas.view-display-id-block_5 .views-row").find(".tipo").html();
   
@@ -2945,6 +3008,15 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
     $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .icon_galeria").css({display:"none"});
     $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .galeria").css({display:"none"});
     $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .foto").css({display:"none"});
+      }else 
+  if(tipo == "Infografía"){
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .podcast").css({display:"none"});
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .icon_podcast").css({display:"none"});
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .video").css({display:"none"});
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .icon_video").css({display:"none"});
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .icon_galeria").css({display:"none"});
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .galeria").css({display:"none"});
+    $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .foto").css({display:"block"});
       }
 
     $(".view-especiales.view-id-especiales.view-display-id-block_1 .views-row").each(function(){
@@ -3309,7 +3381,7 @@ $(".view-id-s_general_sub.view-display-id-block_20 .views-row").each(function(){
         $("header section").css("top", "50px");
         c++;
       }else{
-        $("header section").css("top", "-40px");
+        $("header section").css("top", "-70px");
         c = 0;
       }
   });
