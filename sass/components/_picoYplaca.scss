@@ -1,9 +1,9 @@
 #picoYplaca{
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 30vh;
   // height: 1110px;
-  height: 50%;
+  height: 58%;
   overflow: hidden;
   width: 200px;
   z-index: 49;
@@ -13,15 +13,15 @@
     // right: 0;
     transition: .3s;
     .cerrar{
-      display: block;
+      display: none;
       background: url('../images/iconos/btnCerrarPicoYp.svg') no-repeat;
       height: 20px;
       margin: 0 auto;
       width: 25px;
       background-color: #EDEDED;
-      position: absolute;
+      position: fixed;
       cursor: pointer;
-      left: -25px;
+      right: 200px;
       background-position-x: 4px;
     }
     .carros{

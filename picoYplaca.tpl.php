@@ -17,9 +17,9 @@
             if ($dia =="2" ) { print "1 - 8";} 
             if ($dia =="3" ) { print "2 - 7";} 
             if ($dia =="4" ) { print "3 - 6";} 
-            if ($dia =="5" ) { print "4 - 5";}else{
-              print "NO";
-            }
+            if ($dia =="5" ) { print "4 - 5";}
+            if ($dia =="6" ) { print "NO";}
+            if ($dia =="7" ) { print "NO";}
           ?>
         </p>
       </div>
@@ -44,17 +44,17 @@
             if ($dia =="2" ) { print "9";} 
             if ($dia =="3" ) { print "8";} 
             if ($dia =="4" ) { print "7";} 
-            if ($dia =="5" ) { print "6";}else{
-              print "NO";
-            }
+            if ($dia =="5" ) { print "6";}
+            if ($dia =="6" ) { print "NO";}
+            if ($dia =="7" ) { print "NO";}
 
             // if ($dia =="1" ) { print "1";} 
             // if ($dia =="2" ) { print "2";} 
             // if ($dia =="3" ) { print "3";} 
             // if ($dia =="4" ) { print "4";} 
-            // if ($dia =="5" ) { print "5";}else{
-            //   print "NO";
-            // } 
+            // if ($dia =="5" ) { print "5";}
+            // if ($dia =="6" ) { print "NO";}
+            // if ($dia =="7" ) { print "NO";}
           ?>
         </p>
       </div>
@@ -77,9 +77,9 @@
             if ($dia =="2" ) { print "1 - 8";} 
             if ($dia =="3" ) { print "2 - 7";} 
             if ($dia =="4" ) { print "3 - 6";} 
-            if ($dia =="5" ) { print "4 - 5";}else{
-              print "NO";
-            }
+            if ($dia =="5" ) { print "4 - 5";}
+            if ($dia =="6" ) { print "NO";}
+            if ($dia =="7" ) { print "NO";}
           ?>
         </p>
       </div>

@@ -8,14 +8,17 @@ $(document).ready(function(e){
         right: '0'
       }
       $('#picoYplaca .info').css(style);
-      $('#picoYplaca').css({height: '100%', overflow: 'visible'});
+      $('#picoYplaca').css({overflowY: 'scroll'});
+      $('#picoYplaca .info .cerrar').show();
       $(this).css({display: 'none'});
    });
 
    $('#picoYplaca .info .cerrar').click(function(){
       $('#picoYplaca .info').css({right: '-365px'})
-      $('#picoYplaca').css({height: '50%', overflow: 'hidden'});
+      // $('#picoYplaca').css({height: '50%', overflow: 'hidden'});
       $('#picoYplaca .btnPyp').css({display: 'block'});
+      $('#picoYplaca .info .cerrar').hide();
+      $('#picoYplaca').css({overflow: 'hidden'});
    });
    
    $(".autor a").removeAttr("href");
