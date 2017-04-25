@@ -72,22 +72,21 @@
   window.addEventListener('load', loaded, false);
 </script>
 <meta name="fechaprint" content="<?php print date('m/d/Y h:i:s a', time()); ?>" />
-<?php include_once("lemonnet.php") ?>
-
-
+<?php // include_once("lemonnet.php") ?>
+<?php include_once("clickio.php") ?>
+<?php include_once("tailanalytics.php") ?>
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
-  <?php // include_once("admanmedia.php") ?>
   <?php include_once("analyticstracking.php") ?>
   <?php include_once("io.php") ?>
-
+  <?php include_once("admanmedia.php") ?>
+  
   <?php print $page_top; ?>
   <div class="centerContent borderContent">
   <?php print $page; ?>
   <?php print $page_bottom; ?>
   <?php include_once("dataexpandtracking.php") ?>
-  <?php include_once("hotwordstracking.php") ?>
     <div id="footer_desktop"><?php include("footer.tpl.php"); ?></div>
     <div id="footer_movil"><?php include("footer_movil.tpl.php"); ?></div>
   </div>
