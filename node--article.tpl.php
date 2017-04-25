@@ -150,7 +150,116 @@
   <!--FIN Multimedia footer-->
   <hr>
   <div class="center">
-        <div class="productos"><div class="color"></div><a href="<?php print base_path(); ?>productos">Productos La Opinión</a></div><?php include_once("productos.php") ?>
+    <div class="productos"><div class="color"></div><a href="<?php print base_path(); ?>productos">Productos La Opinión</a></div><?php include_once("productos.php") ?>
   </div>
+  <!-- Scroll infinito  -->
+
+  <section ng-app="app" id="scroll-infinito">
+    <div ng-controller="controlador">
+      <div class="view">
+        <div infinite-scroll='article.nextPage()' infinite-scroll-disabled='article.busy' infinite-scroll-distance='1'>
+        <article  ng-controller="contrUrl" class="angular-article">
+          <div ng-repeat='dato in article.items' class="li" style="margin-bottom: 100px; float: left;">
+            <div class="izq">
+              <div class="compartir_table">
+                <!--COMPARTIR-->
+                <div class="compartirbarra">
+                    <ul class="redes_sociales">
+                      <li class="fb"><a class="st_facebook_large" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=www.laopinion.com.co<?php print $node_url ?>&amp;title=<?php print $title ?>', 'facebook-share-dialog', 'width=626,height=436'); return false;"></a></li>
+                      <li class="tw"><a class="st_twitter_large" href="https://twitter.com/intent/tweet?original_referer=http://www.laopinion.com.co<?php print $node_url ?>&amp;text=<?php print $title ?>&amp;tw_p=tweetbutton&amp;url=http://www.laopinion.com.co<?php print $node_url ?>"></a></li>
+                      <li class="go"><a class="st_googleplus_large" href="#" onclick="window.open('https://plus.google.com/share?url=www.laopinion.com.co<?php print $node_url ?>', 'Google +','width=626,height=436'); return false;"></a></li>
+                      <li class="pin"><a class="st_pinterest_large" href="#" onclick="window.open('http://pinterest.com/pin/create/button/?url=www.laopinion.com.co<?php print $node_url ?>', 'Pinterest','width=626,height=436'); return false;"></a></li>
+                      <li class="wp"><a class="st_whatsapp_large" <a href="whatsapp://send?text=<?php print "http://www.laopinion.com.co/".drupal_lookup_path('alias',"node/".$node->nid); ?>" data-action="share/whatsapp/share" rel="nofollow" >Compartir en WhatsApp</a></li>
+                    </ul>
+                </div><!--FIN COMPARTIR-->
+              </div>
+             <!-- div id="id" class="{{dato.nid}}" > 
+              <a ng-href='{{dato.field_ruta}}' class="ruta" ui-sref="article" style="display: none;">{{dato.field_ruta}}</a>
+             </div> -->
+              <div class="contenido" in-view="changeUrl(dato.field_ruta, $index, $inview)">
+                <div class="color"></div>
+                  <div ng-bind-html="dato.seccion" class="seccion"></div>
+                  <div class="sep"> - </div>
+                  <div ng-bind-html="dato.fecha" class="fecha"></div>
+                  <h2 ng-bind-html="dato.title" class="titulo"></h2>
+                  <div ng-bind-html="dato.summary" class="resumen"></div>
+
+                  <div class="barra table">
+                    <div class="etiquetas">
+                      <span>Temas - </span>
+                      <aside ng-bind-html="dato.temas"></aside>
+                    </div>
+                  </div>
+
+                  <div class="foto">
+                    <aside ng-bind-html="dato.foto"></aside>
+                    <div class="pie"> 
+                      <div class="descripcion"></div>
+                      <div class="credito"><span> /  Foto:</span></div>
+                    </div>
+
+                    <div class="barra desktop">
+                      <div class="etiquetas">
+                        <span>Temas - </span>
+                        <aside ng-bind-html="dato.temas"></aside>
+                      </div>
+
+                      <!--COMPARTIR-->
+                      <div class="compartirbarra">
+                          <ul class="redes_sociales">
+                            <li class="fb"><a class="st_facebook_large" href="#" onclick="window.open('https://www.facebook.com/sharer/sharer.php?u=www.laopinion.com.co<?php print $node_url ?>&amp;title=<?php print $title ?>', 'facebook-share-dialog', 'width=626,height=436'); return false;"></a></li>
+                            <li class="tw"><a class="st_twitter_large" href="https://twitter.com/intent/tweet?original_referer=http://www.laopinion.com.co<?php print $node_url ?>&amp;text=<?php print $title ?>&amp;tw_p=tweetbutton&amp;url=http://www.laopinion.com.co<?php print $node_url ?>"></a></li>
+                            <li class="go"><a class="st_googleplus_large" href="#" onclick="window.open('https://plus.google.com/share?url=www.laopinion.com.co<?php print $node_url ?>', 'Google +','width=626,height=436'); return false;"></a></li>
+                            <li class="pin"><a class="st_pinterest_large" href="#" onclick="window.open('http://pinterest.com/pin/create/button/?url=www.laopinion.com.co<?php print $node_url ?>', 'Pinterest','width=626,height=436'); return false;"></a></li>
+                            <li class="wp"><a class="st_whatsapp_large" <a href="whatsapp://send?text=<?php print "http://www.laopinion.com.co/".drupal_lookup_path('alias',"node/".$node->nid); ?>" data-action="share/whatsapp/share" rel="nofollow" >Compartir en WhatsApp</a></li>
+                          </ul>
+                      </div><!--FIN COMPARTIR-->
+                    </div>
+                  </div>
+
+                  <div ng-bind-html="dato.body" class="texto">
+                    <?php //include("pautas/intext_embimedia.php"); ?>
+                  </div>
+                  <div class="autor">
+                    <aside ng-bind-html="dato.autor"></aside>
+                    <!-- <aside ng-bind-html="dato.text"></aside> -->
+                    <!-- <aside ng-bind-html="dato.field_autor"></aside> -->
+                  </div>
+                  <meta content="{{dato.field_ruta}}">
+
+                <!-- <script async src="http://icarus-wings.admanmedia.com/intext/intext_vast.js?pmu=ed9c414a;pmb=247b8ee9;size=600x338;visibility=50" data-adm-player="intext"></script> -->
+                <!-- <adsense ad-client="ca-pub-ed9c414a" ad-slot="247b8ee9" inline-style="display:inline-block;width:728px;height:90px" ad-format="auto"></adsense> -->
+                <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-118209');print render($block['content']); ?></div><!--FIN formulario-->
+              </div>
+              <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"> <aside></aside></div></div><!--FIN ANUNCIO 300x250-->
+              <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p300x250"><?php //include("pautas/Nm_320x50_2.php"); ?></div><!--FIN ANUNCIO 320x50-->
+              <!-- <div pautap></div> -->
+              <div class="pauta p300x250">
+                <div class="info">
+                  <adsense ad-client="ca-pub-3083367533294626" ad-slot="9717777394" inline-style="display:inline-block;width:300px;height:250px" ad-format="auto"></adsense>
+                </div>
+              </div>
+            </div><!--Fin izq-->
+          </div>
+
+<!-- 
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+Anuncios_1 
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-3083367533294626"
+     data-ad-slot="9717777394"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>-->
+          
+        </article>      
+          <div ng-show='article.busy' style="float: left;">Loading data...</div>
+        </div>
+      </div>
+    </div> 
+  </section>
+
 </div>
 <!--Fin Contenido-->

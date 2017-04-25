@@ -1,0 +1,285 @@
+#picoYplaca{
+  position: absolute;
+  right: 0;
+  top: 30vh;
+  // height: 1110px;
+  height: 50%;
+  overflow: hidden;
+  width: 200px;
+  z-index: 49;
+  .info{
+    position: absolute;
+    right: -365px;
+    // right: 0;
+    transition: .3s;
+    .cerrar{
+      display: block;
+      background: url('../images/iconos/btnCerrarPicoYp.svg') no-repeat;
+      height: 20px;
+      margin: 0 auto;
+      width: 25px;
+      background-color: #EDEDED;
+      position: absolute;
+      cursor: pointer;
+      left: -25px;
+      background-position-x: 4px;
+    }
+    .carros{
+      text-align: center;
+      background-color: #EDEDED;
+      h3{
+        font-size: 16px;
+        color: #00485B;
+        margin: 0 0 10px 0;
+      }
+      .iconoCarro{
+        display: block;
+        background: url('../images/iconos/carroCucuta.svg') no-repeat;
+        height: 85px;
+        margin: 0 auto;
+        width: 160px;
+      }
+      .hoy{
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        align-items: center;
+        align-items: -webkit-center;
+        align-items: -moz-center;
+        aside{
+          background-color: #999999;
+          color: white;
+          width: 60px;
+          height: 25px;
+          margin-right: 20px;
+          font-size: 20px;
+        }
+        .numeros{
+          margin: 0;
+          font-size: 45px;
+          color: #00485B;
+          font-weight: bold;
+        }
+      }
+      .divisor{
+        border: 1px solid #00485B;
+        margin: 20px 5px;
+        position: relative;
+        .iconoReloj{
+          display: block;
+          background: url('../images/iconos/relojPicoYp.svg') no-repeat;
+          height: 28px;
+          margin: 0 auto;
+          width: 28px;
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: -15px;
+          background-color: #EDEDED;
+        }
+      }
+      .horario{
+        border-bottom: 3px solid #A8A8A8;
+        margin: 0px 5px;
+        padding-bottom: 10px;
+        p{
+          color: #00485B;
+          margin: 0;
+        }
+      }
+    }
+
+    .taxis{
+      text-align: center;
+      background-color: #EAF6F9;
+      h3{
+        font-size: 16px;
+        color: #00485B;
+        margin: 0 0 10px 0;
+        padding-top: 10px;
+      }
+      .iconoCarro{
+        display: block;
+        background: url('../images/iconos/taxisPicoYp.svg') no-repeat;
+        height: 85px;
+        margin: 0 auto;
+        width: 95px;
+      }
+      .hoy{
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        align-items: center;
+        align-items: -webkit-center;
+        align-items: -moz-center;
+        aside{
+          background-color: #999999;
+          color: white;
+          width: 60px;
+          height: 25px;
+          margin-right: 20px;
+          font-size: 20px;
+        }
+        .numeros{
+          margin: 0;
+          font-size: 45px;
+          color: #00485B;
+          font-weight: bold;
+        }
+      }
+      .divisor{
+        border: 1px solid #00485B;
+        margin: 20px 5px;
+        position: relative;
+        .iconoReloj{
+          display: block;
+          background: url('../images/iconos/relojPicoYp.svg') no-repeat;
+          height: 28px;
+          margin: 0 auto;
+          width: 28px;
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: -15px;
+          background-color: #EAF6F9;
+        }
+      }
+      .horario{
+        border-bottom: 3px solid #999999;
+        margin: 0px 5px;
+        padding-bottom: 10px;
+        p{
+          color: #00485B;
+          margin: 0;
+        }
+      }
+    }
+
+    .carrosV{
+      text-align: center;
+      background-color: #EDEDED;
+      h3{
+        font-size: 16px;
+        color: #00485B;
+        margin: 0 auto 10px auto;
+        padding-top: 10px;
+        width: 55%;
+      }
+      .iconoCarro{
+        display: block;
+        background: url('../images/iconos/carrosVPicoYp.svg') no-repeat;
+        height: 85px;
+        margin: 0 auto;
+        width: 160px;
+      }
+      .hoy{
+        display: flex;
+        display: -webkit-flex;
+        display: -moz-flex;
+        align-items: center;
+        align-items: -webkit-center;
+        align-items: -moz-center;
+        aside{
+          background-color: #A8A8A8;
+          color: white;
+          width: 60px;
+          height: 25px;
+          margin-right: 20px;
+          font-size: 20px;
+        }
+        .numeros{
+          margin: 0;
+          font-size: 45px;
+          color: #00485B;
+          font-weight: bold;
+        }
+      }
+      .divisor{
+        border: 1px solid #00485B;
+        margin: 20px 5px;
+        position: relative;
+        .iconoReloj{
+          display: block;
+          background: url('../images/iconos/relojPicoYp.svg') no-repeat;
+          height: 28px;
+          margin: 0 auto;
+          width: 28px;
+          position: absolute;
+          right: 0;
+          left: 0;
+          top: -15px;
+          background-color: #EDEDED;
+        }
+      }
+      .horario{
+        border-bottom: 3px solid #A8A8A8;
+        margin: 0px 5px;
+        padding-bottom: 25px;
+        p{
+          color: #00485B;
+          margin: 0;
+        }
+      }
+    }
+
+    .mapa{
+      position: relative;
+      background-color: #EAF6F9;
+      padding-bottom: 20px;
+      .iconoMapa{
+        display: block;
+        background: url('../images/iconos/mapaIconoPyp.svg') no-repeat;
+        background-color: #EDEDED;
+        border-radius: 50%;
+        height: 38px;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -20px;
+        width: 28px;
+      }
+      .imgMapa{
+        display: block;
+        background: url('../images/iconos/mapaPyp.svg') no-repeat;
+        height: 122px;
+        margin: 0 auto;
+        width: 120px;
+        a{
+          display: block;
+          height: 100%;
+        }
+      }
+      p{
+        margin: 0;
+        padding: 20px 0 0 0;
+        text-align: center;
+      }
+    }
+  }
+  .btnPyp{
+    cursor: pointer;
+    margin: 0 0 0 auto;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 90px;
+    .iconoPyp{
+      display: block;
+      background: url('../images/iconos/btnPicoYplaca.svg') no-repeat;
+      height: 60px;
+      margin: 0 auto;
+      width: 60px;
+    }
+    p{
+      margin: 0;
+      text-align: center;
+      opacity: 0;
+    }
+  }
+  .btnPyp:hover{
+    p{
+      opacity: 1;
+    }
+  }
+}
