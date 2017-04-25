@@ -7,10 +7,10 @@
   <?php print $head; ?>
   <!-- Set the viewport width to device width for mobile -->
 <script src="<?php print base_path(); ?>sites/default/themes/op/js/add2homeScreen.js" charset="utf-8"></script>
-<script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/op/js/taboola.js"></script>
+<!--<script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/op/js/taboola.js"></script>-->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-<script type="text/javascript">if(typeof jQuery==='undefined'){document.write(unescape("<scri"+"pt src='<?php print base_path(); ?>sites/default/themes/op/js/jquery-1.8.2.min.js' type='text/javascript'></scri"+"pt>"));}</script>
-<!--<script src="https://cdn.rawgit.com/kottenator/jquery-circle-progress/1.2.0/dist/circle-progress.js"></script>-->
+<script type="text/javascript">if(typeof jQuery==='undefined'){document.write(unescape("<scri"+"pt src='<?php print base_path(); ?>sites/default/themes/datilera/js/jquery-1.8.2.min.js' type='text/javascript'></scri"+"pt>"));}</script>
+<!-- <script src="https://cdn.rawgit.com/kottenator/jquery-circle-progress/1.2.0/dist/circle-progress.js"></script> -->
 <script type="text/javascript" src="<?php print base_path(); ?>sites/default/themes/op/js/general.js"></script>
 <link rel="stylesheet" type="text/css" href="<?php print base_path(); ?>sites/default/themes/op/css/add2homeScreen.css"/>
 <link href="<?php print base_path(); ?>sites/default/themes/op/css/style.css" rel="stylesheet" type="text/css"/>
@@ -38,17 +38,18 @@
 <!-- Schema.org markup for Google+ -->
 <meta itemprop="name" content="Principales noticias de Cúcuta, Norte de santander y la frontera con Venezuela - La Opinión" />
 <meta itemprop="description" name="description" content="Principales noticias de Cúcuta, Norte de santander y la frontera entre Colombia y Venezuela: Últimas noticias en Cúcuta, frontera, economía, deportes, política y tecnología. Manténgase informado sobre las noticias de Cúcuta, Norte de Santander y la frontera con Venezuela en laopinion.com.co"/>
+<meta property="fb:pages" content="110045065716092" />
 
 <meta itemprop="image" content="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg" />
 <meta name="twitter:image" content="http://www.laopinion.com.co/sites/default/themes/op/images/compartir.jpg"/>
-
-     <!--Icono precomposed-->
-      <link rel="apple-touch-icon-precomposed" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone.png"/>
-      <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad.png"/>
-      <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-retina.png"/>
-      <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad-retina.png"/>
-      <link rel="apple-touch-icon-precomposed" sizes="180x180" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-6-plus.png"/>
-     <!--FIN Icono precomposed-->
+ 
+ <!--Icono precomposed-->
+  <link rel="apple-touch-icon-precomposed" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone.png">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad.png">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="<?php print base_path(); ?>sites/default/themes/op/images/icon/touch-icon-iphone-6-plus.png">
+ <!--FIN Icono precomposed-->
 
   <?php print $styles; ?>
   <?php print $scripts; ?>
@@ -73,14 +74,13 @@
 <meta name="fechaprint" content="<?php print date('m/d/Y h:i:s a', time()); ?>" />
 <?php include_once("lemonnet.php") ?>
 <?php include_once("clickio.php") ?>
-
+<?php // include_once("tailanalytics.php") ?>
 </head>
 
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
   <?php // include_once("admanmedia.php") ?>
   <?php include_once("analyticstracking.php") ?>
   <?php include_once("io.php") ?>
-
   <?php print $page_top; ?>
   <div class="centerContent borderContent">
   <?php print $page; ?>
@@ -107,12 +107,11 @@
   }
   </script>
   <!-- END - Google SEO Structured Data -->
-
-  <!-- Inicio App para instant articles Facebook -->
+  <!-- Inicio App para instant articles Facebook Development-->
   <script>
     window.fbAsyncInit = function() {
       FB.init({
-        appId      : '351474698523447',
+        appId      : '1892529967635511',
         xfbml      : true,
         version    : 'v2.8'
       });

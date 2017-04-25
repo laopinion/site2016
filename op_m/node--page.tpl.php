@@ -1,6 +1,6 @@
 <!--Contenido-->
     <div class="notas_header">
-    <!--ANUNCIO 728x90--><div class="pauta p728x90n"><?php include("pautas/N_728x90.php"); ?></div><!--FIN ANUNCIO 728x90-->
+    <!--ANUNCIO 728x90--><div class="pauta p728x90n"><?php include("pautas/clickio728x90.php"); ?></div><!--FIN ANUNCIO 728x90-->
     </div>
     <!--ANUNCIO 1000x50 Flotante--><div class="pauta flotante"><?php include("pautas/N_flotante.php"); ?></div><!--FIN ANUNCIO 1000x50 Flotante-->
     <!--ANUNCIO Layer--><?php include("pautas/N_layer.php"); ?><!--FIN ANUNCIO Layer-->
@@ -16,22 +16,10 @@
             <?php print render($content['body']); ?>
           </div>
       </div>  
-        <script src="http://icarus-wings.admanmedia.com/intext/intext_vast.js?pmu=ed9c414a;pmb=247b8ee9;size=600x338;visibility=50"data-adm-player="intext"></script>
+        <?php include("pautas/adman_intext.php"); ?>
        <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_468x60.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
        <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p300x250"><?php include("pautas/Nm_320x50_2.php"); ?></div><!--FIN ANUNCIO 320x50-->
-        <hr class="divisor_taboola">
-        <!--TABOOLA-->
-        <div id="taboola-below-article-thumbnails"></div>
-          <script type="text/javascript">
-            window._taboola = window._taboola || [];
-            _taboola.push({
-              mode: 'thumbnails-a',
-              container: 'taboola-below-article-thumbnails',
-              placement: 'Below Article Thumbnails',
-              target_type: 'mix'
-            });
-          </script>
-        <!--FIN TABOOLA-->
+        <?php include("taboola.php"); ?>
         <!--Noticias recientes footer-->
       <div class="recientes_footer">
         <div class="titulo"><div class="color"></div><h2>ULTIMAS NOTICIAS</h2></div>
