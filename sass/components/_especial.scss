@@ -1,12 +1,23 @@
+//EMBED OTROS
+
+#especial_otros{width: 1006px;padding: 0px;margin: 0 auto;position: relative;
+    .texto{margin-top:20px; font-size:16px;position:relative; float:left; color:#646464;font-weight:300;width:100%;
+        h3{font-size:18px;color:#646464;font-weight:600;}
+        p{margin-bottom:15px; max-width:1006px;
+            img{max-width: 1006px; height:auto; float:left;margin:10px 10px; position: relative;left:-10px;}
+            }
+        strong{font-weight:600;}
+        a{color:#DB0E24;text-decoration:none;}
+        a:hover{text-decoration:underline;}
+        .twitter-tweet{max-width:1006px;}
+        img{max-width:100%;}
+        iframe{max-width:100%;}
+    }
+}
+
 #especiales{width: 100%;float: left;
 	.title{height: 58px;width: 1006px;background-color: #78BAC6;margin: 0 auto;margin-top: 70px;
 		.logo{background: url(../images/iconos/logo_paz.svg) -184px -117px/430px auto no-repeat !important;height: 58px;width: 200px;margin: 0 auto;}
-	}
-	.title{height: 50px;width: 1006px;margin: 0 auto;margin-top: 70px;background-color:none !important;
-		.hechos2016{background: url(../images/especiales/hechos2016.jpg) 0px 0px/1006px auto no-repeat !important;height: 50px;width: 1006px;margin: 0 auto;}
-	}
-	.pdf{height: 150px;width: 1000px;margin: 0 auto;margin-top: 70px;background-color:none !important;
-		a{background: url(../images/especiales/hechos2016_pdf.jpg) 0px 0px/1006px auto no-repeat !important;height: 150px;width: 1000px;float:left;text-indent:-9999px;}
 	}
 	//.logo{width: 300px;margin: 0 auto;margin-top: 30px;}
 	.container{width: 1006px;padding: 20px 09px;margin: 0 auto;position: relative;}

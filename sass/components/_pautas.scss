@@ -2,11 +2,13 @@
 #lx_fixed_603285 {position: fixed;bottom: 0px;width: 320px;height: 50px;z-index: 999999;display: none;left: 50%; margin-left: -160px; }
 #lx_fixed_603285 #lx_fix_close {display: none;position: absolute;top: 0;right: -19px;width: 19px;height: 17px;cursor: pointer;background: url(http://is.luxcdn.com/i/close.png);}
 /*PAUTAS*/
+.layer{display:block;}
+.layer_movil{display:none;}
 .pauta {display: inline-block;vertical-align: top;margin-bottom: 20px;float:left; width:auto; height:auto; display:block;}
 .anuncio_txt {font: 9px/9px $ptSans;text-transform: uppercase;color: #999;margin-bottom: 4px;}
 .pauta .info {background-color: #eee;}
-.pauta_movil{display:none; left:-5px;margin-bottom:7px; float:left;}
-.fijo {bottom: 0px;left: 0;margin: 0 auto;position: fixed;right: 0;width: 320px;z-index: 100; height:50px;display:none;}
+.pauta_movil{display:none; left:-5px;margin-bottom:0px; float:left;}
+.fijo {bottom: 0px;left: 0;margin: 0 auto;position: fixed;right: 0;width: 320px;z-index: 100; height:50px;display:none;margin-bottom:0px !important;}
 .p320x50 {width: 320px;height: auto;padding: 0px 0px 0px 0px;position: relative;top: 0px;float:left;overflow:hidden;}
 .pauta300x250 {border:1px solid #ccc; overflow:hidden; }
 .pauta468x60 {border:1px solid #ccc;float:left;overflow:hidden;}
@@ -15,6 +17,7 @@
 .p300x600 {width: 300px;height: 600px;/*height: 270px;*/padding: 0px;position: relative;top: 0px;overflow:hidden;}
 .p300x100 {width: 300px;height: auto;/*height: 100px;*/padding: 10px 0px 0px 0px;position: relative;top: 0px;overflow:hidden;}
 .p728x90 {width: 728px;height: 110px;padding: 10px 30px 0px 0px;position: relative;top: 0px;overflow:hidden;}
+.p970x90 {width: 970px;height: auto;padding: 0px;position: relative;top: 0px;overflow:hidden;}
 .p728x90n {width: 728px;height: auto;padding: 0px;position: relative;top: 0px;overflow:hidden;}
 .p600x90 {width: 600px;/*height: auto;*/height: 130px;padding: 0px;position: relative;top: 0px;overflow:hidden;}
 .p220x90 {width: 220px;height: 110px;padding: 10px 0px 0px 0px;position: relative;top: 0px;overflow:hidden;}
@@ -22,7 +25,7 @@
 .p88x31 {width: 88px;height: 31px;padding: 10px 0px 0px 0px;position: relative;top: 0px;float:left;left:30px; margin:0px;overflow:hidden;display:block !important;}
 .p1000x90 {width: 1000px;height: auto;padding:0px;position: relative;top: 10px;left:0px;z-index:2;display:block !important;}
 .p1000x90_nota {width: 1000px;height: auto;padding:0px;position: relative;top: -10px;left:-20px;display:block;}
-.flotante {bottom: -5px;left: 0;margin: 0 auto;position: fixed;right: 0;width: 1000px;z-index: 100;}
+.flotante {bottom: 0px;left: 0;margin: 0 auto;position: fixed;right: 0;width: 1000px;z-index: 100;}
 .laterales{position: fixed; top:0; margin:0 auto; width:100%; z-index:101;overflow:hidden;
 	.content{position: relative; margin:0 auto;
 	.lateral1{top: 0px;left: 135px;width: 160px;margin: 0px;padding: 0px;position: fixed;}
@@ -37,6 +40,9 @@
 .notas_header{margin: 0 auto; position: relative; width:728px; padding:0px 20px;margin-top:70px;}
 /*FIN PAUTAS*/
 
+.edesktop{display:block;}
+.emovil{display:none;}
+
 .adm-intext{display: inline-block;vertical-align:top;margin-bottom: 20px;}
 
 .lateral{clear: both;position: relative;width: 100%;
@@ -45,7 +51,7 @@
 			//IZQ
 			.lateral1_nivel1{position: absolute;z-index: 101;width: 100%;top: 0;
 				.lateral1_nivel2{position: relative;width: 1000px;margin: 0 auto;
-					.lateral1_nivel3{left: -140px;position: absolute;top: 0;
+					.lateral1_nivel3{left: -170px;position: absolute;top: 0;
 						.lateral1_nivel4{position: fixed;
 							
 						}
