@@ -3,6 +3,8 @@
 	.pauta{display: none;}
 	.pautas_header{display: none;}
 	.notas_header{display: none;}
+	.edesktop{display:none;}
+	.emovil{display:block;}
 	/*Menu movil*/
 	#head_movil{position: fixed;z-index: 50;
 		#menu_movil.desplegar{left: 0;}
@@ -263,7 +265,11 @@
 			}
 		}
 	}/* Fin Videos */
-
+	#especial_otros{
+		.texto{
+			iframe{width:100%; height:auto;}	
+		}
+	}
 	#error_404{
 		.img{width: 100%;margin-top: 80px;left: -25px;}
 	}//Fin Error 404

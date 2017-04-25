@@ -233,7 +233,9 @@
 				.barra.table{display: block;}
 			}//Fin contenido
 			#newsletter{width: 100%;
-				#webform-ajax-wrapper-118209{ width:70%;}
+				#webform-ajax-wrapper-118209, #webform-ajax-wrapper-90577{ width:80%;
+					.mail{margin:10px 0px 10px 0px; width:90%;}
+				}
 			}
 			.relacionadas{margin-right: 0; width: 100%;
 				.item{width: 100%; }
@@ -790,6 +792,11 @@
 					.pager-item{a{padding: 8px 40%;}}
 				}
 			}
+		}
+	}
+	#especial_otros{width: 96%;margin: 0 2%;padding: 0;
+		.texto{width: 100%;
+			iframe{width:100%; height:auto;transition:all 0.2s ease;}	
 		}
 	}
 
@@ -2327,7 +2334,7 @@
 	}//FIn suscripciones
 
 	//HOME
-	#home{width: 96%;margin: 0 2%;padding: 0;float:left;
+	#home{width: 96%;margin: 67px 2% 0px;padding: 0;float:left;
 		#content{margin-top: 100px;width: 100%;padding: 0;
 			.left{width: 100%;margin: 0;float: none;display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
 				.mid{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;width: 100%;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;

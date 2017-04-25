@@ -1,4 +1,5 @@
-<?php include("pautas/notas.php"); ?>
+<?php include_once("hotwordstracking.php") ?>
+<?php include("pautas/script_notas.php"); ?>
 <div id="head_desktop"><?php include("header_n.tpl.php"); ?></div>
 <div id="head_movil"><?php include("header_movil.tpl.php"); ?></div>
 <!--TABS -->

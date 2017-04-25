@@ -3,7 +3,7 @@ $(document).ready(function(){
    $( "#search .informacion .opciones .fechas .form-item-from-date label.edit-from-date" ).replaceWith( "Desde" );
    $( "#search .informacion .opciones .fechas .form-item-to-date label.edit-to-date" ).replaceWith( "Hasta" );
    
-   $(".autor a").removeAttr("href");
+   $(".autor h2 a").removeAttr("href");
 
    $(window).scroll(function() {
    var scrolled = $(window).scrollTop();           
@@ -2994,7 +2994,7 @@ $(".view-aperturas.view-id-aperturas.view-display-id-block_3 .views-row").each(f
     $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .galeria").css({display:"none"});
     $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .foto").css({display:"none"});
       }else 
-  if(tipo == "Infografia"){
+  if(tipo == "Infografía"){
     $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .podcast").css({display:"none"});
     $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .icon_podcast").css({display:"none"});
     $(".view-especiales.view-id-especiales.view-display-id-block .views-row .info .video").css({display:"none"});

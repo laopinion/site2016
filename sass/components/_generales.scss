@@ -135,19 +135,30 @@ header{
     display: none;
 }
 //FORM BOLETIN
-#newsletter{margin: 0 auto;background-color: #7DA4AD;width: 98%;height: 80px;display: flex;display: -webkit-flex;display: -moz-flex; justify-content: center; -webkit-justify-content: center; -moz-justify-content: center;
-    #webform-ajax-wrapper-118209{width: 60%;height: auto;padding:10px 0px;
+#newsletter{margin: 0 auto;background-color: #7DA4AD;width: 98%;height: 100px;display: flex;display: -webkit-flex;display: -moz-flex; justify-content: center; -webkit-justify-content: center; -moz-justify-content: center;
+    #webform-ajax-wrapper-118209, #webform-ajax-wrapper-90577{width: 60%;height: auto;padding:10px 0px;
         .webform-confirmation{color:#fff;text-align:center;position: relative;}
         .links{display:none;}
-        form{width: 100%;height: 70px;position: relative;float: left;}
+        form{width: 100%;height: 70px;position: relative;float:left;}
+        .webform-component--nombre{width: 30%;float:left;margin-right:3px;}
+        .webform-component--email{width: 50%;float:left;}
+        .webform-component--terminos-y-condiciones-de-uso{width: 100%;position: absolute;height:20px;bottom:-20px;
+            input{float: left;position: relative;width: 20px;}
+            .option{color:#fff; font-size:12px; text-align:left;line-height: 12px;float: left;width: 290px;margin-top: 4px;
+                a{
+                    color: #fff; text-decoration:none;
+                }
+            }
+        }
         .form-item.webform-component{
-            .email{font-size: 12px;width: 80%;background-color: #fff;border: 0;height: 20px;position: relative;padding: 5px;float: left;margin-top: 10px;}
+            .form-text{font-size: 12px;width: 90%;background-color: #fff;border: 0;height: 20px;position: relative;padding: 5px;float: left;margin-top: 10px;}
+            .email{font-size: 12px;width: 98%;background-color: #fff;border: 0;height: 20px;position: relative;padding: 5px;float: left;margin-top: 10px;}
             .description{position: absolute;top: 0;left: 0;right: 0;margin: 0 auto;text-align: center;font-size: 14px;color: #fff;width: 100%;
                 strong{font-size: 20px;line-height: 22px;}
                 .logo{background: url(../images/logo.svg) -2px -4px/154px auto no-repeat;width: 145px;height: 30px;text-indent: -9999px;display: inline-block;vertical-align: bottom;}
             }
         }
-        .form-actions{margin: 0;position: relative;left: 10px;top: 10px;float: left;
+        .form-actions{margin: 0;position: relative;left: 10px;top: 26px;float:left;
             input{background-color: #BB0410;border: none;color: #fff;cursor: pointer;height: 30px;width: 70px;}
         }    
     }
@@ -189,7 +200,7 @@ header{
     }
 }
 
-#temas-dia{float: left;width: 100%;margin-bottom: 30px;background-color: #F1F1F1;height: 50px;
+#temas-dia{float: left;width: 100%;margin-bottom: 15px;background-color: #F1F1F1;height: 50px;
     .titulo{float: left;font-size: 18px;line-height:20px; font-weight: 600;color: #4C4C4C;background-color: #B5B5B5;width: 75px;text-align: center;padding: 8px 0px; position: relative; top: -3px;}
     .tema{float: left;width: 125px;padding: 8px 0;margin-left: 39px; line-height: 16px;
         a{font-size: 14px;text-decoration: none;color: #4C4C4C;}

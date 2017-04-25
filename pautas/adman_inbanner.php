@@ -1,1 +1,1 @@
-<script src="http://icarus-wings.admanmedia.com/inbanner?pmu=ed9c414a&pmb=247b8ee9;size=300x250;visibility=50;product=Pb" data-adm-player="inbanner"></script>
+<script src="https://mona.admanmedia.com/go?id=56c41821" id="hybs-56c41821" async></script>

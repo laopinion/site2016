@@ -8,9 +8,9 @@
 #home{width: 100%;position: relative;height:auto; float:left;
     .fijo{display:none;}
     #content{width:1006px;padding:20px 09px;margin:0 auto; position: relative;
-        .enlace_especial{width: 100%;height: auto;padding: 0px 0px 0px 0px;position: relative;top: 0px; float: left;
+        .enlace_especial{width: 100%;height: auto;padding: 0px 0px 0px 0px;position: relative;top: 0px; float:left;
             a {
-                img{position: relative;margin: 0 auto;width: 320px;height: 90px;border:0;display: block;}
+                img{position: relative;margin: 0 auto;width: 100%;height: auto;border:0;display: block;margin:10px 0px;}
             }
         }
         .left{width:690px;margin-right:15px; float:left; position: relative; height:auto;
