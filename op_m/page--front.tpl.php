@@ -8,6 +8,7 @@
 </div>
 <div id="head_desktop"><?php include("header.tpl.php"); ?></div>
 <div id="head_movil"><?php include("header_movil.tpl.php"); ?></div>
+<?php include("picoYplaca.tpl.php");?>
 <!--ANUNCIO 1000x50 Flotante--><div class="pauta flotante"><?php include("pautas/dfp/H_flotante.php"); ?></div><!--FIN ANUNCIO 1000x50 Flotante-->
 <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil fijo"><?php include("pautas/dfp/Hm_320x50_4.php"); ?></div><!--FIN ANUNCIO 320x50-->
 <!--ANUNCIO  Layer--><div class="layer"><?php // include("pautas/dfp/H_layer.php"); ?></div><!--FIN ANUNCIO Layer-->
