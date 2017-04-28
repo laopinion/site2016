@@ -95,7 +95,7 @@
       <i class="iconoMapa"></i>
       <p>Ver mapa</p>
       <div class="imgMapa">
-        <a href="<?php echo $base_path; ?>sites/default/files/picoyplaca/picoyplaca.jpg" rel="lightbox"></a>
+        <a href="<?php echo $base_path; ?>sites/default/files/picoyplaca/picoYplaca.jpg" rel="lightbox"></a>
       </div>
     </div>
   </div>
