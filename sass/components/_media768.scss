@@ -224,7 +224,10 @@
 					p{
 						.desktop{display:block;}
                     	.movil{display:none;}
-					}                    	
+					}
+					.twitter-tweet, img, iframe{
+						width: 100%!important; height: auto!important;
+					}           	
 				}
 				.autor{
 					h2{margin: 0;}
@@ -339,6 +342,9 @@
 						.desktop{display:block;}
                     	.movil{display:none;}
 					}
+					.twitter-tweet, img, iframe{
+						width: 100%!important; height: auto!important;
+					}  
 				}
 				.autor{
 					h2{margin: 0;}
@@ -360,6 +366,11 @@
 			}
 			.relacionadas{margin-right: 0; width: 100%;
 				.item{width: 100%; }
+			}
+			.texto{
+				.twitter-tweet, img, iframe{
+					width: 100%!important; height: auto!important;
+				}
 			}
 			.comentarios{margin-right: 0; width: 100%;
 				.bloque{width: 94%; padding: 2%;} 
@@ -459,6 +470,11 @@
 			.comentarios{margin-right: 0; width: 100%;
 				.bloque{width: 94%; padding: 2%;} 
 			}
+			.texto{
+				.twitter-tweet, img, iframe{
+					width: 100%!important; height: auto!important;
+				}
+			}
 			.mas_galerias{
 				.view-id-detalle.view-display-id-block{width: 100%;
 					.view-content{display: flex;display: -webkit-flex;display: -moz-flex;flex-wrap: wrap;-webkit-flex-wrap: wrap;-moz-flex-wrap: wrap;justify-content: center;-webkit-justify-content: center;-moz-justify-content: center;
@@ -552,6 +568,11 @@
 			.barra.desktop{display: none;}
 			.relacionadas{margin-right: 0; width: 100%;
 				.item{width: 100%; }
+			}
+			.texto{
+				.twitter-tweet, img, iframe{
+					width: 100%!important; height: auto!important;
+				}  
 			}
 			.comentarios{margin-right: 0; width: 100%;
 				.bloque{width: 94%; padding: 2%;} 

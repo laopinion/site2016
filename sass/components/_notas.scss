@@ -68,17 +68,17 @@
                 #eplAdDivIntext1_Notas_Internas{display: block;}
                 h3{font-size:18px;color:#646464;font-weight:600;}
                 p{margin-bottom:15px; max-width:690px;
-                    img{max-width: 690px; height:auto; float:left;margin:10px 10px; position: relative;left:-10px;}
+                    // img{max-width: 690px; height:auto; float:left;margin:10px 10px; position: relative;left:-10px;}
                     .desktop{display:block;}
                     .movil{display:none;}
                 }
                 strong{font-weight:600;}
                 a{color:#DB0E24;text-decoration:none;}
                 a:hover{text-decoration:underline;}
-                .twitter-tweet{max-width:690px!important;margin: 0 auto!important;}
-                //.instagram-media{max-width:690px!important;margin: 0 auto!important;}
-                img{max-width:690px!important;margin: 0 auto!important;}
-                iframe{max-width:680px!important;margin: 0 auto!important;}
+                .twitter-tweet{max-width:690px; margin: 0 auto; display: block;}
+                //.instagram-media{max-width:690px;margin: 0 auto;}
+                img{max-width:690px;margin: 0 auto; display: block;}
+                iframe{max-width:680px;margin: 0 auto; display: block;}
                 .ad { position:relative; display:inline-block; 
                     .blocker { position:absolute; height:100%; width:100%; z-index:1;
                         iframe { z-index: 2; }

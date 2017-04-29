@@ -57,17 +57,18 @@
         .texto{margin-top:20px; font-size:16px;position:relative; float:left; color:#646464;font-weight:300;width:100%;
             h3{font-size:18px;color:#646464;font-weight:600;}
             p{margin-bottom:15px; max-width:690px;
-                img{max-width: 690px; height:auto; float:left;margin:10px 10px; position: relative;left:-10px;}
+                // img{max-width: 690px; height:auto; float:left;margin:10px 10px; position: relative;left:-10px;}
                 .desktop{display:block;}
                 .movil{display:none;}
             }
             strong{font-weight:600;}
             a{color:#DB0E24;text-decoration:none;}
             a:hover{text-decoration:underline;}
-            .twitter-tweet{max-width:690px;}
-            img{max-width:690px;}
-            iframe{max-width:680px;}
-            .instagram-media{max-width:690px;}
+            .twitter-tweet{max-width:690px;margin: 0 auto; display: block;}
+            //.instagram-media{max-width:690px;margin: 0 auto;}
+            img{max-width:690px;margin: 0 auto;  display: block;}
+            iframe{max-width:680px;margin: 0 auto; display: block;}
+            .instagram-media{max-width:690px;width: 100%!important; height: auto!important;}
         }
         .relacionadas{width: 95%; height:auto; margin-right:20px; float:left; position: relative;margin-bottom:20px;
             .color{height: 10px; width: 25px;float: left;position: relative;text-indent: -9999px;background-color: #000000;margin-top: 6px;margin-right: 5px;}
