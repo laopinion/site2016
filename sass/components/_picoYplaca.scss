@@ -2,9 +2,8 @@
   position: fixed;
   right: 0;
   top: 30vh;
-  // height: 1110px;
   height: 58%;
-  overflow: hidden;
+  // overflow: hidden;
   width: 200px;
   z-index: 49;
   .info{
@@ -12,6 +11,8 @@
     right: -365px;
     // right: 0;
     transition: .3s;
+    overflow-y: scroll;
+    height: 100%;
     .cerrar{
       display: none;
       background: url('../images/iconos/btnCerrarPicoYp.svg') no-repeat;
