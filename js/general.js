@@ -21,8 +21,12 @@ $(document).ready(function(e){
       // $('#picoYplaca').css({overflowY: 'initial'});
    });
 
-   $('#idAutor').text($('.autor .content .field-name-field-perfil .field-items .field-item').text());
-   $('#idAutor').text($('.autor .field-name-field-autor .field-items .field-item').text());
+   var autorNotas = $('.autor .content .field-name-field-perfil .field-items .field-item').text();
+   if(autorNotas != ''){
+    $('#idAutor').text(autorNotas);
+   }else{
+    $('#idAutor').text($('.autor .field-name-field-autor .field-items .field-item').text());
+   }
    
    //$(".autor .field-items .even a").removeAttr("href");
 
