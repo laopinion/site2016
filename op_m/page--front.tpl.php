@@ -3,8 +3,8 @@
 <?php // include("pautas/lemonnet_skin.php"); ?>
 <div id= "oreja_div"></div>
 <?php include("pautas/dfp/laterales.tpl.php"); ?>
-<div class="pautas_header">
-	<!--ANUNCIO 970x90--><div class="pauta p970x90"><div class="info"></div><?php include("pautas/dfp/H_970x90.php"); ?></div><!--FIN 1.ANUNCIO 970x90-->
+<div class="pautas_header">	
+<!--ANUNCIO 970x90--><div class="pauta p970x90"><div class="info"></div><?php include("pautas/dfp/H_970x90.php"); ?></div><!--FIN 1.ANUNCIO 970x90-->
 </div>
 <div id="head_desktop"><?php include("header.tpl.php"); ?></div>
 <div id="head_movil"><?php include("header_movil.tpl.php"); ?></div>
@@ -20,8 +20,8 @@
 		    <!-- <div class="movil"><?php // include("envivo.tpl.php"); ?></div> -->
 		    <?php include("aperturas.tpl.php"); ?>
 		    <?php include("temas.tpl.php"); ?>
-		    <!--Imagen Especial movil--><div class="enlace_especial emovil"><a href="<?php print base_path(); ?>especial-lagunas-verdes-un-tesoro-que-se-pierde-en-santurban" target="_blank"><img src="<?php print base_path(); ?>sites/default/themes/op/images/especiales/santurban.jpg"></a></div>
-		    <!--Imagen Especial--><div class="enlace_especial edesktop"><a href="<?php print base_path(); ?>especial-lagunas-verdes-un-tesoro-que-se-pierde-en-santurban" target="_blank"><img src="<?php print base_path(); ?>sites/default/themes/op/images/especiales/santurban.gif"></a></div>
+		    <!--Imagen Especial movil--><!--<div class="enlace_especial emovil"><a href="<?php print base_path(); ?>especial-lagunas-verdes-un-tesoro-que-se-pierde-en-santurban" target="_blank"><img src="<?php print base_path(); ?>sites/default/themes/op/images/especiales/santurban.jpg"></a></div>-->
+		    <!--Imagen Especial--><!--<div class="enlace_especial edesktop"><a href="<?php print base_path(); ?>especial-lagunas-verdes-un-tesoro-que-se-pierde-en-santurban" target="_blank"><img src="<?php print base_path(); ?>sites/default/themes/op/images/especiales/santurban.gif"></a></div>-->
 		    <div class="left">
 		      	<div class="izq">
 		      		<!--Destacada--><?php print EjecutarViewCache('principal','block','corto'); ?><!--FIN Destacada-->
