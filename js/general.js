@@ -1104,6 +1104,8 @@ $(document).ready(function(e){
 
 //NOTAS
   
+  $("#nota .izq .relacionadas .item .field-item").append("<span>></span>");
+
   //COLOR SECCION
   var seccion = $(".contenido .seccion a").html();
   if(seccion == "Cúcuta" || seccion == "Memorias" || seccion == "Por los barrios"){
