@@ -20,6 +20,9 @@ $(document).ready(function(e){
       $('#picoYplaca .info .cerrar').hide();
       // $('#picoYplaca').css({overflowY: 'initial'});
    });
+
+   $('#idAutor').text($('.autor .content .field-name-field-perfil .field-items .field-item').text());
+   $('#idAutor').text($('.autor .field-name-field-autor .field-items .field-item').text());
    
    //$(".autor .field-items .even a").removeAttr("href");
 
