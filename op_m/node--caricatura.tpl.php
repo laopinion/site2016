@@ -16,6 +16,7 @@
         <!--Editorial--><?php print EjecutarViewCache('opinion','block_6','mediano'); ?><!--FIN Editorial-->
         <div class="caricatura_principal">
           <?php print render($content['field_imagen']);?>
+        <?php include("pautas/teads.php"); ?>
         <?php include("pautas/adman_intext.php"); ?>
         <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-118209');print render($block['content']); ?></div><!--FIN formulario-->
        </div>

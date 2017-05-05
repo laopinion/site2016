@@ -67,6 +67,7 @@
             <?php
             print "<div class=autor>".render($content['field_autor'])."</div>"; 
         ?>
+        <?php include("pautas/teads.php"); ?>
         <?php include("pautas/adman_intext.php"); ?>
         <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-118209');print render($block['content']); ?></div><!--FIN formulario-->
         <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/dfp/N_300x250_6.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
