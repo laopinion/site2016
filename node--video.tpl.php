@@ -66,15 +66,15 @@
         }else{
           ?>
           <div class="texto">
-          <?php include("pautas/N_intext_1.php"); ?>
           <?php print render($content['body']); ?>
           </div>
           <?php
         }
-        print "<div class=autor>".render($content['field_autor'])."</div>";            
-        ?>
+        print "<div class=autor>".render($content['field_autor'])."</div>";?>
+        <div class="author" id="idAutor" style="display:none"></div> 
+        <?php include("pautas/teads.php"); ?>
         <?php include("pautas/adman_intext.php"); ?>
-        <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-90577');print render($block['content']); ?></div><!--FIN formulario-->
+        <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-118209');print render($block['content']); ?></div><!--FIN formulario-->
         <div class="relacionadas">
          <?php
           if (!empty($content['field_contenidos_relacionados'])){ 
