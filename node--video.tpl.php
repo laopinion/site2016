@@ -66,18 +66,15 @@
         }else{
           ?>
           <div class="texto">
-          <?php include("pautas/N_intext_1.php"); ?>
           <?php print render($content['body']); ?>
           </div>
           <?php
         }
-        print "<div class=autor>".render($content['field_autor'])."</div>";            
-        ?>
+        print "<div class=autor>".render($content['field_autor'])."</div>";?>
         <div class="author" id="idAutor" style="display:none"></div> 
-        <script src="http://icarus-wings.admanmedia.com/intext/intext_vast.js?pmu=ed9c414a;pmb=247b8ee9;size=600x338;visibility=50"data-adm-player="intext"></script>
-        <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-90577');print render($block['content']); ?></div><!--FIN formulario-->
-        <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_468x60.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
-        <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p300x250"><?php include("pautas/Nm_320x50_2.php"); ?></div><!--FIN ANUNCIO 320x50-->
+        <?php include("pautas/teads.php"); ?>
+        <?php include("pautas/adman_intext.php"); ?>
+        <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-118209');print render($block['content']); ?></div><!--FIN formulario-->
         <div class="relacionadas">
          <?php
           if (!empty($content['field_contenidos_relacionados'])){ 
@@ -88,6 +85,8 @@
             }
          ?>
         </div>
+        <!--ANUNCIO 300x250--><div class="pauta p300x250"><h2 class="anuncio_txt">Publicidad</h2><div class="info"><?php include("pautas/N_468x60.php"); ?></div></div><!--FIN ANUNCIO 300x250-->
+        <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p300x250"><?php include("pautas/Nm_320x50_2.php"); ?></div><!--FIN ANUNCIO 320x50-->
         <div class="comentarios">
           <div class="linea"></div>
           <div class="color"></div><h2>Comentarios</h2>

@@ -67,8 +67,8 @@
       <?php print render($content['body']); ?>
       </div>
       <?php
-      print "<div class=autor>".render($content['field_autor'])."</div>";           
-      ?>
+      print "<div class=autor>".render($content['field_autor'])."</div>";?>
+      <div class="author" id="idAutor" style="display:none"></div> 
       <?php include("pautas/teads.php"); ?>
       <?php include("pautas/adman_intext.php"); ?>
       <div class="relacionadas">
