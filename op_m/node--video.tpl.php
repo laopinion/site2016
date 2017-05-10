@@ -71,7 +71,7 @@
           <?php
         }
         print "<div class=autor>".render($content['field_autor'])."</div>";?>
-        <div class="author" id="idAutor" style="display:none"></div> 
+        <div class="io-hidden-author" id="idAutor" style="display:none"></div> 
         <?php include("pautas/teads.php"); ?>
         <?php include("pautas/adman_intext.php"); ?>
         <!--formulario--><div id="newsletter"><?php $block = module_invoke('webform', 'block_view', 'newsletter-118209');print render($block['content']); ?></div><!--FIN formulario-->

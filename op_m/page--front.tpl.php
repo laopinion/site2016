@@ -1,5 +1,5 @@
 <?php include("pautas/script_home.php"); ?>
-<?php include("pautas/clickio_fixed.php"); ?>
+<?php // include("pautas/clickio_fixed.php"); ?>
 <?php // include("pautas/lemonnet_skin.php"); ?>
 <div id= "oreja_div"></div>
 <?php include("pautas/dfp/laterales.tpl.php"); ?>
