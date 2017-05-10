@@ -154,8 +154,11 @@
 						<li class="youtube">
 							<a href="https://www.youtube.com/user/WEBLAOPINION" target="_blank"></a>
 						</li>
-					</ul> 
-			    </ul> 
+					</ul>
+					<ul id="iconos">
+						<li class="lupa"><a href="http://www.laopinion.com.co/search/site/"></a></li>
+					</ul>
+			    </ul>
 			</div>
 		</nav>
 		<!--FIN MENU PRINCIPAL-->

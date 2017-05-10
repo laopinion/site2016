@@ -12,8 +12,8 @@
 			.movil{display: block;}
 			.seccion{display: block;width: 290px;margin: 0 auto;border-bottom: 2px solid #666666;padding-bottom: 10px;
 				form{width: 290px;height: 30px;margin: 15px auto;
-					input{font-size: 18px;color: #fff;background: url(../images/iconos/lupa_menu.svg) no-repeat 1px 0px/40px auto transparent;width: 290px;height: 30px;border: none;background-color: #666666;}
-					input:focus{outline: none; background-image:none;}
+					#edit-search-block-form--4{font-size: 18px;color: #fff;background: url(../images/iconos/lupa_menu.svg) no-repeat 1px 0px/40px auto transparent;height: 30px;border: none;background-color: #666666;}
+					#edit-search-block-form--4:focus{outline: none; background-image:none;}
 				}
 				.iconos{padding: 0;width: 290px;margin: 0 auto;
 					li{list-style: none;display: inline-block;vertical-align: top;text-align: center;margin: 0 2px;

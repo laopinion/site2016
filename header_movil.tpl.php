@@ -13,9 +13,7 @@
 <!--Menú Principal-->
 <section id="menu_movil">
 	<div class="seccion">
-		<form action="">
-			<input type="text" name="buscar">
-		</form>
+		<!--BÚSQUEDA--><?php $bloque_busqueda = module_invoke('search', 'block_view', 'search'); print render($bloque_busqueda);?><!--FIN BÚSQUEDA-->
 		<ul class="iconos">
 			<li><a href="http://clasificados.laopinion.com.co/"><span id="clasif"></span>Clasificados</a></li>
 			<li><a href="<?php print base_path(); ?>user"><span id="ingreso"></span>Ingreso</a></li>
@@ -134,7 +132,8 @@
             <li><a href="<?php print base_path(); ?>cultura">Cultura</a></li> 
             <li><a href="<?php print base_path(); ?>entretenimiento">Entretenimiento</a></li>
             <li><a href="<?php print base_path(); ?>viral">Viral</a></li> 
-            <li><a href="<?php print base_path(); ?>vida-y-salud">Vida y salud</a></li> 
+            <li><a href="<?php print base_path(); ?>vida-y-salud">Vida y salud</a></li>
+            <li><a href="<?php print base_path(); ?>zona-verde">Zona verde</a></li> 
 		</ul>
 	</div>
 	<div class="seccion movil" style="border: none;">
