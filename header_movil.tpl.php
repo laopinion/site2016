@@ -84,6 +84,7 @@
             <li><a href="<?php print base_path(); ?>colombia">Colombia</a></li>
             <li><a href="<?php print base_path(); ?>venezuela">Venezuela</a></li>
             <li><a href="<?php print base_path(); ?>mundo">Mundo</a></li> 
+            <li><a href="<?php print base_path(); ?>historicos">Históricos</a></li> 
 		</ul>
 		<ul class="bloque opinion">
 			<span></span><div class="linea"></div>
@@ -108,7 +109,8 @@
             <li><a href="<?php print base_path(); ?>cultura">Cultura</a></li> 
             <li><a href="<?php print base_path(); ?>entretenimiento">Entretenimiento</a></li>
             <li><a href="<?php print base_path(); ?>viral">Viral</a></li> 
-            <li><a href="<?php print base_path(); ?>vida-y-salud">Vida y salud</a></li> 
+            <li><a href="<?php print base_path(); ?>vida-y-salud">Vida y salud</a></li>
+            <li><a href="<?php print base_path(); ?>zona-verde">Zona verde</a></li> 
 		</ul>
 		<ul class="bloque servicios table">
 			<span></span>
