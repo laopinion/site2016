@@ -2,6 +2,8 @@
   $fecha = time(); 
   $dia =  date("w",$fecha); 
   $Dia = date("d");
+  //Numero de la semana en el mes 
+  $weekNum = date("W") - date("W",strtotime(date("Y-m-01"))) + 1;
 ?>
 <section id="picoYplaca">
   <div class="info">
@@ -39,22 +41,41 @@
       <div class="hoy">
         <aside>Sem.</aside>
         <p class="numeros">
-          <?php 
-            if ($dia =="1" ) { print "0";} 
-            if ($dia =="2" ) { print "9";} 
-            if ($dia =="3" ) { print "8";} 
-            if ($dia =="4" ) { print "7";} 
-            if ($dia =="5" ) { print "6";}
-            if ($dia =="6" ) { print "NO";}
-            if ($dia =="7" ) { print "NO";}
+          <?php
+            function semOne(){ 
+              $dia =  date("w");
+              if ($dia =="1" ) { print "0";} 
+              if ($dia =="2" ) { print "9";} 
+              if ($dia =="3" ) { print "8";} 
+              if ($dia =="4" ) { print "7";} 
+              if ($dia =="5" ) { print "6";}
+              if ($dia =="6" ) { print "NO";}
+              if ($dia =="7" ) { print "NO";}
+            }
 
-            // if ($dia =="1" ) { print "1";} 
-            // if ($dia =="2" ) { print "2";} 
-            // if ($dia =="3" ) { print "3";} 
-            // if ($dia =="4" ) { print "4";} 
-            // if ($dia =="5" ) { print "5";}
-            // if ($dia =="6" ) { print "NO";}
-            // if ($dia =="7" ) { print "NO";}
+            function semTwo(){
+              $dia =  date("w");
+              if ($dia =="1" ) { print "1";} 
+              if ($dia =="2" ) { print "2";} 
+              if ($dia =="3" ) { print "3";} 
+              if ($dia =="4" ) { print "4";} 
+              if ($dia =="5" ) { print "5";}
+              if ($dia =="6" ) { print "NO";}
+              if ($dia =="7" ) { print "NO";}
+            } 
+
+            if($weekNum == '1'){
+              semOne();
+            }else if($weekNum == '2'){
+              semTwo();
+            }else if($weekNum == '3'){
+              semOne();
+            }else if($weekNum == '4'){
+              semTwo();
+            }else{
+              semOne();
+            }
+
           ?>
         </p>
       </div>
