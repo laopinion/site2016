@@ -25,6 +25,90 @@ $(document).ready(function(e){
    
    //$(".autor .field-items .even a").removeAttr("href");
 
+    $('#terminosCondiciones #terminosLista .one .titleOne').click(function(){
+      $('#terminosCondiciones #terminosLista .one').find('.oneParr').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .oneOne').click(function(){
+      $('#terminosCondiciones #terminosLista .one').find('.oneText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .oneTwo').click(function(){
+      $('#terminosCondiciones #terminosLista .one').find('.twoText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .oneThree').click(function(){
+      $('#terminosCondiciones #terminosLista .one').find('.threeText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .oneFour').click(function(){
+      $('#terminosCondiciones #terminosLista .one').find('.fourText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .oneFive').click(function(){
+      $('#terminosCondiciones #terminosLista .one').find('.fiveText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .oneSix').click(function(){
+      $('#terminosCondiciones #terminosLista .one').find('.sixText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .oneSeven').click(function(){
+      $('#terminosCondiciones #terminosLista .one').find('.sevenText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .oneEight').click(function(){
+      $('#terminosCondiciones #terminosLista .one').find('.eightText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .oneNine').click(function(){
+      $('#terminosCondiciones #terminosLista .one').find('.nineText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .oneTen').click(function(){
+      $('#terminosCondiciones #terminosLista .one').find('.tenText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .oneEleven').click(function(){
+      $('#terminosCondiciones #terminosLista .one').find('.elevenText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .two .titleTwo').click(function(){
+      $('#terminosCondiciones #terminosLista .two').find('.twoParr').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .twoOne').click(function(){
+      $('#terminosCondiciones #terminosLista .two').find('.oneText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .twoTwo').click(function(){
+      $('#terminosCondiciones #terminosLista .two').find('.twoText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .twoThree').click(function(){
+      $('#terminosCondiciones #terminosLista .two').find('.threeText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .three .titleThree').click(function(){
+      $('#terminosCondiciones #terminosLista .three').find('.threeParr').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .threeOne').click(function(){
+      $('#terminosCondiciones #terminosLista .three').find('.oneText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .threeTwo').click(function(){
+      $('#terminosCondiciones #terminosLista .three').find('.twoText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .threeThree').click(function(){
+      $('#terminosCondiciones #terminosLista .three').find('.threeText').slideToggle("slow");
+    });
+
+    $('#terminosCondiciones #terminosLista .threeFour').click(function(){
+      $('#terminosCondiciones #terminosLista .three').find('.fourText').slideToggle("slow");
+    });
+
    $(window).scroll(function() {
    var scrolled = $(window).scrollTop();           
     /*
