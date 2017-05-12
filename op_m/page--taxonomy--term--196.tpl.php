@@ -1,4 +1,5 @@
 <?php include("pautas/script_secciones.php"); ?>
+<?php include("pautas/clickio_fixed.php"); ?>
 <div class="pautas_header">
     <!--ANUNCIO 970x90--><div class="pauta p970x90"><div class="info"></div><?php include("pautas/dfp/S_970x90.php"); ?></div><!--FIN 1.ANUNCIO 970x90-->
 </div>

@@ -1,5 +1,4 @@
 <?php include("pautas/script_home.php"); ?>
-<?php // include("pautas/clickio_fixed.php"); ?>
 <?php // include("pautas/lemonnet_skin.php"); ?>
 <div id= "oreja_div"></div>
 <?php include("pautas/dfp/laterales.tpl.php"); ?>
@@ -43,6 +42,7 @@
 		      		<!--Lista 3--><?php print EjecutarViewCache('principal','block_3','corto'); ?><!--FIN Lista 3-->
 		      		<!--Columna 2--><?php print EjecutarViewCache('principal','block_5','corto'); ?><!--FIN Columna 2-->
 		      		<!--Cúcuta--><div class="cucuta"><div class="color"></div><a href="<?php print base_path(); ?>cucuta">Cúcuta</a></div><?php print EjecutarViewCache('principal','block_7','corto'); ?><!--FIN Cúcuta-->
+		      		<!--ANUNCIO MOVIL 300x250--><div class="pauta_movil p300x250"><?php include("pautas/dfp/Hm_300x250_especial.php"); ?></div><!--FIN ANUNCIO 300x250-->
 	      		</div>
 		    </div>
 	      	<div class="right"> 
