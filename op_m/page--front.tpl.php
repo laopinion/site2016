@@ -4,7 +4,7 @@
 <div id= "oreja_div"></div>
 <?php include("pautas/dfp/laterales.tpl.php"); ?>
 <div class="pautas_header">	
-<!--ANUNCIO 970x90--><div class="pauta p970x90"><div class="info"></div><?php include("pautas/dfp/H_970x90.php"); ?></div><!--FIN 1.ANUNCIO 970x90-->
+	<!--ANUNCIO 1000x90--><div class="pauta p1000x90"><?php include("pautas/dfp/H_1000x90.php"); ?></div><!--FIN ANUNCIO 1000x90-->
 </div>
 <div id="head_desktop"><?php include("header.tpl.php"); ?></div>
 <div id="head_movil"><?php include("header_movil.tpl.php"); ?></div>
@@ -16,7 +16,7 @@
       <div id="home">
       	<div id="content">
 		    <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/dfp/Hm_320x50_1.php"); ?></div><!--FIN ANUNCIO 320x50-->
-		    <!--ANUNCIO 1000x90--><div class="pauta p1000x90"><?php include("pautas/dfp/H_1000x90.php"); ?></div><!--FIN ANUNCIO 1000x90-->
+		    <!--ANUNCIO 970x90--><div class="pauta p970x90"><div class="info"></div><?php include("pautas/dfp/H_970x90.php"); ?></div><!--FIN 1.ANUNCIO 970x90-->
 		    <!-- <div class="movil"><?php // include("envivo.tpl.php"); ?></div> -->
 		    <?php include("aperturas.tpl.php"); ?>
 		    <?php include("temas.tpl.php"); ?>
