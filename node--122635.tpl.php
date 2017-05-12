@@ -2,6 +2,7 @@
   <link id="template-politica" href="<?php print base_path(); ?>sites/default/themes/op/politicaTratamiento.html" rel="import" /> 
   <link id="template-cliente" href="<?php print base_path(); ?>sites/default/themes/op/avisoClientes.html" rel="import" /> 
   <link id="template-proveedor" href="<?php print base_path(); ?>sites/default/themes/op/avisoProveedor.html" rel="import" /> 
+
   <p><h2 class="titulo">TÉRMINOS Y CONDICIONES</h2></p>
 
   <p>Gracias por visitar la página we de LA OPINIÓN  y por revisar los términos y condiciones de uso.</p>
@@ -26,3 +27,18 @@
     </li>
   </ul>
 </section>
+<script>
+  /*-----------------Terminos y condiciones-------------------*/
+  var politica = document.querySelector('#template-politica');
+  var getContent = politica.import.querySelector('#content');
+  // document.body.appendChild(document.importNode(getContent, true));
+  document.getElementById('terminosPolitica').appendChild(document.importNode(getContent, true));
+
+  var avisoCliente = document.querySelector('#template-cliente');
+  var getContent = avisoCliente.import.querySelector('#content');
+  document.getElementById('avisoCliente').appendChild(document.importNode(getContent, true));
+
+  var avisoProveedor = document.querySelector('#template-proveedor');
+  var getContent = avisoProveedor.import.querySelector('#content');
+  document.getElementById('avisoProveedor').appendChild(document.importNode(getContent, true));
+</script>

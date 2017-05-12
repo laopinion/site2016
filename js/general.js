@@ -25,20 +25,6 @@ $(document).ready(function(e){
    
    //$(".autor .field-items .even a").removeAttr("href");
 
-   /*-----------------Terminos y condiciones-------------------*/
-    var politica = document.querySelector('#template-politica');
-    var getContent = politica.import.querySelector('#content');
-    // document.body.appendChild(document.importNode(getContent, true));
-    document.getElementById('terminosPolitica').appendChild(document.importNode(getContent, true));
-
-    var avisoCliente = document.querySelector('#template-cliente');
-    var getContent = avisoCliente.import.querySelector('#content');
-    document.getElementById('avisoCliente').appendChild(document.importNode(getContent, true));
-
-    var avisoProveedor = document.querySelector('#template-proveedor');
-    var getContent = avisoProveedor.import.querySelector('#content');
-    document.getElementById('avisoProveedor').appendChild(document.importNode(getContent, true));
-
     $('#terminosCondiciones #terminosLista .one .titleOne').click(function(){
       $('#terminosCondiciones #terminosLista .one').find('.oneParr').slideToggle("slow");
     });
