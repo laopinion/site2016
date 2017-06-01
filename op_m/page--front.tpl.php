@@ -7,15 +7,16 @@
 </div>
 <div id="head_desktop"><?php include("header.tpl.php"); ?></div>
 <div id="head_movil"><?php include("header_movil.tpl.php"); ?></div>
-<?php include("picoYplaca.tpl.php");?>
+<?php // include("picoYplaca.tpl.php");?>
 <!--ANUNCIO 1000x50 Flotante--><div class="pauta flotante"><?php include("pautas/dfp/H_flotante.php"); ?></div><!--FIN ANUNCIO 1000x50 Flotante-->
 <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil fijo"><?php include("pautas/dfp/Hm_320x50_4.php"); ?></div><!--FIN ANUNCIO 320x50-->
 <!--ANUNCIO  Layer--><div class="layer"><?php // include("pautas/dfp/H_layer.php"); ?></div><!--FIN ANUNCIO Layer-->
   <section class="detailContent">
       <div id="home">
       	<div id="content">
-		    <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><?php include("pautas/dfp/Hm_320x50_1.php"); ?></div><!--FIN ANUNCIO 320x50-->
-		    <!--ANUNCIO 970x90--><div class="pauta p970x90"><div class="info"></div><?php include("pautas/dfp/H_970x90.php"); ?></div><!--FIN 1.ANUNCIO 970x90-->
+		    <!--ANUNCIO MOVIL 320x50--><div class="pauta_movil p320x50"><a href="http://congresoderecho.unisimoncucuta.edu.co/" target="_blank"><img src="http://www.laopinion.com.co/sites/default/files/ads/2017/05/simonbolivar320x50.jpg"></a></div><!--FIN ANUNCIO 320x50-->
+		    <!--ANUNCIO MOVIL 320x50--><!--<div class="pauta_movil p320x50"><?php// include("pautas/dfp/Hm_320x50_1.php"); ?></div>--><!--FIN ANUNCIO 320x50-->
+		    <!--ANUNCIO 970x90--><div class="pauta p970x90"><div class="info"></div><?php // include("pautas/dfp/H_970x90.php"); ?><a href="http://congresoderecho.unisimoncucuta.edu.co/" target="_blank"><img src="http://www.laopinion.com.co/sites/default/files/ads/2017/05/simonbolivar970x90.jpg"></a></div><!--FIN 1.ANUNCIO 970x90-->
 		    <!-- <div class="movil"><?php // include("envivo.tpl.php"); ?></div> -->
 		    <?php include("aperturas.tpl.php"); ?>
 		    <?php include("temas.tpl.php"); ?>
